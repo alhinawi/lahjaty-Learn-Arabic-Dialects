@@ -16,6 +16,8 @@ import NotFoundPage from './pages/NotFoundPage'
 import PracticePage from './pages/PracticePage'
 import QuizPage from './pages/QuizPage'
 import SettingsPage from './pages/SettingsPage'
+import SharePage from './pages/SharePage'
+import { syncSocialImage } from './lib/meta'
 
 export default function App() {
   const lang = useApp((s) => s.lang)
@@ -37,11 +39,12 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = lang
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'
-    document.title = lang === 'ar' ? 'لهجتي | تعلّم اللهجات العربية' : 'Lahjaty | Learn Arabic dialects'
+    document.title = lang === 'ar' ? 'لهجاتي – Lahjaty | افهم كل عربي، من النيل إلى الفرات' : 'Lahjaty | Understand every Arab, from the Nile to the Euphrates'
   }, [lang])
 
   useEffect(() => {
     window.scrollTo(0, 0)
+    syncSocialImage(pathname)
   }, [pathname])
 
   return (
@@ -60,6 +63,7 @@ export default function App() {
         <Route path="practice" element={<PracticePage />} />
         <Route path="practice/:mode" element={<QuizPage />} />
         <Route path="favorites" element={<FavoritesPage />} />
+        <Route path="share/:dialectId/:phraseId" element={<SharePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

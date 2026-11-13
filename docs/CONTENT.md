@@ -205,3 +205,22 @@ unknown voices, dialects or phrases.
 - **لهجة جديدة**: أضفها إلى `dialects` مع منطقتها، ثم أضف نصّها في كل جملة، وأضف جملها المشهورة في `famous.json`.
 - **لا تغيّر المعرّفات** بعد إضافة الأصوات، لأن أسماء الملفات مربوطة بها.
 - **قبل الرفع** شغّل `npm run content:check` ثم `npm test` ثم `npm run build`.
+
+## Social cards and page tags
+
+`npm run build` ends with `npm run og` (`scripts/og/build.ts`). It draws a 1200×630 card for the home page,
+each section, each lesson, each dialect, the Egypt section and every Egypt page, and every famous phrase,
+into `dist/og/` as JPEG, and writes one HTML file per page with its own title, description, `og:*` and
+`twitter:*` tags (`summary_large_image`), plus `sitemap.xml` and `robots.txt`. Nothing is stored in the repo:
+add a dialect, a phrase or an Egypt page to the content and its card and page appear on the next build.
+
+- Which card a page uses: `ogImageFor()` in `src/lib/og.ts` (the app also updates the tags as you move around).
+- A phrase link to share: `/share/<dialectId>/<phraseId>`. Famous phrases get their own card; everyday
+  phrases use their dialect's card.
+- To look at a few cards without a full build:
+  `npx tsx scripts/og/build.ts --only home,dialects/cai,egypt --out /tmp/og`
+
+### بالعربي
+
+الصور اللي بتظهر لما حد يشارك لينك من الموقع بتتعمل وقت البناء لوحدها، لكل صفحة ولكل لهجة ولكل جملة مشهورة.
+أي محتوى جديد بياخد صورته في البناء اللي بعده.

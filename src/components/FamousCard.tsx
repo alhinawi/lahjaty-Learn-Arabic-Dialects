@@ -7,6 +7,7 @@ import { favKey, useApp } from '../lib/store'
 import type { FamousPhrase } from '../lib/types'
 import MyDialectLine from './MyDialectLine'
 import PlayButton from './PlayButton'
+import ShareButton from './ShareButton'
 
 interface Props {
   phrase: FamousPhrase
@@ -86,12 +87,14 @@ export default function FamousCard({ phrase, dialectId, showDialect = false }: P
             {t('compareThis')}
           </Link>
         )}
+        <span className="ms-auto" />
+        <ShareButton dialectId={dialectId} phraseId={phrase.id} text={phrase.text} />
         <button
           type="button"
           onClick={() => toggleFavorite(dialectId, phrase.id)}
           aria-pressed={isFav}
           aria-label={isFav ? t('removeFavorite') : t('addFavorite')}
-          className="ms-auto rounded-full p-2 text-rose-500 hover:bg-rose-50"
+          className="rounded-full p-2 text-rose-500 hover:bg-rose-50"
         >
           <Heart className="h-5 w-5" fill={isFav ? 'currentColor' : 'none'} aria-hidden />
         </button>
