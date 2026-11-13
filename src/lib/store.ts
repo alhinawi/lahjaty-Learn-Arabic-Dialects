@@ -4,6 +4,7 @@ import { DEFAULT_DIALECT } from './content'
 
 export type Lang = 'ar' | 'en'
 export type QuizMode = 'meaning' | 'match'
+export type Theme = 'light' | 'dark' | 'system'
 
 /** A favorite is one phrase in one dialect: "<dialectId>|<phraseId>". */
 export const favKey = (dialectId: string, phraseId: string) => `${dialectId}|${phraseId}`
@@ -14,6 +15,7 @@ export const parseFavKey = (key: string) => {
 
 export interface AppState {
   lang: Lang
+  theme: Theme
   dialectId: string
   showTranslit: boolean
   /** The visitor's own dialect; cards show meanings in it first. Null when not picked. */
@@ -29,6 +31,7 @@ export interface AppState {
 
   setLang: (lang: Lang) => void
   toggleLang: () => void
+  setTheme: (theme: Theme) => void
   setDialect: (id: string) => void
   toggleTranslit: () => void
   setMyDialect: (id: string | null) => void
@@ -41,6 +44,7 @@ export interface AppState {
 
 export const initialState = {
   lang: 'ar' as Lang,
+  theme: 'system' as Theme,
   dialectId: DEFAULT_DIALECT,
   showTranslit: false,
   myDialectId: null as string | null,
@@ -60,6 +64,7 @@ export const useApp = create<AppState>()(
       ...initialState,
       setLang: (lang) => set({ lang }),
       toggleLang: () => set((s) => ({ lang: s.lang === 'ar' ? 'en' : 'ar' })),
+      setTheme: (theme) => set({ theme }),
       setDialect: (dialectId) => set({ dialectId }),
       toggleTranslit: () => set((s) => ({ showTranslit: !s.showTranslit })),
       setMyDialect: (myDialectId) => set({ myDialectId, myDialectAsked: true }),
@@ -85,6 +90,7 @@ export const useApp = create<AppState>()(
       storage: createJSONStorage(() => localStorage),
       partialize: (s) => ({
         lang: s.lang,
+        theme: s.theme,
         dialectId: s.dialectId,
         showTranslit: s.showTranslit,
         myDialectId: s.myDialectId,

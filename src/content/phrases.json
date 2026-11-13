@@ -52,7 +52,9 @@
       "nameEn": "Cairo",
       "country": "مصر",
       "countryEn": "Egypt",
-      "region": "nile"
+      "region": "nile",
+      "lat": 30.04,
+      "lon": 31.24
     },
     {
       "id": "alx",
@@ -60,7 +62,9 @@
       "nameEn": "Alexandria",
       "country": "مصر",
       "countryEn": "Egypt",
-      "region": "nile"
+      "region": "nile",
+      "lat": 31.2,
+      "lon": 29.92
     },
     {
       "id": "shq",
@@ -68,7 +72,9 @@
       "nameEn": "Sharqawi (Sharqia)",
       "country": "مصر",
       "countryEn": "Egypt",
-      "region": "nile"
+      "region": "nile",
+      "lat": 30.58,
+      "lon": 31.5
     },
     {
       "id": "dkh",
@@ -76,7 +82,9 @@
       "nameEn": "Daqahlawi (Dakahlia)",
       "country": "مصر",
       "countryEn": "Egypt",
-      "region": "nile"
+      "region": "nile",
+      "lat": 31.04,
+      "lon": 31.38
     },
     {
       "id": "mnf",
@@ -84,7 +92,9 @@
       "nameEn": "Menoufi (Monufia)",
       "country": "مصر",
       "countryEn": "Egypt",
-      "region": "nile"
+      "region": "nile",
+      "lat": 30.55,
+      "lon": 31.01
     },
     {
       "id": "ghr",
@@ -92,7 +102,9 @@
       "nameEn": "Gharbawi (Gharbia)",
       "country": "مصر",
       "countryEn": "Egypt",
-      "region": "nile"
+      "region": "nile",
+      "lat": 30.79,
+      "lon": 31.0
     },
     {
       "id": "bhr",
@@ -100,7 +112,9 @@
       "nameEn": "Beheiri (Beheira)",
       "country": "مصر",
       "countryEn": "Egypt",
-      "region": "nile"
+      "region": "nile",
+      "lat": 31.03,
+      "lon": 30.47
     },
     {
       "id": "dmt",
@@ -108,7 +122,9 @@
       "nameEn": "Dumyati (Damietta)",
       "country": "مصر",
       "countryEn": "Egypt",
-      "region": "nile"
+      "region": "nile",
+      "lat": 31.42,
+      "lon": 31.81
     },
     {
       "id": "kfs",
@@ -116,7 +132,9 @@
       "nameEn": "Kafrawi (Kafr El Sheikh)",
       "country": "مصر",
       "countryEn": "Egypt",
-      "region": "nile"
+      "region": "nile",
+      "lat": 31.11,
+      "lon": 30.94
     },
     {
       "id": "sai",
@@ -124,7 +142,9 @@
       "nameEn": "Upper Egypt (Sa'idi)",
       "country": "مصر",
       "countryEn": "Egypt",
-      "region": "nile"
+      "region": "nile",
+      "lat": 26.56,
+      "lon": 31.69
     },
     {
       "id": "sin",
@@ -132,7 +152,9 @@
       "nameEn": "Sinai (Bedouin)",
       "country": "مصر",
       "countryEn": "Egypt",
-      "region": "nile"
+      "region": "nile",
+      "lat": 30.3,
+      "lon": 33.8
     },
     {
       "id": "dam",
@@ -140,7 +162,9 @@
       "nameEn": "Damascus",
       "country": "سوريا",
       "countryEn": "Syria",
-      "region": "levant"
+      "region": "levant",
+      "lat": 33.51,
+      "lon": 36.29
     },
     {
       "id": "alp",
@@ -148,7 +172,9 @@
       "nameEn": "Aleppo",
       "country": "سوريا",
       "countryEn": "Syria",
-      "region": "levant"
+      "region": "levant",
+      "lat": 36.2,
+      "lon": 37.16
     },
     {
       "id": "leb",
@@ -156,7 +182,9 @@
       "nameEn": "Beirut",
       "country": "لبنان",
       "countryEn": "Lebanon",
-      "region": "levant"
+      "region": "levant",
+      "lat": 33.89,
+      "lon": 35.5
     },
     {
       "id": "psu",
@@ -164,7 +192,9 @@
       "nameEn": "Palestinian (urban)",
       "country": "فلسطين",
       "countryEn": "Palestine",
-      "region": "levant"
+      "region": "levant",
+      "lat": 31.77,
+      "lon": 35.21
     },
     {
       "id": "psr",
@@ -172,7 +202,9 @@
       "nameEn": "Palestinian (rural)",
       "country": "فلسطين",
       "countryEn": "Palestine",
-      "region": "levant"
+      "region": "levant",
+      "lat": 32.22,
+      "lon": 35.26
     },
     {
       "id": "jor",
@@ -180,7 +212,9 @@
       "nameEn": "Jordanian",
       "country": "الأردن",
       "countryEn": "Jordan",
-      "region": "levant"
+      "region": "levant",
+      "lat": 31.95,
+      "lon": 35.93
     },
     {
       "id": "bag",
@@ -188,7 +222,9 @@
       "nameEn": "Baghdad",
       "country": "العراق",
       "countryEn": "Iraq",
-      "region": "iraq"
+      "region": "iraq",
+      "lat": 33.31,
+      "lon": 44.36
     },
     {
       "id": "mos",
@@ -196,7 +232,9 @@
       "nameEn": "Mosul",
       "country": "العراق",
       "countryEn": "Iraq",
-      "region": "iraq"
+      "region": "iraq",
+      "lat": 36.34,
+      "lon": 43.13
     },
     {
       "id": "bas",
@@ -204,7 +242,9 @@
       "nameEn": "Basra",
       "country": "العراق",
       "countryEn": "Iraq",
-      "region": "iraq"
+      "region": "iraq",
+      "lat": 30.51,
+      "lon": 47.78
     },
     {
       "id": "naj",
@@ -212,7 +252,9 @@
       "nameEn": "Najdi",
       "country": "السعودية",
       "countryEn": "Saudi Arabia",
-      "region": "gulf"
+      "region": "gulf",
+      "lat": 24.71,
+      "lon": 46.68
     },
     {
       "id": "hij",
@@ -220,7 +262,9 @@
       "nameEn": "Hijazi",
       "country": "السعودية",
       "countryEn": "Saudi Arabia",
-      "region": "gulf"
+      "region": "gulf",
+      "lat": 21.49,
+      "lon": 39.19
     },
     {
       "id": "jiz",
@@ -228,7 +272,9 @@
       "nameEn": "Jazani",
       "country": "السعودية",
       "countryEn": "Saudi Arabia",
-      "region": "gulf"
+      "region": "gulf",
+      "lat": 16.89,
+      "lon": 42.55
     },
     {
       "id": "shm",
@@ -236,7 +282,9 @@
       "nameEn": "Northern Saudi",
       "country": "السعودية",
       "countryEn": "Saudi Arabia",
-      "region": "gulf"
+      "region": "gulf",
+      "lat": 27.52,
+      "lon": 41.69
     },
     {
       "id": "kuw",
@@ -244,7 +292,9 @@
       "nameEn": "Kuwaiti",
       "country": "الكويت",
       "countryEn": "Kuwait",
-      "region": "gulf"
+      "region": "gulf",
+      "lat": 29.38,
+      "lon": 47.99
     },
     {
       "id": "emi",
@@ -252,7 +302,9 @@
       "nameEn": "Emirati",
       "country": "الإمارات",
       "countryEn": "UAE",
-      "region": "gulf"
+      "region": "gulf",
+      "lat": 24.45,
+      "lon": 54.38
     },
     {
       "id": "qat",
@@ -260,7 +312,9 @@
       "nameEn": "Qatari",
       "country": "قطر",
       "countryEn": "Qatar",
-      "region": "gulf"
+      "region": "gulf",
+      "lat": 25.29,
+      "lon": 51.53
     },
     {
       "id": "bah",
@@ -268,7 +322,9 @@
       "nameEn": "Bahraini",
       "country": "البحرين",
       "countryEn": "Bahrain",
-      "region": "gulf"
+      "region": "gulf",
+      "lat": 26.23,
+      "lon": 50.59
     },
     {
       "id": "oma",
@@ -276,7 +332,9 @@
       "nameEn": "Muscat",
       "country": "عُمان",
       "countryEn": "Oman",
-      "region": "gulf"
+      "region": "gulf",
+      "lat": 23.59,
+      "lon": 58.41
     },
     {
       "id": "dho",
@@ -284,7 +342,9 @@
       "nameEn": "Dhofari",
       "country": "عُمان",
       "countryEn": "Oman",
-      "region": "gulf"
+      "region": "gulf",
+      "lat": 17.02,
+      "lon": 54.09
     },
     {
       "id": "san",
@@ -292,7 +352,9 @@
       "nameEn": "Sana'a",
       "country": "اليمن",
       "countryEn": "Yemen",
-      "region": "yemen"
+      "region": "yemen",
+      "lat": 15.37,
+      "lon": 44.19
     },
     {
       "id": "ade",
@@ -300,7 +362,9 @@
       "nameEn": "Aden",
       "country": "اليمن",
       "countryEn": "Yemen",
-      "region": "yemen"
+      "region": "yemen",
+      "lat": 12.79,
+      "lon": 45.02
     },
     {
       "id": "had",
@@ -308,7 +372,9 @@
       "nameEn": "Hadhrami",
       "country": "اليمن",
       "countryEn": "Yemen",
-      "region": "yemen"
+      "region": "yemen",
+      "lat": 14.54,
+      "lon": 49.13
     },
     {
       "id": "sud",
@@ -316,7 +382,9 @@
       "nameEn": "Sudanese",
       "country": "السودان",
       "countryEn": "Sudan",
-      "region": "nile"
+      "region": "nile",
+      "lat": 15.5,
+      "lon": 32.56
     },
     {
       "id": "chd",
@@ -324,7 +392,9 @@
       "nameEn": "Chadian Arabic",
       "country": "تشاد",
       "countryEn": "Chad",
-      "region": "nile"
+      "region": "nile",
+      "lat": 12.13,
+      "lon": 15.06
     },
     {
       "id": "mar",
@@ -332,7 +402,9 @@
       "nameEn": "Casablanca",
       "country": "المغرب",
       "countryEn": "Morocco",
-      "region": "maghreb"
+      "region": "maghreb",
+      "lat": 33.57,
+      "lon": -7.59
     },
     {
       "id": "jeb",
@@ -340,7 +412,9 @@
       "nameEn": "Jebli (North)",
       "country": "المغرب",
       "countryEn": "Morocco",
-      "region": "maghreb"
+      "region": "maghreb",
+      "lat": 35.17,
+      "lon": -5.27
     },
     {
       "id": "alg",
@@ -348,7 +422,9 @@
       "nameEn": "Algiers",
       "country": "الجزائر",
       "countryEn": "Algeria",
-      "region": "maghreb"
+      "region": "maghreb",
+      "lat": 36.75,
+      "lon": 3.06
     },
     {
       "id": "tun",
@@ -356,7 +432,9 @@
       "nameEn": "Tunis",
       "country": "تونس",
       "countryEn": "Tunisia",
-      "region": "maghreb"
+      "region": "maghreb",
+      "lat": 36.81,
+      "lon": 10.18
     },
     {
       "id": "tri",
@@ -364,7 +442,9 @@
       "nameEn": "Tripoli",
       "country": "ليبيا",
       "countryEn": "Libya",
-      "region": "maghreb"
+      "region": "maghreb",
+      "lat": 32.89,
+      "lon": 13.19
     },
     {
       "id": "ben",
@@ -372,7 +452,9 @@
       "nameEn": "Benghazi",
       "country": "ليبيا",
       "countryEn": "Libya",
-      "region": "maghreb"
+      "region": "maghreb",
+      "lat": 32.12,
+      "lon": 20.07
     },
     {
       "id": "has",
@@ -380,7 +462,9 @@
       "nameEn": "Hassaniya",
       "country": "موريتانيا",
       "countryEn": "Mauritania",
-      "region": "maghreb"
+      "region": "maghreb",
+      "lat": 18.08,
+      "lon": -15.98
     }
   ],
   "categories": [

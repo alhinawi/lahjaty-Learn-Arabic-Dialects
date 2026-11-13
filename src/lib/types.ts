@@ -14,6 +14,9 @@ export interface Dialect {
   country: string
   countryEn: string
   region: RegionId
+  /** Where the dialect is centred, for the map. */
+  lat?: number
+  lon?: number
 }
 
 export interface Category {

@@ -1,4 +1,4 @@
-import { Languages } from 'lucide-react'
+import { Languages, Monitor, Moon, Sun } from 'lucide-react'
 import MyDialectList from '../components/MyDialectList'
 import { getDialect } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
@@ -11,6 +11,8 @@ export default function SettingsPage() {
   const toggleLang = useApp((s) => s.toggleLang)
   const mine = getDialect(useApp((s) => s.myDialectId) ?? undefined)
   const setMyDialect = useApp((s) => s.setMyDialect)
+  const theme = useApp((s) => s.theme)
+  const setTheme = useApp((s) => s.setTheme)
 
   return (
     <div className="space-y-4">
@@ -26,6 +28,32 @@ export default function SettingsPage() {
           <Languages className="h-4 w-4" aria-hidden />
           {lang === 'ar' ? 'العربية' : 'English'} → {t('langToggle')}
         </button>
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+        <h2 className="font-bold">{t('appearance')}</h2>
+        <div className="mt-3 grid grid-cols-3 gap-2">
+          {(
+            [
+              ['system', t('themeSystem'), Monitor],
+              ['light', t('themeLight'), Sun],
+              ['dark', t('themeDark'), Moon],
+            ] as const
+          ).map(([id, label, Icon]) => (
+            <button
+              key={id}
+              type="button"
+              onClick={() => setTheme(id)}
+              aria-pressed={theme === id}
+              className={`flex flex-col items-center gap-1 rounded-xl border p-2.5 text-xs font-semibold transition ${
+                theme === id ? 'border-brand-600 bg-brand-50 text-brand-700' : 'border-slate-200 text-slate-600'
+              }`}
+            >
+              <Icon className="h-4 w-4" aria-hidden />
+              {label}
+            </button>
+          ))}
+        </div>
       </section>
 
       <section id="my-dialect" className="space-y-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">

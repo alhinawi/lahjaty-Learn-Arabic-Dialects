@@ -16,7 +16,20 @@ import SettingsPage from './pages/SettingsPage'
 
 export default function App() {
   const lang = useApp((s) => s.lang)
+  const theme = useApp((s) => s.theme)
   const { pathname } = useLocation()
+
+  useEffect(() => {
+    const media = window.matchMedia('(prefers-color-scheme: dark)')
+    const apply = () => {
+      const dark = theme === 'dark' || (theme === 'system' && media.matches)
+      document.documentElement.classList.toggle('dark', dark)
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0d1413' : '#0e5443')
+    }
+    apply()
+    media.addEventListener('change', apply)
+    return () => media.removeEventListener('change', apply)
+  }, [theme])
 
   useEffect(() => {
     document.documentElement.lang = lang

@@ -1,6 +1,8 @@
-import { ChevronLeft, Columns3, GraduationCap } from 'lucide-react'
+import { Columns3, GraduationCap } from 'lucide-react'
 import { Link } from 'react-router'
 import CategoryIcon from '../components/CategoryIcon'
+import DialectMap from '../components/DialectMap'
+import Hero from '../components/Hero'
 import DialectChip from '../components/DialectChip'
 import FamousHighlight from '../components/FamousHighlight'
 import ProgressBar from '../components/ProgressBar'
@@ -22,22 +24,7 @@ export default function HomePage() {
 
   return (
     <div className="space-y-6">
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-700 to-brand-900 p-5 text-white shadow">
-        <div aria-hidden className="absolute -top-10 -end-10 h-40 w-40 rounded-full bg-sun-400/20" />
-        <div aria-hidden className="absolute -bottom-12 -start-6 h-32 w-32 rounded-full bg-white/10" />
-        <p className="relative text-xs font-semibold tracking-wide text-sun-400">{t('tagline')}</p>
-        <h1 className="relative mt-1 text-2xl leading-snug font-bold">{t('heroTitle')}</h1>
-        <p className="relative mt-2 text-sm text-brand-100">
-          {t('heroBody')}
-        </p>
-        <Link
-          to="/lessons"
-          className="relative mt-4 inline-flex items-center gap-1 rounded-full bg-sun-400 px-4 py-2 text-sm font-bold text-brand-900 hover:bg-sun-500"
-        >
-          {t('startLearning')}
-          <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
-        </Link>
-      </section>
+      <Hero />
 
       <FamousHighlight />
 
@@ -46,16 +33,18 @@ export default function HomePage() {
         <ProgressBar value={learnedHere} total={phrases.length} label={t('learnedOf', { n: learnedHere, total: phrases.length })} />
       </section>
 
+      <DialectMap />
+
       <section>
         <h2 className="mb-3 text-lg font-bold">{t('situations')}</h2>
-        <div className="grid grid-cols-3 gap-2.5">
+        <div className="stagger grid grid-cols-3 gap-2.5">
           {categories.map((c) => (
             <Link
               key={c.id}
               to={`/lessons/${c.id}`}
-              className="flex flex-col items-center gap-2 rounded-2xl border border-slate-200 bg-white p-3 text-center shadow-sm hover:border-brand-500"
+              className="lift flex flex-col items-center gap-2 rounded-2xl border border-slate-200 bg-white p-3 text-center shadow-sm hover:border-sun-400"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-sand-100 text-brand-700">
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-50 to-sand-100 text-brand-700 ring-1 ring-sun-400/30">
                 <CategoryIcon id={c.id} className="h-5 w-5" />
               </span>
               <span className="text-xs leading-tight font-semibold text-slate-800">{name(c)}</span>
@@ -66,12 +55,12 @@ export default function HomePage() {
       </section>
 
       <section className="grid grid-cols-2 gap-3">
-        <Link to="/compare" className="rounded-2xl bg-sand-100 p-4 hover:bg-sand-200">
+        <Link to="/compare" className="lift rounded-2xl bg-sand-100 p-4 ring-1 ring-sun-400/25">
           <Columns3 className="h-6 w-6 text-brand-700" aria-hidden />
           <h3 className="mt-2 font-bold">{t('compareTitle')}</h3>
           <p className="mt-1 text-xs text-slate-600">{t('compareBody')}</p>
         </Link>
-        <Link to="/practice" className="rounded-2xl bg-brand-50 p-4 hover:bg-brand-100">
+        <Link to="/practice" className="lift rounded-2xl bg-brand-50 p-4 ring-1 ring-brand-200">
           <GraduationCap className="h-6 w-6 text-brand-700" aria-hidden />
           <h3 className="mt-2 font-bold">{t('practiceTitle')}</h3>
           <p className="mt-1 text-xs text-slate-600">{t('practiceBody')}</p>
