@@ -1,7 +1,8 @@
-import { BookOpen, ChevronLeft, Sparkles } from 'lucide-react'
+import { BookOpen, ChevronLeft, MapPinned, Sparkles } from 'lucide-react'
 import { Link, useNavigate, useParams } from 'react-router'
 import FamousCard from '../components/FamousCard'
 import { famousFor, getDialect, regions } from '../lib/content'
+import { egyptNodeForDialect } from '../lib/egypt'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
 import NotFoundPage from './NotFoundPage'
@@ -20,6 +21,7 @@ export default function DialectPage() {
   const famous = famousFor(dialect.id)
   const isLearning = learning === dialect.id
 
+  const egyptNode = egyptNodeForDialect(dialect.id)
   return (
     <div className="space-y-4">
       <section className="rounded-3xl bg-gradient-to-br from-brand-700 to-brand-900 p-5 text-white shadow">
@@ -40,6 +42,15 @@ export default function DialectPage() {
           {isLearning ? t('learningThis') : t('learnThisDialect')}
           <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
         </button>
+        {egyptNode && (
+          <Link
+            to={`/egypt/${egyptNode.id}`}
+            className="ms-2 mt-4 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold ring-1 ring-white/20 hover:bg-white/15"
+          >
+            <MapPinned className="h-4 w-4 text-sun-300" aria-hidden />
+            {t('egyptAbout')}
+          </Link>
+        )}
       </section>
 
       <section id="famous" className="space-y-3">

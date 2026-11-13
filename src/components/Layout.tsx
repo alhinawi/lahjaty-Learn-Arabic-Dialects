@@ -1,4 +1,4 @@
-import { BookOpen, Columns3, GraduationCap, Heart, House, Languages, Moon, Settings, Sun } from 'lucide-react'
+import { BookOpen, Columns3, GraduationCap, Heart, House, Languages, Moon, Search, Settings, Sun } from 'lucide-react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
 import { useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
@@ -51,6 +51,9 @@ export default function Layout() {
             >
               {dark ? <Sun className="h-4 w-4 text-sun-300" aria-hidden /> : <Moon className="h-4 w-4" aria-hidden />}
             </button>
+            <Link to="/search" aria-label={t('searchLabel')} className={`${iconBtn} h-8 w-8`}>
+              <Search className="h-4 w-4" aria-hidden />
+            </Link>
             <Link to="/settings" aria-label={t('settings')} className={`${iconBtn} h-8 w-8`}>
               <Settings className="h-4 w-4" aria-hidden />
             </Link>

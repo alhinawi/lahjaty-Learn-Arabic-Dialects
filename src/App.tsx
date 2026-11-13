@@ -4,6 +4,9 @@ import Layout from './components/Layout'
 import { useApp } from './lib/store'
 import ComparePage from './pages/ComparePage'
 import DialectPage from './pages/DialectPage'
+import EgyptNodePage from './pages/EgyptNodePage'
+import EgyptPage from './pages/EgyptPage'
+import SearchPage from './pages/SearchPage'
 import DialectsPage from './pages/DialectsPage'
 import FavoritesPage from './pages/FavoritesPage'
 import HomePage from './pages/HomePage'
@@ -47,6 +50,9 @@ export default function App() {
         <Route index element={<HomePage />} />
         <Route path="dialects" element={<DialectsPage />} />
         <Route path="dialects/:dialectId" element={<DialectPage />} />
+        <Route path="egypt" element={<EgyptPage />} />
+        <Route path="egypt/:nodeId" element={<EgyptNodePage />} />
+        <Route path="search" element={<SearchPage />} />
         <Route path="settings" element={<SettingsPage />} />
         <Route path="lessons" element={<LessonsPage />} />
         <Route path="lessons/:categoryId" element={<LessonPage />} />

@@ -1,0 +1,1742 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "bw",
+      "text": "Peter Behnstedt & Manfred Woidich, Die ägyptisch-arabischen Dialekte, 5 vols. Wiesbaden: Reichert, 1985–1999."
+    },
+    {
+      "id": "woidich2006",
+      "text": "Manfred Woidich, Das Kairenisch-Arabische: Eine Grammatik. Wiesbaden: Harrassowitz, 2006."
+    },
+    {
+      "id": "woidich1993",
+      "text": "Manfred Woidich, \"Die Dialekte der ägyptischen Oasen: westliches oder östliches Arabisch?\" Zeitschrift für arabische Linguistik 25 (1993)."
+    },
+    {
+      "id": "dejong2000",
+      "text": "Rudolf de Jong, A Grammar of the Bedouin Dialects of the Northern Sinai Littoral. Leiden: Brill, 2000."
+    },
+    {
+      "id": "dejong2011",
+      "text": "Rudolf de Jong, A Grammar of the Bedouin Dialects of Central and Southern Sinai. Leiden: Brill, 2011."
+    },
+    {
+      "id": "souag2013",
+      "text": "Lameen Souag, Berber and Arabic in Siwa (Egypt): A Study in Linguistic Contact. Köln: Rüdiger Köppe, 2013."
+    },
+    {
+      "id": "bechhaus2011",
+      "text": "Marianne Bechhaus-Gerst, The (Hi)story of Nobiin: 1000 Years of Language Change. Frankfurt: Peter Lang, 2011."
+    }
+  ],
+  "contrasts": [
+    {
+      "id": "qal",
+      "label": {
+        "ar": "قال",
+        "en": "he said"
+      },
+      "forms": [
+        {
+          "node": "cairo",
+          "text": "آل",
+          "ipa": "ʔāl"
+        },
+        {
+          "node": "delta",
+          "text": "آل",
+          "ipa": "ʔāl"
+        },
+        {
+          "node": "saeed",
+          "text": "جال",
+          "ipa": "gāl"
+        },
+        {
+          "node": "sinai",
+          "text": "جال",
+          "ipa": "gāl"
+        },
+        {
+          "node": "awlad-ali",
+          "text": "جال",
+          "ipa": "gāl"
+        }
+      ]
+    },
+    {
+      "id": "gamal",
+      "label": {
+        "ar": "جمل",
+        "en": "camel"
+      },
+      "forms": [
+        {
+          "node": "cairo",
+          "text": "جَمَل",
+          "ipa": "gamal"
+        },
+        {
+          "node": "north-saeed",
+          "text": "جَمَل",
+          "ipa": "gamal"
+        },
+        {
+          "node": "south-saeed",
+          "text": "جَمَل",
+          "ipa": "dʒamal"
+        }
+      ]
+    },
+    {
+      "id": "talata",
+      "label": {
+        "ar": "ثلاثة",
+        "en": "three"
+      },
+      "forms": [
+        {
+          "node": "cairo",
+          "text": "تلاتة",
+          "ipa": "talāta"
+        },
+        {
+          "node": "sinai",
+          "text": "ثلاثة",
+          "ipa": "θalāθa"
+        }
+      ]
+    },
+    {
+      "id": "now",
+      "label": {
+        "ar": "الآن",
+        "en": "now"
+      },
+      "forms": [
+        {
+          "node": "cairo",
+          "text": "دلوقتي",
+          "ipa": "dilwaʔti"
+        },
+        {
+          "node": "saeed",
+          "text": "دلوك",
+          "ipa": "dilwak"
+        }
+      ]
+    },
+    {
+      "id": "write1",
+      "label": {
+        "ar": "أكتب / نكتب",
+        "en": "I write / we write"
+      },
+      "forms": [
+        {
+          "node": "cairo",
+          "text": "أكتب / نكتب",
+          "ipa": "aktib / niktib"
+        },
+        {
+          "node": "alx",
+          "text": "نكتب / نكتبوا",
+          "ipa": "niktib / niktibu"
+        },
+        {
+          "node": "west-delta",
+          "text": "نكتب / نكتبوا",
+          "ipa": "niktib / niktibu"
+        }
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "cairo",
+      "kind": "arabic",
+      "name": "القاهرة الكبرى",
+      "nameEn": "Greater Cairo",
+      "governorates": {
+        "ar": [
+          "القاهرة",
+          "الجيزة",
+          "مدن القليوبية المتصلة بالقاهرة مثل شبرا الخيمة"
+        ],
+        "en": [
+          "Cairo",
+          "Giza",
+          "Qalyubia towns joined to Cairo, such as Shubra El Kheima"
+        ]
+      },
+      "summary": {
+        "ar": "لهجة القاهرة هي اللهجة المصرية التي يعرفها العرب من الأفلام والأغاني والإعلام، وهي الأساس الذي تقاس عليه باقي لهجات مصر في هذا القسم.",
+        "en": "Cairene is the Egyptian Arabic that the Arab world knows from film, song and TV, and it is the yardstick the other Egyptian varieties in this section are compared with."
+      },
+      "history": {
+        "ar": "اختلط في القاهرة على مدى قرون ناس من كل أقاليم مصر، فخرجت لهجة مدينة واحدة. ومع السينما والإذاعة في القرن العشرين انتشرت في مصر كلها وخارجها.",
+        "en": "For centuries Cairo drew people from every part of Egypt, and one city speech came out of the mix. Cinema and radio in the 20th century carried it across Egypt and beyond."
+      },
+      "features": [
+        {
+          "ar": "القاف تنطق همزة: «قلب» تصبح «ألب».",
+          "en": "Qaf is a glottal stop: qalb 'heart' is ʔalb."
+        },
+        {
+          "ar": "الجيم تنطق g مثل كلمة go: «جميل» gamīl.",
+          "en": "Jim is a hard g: gamīl 'beautiful'."
+        },
+        {
+          "ar": "الثاء والذال تنطقان غالبًا تاء ودالًا (تلاتة، ده)، وفي الكلمات المأخوذة من الفصحى سينًا وزايًا (مِسل، زِكري).",
+          "en": "Th and dh mostly become t and d (talāta, da); in words taken from Standard Arabic they become s and z."
+        },
+        {
+          "ar": "النفي بـ «ما...ش» حول الفعل: «ما كتبتش».",
+          "en": "Negation wraps the verb in ma-...-š: ma katabtiš."
+        },
+        {
+          "ar": "المضارع يأخذ «بـ» للعادة والحاضر: «باكتب»، و«هـ» للمستقبل: «هاكتب».",
+          "en": "The present takes b- (baktib 'I write') and the future ha- (haktib)."
+        },
+        {
+          "ar": "أدوات الإشارة بعد الاسم: «الكتاب ده»، «البنت دي».",
+          "en": "Demonstratives follow the noun: il-kitāb da, il-bint di."
+        }
+      ],
+      "sources": [
+        "woidich2006",
+        "bw"
+      ],
+      "points": [
+        [
+          31.24,
+          30.04,
+          "القاهرة",
+          "Cairo"
+        ],
+        [
+          31.21,
+          30.01,
+          "الجيزة",
+          "Giza"
+        ]
+      ],
+      "varieties": [
+        {
+          "id": "cai",
+          "kind": "arabic",
+          "dialectId": "cai",
+          "name": "القاهرية",
+          "nameEn": "Cairene",
+          "area": {
+            "ar": "مدينتا القاهرة والجيزة وما اتصل بهما",
+            "en": "The cities of Cairo and Giza and what has grown into them"
+          },
+          "summary": {
+            "ar": "الجيزة جزء من القاهرة الكبرى ولغتها اليومية هي القاهرية نفسها، لذلك جمعناهما في لهجة واحدة.",
+            "en": "Giza is part of Greater Cairo and speaks Cairene itself, so the two are one variety here."
+          },
+          "subVarieties": [
+            {
+              "id": "cairo-popular",
+              "kind": "arabic",
+              "name": "كلام الأحياء الشعبية",
+              "nameEn": "Popular quarters",
+              "area": {
+                "ar": "الأحياء الشعبية القديمة والجديدة في القاهرة والجيزة",
+                "en": "Old and new working-class quarters of Cairo and Giza"
+              },
+              "summary": {
+                "ar": "نفس قواعد القاهرية ونطقها. الفرق في المفردات العامية والتعبيرات الجديدة التي تولد في الشارع ثم تنتشر في مصر كلها.",
+                "en": "The same grammar and sounds as Cairene. The difference is street vocabulary and new expressions that start here and spread across Egypt."
+              }
+            },
+            {
+              "id": "cairo-rural",
+              "kind": "arabic",
+              "name": "ريف القاهرة الكبرى",
+              "nameEn": "Rural Greater Cairo",
+              "area": {
+                "ar": "القرى حول القاهرة في الجيزة والقليوبية",
+                "en": "Villages around Cairo in Giza and Qalyubia"
+              },
+              "summary": {
+                "ar": "قرى حول المدينة لها لهجات ريفية. كلما ابتعدت جنوبًا في ريف الجيزة يقترب الكلام من لهجات شمال الصعيد، وكلما اتجهت شمالًا في القليوبية يقترب من لهجات الدلتا.",
+                "en": "The villages around the city speak rural varieties: southwards in rural Giza they shade into northern Upper Egyptian, northwards in Qalyubia into the Delta."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "delta",
+      "kind": "arabic",
+      "name": "الدلتا",
+      "nameEn": "The Nile Delta",
+      "governorates": {
+        "ar": [
+          "الدقهلية",
+          "دمياط",
+          "الغربية",
+          "المنوفية",
+          "الشرقية",
+          "كفر الشيخ",
+          "القليوبية",
+          "البحيرة"
+        ],
+        "en": [
+          "Dakahlia",
+          "Damietta",
+          "Gharbia",
+          "Monufia",
+          "Sharqia",
+          "Kafr El Sheikh",
+          "Qalyubia",
+          "Beheira"
+        ]
+      },
+      "summary": {
+        "ar": "لهجات الدلتا ريفية في أغلبها، وتشبه القاهرية في معظم الأصوات. الفروق الحقيقية بين شرق الدلتا ووسطها وغربها، لا بين كل محافظة وأخرى.",
+        "en": "Delta speech is mostly rural and shares most of its sounds with Cairene. The real differences run between the east, the centre and the west of the Delta, not between every governorate."
+      },
+      "history": {
+        "ar": "الدلتا أكثر مناطق مصر سكانًا وأقدمها زراعة. بعض قرى الأطراف، خصوصًا في الشرق والغرب، استقر فيها بدو، فبقيت في كلامها ملامح بدوية.",
+        "en": "The Delta is Egypt's most populous and oldest farming land. Some villages on its edges, above all in the east and west, were settled by Bedouin and keep Bedouin traits."
+      },
+      "features": [
+        {
+          "ar": "القاف همزة في أغلب الدلتا مثل القاهرة.",
+          "en": "Qaf is a glottal stop in most of the Delta, as in Cairo."
+        },
+        {
+          "ar": "الجيم g مثل القاهرة.",
+          "en": "Jim is a hard g, as in Cairo."
+        },
+        {
+          "ar": "في قرى ذات أصل بدوي، خاصة في شرق الشرقية، تنطق القاف g: «قال» gāl.",
+          "en": "In villages of Bedouin origin, notably in eastern Sharqia, qaf is g: gāl."
+        },
+        {
+          "ar": "في غرب الدلتا يبدأ المتكلم المفرد بـ «نـ» والجمع بـ «نـ...وا»: «نكتب» أي أكتب، و«نكتبوا» أي نكتب.",
+          "en": "In the western Delta 'I' takes n- and 'we' takes n-...-u: niktib 'I write', niktibu 'we write'."
+        }
+      ],
+      "sources": [
+        "bw"
+      ],
+      "points": [
+        [
+          31.38,
+          31.04,
+          "المنصورة",
+          "Mansoura"
+        ],
+        [
+          31.81,
+          31.42,
+          "دمياط",
+          "Damietta"
+        ],
+        [
+          31.0,
+          30.79,
+          "طنطا",
+          "Tanta"
+        ],
+        [
+          31.01,
+          30.55,
+          "شبين الكوم",
+          "Shibin El Kom"
+        ],
+        [
+          31.5,
+          30.58,
+          "الزقازيق",
+          "Zagazig"
+        ],
+        [
+          30.94,
+          31.11,
+          "كفر الشيخ",
+          "Kafr El Sheikh"
+        ],
+        [
+          31.18,
+          30.46,
+          "بنها",
+          "Banha"
+        ],
+        [
+          30.47,
+          31.03,
+          "دمنهور",
+          "Damanhur"
+        ]
+      ],
+      "varieties": [
+        {
+          "id": "east-delta",
+          "kind": "arabic",
+          "name": "شرق الدلتا",
+          "nameEn": "Eastern Delta",
+          "area": {
+            "ar": "الشرقية والدقهلية ودمياط",
+            "en": "Sharqia, Dakahlia and Damietta"
+          },
+          "summary": {
+            "ar": "أطراف الشرق قريبة من الصحراء وسيناء، وفيها قرى بدوية الأصل تنطق القاف g. أما المدن والقرى القديمة فكلامها قريب من وسط الدلتا.",
+            "en": "The eastern fringe borders the desert and Sinai and has villages of Bedouin origin that say g for qaf; older towns and villages sound closer to the central Delta."
+          },
+          "subVarieties": [
+            {
+              "id": "shq",
+              "kind": "arabic",
+              "dialectId": "shq",
+              "name": "الشرقاوي",
+              "nameEn": "Sharqawi",
+              "area": {
+                "ar": "محافظة الشرقية",
+                "en": "Sharqia governorate"
+              },
+              "governorates": {
+                "ar": [
+                  "الشرقية"
+                ],
+                "en": [
+                  "Sharqia"
+                ]
+              },
+              "points": [
+                [
+                  31.5,
+                  30.58,
+                  "الزقازيق",
+                  "Zagazig"
+                ]
+              ]
+            },
+            {
+              "id": "dkh",
+              "kind": "arabic",
+              "dialectId": "dkh",
+              "name": "الدقهلاوي",
+              "nameEn": "Daqahlawi",
+              "area": {
+                "ar": "محافظة الدقهلية",
+                "en": "Dakahlia governorate"
+              },
+              "governorates": {
+                "ar": [
+                  "الدقهلية"
+                ],
+                "en": [
+                  "Dakahlia"
+                ]
+              },
+              "points": [
+                [
+                  31.38,
+                  31.04,
+                  "المنصورة",
+                  "Mansoura"
+                ]
+              ]
+            },
+            {
+              "id": "dmt",
+              "kind": "arabic",
+              "dialectId": "dmt",
+              "name": "الدمياطي",
+              "nameEn": "Dumyati",
+              "area": {
+                "ar": "محافظة دمياط",
+                "en": "Damietta governorate"
+              },
+              "governorates": {
+                "ar": [
+                  "دمياط"
+                ],
+                "en": [
+                  "Damietta"
+                ]
+              },
+              "points": [
+                [
+                  31.81,
+                  31.42,
+                  "دمياط",
+                  "Damietta"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "central-delta",
+          "kind": "arabic",
+          "name": "وسط الدلتا",
+          "nameEn": "Central Delta",
+          "area": {
+            "ar": "المنوفية والغربية وكفر الشيخ والقليوبية",
+            "en": "Monufia, Gharbia, Kafr El Sheikh and Qalyubia"
+          },
+          "summary": {
+            "ar": "قلب الدلتا الزراعي، وكلامه ريفي قريب من القاهرية في الأصوات، ويختلف عنها في بعض الكلمات والتنغيم.",
+            "en": "The farming heart of the Delta: rural speech close to Cairene in its sounds, different in some words and in intonation."
+          },
+          "subVarieties": [
+            {
+              "id": "mnf",
+              "kind": "arabic",
+              "dialectId": "mnf",
+              "name": "المنوفي",
+              "nameEn": "Menoufi",
+              "area": {
+                "ar": "محافظة المنوفية",
+                "en": "Monufia governorate"
+              },
+              "governorates": {
+                "ar": [
+                  "المنوفية"
+                ],
+                "en": [
+                  "Monufia"
+                ]
+              },
+              "points": [
+                [
+                  31.01,
+                  30.55,
+                  "شبين الكوم",
+                  "Shibin El Kom"
+                ]
+              ]
+            },
+            {
+              "id": "ghr",
+              "kind": "arabic",
+              "dialectId": "ghr",
+              "name": "الغرباوي",
+              "nameEn": "Gharbawi",
+              "area": {
+                "ar": "محافظة الغربية",
+                "en": "Gharbia governorate"
+              },
+              "governorates": {
+                "ar": [
+                  "الغربية"
+                ],
+                "en": [
+                  "Gharbia"
+                ]
+              },
+              "points": [
+                [
+                  31.0,
+                  30.79,
+                  "طنطا",
+                  "Tanta"
+                ]
+              ]
+            },
+            {
+              "id": "kfs",
+              "kind": "arabic",
+              "dialectId": "kfs",
+              "name": "الكفراوي",
+              "nameEn": "Kafrawi",
+              "area": {
+                "ar": "محافظة كفر الشيخ",
+                "en": "Kafr El Sheikh governorate"
+              },
+              "governorates": {
+                "ar": [
+                  "كفر الشيخ"
+                ],
+                "en": [
+                  "Kafr El Sheikh"
+                ]
+              },
+              "points": [
+                [
+                  30.94,
+                  31.11,
+                  "كفر الشيخ",
+                  "Kafr El Sheikh"
+                ]
+              ]
+            },
+            {
+              "id": "qalyubia",
+              "kind": "arabic",
+              "name": "القليوبية",
+              "nameEn": "Qalyubia",
+              "area": {
+                "ar": "محافظة القليوبية",
+                "en": "Qalyubia governorate"
+              },
+              "governorates": {
+                "ar": [
+                  "القليوبية"
+                ],
+                "en": [
+                  "Qalyubia"
+                ]
+              },
+              "summary": {
+                "ar": "جنوب القليوبية متصل بالقاهرة ويتكلم القاهرية، وقراها في الشمال أقرب إلى كلام المنوفية والغربية.",
+                "en": "Southern Qalyubia has merged with Cairo and speaks Cairene; its northern villages are closer to Monufia and Gharbia."
+              },
+              "points": [
+                [
+                  31.18,
+                  30.46,
+                  "بنها",
+                  "Banha"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "west-delta",
+          "kind": "arabic",
+          "name": "غرب الدلتا",
+          "nameEn": "Western Delta",
+          "area": {
+            "ar": "البحيرة",
+            "en": "Beheira"
+          },
+          "governorates": {
+            "ar": [
+              "البحيرة"
+            ],
+            "en": [
+              "Beheira"
+            ]
+          },
+          "summary": {
+            "ar": "البحيرة على حدود الصحراء الغربية. من أوضح ما يميزها «نكتب» للمفرد و«نكتبوا» للجمع، وهو نظام تشاركه مع الإسكندرية.",
+            "en": "Beheira borders the Western Desert. Its clearest mark is niktib 'I write' and niktibu 'we write', a system it shares with Alexandria."
+          },
+          "features": [
+            {
+              "ar": "«نكتب» = أكتب، «نكتبوا» = نكتب.",
+              "en": "niktib = I write, niktibu = we write."
+            }
+          ],
+          "subVarieties": [
+            {
+              "id": "bhr",
+              "kind": "arabic",
+              "dialectId": "bhr",
+              "name": "البحيري",
+              "nameEn": "Beheiri",
+              "area": {
+                "ar": "محافظة البحيرة",
+                "en": "Beheira governorate"
+              },
+              "governorates": {
+                "ar": [
+                  "البحيرة"
+                ],
+                "en": [
+                  "Beheira"
+                ]
+              },
+              "points": [
+                [
+                  30.47,
+                  31.03,
+                  "دمنهور",
+                  "Damanhur"
+                ]
+              ]
+            }
+          ],
+          "points": [
+            [
+              30.47,
+              31.03,
+              "دمنهور",
+              "Damanhur"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alex-coast",
+      "kind": "arabic",
+      "name": "الإسكندرية والساحل الشمالي",
+      "nameEn": "Alexandria and the North Coast",
+      "governorates": {
+        "ar": [
+          "الإسكندرية",
+          "مطروح (الساحل)"
+        ],
+        "en": [
+          "Alexandria",
+          "Matrouh (the coast)"
+        ]
+      },
+      "summary": {
+        "ar": "الإسكندرية مدينة لها لهجتها الحضرية المعروفة، وغربها على الساحل يبدأ عالم البدو حتى حدود ليبيا.",
+        "en": "Alexandria has its own well-known city speech; west of it along the coast begins Bedouin country, all the way to Libya."
+      },
+      "history": {
+        "ar": "الإسكندرية ميناء مصر الكبير، وعاش فيها ناس من الدلتا والصعيد ومن حول البحر المتوسط. والساحل غربها تسكنه قبائل بدوية أشهرها أولاد علي.",
+        "en": "Alexandria is Egypt's great port, home to people from the Delta, Upper Egypt and around the Mediterranean. The coast west of it is home to Bedouin tribes, best known the Awlad Ali."
+      },
+      "features": [
+        {
+          "ar": "في الإسكندرية «نكتب» للمفرد و«نكتبوا» للجمع، مثل غرب الدلتا.",
+          "en": "Alexandria says niktib 'I write' and niktibu 'we write', like the western Delta."
+        },
+        {
+          "ar": "القاف همزة والجيم g في المدينة، مثل القاهرة.",
+          "en": "In the city qaf is a glottal stop and jim a hard g, as in Cairo."
+        }
+      ],
+      "sources": [
+        "bw"
+      ],
+      "points": [
+        [
+          29.92,
+          31.2,
+          "الإسكندرية",
+          "Alexandria"
+        ],
+        [
+          27.24,
+          31.35,
+          "مرسى مطروح",
+          "Marsa Matrouh"
+        ],
+        [
+          28.95,
+          30.83,
+          "العلمين",
+          "El Alamein"
+        ]
+      ],
+      "varieties": [
+        {
+          "id": "alx",
+          "kind": "arabic",
+          "dialectId": "alx",
+          "name": "الإسكندرانية",
+          "nameEn": "Alexandrian",
+          "area": {
+            "ar": "مدينة الإسكندرية",
+            "en": "The city of Alexandria"
+          },
+          "governorates": {
+            "ar": [
+              "الإسكندرية"
+            ],
+            "en": [
+              "Alexandria"
+            ]
+          },
+          "features": [
+            {
+              "ar": "«نكتب» = أكتب، «نكتبوا» = نكتب.",
+              "en": "niktib = I write, niktibu = we write."
+            }
+          ],
+          "points": [
+            [
+              29.92,
+              31.2,
+              "الإسكندرية",
+              "Alexandria"
+            ]
+          ]
+        },
+        {
+          "id": "north-coast",
+          "kind": "arabic",
+          "name": "الساحل الشمالي",
+          "nameEn": "The North Coast",
+          "area": {
+            "ar": "الساحل من غرب الإسكندرية إلى السلوم",
+            "en": "The coast from west of Alexandria to Sallum"
+          },
+          "governorates": {
+            "ar": [
+              "مطروح"
+            ],
+            "en": [
+              "Matrouh"
+            ]
+          },
+          "summary": {
+            "ar": "كلام أهل الساحل الأصليين بدوي، وهو نفسه لهجة أولاد علي الموصوفة في قسم الصحراء الغربية. أما المنتجعات والمدن الجديدة فيتكلم أغلب من فيها القاهرية أو الإسكندرانية.",
+            "en": "The coast's native speech is Bedouin, the Awlad Ali dialect described under the Western Desert. In the resorts and new towns most people speak Cairene or Alexandrian."
+          },
+          "seeAlso": [
+            "awlad-ali"
+          ],
+          "points": [
+            [
+              27.24,
+              31.35,
+              "مرسى مطروح",
+              "Marsa Matrouh"
+            ],
+            [
+              28.95,
+              30.83,
+              "العلمين",
+              "El Alamein"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canal",
+      "kind": "arabic",
+      "name": "مدن القناة",
+      "nameEn": "The Canal Cities",
+      "governorates": {
+        "ar": [
+          "بورسعيد",
+          "الإسماعيلية",
+          "السويس"
+        ],
+        "en": [
+          "Port Said",
+          "Ismailia",
+          "Suez"
+        ]
+      },
+      "summary": {
+        "ar": "مدن حضرية قريبة جدًا من القاهرية في الأصوات والقواعد، والفرق الأكبر في التنغيم وفي كلمات محلية قليلة.",
+        "en": "City speech very close to Cairene in sounds and grammar; the main differences are intonation and a few local words."
+      },
+      "history": {
+        "ar": "بورسعيد والإسماعيلية مدينتان نشأتا مع حفر قناة السويس في القرن التاسع عشر، وجاءهما عمال وتجار من كل مصر ومن خارجها، فتكونت لهجة مدينة جديدة.",
+        "en": "Port Said and Ismailia grew up with the digging of the Suez Canal in the 19th century. Workers and traders came from all over Egypt and abroad, and a new city speech formed."
+      },
+      "features": [
+        {
+          "ar": "القاف همزة والجيم g، مثل القاهرة.",
+          "en": "Qaf is a glottal stop and jim a hard g, as in Cairo."
+        }
+      ],
+      "sources": [
+        "bw"
+      ],
+      "points": [
+        [
+          32.3,
+          31.26,
+          "بورسعيد",
+          "Port Said"
+        ],
+        [
+          32.27,
+          30.6,
+          "الإسماعيلية",
+          "Ismailia"
+        ],
+        [
+          32.55,
+          29.97,
+          "السويس",
+          "Suez"
+        ]
+      ],
+      "varieties": [
+        {
+          "id": "canal-cities",
+          "kind": "arabic",
+          "name": "لهجة مدن القناة",
+          "nameEn": "Canal-city speech",
+          "area": {
+            "ar": "مدن قناة السويس الثلاث",
+            "en": "The three Suez Canal cities"
+          },
+          "summary": {
+            "ar": "المدن الثلاث متقاربة في الكلام، لذلك جمعناها في لهجة واحدة، ولكل مدينة طابعها في التنغيم.",
+            "en": "The three cities speak much alike, so they are one variety here, each with its own lilt."
+          },
+          "subVarieties": [
+            {
+              "id": "port-said",
+              "kind": "arabic",
+              "name": "بورسعيد",
+              "nameEn": "Port Said",
+              "area": {
+                "ar": "محافظة بورسعيد",
+                "en": "Port Said governorate"
+              },
+              "governorates": {
+                "ar": [
+                  "بورسعيد"
+                ],
+                "en": [
+                  "Port Said"
+                ]
+              },
+              "points": [
+                [
+                  32.3,
+                  31.26,
+                  "بورسعيد",
+                  "Port Said"
+                ]
+              ]
+            },
+            {
+              "id": "ismailia",
+              "kind": "arabic",
+              "name": "الإسماعيلية",
+              "nameEn": "Ismailia",
+              "area": {
+                "ar": "محافظة الإسماعيلية",
+                "en": "Ismailia governorate"
+              },
+              "governorates": {
+                "ar": [
+                  "الإسماعيلية"
+                ],
+                "en": [
+                  "Ismailia"
+                ]
+              },
+              "points": [
+                [
+                  32.27,
+                  30.6,
+                  "الإسماعيلية",
+                  "Ismailia"
+                ]
+              ]
+            },
+            {
+              "id": "suez",
+              "kind": "arabic",
+              "name": "السويس",
+              "nameEn": "Suez",
+              "area": {
+                "ar": "محافظة السويس",
+                "en": "Suez governorate"
+              },
+              "governorates": {
+                "ar": [
+                  "السويس"
+                ],
+                "en": [
+                  "Suez"
+                ]
+              },
+              "points": [
+                [
+                  32.55,
+                  29.97,
+                  "السويس",
+                  "Suez"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saeed",
+      "kind": "arabic",
+      "dialectId": "sai",
+      "name": "الصعيد",
+      "nameEn": "Upper Egypt (Saʿīd)",
+      "governorates": {
+        "ar": [
+          "بني سويف",
+          "الفيوم",
+          "المنيا",
+          "أسيوط",
+          "سوهاج",
+          "قنا",
+          "الأقصر",
+          "أسوان"
+        ],
+        "en": [
+          "Beni Suef",
+          "Faiyum",
+          "Minya",
+          "Asyut",
+          "Sohag",
+          "Qena",
+          "Luxor",
+          "Aswan"
+        ]
+      },
+      "summary": {
+        "ar": "الصعيدي أوضح اختلافًا عن القاهرية من أي لهجة أخرى في وادي النيل، ويتغير تدريجيًا كلما اتجهت جنوبًا.",
+        "en": "Saʿīdi differs from Cairene more clearly than any other Nile Valley variety, and it changes gradually as you go south."
+      },
+      "history": {
+        "ar": "الصعيد شريط زراعي طويل على النيل جنوب القاهرة، ومدنه وقراه قديمة الاستقرار، وفيه أيضًا عائلات ترجع أصولها إلى قبائل عربية.",
+        "en": "Upper Egypt is a long strip of farmland along the Nile south of Cairo, settled since antiquity, with families that trace their roots to Arab tribes."
+      },
+      "features": [
+        {
+          "ar": "القاف تنطق g: «قال» gāl و«قلب» galb.",
+          "en": "Qaf is g: gāl 'he said', galb 'heart'."
+        },
+        {
+          "ar": "الجيم g في الشمال، وتصبح جيمًا معطشة (dʒ) كلما اتجهت جنوبًا.",
+          "en": "Jim is g in the north and becomes dʒ further south."
+        },
+        {
+          "ar": "«دلوك» بدل «دلوقتي» للدلالة على الآن.",
+          "en": "dilwak instead of dilwaʔti for 'now'."
+        }
+      ],
+      "sources": [
+        "bw"
+      ],
+      "points": [
+        [
+          31.1,
+          29.07,
+          "بني سويف",
+          "Beni Suef"
+        ],
+        [
+          30.84,
+          29.31,
+          "الفيوم",
+          "Faiyum"
+        ],
+        [
+          30.75,
+          28.11,
+          "المنيا",
+          "Minya"
+        ],
+        [
+          31.18,
+          27.18,
+          "أسيوط",
+          "Asyut"
+        ],
+        [
+          31.69,
+          26.56,
+          "سوهاج",
+          "Sohag"
+        ],
+        [
+          32.72,
+          26.16,
+          "قنا",
+          "Qena"
+        ],
+        [
+          32.64,
+          25.69,
+          "الأقصر",
+          "Luxor"
+        ],
+        [
+          32.9,
+          24.09,
+          "أسوان",
+          "Aswan"
+        ]
+      ],
+      "varieties": [
+        {
+          "id": "north-saeed",
+          "kind": "arabic",
+          "name": "شمال الصعيد (مصر الوسطى)",
+          "nameEn": "Northern Upper Egypt (Middle Egypt)",
+          "area": {
+            "ar": "بني سويف والفيوم والمنيا",
+            "en": "Beni Suef, Faiyum and Minya"
+          },
+          "governorates": {
+            "ar": [
+              "بني سويف",
+              "الفيوم",
+              "المنيا"
+            ],
+            "en": [
+              "Beni Suef",
+              "Faiyum",
+              "Minya"
+            ]
+          },
+          "summary": {
+            "ar": "منطقة انتقال بين القاهرة والصعيد: القاف g مثل الصعيد، والجيم ما زالت g مثل القاهرة.",
+            "en": "A transition zone: qaf is g as in the south, while jim is still a hard g as in Cairo."
+          },
+          "features": [
+            {
+              "ar": "القاف g.",
+              "en": "Qaf is g."
+            },
+            {
+              "ar": "الجيم g مثل القاهرة.",
+              "en": "Jim is a hard g, as in Cairo."
+            }
+          ],
+          "points": [
+            [
+              31.1,
+              29.07,
+              "بني سويف",
+              "Beni Suef"
+            ],
+            [
+              30.84,
+              29.31,
+              "الفيوم",
+              "Faiyum"
+            ],
+            [
+              30.75,
+              28.11,
+              "المنيا",
+              "Minya"
+            ]
+          ]
+        },
+        {
+          "id": "middle-saeed",
+          "kind": "arabic",
+          "name": "وسط الصعيد",
+          "nameEn": "Central Upper Egypt",
+          "area": {
+            "ar": "أسيوط وسوهاج",
+            "en": "Asyut and Sohag"
+          },
+          "governorates": {
+            "ar": [
+              "أسيوط",
+              "سوهاج"
+            ],
+            "en": [
+              "Asyut",
+              "Sohag"
+            ]
+          },
+          "summary": {
+            "ar": "هنا يظهر الصعيدي بملامحه المعروفة: القاف g، والجيم تميل إلى النطق المعطش.",
+            "en": "Here Saʿīdi shows its familiar face: qaf is g and jim leans towards dʒ."
+          },
+          "points": [
+            [
+              31.18,
+              27.18,
+              "أسيوط",
+              "Asyut"
+            ],
+            [
+              31.69,
+              26.56,
+              "سوهاج",
+              "Sohag"
+            ]
+          ]
+        },
+        {
+          "id": "south-saeed",
+          "kind": "arabic",
+          "name": "جنوب الصعيد",
+          "nameEn": "Southern Upper Egypt",
+          "area": {
+            "ar": "قنا والأقصر وأسوان",
+            "en": "Qena, Luxor and Aswan"
+          },
+          "governorates": {
+            "ar": [
+              "قنا",
+              "الأقصر",
+              "أسوان"
+            ],
+            "en": [
+              "Qena",
+              "Luxor",
+              "Aswan"
+            ]
+          },
+          "summary": {
+            "ar": "أبعد لهجات الصعيد عن القاهرية: القاف g والجيم معطشة (dʒ). وفي أسوان يعيش العرب والنوبيون جنبًا إلى جنب.",
+            "en": "The furthest from Cairene: qaf is g and jim is dʒ. In Aswan Arabic speakers and Nubians live side by side."
+          },
+          "features": [
+            {
+              "ar": "الجيم معطشة: «جمل» dʒamal.",
+              "en": "Jim is dʒ: dʒamal 'camel'."
+            }
+          ],
+          "seeAlso": [
+            "nubia"
+          ],
+          "points": [
+            [
+              32.72,
+              26.16,
+              "قنا",
+              "Qena"
+            ],
+            [
+              32.64,
+              25.69,
+              "الأقصر",
+              "Luxor"
+            ],
+            [
+              32.9,
+              24.09,
+              "أسوان",
+              "Aswan"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sinai",
+      "kind": "arabic",
+      "dialectId": "sin",
+      "name": "سيناء",
+      "nameEn": "Sinai",
+      "governorates": {
+        "ar": [
+          "شمال سيناء",
+          "جنوب سيناء"
+        ],
+        "en": [
+          "North Sinai",
+          "South Sinai"
+        ]
+      },
+      "summary": {
+        "ar": "لهجات سيناء بدوية في أغلبها، وأقرب إلى لهجات النقب والأردن وشمال الحجاز منها إلى لهجات وادي النيل.",
+        "en": "Sinai speech is mostly Bedouin, closer to the dialects of the Negev, Jordan and northern Hejaz than to the Nile Valley."
+      },
+      "history": {
+        "ar": "سيناء جسر بين مصر والمشرق، وتسكنها قبائل بدوية منذ قرون. وفي العريش على الساحل مجتمع حضري قديم له كلامه الخاص.",
+        "en": "Sinai is the bridge between Egypt and the Levant, home to Bedouin tribes for centuries. El Arish on the coast has an old town community with its own speech."
+      },
+      "features": [
+        {
+          "ar": "القاف g: «قال» gāl.",
+          "en": "Qaf is g: gāl."
+        },
+        {
+          "ar": "البدو يحتفظون بالثاء والذال: «ثلاثة» θalāθa لا «تلاتة».",
+          "en": "The Bedouin keep th and dh: θalāθa 'three', not talāta."
+        }
+      ],
+      "sources": [
+        "dejong2000",
+        "dejong2011"
+      ],
+      "points": [
+        [
+          33.8,
+          31.13,
+          "العريش",
+          "El Arish"
+        ],
+        [
+          34.33,
+          27.91,
+          "شرم الشيخ",
+          "Sharm El Sheikh"
+        ],
+        [
+          33.97,
+          28.56,
+          "سانت كاترين",
+          "St Catherine"
+        ],
+        [
+          33.62,
+          28.24,
+          "الطور",
+          "El Tor"
+        ]
+      ],
+      "varieties": [
+        {
+          "id": "north-sinai",
+          "kind": "arabic",
+          "name": "شمال سيناء",
+          "nameEn": "North Sinai",
+          "area": {
+            "ar": "الساحل الشمالي لسيناء من القنطرة إلى رفح",
+            "en": "Sinai's northern coast from Qantara to Rafah"
+          },
+          "governorates": {
+            "ar": [
+              "شمال سيناء"
+            ],
+            "en": [
+              "North Sinai"
+            ]
+          },
+          "summary": {
+            "ar": "لهجات قبائل الساحل البدوية، ومعها لهجة العريش الحضرية التي تختلف عن لهجات البدو حولها.",
+            "en": "The Bedouin dialects of the coastal tribes, and alongside them the town speech of El Arish, which differs from the Bedouin around it."
+          },
+          "subVarieties": [
+            {
+              "id": "arish",
+              "kind": "arabic",
+              "name": "العريش",
+              "nameEn": "El Arish",
+              "area": {
+                "ar": "مدينة العريش",
+                "en": "The town of El Arish"
+              },
+              "summary": {
+                "ar": "مجتمع حضري قديم على الساحل له لهجة غير بدوية.",
+                "en": "An old coastal town community with a non-Bedouin dialect."
+              },
+              "points": [
+                [
+                  33.8,
+                  31.13,
+                  "العريش",
+                  "El Arish"
+                ]
+              ]
+            },
+            {
+              "id": "north-sinai-bedouin",
+              "kind": "arabic",
+              "name": "بدو الساحل",
+              "nameEn": "Coastal Bedouin",
+              "area": {
+                "ar": "قبائل ساحل شمال سيناء",
+                "en": "The tribes of the North Sinai littoral"
+              }
+            }
+          ]
+        },
+        {
+          "id": "south-sinai",
+          "kind": "arabic",
+          "name": "وسط وجنوب سيناء",
+          "nameEn": "Central and South Sinai",
+          "area": {
+            "ar": "الجبال والوديان وساحل خليجي السويس والعقبة",
+            "en": "The mountains, wadis and the coasts of the Gulfs of Suez and Aqaba"
+          },
+          "governorates": {
+            "ar": [
+              "جنوب سيناء"
+            ],
+            "en": [
+              "South Sinai"
+            ]
+          },
+          "summary": {
+            "ar": "لهجات قبائل الوسط والجنوب البدوية، وتختلف فيما بينها حسب القبيلة.",
+            "en": "The Bedouin dialects of the central and southern tribes, which differ from tribe to tribe."
+          }
+        }
+      ]
+    },
+    {
+      "id": "west-desert",
+      "kind": "arabic",
+      "name": "الصحراء الغربية والواحات",
+      "nameEn": "The Western Desert and the Oases",
+      "governorates": {
+        "ar": [
+          "الوادي الجديد",
+          "مطروح",
+          "الواحات البحرية (الجيزة)"
+        ],
+        "en": [
+          "New Valley",
+          "Matrouh",
+          "Bahariya Oasis (Giza)"
+        ]
+      },
+      "summary": {
+        "ar": "ثلاثة عوالم مختلفة: لهجات عربية قديمة في الواحات، ولهجة بدو أولاد علي، ولغة سيوة الأمازيغية التي ليست لهجة عربية أصلًا.",
+        "en": "Three different worlds: old Arabic dialects in the oases, the dialect of the Awlad Ali Bedouin, and the Berber language of Siwa, which is not Arabic at all."
+      },
+      "history": {
+        "ar": "الواحات معمورة منذ زمن بعيد ومعزولة نسبيًا عن الوادي، فاحتفظت لهجاتها بملامح خاصة. وغربًا يعيش بدو أولاد علي، وفي أقصى الغرب واحة سيوة بلغتها الأمازيغية.",
+        "en": "The oases have been settled for a very long time and were cut off from the valley, so their dialects kept their own traits. Westwards live the Awlad Ali Bedouin, and in the far west lies Siwa with its Berber language."
+      },
+      "features": [
+        {
+          "ar": "لهجات الواحات تختلف من واحة لأخرى، وتصفها أبحاث بينشتيت وفويديش بالتفصيل.",
+          "en": "The oasis dialects differ from one oasis to the next and are described in detail by Behnstedt and Woidich."
+        }
+      ],
+      "sources": [
+        "bw",
+        "woidich1993",
+        "souag2013"
+      ],
+      "points": [
+        [
+          28.86,
+          28.35,
+          "الواحات البحرية",
+          "Bahariya"
+        ],
+        [
+          27.97,
+          27.06,
+          "الفرافرة",
+          "Farafra"
+        ],
+        [
+          28.98,
+          25.49,
+          "الداخلة",
+          "Dakhla"
+        ],
+        [
+          30.55,
+          25.45,
+          "الخارجة",
+          "Kharga"
+        ],
+        [
+          25.52,
+          29.2,
+          "سيوة",
+          "Siwa"
+        ]
+      ],
+      "varieties": [
+        {
+          "id": "oases",
+          "kind": "arabic",
+          "name": "لهجات الواحات",
+          "nameEn": "The oasis dialects",
+          "area": {
+            "ar": "الواحات البحرية والفرافرة والداخلة والخارجة",
+            "en": "Bahariya, Farafra, Dakhla and Kharga"
+          },
+          "governorates": {
+            "ar": [
+              "الوادي الجديد",
+              "الجيزة"
+            ],
+            "en": [
+              "New Valley",
+              "Giza"
+            ]
+          },
+          "summary": {
+            "ar": "لهجات عربية مستقرة منذ قرون، ولكل واحة لهجتها. ناقش الباحثون إن كانت أقرب إلى عربية المشرق أم المغرب.",
+            "en": "Arabic dialects settled for centuries, each oasis with its own. Researchers have debated whether they lean towards eastern or western Arabic."
+          },
+          "subVarieties": [
+            {
+              "id": "bahariya",
+              "kind": "arabic",
+              "name": "الواحات البحرية",
+              "nameEn": "Bahariya",
+              "area": {
+                "ar": "واحة البحرية، تتبع محافظة الجيزة",
+                "en": "Bahariya Oasis, part of Giza governorate"
+              },
+              "points": [
+                [
+                  28.86,
+                  28.35,
+                  "الواحات البحرية",
+                  "Bahariya"
+                ]
+              ]
+            },
+            {
+              "id": "farafra",
+              "kind": "arabic",
+              "name": "الفرافرة",
+              "nameEn": "Farafra",
+              "area": {
+                "ar": "واحة الفرافرة في الوادي الجديد",
+                "en": "Farafra Oasis, New Valley"
+              },
+              "points": [
+                [
+                  27.97,
+                  27.06,
+                  "الفرافرة",
+                  "Farafra"
+                ]
+              ]
+            },
+            {
+              "id": "dakhla",
+              "kind": "arabic",
+              "name": "الداخلة",
+              "nameEn": "Dakhla",
+              "area": {
+                "ar": "واحة الداخلة في الوادي الجديد",
+                "en": "Dakhla Oasis, New Valley"
+              },
+              "points": [
+                [
+                  28.98,
+                  25.49,
+                  "الداخلة",
+                  "Dakhla"
+                ]
+              ]
+            },
+            {
+              "id": "kharga",
+              "kind": "arabic",
+              "name": "الخارجة",
+              "nameEn": "Kharga",
+              "area": {
+                "ar": "واحة الخارجة في الوادي الجديد",
+                "en": "Kharga Oasis, New Valley"
+              },
+              "points": [
+                [
+                  30.55,
+                  25.45,
+                  "الخارجة",
+                  "Kharga"
+                ]
+              ]
+            }
+          ],
+          "points": [
+            [
+              28.86,
+              28.35,
+              "الواحات البحرية",
+              "Bahariya"
+            ],
+            [
+              27.97,
+              27.06,
+              "الفرافرة",
+              "Farafra"
+            ],
+            [
+              28.98,
+              25.49,
+              "الداخلة",
+              "Dakhla"
+            ],
+            [
+              30.55,
+              25.45,
+              "الخارجة",
+              "Kharga"
+            ]
+          ]
+        },
+        {
+          "id": "awlad-ali",
+          "kind": "arabic",
+          "name": "بدو أولاد علي",
+          "nameEn": "Awlad Ali Bedouin",
+          "area": {
+            "ar": "الساحل والصحراء غرب الإسكندرية حتى حدود ليبيا",
+            "en": "The coast and desert west of Alexandria to the Libyan border"
+          },
+          "governorates": {
+            "ar": [
+              "مطروح",
+              "غرب البحيرة والإسكندرية"
+            ],
+            "en": [
+              "Matrouh",
+              "western Beheira and Alexandria"
+            ]
+          },
+          "summary": {
+            "ar": "لهجة بدوية قريبة من لهجات شرق ليبيا، ومنها لهجة بنغازي، أكثر من قربها من لهجات وادي النيل.",
+            "en": "A Bedouin dialect closer to eastern Libyan Arabic, Benghazi's included, than to the Nile Valley."
+          },
+          "features": [
+            {
+              "ar": "القاف g: «قال» gāl.",
+              "en": "Qaf is g: gāl."
+            }
+          ],
+          "points": [
+            [
+              27.24,
+              31.35,
+              "مرسى مطروح",
+              "Marsa Matrouh"
+            ],
+            [
+              28.95,
+              30.83,
+              "العلمين",
+              "El Alamein"
+            ],
+            [
+              25.15,
+              31.55,
+              "السلوم",
+              "Sallum"
+            ]
+          ]
+        },
+        {
+          "id": "siwi",
+          "kind": "language",
+          "name": "السيوية",
+          "nameEn": "Siwi",
+          "family": {
+            "ar": "لغة أمازيغية (بربرية)",
+            "en": "A Berber (Amazigh) language"
+          },
+          "area": {
+            "ar": "واحة سيوة",
+            "en": "Siwa Oasis"
+          },
+          "governorates": {
+            "ar": [
+              "مطروح"
+            ],
+            "en": [
+              "Matrouh"
+            ]
+          },
+          "summary": {
+            "ar": "السيوية لغة أمازيغية مستقلة، وليست لهجة عربية. هي أقصى اللغات الأمازيغية شرقًا، وأغلب أهل سيوة يتكلمون العربية أيضًا، لذلك دخلتها كلمات عربية كثيرة.",
+            "en": "Siwi is a Berber language of its own, not an Arabic dialect. It is the easternmost Berber language, and most Siwans also speak Arabic, so it has taken many Arabic words."
+          },
+          "points": [
+            [
+              25.52,
+              29.2,
+              "سيوة",
+              "Siwa"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nubia",
+      "kind": "language",
+      "name": "النوبة",
+      "nameEn": "Nubia",
+      "governorates": {
+        "ar": [
+          "أسوان"
+        ],
+        "en": [
+          "Aswan"
+        ]
+      },
+      "summary": {
+        "ar": "النوبية ليست لهجة عربية، بل لغات مستقلة من أسرة اللغات النوبية. في مصر لغتان: الكنزية في الشمال والنوبيين (الفاديجا) في الجنوب، والنوبيون يتكلمون العربية أيضًا.",
+        "en": "Nubian is not Arabic: it is a family of languages of its own. Egypt has two, Kenzi in the north and Nobiin (Fadicca) in the south, and Nubians also speak Arabic."
+      },
+      "history": {
+        "ar": "عاش النوبيون على النيل بين أسوان وحدود السودان. ومع بناء السد العالي في ستينيات القرن العشرين غرقت قراهم تحت بحيرة ناصر، وانتقل أغلبهم إلى قرى جديدة حول كوم أمبو ونصر النوبة.",
+        "en": "The Nubians lived along the Nile between Aswan and Sudan. When the High Dam was built in the 1960s their villages went under Lake Nasser, and most moved to new villages around Kom Ombo and Nasr al-Nuba."
+      },
+      "features": [
+        {
+          "ar": "الكنزية والنوبيين لغتان مختلفتان من نفس الأسرة، وليستا لهجتين للغة واحدة.",
+          "en": "Kenzi and Nobiin are two different languages of one family, not two dialects of one language."
+        },
+        {
+          "ar": "بين المجموعتين جماعة نوبية تتكلم العربية هي العليقات.",
+          "en": "Between the two lives an Arabic-speaking Nubian group, the Aleikat."
+        }
+      ],
+      "sources": [
+        "bechhaus2011"
+      ],
+      "points": [
+        [
+          32.9,
+          24.09,
+          "أسوان",
+          "Aswan"
+        ],
+        [
+          32.93,
+          24.45,
+          "كوم أمبو",
+          "Kom Ombo"
+        ],
+        [
+          31.62,
+          22.34,
+          "أبو سمبل",
+          "Abu Simbel"
+        ]
+      ],
+      "varieties": [
+        {
+          "id": "kenzi",
+          "kind": "language",
+          "name": "الكنزية",
+          "nameEn": "Kenzi (Kenuzi)",
+          "family": {
+            "ar": "لغة نوبية، فرع الكنزية الدنقلاوية",
+            "en": "A Nubian language, Kenzi–Dongolawi branch"
+          },
+          "area": {
+            "ar": "شمال النوبة المصرية، جنوب أسوان",
+            "en": "Northern Egyptian Nubia, south of Aswan"
+          },
+          "governorates": {
+            "ar": [
+              "أسوان"
+            ],
+            "en": [
+              "Aswan"
+            ]
+          },
+          "summary": {
+            "ar": "لغة الكنوز في شمال النوبة. أقرب أخواتها الدنقلاوية في السودان، وهي مختلفة عن لغة الفاديجا في الجنوب.",
+            "en": "The language of the Kenuz of northern Nubia. Its closest sister is Dongolawi in Sudan, and it differs from the Fadicca language to the south."
+          }
+        },
+        {
+          "id": "nobiin",
+          "kind": "language",
+          "name": "النوبيين (الفاديجا)",
+          "nameEn": "Nobiin (Fadicca)",
+          "family": {
+            "ar": "لغة نوبية",
+            "en": "A Nubian language"
+          },
+          "area": {
+            "ar": "جنوب النوبة المصرية حتى حدود السودان",
+            "en": "Southern Egyptian Nubia to the Sudanese border"
+          },
+          "governorates": {
+            "ar": [
+              "أسوان"
+            ],
+            "en": [
+              "Aswan"
+            ]
+          },
+          "summary": {
+            "ar": "لغة الفاديجا، ويتكلمها أيضًا المحس في شمال السودان. لها تاريخ مكتوب طويل، فالنوبية القديمة المكتوبة في العصور الوسطى هي أصلها.",
+            "en": "The language of the Fadicca, also spoken by the Mahas of northern Sudan. It has a long written past: medieval Old Nubian is its ancestor."
+          }
+        }
+      ]
+    }
+  ]
+}

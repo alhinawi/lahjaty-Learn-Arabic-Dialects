@@ -1,8 +1,9 @@
-import { Columns3, GraduationCap } from 'lucide-react'
+import { ChevronLeft, Columns3, GraduationCap, MapPinned } from 'lucide-react'
 import { Link } from 'react-router'
 import CategoryIcon from '../components/CategoryIcon'
 import DialectMap from '../components/DialectMap'
 import Hero from '../components/Hero'
+import SearchBox from '../components/SearchBox'
 import DialectChip from '../components/DialectChip'
 import FamousHighlight from '../components/FamousHighlight'
 import ProgressBar from '../components/ProgressBar'
@@ -26,6 +27,8 @@ export default function HomePage() {
     <div className="space-y-6">
       <Hero />
 
+      <SearchBox />
+
       <FamousHighlight />
 
       <section className="space-y-3">
@@ -34,6 +37,20 @@ export default function HomePage() {
       </section>
 
       <DialectMap />
+
+      <Link
+        to="/egypt"
+        className="lift pattern-stars relative flex items-center gap-3 overflow-hidden rounded-3xl bg-gradient-to-br from-brand-800 to-brand-950 p-4 text-white shadow-md"
+      >
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-sun-400/15 ring-1 ring-sun-400/40">
+          <MapPinned className="h-6 w-6 text-sun-300" aria-hidden />
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block font-bold"><span className="gold-text">{t('egyptCta')}</span></span>
+          <span className="block text-xs text-brand-100/90">{t('egyptCtaBody')}</span>
+        </span>
+        <ChevronLeft className="h-5 w-5 shrink-0 text-sun-300 ltr:rotate-180" aria-hidden />
+      </Link>
 
       <section>
         <h2 className="mb-3 text-lg font-bold">{t('situations')}</h2>
