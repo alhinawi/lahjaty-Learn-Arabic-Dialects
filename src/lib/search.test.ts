@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { phrases } from './content'
-import { normalize, search } from './search'
+import { comparableHits, normalize, search } from './search'
 
 describe('normalize', () => {
   it('folds hamza, taa marbuta, alif maqsura and tashkeel', () => {
@@ -35,5 +35,20 @@ describe('search', () => {
 
   it('returns nothing for an empty query', () => {
     expect(search('   ')).toEqual([])
+  })
+})
+
+describe('comparableHits', () => {
+  it('finds everyday phrases from any dialect, Standard Arabic or English', () => {
+    expect(comparableHits('thank you', 'phrase', 3)[0]?.id).toBe('expressions.thank_you')
+    expect(comparableHits('شكرا', 'phrase', 5).map((h) => h.id)).toContain('expressions.thank_you')
+    expect(comparableHits('برشا', 'phrase', 8).length).toBeGreaterThan(0)
+  })
+
+  it('offers only shared meanings on the famous tab, each once', () => {
+    const hits = comparableHits('now', 'concept', 8)
+    expect(hits.every((h) => h.kind === 'concept')).toBe(true)
+    expect(new Set(hits.map((h) => h.id)).size).toBe(hits.length)
+    expect(hits.map((h) => h.id)).toContain('now')
   })
 })

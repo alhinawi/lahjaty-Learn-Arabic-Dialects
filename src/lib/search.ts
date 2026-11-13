@@ -134,3 +134,24 @@ export function hitTitle(hit: SearchHit, lang: 'ar' | 'en'): string {
   if (hit.kind === 'egypt') return lang === 'ar' ? hit.node.name : hit.node.nameEn
   return lang === 'ar' ? hit.phrase.standard : hit.phrase.english
 }
+
+export type ComparableHit =
+  | { kind: 'phrase'; id: string; matched: string; dialectId?: string; standard: string; english: string }
+  | { kind: 'concept'; id: string; matched: string; dialectId?: string }
+
+/** Search results that the comparison page can show: everyday phrases, or shared meanings of famous phrases. */
+export function comparableHits(query: string, kind: 'phrase' | 'concept', limit = 8): ComparableHit[] {
+  const out: ComparableHit[] = []
+  const seen = new Set<string>()
+  for (const h of search(query, 400)) {
+    if (out.length >= limit) break
+    if (kind === 'phrase' && h.kind === 'phrase' && !seen.has(h.phrase.id)) {
+      seen.add(h.phrase.id)
+      out.push({ kind: 'phrase', id: h.phrase.id, matched: h.matched, dialectId: h.dialectId, standard: h.phrase.variants[STANDARD_ID]?.text ?? '', english: h.phrase.english })
+    } else if (kind === 'concept' && h.kind === 'concept' && !seen.has(h.conceptId)) {
+      seen.add(h.conceptId)
+      out.push({ kind: 'concept', id: h.conceptId, matched: h.matched, dialectId: h.dialectId })
+    }
+  }
+  return out
+}

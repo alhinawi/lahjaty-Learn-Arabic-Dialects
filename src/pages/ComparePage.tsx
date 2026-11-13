@@ -1,9 +1,10 @@
 import { Search, Type } from 'lucide-react'
 import { useState } from 'react'
 import { useSearchParams } from 'react-router'
+import ComparePicker from '../components/ComparePicker'
 import PlayButton from '../components/PlayButton'
+import { comparableHits } from '../lib/search'
 import {
-  categories,
   concepts,
   dialects,
   famousByConcept,
@@ -11,7 +12,6 @@ import {
   dialectsByRegion,
   getPhrase,
   phrases,
-  phrasesInCategory,
   searchDialects,
   STANDARD_ID,
 } from '../lib/content'
@@ -27,7 +27,11 @@ export default function ComparePage() {
   const toggleTranslit = useApp((s) => s.toggleTranslit)
   const [params, setParams] = useSearchParams()
   const [query, setQuery] = useState('')
-  const famousMode = params.has('c')
+  // ?q= deep-links a search to a comparison: the best everyday phrase, else the best shared meaning.
+  const qParam = params.get('q') ?? ''
+  const qPhrase = qParam && !params.has('p') && !params.has('c') ? comparableHits(qParam, 'phrase', 1)[0] : undefined
+  const qConcept = qParam && !qPhrase && !params.has('p') && !params.has('c') ? comparableHits(qParam, 'concept', 1)[0] : undefined
+  const famousMode = params.has('c') || !!qConcept
 
   const tabs = (
     <div className="grid grid-cols-2 gap-1 rounded-full bg-slate-100 p-1" role="tablist">
@@ -51,7 +55,7 @@ export default function ComparePage() {
 
   if (famousMode) {
     const usedConcepts = concepts.filter((c) => famousByConcept(c.id).length > 0)
-    const concept = getConcept(params.get('c') ?? '') ?? usedConcepts[0]
+    const concept = getConcept(params.get('c') ?? qConcept?.id ?? '') ?? usedConcepts[0]
     const rows = famousByConcept(concept.id)
     const byDialect = new Map(rows.map((r) => [r.dialectId, r]))
     const conceptGroups = dialectsByRegion(searchDialects(query, dialects.filter((d) => byDialect.has(d.id))))
@@ -59,20 +63,7 @@ export default function ComparePage() {
       <div className="space-y-4">
         <h1 className="text-xl font-bold">{t('compareTitle')}</h1>
         {tabs}
-        <label className="block">
-          <span className="mb-1 block text-xs font-semibold text-slate-500">{t('pickMeaning')}</span>
-          <select
-            value={concept.id}
-            onChange={(e) => setParams({ c: e.target.value }, { replace: true })}
-            className="w-full rounded-2xl border border-slate-200 bg-white px-3 py-3 shadow-sm outline-none focus:border-brand-500"
-          >
-            {usedConcepts.map((c) => (
-              <option key={c.id} value={c.id}>
-                {lang === 'ar' ? `${c.name} — ${c.nameEn}` : c.nameEn}
-              </option>
-            ))}
-          </select>
-        </label>
+        <ComparePicker kind="concept" current={concept.id} onPick={(id) => setParams({ c: id }, { replace: true })} />
         <section className="rounded-2xl bg-brand-700 p-4 text-white shadow">
           <p dir="ltr" lang="en" className="text-start text-lg font-semibold">
             {concept.nameEn}
@@ -126,7 +117,7 @@ export default function ComparePage() {
     )
   }
 
-  const phrase = getPhrase(params.get('p') ?? '') ?? phrases[0]
+  const phrase = getPhrase(params.get('p') ?? qPhrase?.id ?? '') ?? phrases[0]
   const standard = phrase.variants[STANDARD_ID]
   const others = dialects.filter((d) => d.id !== STANDARD_ID)
   const groups = dialectsByRegion(searchDialects(query, others))
@@ -137,24 +128,7 @@ export default function ComparePage() {
       <h1 className="text-xl font-bold">{t('compareTitle')}</h1>
       {tabs}
 
-      <label className="block">
-        <span className="mb-1 block text-xs font-semibold text-slate-500">{t('pickPhrase')}</span>
-        <select
-          value={phrase.id}
-          onChange={(e) => setParams({ p: e.target.value }, { replace: true })}
-          className="w-full rounded-2xl border border-slate-200 bg-white px-3 py-3 shadow-sm outline-none focus:border-brand-500"
-        >
-          {categories.map((c) => (
-            <optgroup key={c.id} label={name(c)}>
-              {phrasesInCategory(c.id).map((p) => (
-                <option key={p.id} value={p.id}>
-                  {lang === 'ar' ? `${p.variants[STANDARD_ID].text} — ${p.english}` : p.english}
-                </option>
-              ))}
-            </optgroup>
-          ))}
-        </select>
-      </label>
+      <ComparePicker kind="phrase" current={phrase.id} onPick={(id) => setParams({ p: id }, { replace: true })} />
 
       <section className="rounded-2xl bg-brand-700 p-4 text-white shadow">
         <p dir="ltr" lang="en" className="text-start text-lg font-semibold">
