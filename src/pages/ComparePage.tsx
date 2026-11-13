@@ -1,0 +1,142 @@
+import { Search, Type } from 'lucide-react'
+import { useState } from 'react'
+import { useSearchParams } from 'react-router'
+import PlayButton from '../components/PlayButton'
+import {
+  categories,
+  dialects,
+  dialectsByRegion,
+  getPhrase,
+  phrases,
+  phrasesInCategory,
+  searchDialects,
+  STANDARD_ID,
+} from '../lib/content'
+import { useName, useT } from '../lib/i18n'
+import { useApp } from '../lib/store'
+
+export default function ComparePage() {
+  const t = useT()
+  const name = useName()
+  const lang = useApp((s) => s.lang)
+  const myDialect = useApp((s) => s.dialectId)
+  const showTranslit = useApp((s) => s.showTranslit)
+  const toggleTranslit = useApp((s) => s.toggleTranslit)
+  const [params, setParams] = useSearchParams()
+  const [query, setQuery] = useState('')
+
+  const phrase = getPhrase(params.get('p') ?? '') ?? phrases[0]
+  const standard = phrase.variants[STANDARD_ID]
+  const others = dialects.filter((d) => d.id !== STANDARD_ID)
+  const groups = dialectsByRegion(searchDialects(query, others))
+  const anyTranslit = Object.values(phrase.variants).some((v) => v.translit)
+
+  return (
+    <div className="space-y-4">
+      <h1 className="text-xl font-bold">{t('compareTitle')}</h1>
+
+      <label className="block">
+        <span className="mb-1 block text-xs font-semibold text-slate-500">{t('pickPhrase')}</span>
+        <select
+          value={phrase.id}
+          onChange={(e) => setParams({ p: e.target.value }, { replace: true })}
+          className="w-full rounded-2xl border border-slate-200 bg-white px-3 py-3 shadow-sm outline-none focus:border-brand-500"
+        >
+          {categories.map((c) => (
+            <optgroup key={c.id} label={name(c)}>
+              {phrasesInCategory(c.id).map((p) => (
+                <option key={p.id} value={p.id}>
+                  {lang === 'ar' ? `${p.variants[STANDARD_ID].text} — ${p.english}` : p.english}
+                </option>
+              ))}
+            </optgroup>
+          ))}
+        </select>
+      </label>
+
+      <section className="rounded-2xl bg-brand-700 p-4 text-white shadow">
+        <p dir="ltr" lang="en" className="text-start text-lg font-semibold">
+          {phrase.english}
+        </p>
+        <div className="mt-2 flex items-center gap-3">
+          <div className="min-w-0 flex-1">
+            <span className="text-xs text-brand-200">{t('standardEq')}</span>
+            <p dir="rtl" lang="ar" className="dialect-text text-2xl font-bold">
+              {standard.text}
+            </p>
+            {showTranslit && standard.translit && (
+              <p dir="ltr" className="text-start text-sm italic text-sun-400">
+                {standard.translit}
+              </p>
+            )}
+          </div>
+          <PlayButton dialectId={STANDARD_ID} phraseId={phrase.id} />
+        </div>
+        {(lang === 'ar' ? phrase.noteAr : phrase.note) && (
+          <p className="mt-2 text-xs text-brand-100">{lang === 'ar' ? phrase.noteAr : phrase.note}</p>
+        )}
+      </section>
+
+      <div className="flex items-center gap-2">
+        <label className="relative block flex-1">
+          <Search className="pointer-events-none absolute top-1/2 start-3 h-4 w-4 -translate-y-1/2 text-slate-400" aria-hidden />
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder={t('filterDialects')}
+            aria-label={t('filterDialects')}
+            className="w-full rounded-full border border-slate-200 bg-white py-2 ps-9 pe-3 text-sm outline-none focus:border-brand-500"
+          />
+        </label>
+        {anyTranslit && (
+          <button
+            type="button"
+            onClick={toggleTranslit}
+            aria-pressed={showTranslit}
+            aria-label={t('translit')}
+            className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-semibold ${
+              showTranslit ? 'bg-brand-600 text-white' : 'bg-white text-slate-600 ring-1 ring-slate-200'
+            }`}
+          >
+            <Type className="h-3.5 w-3.5" aria-hidden />
+            {t('translitShort')}
+          </button>
+        )}
+      </div>
+
+      {groups.length === 0 && <p className="py-6 text-center text-slate-500">{t('noResults')}</p>}
+
+      {groups.map(({ region, dialects: list }) => (
+        <section key={region.id}>
+          <h2 className="mb-2 text-sm font-bold text-slate-500">{name(region)}</h2>
+          <ul className="divide-y divide-slate-100 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            {list.map((d) => {
+              const v = phrase.variants[d.id]
+              const mine = d.id === myDialect
+              return (
+                <li key={d.id} className={`flex items-center gap-3 px-3 py-2.5 ${mine ? 'bg-sun-400/15' : ''}`}>
+                  <div className="w-24 shrink-0">
+                    <div className="text-sm leading-tight font-semibold text-slate-800">{name(d)}</div>
+                    <div className="text-[11px] text-slate-400">{lang === 'ar' ? d.country : d.countryEn}</div>
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p dir="rtl" lang="ar" className="dialect-text text-lg font-bold text-slate-900">
+                      {v?.text}
+                    </p>
+                    {showTranslit && v?.translit && (
+                      <p dir="ltr" className="text-start text-xs italic text-brand-700">
+                        {v.translit}
+                      </p>
+                    )}
+                  </div>
+                  <PlayButton dialectId={d.id} phraseId={phrase.id} size="sm" />
+                </li>
+              )
+            })}
+          </ul>
+        </section>
+      ))}
+    </div>
+  )
+}

@@ -1,0 +1,7417 @@
+{
+  "version": 2,
+  "regions": [
+    {
+      "id": "standard",
+      "name": "الفصحى",
+      "nameEn": "Standard Arabic"
+    },
+    {
+      "id": "nile",
+      "name": "مصر والسودان وتشاد",
+      "nameEn": "Egypt, Sudan & Chad"
+    },
+    {
+      "id": "levant",
+      "name": "بلاد الشام",
+      "nameEn": "The Levant"
+    },
+    {
+      "id": "iraq",
+      "name": "العراق",
+      "nameEn": "Iraq"
+    },
+    {
+      "id": "gulf",
+      "name": "الخليج والجزيرة العربية",
+      "nameEn": "The Gulf & Arabia"
+    },
+    {
+      "id": "yemen",
+      "name": "اليمن",
+      "nameEn": "Yemen"
+    },
+    {
+      "id": "maghreb",
+      "name": "المغرب العربي",
+      "nameEn": "The Maghreb"
+    }
+  ],
+  "dialects": [
+    {
+      "id": "fs",
+      "name": "الفصحى",
+      "nameEn": "Modern Standard Arabic",
+      "country": "",
+      "countryEn": "",
+      "region": "standard"
+    },
+    {
+      "id": "cai",
+      "name": "القاهرة",
+      "nameEn": "Cairo",
+      "country": "مصر",
+      "countryEn": "Egypt",
+      "region": "nile"
+    },
+    {
+      "id": "alx",
+      "name": "الإسكندرية",
+      "nameEn": "Alexandria",
+      "country": "مصر",
+      "countryEn": "Egypt",
+      "region": "nile"
+    },
+    {
+      "id": "sai",
+      "name": "الصعيد",
+      "nameEn": "Upper Egypt (Sa'idi)",
+      "country": "مصر",
+      "countryEn": "Egypt",
+      "region": "nile"
+    },
+    {
+      "id": "sin",
+      "name": "سيناء (بدوي)",
+      "nameEn": "Sinai (Bedouin)",
+      "country": "مصر",
+      "countryEn": "Egypt",
+      "region": "nile"
+    },
+    {
+      "id": "dam",
+      "name": "دمشق",
+      "nameEn": "Damascus",
+      "country": "سوريا",
+      "countryEn": "Syria",
+      "region": "levant"
+    },
+    {
+      "id": "alp",
+      "name": "حلب",
+      "nameEn": "Aleppo",
+      "country": "سوريا",
+      "countryEn": "Syria",
+      "region": "levant"
+    },
+    {
+      "id": "leb",
+      "name": "بيروت",
+      "nameEn": "Beirut",
+      "country": "لبنان",
+      "countryEn": "Lebanon",
+      "region": "levant"
+    },
+    {
+      "id": "psu",
+      "name": "فلسطيني مدني",
+      "nameEn": "Palestinian (urban)",
+      "country": "فلسطين",
+      "countryEn": "Palestine",
+      "region": "levant"
+    },
+    {
+      "id": "psr",
+      "name": "فلسطيني فلاحي",
+      "nameEn": "Palestinian (rural)",
+      "country": "فلسطين",
+      "countryEn": "Palestine",
+      "region": "levant"
+    },
+    {
+      "id": "jor",
+      "name": "الأردن",
+      "nameEn": "Jordanian",
+      "country": "الأردن",
+      "countryEn": "Jordan",
+      "region": "levant"
+    },
+    {
+      "id": "bag",
+      "name": "بغداد",
+      "nameEn": "Baghdad",
+      "country": "العراق",
+      "countryEn": "Iraq",
+      "region": "iraq"
+    },
+    {
+      "id": "mos",
+      "name": "الموصل",
+      "nameEn": "Mosul",
+      "country": "العراق",
+      "countryEn": "Iraq",
+      "region": "iraq"
+    },
+    {
+      "id": "bas",
+      "name": "البصرة",
+      "nameEn": "Basra",
+      "country": "العراق",
+      "countryEn": "Iraq",
+      "region": "iraq"
+    },
+    {
+      "id": "naj",
+      "name": "نجدي",
+      "nameEn": "Najdi",
+      "country": "السعودية",
+      "countryEn": "Saudi Arabia",
+      "region": "gulf"
+    },
+    {
+      "id": "hij",
+      "name": "حجازي",
+      "nameEn": "Hijazi",
+      "country": "السعودية",
+      "countryEn": "Saudi Arabia",
+      "region": "gulf"
+    },
+    {
+      "id": "jiz",
+      "name": "جازاني",
+      "nameEn": "Jazani",
+      "country": "السعودية",
+      "countryEn": "Saudi Arabia",
+      "region": "gulf"
+    },
+    {
+      "id": "shm",
+      "name": "شمالي",
+      "nameEn": "Northern Saudi",
+      "country": "السعودية",
+      "countryEn": "Saudi Arabia",
+      "region": "gulf"
+    },
+    {
+      "id": "kuw",
+      "name": "الكويت",
+      "nameEn": "Kuwaiti",
+      "country": "الكويت",
+      "countryEn": "Kuwait",
+      "region": "gulf"
+    },
+    {
+      "id": "emi",
+      "name": "الإمارات",
+      "nameEn": "Emirati",
+      "country": "الإمارات",
+      "countryEn": "UAE",
+      "region": "gulf"
+    },
+    {
+      "id": "qat",
+      "name": "قطر",
+      "nameEn": "Qatari",
+      "country": "قطر",
+      "countryEn": "Qatar",
+      "region": "gulf"
+    },
+    {
+      "id": "bah",
+      "name": "البحرين",
+      "nameEn": "Bahraini",
+      "country": "البحرين",
+      "countryEn": "Bahrain",
+      "region": "gulf"
+    },
+    {
+      "id": "oma",
+      "name": "مسقط",
+      "nameEn": "Muscat",
+      "country": "عُمان",
+      "countryEn": "Oman",
+      "region": "gulf"
+    },
+    {
+      "id": "dho",
+      "name": "ظفار",
+      "nameEn": "Dhofari",
+      "country": "عُمان",
+      "countryEn": "Oman",
+      "region": "gulf"
+    },
+    {
+      "id": "san",
+      "name": "صنعاء",
+      "nameEn": "Sana'a",
+      "country": "اليمن",
+      "countryEn": "Yemen",
+      "region": "yemen"
+    },
+    {
+      "id": "ade",
+      "name": "عدن",
+      "nameEn": "Aden",
+      "country": "اليمن",
+      "countryEn": "Yemen",
+      "region": "yemen"
+    },
+    {
+      "id": "had",
+      "name": "حضرموت",
+      "nameEn": "Hadhrami",
+      "country": "اليمن",
+      "countryEn": "Yemen",
+      "region": "yemen"
+    },
+    {
+      "id": "sud",
+      "name": "السودان",
+      "nameEn": "Sudanese",
+      "country": "السودان",
+      "countryEn": "Sudan",
+      "region": "nile"
+    },
+    {
+      "id": "chd",
+      "name": "عربية تشاد",
+      "nameEn": "Chadian Arabic",
+      "country": "تشاد",
+      "countryEn": "Chad",
+      "region": "nile"
+    },
+    {
+      "id": "mar",
+      "name": "الدار البيضاء",
+      "nameEn": "Casablanca",
+      "country": "المغرب",
+      "countryEn": "Morocco",
+      "region": "maghreb"
+    },
+    {
+      "id": "jeb",
+      "name": "جبلي (الشمال)",
+      "nameEn": "Jebli (North)",
+      "country": "المغرب",
+      "countryEn": "Morocco",
+      "region": "maghreb"
+    },
+    {
+      "id": "alg",
+      "name": "الجزائر العاصمة",
+      "nameEn": "Algiers",
+      "country": "الجزائر",
+      "countryEn": "Algeria",
+      "region": "maghreb"
+    },
+    {
+      "id": "tun",
+      "name": "تونس",
+      "nameEn": "Tunis",
+      "country": "تونس",
+      "countryEn": "Tunisia",
+      "region": "maghreb"
+    },
+    {
+      "id": "tri",
+      "name": "طرابلس",
+      "nameEn": "Tripoli",
+      "country": "ليبيا",
+      "countryEn": "Libya",
+      "region": "maghreb"
+    },
+    {
+      "id": "ben",
+      "name": "بنغازي",
+      "nameEn": "Benghazi",
+      "country": "ليبيا",
+      "countryEn": "Libya",
+      "region": "maghreb"
+    },
+    {
+      "id": "has",
+      "name": "حسانية",
+      "nameEn": "Hassaniya",
+      "country": "موريتانيا",
+      "countryEn": "Mauritania",
+      "region": "maghreb"
+    }
+  ],
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "التحيات",
+      "nameEn": "Greetings"
+    },
+    {
+      "id": "introductions",
+      "name": "التعارف",
+      "nameEn": "Introductions"
+    },
+    {
+      "id": "cafe",
+      "name": "في المقهى والمطعم",
+      "nameEn": "At the café"
+    },
+    {
+      "id": "shopping",
+      "name": "التسوّق",
+      "nameEn": "Shopping"
+    },
+    {
+      "id": "directions",
+      "name": "الاتجاهات والمواصلات",
+      "nameEn": "Directions & transport"
+    },
+    {
+      "id": "numbers",
+      "name": "الأرقام والمال والوقت",
+      "nameEn": "Numbers, money & time"
+    },
+    {
+      "id": "family",
+      "name": "العائلة",
+      "nameEn": "Family"
+    },
+    {
+      "id": "feelings",
+      "name": "المشاعر",
+      "nameEn": "Feelings"
+    },
+    {
+      "id": "expressions",
+      "name": "تعبيرات أساسية",
+      "nameEn": "Everyday expressions"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "greetings.hello",
+      "category": "greetings",
+      "english": "Hello!",
+      "variants": {
+        "fs": {
+          "text": "مرحبًا",
+          "translit": "marḥaban"
+        },
+        "cai": {
+          "text": "أهلًا",
+          "translit": "ahlan"
+        },
+        "alx": {
+          "text": "أهلًا"
+        },
+        "sai": {
+          "text": "أهلًا"
+        },
+        "sin": {
+          "text": "هلا"
+        },
+        "dam": {
+          "text": "مرحبا"
+        },
+        "alp": {
+          "text": "مرحبا"
+        },
+        "leb": {
+          "text": "مرحبا"
+        },
+        "psu": {
+          "text": "مرحبا"
+        },
+        "psr": {
+          "text": "مرحبا"
+        },
+        "jor": {
+          "text": "هلا"
+        },
+        "bag": {
+          "text": "هلو"
+        },
+        "mos": {
+          "text": "هلا"
+        },
+        "bas": {
+          "text": "هلا"
+        },
+        "naj": {
+          "text": "هلا"
+        },
+        "hij": {
+          "text": "أهلين"
+        },
+        "jiz": {
+          "text": "هلا"
+        },
+        "shm": {
+          "text": "هلا"
+        },
+        "kuw": {
+          "text": "هلا"
+        },
+        "emi": {
+          "text": "هلا"
+        },
+        "qat": {
+          "text": "هلا"
+        },
+        "bah": {
+          "text": "هلا"
+        },
+        "oma": {
+          "text": "هلا"
+        },
+        "dho": {
+          "text": "هلا"
+        },
+        "san": {
+          "text": "أهلًا"
+        },
+        "ade": {
+          "text": "أهلين"
+        },
+        "had": {
+          "text": "حيّا الله"
+        },
+        "sud": {
+          "text": "أهلًا"
+        },
+        "chd": {
+          "text": "أهلًا"
+        },
+        "mar": {
+          "text": "السلام"
+        },
+        "jeb": {
+          "text": "السلام"
+        },
+        "alg": {
+          "text": "السلام"
+        },
+        "tun": {
+          "text": "عسلامة"
+        },
+        "tri": {
+          "text": "مرحبا"
+        },
+        "ben": {
+          "text": "مرحبا"
+        },
+        "has": {
+          "text": "السلام"
+        }
+      }
+    },
+    {
+      "id": "greetings.good_morning",
+      "category": "greetings",
+      "english": "Good morning.",
+      "variants": {
+        "fs": {
+          "text": "صباح الخير",
+          "translit": "ṣabāḥ al-khayr"
+        },
+        "cai": {
+          "text": "صباح الخير",
+          "translit": "ṣabāḥ il-kheer"
+        },
+        "alx": {
+          "text": "صباح الخير"
+        },
+        "sai": {
+          "text": "صباح الخير"
+        },
+        "sin": {
+          "text": "صبّحك الله بالخير"
+        },
+        "dam": {
+          "text": "صباح الخير"
+        },
+        "alp": {
+          "text": "صباح الخير"
+        },
+        "leb": {
+          "text": "صباح الخير"
+        },
+        "psu": {
+          "text": "صباح الخير"
+        },
+        "psr": {
+          "text": "صباح الخير"
+        },
+        "jor": {
+          "text": "صباح الخير"
+        },
+        "bag": {
+          "text": "صباح الخير"
+        },
+        "mos": {
+          "text": "صباح الخيغ"
+        },
+        "bas": {
+          "text": "صباح الخير"
+        },
+        "naj": {
+          "text": "صباح الخير"
+        },
+        "hij": {
+          "text": "صباح الخير"
+        },
+        "jiz": {
+          "text": "صباح امخير"
+        },
+        "shm": {
+          "text": "صبّحك الله بالخير"
+        },
+        "kuw": {
+          "text": "صباح الخير"
+        },
+        "emi": {
+          "text": "صباح الخير"
+        },
+        "qat": {
+          "text": "صباح الخير"
+        },
+        "bah": {
+          "text": "صباح الخير"
+        },
+        "oma": {
+          "text": "صباح الخير"
+        },
+        "dho": {
+          "text": "صباح الخير"
+        },
+        "san": {
+          "text": "صبّحكم الله بالخير"
+        },
+        "ade": {
+          "text": "صباح الخير"
+        },
+        "had": {
+          "text": "صبّحك الله بالخير"
+        },
+        "sud": {
+          "text": "صباح الخير"
+        },
+        "chd": {
+          "text": "صباح الخير"
+        },
+        "mar": {
+          "text": "صباح الخير"
+        },
+        "jeb": {
+          "text": "صباح الخير"
+        },
+        "alg": {
+          "text": "صباح الخير"
+        },
+        "tun": {
+          "text": "صباح الخير"
+        },
+        "tri": {
+          "text": "صباح الخير"
+        },
+        "ben": {
+          "text": "صباح الخير"
+        },
+        "has": {
+          "text": "صباح الخير"
+        }
+      }
+    },
+    {
+      "id": "greetings.good_evening",
+      "category": "greetings",
+      "english": "Good evening.",
+      "variants": {
+        "fs": {
+          "text": "مساء الخير",
+          "translit": "masāʾ al-khayr"
+        },
+        "cai": {
+          "text": "مسا الخير",
+          "translit": "misa l-kheer"
+        },
+        "alx": {
+          "text": "مسا الخير"
+        },
+        "sai": {
+          "text": "مسا الخير"
+        },
+        "sin": {
+          "text": "مسّاك الله بالخير"
+        },
+        "dam": {
+          "text": "مسا الخير"
+        },
+        "alp": {
+          "text": "مسا الخير"
+        },
+        "leb": {
+          "text": "مسا الخير"
+        },
+        "psu": {
+          "text": "مسا الخير"
+        },
+        "psr": {
+          "text": "مسا الخير"
+        },
+        "jor": {
+          "text": "مسا الخير"
+        },
+        "bag": {
+          "text": "مساء الخير"
+        },
+        "mos": {
+          "text": "مسا الخيغ"
+        },
+        "bas": {
+          "text": "مساء الخير"
+        },
+        "naj": {
+          "text": "مساء الخير"
+        },
+        "hij": {
+          "text": "مسا الخير"
+        },
+        "jiz": {
+          "text": "مسا امخير"
+        },
+        "shm": {
+          "text": "مسّاك الله بالخير"
+        },
+        "kuw": {
+          "text": "مساء الخير"
+        },
+        "emi": {
+          "text": "مساء الخير"
+        },
+        "qat": {
+          "text": "مساء الخير"
+        },
+        "bah": {
+          "text": "مساء الخير"
+        },
+        "oma": {
+          "text": "مساء الخير"
+        },
+        "dho": {
+          "text": "مساء الخير"
+        },
+        "san": {
+          "text": "مسّاكم الله بالخير"
+        },
+        "ade": {
+          "text": "مسا الخير"
+        },
+        "had": {
+          "text": "مسّاك الله بالخير"
+        },
+        "sud": {
+          "text": "مسا الخير"
+        },
+        "chd": {
+          "text": "مسا الخير"
+        },
+        "mar": {
+          "text": "مسا الخير"
+        },
+        "jeb": {
+          "text": "مسا الخير"
+        },
+        "alg": {
+          "text": "مسا الخير"
+        },
+        "tun": {
+          "text": "مسا الخير"
+        },
+        "tri": {
+          "text": "مسا الخير"
+        },
+        "ben": {
+          "text": "مسا الخير"
+        },
+        "has": {
+          "text": "مسا الخير"
+        }
+      }
+    },
+    {
+      "id": "greetings.how_are_you",
+      "category": "greetings",
+      "english": "How are you?",
+      "note": "Said to a man.",
+      "noteAr": "بصيغة المخاطَب المذكّر",
+      "variants": {
+        "fs": {
+          "text": "كيف حالك؟",
+          "translit": "kayfa ḥāluk?"
+        },
+        "cai": {
+          "text": "إزيّك؟",
+          "translit": "izzayyak?"
+        },
+        "alx": {
+          "text": "إزيّك؟"
+        },
+        "sai": {
+          "text": "عامل إيه؟"
+        },
+        "sin": {
+          "text": "كيف حالك؟"
+        },
+        "dam": {
+          "text": "كيفك؟"
+        },
+        "alp": {
+          "text": "شلونك؟"
+        },
+        "leb": {
+          "text": "كيفك؟"
+        },
+        "psu": {
+          "text": "كيفك؟"
+        },
+        "psr": {
+          "text": "تشيفك؟"
+        },
+        "jor": {
+          "text": "كيف حالك؟"
+        },
+        "bag": {
+          "text": "شلونك؟"
+        },
+        "mos": {
+          "text": "إشلونَك؟"
+        },
+        "bas": {
+          "text": "شلونك؟"
+        },
+        "naj": {
+          "text": "وشلونك؟"
+        },
+        "hij": {
+          "text": "كيفك؟"
+        },
+        "jiz": {
+          "text": "كيف حالك؟"
+        },
+        "shm": {
+          "text": "شلونك؟"
+        },
+        "kuw": {
+          "text": "شلونك؟"
+        },
+        "emi": {
+          "text": "شحالك؟"
+        },
+        "qat": {
+          "text": "شلونك؟"
+        },
+        "bah": {
+          "text": "شلونك؟"
+        },
+        "oma": {
+          "text": "كيف حالك؟"
+        },
+        "dho": {
+          "text": "كيف حالك؟"
+        },
+        "san": {
+          "text": "كيف حالك؟"
+        },
+        "ade": {
+          "text": "كيفك؟"
+        },
+        "had": {
+          "text": "كيف حالك؟"
+        },
+        "sud": {
+          "text": "كيفنّك؟"
+        },
+        "chd": {
+          "text": "إنت عافية؟"
+        },
+        "mar": {
+          "text": "لاباس عليك؟"
+        },
+        "jeb": {
+          "text": "لاباس عليك؟"
+        },
+        "alg": {
+          "text": "واش راك؟"
+        },
+        "tun": {
+          "text": "شنوّة أحوالك؟"
+        },
+        "tri": {
+          "text": "شن حالك؟"
+        },
+        "ben": {
+          "text": "كيف حالك؟"
+        },
+        "has": {
+          "text": "اشحالك؟"
+        }
+      }
+    },
+    {
+      "id": "greetings.im_fine",
+      "category": "greetings",
+      "english": "I'm fine, thank God.",
+      "variants": {
+        "fs": {
+          "text": "أنا بخير، الحمد لله",
+          "translit": "anā bi-khayr, al-ḥamdu lillāh"
+        },
+        "cai": {
+          "text": "أنا كويّس، الحمد لله",
+          "translit": "ana kwayyis, il-ḥamdu lillāh"
+        },
+        "alx": {
+          "text": "أنا كويّس، الحمد لله"
+        },
+        "sai": {
+          "text": "تمام، الحمد لله"
+        },
+        "sin": {
+          "text": "زين، الحمد لله"
+        },
+        "dam": {
+          "text": "منيح، الحمد لله"
+        },
+        "alp": {
+          "text": "منيح، الحمد لله"
+        },
+        "leb": {
+          "text": "منيح، الحمد لله"
+        },
+        "psu": {
+          "text": "منيح، الحمد لله"
+        },
+        "psr": {
+          "text": "منيح، الحمد لله"
+        },
+        "jor": {
+          "text": "تمام، الحمد لله"
+        },
+        "bag": {
+          "text": "زين، الحمد لله"
+        },
+        "mos": {
+          "text": "زين، الحمد لله"
+        },
+        "bas": {
+          "text": "زين، الحمد لله"
+        },
+        "naj": {
+          "text": "زين، الحمد لله"
+        },
+        "hij": {
+          "text": "كويّس، الحمد لله"
+        },
+        "jiz": {
+          "text": "بخير، الحمد لله"
+        },
+        "shm": {
+          "text": "زين، الحمد لله"
+        },
+        "kuw": {
+          "text": "زين، الحمد لله"
+        },
+        "emi": {
+          "text": "بخير، الحمد لله"
+        },
+        "qat": {
+          "text": "زين، الحمد لله"
+        },
+        "bah": {
+          "text": "زين، الحمد لله"
+        },
+        "oma": {
+          "text": "بخير، الحمد لله"
+        },
+        "dho": {
+          "text": "بخير، الحمد لله"
+        },
+        "san": {
+          "text": "بخير، الحمد لله"
+        },
+        "ade": {
+          "text": "تمام، الحمد لله"
+        },
+        "had": {
+          "text": "بخير، الحمد لله"
+        },
+        "sud": {
+          "text": "كويّس، الحمد لله"
+        },
+        "chd": {
+          "text": "عافية، الحمد لله"
+        },
+        "mar": {
+          "text": "لاباس، الحمد لله"
+        },
+        "jeb": {
+          "text": "لاباس، الحمد لله"
+        },
+        "alg": {
+          "text": "لاباس، الحمد لله"
+        },
+        "tun": {
+          "text": "لاباس، الحمد لله"
+        },
+        "tri": {
+          "text": "باهي، الحمد لله"
+        },
+        "ben": {
+          "text": "تمام، الحمد لله"
+        },
+        "has": {
+          "text": "لاباس، الحمد لله"
+        }
+      }
+    },
+    {
+      "id": "greetings.whats_new",
+      "category": "greetings",
+      "english": "What's new?",
+      "variants": {
+        "fs": {
+          "text": "ما الأخبار؟",
+          "translit": "mā al-akhbār?"
+        },
+        "cai": {
+          "text": "إيه الأخبار؟",
+          "translit": "eeh il-akhbaar?"
+        },
+        "alx": {
+          "text": "إيه الأخبار؟"
+        },
+        "sai": {
+          "text": "إيه الأخبار؟"
+        },
+        "sin": {
+          "text": "وش العلوم؟"
+        },
+        "dam": {
+          "text": "شو الأخبار؟"
+        },
+        "alp": {
+          "text": "إيش الأخبار؟"
+        },
+        "leb": {
+          "text": "شو الأخبار؟"
+        },
+        "psu": {
+          "text": "شو الأخبار؟"
+        },
+        "psr": {
+          "text": "ويش الأخبار؟"
+        },
+        "jor": {
+          "text": "شو الأخبار؟"
+        },
+        "bag": {
+          "text": "شكو ماكو؟"
+        },
+        "mos": {
+          "text": "إش أكو ما أكو؟"
+        },
+        "bas": {
+          "text": "شكو ماكو؟"
+        },
+        "naj": {
+          "text": "وش العلوم؟"
+        },
+        "hij": {
+          "text": "إيش الأخبار؟"
+        },
+        "jiz": {
+          "text": "إيش امعلوم؟"
+        },
+        "shm": {
+          "text": "وش العلوم؟"
+        },
+        "kuw": {
+          "text": "شخبارك؟"
+        },
+        "emi": {
+          "text": "شو العلوم؟"
+        },
+        "qat": {
+          "text": "شخبارك؟"
+        },
+        "bah": {
+          "text": "شخبارك؟"
+        },
+        "oma": {
+          "text": "ويش الأخبار؟"
+        },
+        "dho": {
+          "text": "إيش العلوم؟"
+        },
+        "san": {
+          "text": "ماشي جديد؟"
+        },
+        "ade": {
+          "text": "إيش الجديد؟"
+        },
+        "had": {
+          "text": "إيش الأخبار؟"
+        },
+        "sud": {
+          "text": "أخبارك شنو؟"
+        },
+        "chd": {
+          "text": "أخبارك شنو؟"
+        },
+        "mar": {
+          "text": "أش خبارك؟"
+        },
+        "jeb": {
+          "text": "أش خبارك؟"
+        },
+        "alg": {
+          "text": "واش الأخبار؟"
+        },
+        "tun": {
+          "text": "أشنوّة الأخبار؟"
+        },
+        "tri": {
+          "text": "شن الأخبار؟"
+        },
+        "ben": {
+          "text": "شن الأخبار؟"
+        },
+        "has": {
+          "text": "اشطاري؟"
+        }
+      }
+    },
+    {
+      "id": "greetings.nice_to_meet",
+      "category": "greetings",
+      "english": "Nice to meet you.",
+      "variants": {
+        "fs": {
+          "text": "تشرّفت بمعرفتك",
+          "translit": "tasharraftu bi-maʿrifatik"
+        },
+        "cai": {
+          "text": "اتشرّفنا",
+          "translit": "itsharrafna"
+        },
+        "alx": {
+          "text": "اتشرّفنا"
+        },
+        "sai": {
+          "text": "اتشرّفنا"
+        },
+        "sin": {
+          "text": "تشرّفنا"
+        },
+        "dam": {
+          "text": "تشرّفنا"
+        },
+        "alp": {
+          "text": "تشرّفنا"
+        },
+        "leb": {
+          "text": "تشرّفنا"
+        },
+        "psu": {
+          "text": "تشرّفنا"
+        },
+        "psr": {
+          "text": "تشرّفنا"
+        },
+        "jor": {
+          "text": "تشرّفنا"
+        },
+        "bag": {
+          "text": "تشرّفنا"
+        },
+        "mos": {
+          "text": "تشغّفنا"
+        },
+        "bas": {
+          "text": "تشرّفنا"
+        },
+        "naj": {
+          "text": "تشرّفنا"
+        },
+        "hij": {
+          "text": "تشرّفنا"
+        },
+        "jiz": {
+          "text": "تشرّفنا"
+        },
+        "shm": {
+          "text": "تشرّفنا"
+        },
+        "kuw": {
+          "text": "تشرّفنا"
+        },
+        "emi": {
+          "text": "تشرّفنا"
+        },
+        "qat": {
+          "text": "تشرّفنا"
+        },
+        "bah": {
+          "text": "تشرّفنا"
+        },
+        "oma": {
+          "text": "تشرّفنا"
+        },
+        "dho": {
+          "text": "تشرّفنا"
+        },
+        "san": {
+          "text": "تشرّفنا"
+        },
+        "ade": {
+          "text": "تشرّفنا"
+        },
+        "had": {
+          "text": "تشرّفنا"
+        },
+        "sud": {
+          "text": "اتشرّفنا"
+        },
+        "chd": {
+          "text": "اتشرّفنا"
+        },
+        "mar": {
+          "text": "متشرّفين"
+        },
+        "jeb": {
+          "text": "متشرّفين"
+        },
+        "alg": {
+          "text": "متشرّفين"
+        },
+        "tun": {
+          "text": "نتشرّفو"
+        },
+        "tri": {
+          "text": "تشرّفنا"
+        },
+        "ben": {
+          "text": "تشرّفنا"
+        },
+        "has": {
+          "text": "متشرّفين"
+        }
+      }
+    },
+    {
+      "id": "greetings.goodbye",
+      "category": "greetings",
+      "english": "Goodbye.",
+      "variants": {
+        "fs": {
+          "text": "مع السلامة",
+          "translit": "maʿa as-salāma"
+        },
+        "cai": {
+          "text": "مع السلامة",
+          "translit": "maʿa s-salaama"
+        },
+        "alx": {
+          "text": "سلام"
+        },
+        "sai": {
+          "text": "مع السلامة"
+        },
+        "sin": {
+          "text": "في أمان الله"
+        },
+        "dam": {
+          "text": "مع السلامة"
+        },
+        "alp": {
+          "text": "بخاطرك"
+        },
+        "leb": {
+          "text": "يلّا، باي"
+        },
+        "psu": {
+          "text": "مع السلامة"
+        },
+        "psr": {
+          "text": "مع السلامة"
+        },
+        "jor": {
+          "text": "مع السلامة"
+        },
+        "bag": {
+          "text": "مع السلامة"
+        },
+        "mos": {
+          "text": "بأمان الله"
+        },
+        "bas": {
+          "text": "مع السلامة"
+        },
+        "naj": {
+          "text": "في أمان الله"
+        },
+        "hij": {
+          "text": "مع السلامة"
+        },
+        "jiz": {
+          "text": "في أمان الله"
+        },
+        "shm": {
+          "text": "في أمان الله"
+        },
+        "kuw": {
+          "text": "في أمان الله"
+        },
+        "emi": {
+          "text": "في أمان الله"
+        },
+        "qat": {
+          "text": "في أمان الله"
+        },
+        "bah": {
+          "text": "في أمان الله"
+        },
+        "oma": {
+          "text": "في أمان الله"
+        },
+        "dho": {
+          "text": "في أمان الله"
+        },
+        "san": {
+          "text": "في أمان الله"
+        },
+        "ade": {
+          "text": "مع السلامة"
+        },
+        "had": {
+          "text": "في أمان الله"
+        },
+        "sud": {
+          "text": "مع السلامة"
+        },
+        "chd": {
+          "text": "مع السلامة"
+        },
+        "mar": {
+          "text": "بسلامة"
+        },
+        "jeb": {
+          "text": "بسلامة"
+        },
+        "alg": {
+          "text": "بسلامة"
+        },
+        "tun": {
+          "text": "بالسلامة"
+        },
+        "tri": {
+          "text": "بالسلامة"
+        },
+        "ben": {
+          "text": "في أمان الله"
+        },
+        "has": {
+          "text": "مع السلامة"
+        }
+      }
+    },
+    {
+      "id": "introductions.whats_your_name",
+      "category": "introductions",
+      "english": "What's your name?",
+      "note": "Said to a man.",
+      "noteAr": "بصيغة المخاطَب المذكّر",
+      "variants": {
+        "fs": {
+          "text": "ما اسمك؟",
+          "translit": "ma-smuk?"
+        },
+        "cai": {
+          "text": "اسمك إيه؟",
+          "translit": "ismak eeh?"
+        },
+        "alx": {
+          "text": "اسمك إيه؟"
+        },
+        "sai": {
+          "text": "اسمك إيه؟"
+        },
+        "sin": {
+          "text": "وش اسمك؟"
+        },
+        "dam": {
+          "text": "شو اسمك؟"
+        },
+        "alp": {
+          "text": "إيش اسمك؟"
+        },
+        "leb": {
+          "text": "شو اسمك؟"
+        },
+        "psu": {
+          "text": "شو اسمك؟"
+        },
+        "psr": {
+          "text": "ويش اسمك؟"
+        },
+        "jor": {
+          "text": "شو اسمك؟"
+        },
+        "bag": {
+          "text": "شنو اسمك؟"
+        },
+        "mos": {
+          "text": "إش اسمك؟"
+        },
+        "bas": {
+          "text": "شنو اسمك؟"
+        },
+        "naj": {
+          "text": "وش اسمك؟"
+        },
+        "hij": {
+          "text": "إيش اسمك؟"
+        },
+        "jiz": {
+          "text": "إيش اسمك؟"
+        },
+        "shm": {
+          "text": "وش اسمك؟"
+        },
+        "kuw": {
+          "text": "شنو اسمك؟"
+        },
+        "emi": {
+          "text": "شو اسمك؟"
+        },
+        "qat": {
+          "text": "شنو اسمك؟"
+        },
+        "bah": {
+          "text": "شنو اسمك؟"
+        },
+        "oma": {
+          "text": "إيش اسمك؟"
+        },
+        "dho": {
+          "text": "إيش اسمك؟"
+        },
+        "san": {
+          "text": "ما اسمك؟"
+        },
+        "ade": {
+          "text": "إيش اسمك؟"
+        },
+        "had": {
+          "text": "إيش اسمك؟"
+        },
+        "sud": {
+          "text": "اسمك منو؟"
+        },
+        "chd": {
+          "text": "اسمك منو؟"
+        },
+        "mar": {
+          "text": "أشنو سميتك؟"
+        },
+        "jeb": {
+          "text": "أش سميتك؟"
+        },
+        "alg": {
+          "text": "واش سمّيتك؟"
+        },
+        "tun": {
+          "text": "شنوّة اسمك؟"
+        },
+        "tri": {
+          "text": "شن اسمك؟"
+        },
+        "ben": {
+          "text": "شن اسمك؟"
+        },
+        "has": {
+          "text": "اسمك اشنهو؟"
+        }
+      }
+    },
+    {
+      "id": "introductions.my_name_is",
+      "category": "introductions",
+      "english": "My name is Ahmed.",
+      "variants": {
+        "fs": {
+          "text": "اسمي أحمد",
+          "translit": "ismī Aḥmad"
+        },
+        "cai": {
+          "text": "اسمي أحمد",
+          "translit": "ismi Aḥmad"
+        },
+        "alx": {
+          "text": "اسمي أحمد"
+        },
+        "sai": {
+          "text": "اسمي أحمد"
+        },
+        "sin": {
+          "text": "اسمي أحمد"
+        },
+        "dam": {
+          "text": "اسمي أحمد"
+        },
+        "alp": {
+          "text": "اسمي أحمد"
+        },
+        "leb": {
+          "text": "اسمي أحمد"
+        },
+        "psu": {
+          "text": "اسمي أحمد"
+        },
+        "psr": {
+          "text": "اسمي أحمد"
+        },
+        "jor": {
+          "text": "اسمي أحمد"
+        },
+        "bag": {
+          "text": "اسمي أحمد"
+        },
+        "mos": {
+          "text": "اسمي أحمد"
+        },
+        "bas": {
+          "text": "اسمي أحمد"
+        },
+        "naj": {
+          "text": "اسمي أحمد"
+        },
+        "hij": {
+          "text": "اسمي أحمد"
+        },
+        "jiz": {
+          "text": "اسمي أحمد"
+        },
+        "shm": {
+          "text": "اسمي أحمد"
+        },
+        "kuw": {
+          "text": "اسمي أحمد"
+        },
+        "emi": {
+          "text": "اسمي أحمد"
+        },
+        "qat": {
+          "text": "اسمي أحمد"
+        },
+        "bah": {
+          "text": "اسمي أحمد"
+        },
+        "oma": {
+          "text": "اسمي أحمد"
+        },
+        "dho": {
+          "text": "اسمي أحمد"
+        },
+        "san": {
+          "text": "اسمي أحمد"
+        },
+        "ade": {
+          "text": "اسمي أحمد"
+        },
+        "had": {
+          "text": "اسمي أحمد"
+        },
+        "sud": {
+          "text": "اسمي أحمد"
+        },
+        "chd": {
+          "text": "اسمي أحمد"
+        },
+        "mar": {
+          "text": "سميتي أحمد"
+        },
+        "jeb": {
+          "text": "سميتي أحمد"
+        },
+        "alg": {
+          "text": "سمّيتي أحمد"
+        },
+        "tun": {
+          "text": "اسمي أحمد"
+        },
+        "tri": {
+          "text": "اسمي أحمد"
+        },
+        "ben": {
+          "text": "اسمي أحمد"
+        },
+        "has": {
+          "text": "اسمي أحمد"
+        }
+      }
+    },
+    {
+      "id": "introductions.where_from",
+      "category": "introductions",
+      "english": "Where are you from?",
+      "note": "Said to a man.",
+      "noteAr": "بصيغة المخاطَب المذكّر",
+      "variants": {
+        "fs": {
+          "text": "من أين أنت؟",
+          "translit": "min ayna anta?"
+        },
+        "cai": {
+          "text": "إنت منين؟",
+          "translit": "inta mineen?"
+        },
+        "alx": {
+          "text": "إنت منين؟"
+        },
+        "sai": {
+          "text": "إنت منين؟"
+        },
+        "sin": {
+          "text": "من وين إنت؟"
+        },
+        "dam": {
+          "text": "من وين إنت؟"
+        },
+        "alp": {
+          "text": "من وين إنت؟"
+        },
+        "leb": {
+          "text": "من وين إنت؟"
+        },
+        "psu": {
+          "text": "من وين إنت؟"
+        },
+        "psr": {
+          "text": "من وين إنت؟"
+        },
+        "jor": {
+          "text": "من وين إنت؟"
+        },
+        "bag": {
+          "text": "إنت منين؟"
+        },
+        "mos": {
+          "text": "إنتَ منين؟"
+        },
+        "bas": {
+          "text": "إنت منين؟"
+        },
+        "naj": {
+          "text": "من وين إنت؟"
+        },
+        "hij": {
+          "text": "من فين إنت؟"
+        },
+        "jiz": {
+          "text": "من وين إنت؟"
+        },
+        "shm": {
+          "text": "من وين إنت؟"
+        },
+        "kuw": {
+          "text": "إنت من وين؟"
+        },
+        "emi": {
+          "text": "إنت من وين؟"
+        },
+        "qat": {
+          "text": "إنت من وين؟"
+        },
+        "bah": {
+          "text": "إنت من وين؟"
+        },
+        "oma": {
+          "text": "من وين إنت؟"
+        },
+        "dho": {
+          "text": "من وين إنت؟"
+        },
+        "san": {
+          "text": "من أين انته؟"
+        },
+        "ade": {
+          "text": "من فين انته؟"
+        },
+        "had": {
+          "text": "من وين انته؟"
+        },
+        "sud": {
+          "text": "إنت من وين؟"
+        },
+        "chd": {
+          "text": "إنت من وين؟"
+        },
+        "mar": {
+          "text": "منين نتا؟"
+        },
+        "jeb": {
+          "text": "منين نتا؟"
+        },
+        "alg": {
+          "text": "منين نتا؟"
+        },
+        "tun": {
+          "text": "منين إنتِ؟"
+        },
+        "tri": {
+          "text": "من وين إنت؟"
+        },
+        "ben": {
+          "text": "من وين إنت؟"
+        },
+        "has": {
+          "text": "منين انت؟"
+        }
+      }
+    },
+    {
+      "id": "introductions.from_egypt",
+      "category": "introductions",
+      "english": "I'm from Egypt.",
+      "variants": {
+        "fs": {
+          "text": "أنا من مصر",
+          "translit": "anā min Miṣr"
+        },
+        "cai": {
+          "text": "أنا من مصر",
+          "translit": "ana min Maṣr"
+        },
+        "alx": {
+          "text": "أنا من مصر"
+        },
+        "sai": {
+          "text": "أنا من مصر"
+        },
+        "sin": {
+          "text": "أنا من مصر"
+        },
+        "dam": {
+          "text": "أنا من مصر"
+        },
+        "alp": {
+          "text": "أنا من مصر"
+        },
+        "leb": {
+          "text": "أنا من مصر"
+        },
+        "psu": {
+          "text": "أنا من مصر"
+        },
+        "psr": {
+          "text": "أنا من مصر"
+        },
+        "jor": {
+          "text": "أنا من مصر"
+        },
+        "bag": {
+          "text": "آني من مصر"
+        },
+        "mos": {
+          "text": "أنا من مصغ"
+        },
+        "bas": {
+          "text": "آني من مصر"
+        },
+        "naj": {
+          "text": "أنا من مصر"
+        },
+        "hij": {
+          "text": "أنا من مصر"
+        },
+        "jiz": {
+          "text": "أنا من مصر"
+        },
+        "shm": {
+          "text": "أنا من مصر"
+        },
+        "kuw": {
+          "text": "أنا من مصر"
+        },
+        "emi": {
+          "text": "أنا من مصر"
+        },
+        "qat": {
+          "text": "أنا من مصر"
+        },
+        "bah": {
+          "text": "أنا من مصر"
+        },
+        "oma": {
+          "text": "أنا من مصر"
+        },
+        "dho": {
+          "text": "أنا من مصر"
+        },
+        "san": {
+          "text": "أنا من مصر"
+        },
+        "ade": {
+          "text": "أنا من مصر"
+        },
+        "had": {
+          "text": "أنا من مصر"
+        },
+        "sud": {
+          "text": "أنا من مصر"
+        },
+        "chd": {
+          "text": "أنا من مصر"
+        },
+        "mar": {
+          "text": "أنا من مصر"
+        },
+        "jeb": {
+          "text": "أنا من مصر"
+        },
+        "alg": {
+          "text": "أنا من مصر"
+        },
+        "tun": {
+          "text": "أنا من مصر"
+        },
+        "tri": {
+          "text": "أنا من مصر"
+        },
+        "ben": {
+          "text": "أنا من مصر"
+        },
+        "has": {
+          "text": "آن من مصر"
+        }
+      }
+    },
+    {
+      "id": "introductions.work_teacher",
+      "category": "introductions",
+      "english": "I work as a teacher.",
+      "variants": {
+        "fs": {
+          "text": "أعمل مدرّسًا",
+          "translit": "aʿmalu mudarrisan"
+        },
+        "cai": {
+          "text": "أنا بشتغل مدرّس",
+          "translit": "ana bashtaghal mudarris"
+        },
+        "alx": {
+          "text": "أنا بشتغل مدرّس"
+        },
+        "sai": {
+          "text": "أنا بشتغل مدرّس"
+        },
+        "sin": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "dam": {
+          "text": "أنا بشتغل أستاذ"
+        },
+        "alp": {
+          "text": "أنا بشتغل أستاذ"
+        },
+        "leb": {
+          "text": "أنا بشتغل أستاذ"
+        },
+        "psu": {
+          "text": "أنا بشتغل أستاذ"
+        },
+        "psr": {
+          "text": "أنا بشتغل أستاذ"
+        },
+        "jor": {
+          "text": "أنا بشتغل معلّم"
+        },
+        "bag": {
+          "text": "آني أشتغل معلّم"
+        },
+        "mos": {
+          "text": "أنا أشتغل معلّم"
+        },
+        "bas": {
+          "text": "آني أشتغل معلّم"
+        },
+        "naj": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "hij": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "jiz": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "shm": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "kuw": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "emi": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "qat": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "bah": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "oma": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "dho": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "san": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "ade": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "had": {
+          "text": "أنا أشتغل مدرّس"
+        },
+        "sud": {
+          "text": "أنا بشتغل أستاذ"
+        },
+        "chd": {
+          "text": "أنا نخدم أستاذ"
+        },
+        "mar": {
+          "text": "أنا خدّام أستاذ"
+        },
+        "jeb": {
+          "text": "أنا خدّام أستاذ"
+        },
+        "alg": {
+          "text": "أنا نخدم أستاذ"
+        },
+        "tun": {
+          "text": "أنا نخدم أستاذ"
+        },
+        "tri": {
+          "text": "أنا نخدم أستاذ"
+        },
+        "ben": {
+          "text": "أنا نخدم أستاذ"
+        },
+        "has": {
+          "text": "آن نخدم أستاذ"
+        }
+      }
+    },
+    {
+      "id": "introductions.speak_little",
+      "category": "introductions",
+      "english": "I speak a little Arabic.",
+      "variants": {
+        "fs": {
+          "text": "أتكلّم العربية قليلًا",
+          "translit": "atakallamu al-ʿarabiyya qalīlan"
+        },
+        "cai": {
+          "text": "أنا بتكلّم عربي شويّة",
+          "translit": "ana batkallim ʿarabi shwayya"
+        },
+        "alx": {
+          "text": "أنا بتكلّم عربي شويّة"
+        },
+        "sai": {
+          "text": "أنا بتكلّم عربي شويّة"
+        },
+        "sin": {
+          "text": "أتكلّم عربي شوي"
+        },
+        "dam": {
+          "text": "بحكي عربي شوي"
+        },
+        "alp": {
+          "text": "بحكي عربي شوي"
+        },
+        "leb": {
+          "text": "بحكي عربي شوي"
+        },
+        "psu": {
+          "text": "بحكي عربي شوي"
+        },
+        "psr": {
+          "text": "بحكي عربي شوي"
+        },
+        "jor": {
+          "text": "بحكي عربي شوي"
+        },
+        "bag": {
+          "text": "أحچي عربي شويّة"
+        },
+        "mos": {
+          "text": "أحكي عغبي شويّة"
+        },
+        "bas": {
+          "text": "أحچي عربي شويّة"
+        },
+        "naj": {
+          "text": "أتكلّم عربي شوي"
+        },
+        "hij": {
+          "text": "أتكلّم عربي شويّة"
+        },
+        "jiz": {
+          "text": "أتكلّم عربي شويّة"
+        },
+        "shm": {
+          "text": "أتكلّم عربي شوي"
+        },
+        "kuw": {
+          "text": "أتكلّم عربي شوي"
+        },
+        "emi": {
+          "text": "أتكلّم عربي شوي"
+        },
+        "qat": {
+          "text": "أتكلّم عربي شوي"
+        },
+        "bah": {
+          "text": "أتكلّم عربي شوي"
+        },
+        "oma": {
+          "text": "أتكلّم عربي شويّة"
+        },
+        "dho": {
+          "text": "أتكلّم عربي شويّة"
+        },
+        "san": {
+          "text": "أتكلّم عربي شويّة"
+        },
+        "ade": {
+          "text": "أتكلّم عربي شويّة"
+        },
+        "had": {
+          "text": "أتكلّم عربي شويّة"
+        },
+        "sud": {
+          "text": "بتكلّم عربي شويّة"
+        },
+        "chd": {
+          "text": "نتكلّم عربي شويّة"
+        },
+        "mar": {
+          "text": "كنهضر العربية شويّة"
+        },
+        "jeb": {
+          "text": "كنهضر العربية شويّة"
+        },
+        "alg": {
+          "text": "نهدر العربية شويّة"
+        },
+        "tun": {
+          "text": "نحكي بالعربي شويّة"
+        },
+        "tri": {
+          "text": "نتكلّم عربي شويّة"
+        },
+        "ben": {
+          "text": "نتكلّم عربي شويّة"
+        },
+        "has": {
+          "text": "نتكلّم العربية شويّة"
+        }
+      }
+    },
+    {
+      "id": "introductions.how_old",
+      "category": "introductions",
+      "english": "How old are you?",
+      "note": "Said to a man.",
+      "noteAr": "بصيغة المخاطَب المذكّر",
+      "variants": {
+        "fs": {
+          "text": "كم عمرك؟",
+          "translit": "kam ʿumruk?"
+        },
+        "cai": {
+          "text": "عندك كام سنة؟",
+          "translit": "ʿandak kaam sana?"
+        },
+        "alx": {
+          "text": "عندك كام سنة؟"
+        },
+        "sai": {
+          "text": "عندك كام سنة؟"
+        },
+        "sin": {
+          "text": "كم عمرك؟"
+        },
+        "dam": {
+          "text": "قدّيش عمرك؟"
+        },
+        "alp": {
+          "text": "قدّيش عمرك؟"
+        },
+        "leb": {
+          "text": "قدّيش عمرك؟"
+        },
+        "psu": {
+          "text": "قدّيش عمرك؟"
+        },
+        "psr": {
+          "text": "كدّيش عمرك؟"
+        },
+        "jor": {
+          "text": "قدّيش عمرك؟"
+        },
+        "bag": {
+          "text": "شگد عمرك؟"
+        },
+        "mos": {
+          "text": "كم عمغك؟"
+        },
+        "bas": {
+          "text": "شگد عمرك؟"
+        },
+        "naj": {
+          "text": "كم عمرك؟"
+        },
+        "hij": {
+          "text": "كم عمرك؟"
+        },
+        "jiz": {
+          "text": "كم عمرك؟"
+        },
+        "shm": {
+          "text": "كم عمرك؟"
+        },
+        "kuw": {
+          "text": "چم عمرك؟"
+        },
+        "emi": {
+          "text": "كم عمرك؟"
+        },
+        "qat": {
+          "text": "چم عمرك؟"
+        },
+        "bah": {
+          "text": "چم عمرك؟"
+        },
+        "oma": {
+          "text": "كم عمرك؟"
+        },
+        "dho": {
+          "text": "كم عمرك؟"
+        },
+        "san": {
+          "text": "كم عمرك؟"
+        },
+        "ade": {
+          "text": "كم عمرك؟"
+        },
+        "had": {
+          "text": "كم عمرك؟"
+        },
+        "sud": {
+          "text": "عمرك كم؟"
+        },
+        "chd": {
+          "text": "عمرك كم؟"
+        },
+        "mar": {
+          "text": "شحال فعمرك؟"
+        },
+        "jeb": {
+          "text": "شحال فعمرك؟"
+        },
+        "alg": {
+          "text": "قدّاش فعمرك؟"
+        },
+        "tun": {
+          "text": "قدّاش عمرك؟"
+        },
+        "tri": {
+          "text": "كم عمرك؟"
+        },
+        "ben": {
+          "text": "كم عمرك؟"
+        },
+        "has": {
+          "text": "كم عمرك؟"
+        }
+      }
+    },
+    {
+      "id": "cafe.want_coffee",
+      "category": "cafe",
+      "english": "I'd like a coffee, please.",
+      "variants": {
+        "fs": {
+          "text": "أريد قهوة من فضلك",
+          "translit": "urīdu qahwa min faḍlik"
+        },
+        "cai": {
+          "text": "عايز قهوة لو سمحت",
+          "translit": "ʿaayiz ʼahwa law samaḥt"
+        },
+        "alx": {
+          "text": "عايز قهوة لو سمحت"
+        },
+        "sai": {
+          "text": "عايز قهوة لو سمحت"
+        },
+        "sin": {
+          "text": "أبغى قهوة لو سمحت"
+        },
+        "dam": {
+          "text": "بدّي قهوة لو سمحت"
+        },
+        "alp": {
+          "text": "بدّي قهوة لو سمحت"
+        },
+        "leb": {
+          "text": "بدّي قهوة إذا بتريد"
+        },
+        "psu": {
+          "text": "بدّي قهوة لو سمحت"
+        },
+        "psr": {
+          "text": "بدّي كهوة لو سمحت"
+        },
+        "jor": {
+          "text": "بدّي قهوة لو سمحت"
+        },
+        "bag": {
+          "text": "أريد قهوة لو سمحت"
+        },
+        "mos": {
+          "text": "أغيد قهوة لو سمحت"
+        },
+        "bas": {
+          "text": "أريد قهوة لو سمحت"
+        },
+        "naj": {
+          "text": "أبي قهوة لو سمحت"
+        },
+        "hij": {
+          "text": "أبغى قهوة لو سمحت"
+        },
+        "jiz": {
+          "text": "أبغى قهوة لو سمحت"
+        },
+        "shm": {
+          "text": "أبي قهوة لو سمحت"
+        },
+        "kuw": {
+          "text": "أبي قهوة لو سمحت"
+        },
+        "emi": {
+          "text": "أبا قهوة لو سمحت"
+        },
+        "qat": {
+          "text": "أبي قهوة لو سمحت"
+        },
+        "bah": {
+          "text": "أبي قهوة لو سمحت"
+        },
+        "oma": {
+          "text": "أريد قهوة لو سمحت"
+        },
+        "dho": {
+          "text": "أبا قهوة لو سمحت"
+        },
+        "san": {
+          "text": "أشتي قهوة لو سمحت"
+        },
+        "ade": {
+          "text": "أشتي قهوة لو سمحت"
+        },
+        "had": {
+          "text": "أبا قهوة لو سمحت"
+        },
+        "sud": {
+          "text": "داير قهوة لو سمحت"
+        },
+        "chd": {
+          "text": "داير قهوة لو سمحت"
+        },
+        "mar": {
+          "text": "بغيت قهوة عافاك"
+        },
+        "jeb": {
+          "text": "بغيت قهوة عافاك"
+        },
+        "alg": {
+          "text": "نحب قهوة يعيشك"
+        },
+        "tun": {
+          "text": "نحب قهوة يعيشك"
+        },
+        "tri": {
+          "text": "نبي قهوة لو سمحت"
+        },
+        "ben": {
+          "text": "نبي قهوة لو سمحت"
+        },
+        "has": {
+          "text": "نبغي قهوة لو سمحت"
+        }
+      }
+    },
+    {
+      "id": "cafe.tea_sugar",
+      "category": "cafe",
+      "english": "Tea with a little sugar.",
+      "variants": {
+        "fs": {
+          "text": "شاي بقليل من السكر",
+          "translit": "shāy bi-qalīl min as-sukkar"
+        },
+        "cai": {
+          "text": "شاي بسكّر خفيف",
+          "translit": "shaay bi-sukkar khafiif"
+        },
+        "alx": {
+          "text": "شاي بسكّر خفيف"
+        },
+        "sai": {
+          "text": "شاي سكّره خفيف"
+        },
+        "sin": {
+          "text": "شاهي بسكّر شوي"
+        },
+        "dam": {
+          "text": "شاي مع سكّر خفيف"
+        },
+        "alp": {
+          "text": "شاي مع سكّر خفيف"
+        },
+        "leb": {
+          "text": "شاي مع سكّر خفيف"
+        },
+        "psu": {
+          "text": "شاي مع سكّر خفيف"
+        },
+        "psr": {
+          "text": "شاي مع سكّر خفيف"
+        },
+        "jor": {
+          "text": "شاي سكّر خفيف"
+        },
+        "bag": {
+          "text": "چاي شكره خفيف"
+        },
+        "mos": {
+          "text": "چاي شكغه خفيف"
+        },
+        "bas": {
+          "text": "چاي شكره خفيف"
+        },
+        "naj": {
+          "text": "شاهي سكّره خفيف"
+        },
+        "hij": {
+          "text": "شاهي سكّر خفيف"
+        },
+        "jiz": {
+          "text": "شاهي بسكّر خفيف"
+        },
+        "shm": {
+          "text": "شاهي سكّره خفيف"
+        },
+        "kuw": {
+          "text": "چاي شكره خفيف"
+        },
+        "emi": {
+          "text": "شاي شكره خفيف"
+        },
+        "qat": {
+          "text": "شاي شكر خفيف"
+        },
+        "bah": {
+          "text": "چاي شكر خفيف"
+        },
+        "oma": {
+          "text": "شاي سكّر خفيف"
+        },
+        "dho": {
+          "text": "شاي سكّر خفيف"
+        },
+        "san": {
+          "text": "شاهي سكّر قليل"
+        },
+        "ade": {
+          "text": "شاهي سكّر خفيف"
+        },
+        "had": {
+          "text": "شاهي سكّر قليل"
+        },
+        "sud": {
+          "text": "شاي بسكّر شويّة"
+        },
+        "chd": {
+          "text": "شاي بسكّر شويّة"
+        },
+        "mar": {
+          "text": "أتاي بالسكّر شويّة"
+        },
+        "jeb": {
+          "text": "أتاي بالسكّر شويّة"
+        },
+        "alg": {
+          "text": "تاي بشويّة سكّر"
+        },
+        "tun": {
+          "text": "تاي بشويّة سكّر"
+        },
+        "tri": {
+          "text": "شاهي سكّر شويّة"
+        },
+        "ben": {
+          "text": "شاهي سكّر شويّة"
+        },
+        "has": {
+          "text": "أتاي بسكّر قليل"
+        }
+      }
+    },
+    {
+      "id": "cafe.menu",
+      "category": "cafe",
+      "english": "Can I see the menu?",
+      "variants": {
+        "fs": {
+          "text": "هل يمكنني رؤية قائمة الطعام؟",
+          "translit": "hal yumkinunī ruʼyat qāʼimat aṭ-ṭaʿām?"
+        },
+        "cai": {
+          "text": "ممكن المنيو؟",
+          "translit": "mumkin il-menu?"
+        },
+        "alx": {
+          "text": "ممكن المنيو؟"
+        },
+        "sai": {
+          "text": "ممكن المنيو؟"
+        },
+        "sin": {
+          "text": "ممكن المنيو؟"
+        },
+        "dam": {
+          "text": "فيني شوف المنيو؟"
+        },
+        "alp": {
+          "text": "فيني شوف المنيو؟"
+        },
+        "leb": {
+          "text": "فيي شوف المنيو؟"
+        },
+        "psu": {
+          "text": "بقدر أشوف المنيو؟"
+        },
+        "psr": {
+          "text": "بكدر أشوف المنيو؟"
+        },
+        "jor": {
+          "text": "بقدر أشوف المنيو؟"
+        },
+        "bag": {
+          "text": "ممكن المنيو؟"
+        },
+        "mos": {
+          "text": "ممكن المنيو؟"
+        },
+        "bas": {
+          "text": "ممكن المنيو؟"
+        },
+        "naj": {
+          "text": "ممكن المنيو؟"
+        },
+        "hij": {
+          "text": "ممكن المنيو؟"
+        },
+        "jiz": {
+          "text": "ممكن المنيو؟"
+        },
+        "shm": {
+          "text": "ممكن المنيو؟"
+        },
+        "kuw": {
+          "text": "ممكن المنيو؟"
+        },
+        "emi": {
+          "text": "ممكن المنيو؟"
+        },
+        "qat": {
+          "text": "ممكن المنيو؟"
+        },
+        "bah": {
+          "text": "ممكن المنيو؟"
+        },
+        "oma": {
+          "text": "ممكن المنيو؟"
+        },
+        "dho": {
+          "text": "ممكن المنيو؟"
+        },
+        "san": {
+          "text": "ممكن المنيو؟"
+        },
+        "ade": {
+          "text": "ممكن المنيو؟"
+        },
+        "had": {
+          "text": "ممكن المنيو؟"
+        },
+        "sud": {
+          "text": "ممكن المنيو؟"
+        },
+        "chd": {
+          "text": "ممكن المنيو؟"
+        },
+        "mar": {
+          "text": "عطيني الكارطة عافاك"
+        },
+        "jeb": {
+          "text": "عطيني الكارطة عافاك"
+        },
+        "alg": {
+          "text": "عطيني الكارطة يعيشك"
+        },
+        "tun": {
+          "text": "تنجّم تعطيني الكارطة؟"
+        },
+        "tri": {
+          "text": "ممكن المنيو؟"
+        },
+        "ben": {
+          "text": "ممكن المنيو؟"
+        },
+        "has": {
+          "text": "ممكن المنيو؟"
+        }
+      }
+    },
+    {
+      "id": "cafe.recommend",
+      "category": "cafe",
+      "english": "What do you recommend?",
+      "variants": {
+        "fs": {
+          "text": "بماذا تنصحني؟",
+          "translit": "bi-mādhā tanṣaḥunī?"
+        },
+        "cai": {
+          "text": "تنصحني بإيه؟",
+          "translit": "tinṣaḥni b-eeh?"
+        },
+        "alx": {
+          "text": "تنصحني بإيه؟"
+        },
+        "sai": {
+          "text": "تنصحني بإيه؟"
+        },
+        "sin": {
+          "text": "وش تنصحني؟"
+        },
+        "dam": {
+          "text": "شو بتنصحني؟"
+        },
+        "alp": {
+          "text": "إيش بتنصحني؟"
+        },
+        "leb": {
+          "text": "شو بتنصحني؟"
+        },
+        "psu": {
+          "text": "شو بتنصحني؟"
+        },
+        "psr": {
+          "text": "ويش بتنصحني؟"
+        },
+        "jor": {
+          "text": "شو بتنصحني؟"
+        },
+        "bag": {
+          "text": "شنو تنصحني؟"
+        },
+        "mos": {
+          "text": "إش تنصحني؟"
+        },
+        "bas": {
+          "text": "شنو تنصحني؟"
+        },
+        "naj": {
+          "text": "وش تنصحني فيه؟"
+        },
+        "hij": {
+          "text": "إيش تنصحني؟"
+        },
+        "jiz": {
+          "text": "إيش تنصحني؟"
+        },
+        "shm": {
+          "text": "وش تنصحني؟"
+        },
+        "kuw": {
+          "text": "شنو تنصحني؟"
+        },
+        "emi": {
+          "text": "شو تنصحني؟"
+        },
+        "qat": {
+          "text": "شنو تنصحني؟"
+        },
+        "bah": {
+          "text": "شنو تنصحني؟"
+        },
+        "oma": {
+          "text": "إيش تنصحني؟"
+        },
+        "dho": {
+          "text": "إيش تنصحني؟"
+        },
+        "san": {
+          "text": "إيش تنصحني؟"
+        },
+        "ade": {
+          "text": "إيش تنصحني؟"
+        },
+        "had": {
+          "text": "إيش تنصحني؟"
+        },
+        "sud": {
+          "text": "بتنصحني بشنو؟"
+        },
+        "chd": {
+          "text": "تنصحني بشنو؟"
+        },
+        "mar": {
+          "text": "أشنو كتنصحني؟"
+        },
+        "jeb": {
+          "text": "أش كتنصحني؟"
+        },
+        "alg": {
+          "text": "واش تنصحني؟"
+        },
+        "tun": {
+          "text": "شنوّة تنصحني؟"
+        },
+        "tri": {
+          "text": "شن تنصحني؟"
+        },
+        "ben": {
+          "text": "شن تنصحني؟"
+        },
+        "has": {
+          "text": "اشنهو تنصحني؟"
+        }
+      }
+    },
+    {
+      "id": "cafe.bill",
+      "category": "cafe",
+      "english": "The bill, please.",
+      "variants": {
+        "fs": {
+          "text": "الحساب من فضلك",
+          "translit": "al-ḥisāb min faḍlik"
+        },
+        "cai": {
+          "text": "الحساب لو سمحت",
+          "translit": "il-ḥisaab law samaḥt"
+        },
+        "alx": {
+          "text": "الحساب لو سمحت"
+        },
+        "sai": {
+          "text": "الحساب لو سمحت"
+        },
+        "sin": {
+          "text": "الحساب لو سمحت"
+        },
+        "dam": {
+          "text": "الحساب لو سمحت"
+        },
+        "alp": {
+          "text": "الحساب لو سمحت"
+        },
+        "leb": {
+          "text": "الحساب إذا بتريد"
+        },
+        "psu": {
+          "text": "الحساب لو سمحت"
+        },
+        "psr": {
+          "text": "الحساب لو سمحت"
+        },
+        "jor": {
+          "text": "الحساب لو سمحت"
+        },
+        "bag": {
+          "text": "الحساب لو سمحت"
+        },
+        "mos": {
+          "text": "الحساب لو سمحت"
+        },
+        "bas": {
+          "text": "الحساب لو سمحت"
+        },
+        "naj": {
+          "text": "الحساب لو سمحت"
+        },
+        "hij": {
+          "text": "الحساب لو سمحت"
+        },
+        "jiz": {
+          "text": "امحساب لو سمحت"
+        },
+        "shm": {
+          "text": "الحساب لو سمحت"
+        },
+        "kuw": {
+          "text": "الحساب لو سمحت"
+        },
+        "emi": {
+          "text": "الحساب لو سمحت"
+        },
+        "qat": {
+          "text": "الحساب لو سمحت"
+        },
+        "bah": {
+          "text": "الحساب لو سمحت"
+        },
+        "oma": {
+          "text": "الحساب لو سمحت"
+        },
+        "dho": {
+          "text": "الحساب لو سمحت"
+        },
+        "san": {
+          "text": "الحساب لو سمحت"
+        },
+        "ade": {
+          "text": "الحساب لو سمحت"
+        },
+        "had": {
+          "text": "الحساب لو سمحت"
+        },
+        "sud": {
+          "text": "الحساب لو سمحت"
+        },
+        "chd": {
+          "text": "الحساب لو سمحت"
+        },
+        "mar": {
+          "text": "الحساب عافاك"
+        },
+        "jeb": {
+          "text": "الحساب عافاك"
+        },
+        "alg": {
+          "text": "الحساب يعيشك"
+        },
+        "tun": {
+          "text": "الحساب يعيشك"
+        },
+        "tri": {
+          "text": "الحساب لو سمحت"
+        },
+        "ben": {
+          "text": "الحساب لو سمحت"
+        },
+        "has": {
+          "text": "الحساب لو سمحت"
+        }
+      }
+    },
+    {
+      "id": "cafe.delicious",
+      "category": "cafe",
+      "english": "The food is delicious.",
+      "variants": {
+        "fs": {
+          "text": "الطعام لذيذ",
+          "translit": "aṭ-ṭaʿām ladhīdh"
+        },
+        "cai": {
+          "text": "الأكل حلو أوي",
+          "translit": "il-akl ḥilw awi"
+        },
+        "alx": {
+          "text": "الأكل حلو قوي"
+        },
+        "sai": {
+          "text": "الوكل حلو قوي"
+        },
+        "sin": {
+          "text": "الأكل زين"
+        },
+        "dam": {
+          "text": "الأكل طيّب كتير"
+        },
+        "alp": {
+          "text": "الأكل طيّب كتير"
+        },
+        "leb": {
+          "text": "الأكل كتير طيّب"
+        },
+        "psu": {
+          "text": "الأكل كتير زاكي"
+        },
+        "psr": {
+          "text": "الأكل كتير زاكي"
+        },
+        "jor": {
+          "text": "الأكل كتير زاكي"
+        },
+        "bag": {
+          "text": "الأكل كلّش طيّب"
+        },
+        "mos": {
+          "text": "الأكل كثيغ طيّب"
+        },
+        "bas": {
+          "text": "الأكل كلّش طيّب"
+        },
+        "naj": {
+          "text": "الأكل لذيذ مرّة"
+        },
+        "hij": {
+          "text": "الأكل لذيذ مرّة"
+        },
+        "jiz": {
+          "text": "امأكل لذيذ"
+        },
+        "shm": {
+          "text": "الأكل زين مرّة"
+        },
+        "kuw": {
+          "text": "الأكل وايد حلو"
+        },
+        "emi": {
+          "text": "الأكل وايد زين"
+        },
+        "qat": {
+          "text": "الأكل وايد لذيذ"
+        },
+        "bah": {
+          "text": "الأكل وايد زين"
+        },
+        "oma": {
+          "text": "الأكل لذيذ وايد"
+        },
+        "dho": {
+          "text": "الأكل لذيذ"
+        },
+        "san": {
+          "text": "الأكل لذيذ قوي"
+        },
+        "ade": {
+          "text": "الأكل لذيذ قوي"
+        },
+        "had": {
+          "text": "الأكل لذيذ واجد"
+        },
+        "sud": {
+          "text": "الأكل سمح شديد"
+        },
+        "chd": {
+          "text": "الأكل حلو شديد"
+        },
+        "mar": {
+          "text": "الماكلة بنينة بزاف"
+        },
+        "jeb": {
+          "text": "الماكلة بنينة بزاف"
+        },
+        "alg": {
+          "text": "الماكلة بنينة بزاف"
+        },
+        "tun": {
+          "text": "الماكلة بنينة برشا"
+        },
+        "tri": {
+          "text": "الماكلة بنينة واجد"
+        },
+        "ben": {
+          "text": "الماكلة طيّبة هلبا"
+        },
+        "has": {
+          "text": "الماكلة زينة ياسر"
+        }
+      }
+    },
+    {
+      "id": "cafe.water",
+      "category": "cafe",
+      "english": "A bottle of water, please.",
+      "variants": {
+        "fs": {
+          "text": "زجاجة ماء من فضلك",
+          "translit": "zujājat māʼ min faḍlik"
+        },
+        "cai": {
+          "text": "إزازة ميّة لو سمحت",
+          "translit": "izaazit mayya law samaḥt"
+        },
+        "alx": {
+          "text": "إزازة ميّة لو سمحت"
+        },
+        "sai": {
+          "text": "إزازة ميّة لو سمحت"
+        },
+        "sin": {
+          "text": "علبة ماي لو سمحت"
+        },
+        "dam": {
+          "text": "قنينة مي لو سمحت"
+        },
+        "alp": {
+          "text": "قنينة مي لو سمحت"
+        },
+        "leb": {
+          "text": "قنينة مي إذا بتريد"
+        },
+        "psu": {
+          "text": "قنينة مي لو سمحت"
+        },
+        "psr": {
+          "text": "قنينة مي لو سمحت"
+        },
+        "jor": {
+          "text": "قنينة مي لو سمحت"
+        },
+        "bag": {
+          "text": "بطل ماي لو سمحت"
+        },
+        "mos": {
+          "text": "بطل ماي لو سمحت"
+        },
+        "bas": {
+          "text": "بطل ماي لو سمحت"
+        },
+        "naj": {
+          "text": "قارورة موية لو سمحت"
+        },
+        "hij": {
+          "text": "قارورة موية لو سمحت"
+        },
+        "jiz": {
+          "text": "قارورة موية لو سمحت"
+        },
+        "shm": {
+          "text": "قارورة ماي لو سمحت"
+        },
+        "kuw": {
+          "text": "غرشة ماي لو سمحت"
+        },
+        "emi": {
+          "text": "غرشة ماي لو سمحت"
+        },
+        "qat": {
+          "text": "غرشة ماي لو سمحت"
+        },
+        "bah": {
+          "text": "غرشة ماي لو سمحت"
+        },
+        "oma": {
+          "text": "بطل ماي لو سمحت"
+        },
+        "dho": {
+          "text": "بطل ماي لو سمحت"
+        },
+        "san": {
+          "text": "دبّة ماء لو سمحت"
+        },
+        "ade": {
+          "text": "قارورة ماء لو سمحت"
+        },
+        "had": {
+          "text": "قارورة ماء لو سمحت"
+        },
+        "sud": {
+          "text": "قزازة موية لو سمحت"
+        },
+        "chd": {
+          "text": "قزازة ألمي لو سمحت"
+        },
+        "mar": {
+          "text": "قرعة ديال الما عافاك"
+        },
+        "jeb": {
+          "text": "قرعة ديال الما عافاك"
+        },
+        "alg": {
+          "text": "قرعة ماء يعيشك"
+        },
+        "tun": {
+          "text": "دبّوزة ماء يعيشك"
+        },
+        "tri": {
+          "text": "قزازة ميّة لو سمحت"
+        },
+        "ben": {
+          "text": "قزازة ميّة لو سمحت"
+        },
+        "has": {
+          "text": "قرعة ماء لو سمحت"
+        }
+      }
+    },
+    {
+      "id": "shopping.how_much",
+      "category": "shopping",
+      "english": "How much is this?",
+      "variants": {
+        "fs": {
+          "text": "بكم هذا؟",
+          "translit": "bikam hādhā?"
+        },
+        "cai": {
+          "text": "ده بكام؟",
+          "translit": "da bikaam?"
+        },
+        "alx": {
+          "text": "ده بكام؟"
+        },
+        "sai": {
+          "text": "ده بكام؟"
+        },
+        "sin": {
+          "text": "هذا بكم؟"
+        },
+        "dam": {
+          "text": "قدّيش هاد؟"
+        },
+        "alp": {
+          "text": "قدّيش هاد؟"
+        },
+        "leb": {
+          "text": "قدّيش هيدا؟"
+        },
+        "psu": {
+          "text": "قدّيش هاد؟"
+        },
+        "psr": {
+          "text": "كدّيش هاد؟"
+        },
+        "jor": {
+          "text": "قدّيش هاد؟"
+        },
+        "bag": {
+          "text": "هذا بيش؟"
+        },
+        "mos": {
+          "text": "هاذا بيش؟"
+        },
+        "bas": {
+          "text": "هذا بيش؟"
+        },
+        "naj": {
+          "text": "هذا بكم؟"
+        },
+        "hij": {
+          "text": "هذا بكم؟"
+        },
+        "jiz": {
+          "text": "هذا بكم؟"
+        },
+        "shm": {
+          "text": "هذا بكم؟"
+        },
+        "kuw": {
+          "text": "هذا بچم؟"
+        },
+        "emi": {
+          "text": "هذا بكم؟"
+        },
+        "qat": {
+          "text": "هذا بچم؟"
+        },
+        "bah": {
+          "text": "هذا بچم؟"
+        },
+        "oma": {
+          "text": "هذا بكم؟"
+        },
+        "dho": {
+          "text": "هذا بكم؟"
+        },
+        "san": {
+          "text": "هذا بكم؟"
+        },
+        "ade": {
+          "text": "هذا بكم؟"
+        },
+        "had": {
+          "text": "هذا بكم؟"
+        },
+        "sud": {
+          "text": "ده بكم؟"
+        },
+        "chd": {
+          "text": "ده بكم؟"
+        },
+        "mar": {
+          "text": "بشحال هادي؟"
+        },
+        "jeb": {
+          "text": "بشحال هادي؟"
+        },
+        "alg": {
+          "text": "بقدّاش هادي؟"
+        },
+        "tun": {
+          "text": "بقدّاش هذا؟"
+        },
+        "tri": {
+          "text": "هذا بكم؟"
+        },
+        "ben": {
+          "text": "هذا بكم؟"
+        },
+        "has": {
+          "text": "ذا بكم؟"
+        }
+      }
+    },
+    {
+      "id": "shopping.too_expensive",
+      "category": "shopping",
+      "english": "That's too expensive!",
+      "variants": {
+        "fs": {
+          "text": "هذا غالٍ جدًّا!",
+          "translit": "hādhā ghālin jiddan!"
+        },
+        "cai": {
+          "text": "ده غالي أوي!",
+          "translit": "da ghaali awi!"
+        },
+        "alx": {
+          "text": "ده غالي قوي!"
+        },
+        "sai": {
+          "text": "ده غالي قوي!"
+        },
+        "sin": {
+          "text": "هذا غالي مرّة!"
+        },
+        "dam": {
+          "text": "هاد غالي كتير!"
+        },
+        "alp": {
+          "text": "هاد غالي كتير!"
+        },
+        "leb": {
+          "text": "هيدا كتير غالي!"
+        },
+        "psu": {
+          "text": "هاد غالي كتير!"
+        },
+        "psr": {
+          "text": "هاد غالي كتير!"
+        },
+        "jor": {
+          "text": "هاد غالي كتير!"
+        },
+        "bag": {
+          "text": "هذا كلّش غالي!"
+        },
+        "mos": {
+          "text": "هاذا غالي كثيغ!"
+        },
+        "bas": {
+          "text": "هذا كلّش غالي!"
+        },
+        "naj": {
+          "text": "هذا غالي مرّة!"
+        },
+        "hij": {
+          "text": "هذا غالي مرّة!"
+        },
+        "jiz": {
+          "text": "هذا غالي مرّة!"
+        },
+        "shm": {
+          "text": "هذا غالي مرّة!"
+        },
+        "kuw": {
+          "text": "هذا وايد غالي!"
+        },
+        "emi": {
+          "text": "هذا وايد غالي!"
+        },
+        "qat": {
+          "text": "هذا وايد غالي!"
+        },
+        "bah": {
+          "text": "هذا وايد غالي!"
+        },
+        "oma": {
+          "text": "هذا غالي وايد!"
+        },
+        "dho": {
+          "text": "هذا غالي وايد!"
+        },
+        "san": {
+          "text": "هذا غالي قوي!"
+        },
+        "ade": {
+          "text": "هذا غالي قوي!"
+        },
+        "had": {
+          "text": "هذا غالي واجد!"
+        },
+        "sud": {
+          "text": "ده غالي شديد!"
+        },
+        "chd": {
+          "text": "ده غالي شديد!"
+        },
+        "mar": {
+          "text": "هادي غالية بزاف!"
+        },
+        "jeb": {
+          "text": "هادي غالية بزاف!"
+        },
+        "alg": {
+          "text": "هادي غالية بزاف!"
+        },
+        "tun": {
+          "text": "هذا غالي برشا!"
+        },
+        "tri": {
+          "text": "هذا غالي واجد!"
+        },
+        "ben": {
+          "text": "هذا غالي هلبا!"
+        },
+        "has": {
+          "text": "ذا غالي ياسر!"
+        }
+      }
+    },
+    {
+      "id": "shopping.lower_price",
+      "category": "shopping",
+      "english": "Can you lower the price a little?",
+      "variants": {
+        "fs": {
+          "text": "هل يمكنك أن تخفّض السعر قليلًا؟",
+          "translit": "hal yumkinuka an tukhaffiḍa as-siʿr qalīlan?"
+        },
+        "cai": {
+          "text": "ممكن تنزّل شويّة؟",
+          "translit": "mumkin tinazzil shwayya?"
+        },
+        "alx": {
+          "text": "ممكن تنزّل شويّة؟"
+        },
+        "sai": {
+          "text": "ممكن تنزّل شويّة؟"
+        },
+        "sin": {
+          "text": "ممكن تنزّل شوي؟"
+        },
+        "dam": {
+          "text": "فيك تنزّل شوي؟"
+        },
+        "alp": {
+          "text": "فيك تنزّل شوي؟"
+        },
+        "leb": {
+          "text": "فيك تنزّل شوي؟"
+        },
+        "psu": {
+          "text": "بتقدر تنزّل شوي؟"
+        },
+        "psr": {
+          "text": "بتكدر تنزّل شوي؟"
+        },
+        "jor": {
+          "text": "بتقدر تنزّل شوي؟"
+        },
+        "bag": {
+          "text": "تگدر تنزّل شويّة؟"
+        },
+        "mos": {
+          "text": "تقدغ تنزّل شويّة؟"
+        },
+        "bas": {
+          "text": "تگدر تنزّل شويّة؟"
+        },
+        "naj": {
+          "text": "تقدر تنزّل شوي؟"
+        },
+        "hij": {
+          "text": "ممكن تنزّل شويّة؟"
+        },
+        "jiz": {
+          "text": "ممكن تنزّل شويّة؟"
+        },
+        "shm": {
+          "text": "تقدر تنزّل شوي؟"
+        },
+        "kuw": {
+          "text": "تقدر تنزّل شوي؟"
+        },
+        "emi": {
+          "text": "تقدر تنزّل شوي؟"
+        },
+        "qat": {
+          "text": "تقدر تنزّل شوي؟"
+        },
+        "bah": {
+          "text": "تقدر تنزّل شوي؟"
+        },
+        "oma": {
+          "text": "تقدر تنزّل شويّة؟"
+        },
+        "dho": {
+          "text": "تقدر تنزّل شويّة؟"
+        },
+        "san": {
+          "text": "تقدر تنزّل شويّة؟"
+        },
+        "ade": {
+          "text": "ممكن تنزّل شويّة؟"
+        },
+        "had": {
+          "text": "ممكن تنزّل شويّة؟"
+        },
+        "sud": {
+          "text": "ممكن تنزّل شويّة؟"
+        },
+        "chd": {
+          "text": "ممكن تنقّص شويّة؟"
+        },
+        "mar": {
+          "text": "واش تقدر تنقّص شويّة؟"
+        },
+        "jeb": {
+          "text": "واش تقدر تنقّص شويّة؟"
+        },
+        "alg": {
+          "text": "تقدر تنقّص شويّة؟"
+        },
+        "tun": {
+          "text": "تنجّم تنقّص شويّة؟"
+        },
+        "tri": {
+          "text": "تقدر تنقّص شويّة؟"
+        },
+        "ben": {
+          "text": "تقدر تنقّص شويّة؟"
+        },
+        "has": {
+          "text": "تقدر تنقّص شويّة؟"
+        }
+      }
+    },
+    {
+      "id": "shopping.final_price",
+      "category": "shopping",
+      "english": "What's your final price?",
+      "variants": {
+        "fs": {
+          "text": "ما آخر سعر؟",
+          "translit": "mā ākhir siʿr?"
+        },
+        "cai": {
+          "text": "آخر كلام كام؟",
+          "translit": "aakhir kalaam kaam?"
+        },
+        "alx": {
+          "text": "آخر كلام كام؟"
+        },
+        "sai": {
+          "text": "آخر كلام كام؟"
+        },
+        "sin": {
+          "text": "وش آخر سعر؟"
+        },
+        "dam": {
+          "text": "شو آخر سعر؟"
+        },
+        "alp": {
+          "text": "إيش آخر سعر؟"
+        },
+        "leb": {
+          "text": "شو آخر سعر؟"
+        },
+        "psu": {
+          "text": "شو آخر سعر؟"
+        },
+        "psr": {
+          "text": "ويش آخر سعر؟"
+        },
+        "jor": {
+          "text": "شو آخر سعر؟"
+        },
+        "bag": {
+          "text": "شگد آخر سعر؟"
+        },
+        "mos": {
+          "text": "إش آخغ سعغ؟"
+        },
+        "bas": {
+          "text": "شگد آخر سعر؟"
+        },
+        "naj": {
+          "text": "وش آخر سعر؟"
+        },
+        "hij": {
+          "text": "كم آخر سعر؟"
+        },
+        "jiz": {
+          "text": "كم آخر سعر؟"
+        },
+        "shm": {
+          "text": "وش آخر سعر؟"
+        },
+        "kuw": {
+          "text": "شنو آخر سعر؟"
+        },
+        "emi": {
+          "text": "شو آخر سعر؟"
+        },
+        "qat": {
+          "text": "شنو آخر سعر؟"
+        },
+        "bah": {
+          "text": "شنو آخر سعر؟"
+        },
+        "oma": {
+          "text": "كم آخر سعر؟"
+        },
+        "dho": {
+          "text": "كم آخر سعر؟"
+        },
+        "san": {
+          "text": "كم آخر سعر؟"
+        },
+        "ade": {
+          "text": "كم آخر سعر؟"
+        },
+        "had": {
+          "text": "كم آخر سعر؟"
+        },
+        "sud": {
+          "text": "آخر سعر كم؟"
+        },
+        "chd": {
+          "text": "آخر سعر كم؟"
+        },
+        "mar": {
+          "text": "شحال آخر ثمن؟"
+        },
+        "jeb": {
+          "text": "شحال آخر ثمن؟"
+        },
+        "alg": {
+          "text": "قدّاش آخر سومة؟"
+        },
+        "tun": {
+          "text": "قدّاش آخر سوم؟"
+        },
+        "tri": {
+          "text": "كم آخر سوم؟"
+        },
+        "ben": {
+          "text": "كم آخر سوم؟"
+        },
+        "has": {
+          "text": "بكم آخر سوم؟"
+        }
+      }
+    },
+    {
+      "id": "shopping.want_this",
+      "category": "shopping",
+      "english": "I want this one.",
+      "variants": {
+        "fs": {
+          "text": "أريد هذا",
+          "translit": "urīdu hādhā"
+        },
+        "cai": {
+          "text": "عايز ده",
+          "translit": "ʿaayiz da"
+        },
+        "alx": {
+          "text": "عايز ده"
+        },
+        "sai": {
+          "text": "عايز ده"
+        },
+        "sin": {
+          "text": "أبغى هذا"
+        },
+        "dam": {
+          "text": "بدّي هاد"
+        },
+        "alp": {
+          "text": "بدّي هاد"
+        },
+        "leb": {
+          "text": "بدّي هيدا"
+        },
+        "psu": {
+          "text": "بدّي هاد"
+        },
+        "psr": {
+          "text": "بدّي هاد"
+        },
+        "jor": {
+          "text": "بدّي هاد"
+        },
+        "bag": {
+          "text": "أريد هذا"
+        },
+        "mos": {
+          "text": "أغيد هاذا"
+        },
+        "bas": {
+          "text": "أريد هذا"
+        },
+        "naj": {
+          "text": "أبي هذا"
+        },
+        "hij": {
+          "text": "أبغى هذا"
+        },
+        "jiz": {
+          "text": "أبغى هذا"
+        },
+        "shm": {
+          "text": "أبي هذا"
+        },
+        "kuw": {
+          "text": "أبي هذا"
+        },
+        "emi": {
+          "text": "أبا هذا"
+        },
+        "qat": {
+          "text": "أبي هذا"
+        },
+        "bah": {
+          "text": "أبي هذا"
+        },
+        "oma": {
+          "text": "أريد هذا"
+        },
+        "dho": {
+          "text": "أبا هذا"
+        },
+        "san": {
+          "text": "أشتي هذا"
+        },
+        "ade": {
+          "text": "أشتي هذا"
+        },
+        "had": {
+          "text": "أبا هذا"
+        },
+        "sud": {
+          "text": "داير ده"
+        },
+        "chd": {
+          "text": "داير ده"
+        },
+        "mar": {
+          "text": "بغيت هادي"
+        },
+        "jeb": {
+          "text": "بغيت هادي"
+        },
+        "alg": {
+          "text": "نحب هادي"
+        },
+        "tun": {
+          "text": "نحب هذا"
+        },
+        "tri": {
+          "text": "نبي هذا"
+        },
+        "ben": {
+          "text": "نبي هذا"
+        },
+        "has": {
+          "text": "نبغي ذا"
+        }
+      }
+    },
+    {
+      "id": "shopping.other_size",
+      "category": "shopping",
+      "english": "Do you have another size?",
+      "variants": {
+        "fs": {
+          "text": "هل لديك مقاس آخر؟",
+          "translit": "hal ladayka maqās ākhar?"
+        },
+        "cai": {
+          "text": "عندك مقاس تاني؟",
+          "translit": "ʿandak maʼaas taani?"
+        },
+        "alx": {
+          "text": "عندك مقاس تاني؟"
+        },
+        "sai": {
+          "text": "عندك مقاس تاني؟"
+        },
+        "sin": {
+          "text": "عندك مقاس ثاني؟"
+        },
+        "dam": {
+          "text": "عندك قياس تاني؟"
+        },
+        "alp": {
+          "text": "عندك قياس تاني؟"
+        },
+        "leb": {
+          "text": "عندك قياس تاني؟"
+        },
+        "psu": {
+          "text": "في عندك قياس تاني؟"
+        },
+        "psr": {
+          "text": "في عندك كياس تاني؟"
+        },
+        "jor": {
+          "text": "في عندك قياس ثاني؟"
+        },
+        "bag": {
+          "text": "عندك قياس لاخ؟"
+        },
+        "mos": {
+          "text": "عندك قياس لاخ؟"
+        },
+        "bas": {
+          "text": "عندك قياس لاخ؟"
+        },
+        "naj": {
+          "text": "عندك مقاس ثاني؟"
+        },
+        "hij": {
+          "text": "عندك مقاس تاني؟"
+        },
+        "jiz": {
+          "text": "عندك مقاس ثاني؟"
+        },
+        "shm": {
+          "text": "عندك مقاس ثاني؟"
+        },
+        "kuw": {
+          "text": "عندك قياس ثاني؟"
+        },
+        "emi": {
+          "text": "عندك قياس ثاني؟"
+        },
+        "qat": {
+          "text": "عندك قياس ثاني؟"
+        },
+        "bah": {
+          "text": "عندك قياس ثاني؟"
+        },
+        "oma": {
+          "text": "عندك مقاس ثاني؟"
+        },
+        "dho": {
+          "text": "عندك مقاس ثاني؟"
+        },
+        "san": {
+          "text": "معك مقاس ثاني؟"
+        },
+        "ade": {
+          "text": "معك مقاس ثاني؟"
+        },
+        "had": {
+          "text": "معك مقاس ثاني؟"
+        },
+        "sud": {
+          "text": "عندك مقاس تاني؟"
+        },
+        "chd": {
+          "text": "عندك مقاس آخر؟"
+        },
+        "mar": {
+          "text": "عندك شي قياس آخر؟"
+        },
+        "jeb": {
+          "text": "عندك شي قياس آخر؟"
+        },
+        "alg": {
+          "text": "عندك قياس آخر؟"
+        },
+        "tun": {
+          "text": "عندك قيس آخر؟"
+        },
+        "tri": {
+          "text": "عندك مقاس ثاني؟"
+        },
+        "ben": {
+          "text": "عندك مقاس ثاني؟"
+        },
+        "has": {
+          "text": "عندك مقاس آخر؟"
+        }
+      }
+    },
+    {
+      "id": "shopping.just_looking",
+      "category": "shopping",
+      "english": "I'm just looking, thanks.",
+      "variants": {
+        "fs": {
+          "text": "أنا أتفرّج فقط، شكرًا",
+          "translit": "anā atafarraju faqaṭ, shukran"
+        },
+        "cai": {
+          "text": "أنا بتفرّج بس، شكرًا",
+          "translit": "ana batfarrag bass, shukran"
+        },
+        "alx": {
+          "text": "أنا بتفرّج بس، شكرًا"
+        },
+        "sai": {
+          "text": "أنا بتفرّج بس، شكرًا"
+        },
+        "sin": {
+          "text": "أطالع بس، مشكور"
+        },
+        "dam": {
+          "text": "عم أتفرّج بس، شكرًا"
+        },
+        "alp": {
+          "text": "عم أتفرّج بس، شكرًا"
+        },
+        "leb": {
+          "text": "عم إتفرّج بس، مَرسي"
+        },
+        "psu": {
+          "text": "بتفرّج بس، شكرًا"
+        },
+        "psr": {
+          "text": "بتفرّج بس، شكرًا"
+        },
+        "jor": {
+          "text": "بتفرّج بس، شكرًا"
+        },
+        "bag": {
+          "text": "دا أباوع بس، شكرًا"
+        },
+        "mos": {
+          "text": "أنا أتفغّج بس، شكغًا"
+        },
+        "bas": {
+          "text": "دا أباوع بس، شكرًا"
+        },
+        "naj": {
+          "text": "أطالع بس، مشكور"
+        },
+        "hij": {
+          "text": "أتفرّج بس، شكرًا"
+        },
+        "jiz": {
+          "text": "أتفرّج بس، شكرًا"
+        },
+        "shm": {
+          "text": "أطالع بس، مشكور"
+        },
+        "kuw": {
+          "text": "أطالع بس، مشكور"
+        },
+        "emi": {
+          "text": "أطالع بس، مشكور"
+        },
+        "qat": {
+          "text": "أطالع بس، مشكور"
+        },
+        "bah": {
+          "text": "أطالع بس، مشكور"
+        },
+        "oma": {
+          "text": "أشوف بس، مشكور"
+        },
+        "dho": {
+          "text": "أشوف بس، مشكور"
+        },
+        "san": {
+          "text": "أتفرّج بس، شكرًا"
+        },
+        "ade": {
+          "text": "أتفرّج بس، شكرًا"
+        },
+        "had": {
+          "text": "أتفرّج بس، شكرًا"
+        },
+        "sud": {
+          "text": "بتفرّج ساي، شكرًا"
+        },
+        "chd": {
+          "text": "نعاين ساكت، شكرًا"
+        },
+        "mar": {
+          "text": "غير كنشوف، شكرًا"
+        },
+        "jeb": {
+          "text": "غير كنشوف، شكرًا"
+        },
+        "alg": {
+          "text": "غير نشوف، يعطيك الصحة"
+        },
+        "tun": {
+          "text": "نتفرّج برك، يعيشك"
+        },
+        "tri": {
+          "text": "نتفرّج بس، مشكور"
+        },
+        "ben": {
+          "text": "نتفرّج بس، مشكور"
+        },
+        "has": {
+          "text": "نشوف ألا، شكرًا"
+        }
+      }
+    },
+    {
+      "id": "directions.where_station",
+      "category": "directions",
+      "english": "Where is the metro station?",
+      "variants": {
+        "fs": {
+          "text": "أين محطّة المترو؟",
+          "translit": "ayna maḥaṭṭat al-mitrū?"
+        },
+        "cai": {
+          "text": "محطّة المترو فين؟",
+          "translit": "maḥaṭṭit il-metro feen?"
+        },
+        "alx": {
+          "text": "محطّة المترو فين؟"
+        },
+        "sai": {
+          "text": "محطّة المترو فين؟"
+        },
+        "sin": {
+          "text": "وين محطّة المترو؟"
+        },
+        "dam": {
+          "text": "وين محطّة المترو؟"
+        },
+        "alp": {
+          "text": "وين محطّة المترو؟"
+        },
+        "leb": {
+          "text": "وين محطّة المترو؟"
+        },
+        "psu": {
+          "text": "وين محطّة المترو؟"
+        },
+        "psr": {
+          "text": "وين محطّة المترو؟"
+        },
+        "jor": {
+          "text": "وين محطّة المترو؟"
+        },
+        "bag": {
+          "text": "وين محطّة المترو؟"
+        },
+        "mos": {
+          "text": "وين محطّة المتغو؟"
+        },
+        "bas": {
+          "text": "وين محطّة المترو؟"
+        },
+        "naj": {
+          "text": "وين محطّة المترو؟"
+        },
+        "hij": {
+          "text": "فين محطّة المترو؟"
+        },
+        "jiz": {
+          "text": "وين محطّة المترو؟"
+        },
+        "shm": {
+          "text": "وين محطّة المترو؟"
+        },
+        "kuw": {
+          "text": "وين محطّة المترو؟"
+        },
+        "emi": {
+          "text": "وين محطّة المترو؟"
+        },
+        "qat": {
+          "text": "وين محطّة المترو؟"
+        },
+        "bah": {
+          "text": "وين محطّة المترو؟"
+        },
+        "oma": {
+          "text": "وين محطّة المترو؟"
+        },
+        "dho": {
+          "text": "وين محطّة المترو؟"
+        },
+        "san": {
+          "text": "فين محطّة المترو؟"
+        },
+        "ade": {
+          "text": "فين محطّة المترو؟"
+        },
+        "had": {
+          "text": "وين محطّة المترو؟"
+        },
+        "sud": {
+          "text": "محطّة المترو وين؟"
+        },
+        "chd": {
+          "text": "محطّة المترو وين؟"
+        },
+        "mar": {
+          "text": "فين كاينة محطّة الميترو؟"
+        },
+        "jeb": {
+          "text": "فين كاينة محطّة الميترو؟"
+        },
+        "alg": {
+          "text": "وين راهي محطّة الميترو؟"
+        },
+        "tun": {
+          "text": "وين محطّة الميترو؟"
+        },
+        "tri": {
+          "text": "وين محطّة المترو؟"
+        },
+        "ben": {
+          "text": "وين محطّة المترو؟"
+        },
+        "has": {
+          "text": "فين محطّة المترو؟"
+        }
+      }
+    },
+    {
+      "id": "directions.go_straight",
+      "category": "directions",
+      "english": "Go straight ahead.",
+      "variants": {
+        "fs": {
+          "text": "امشِ إلى الأمام مباشرةً",
+          "translit": "imshi ilā al-amām mubāsharatan"
+        },
+        "cai": {
+          "text": "امشي على طول",
+          "translit": "imshi ʿala ṭuul"
+        },
+        "alx": {
+          "text": "امشي على طول"
+        },
+        "sai": {
+          "text": "امشي على طول"
+        },
+        "sin": {
+          "text": "امشِ على طول"
+        },
+        "dam": {
+          "text": "امشي دغري"
+        },
+        "alp": {
+          "text": "امشي دغري"
+        },
+        "leb": {
+          "text": "كفّي دغري"
+        },
+        "psu": {
+          "text": "امشي دغري"
+        },
+        "psr": {
+          "text": "امشي دغري"
+        },
+        "jor": {
+          "text": "امشي دغري"
+        },
+        "bag": {
+          "text": "امشي سيدة"
+        },
+        "mos": {
+          "text": "امشي دغي"
+        },
+        "bas": {
+          "text": "امشي سيدة"
+        },
+        "naj": {
+          "text": "امشِ سيده"
+        },
+        "hij": {
+          "text": "امشي سيدا"
+        },
+        "jiz": {
+          "text": "امشِ سيده"
+        },
+        "shm": {
+          "text": "امشِ سيده"
+        },
+        "kuw": {
+          "text": "امشِ سيده"
+        },
+        "emi": {
+          "text": "امشِ سيده"
+        },
+        "qat": {
+          "text": "امشِ سيده"
+        },
+        "bah": {
+          "text": "امشِ سيده"
+        },
+        "oma": {
+          "text": "امشِ سيده"
+        },
+        "dho": {
+          "text": "امشِ سيده"
+        },
+        "san": {
+          "text": "امشِ سيده"
+        },
+        "ade": {
+          "text": "امشِ سيده"
+        },
+        "had": {
+          "text": "امشِ سيده"
+        },
+        "sud": {
+          "text": "امشي عدل"
+        },
+        "chd": {
+          "text": "امشي عديل"
+        },
+        "mar": {
+          "text": "سير نيشان"
+        },
+        "jeb": {
+          "text": "سير نيشان"
+        },
+        "alg": {
+          "text": "روح طول"
+        },
+        "tun": {
+          "text": "امشي طول"
+        },
+        "tri": {
+          "text": "امشي طوالي"
+        },
+        "ben": {
+          "text": "امشي طوالي"
+        },
+        "has": {
+          "text": "امش طول"
+        }
+      }
+    },
+    {
+      "id": "directions.turn_right",
+      "category": "directions",
+      "english": "Turn right.",
+      "variants": {
+        "fs": {
+          "text": "انعطف يمينًا",
+          "translit": "inʿaṭif yamīnan"
+        },
+        "cai": {
+          "text": "خُشّ يمين",
+          "translit": "khushsh yimiin"
+        },
+        "alx": {
+          "text": "خُشّ يمين"
+        },
+        "sai": {
+          "text": "خُشّ يمين"
+        },
+        "sin": {
+          "text": "لفّ يمين"
+        },
+        "dam": {
+          "text": "لفّ يمين"
+        },
+        "alp": {
+          "text": "لفّ يمين"
+        },
+        "leb": {
+          "text": "برم يمين"
+        },
+        "psu": {
+          "text": "لفّ يمين"
+        },
+        "psr": {
+          "text": "لفّ يمين"
+        },
+        "jor": {
+          "text": "لفّ يمين"
+        },
+        "bag": {
+          "text": "الوي يمين"
+        },
+        "mos": {
+          "text": "لفّ يمين"
+        },
+        "bas": {
+          "text": "الوي يمين"
+        },
+        "naj": {
+          "text": "لفّ يمين"
+        },
+        "hij": {
+          "text": "لفّ يمين"
+        },
+        "jiz": {
+          "text": "لفّ يمين"
+        },
+        "shm": {
+          "text": "لفّ يمين"
+        },
+        "kuw": {
+          "text": "لفّ يمين"
+        },
+        "emi": {
+          "text": "لفّ يمين"
+        },
+        "qat": {
+          "text": "لفّ يمين"
+        },
+        "bah": {
+          "text": "لفّ يمين"
+        },
+        "oma": {
+          "text": "لفّ يمين"
+        },
+        "dho": {
+          "text": "لفّ يمين"
+        },
+        "san": {
+          "text": "لفّ يمين"
+        },
+        "ade": {
+          "text": "لفّ يمين"
+        },
+        "had": {
+          "text": "لفّ يمين"
+        },
+        "sud": {
+          "text": "لفّ يمين"
+        },
+        "chd": {
+          "text": "لفّ يمين"
+        },
+        "mar": {
+          "text": "دور على ليمن"
+        },
+        "jeb": {
+          "text": "دور على ليمن"
+        },
+        "alg": {
+          "text": "دور على اليمين"
+        },
+        "tun": {
+          "text": "دور على اليمين"
+        },
+        "tri": {
+          "text": "دوّر يمين"
+        },
+        "ben": {
+          "text": "دوّر يمين"
+        },
+        "has": {
+          "text": "دور على ليمين"
+        }
+      }
+    },
+    {
+      "id": "directions.turn_left",
+      "category": "directions",
+      "english": "Turn left.",
+      "variants": {
+        "fs": {
+          "text": "انعطف يسارًا",
+          "translit": "inʿaṭif yasāran"
+        },
+        "cai": {
+          "text": "خُشّ شمال",
+          "translit": "khushsh shimaal"
+        },
+        "alx": {
+          "text": "خُشّ شمال"
+        },
+        "sai": {
+          "text": "خُشّ شمال"
+        },
+        "sin": {
+          "text": "لفّ يسار"
+        },
+        "dam": {
+          "text": "لفّ شمال"
+        },
+        "alp": {
+          "text": "لفّ شمال"
+        },
+        "leb": {
+          "text": "برم شمال"
+        },
+        "psu": {
+          "text": "لفّ شمال"
+        },
+        "psr": {
+          "text": "لفّ شمال"
+        },
+        "jor": {
+          "text": "لفّ شمال"
+        },
+        "bag": {
+          "text": "الوي يسار"
+        },
+        "mos": {
+          "text": "لفّ يساغ"
+        },
+        "bas": {
+          "text": "الوي يسار"
+        },
+        "naj": {
+          "text": "لفّ يسار"
+        },
+        "hij": {
+          "text": "لفّ يسار"
+        },
+        "jiz": {
+          "text": "لفّ يسار"
+        },
+        "shm": {
+          "text": "لفّ يسار"
+        },
+        "kuw": {
+          "text": "لفّ يسار"
+        },
+        "emi": {
+          "text": "لفّ يسار"
+        },
+        "qat": {
+          "text": "لفّ يسار"
+        },
+        "bah": {
+          "text": "لفّ يسار"
+        },
+        "oma": {
+          "text": "لفّ يسار"
+        },
+        "dho": {
+          "text": "لفّ يسار"
+        },
+        "san": {
+          "text": "لفّ يسار"
+        },
+        "ade": {
+          "text": "لفّ يسار"
+        },
+        "had": {
+          "text": "لفّ يسار"
+        },
+        "sud": {
+          "text": "لفّ شمال"
+        },
+        "chd": {
+          "text": "لفّ شمال"
+        },
+        "mar": {
+          "text": "دور على ليسر"
+        },
+        "jeb": {
+          "text": "دور على ليسر"
+        },
+        "alg": {
+          "text": "دور على اليسار"
+        },
+        "tun": {
+          "text": "دور على اليسار"
+        },
+        "tri": {
+          "text": "دوّر يسار"
+        },
+        "ben": {
+          "text": "دوّر يسار"
+        },
+        "has": {
+          "text": "دور على ليسار"
+        }
+      }
+    },
+    {
+      "id": "directions.is_it_far",
+      "category": "directions",
+      "english": "Is it far?",
+      "variants": {
+        "fs": {
+          "text": "هل هو بعيد؟",
+          "translit": "hal huwa baʿīd?"
+        },
+        "cai": {
+          "text": "هو بعيد؟",
+          "translit": "huwwa biʿiid?"
+        },
+        "alx": {
+          "text": "هو بعيد؟"
+        },
+        "sai": {
+          "text": "هو بعيد؟"
+        },
+        "sin": {
+          "text": "هو بعيد؟"
+        },
+        "dam": {
+          "text": "بعيد؟"
+        },
+        "alp": {
+          "text": "بعيد؟"
+        },
+        "leb": {
+          "text": "بعيد؟"
+        },
+        "psu": {
+          "text": "بعيد؟"
+        },
+        "psr": {
+          "text": "بعيد؟"
+        },
+        "jor": {
+          "text": "بعيد؟"
+        },
+        "bag": {
+          "text": "بعيد؟"
+        },
+        "mos": {
+          "text": "بعيد؟"
+        },
+        "bas": {
+          "text": "بعيد؟"
+        },
+        "naj": {
+          "text": "بعيد؟"
+        },
+        "hij": {
+          "text": "بعيد؟"
+        },
+        "jiz": {
+          "text": "بعيد؟"
+        },
+        "shm": {
+          "text": "بعيد؟"
+        },
+        "kuw": {
+          "text": "بعيد؟"
+        },
+        "emi": {
+          "text": "بعيد؟"
+        },
+        "qat": {
+          "text": "بعيد؟"
+        },
+        "bah": {
+          "text": "بعيد؟"
+        },
+        "oma": {
+          "text": "بعيد؟"
+        },
+        "dho": {
+          "text": "بعيد؟"
+        },
+        "san": {
+          "text": "بعيد؟"
+        },
+        "ade": {
+          "text": "بعيد؟"
+        },
+        "had": {
+          "text": "بعيد؟"
+        },
+        "sud": {
+          "text": "بعيد؟"
+        },
+        "chd": {
+          "text": "بعيد؟"
+        },
+        "mar": {
+          "text": "واش بعيد؟"
+        },
+        "jeb": {
+          "text": "واش بعيد؟"
+        },
+        "alg": {
+          "text": "راهو بعيد؟"
+        },
+        "tun": {
+          "text": "بعيد؟"
+        },
+        "tri": {
+          "text": "بعيد؟"
+        },
+        "ben": {
+          "text": "بعيد؟"
+        },
+        "has": {
+          "text": "بعيد؟"
+        }
+      }
+    },
+    {
+      "id": "directions.stop_here",
+      "category": "directions",
+      "english": "Stop here, please.",
+      "note": "Said to a taxi driver.",
+      "noteAr": "تُقال لسائق التاكسي",
+      "variants": {
+        "fs": {
+          "text": "توقّف هنا من فضلك",
+          "translit": "tawaqqaf hunā min faḍlik"
+        },
+        "cai": {
+          "text": "نزّلني هنا لو سمحت",
+          "translit": "nazzilni hina law samaḥt"
+        },
+        "alx": {
+          "text": "نزّلني هنا لو سمحت"
+        },
+        "sai": {
+          "text": "نزّلني هنا لو سمحت"
+        },
+        "sin": {
+          "text": "وقّف هنا لو سمحت"
+        },
+        "dam": {
+          "text": "وقّف هون لو سمحت"
+        },
+        "alp": {
+          "text": "وقّف هون لو سمحت"
+        },
+        "leb": {
+          "text": "وقّف هون إذا بتريد"
+        },
+        "psu": {
+          "text": "وقّف هون لو سمحت"
+        },
+        "psr": {
+          "text": "وقّف هون لو سمحت"
+        },
+        "jor": {
+          "text": "وقّف هون لو سمحت"
+        },
+        "bag": {
+          "text": "نزّلني هنا لو سمحت"
+        },
+        "mos": {
+          "text": "نزّلني هني لو سمحت"
+        },
+        "bas": {
+          "text": "نزّلني هنا لو سمحت"
+        },
+        "naj": {
+          "text": "وقّف هنا لو سمحت"
+        },
+        "hij": {
+          "text": "وقّف هنا لو سمحت"
+        },
+        "jiz": {
+          "text": "وقّف هنا لو سمحت"
+        },
+        "shm": {
+          "text": "وقّف هنا لو سمحت"
+        },
+        "kuw": {
+          "text": "وقّف هني لو سمحت"
+        },
+        "emi": {
+          "text": "وقّف هني لو سمحت"
+        },
+        "qat": {
+          "text": "وقّف هني لو سمحت"
+        },
+        "bah": {
+          "text": "وقّف هني لو سمحت"
+        },
+        "oma": {
+          "text": "وقّف هنا لو سمحت"
+        },
+        "dho": {
+          "text": "وقّف هنا لو سمحت"
+        },
+        "san": {
+          "text": "وقّف هانا لو سمحت"
+        },
+        "ade": {
+          "text": "وقّف هانا لو سمحت"
+        },
+        "had": {
+          "text": "وقّف هنا لو سمحت"
+        },
+        "sud": {
+          "text": "أقيف هنا لو سمحت"
+        },
+        "chd": {
+          "text": "أقيف هنا لو سمحت"
+        },
+        "mar": {
+          "text": "وقف هنا عافاك"
+        },
+        "jeb": {
+          "text": "وقف هنا عافاك"
+        },
+        "alg": {
+          "text": "حبس هنا يعيشك"
+        },
+        "tun": {
+          "text": "وقّف هوني يعيشك"
+        },
+        "tri": {
+          "text": "وقّف هني لو سمحت"
+        },
+        "ben": {
+          "text": "وقّف هني لو سمحت"
+        },
+        "has": {
+          "text": "وكف هون لو سمحت"
+        }
+      }
+    },
+    {
+      "id": "directions.get_downtown",
+      "category": "directions",
+      "english": "How do I get to downtown?",
+      "variants": {
+        "fs": {
+          "text": "كيف أصل إلى وسط المدينة؟",
+          "translit": "kayfa aṣilu ilā wasaṭ al-madīna?"
+        },
+        "cai": {
+          "text": "أروح وسط البلد إزاي؟",
+          "translit": "aruuḥ wesṭ il-balad izzaay?"
+        },
+        "alx": {
+          "text": "أروح وسط البلد إزاي؟"
+        },
+        "sai": {
+          "text": "أروح وسط البلد كيف؟"
+        },
+        "sin": {
+          "text": "كيف أروح وسط البلد؟"
+        },
+        "dam": {
+          "text": "كيف بروح عوسط البلد؟"
+        },
+        "alp": {
+          "text": "كيف بروح عوسط البلد؟"
+        },
+        "leb": {
+          "text": "كيف بروح عوسط البلد؟"
+        },
+        "psu": {
+          "text": "كيف بروح عوسط البلد؟"
+        },
+        "psr": {
+          "text": "تشيف بروح عوسط البلد؟"
+        },
+        "jor": {
+          "text": "كيف بروح عوسط البلد؟"
+        },
+        "bag": {
+          "text": "شلون أروح لمركز المدينة؟"
+        },
+        "mos": {
+          "text": "إشلون أغوح لمغكز المدينة؟"
+        },
+        "bas": {
+          "text": "شلون أروح لمركز المدينة؟"
+        },
+        "naj": {
+          "text": "كيف أروح وسط البلد؟"
+        },
+        "hij": {
+          "text": "كيف أروح وسط البلد؟"
+        },
+        "jiz": {
+          "text": "كيف أروح وسط امبلد؟"
+        },
+        "shm": {
+          "text": "شلون أروح وسط البلد؟"
+        },
+        "kuw": {
+          "text": "شلون أروح وسط البلد؟"
+        },
+        "emi": {
+          "text": "شلون أروح وسط البلد؟"
+        },
+        "qat": {
+          "text": "شلون أروح وسط البلد؟"
+        },
+        "bah": {
+          "text": "شلون أروح وسط البلد؟"
+        },
+        "oma": {
+          "text": "كيف أروح وسط البلد؟"
+        },
+        "dho": {
+          "text": "كيف أروح وسط البلد؟"
+        },
+        "san": {
+          "text": "كيف أسير وسط المدينة؟"
+        },
+        "ade": {
+          "text": "كيف أروّح وسط البلد؟"
+        },
+        "had": {
+          "text": "كيف أروح وسط البلد؟"
+        },
+        "sud": {
+          "text": "أمشي وسط البلد كيف؟"
+        },
+        "chd": {
+          "text": "نمشي وسط البلد كيف؟"
+        },
+        "mar": {
+          "text": "كيفاش نمشي لوسط المدينة؟"
+        },
+        "jeb": {
+          "text": "كيفاش نمشي لوسط المدينة؟"
+        },
+        "alg": {
+          "text": "كيفاش نروح لوسط المدينة؟"
+        },
+        "tun": {
+          "text": "كيفاش نمشي لوسط البلاد؟"
+        },
+        "tri": {
+          "text": "كيف نمشي لوسط البلاد؟"
+        },
+        "ben": {
+          "text": "كيف نمشي لوسط البلاد؟"
+        },
+        "has": {
+          "text": "كيفاش انروح لوسط المدينة؟"
+        }
+      }
+    },
+    {
+      "id": "numbers.one_two_three",
+      "category": "numbers",
+      "english": "One, two, three.",
+      "variants": {
+        "fs": {
+          "text": "واحد، اثنان، ثلاثة",
+          "translit": "wāḥid, ithnān, thalātha"
+        },
+        "cai": {
+          "text": "واحد، اتنين، تلاتة",
+          "translit": "waaḥid, itneen, talaata"
+        },
+        "alx": {
+          "text": "واحد، اتنين، تلاتة"
+        },
+        "sai": {
+          "text": "واحد، اتنين، تلاتة"
+        },
+        "sin": {
+          "text": "واحد، اثنين، ثلاثة"
+        },
+        "dam": {
+          "text": "واحد، تنين، تلاتة"
+        },
+        "alp": {
+          "text": "واحد، تنين، تلاتة"
+        },
+        "leb": {
+          "text": "واحد، تنين، تلاتة"
+        },
+        "psu": {
+          "text": "واحد، تنين، تلاتة"
+        },
+        "psr": {
+          "text": "واحد، ثنين، ثلاثة"
+        },
+        "jor": {
+          "text": "واحد، ثنين، ثلاثة"
+        },
+        "bag": {
+          "text": "واحد، ثنين، ثلاثة"
+        },
+        "mos": {
+          "text": "واحد، ثنين، ثلاثة"
+        },
+        "bas": {
+          "text": "واحد، ثنين، ثلاثة"
+        },
+        "naj": {
+          "text": "واحد، ثنين، ثلاثة"
+        },
+        "hij": {
+          "text": "واحد، اتنين، تلاتة"
+        },
+        "jiz": {
+          "text": "واحد، اثنين، ثلاثة"
+        },
+        "shm": {
+          "text": "واحد، ثنين، ثلاثة"
+        },
+        "kuw": {
+          "text": "واحد، ثنين، ثلاثة"
+        },
+        "emi": {
+          "text": "واحد، ثنين، ثلاثة"
+        },
+        "qat": {
+          "text": "واحد، ثنين، ثلاثة"
+        },
+        "bah": {
+          "text": "واحد، ثنين، ثلاثة"
+        },
+        "oma": {
+          "text": "واحد، اثنين، ثلاثة"
+        },
+        "dho": {
+          "text": "واحد، اثنين، ثلاثة"
+        },
+        "san": {
+          "text": "واحد، اثنين، ثلاثة"
+        },
+        "ade": {
+          "text": "واحد، اثنين، ثلاثة"
+        },
+        "had": {
+          "text": "واحد، اثنين، ثلاثة"
+        },
+        "sud": {
+          "text": "واحد، اتنين، تلاتة"
+        },
+        "chd": {
+          "text": "واحد، اتنين، تلاتة"
+        },
+        "mar": {
+          "text": "واحد، جوج، تلاتة"
+        },
+        "jeb": {
+          "text": "واحد، جوج، تلاتة"
+        },
+        "alg": {
+          "text": "واحد، زوج، ثلاثة"
+        },
+        "tun": {
+          "text": "واحد، زوز، ثلاثة"
+        },
+        "tri": {
+          "text": "واحد، زوز، ثلاثة"
+        },
+        "ben": {
+          "text": "واحد، اثنين، ثلاثة"
+        },
+        "has": {
+          "text": "واحد، اثنين، ثلاثة"
+        }
+      }
+    },
+    {
+      "id": "numbers.costs_fifty",
+      "category": "numbers",
+      "english": "It costs fifty.",
+      "variants": {
+        "fs": {
+          "text": "ثمنه خمسون",
+          "translit": "thamanuhu khamsūn"
+        },
+        "cai": {
+          "text": "ده بخمسين",
+          "translit": "da bi-khamsiin"
+        },
+        "alx": {
+          "text": "ده بخمسين"
+        },
+        "sai": {
+          "text": "ده بخمسين"
+        },
+        "sin": {
+          "text": "هذا بخمسين"
+        },
+        "dam": {
+          "text": "هاد بخمسين"
+        },
+        "alp": {
+          "text": "هاد بخمسين"
+        },
+        "leb": {
+          "text": "هيدا بخمسين"
+        },
+        "psu": {
+          "text": "هاد بخمسين"
+        },
+        "psr": {
+          "text": "هاد بخمسين"
+        },
+        "jor": {
+          "text": "هاد بخمسين"
+        },
+        "bag": {
+          "text": "هذا بخمسين"
+        },
+        "mos": {
+          "text": "هاذا بخمسين"
+        },
+        "bas": {
+          "text": "هذا بخمسين"
+        },
+        "naj": {
+          "text": "هذا بخمسين"
+        },
+        "hij": {
+          "text": "هذا بخمسين"
+        },
+        "jiz": {
+          "text": "هذا بخمسين"
+        },
+        "shm": {
+          "text": "هذا بخمسين"
+        },
+        "kuw": {
+          "text": "هذا بخمسين"
+        },
+        "emi": {
+          "text": "هذا بخمسين"
+        },
+        "qat": {
+          "text": "هذا بخمسين"
+        },
+        "bah": {
+          "text": "هذا بخمسين"
+        },
+        "oma": {
+          "text": "هذا بخمسين"
+        },
+        "dho": {
+          "text": "هذا بخمسين"
+        },
+        "san": {
+          "text": "هذا بخمسين"
+        },
+        "ade": {
+          "text": "هذا بخمسين"
+        },
+        "had": {
+          "text": "هذا بخمسين"
+        },
+        "sud": {
+          "text": "ده بخمسين"
+        },
+        "chd": {
+          "text": "ده بخمسين"
+        },
+        "mar": {
+          "text": "هادي بخمسين"
+        },
+        "jeb": {
+          "text": "هادي بخمسين"
+        },
+        "alg": {
+          "text": "هادي بخمسين"
+        },
+        "tun": {
+          "text": "هذا بخمسين"
+        },
+        "tri": {
+          "text": "هذا بخمسين"
+        },
+        "ben": {
+          "text": "هذا بخمسين"
+        },
+        "has": {
+          "text": "ذا بخمسين"
+        }
+      }
+    },
+    {
+      "id": "numbers.have_change",
+      "category": "numbers",
+      "english": "Do you have change?",
+      "variants": {
+        "fs": {
+          "text": "هل لديك فكّة؟",
+          "translit": "hal ladayka fakka?"
+        },
+        "cai": {
+          "text": "معاك فكّة؟",
+          "translit": "maʿaak fakka?"
+        },
+        "alx": {
+          "text": "معاك فكّة؟"
+        },
+        "sai": {
+          "text": "معاك فكّة؟"
+        },
+        "sin": {
+          "text": "معك فكّة؟"
+        },
+        "dam": {
+          "text": "معك فراطة؟"
+        },
+        "alp": {
+          "text": "معك فراطة؟"
+        },
+        "leb": {
+          "text": "معك فراطة؟"
+        },
+        "psu": {
+          "text": "معك فكّة؟"
+        },
+        "psr": {
+          "text": "معك فكّة؟"
+        },
+        "jor": {
+          "text": "معك فكّة؟"
+        },
+        "bag": {
+          "text": "عندك خردة؟"
+        },
+        "mos": {
+          "text": "عندك خغدة؟"
+        },
+        "bas": {
+          "text": "عندك خردة؟"
+        },
+        "naj": {
+          "text": "عندك صرف؟"
+        },
+        "hij": {
+          "text": "معاك فكّة؟"
+        },
+        "jiz": {
+          "text": "معك فكّة؟"
+        },
+        "shm": {
+          "text": "عندك صرف؟"
+        },
+        "kuw": {
+          "text": "عندك خردة؟"
+        },
+        "emi": {
+          "text": "عندك خردة؟"
+        },
+        "qat": {
+          "text": "عندك خردة؟"
+        },
+        "bah": {
+          "text": "عندك خردة؟"
+        },
+        "oma": {
+          "text": "عندك صرف؟"
+        },
+        "dho": {
+          "text": "عندك صرف؟"
+        },
+        "san": {
+          "text": "معك صرف؟"
+        },
+        "ade": {
+          "text": "معك صرف؟"
+        },
+        "had": {
+          "text": "معك صرف؟"
+        },
+        "sud": {
+          "text": "عندك فكّة؟"
+        },
+        "chd": {
+          "text": "عندك فكّة؟"
+        },
+        "mar": {
+          "text": "عندك الصرف؟"
+        },
+        "jeb": {
+          "text": "عندك الصرف؟"
+        },
+        "alg": {
+          "text": "عندك الصرف؟"
+        },
+        "tun": {
+          "text": "عندك الصرف؟"
+        },
+        "tri": {
+          "text": "عندك صرف؟"
+        },
+        "ben": {
+          "text": "عندك صرف؟"
+        },
+        "has": {
+          "text": "عندك الصرف؟"
+        }
+      }
+    },
+    {
+      "id": "numbers.total",
+      "category": "numbers",
+      "english": "How much altogether?",
+      "variants": {
+        "fs": {
+          "text": "كم المجموع؟",
+          "translit": "kam al-majmūʿ?"
+        },
+        "cai": {
+          "text": "الحساب كلّه كام؟",
+          "translit": "il-ḥisaab kullu kaam?"
+        },
+        "alx": {
+          "text": "الحساب كلّه كام؟"
+        },
+        "sai": {
+          "text": "الحساب كلّه كام؟"
+        },
+        "sin": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "dam": {
+          "text": "قدّيش الحساب كلّه؟"
+        },
+        "alp": {
+          "text": "قدّيش الحساب كلّه؟"
+        },
+        "leb": {
+          "text": "قدّيش الحساب كلّه؟"
+        },
+        "psu": {
+          "text": "قدّيش الحساب كلّه؟"
+        },
+        "psr": {
+          "text": "كدّيش الحساب كلّه؟"
+        },
+        "jor": {
+          "text": "قدّيش الحساب كلّه؟"
+        },
+        "bag": {
+          "text": "شگد الحساب كلّه؟"
+        },
+        "mos": {
+          "text": "كم الحساب كلّو؟"
+        },
+        "bas": {
+          "text": "شگد الحساب كلّه؟"
+        },
+        "naj": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "hij": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "jiz": {
+          "text": "كم امحساب كلّه؟"
+        },
+        "shm": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "kuw": {
+          "text": "چم الحساب كلّه؟"
+        },
+        "emi": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "qat": {
+          "text": "چم الحساب كلّه؟"
+        },
+        "bah": {
+          "text": "چم الحساب كلّه؟"
+        },
+        "oma": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "dho": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "san": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "ade": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "had": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "sud": {
+          "text": "الحساب كلّو كم؟"
+        },
+        "chd": {
+          "text": "الحساب كلّو كم؟"
+        },
+        "mar": {
+          "text": "شحال الحساب كامل؟"
+        },
+        "jeb": {
+          "text": "شحال الحساب كامل؟"
+        },
+        "alg": {
+          "text": "قدّاش الحساب كامل؟"
+        },
+        "tun": {
+          "text": "قدّاش الحساب الكل؟"
+        },
+        "tri": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "ben": {
+          "text": "كم الحساب كلّه؟"
+        },
+        "has": {
+          "text": "بكم الحساب كامل؟"
+        }
+      }
+    },
+    {
+      "id": "numbers.no_money",
+      "category": "numbers",
+      "english": "I don't have money on me.",
+      "variants": {
+        "fs": {
+          "text": "ليس معي مال",
+          "translit": "laysa maʿī māl"
+        },
+        "cai": {
+          "text": "مش معايا فلوس",
+          "translit": "mish maʿaaya fluus"
+        },
+        "alx": {
+          "text": "مش معايا فلوس"
+        },
+        "sai": {
+          "text": "مش معايا فلوس"
+        },
+        "sin": {
+          "text": "ما معي فلوس"
+        },
+        "dam": {
+          "text": "ما معي مصاري"
+        },
+        "alp": {
+          "text": "ما معي مصاري"
+        },
+        "leb": {
+          "text": "ما معي مصاري"
+        },
+        "psu": {
+          "text": "ما معي مصاري"
+        },
+        "psr": {
+          "text": "ما معي مصاري"
+        },
+        "jor": {
+          "text": "ما معي مصاري"
+        },
+        "bag": {
+          "text": "ما عندي فلوس"
+        },
+        "mos": {
+          "text": "ما عندي فلوس"
+        },
+        "bas": {
+          "text": "ما عندي فلوس"
+        },
+        "naj": {
+          "text": "ما معي فلوس"
+        },
+        "hij": {
+          "text": "ما معايا فلوس"
+        },
+        "jiz": {
+          "text": "ما معي فلوس"
+        },
+        "shm": {
+          "text": "ما معي فلوس"
+        },
+        "kuw": {
+          "text": "ما عندي بيزات"
+        },
+        "emi": {
+          "text": "ما عندي بيزات"
+        },
+        "qat": {
+          "text": "ما عندي فلوس"
+        },
+        "bah": {
+          "text": "ما عندي فلوس"
+        },
+        "oma": {
+          "text": "ما معي فلوس"
+        },
+        "dho": {
+          "text": "ما معي فلوس"
+        },
+        "san": {
+          "text": "ما معي زلط"
+        },
+        "ade": {
+          "text": "ما معي زلط"
+        },
+        "had": {
+          "text": "ما معي فلوس"
+        },
+        "sud": {
+          "text": "ما معاي قروش"
+        },
+        "chd": {
+          "text": "ما عندي قروش"
+        },
+        "mar": {
+          "text": "ما عنديش الفلوس"
+        },
+        "jeb": {
+          "text": "ما عنديش الفلوس"
+        },
+        "alg": {
+          "text": "ما عنديش الدراهم"
+        },
+        "tun": {
+          "text": "ما عنديش فلوس"
+        },
+        "tri": {
+          "text": "ما عنديش فلوس"
+        },
+        "ben": {
+          "text": "ما عنديش فلوس"
+        },
+        "has": {
+          "text": "ما عندي فلوس"
+        }
+      }
+    },
+    {
+      "id": "numbers.what_time",
+      "category": "numbers",
+      "english": "What time is it?",
+      "variants": {
+        "fs": {
+          "text": "كم الساعة؟",
+          "translit": "kam as-sāʿa?"
+        },
+        "cai": {
+          "text": "الساعة كام؟",
+          "translit": "is-saaʿa kaam?"
+        },
+        "alx": {
+          "text": "الساعة كام؟"
+        },
+        "sai": {
+          "text": "الساعة كام؟"
+        },
+        "sin": {
+          "text": "كم الساعة؟"
+        },
+        "dam": {
+          "text": "قدّيش الساعة؟"
+        },
+        "alp": {
+          "text": "قدّيش الساعة؟"
+        },
+        "leb": {
+          "text": "قدّيش الساعة؟"
+        },
+        "psu": {
+          "text": "قدّيش الساعة؟"
+        },
+        "psr": {
+          "text": "كدّيش الساعة؟"
+        },
+        "jor": {
+          "text": "قدّيش الساعة؟"
+        },
+        "bag": {
+          "text": "الساعة بيش؟"
+        },
+        "mos": {
+          "text": "الساعة كم؟"
+        },
+        "bas": {
+          "text": "الساعة بيش؟"
+        },
+        "naj": {
+          "text": "كم الساعة؟"
+        },
+        "hij": {
+          "text": "كم الساعة؟"
+        },
+        "jiz": {
+          "text": "كم امساعة؟"
+        },
+        "shm": {
+          "text": "كم الساعة؟"
+        },
+        "kuw": {
+          "text": "چم الساعة؟"
+        },
+        "emi": {
+          "text": "كم الساعة؟"
+        },
+        "qat": {
+          "text": "چم الساعة؟"
+        },
+        "bah": {
+          "text": "چم الساعة؟"
+        },
+        "oma": {
+          "text": "كم الساعة؟"
+        },
+        "dho": {
+          "text": "كم الساعة؟"
+        },
+        "san": {
+          "text": "كم الساعة؟"
+        },
+        "ade": {
+          "text": "كم الساعة؟"
+        },
+        "had": {
+          "text": "كم الساعة؟"
+        },
+        "sud": {
+          "text": "الساعة كم؟"
+        },
+        "chd": {
+          "text": "الساعة كم؟"
+        },
+        "mar": {
+          "text": "شحال فالساعة؟"
+        },
+        "jeb": {
+          "text": "شحال فالساعة؟"
+        },
+        "alg": {
+          "text": "قدّاش الساعة؟"
+        },
+        "tun": {
+          "text": "قدّاش الوقت؟"
+        },
+        "tri": {
+          "text": "كم الساعة؟"
+        },
+        "ben": {
+          "text": "كم الساعة؟"
+        },
+        "has": {
+          "text": "كم الساعة؟"
+        }
+      }
+    },
+    {
+      "id": "family.my_father",
+      "category": "family",
+      "english": "This is my father.",
+      "variants": {
+        "fs": {
+          "text": "هذا أبي",
+          "translit": "hādhā abī"
+        },
+        "cai": {
+          "text": "ده بابا",
+          "translit": "da baaba"
+        },
+        "alx": {
+          "text": "ده بابا"
+        },
+        "sai": {
+          "text": "ده أبويا"
+        },
+        "sin": {
+          "text": "هذا أبوي"
+        },
+        "dam": {
+          "text": "هاد بابا"
+        },
+        "alp": {
+          "text": "هاد بيّي"
+        },
+        "leb": {
+          "text": "هيدا بيّي"
+        },
+        "psu": {
+          "text": "هاد أبوي"
+        },
+        "psr": {
+          "text": "هاد أبوي"
+        },
+        "jor": {
+          "text": "هاد أبوي"
+        },
+        "bag": {
+          "text": "هذا أبويه"
+        },
+        "mos": {
+          "text": "هاذا أبويي"
+        },
+        "bas": {
+          "text": "هذا أبويه"
+        },
+        "naj": {
+          "text": "هذا أبوي"
+        },
+        "hij": {
+          "text": "هذا أبويا"
+        },
+        "jiz": {
+          "text": "هذا أبوي"
+        },
+        "shm": {
+          "text": "هذا أبوي"
+        },
+        "kuw": {
+          "text": "هذا أبوي"
+        },
+        "emi": {
+          "text": "هذا أبوي"
+        },
+        "qat": {
+          "text": "هذا أبوي"
+        },
+        "bah": {
+          "text": "هذا أبوي"
+        },
+        "oma": {
+          "text": "هذا أبوي"
+        },
+        "dho": {
+          "text": "هذا أبوي"
+        },
+        "san": {
+          "text": "هذا أبي"
+        },
+        "ade": {
+          "text": "هذا أبي"
+        },
+        "had": {
+          "text": "هذا أبويه"
+        },
+        "sud": {
+          "text": "ده أبوي"
+        },
+        "chd": {
+          "text": "ده أبوي"
+        },
+        "mar": {
+          "text": "هادا بّا"
+        },
+        "jeb": {
+          "text": "هادا بّا"
+        },
+        "alg": {
+          "text": "هادا بابا"
+        },
+        "tun": {
+          "text": "هذا بابا"
+        },
+        "tri": {
+          "text": "هذا بوي"
+        },
+        "ben": {
+          "text": "هذا بوي"
+        },
+        "has": {
+          "text": "ذا ابّاي"
+        }
+      }
+    },
+    {
+      "id": "family.my_mother",
+      "category": "family",
+      "english": "My mother is at home.",
+      "variants": {
+        "fs": {
+          "text": "أمّي في البيت",
+          "translit": "ummī fī al-bayt"
+        },
+        "cai": {
+          "text": "ماما في البيت",
+          "translit": "maama fil-beet"
+        },
+        "alx": {
+          "text": "ماما في البيت"
+        },
+        "sai": {
+          "text": "أمّي في الدار"
+        },
+        "sin": {
+          "text": "أمّي في البيت"
+        },
+        "dam": {
+          "text": "ماما بالبيت"
+        },
+        "alp": {
+          "text": "إمّي بالبيت"
+        },
+        "leb": {
+          "text": "إمّي بالبيت"
+        },
+        "psu": {
+          "text": "إمّي بالبيت"
+        },
+        "psr": {
+          "text": "إمّي بالدار"
+        },
+        "jor": {
+          "text": "إمّي بالبيت"
+        },
+        "bag": {
+          "text": "أمّي بالبيت"
+        },
+        "mos": {
+          "text": "أمّي بالبيت"
+        },
+        "bas": {
+          "text": "أمّي بالبيت"
+        },
+        "naj": {
+          "text": "أمّي في البيت"
+        },
+        "hij": {
+          "text": "أمّي في البيت"
+        },
+        "jiz": {
+          "text": "أمّي في امبيت"
+        },
+        "shm": {
+          "text": "أمّي في البيت"
+        },
+        "kuw": {
+          "text": "أمّي في البيت"
+        },
+        "emi": {
+          "text": "أمّي في البيت"
+        },
+        "qat": {
+          "text": "أمّي في البيت"
+        },
+        "bah": {
+          "text": "أمّي في البيت"
+        },
+        "oma": {
+          "text": "أمّي في البيت"
+        },
+        "dho": {
+          "text": "أمّي في البيت"
+        },
+        "san": {
+          "text": "أمّي في البيت"
+        },
+        "ade": {
+          "text": "أمّي في البيت"
+        },
+        "had": {
+          "text": "أمّي في البيت"
+        },
+        "sud": {
+          "text": "أمّي في البيت"
+        },
+        "chd": {
+          "text": "أمّي في البيت"
+        },
+        "mar": {
+          "text": "ماما فالدار"
+        },
+        "jeb": {
+          "text": "ماما فالدار"
+        },
+        "alg": {
+          "text": "يمّا فالدار"
+        },
+        "tun": {
+          "text": "أمّي في الدار"
+        },
+        "tri": {
+          "text": "أمّي في الحوش"
+        },
+        "ben": {
+          "text": "أمّي في الحوش"
+        },
+        "has": {
+          "text": "أمّي فالدار"
+        }
+      }
+    },
+    {
+      "id": "family.two_brothers",
+      "category": "family",
+      "english": "I have two brothers.",
+      "variants": {
+        "fs": {
+          "text": "لديّ أخوان",
+          "translit": "ladayya akhawān"
+        },
+        "cai": {
+          "text": "عندي اتنين إخوات",
+          "translit": "ʿandi itneen ikhwaat"
+        },
+        "alx": {
+          "text": "عندي اتنين إخوات"
+        },
+        "sai": {
+          "text": "عندي اتنين إخوة"
+        },
+        "sin": {
+          "text": "عندي أخوين"
+        },
+        "dam": {
+          "text": "عندي خيّين"
+        },
+        "alp": {
+          "text": "عندي خيّين"
+        },
+        "leb": {
+          "text": "عندي خيّين"
+        },
+        "psu": {
+          "text": "عندي أخين"
+        },
+        "psr": {
+          "text": "عندي أخوين"
+        },
+        "jor": {
+          "text": "عندي أخوين"
+        },
+        "bag": {
+          "text": "عندي أخوين"
+        },
+        "mos": {
+          "text": "عندي أخوين"
+        },
+        "bas": {
+          "text": "عندي أخوين"
+        },
+        "naj": {
+          "text": "عندي أخوين"
+        },
+        "hij": {
+          "text": "عندي أخوين"
+        },
+        "jiz": {
+          "text": "عندي أخوين"
+        },
+        "shm": {
+          "text": "عندي أخوين"
+        },
+        "kuw": {
+          "text": "عندي أخوين"
+        },
+        "emi": {
+          "text": "عندي أخوين"
+        },
+        "qat": {
+          "text": "عندي أخوين"
+        },
+        "bah": {
+          "text": "عندي أخوين"
+        },
+        "oma": {
+          "text": "عندي أخوين"
+        },
+        "dho": {
+          "text": "عندي أخوين"
+        },
+        "san": {
+          "text": "معي أخوين"
+        },
+        "ade": {
+          "text": "معي أخوين"
+        },
+        "had": {
+          "text": "معي أخوين"
+        },
+        "sud": {
+          "text": "عندي أخوين اتنين"
+        },
+        "chd": {
+          "text": "عندي أخوان اتنين"
+        },
+        "mar": {
+          "text": "عندي جوج خوت"
+        },
+        "jeb": {
+          "text": "عندي جوج خوت"
+        },
+        "alg": {
+          "text": "عندي زوج خاوة"
+        },
+        "tun": {
+          "text": "عندي زوز خوات"
+        },
+        "tri": {
+          "text": "عندي زوز خوت"
+        },
+        "ben": {
+          "text": "عندي خوين"
+        },
+        "has": {
+          "text": "عندي اخوين"
+        }
+      }
+    },
+    {
+      "id": "family.married",
+      "category": "family",
+      "english": "Are you married?",
+      "note": "Said to a man.",
+      "noteAr": "بصيغة المخاطَب المذكّر",
+      "variants": {
+        "fs": {
+          "text": "هل أنت متزوّج؟",
+          "translit": "hal anta mutazawwij?"
+        },
+        "cai": {
+          "text": "إنت متجوّز؟",
+          "translit": "inta mitgawwiz?"
+        },
+        "alx": {
+          "text": "إنت متجوّز؟"
+        },
+        "sai": {
+          "text": "إنت متجوّز؟"
+        },
+        "sin": {
+          "text": "إنت متزوّج؟"
+        },
+        "dam": {
+          "text": "إنت متجوّز؟"
+        },
+        "alp": {
+          "text": "إنت متجوّز؟"
+        },
+        "leb": {
+          "text": "إنت متجوّز؟"
+        },
+        "psu": {
+          "text": "إنت متجوّز؟"
+        },
+        "psr": {
+          "text": "إنت متجوّز؟"
+        },
+        "jor": {
+          "text": "إنت متزوّج؟"
+        },
+        "bag": {
+          "text": "إنت متزوّج؟"
+        },
+        "mos": {
+          "text": "إنتَ متزوّج؟"
+        },
+        "bas": {
+          "text": "إنت متزوّج؟"
+        },
+        "naj": {
+          "text": "إنت متزوّج؟"
+        },
+        "hij": {
+          "text": "إنت متزوّج؟"
+        },
+        "jiz": {
+          "text": "إنت متزوّج؟"
+        },
+        "shm": {
+          "text": "إنت متزوّج؟"
+        },
+        "kuw": {
+          "text": "إنت متزوّج؟"
+        },
+        "emi": {
+          "text": "إنت متزوّج؟"
+        },
+        "qat": {
+          "text": "إنت متزوّج؟"
+        },
+        "bah": {
+          "text": "إنت متزوّج؟"
+        },
+        "oma": {
+          "text": "إنت متزوّج؟"
+        },
+        "dho": {
+          "text": "إنت متزوّج؟"
+        },
+        "san": {
+          "text": "انته متزوّج؟"
+        },
+        "ade": {
+          "text": "انته متزوّج؟"
+        },
+        "had": {
+          "text": "انته متزوّج؟"
+        },
+        "sud": {
+          "text": "إنت عرّست؟"
+        },
+        "chd": {
+          "text": "إنت عرّست؟"
+        },
+        "mar": {
+          "text": "واش نتا مزوّج؟"
+        },
+        "jeb": {
+          "text": "واش نتا مزوّج؟"
+        },
+        "alg": {
+          "text": "راك مزوّج؟"
+        },
+        "tun": {
+          "text": "إنتِ معرّس؟"
+        },
+        "tri": {
+          "text": "إنت معرّس؟"
+        },
+        "ben": {
+          "text": "إنت معرّس؟"
+        },
+        "has": {
+          "text": "انت امزوّج؟"
+        }
+      }
+    },
+    {
+      "id": "family.son_daughter",
+      "category": "family",
+      "english": "I have a son and a daughter.",
+      "variants": {
+        "fs": {
+          "text": "لديّ ابن وبنت",
+          "translit": "ladayya ibn wa-bint"
+        },
+        "cai": {
+          "text": "عندي ولد وبنت",
+          "translit": "ʿandi walad w-bint"
+        },
+        "alx": {
+          "text": "عندي ولد وبنت"
+        },
+        "sai": {
+          "text": "عندي واد وبت"
+        },
+        "sin": {
+          "text": "عندي ولد وبنت"
+        },
+        "dam": {
+          "text": "عندي صبي وبنت"
+        },
+        "alp": {
+          "text": "عندي صبي وبنت"
+        },
+        "leb": {
+          "text": "عندي صبي وبنت"
+        },
+        "psu": {
+          "text": "عندي ولد وبنت"
+        },
+        "psr": {
+          "text": "عندي ولد وبنت"
+        },
+        "jor": {
+          "text": "عندي ولد وبنت"
+        },
+        "bag": {
+          "text": "عندي ولد وبنيّة"
+        },
+        "mos": {
+          "text": "عندي ولد وبنت"
+        },
+        "bas": {
+          "text": "عندي ولد وبنيّة"
+        },
+        "naj": {
+          "text": "عندي ولد وبنت"
+        },
+        "hij": {
+          "text": "عندي ولد وبنت"
+        },
+        "jiz": {
+          "text": "عندي ولد وبنت"
+        },
+        "shm": {
+          "text": "عندي ولد وبنت"
+        },
+        "kuw": {
+          "text": "عندي ولد وبنت"
+        },
+        "emi": {
+          "text": "عندي ولد وبنت"
+        },
+        "qat": {
+          "text": "عندي ولد وبنت"
+        },
+        "bah": {
+          "text": "عندي ولد وبنت"
+        },
+        "oma": {
+          "text": "عندي ولد وبنت"
+        },
+        "dho": {
+          "text": "عندي ولد وبنت"
+        },
+        "san": {
+          "text": "معي ولد وبنت"
+        },
+        "ade": {
+          "text": "معي ولد وبنت"
+        },
+        "had": {
+          "text": "معي ولد وبنت"
+        },
+        "sud": {
+          "text": "عندي ولد وبت"
+        },
+        "chd": {
+          "text": "عندي ولد وبنيّة"
+        },
+        "mar": {
+          "text": "عندي ولد وبنت"
+        },
+        "jeb": {
+          "text": "عندي ولد وبنت"
+        },
+        "alg": {
+          "text": "عندي طفل وطفلة"
+        },
+        "tun": {
+          "text": "عندي ولد وبنيّة"
+        },
+        "tri": {
+          "text": "عندي ولد وبنيّة"
+        },
+        "ben": {
+          "text": "عندي ولد وبنيّة"
+        },
+        "has": {
+          "text": "عندي ولد وبنت"
+        }
+      }
+    },
+    {
+      "id": "family.how_family",
+      "category": "family",
+      "english": "How is the family?",
+      "variants": {
+        "fs": {
+          "text": "كيف حال العائلة؟",
+          "translit": "kayfa ḥāl al-ʿāʼila?"
+        },
+        "cai": {
+          "text": "العيلة عاملة إيه؟",
+          "translit": "il-ʿeela ʿamla eeh?"
+        },
+        "alx": {
+          "text": "العيلة عاملة إيه؟"
+        },
+        "sai": {
+          "text": "أهلك عاملين إيه؟"
+        },
+        "sin": {
+          "text": "كيف حال الأهل؟"
+        },
+        "dam": {
+          "text": "كيف العيلة؟"
+        },
+        "alp": {
+          "text": "شلون العيلة؟"
+        },
+        "leb": {
+          "text": "كيف العيلة؟"
+        },
+        "psu": {
+          "text": "كيف العيلة؟"
+        },
+        "psr": {
+          "text": "تشيف العيلة؟"
+        },
+        "jor": {
+          "text": "كيف الأهل؟"
+        },
+        "bag": {
+          "text": "شلون الأهل؟"
+        },
+        "mos": {
+          "text": "إشلون الأهل؟"
+        },
+        "bas": {
+          "text": "شلون الأهل؟"
+        },
+        "naj": {
+          "text": "وشلون الأهل؟"
+        },
+        "hij": {
+          "text": "كيف الأهل؟"
+        },
+        "jiz": {
+          "text": "كيف امأهل؟"
+        },
+        "shm": {
+          "text": "شلون الأهل؟"
+        },
+        "kuw": {
+          "text": "شلون الأهل؟"
+        },
+        "emi": {
+          "text": "شحال الأهل؟"
+        },
+        "qat": {
+          "text": "شلون الأهل؟"
+        },
+        "bah": {
+          "text": "شلون الأهل؟"
+        },
+        "oma": {
+          "text": "كيف حال الأهل؟"
+        },
+        "dho": {
+          "text": "كيف حال الأهل؟"
+        },
+        "san": {
+          "text": "كيف حال الأهل؟"
+        },
+        "ade": {
+          "text": "كيف الأهل؟"
+        },
+        "had": {
+          "text": "كيف حال الأهل؟"
+        },
+        "sud": {
+          "text": "ناس البيت كيف؟"
+        },
+        "chd": {
+          "text": "ناس البيت عافية؟"
+        },
+        "mar": {
+          "text": "كيدايرة العائلة؟"
+        },
+        "jeb": {
+          "text": "كيدايرة العائلة؟"
+        },
+        "alg": {
+          "text": "واش راهي العايلة؟"
+        },
+        "tun": {
+          "text": "شنوّة أحوال العايلة؟"
+        },
+        "tri": {
+          "text": "شن حال العيلة؟"
+        },
+        "ben": {
+          "text": "شن حال العيلة؟"
+        },
+        "has": {
+          "text": "اشحال الأهل؟"
+        }
+      }
+    },
+    {
+      "id": "feelings.happy",
+      "category": "feelings",
+      "english": "I'm very happy.",
+      "variants": {
+        "fs": {
+          "text": "أنا سعيد جدًّا",
+          "translit": "anā saʿīd jiddan"
+        },
+        "cai": {
+          "text": "أنا مبسوط أوي",
+          "translit": "ana mabsuuṭ awi"
+        },
+        "alx": {
+          "text": "أنا مبسوط قوي"
+        },
+        "sai": {
+          "text": "أنا مبسوط قوي"
+        },
+        "sin": {
+          "text": "أنا فرحان مرّة"
+        },
+        "dam": {
+          "text": "أنا كتير مبسوط"
+        },
+        "alp": {
+          "text": "أنا كتير مبسوط"
+        },
+        "leb": {
+          "text": "أنا كتير مبسوط"
+        },
+        "psu": {
+          "text": "أنا كتير مبسوط"
+        },
+        "psr": {
+          "text": "أنا كتير مبسوط"
+        },
+        "jor": {
+          "text": "أنا كتير مبسوط"
+        },
+        "bag": {
+          "text": "آني كلّش فرحان"
+        },
+        "mos": {
+          "text": "أنا كثيغ فغحان"
+        },
+        "bas": {
+          "text": "آني كلّش فرحان"
+        },
+        "naj": {
+          "text": "أنا مرّة مبسوط"
+        },
+        "hij": {
+          "text": "أنا مرّة مبسوط"
+        },
+        "jiz": {
+          "text": "أنا فرحان مرّة"
+        },
+        "shm": {
+          "text": "أنا مرّة مستانس"
+        },
+        "kuw": {
+          "text": "أنا وايد مستانس"
+        },
+        "emi": {
+          "text": "أنا وايد مستانس"
+        },
+        "qat": {
+          "text": "أنا وايد مستانس"
+        },
+        "bah": {
+          "text": "أنا وايد مستانس"
+        },
+        "oma": {
+          "text": "أنا وايد فرحان"
+        },
+        "dho": {
+          "text": "أنا فرحان وايد"
+        },
+        "san": {
+          "text": "أنا فرحان قوي"
+        },
+        "ade": {
+          "text": "أنا فرحان قوي"
+        },
+        "had": {
+          "text": "أنا فرحان واجد"
+        },
+        "sud": {
+          "text": "أنا مبسوط شديد"
+        },
+        "chd": {
+          "text": "أنا فرحان شديد"
+        },
+        "mar": {
+          "text": "أنا فرحان بزاف"
+        },
+        "jeb": {
+          "text": "أنا فرحان بزاف"
+        },
+        "alg": {
+          "text": "أنا فرحان بزاف"
+        },
+        "tun": {
+          "text": "أنا فرحان برشا"
+        },
+        "tri": {
+          "text": "أنا فرحان واجد"
+        },
+        "ben": {
+          "text": "أنا فرحان هلبا"
+        },
+        "has": {
+          "text": "آن فرحان ياسر"
+        }
+      }
+    },
+    {
+      "id": "feelings.tired",
+      "category": "feelings",
+      "english": "I'm tired.",
+      "variants": {
+        "fs": {
+          "text": "أنا متعب",
+          "translit": "anā mutʿab"
+        },
+        "cai": {
+          "text": "أنا تعبان",
+          "translit": "ana taʿbaan"
+        },
+        "alx": {
+          "text": "أنا تعبان"
+        },
+        "sai": {
+          "text": "أنا تعبان"
+        },
+        "sin": {
+          "text": "أنا تعبان"
+        },
+        "dam": {
+          "text": "أنا تعبان"
+        },
+        "alp": {
+          "text": "أنا تعبان"
+        },
+        "leb": {
+          "text": "أنا تعبان"
+        },
+        "psu": {
+          "text": "أنا تعبان"
+        },
+        "psr": {
+          "text": "أنا تعبان"
+        },
+        "jor": {
+          "text": "أنا تعبان"
+        },
+        "bag": {
+          "text": "آني تعبان"
+        },
+        "mos": {
+          "text": "أنا تعبان"
+        },
+        "bas": {
+          "text": "آني تعبان"
+        },
+        "naj": {
+          "text": "أنا تعبان"
+        },
+        "hij": {
+          "text": "أنا تعبان"
+        },
+        "jiz": {
+          "text": "أنا تعبان"
+        },
+        "shm": {
+          "text": "أنا تعبان"
+        },
+        "kuw": {
+          "text": "أنا تعبان"
+        },
+        "emi": {
+          "text": "أنا تعبان"
+        },
+        "qat": {
+          "text": "أنا تعبان"
+        },
+        "bah": {
+          "text": "أنا تعبان"
+        },
+        "oma": {
+          "text": "أنا تعبان"
+        },
+        "dho": {
+          "text": "أنا تعبان"
+        },
+        "san": {
+          "text": "أنا تعبان"
+        },
+        "ade": {
+          "text": "أنا تعبان"
+        },
+        "had": {
+          "text": "أنا تعبان"
+        },
+        "sud": {
+          "text": "أنا تعبان"
+        },
+        "chd": {
+          "text": "أنا عيّان"
+        },
+        "mar": {
+          "text": "أنا عيّان"
+        },
+        "jeb": {
+          "text": "أنا عيّان"
+        },
+        "alg": {
+          "text": "راني عيّان"
+        },
+        "tun": {
+          "text": "أنا تاعب"
+        },
+        "tri": {
+          "text": "أنا تعبان"
+        },
+        "ben": {
+          "text": "أنا تعبان"
+        },
+        "has": {
+          "text": "آن عيّان"
+        }
+      }
+    },
+    {
+      "id": "feelings.hungry",
+      "category": "feelings",
+      "english": "I'm hungry.",
+      "variants": {
+        "fs": {
+          "text": "أنا جائع",
+          "translit": "anā jāʼiʿ"
+        },
+        "cai": {
+          "text": "أنا جعان",
+          "translit": "ana gaʿaan"
+        },
+        "alx": {
+          "text": "أنا جعان"
+        },
+        "sai": {
+          "text": "أنا جعان"
+        },
+        "sin": {
+          "text": "أنا جوعان"
+        },
+        "dam": {
+          "text": "أنا جوعان"
+        },
+        "alp": {
+          "text": "أنا جوعان"
+        },
+        "leb": {
+          "text": "أنا جوعان"
+        },
+        "psu": {
+          "text": "أنا جوعان"
+        },
+        "psr": {
+          "text": "أنا جوعان"
+        },
+        "jor": {
+          "text": "أنا جوعان"
+        },
+        "bag": {
+          "text": "آني جوعان"
+        },
+        "mos": {
+          "text": "أنا جوعان"
+        },
+        "bas": {
+          "text": "آني جوعان"
+        },
+        "naj": {
+          "text": "أنا جوعان"
+        },
+        "hij": {
+          "text": "أنا جوعان"
+        },
+        "jiz": {
+          "text": "أنا جوعان"
+        },
+        "shm": {
+          "text": "أنا جوعان"
+        },
+        "kuw": {
+          "text": "أنا يوعان"
+        },
+        "emi": {
+          "text": "أنا يوعان"
+        },
+        "qat": {
+          "text": "أنا يوعان"
+        },
+        "bah": {
+          "text": "أنا يوعان"
+        },
+        "oma": {
+          "text": "أنا جوعان"
+        },
+        "dho": {
+          "text": "أنا جوعان"
+        },
+        "san": {
+          "text": "أنا جائع"
+        },
+        "ade": {
+          "text": "أنا جائع"
+        },
+        "had": {
+          "text": "أنا جايع"
+        },
+        "sud": {
+          "text": "أنا جعان"
+        },
+        "chd": {
+          "text": "أنا جيعان"
+        },
+        "mar": {
+          "text": "أنا جيعان"
+        },
+        "jeb": {
+          "text": "أنا جيعان"
+        },
+        "alg": {
+          "text": "راني جيعان"
+        },
+        "tun": {
+          "text": "أنا جيعان"
+        },
+        "tri": {
+          "text": "أنا جيعان"
+        },
+        "ben": {
+          "text": "أنا جيعان"
+        },
+        "has": {
+          "text": "آن جيعان"
+        }
+      }
+    },
+    {
+      "id": "feelings.miss_you",
+      "category": "feelings",
+      "english": "I miss you.",
+      "note": "Said to a man.",
+      "noteAr": "بصيغة المخاطَب المذكّر",
+      "variants": {
+        "fs": {
+          "text": "اشتقتُ إليك",
+          "translit": "ishtaqtu ilayk"
+        },
+        "cai": {
+          "text": "وحشتني",
+          "translit": "waḥashtini"
+        },
+        "alx": {
+          "text": "وحشتني"
+        },
+        "sai": {
+          "text": "وحشتني"
+        },
+        "sin": {
+          "text": "مشتاق لك"
+        },
+        "dam": {
+          "text": "اشتقتلّك"
+        },
+        "alp": {
+          "text": "اشتقتلّك"
+        },
+        "leb": {
+          "text": "اشتقتلّك"
+        },
+        "psu": {
+          "text": "اشتقتلّك"
+        },
+        "psr": {
+          "text": "اشتكتلّك"
+        },
+        "jor": {
+          "text": "اشتقتلّك"
+        },
+        "bag": {
+          "text": "اشتاقيتلك"
+        },
+        "mos": {
+          "text": "اشتقتلك"
+        },
+        "bas": {
+          "text": "اشتاقيتلك"
+        },
+        "naj": {
+          "text": "اشتقت لك"
+        },
+        "hij": {
+          "text": "وحشتني"
+        },
+        "jiz": {
+          "text": "اشتقت لك"
+        },
+        "shm": {
+          "text": "اشتقت لك"
+        },
+        "kuw": {
+          "text": "اشتقت لك"
+        },
+        "emi": {
+          "text": "اشتقت لك"
+        },
+        "qat": {
+          "text": "اشتقت لك"
+        },
+        "bah": {
+          "text": "اشتقت لك"
+        },
+        "oma": {
+          "text": "اشتقت لك"
+        },
+        "dho": {
+          "text": "اشتقت لك"
+        },
+        "san": {
+          "text": "مشتاق لك"
+        },
+        "ade": {
+          "text": "مشتاق لك"
+        },
+        "had": {
+          "text": "مشتاق لك"
+        },
+        "sud": {
+          "text": "اشتقت ليك"
+        },
+        "chd": {
+          "text": "مشتاق ليك"
+        },
+        "mar": {
+          "text": "توحّشتك"
+        },
+        "jeb": {
+          "text": "توحّشتك"
+        },
+        "alg": {
+          "text": "توحّشتك"
+        },
+        "tun": {
+          "text": "توحّشتك"
+        },
+        "tri": {
+          "text": "توحّشتك"
+        },
+        "ben": {
+          "text": "توحّشتك"
+        },
+        "has": {
+          "text": "توحّشتك"
+        }
+      }
+    },
+    {
+      "id": "feelings.bored",
+      "category": "feelings",
+      "english": "I'm bored.",
+      "variants": {
+        "fs": {
+          "text": "أنا أشعر بالملل",
+          "translit": "anā ashʿuru bil-malal"
+        },
+        "cai": {
+          "text": "أنا زهقان",
+          "translit": "ana zahʼaan"
+        },
+        "alx": {
+          "text": "أنا زهقان"
+        },
+        "sai": {
+          "text": "أنا زهقان"
+        },
+        "sin": {
+          "text": "أنا طفشان"
+        },
+        "dam": {
+          "text": "أنا ضايج"
+        },
+        "alp": {
+          "text": "أنا ضايج"
+        },
+        "leb": {
+          "text": "أنا ضجران"
+        },
+        "psu": {
+          "text": "أنا طفشان"
+        },
+        "psr": {
+          "text": "أنا طفشان"
+        },
+        "jor": {
+          "text": "أنا طفشان"
+        },
+        "bag": {
+          "text": "آني ضايج"
+        },
+        "mos": {
+          "text": "أنا ضايج"
+        },
+        "bas": {
+          "text": "آني ضايج"
+        },
+        "naj": {
+          "text": "أنا طفشان"
+        },
+        "hij": {
+          "text": "أنا طفشان"
+        },
+        "jiz": {
+          "text": "أنا طفشان"
+        },
+        "shm": {
+          "text": "أنا طفشان"
+        },
+        "kuw": {
+          "text": "أنا ملّيت"
+        },
+        "emi": {
+          "text": "أنا ملّيت"
+        },
+        "qat": {
+          "text": "أنا ملّيت"
+        },
+        "bah": {
+          "text": "أنا ملّيت"
+        },
+        "oma": {
+          "text": "أنا ملّيت"
+        },
+        "dho": {
+          "text": "أنا ملّيت"
+        },
+        "san": {
+          "text": "أنا متضايق"
+        },
+        "ade": {
+          "text": "أنا متضايق"
+        },
+        "had": {
+          "text": "أنا ملّيت"
+        },
+        "sud": {
+          "text": "أنا زهجان"
+        },
+        "chd": {
+          "text": "أنا زهجان"
+        },
+        "mar": {
+          "text": "أنا مقلق"
+        },
+        "jeb": {
+          "text": "أنا مقلق"
+        },
+        "alg": {
+          "text": "راني قالق"
+        },
+        "tun": {
+          "text": "أنا قالق"
+        },
+        "tri": {
+          "text": "أنا طايح ملل"
+        },
+        "ben": {
+          "text": "أنا طايح ملل"
+        },
+        "has": {
+          "text": "آن مالّ"
+        }
+      }
+    },
+    {
+      "id": "feelings.dont_worry",
+      "category": "feelings",
+      "english": "Don't worry.",
+      "note": "Said to a man.",
+      "noteAr": "بصيغة المخاطَب المذكّر",
+      "variants": {
+        "fs": {
+          "text": "لا تقلق",
+          "translit": "lā taqlaq"
+        },
+        "cai": {
+          "text": "متقلقش",
+          "translit": "matʼlaʼsh"
+        },
+        "alx": {
+          "text": "متقلقش"
+        },
+        "sai": {
+          "text": "متقلقش"
+        },
+        "sin": {
+          "text": "لا تشيل هم"
+        },
+        "dam": {
+          "text": "لا تاخد همّ"
+        },
+        "alp": {
+          "text": "لا تاخد همّ"
+        },
+        "leb": {
+          "text": "ما تعتل همّ"
+        },
+        "psu": {
+          "text": "ولا يهمّك"
+        },
+        "psr": {
+          "text": "ولا يهمّك"
+        },
+        "jor": {
+          "text": "ولا يهمّك"
+        },
+        "bag": {
+          "text": "لا تدير بال"
+        },
+        "mos": {
+          "text": "لا تديغ بال"
+        },
+        "bas": {
+          "text": "لا تدير بال"
+        },
+        "naj": {
+          "text": "لا تشيل هم"
+        },
+        "hij": {
+          "text": "لا تشيل هم"
+        },
+        "jiz": {
+          "text": "لا تشيل هم"
+        },
+        "shm": {
+          "text": "لا تشيل هم"
+        },
+        "kuw": {
+          "text": "لا تشيل هم"
+        },
+        "emi": {
+          "text": "لا تشل هم"
+        },
+        "qat": {
+          "text": "لا تشيل هم"
+        },
+        "bah": {
+          "text": "لا تشيل هم"
+        },
+        "oma": {
+          "text": "لا تشل هم"
+        },
+        "dho": {
+          "text": "لا تشل هم"
+        },
+        "san": {
+          "text": "لا تقلق"
+        },
+        "ade": {
+          "text": "لا تقلق"
+        },
+        "had": {
+          "text": "لا تشل هم"
+        },
+        "sud": {
+          "text": "ما تشيل هم"
+        },
+        "chd": {
+          "text": "ما تشيل هم"
+        },
+        "mar": {
+          "text": "ما تخافش"
+        },
+        "jeb": {
+          "text": "ما تخافش"
+        },
+        "alg": {
+          "text": "ما تخمّمش"
+        },
+        "tun": {
+          "text": "ما تخمّمش"
+        },
+        "tri": {
+          "text": "ما تشغلش بالك"
+        },
+        "ben": {
+          "text": "ما تشغلش بالك"
+        },
+        "has": {
+          "text": "لا تخمّم"
+        }
+      }
+    },
+    {
+      "id": "expressions.thank_you",
+      "category": "expressions",
+      "english": "Thank you.",
+      "variants": {
+        "fs": {
+          "text": "شكرًا",
+          "translit": "shukran"
+        },
+        "cai": {
+          "text": "شكرًا",
+          "translit": "shukran"
+        },
+        "alx": {
+          "text": "متشكّرين"
+        },
+        "sai": {
+          "text": "كتّر خيرك"
+        },
+        "sin": {
+          "text": "مشكور"
+        },
+        "dam": {
+          "text": "شكرًا"
+        },
+        "alp": {
+          "text": "شكرًا"
+        },
+        "leb": {
+          "text": "مَرسي"
+        },
+        "psu": {
+          "text": "شكرًا"
+        },
+        "psr": {
+          "text": "يسلمو"
+        },
+        "jor": {
+          "text": "يسلمو"
+        },
+        "bag": {
+          "text": "شكرًا"
+        },
+        "mos": {
+          "text": "شكغًا"
+        },
+        "bas": {
+          "text": "شكرًا"
+        },
+        "naj": {
+          "text": "مشكور"
+        },
+        "hij": {
+          "text": "شكرًا"
+        },
+        "jiz": {
+          "text": "مشكور"
+        },
+        "shm": {
+          "text": "مشكور"
+        },
+        "kuw": {
+          "text": "مشكور"
+        },
+        "emi": {
+          "text": "مشكور"
+        },
+        "qat": {
+          "text": "مشكور"
+        },
+        "bah": {
+          "text": "مشكور"
+        },
+        "oma": {
+          "text": "مشكور"
+        },
+        "dho": {
+          "text": "مشكور"
+        },
+        "san": {
+          "text": "شكرًا"
+        },
+        "ade": {
+          "text": "شكرًا"
+        },
+        "had": {
+          "text": "مشكور"
+        },
+        "sud": {
+          "text": "شكرًا"
+        },
+        "chd": {
+          "text": "شكرًا"
+        },
+        "mar": {
+          "text": "شكرًا"
+        },
+        "jeb": {
+          "text": "الله يخلّيك"
+        },
+        "alg": {
+          "text": "يعطيك الصحة"
+        },
+        "tun": {
+          "text": "يعيشك"
+        },
+        "tri": {
+          "text": "مشكور"
+        },
+        "ben": {
+          "text": "مشكور"
+        },
+        "has": {
+          "text": "شكرًا"
+        }
+      }
+    },
+    {
+      "id": "expressions.sorry",
+      "category": "expressions",
+      "english": "Sorry. / Excuse me.",
+      "variants": {
+        "fs": {
+          "text": "آسف",
+          "translit": "āsif"
+        },
+        "cai": {
+          "text": "آسف",
+          "translit": "aasif"
+        },
+        "alx": {
+          "text": "آسف"
+        },
+        "sai": {
+          "text": "لا مؤاخذة"
+        },
+        "sin": {
+          "text": "المعذرة"
+        },
+        "dam": {
+          "text": "آسف"
+        },
+        "alp": {
+          "text": "آسف"
+        },
+        "leb": {
+          "text": "سوري"
+        },
+        "psu": {
+          "text": "آسف"
+        },
+        "psr": {
+          "text": "ما تؤاخذني"
+        },
+        "jor": {
+          "text": "آسف"
+        },
+        "bag": {
+          "text": "آسف"
+        },
+        "mos": {
+          "text": "آسف"
+        },
+        "bas": {
+          "text": "آسف"
+        },
+        "naj": {
+          "text": "السموحة"
+        },
+        "hij": {
+          "text": "آسف"
+        },
+        "jiz": {
+          "text": "السموحة"
+        },
+        "shm": {
+          "text": "السموحة"
+        },
+        "kuw": {
+          "text": "السموحة"
+        },
+        "emi": {
+          "text": "السموحة"
+        },
+        "qat": {
+          "text": "السموحة"
+        },
+        "bah": {
+          "text": "السموحة"
+        },
+        "oma": {
+          "text": "السموحة"
+        },
+        "dho": {
+          "text": "السموحة"
+        },
+        "san": {
+          "text": "معذرة"
+        },
+        "ade": {
+          "text": "معذرة"
+        },
+        "had": {
+          "text": "معذرة"
+        },
+        "sud": {
+          "text": "معليش"
+        },
+        "chd": {
+          "text": "معليش"
+        },
+        "mar": {
+          "text": "سمح ليا"
+        },
+        "jeb": {
+          "text": "سمح ليا"
+        },
+        "alg": {
+          "text": "سامحني"
+        },
+        "tun": {
+          "text": "سامحني"
+        },
+        "tri": {
+          "text": "سامحني"
+        },
+        "ben": {
+          "text": "سامحني"
+        },
+        "has": {
+          "text": "اسمح لي"
+        }
+      }
+    },
+    {
+      "id": "expressions.dont_understand",
+      "category": "expressions",
+      "english": "I don't understand.",
+      "variants": {
+        "fs": {
+          "text": "لا أفهم",
+          "translit": "lā afham"
+        },
+        "cai": {
+          "text": "مش فاهم",
+          "translit": "mish faahim"
+        },
+        "alx": {
+          "text": "مش فاهم"
+        },
+        "sai": {
+          "text": "مش فاهم"
+        },
+        "sin": {
+          "text": "ما فهمت"
+        },
+        "dam": {
+          "text": "ما فهمت"
+        },
+        "alp": {
+          "text": "ما فهمت"
+        },
+        "leb": {
+          "text": "ما فهمت"
+        },
+        "psu": {
+          "text": "مش فاهم"
+        },
+        "psr": {
+          "text": "مش فاهم"
+        },
+        "jor": {
+          "text": "مش فاهم"
+        },
+        "bag": {
+          "text": "ما فتهمت"
+        },
+        "mos": {
+          "text": "ما فهمت"
+        },
+        "bas": {
+          "text": "ما فتهمت"
+        },
+        "naj": {
+          "text": "ما فهمت"
+        },
+        "hij": {
+          "text": "ما فهمت"
+        },
+        "jiz": {
+          "text": "ما فهمت"
+        },
+        "shm": {
+          "text": "ما فهمت"
+        },
+        "kuw": {
+          "text": "ما فهمت"
+        },
+        "emi": {
+          "text": "ما فهمت"
+        },
+        "qat": {
+          "text": "ما فهمت"
+        },
+        "bah": {
+          "text": "ما فهمت"
+        },
+        "oma": {
+          "text": "ما فهمت"
+        },
+        "dho": {
+          "text": "ما فهمت"
+        },
+        "san": {
+          "text": "ما فهمتش"
+        },
+        "ade": {
+          "text": "ما فهمتش"
+        },
+        "had": {
+          "text": "ما فهمت"
+        },
+        "sud": {
+          "text": "ما فهمت"
+        },
+        "chd": {
+          "text": "ما فهمت"
+        },
+        "mar": {
+          "text": "ما فهمتش"
+        },
+        "jeb": {
+          "text": "ما فهمتش"
+        },
+        "alg": {
+          "text": "ما فهمتش"
+        },
+        "tun": {
+          "text": "ما فهمتش"
+        },
+        "tri": {
+          "text": "ما فهمتش"
+        },
+        "ben": {
+          "text": "ما فهمتش"
+        },
+        "has": {
+          "text": "ما فهمت"
+        }
+      }
+    },
+    {
+      "id": "expressions.slowly",
+      "category": "expressions",
+      "english": "Speak slowly, please.",
+      "note": "Said to a man.",
+      "noteAr": "بصيغة المخاطَب المذكّر",
+      "variants": {
+        "fs": {
+          "text": "تكلّم ببطء من فضلك",
+          "translit": "takallam bi-buṭʼ min faḍlik"
+        },
+        "cai": {
+          "text": "اتكلّم براحة لو سمحت",
+          "translit": "itkallim bi-raaḥa law samaḥt"
+        },
+        "alx": {
+          "text": "اتكلّم براحة لو سمحت"
+        },
+        "sai": {
+          "text": "اتكلّم على مهلك لو سمحت"
+        },
+        "sin": {
+          "text": "تكلّم شوي شوي لو سمحت"
+        },
+        "dam": {
+          "text": "احكي على مهلك لو سمحت"
+        },
+        "alp": {
+          "text": "احكي على مهلك لو سمحت"
+        },
+        "leb": {
+          "text": "حاكيني على مهلك إذا بتريد"
+        },
+        "psu": {
+          "text": "احكي على مهلك لو سمحت"
+        },
+        "psr": {
+          "text": "احكي على مهلك لو سمحت"
+        },
+        "jor": {
+          "text": "احكي على مهلك لو سمحت"
+        },
+        "bag": {
+          "text": "احچي شويّة شويّة لو سمحت"
+        },
+        "mos": {
+          "text": "احكي على كيفك لو سمحت"
+        },
+        "bas": {
+          "text": "احچي شويّة شويّة لو سمحت"
+        },
+        "naj": {
+          "text": "تكلّم شوي شوي لو سمحت"
+        },
+        "hij": {
+          "text": "اتكلّم على مهلك لو سمحت"
+        },
+        "jiz": {
+          "text": "تكلّم على مهلك لو سمحت"
+        },
+        "shm": {
+          "text": "تكلّم شوي شوي لو سمحت"
+        },
+        "kuw": {
+          "text": "تكلّم شوي شوي لو سمحت"
+        },
+        "emi": {
+          "text": "تكلّم شوي شوي لو سمحت"
+        },
+        "qat": {
+          "text": "تكلّم شوي شوي لو سمحت"
+        },
+        "bah": {
+          "text": "تكلّم شوي شوي لو سمحت"
+        },
+        "oma": {
+          "text": "تكلّم على هونك لو سمحت"
+        },
+        "dho": {
+          "text": "تكلّم على هونك لو سمحت"
+        },
+        "san": {
+          "text": "تكلّم على مهلك لو سمحت"
+        },
+        "ade": {
+          "text": "تكلّم على مهلك لو سمحت"
+        },
+        "had": {
+          "text": "تكلّم على مهلك لو سمحت"
+        },
+        "sud": {
+          "text": "اتكلّم بشيش لو سمحت"
+        },
+        "chd": {
+          "text": "اتكلّم بشيش لو سمحت"
+        },
+        "mar": {
+          "text": "هضر بشوية عافاك"
+        },
+        "jeb": {
+          "text": "هضر بشوية عافاك"
+        },
+        "alg": {
+          "text": "أهدر بشوية يعيشك"
+        },
+        "tun": {
+          "text": "احكي بالشوية يعيشك"
+        },
+        "tri": {
+          "text": "تكلّم بشوية لو سمحت"
+        },
+        "ben": {
+          "text": "تكلّم بشوية لو سمحت"
+        },
+        "has": {
+          "text": "تكلّم بالشوية لو سمحت"
+        }
+      }
+    },
+    {
+      "id": "expressions.no_problem",
+      "category": "expressions",
+      "english": "No problem.",
+      "variants": {
+        "fs": {
+          "text": "لا مشكلة",
+          "translit": "lā mushkila"
+        },
+        "cai": {
+          "text": "مفيش مشكلة",
+          "translit": "mafiish mushkila"
+        },
+        "alx": {
+          "text": "مفيش مشكلة"
+        },
+        "sai": {
+          "text": "مفيش مشكلة"
+        },
+        "sin": {
+          "text": "ما فيه مشكلة"
+        },
+        "dam": {
+          "text": "ما في مشكلة"
+        },
+        "alp": {
+          "text": "ما في مشكلة"
+        },
+        "leb": {
+          "text": "ما في مشكلة"
+        },
+        "psu": {
+          "text": "مش مشكلة"
+        },
+        "psr": {
+          "text": "مش مشكلة"
+        },
+        "jor": {
+          "text": "مش مشكلة"
+        },
+        "bag": {
+          "text": "ماكو مشكلة"
+        },
+        "mos": {
+          "text": "ماكو مشكلة"
+        },
+        "bas": {
+          "text": "ماكو مشكلة"
+        },
+        "naj": {
+          "text": "ما فيه مشكلة"
+        },
+        "hij": {
+          "text": "ما في مشكلة"
+        },
+        "jiz": {
+          "text": "ما فيه مشكلة"
+        },
+        "shm": {
+          "text": "ما فيه مشكلة"
+        },
+        "kuw": {
+          "text": "مو مشكلة"
+        },
+        "emi": {
+          "text": "مو مشكلة"
+        },
+        "qat": {
+          "text": "مو مشكلة"
+        },
+        "bah": {
+          "text": "مو مشكلة"
+        },
+        "oma": {
+          "text": "ما شي مشكلة"
+        },
+        "dho": {
+          "text": "ما شي مشكلة"
+        },
+        "san": {
+          "text": "ما بش مشكلة"
+        },
+        "ade": {
+          "text": "ما بش مشكلة"
+        },
+        "had": {
+          "text": "ما شي مشكلة"
+        },
+        "sud": {
+          "text": "ما في مشكلة"
+        },
+        "chd": {
+          "text": "ما في مشكلة"
+        },
+        "mar": {
+          "text": "ما كاين مشكل"
+        },
+        "jeb": {
+          "text": "ما كاين مشكل"
+        },
+        "alg": {
+          "text": "ما كان مشكل"
+        },
+        "tun": {
+          "text": "ما فمّا حتّى مشكل"
+        },
+        "tri": {
+          "text": "ما فيش مشكلة"
+        },
+        "ben": {
+          "text": "ما فيش مشكلة"
+        },
+        "has": {
+          "text": "ما فيه مشكل"
+        }
+      }
+    },
+    {
+      "id": "expressions.okay",
+      "category": "expressions",
+      "english": "Okay.",
+      "variants": {
+        "fs": {
+          "text": "حسنًا",
+          "translit": "ḥasanan"
+        },
+        "cai": {
+          "text": "ماشي",
+          "translit": "maashi"
+        },
+        "alx": {
+          "text": "ماشي"
+        },
+        "sai": {
+          "text": "ماشي"
+        },
+        "sin": {
+          "text": "زين"
+        },
+        "dam": {
+          "text": "ماشي"
+        },
+        "alp": {
+          "text": "ماشي"
+        },
+        "leb": {
+          "text": "ماشي"
+        },
+        "psu": {
+          "text": "ماشي"
+        },
+        "psr": {
+          "text": "ماشي"
+        },
+        "jor": {
+          "text": "ماشي"
+        },
+        "bag": {
+          "text": "زين"
+        },
+        "mos": {
+          "text": "زين"
+        },
+        "bas": {
+          "text": "زين"
+        },
+        "naj": {
+          "text": "طيب"
+        },
+        "hij": {
+          "text": "طيب"
+        },
+        "jiz": {
+          "text": "طيب"
+        },
+        "shm": {
+          "text": "طيب"
+        },
+        "kuw": {
+          "text": "زين"
+        },
+        "emi": {
+          "text": "زين"
+        },
+        "qat": {
+          "text": "زين"
+        },
+        "bah": {
+          "text": "زين"
+        },
+        "oma": {
+          "text": "زين"
+        },
+        "dho": {
+          "text": "زين"
+        },
+        "san": {
+          "text": "تمام"
+        },
+        "ade": {
+          "text": "تمام"
+        },
+        "had": {
+          "text": "زين"
+        },
+        "sud": {
+          "text": "تمام"
+        },
+        "chd": {
+          "text": "طيّب"
+        },
+        "mar": {
+          "text": "واخا"
+        },
+        "jeb": {
+          "text": "واخا"
+        },
+        "alg": {
+          "text": "مليح"
+        },
+        "tun": {
+          "text": "باهي"
+        },
+        "tri": {
+          "text": "باهي"
+        },
+        "ben": {
+          "text": "باهي"
+        },
+        "has": {
+          "text": "زين"
+        }
+      }
+    }
+  ]
+}
