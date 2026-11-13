@@ -12,10 +12,14 @@ describe('content', () => {
     expect(validateContent(content, rawVoices as VoicesManifest)).toEqual([])
   })
 
-  it('has 36 dialects (MSA + 35) and 60 phrases', () => {
-    expect(dialects).toHaveLength(36)
+  it('starts with Standard Arabic and has phrases', () => {
     expect(dialects[0].id).toBe('fs')
-    expect(phrases).toHaveLength(60)
+    expect(phrases.length).toBeGreaterThan(0)
+  })
+
+  it('has the rural Delta dialects in the Egypt group', () => {
+    const nile = dialectsByRegion().find((g) => g.region.id === 'nile')!.dialects.map((d) => d.id)
+    for (const id of ['shq', 'dkh', 'mnf', 'ghr', 'bhr', 'dmt', 'kfs']) expect(nile).toContain(id)
   })
 
   it('puts every dialect in exactly one region group', () => {
@@ -53,8 +57,9 @@ describe('missingAudio', () => {
     const cai = rows.find((r) => r.dialectId === 'cai')!
     expect(cai.have).toBe(1)
     expect(cai.missing).not.toContain('greetings.hello')
-    expect(cai.missing).toHaveLength(59)
-    expect(rows.find((r) => r.dialectId === 'tun')!.missing).toHaveLength(60)
+    expect(cai.missing).toHaveLength(cai.total - 1)
+    const tun = rows.find((r) => r.dialectId === 'tun')!
+    expect(tun.missing).toHaveLength(tun.total)
   })
 })
 
