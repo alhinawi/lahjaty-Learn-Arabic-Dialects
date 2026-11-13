@@ -23,7 +23,7 @@ export default function EgyptPage() {
         <h1 className="relative mt-1 text-2xl font-bold">
           <span className="gold-text">{t('egyptTitle')}</span>
         </h1>
-        <p className="relative mt-2 text-sm leading-relaxed text-brand-100/90">{t('egyptBody')}</p>
+        <p className="relative mt-2 text-sm leading-relaxed text-cream-100">{t('egyptBody')}</p>
       </section>
 
       <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
@@ -89,7 +89,7 @@ export default function EgyptPage() {
                         {n ? nodeName(n) : f.node}
                       </Link>
                       <span dir="rtl" lang="ar" className="dialect-text block text-base font-bold text-slate-900">{f.text}</span>
-                      <span dir="ltr" className="block text-[11px] text-slate-400">{f.ipa}</span>
+                      <span dir="ltr" className="block text-[11px] text-slate-500">{f.ipa}</span>
                     </li>
                   )
                 })}

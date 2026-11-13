@@ -44,12 +44,12 @@ export default function Hero() {
       <div aria-hidden className="absolute -bottom-24 -start-16 h-56 w-56 rounded-full bg-brand-400/20 blur-2xl" />
       <p className="relative text-xs font-semibold tracking-wide text-sun-300">{t('tagline')}</p>
       <h1 className="relative mt-2 text-[1.7rem] leading-snug font-bold">{t('heroTitle')}</h1>
-      <p className="relative mt-2 text-sm leading-relaxed text-brand-100/90">{t('heroBody')}</p>
+      <p className="relative mt-2 text-sm leading-relaxed text-cream-100">{t('heroBody')}</p>
 
       {g && d && (
         <div className="relative mt-4 flex items-center justify-between gap-3 rounded-2xl bg-white/[0.07] p-3 ring-1 ring-sun-400/30 backdrop-blur-sm">
           <div className="min-w-0">
-            <p className="text-[11px] text-brand-200">{t('heroAsk')}</p>
+            <p className="text-[11px] text-cream-200">{t('heroAsk')}</p>
             <p key={g.text} dir="rtl" lang="ar" className="dialect-text animate-rise truncate text-3xl font-bold">
               <span className="gold-text">{g.text}</span>
             </p>
@@ -86,7 +86,7 @@ export default function Hero() {
           <div key={label}>
             <dt className="sr-only">{label}</dt>
             <dd className="font-display text-2xl font-bold text-sun-300">{n}</dd>
-            <dd className="text-[11px] text-brand-200">{label}</dd>
+            <dd className="text-[11px] text-cream-200">{label}</dd>
           </div>
         ))}
       </dl>

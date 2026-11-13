@@ -50,7 +50,7 @@ export default function DialectMap({ compact = false }: { compact?: boolean }) {
                 stroke={on ? '#dcb565' : regionColors[r.id]}
                 strokeWidth={on ? 1.6 : 0.8}
                 strokeLinejoin="round"
-                className="cursor-pointer transition-[fill-opacity] duration-300 hover:fill-opacity-60"
+                className="map-region cursor-pointer transition-[fill-opacity] duration-300 hover:fill-opacity-60"
                 onClick={() => setActive(r.id)}
                 role="button"
                 aria-label={name(r)}
@@ -116,7 +116,11 @@ export default function DialectMap({ compact = false }: { compact?: boolean }) {
             className={`shrink-0 rounded-full border px-3 py-1 text-xs font-semibold transition ${
               r.id === active ? 'border-transparent text-white shadow-sm' : 'border-slate-200 text-slate-600'
             }`}
-            style={r.id === active ? { backgroundColor: regionColors[r.id] } : undefined}
+            style={
+              r.id === active
+                ? { backgroundColor: regionColors[r.id], backgroundImage: 'linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 / 0.3))' }
+                : undefined
+            }
           >
             {name(r)}
           </button>
@@ -127,7 +131,7 @@ export default function DialectMap({ compact = false }: { compact?: boolean }) {
         <div className="mb-2 flex items-center gap-2">
           <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: color }} />
           <h3 className="font-bold">{name(activeRegion)}</h3>
-          <span className="text-xs text-slate-400">{t('mapDialects', { n: inRegion.length })}</span>
+          <span className="text-xs text-slate-500">{t('mapDialects', { n: inRegion.length })}</span>
         </div>
         <ul className="flex flex-wrap gap-1.5">
           {inRegion.map((d) => (

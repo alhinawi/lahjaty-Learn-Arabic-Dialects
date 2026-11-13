@@ -61,10 +61,10 @@ export default function SearchBox({ initial = '', autoFocus = false, onSubmit }:
           aria-autocomplete="list"
           aria-controls={listId}
           aria-expanded={open && suggestions.length > 0}
-          className="min-w-0 flex-1 bg-transparent text-base outline-none placeholder:text-slate-400 [&::-webkit-search-cancel-button]:hidden"
+          className="min-w-0 flex-1 bg-transparent text-base outline-none placeholder:text-slate-500 [&::-webkit-search-cancel-button]:hidden"
         />
         {q && (
-          <button type="button" onClick={() => setQ('')} aria-label={t('searchClear')} className="rounded-full p-1 text-slate-400 hover:bg-slate-100">
+          <button type="button" onClick={() => setQ('')} aria-label={t('searchClear')} className="rounded-full p-1 text-slate-500 hover:bg-slate-100">
             <X className="h-4 w-4" aria-hidden />
           </button>
         )}

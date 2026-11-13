@@ -51,7 +51,7 @@ export default function PracticePage() {
                   <span className="mt-1 block text-xs font-semibold text-sun-500">{t('bestScore', { n: m.best })}</span>
                 )}
               </span>
-              <ChevronLeft className="h-5 w-5 text-slate-300 ltr:rotate-180" aria-hidden />
+              <ChevronLeft className="h-5 w-5 text-slate-400 ltr:rotate-180" aria-hidden />
             </Link>
           </li>
         ))}

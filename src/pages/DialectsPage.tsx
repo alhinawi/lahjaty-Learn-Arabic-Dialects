@@ -24,7 +24,7 @@ export default function DialectsPage() {
       <h1 className="text-xl font-bold">{t('chooseDialect')}</h1>
       {!next && !query && <DialectMap compact />}
       <label className="relative block">
-        <Search className="pointer-events-none absolute top-1/2 start-3 h-5 w-5 -translate-y-1/2 text-slate-400" aria-hidden />
+        <Search className="pointer-events-none absolute top-1/2 start-3 h-5 w-5 -translate-y-1/2 text-slate-500" aria-hidden />
         <input
           type="search"
           value={query}

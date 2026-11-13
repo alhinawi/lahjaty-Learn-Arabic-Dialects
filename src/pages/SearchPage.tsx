@@ -57,7 +57,7 @@ function EgyptResult({ hit }: { hit: Extract<SearchHit, { kind: 'egypt' }> }) {
           {parent && ` · ${lang === 'ar' ? parent.name : parent.nameEn}`}
         </span>
       </span>
-      <ChevronLeft className="h-4 w-4 shrink-0 text-slate-400 ltr:rotate-180" aria-hidden />
+      <ChevronLeft className="h-4 w-4 shrink-0 text-slate-500 ltr:rotate-180" aria-hidden />
     </Link>
   )
 }
@@ -100,7 +100,7 @@ function ResultCard({ hit }: { hit: SearchHit }) {
       {mine && <ul className="mb-2">{line(mine, true)}</ul>}
       {groups.map(({ region, dialects }) => (
         <section key={region.id} className="mt-2">
-          <h3 className="mb-1 text-[11px] font-bold tracking-wide text-sun-600">{name(region)}</h3>
+          <h3 className="mb-1 text-[11px] font-bold tracking-wide text-amber-700">{name(region)}</h3>
           <ul className="space-y-0.5">{dialects.map((d) => line(byId.get(d.id)!))}</ul>
         </section>
       ))}

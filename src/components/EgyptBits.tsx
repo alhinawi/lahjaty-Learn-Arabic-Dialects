@@ -41,7 +41,7 @@ export function EgyptNodeCard({ node }: { node: EgyptNode }) {
       <span className="min-w-0 flex-1">
         <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
           <span className="font-bold text-slate-900">{nodeName(node)}</span>
-          {lang === 'ar' && <span className="text-xs text-slate-400" dir="ltr">{node.nameEn}</span>}
+          {lang === 'ar' && <span className="text-xs text-slate-500" dir="ltr">{node.nameEn}</span>}
           {node.kind === 'language' && <KindBadge kind="language" />}
         </span>
         {where && <span className="mt-0.5 block text-xs leading-relaxed text-slate-500">{where}</span>}
@@ -49,7 +49,7 @@ export function EgyptNodeCard({ node }: { node: EgyptNode }) {
           <span className="mt-1 block text-[11px] font-semibold text-brand-700">{t('egyptVarieties', { n: kids.length })}</span>
         )}
       </span>
-      <ChevronLeft className="mt-1 h-4 w-4 shrink-0 text-slate-400 ltr:rotate-180" aria-hidden />
+      <ChevronLeft className="mt-1 h-4 w-4 shrink-0 text-slate-500 ltr:rotate-180" aria-hidden />
     </Link>
   )
 }

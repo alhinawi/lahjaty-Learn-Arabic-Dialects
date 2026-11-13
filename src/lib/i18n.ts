@@ -4,7 +4,7 @@ import { useApp } from './store'
 const ar = {
   appName: 'لهجتي',
   tagline: 'اللهجات العربية كلّها في مكان واحد',
-  heroTitle: 'افهم كل عربي، من المحيط إلى الخليج',
+  heroTitle: 'افهم كل عربي، من النيل إلى الفرات',
   heroBody: 'جمل الحياة اليومية بلهجات العرب كلّها، ومعها أشهر ما يقوله أهل كل لهجة. اختر لهجة وابدأ بالمواقف التي تهمّك.',
   learningNow: 'تتعلّم الآن',
   change: 'تغيير',
@@ -160,7 +160,7 @@ export type MessageKey = keyof typeof ar
 const en: Record<MessageKey, string> = {
   appName: 'Lahjaty',
   tagline: 'Every Arabic dialect in one place',
-  heroTitle: 'Understand Arabic the way people really speak it',
+  heroTitle: 'Understand every Arab, from the Nile to the Euphrates',
   heroBody: 'Everyday phrases in dialects from across the Arab world, plus the famous sayings every local knows. Pick a dialect and start with the situations you need.',
   learningNow: 'Learning now',
   change: 'Change',

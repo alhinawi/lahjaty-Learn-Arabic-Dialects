@@ -24,7 +24,7 @@ export default function DialectChip({ next }: { next: string }) {
         <span className="block font-bold text-slate-900">
           {name(dialect)}
           {dialect.country && (
-            <span className="font-normal text-slate-400"> · {lang === 'ar' ? dialect.country : dialect.countryEn}</span>
+            <span className="font-normal text-slate-500"> · {lang === 'ar' ? dialect.country : dialect.countryEn}</span>
           )}
         </span>
       </span>

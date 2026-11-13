@@ -47,7 +47,7 @@ export default function HomePage() {
         </span>
         <span className="min-w-0 flex-1">
           <span className="block font-bold"><span className="gold-text">{t('egyptCta')}</span></span>
-          <span className="block text-xs text-brand-100/90">{t('egyptCtaBody')}</span>
+          <span className="block text-xs text-cream-100">{t('egyptCtaBody')}</span>
         </span>
         <ChevronLeft className="h-5 w-5 shrink-0 text-sun-300 ltr:rotate-180" aria-hidden />
       </Link>
@@ -65,7 +65,7 @@ export default function HomePage() {
                 <CategoryIcon id={c.id} className="h-5 w-5" />
               </span>
               <span className="text-xs leading-tight font-semibold text-slate-800">{name(c)}</span>
-              <span className="text-[10px] text-slate-400">{t('phrasesCount', { n: phrasesInCategory(c.id).length })}</span>
+              <span className="text-[10px] text-slate-500">{t('phrasesCount', { n: phrasesInCategory(c.id).length })}</span>
             </Link>
           ))}
         </div>
@@ -102,7 +102,7 @@ export default function HomePage() {
           <button
             type="button"
             onClick={() => window.confirm(t('resetConfirm')) && resetProgress()}
-            className="mt-3 text-xs text-slate-400 underline hover:text-slate-600"
+            className="mt-3 text-xs text-slate-500 underline hover:text-slate-600"
           >
             {t('resetProgress')}
           </button>

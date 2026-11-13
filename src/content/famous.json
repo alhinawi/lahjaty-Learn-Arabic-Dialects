@@ -1087,8 +1087,7 @@
         "standard": "هيّا إلى المقهى",
         "noteAr": "القهوة هنا معناها المقهى، مكان السهر والطاولة",
         "note": "Here 'ahwa' is the café, the place for late nights and backgammon",
-        "example": "يلّا عالقهوة نلعب دور طاولة",
-        "concept": "lets_go"
+        "example": "يلّا عالقهوة نلعب دور طاولة"
       },
       {
         "id": "famous.gada3",
@@ -1245,8 +1244,7 @@
         "standard": "كن شهمًا",
         "noteAr": "طلب مساعدة بهزار",
         "note": "Asking for a favor with a smile",
-        "example": "خلّيك جدع ووصّلني المحطّة",
-        "concept": "beg"
+        "example": "خلّيك جدع ووصّلني المحطّة"
       },
       {
         "id": "famous.3ala_3eini",
@@ -1265,8 +1263,7 @@
         "standard": "لا تحزن",
         "noteAr": "طبطبة واعتذار في نفس الوقت",
         "note": "Comfort and a small apology together",
-        "example": "ما تزعلش مني، ماكانش قصدي",
-        "concept": "dont_worry"
+        "example": "ما تزعلش مني، ماكانش قصدي"
       },
       {
         "id": "famous.qawi",
@@ -1468,8 +1465,7 @@
         "standard": "ساعدني",
         "noteAr": "طلب مساعدة بين الناس اللي بتشتغل سوا",
         "note": "Asking for help among people working together",
-        "example": "إيدك معايا نشيل الترابيزة دي",
-        "concept": "beg"
+        "example": "إيدك معايا نشيل الترابيزة دي"
       },
       {
         "id": "famous.3ala_mahlak",
@@ -1478,8 +1474,7 @@
         "standard": "تمهّل",
         "noteAr": "لما حد مستعجل أو متضايق",
         "note": "When someone is in a rush or upset",
-        "example": "على مهلك، الشغل مش هيهرب",
-        "concept": "dont_worry"
+        "example": "على مهلك، الشغل مش هيهرب"
       },
       {
         "id": "famous.el_shoghl_mesh_3eib",
@@ -1547,8 +1542,7 @@
         "standard": "هيّا نصطاد",
         "noteAr": "الصيد هنا شغل وفسحة في نفس الوقت",
         "note": "Fishing here is both a job and a day out",
-        "example": "يلّا نصطاد بدري قبل الشمس",
-        "concept": "lets_go"
+        "example": "يلّا نصطاد بدري قبل الشمس"
       },
       {
         "id": "famous.el_roz_el_me3ammar",
@@ -1695,8 +1689,7 @@
         "standard": "الأمور تسير بخير",
         "noteAr": "ردّ متواضع على «عامل إيه؟»",
         "note": "A modest answer to 'how are you doing?'",
-        "example": "الحمد لله، ماشي الحال",
-        "concept": "how_is_it_going"
+        "example": "الحمد لله، ماشي الحال"
       },
       {
         "id": "famous.el_dar",
@@ -2230,8 +2223,7 @@
         "standard": "سعيد",
         "noteAr": "ردّ معتاد على «كيفك»",
         "note": "A usual reply to 'how are you?'",
-        "example": "الحمد لله، مبسوط كتير",
-        "concept": "good"
+        "example": "الحمد لله، مبسوط كتير"
       },
       {
         "id": "famous.yalla",
@@ -2321,8 +2313,7 @@
         "standard": "لذيذ",
         "noteAr": "مدح الأكل في فلسطين",
         "note": "How Palestinians praise food",
-        "example": "المسخّن زاكي كتير",
-        "concept": "good"
+        "example": "المسخّن زاكي كتير"
       },
       {
         "id": "famous.tsalb",
@@ -4911,8 +4902,7 @@
         "standard": "بخير والحمد لله",
         "noteAr": "ردّ معتاد على السلام في الحسانية",
         "note": "A usual reply to greetings in Hassaniya",
-        "example": "الحمد لله بالخير، وانت؟",
-        "concept": "how_are_you"
+        "example": "الحمد لله بالخير، وانت؟"
       },
       {
         "id": "famous.shtari",

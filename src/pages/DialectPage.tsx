@@ -25,7 +25,7 @@ export default function DialectPage() {
   return (
     <div className="space-y-4">
       <section className="rounded-3xl bg-gradient-to-br from-brand-700 to-brand-900 p-5 text-white shadow">
-        <p className="text-xs text-brand-200">
+        <p className="text-xs text-cream-200">
           {region && name(region)}
           {dialect.country && ` · ${lang === 'ar' ? dialect.country : dialect.countryEn}`}
         </p>

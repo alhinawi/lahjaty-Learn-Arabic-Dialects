@@ -85,11 +85,11 @@ export default function EgyptNodePage() {
         <div aria-hidden className="absolute inset-y-0 start-0 w-1.5" style={{ backgroundColor: color }} />
         <div className="flex flex-wrap items-center gap-2">
           <KindBadge kind={node.kind} />
-          <span className="text-[11px] text-brand-200">{t(node.level === 'region' ? 'egyptLevelRegion' : node.kind === 'language' ? 'egyptLevelLanguage' : node.level === 'variety' ? 'egyptLevelVariety' : 'egyptLevelSub')}</span>
+          <span className="text-[11px] text-cream-200">{t(node.level === 'region' ? 'egyptLevelRegion' : node.kind === 'language' ? 'egyptLevelLanguage' : node.level === 'variety' ? 'egyptLevelVariety' : 'egyptLevelSub')}</span>
         </div>
         <h1 className="mt-2 text-2xl font-bold">{nodeName(node)}</h1>
         <p className="text-sm text-sun-300" dir={lang === 'ar' ? 'ltr' : 'rtl'}>{lang === 'ar' ? node.nameEn : node.name}</p>
-        {node.family && <p className="mt-1 text-xs text-brand-100">{bi(node.family)}</p>}
+        {node.family && <p className="mt-1 text-xs text-cream-100">{bi(node.family)}</p>}
         {node.summary && <p className="mt-3 text-sm leading-relaxed text-brand-50/90">{bi(node.summary)}</p>}
       </section>
 
@@ -143,11 +143,11 @@ export default function EgyptNodePage() {
                   <li key={c.id} className="grid grid-cols-3 items-center gap-2 rounded-xl bg-sand-50 px-3 py-2 text-sm">
                     <span className="text-xs text-slate-500">{bi(c.label)}</span>
                     <span className="text-center">
-                      <span className="block text-[10px] text-slate-400">{cai ? name(cai) : ''}</span>
+                      <span className="block text-[10px] text-slate-500">{cai ? name(cai) : ''}</span>
                       <span dir="rtl" lang="ar" className="dialect-text font-bold">{cairo.text}</span>
                     </span>
                     <span className="text-center">
-                      <span className="block text-[10px] text-slate-400">{nodeName(node)}</span>
+                      <span className="block text-[10px] text-slate-500">{nodeName(node)}</span>
                       <span dir="rtl" lang="ar" className="dialect-text font-bold text-brand-700">{mine.text}</span>
                     </span>
                   </li>
@@ -159,13 +159,13 @@ export default function EgyptNodePage() {
             <ul className="mt-3 space-y-1.5">
               {vsCairo.map((p) => (
                 <li key={p.id} className="rounded-xl border border-slate-100 px-3 py-2">
-                  <p className="text-[11px] text-slate-400" dir="ltr">{p.english}</p>
+                  <p className="text-[11px] text-slate-500" dir="ltr">{p.english}</p>
                   <p className="mt-0.5 flex flex-wrap items-baseline gap-x-2 text-sm">
-                    <span className="text-[11px] text-slate-400">{name(cai)}</span>
+                    <span className="text-[11px] text-slate-500">{name(cai)}</span>
                     <span dir="rtl" lang="ar" className="dialect-text font-semibold">{p.variants.cai.text}</span>
                   </p>
                   <p className="flex flex-wrap items-baseline gap-x-2 text-sm">
-                    <span className="text-[11px] text-slate-400">{name(exDialect)}</span>
+                    <span className="text-[11px] text-slate-500">{name(exDialect)}</span>
                     <span dir="rtl" lang="ar" className="dialect-text font-bold text-brand-700">{p.variants[exDialect.id].text}</span>
                   </p>
                 </li>

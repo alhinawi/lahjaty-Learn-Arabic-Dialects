@@ -37,7 +37,7 @@ export default function PhraseCard({ phrase, dialectId, showDialect = false }: P
       {showDialect && (
         <div className="mb-2 text-xs font-semibold text-brand-700">
           {name(dialect)}
-          {dialect.country && <span className="font-normal text-slate-400"> · {lang === 'ar' ? dialect.country : dialect.countryEn}</span>}
+          {dialect.country && <span className="font-normal text-slate-500"> · {lang === 'ar' ? dialect.country : dialect.countryEn}</span>}
         </div>
       )}
 
@@ -59,14 +59,14 @@ export default function PhraseCard({ phrase, dialectId, showDialect = false }: P
 
       <dl className="mt-3 space-y-1.5 text-sm">
         <div className="flex gap-2">
-          <dt className="shrink-0 text-slate-400">{t('meaning')}</dt>
+          <dt className="shrink-0 text-slate-500">{t('meaning')}</dt>
           <dd dir="ltr" lang="en" className="text-slate-700">
             {phrase.english}
           </dd>
         </div>
         {dialectId !== STANDARD_ID && standard && (
           <div className="flex gap-2">
-            <dt className="shrink-0 text-slate-400">{t('standardEq')}</dt>
+            <dt className="shrink-0 text-slate-500">{t('standardEq')}</dt>
             <dd dir="rtl" lang="ar" className="dialect-text text-slate-700">
               {standard.text}
             </dd>

@@ -38,7 +38,7 @@ export default function EgyptMap({ active, points = [], onSelect, label }: Props
             strokeWidth={r.id === active ? 1.8 : 0.8}
             strokeDasharray={r.kind === 'language' ? '3 2' : undefined}
             strokeLinejoin="round"
-            className={onSelect ? 'cursor-pointer transition-[fill-opacity] duration-300' : 'transition-[fill-opacity] duration-300'}
+            className={onSelect ? 'map-region cursor-pointer transition-[fill-opacity] duration-300' : 'transition-[fill-opacity] duration-300'}
             onClick={onSelect ? () => onSelect(r.id) : undefined}
             role={onSelect ? 'button' : undefined}
             tabIndex={onSelect ? 0 : undefined}

@@ -77,14 +77,14 @@ export default function ComparePage() {
           <p dir="ltr" lang="en" className="text-start text-lg font-semibold">
             {concept.nameEn}
           </p>
-          <span className="text-xs text-brand-200">{t('standardEq')}</span>
+          <span className="text-xs text-cream-200">{t('standardEq')}</span>
           <p dir="rtl" lang="ar" className="dialect-text text-2xl font-bold">
             {concept.name}
           </p>
         </section>
         <h2 className="text-sm font-bold text-slate-500">{t('dialectsThatHaveIt')}</h2>
         <label className="relative block">
-          <Search className="pointer-events-none absolute top-1/2 start-3 h-4 w-4 -translate-y-1/2 text-slate-400" aria-hidden />
+          <Search className="pointer-events-none absolute top-1/2 start-3 h-4 w-4 -translate-y-1/2 text-slate-500" aria-hidden />
           <input
             type="search"
             value={query}
@@ -105,7 +105,7 @@ export default function ComparePage() {
                   <li key={d.id} className={`flex items-center gap-3 px-3 py-2.5 ${d.id === myDialect ? 'bg-sun-400/15' : ''}`}>
                     <div className="w-24 shrink-0">
                       <div className="text-sm leading-tight font-semibold text-slate-800">{name(d)}</div>
-                      <div className="text-[11px] text-slate-400">{lang === 'ar' ? d.country : d.countryEn}</div>
+                      <div className="text-[11px] text-slate-500">{lang === 'ar' ? d.country : d.countryEn}</div>
                     </div>
                     <div className="min-w-0 flex-1">
                       <p dir="rtl" lang="ar" className="dialect-text text-lg font-bold text-slate-900">
@@ -162,7 +162,7 @@ export default function ComparePage() {
         </p>
         <div className="mt-2 flex items-center gap-3">
           <div className="min-w-0 flex-1">
-            <span className="text-xs text-brand-200">{t('standardEq')}</span>
+            <span className="text-xs text-cream-200">{t('standardEq')}</span>
             <p dir="rtl" lang="ar" className="dialect-text text-2xl font-bold">
               {standard.text}
             </p>
@@ -175,13 +175,13 @@ export default function ComparePage() {
           <PlayButton dialectId={STANDARD_ID} phraseId={phrase.id} />
         </div>
         {(lang === 'ar' ? phrase.noteAr : phrase.note) && (
-          <p className="mt-2 text-xs text-brand-100">{lang === 'ar' ? phrase.noteAr : phrase.note}</p>
+          <p className="mt-2 text-xs text-cream-100">{lang === 'ar' ? phrase.noteAr : phrase.note}</p>
         )}
       </section>
 
       <div className="flex items-center gap-2">
         <label className="relative block flex-1">
-          <Search className="pointer-events-none absolute top-1/2 start-3 h-4 w-4 -translate-y-1/2 text-slate-400" aria-hidden />
+          <Search className="pointer-events-none absolute top-1/2 start-3 h-4 w-4 -translate-y-1/2 text-slate-500" aria-hidden />
           <input
             type="search"
             value={query}
@@ -220,7 +220,7 @@ export default function ComparePage() {
                 <li key={d.id} className={`flex items-center gap-3 px-3 py-2.5 ${mine ? 'bg-sun-400/15' : ''}`}>
                   <div className="w-24 shrink-0">
                     <div className="text-sm leading-tight font-semibold text-slate-800">{name(d)}</div>
-                    <div className="text-[11px] text-slate-400">{lang === 'ar' ? d.country : d.countryEn}</div>
+                    <div className="text-[11px] text-slate-500">{lang === 'ar' ? d.country : d.countryEn}</div>
                   </div>
                   <div className="min-w-0 flex-1">
                     <p dir="rtl" lang="ar" className="dialect-text text-lg font-bold text-slate-900">

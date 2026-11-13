@@ -35,6 +35,32 @@ describe('famousInMyDialect', () => {
   })
 })
 
+describe('famousInMyDialect only shows a true equivalent', () => {
+  it('does not answer "let\'s go fishing" with another dialect\'s "let\'s go for coffee"', () => {
+    const fishing = famousFor('kfs').find((f) => f.text === 'يلّا نصطاد')!
+    expect(fishing).toBeTruthy()
+    expect(famousInMyDialect(fishing, 'kfs', 'dkh')).toBeUndefined()
+    const coffee = famousFor('dkh').find((f) => f.text === 'يلّا عالقهوة')!
+    for (const { phrase, dialectId } of allFamous) {
+      expect(famousInMyDialect(phrase, dialectId, 'dkh')).not.toBe(coffee.text)
+    }
+  })
+
+  it('every answer is the same meaning: a phrase of the visitor\'s dialect with the same concept, the everyday phrase, or the region\'s word', () => {
+    for (const myId of ['dkh', 'cai', 'tun', 'naj', 'bag', 'dam']) {
+      for (const { phrase, dialectId } of allFamous) {
+        const got = famousInMyDialect(phrase, dialectId, myId)
+        if (got === undefined) continue
+        const concept = getConcept(phrase.concept!)!
+        const own = famousFor(myId).filter((x) => x.concept === phrase.concept).map((x) => x.text)
+        const words = Object.values(concept.words ?? {})
+        const base = getPhrase(concept.base)?.variants[myId]?.text
+        expect([...own, ...words, base]).toContain(got)
+      }
+    }
+  })
+})
+
 describe('home highlight', () => {
   it('picks a phrase every day and one per dialect in the strip', () => {
     for (let day = 20000; day < 20010; day++) expect(phraseOfTheDay(day).phrase.text).toBeTruthy()

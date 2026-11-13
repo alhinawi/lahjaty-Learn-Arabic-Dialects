@@ -16,7 +16,7 @@ export default function MyDialectList({ onPick }: { onPick?: () => void }) {
   return (
     <div className="space-y-3">
       <label className="relative block">
-        <Search className="pointer-events-none absolute top-1/2 start-3 h-4 w-4 -translate-y-1/2 text-slate-400" aria-hidden />
+        <Search className="pointer-events-none absolute top-1/2 start-3 h-4 w-4 -translate-y-1/2 text-slate-500" aria-hidden />
         <input
           type="search"
           value={query}

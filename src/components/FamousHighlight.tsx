@@ -28,7 +28,7 @@ export default function FamousHighlight() {
           </span>
           <Link to={`/dialects/${todayDialect.id}`} className="text-xs font-semibold text-brand-700">
             {name(todayDialect)}
-            {todayDialect.country && <span className="font-normal text-slate-400"> · {lang === 'ar' ? todayDialect.country : todayDialect.countryEn}</span>}
+            {todayDialect.country && <span className="font-normal text-slate-500"> · {lang === 'ar' ? todayDialect.country : todayDialect.countryEn}</span>}
           </Link>
         </div>
         <div className="mt-2 flex items-start gap-3">
@@ -60,11 +60,11 @@ export default function FamousHighlight() {
                   to={`/dialects/${dialectId}`}
                   className="flex h-full flex-col rounded-2xl bg-brand-700 p-3 text-white shadow-sm hover:bg-brand-800"
                 >
-                  <span className="text-[11px] text-brand-200">{name(d)}</span>
+                  <span className="text-[11px] text-cream-200">{name(d)}</span>
                   <span dir="rtl" lang="ar" className="dialect-text mt-1 text-xl font-bold">
                     {phrase.text}
                   </span>
-                  <span dir="ltr" lang="en" className="mt-auto pt-2 text-start text-xs text-brand-100">
+                  <span dir="ltr" lang="en" className="mt-auto pt-2 text-start text-xs text-cream-100">
                     {phrase.english}
                   </span>
                 </Link>

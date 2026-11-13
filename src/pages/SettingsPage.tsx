@@ -63,7 +63,7 @@ export default function SettingsPage() {
             <p className="mt-0.5 text-sm text-slate-500">{t('myDialectSettingBody')}</p>
           </div>
           {mine && (
-            <button type="button" onClick={() => setMyDialect(null)} className="shrink-0 text-xs text-slate-400 underline">
+            <button type="button" onClick={() => setMyDialect(null)} className="shrink-0 text-xs text-slate-500 underline">
               {t('clearMyDialect')}
             </button>
           )}

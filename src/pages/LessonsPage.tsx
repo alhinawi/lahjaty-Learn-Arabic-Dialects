@@ -26,7 +26,7 @@ export default function LessonsPage() {
           <Sparkles className="h-5 w-5" aria-hidden />
         </span>
         <span className="min-w-0 flex-1 font-bold text-slate-900">{t('famousOf', { dialect: name(getDialect(dialectId)!) })}</span>
-        <ChevronLeft className="h-4 w-4 text-slate-400 ltr:rotate-180" aria-hidden />
+        <ChevronLeft className="h-4 w-4 text-slate-500 ltr:rotate-180" aria-hidden />
       </Link>
       <ul className="space-y-2.5">
         {categories.map((c) => {
@@ -44,13 +44,13 @@ export default function LessonsPage() {
                 <span className="min-w-0 flex-1 space-y-1.5">
                   <span className="flex items-baseline justify-between gap-2">
                     <span className="font-bold text-slate-900">{name(c)}</span>
-                    <span className="text-xs text-slate-400">
+                    <span className="text-xs text-slate-500">
                       {done}/{list.length}
                     </span>
                   </span>
                   <ProgressBar value={done} total={list.length} />
                 </span>
-                <ChevronLeft className="h-5 w-5 text-slate-300 ltr:rotate-180" aria-hidden />
+                <ChevronLeft className="h-5 w-5 text-slate-400 ltr:rotate-180" aria-hidden />
               </Link>
             </li>
           )
