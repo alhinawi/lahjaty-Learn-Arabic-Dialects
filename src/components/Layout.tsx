@@ -1,7 +1,8 @@
-import { BookOpen, Columns3, GraduationCap, Heart, House, Languages } from 'lucide-react'
+import { BookOpen, Columns3, GraduationCap, Heart, House, Languages, Settings } from 'lucide-react'
 import { Link, NavLink, Outlet } from 'react-router'
 import { useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
+import MyDialectSheet from './MyDialectSheet'
 
 export default function Layout() {
   const t = useT()
@@ -23,6 +24,7 @@ export default function Layout() {
             <img src="/favicon.svg" alt="" className="h-8 w-8 rounded-lg" />
             <span className="text-lg font-bold">{t('appName')}</span>
           </Link>
+          <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={toggleLang}
@@ -32,6 +34,10 @@ export default function Layout() {
             <Languages className="h-4 w-4" aria-hidden />
             <span>{t('langToggle')}</span>
           </button>
+          <Link to="/settings" aria-label={t('settings')} className="rounded-full bg-white/15 p-2 hover:bg-white/25">
+            <Settings className="h-4 w-4" aria-hidden />
+          </Link>
+          </div>
         </div>
       </header>
 
@@ -65,6 +71,7 @@ export default function Layout() {
           ))}
         </ul>
       </nav>
+      <MyDialectSheet />
     </div>
   )
 }

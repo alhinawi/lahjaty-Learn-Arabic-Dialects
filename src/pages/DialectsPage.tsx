@@ -10,7 +10,7 @@ export default function DialectsPage() {
   const name = useName()
   const navigate = useNavigate()
   const [params] = useSearchParams()
-  const next = params.get('next') || '/lessons'
+  const next = params.get('next')
   const lang = useApp((s) => s.lang)
   const selected = useApp((s) => s.dialectId)
   const setDialect = useApp((s) => s.setDialect)
@@ -47,8 +47,10 @@ export default function DialectsPage() {
                   <button
                     type="button"
                     onClick={() => {
-                      setDialect(d.id)
-                      navigate(next)
+                      if (next) {
+                        setDialect(d.id)
+                        navigate(next)
+                      } else navigate(`/dialects/${d.id}`)
                     }}
                     aria-pressed={isSelected}
                     className={`relative w-full rounded-2xl border p-3 text-start shadow-sm transition ${

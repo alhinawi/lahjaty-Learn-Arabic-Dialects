@@ -4,7 +4,10 @@ import { useSearchParams } from 'react-router'
 import PlayButton from '../components/PlayButton'
 import {
   categories,
+  concepts,
   dialects,
+  famousByConcept,
+  getConcept,
   dialectsByRegion,
   getPhrase,
   phrases,
@@ -24,6 +27,104 @@ export default function ComparePage() {
   const toggleTranslit = useApp((s) => s.toggleTranslit)
   const [params, setParams] = useSearchParams()
   const [query, setQuery] = useState('')
+  const famousMode = params.has('c')
+
+  const tabs = (
+    <div className="grid grid-cols-2 gap-1 rounded-full bg-slate-100 p-1" role="tablist">
+      {[
+        [false, t('compareTabEveryday')],
+        [true, t('compareTabFamous')],
+      ].map(([isFamous, label]) => (
+        <button
+          key={String(label)}
+          type="button"
+          role="tab"
+          aria-selected={famousMode === isFamous}
+          onClick={() => setParams(isFamous ? { c: concepts[0].id } : {}, { replace: true })}
+          className={`rounded-full py-2 text-sm font-semibold ${famousMode === isFamous ? 'bg-white text-brand-700 shadow-sm' : 'text-slate-500'}`}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  )
+
+  if (famousMode) {
+    const usedConcepts = concepts.filter((c) => famousByConcept(c.id).length > 0)
+    const concept = getConcept(params.get('c') ?? '') ?? usedConcepts[0]
+    const rows = famousByConcept(concept.id)
+    const byDialect = new Map(rows.map((r) => [r.dialectId, r]))
+    const conceptGroups = dialectsByRegion(searchDialects(query, dialects.filter((d) => byDialect.has(d.id))))
+    return (
+      <div className="space-y-4">
+        <h1 className="text-xl font-bold">{t('compareTitle')}</h1>
+        {tabs}
+        <label className="block">
+          <span className="mb-1 block text-xs font-semibold text-slate-500">{t('pickMeaning')}</span>
+          <select
+            value={concept.id}
+            onChange={(e) => setParams({ c: e.target.value }, { replace: true })}
+            className="w-full rounded-2xl border border-slate-200 bg-white px-3 py-3 shadow-sm outline-none focus:border-brand-500"
+          >
+            {usedConcepts.map((c) => (
+              <option key={c.id} value={c.id}>
+                {lang === 'ar' ? `${c.name} — ${c.nameEn}` : c.nameEn}
+              </option>
+            ))}
+          </select>
+        </label>
+        <section className="rounded-2xl bg-brand-700 p-4 text-white shadow">
+          <p dir="ltr" lang="en" className="text-start text-lg font-semibold">
+            {concept.nameEn}
+          </p>
+          <span className="text-xs text-brand-200">{t('standardEq')}</span>
+          <p dir="rtl" lang="ar" className="dialect-text text-2xl font-bold">
+            {concept.name}
+          </p>
+        </section>
+        <h2 className="text-sm font-bold text-slate-500">{t('dialectsThatHaveIt')}</h2>
+        <label className="relative block">
+          <Search className="pointer-events-none absolute top-1/2 start-3 h-4 w-4 -translate-y-1/2 text-slate-400" aria-hidden />
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder={t('filterDialects')}
+            aria-label={t('filterDialects')}
+            className="w-full rounded-full border border-slate-200 bg-white py-2 ps-9 pe-3 text-sm outline-none focus:border-brand-500"
+          />
+        </label>
+        {conceptGroups.length === 0 && <p className="py-6 text-center text-slate-500">{t('noResults')}</p>}
+        {conceptGroups.map(({ region, dialects: list }) => (
+          <section key={region.id}>
+            <h2 className="mb-2 text-sm font-bold text-slate-500">{name(region)}</h2>
+            <ul className="divide-y divide-slate-100 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              {list.map((d) => {
+                const f = byDialect.get(d.id)!.phrase
+                return (
+                  <li key={d.id} className={`flex items-center gap-3 px-3 py-2.5 ${d.id === myDialect ? 'bg-sun-400/15' : ''}`}>
+                    <div className="w-24 shrink-0">
+                      <div className="text-sm leading-tight font-semibold text-slate-800">{name(d)}</div>
+                      <div className="text-[11px] text-slate-400">{lang === 'ar' ? d.country : d.countryEn}</div>
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p dir="rtl" lang="ar" className="dialect-text text-lg font-bold text-slate-900">
+                        {f.text}
+                      </p>
+                      <p dir="ltr" lang="en" className="text-start text-xs text-slate-500">
+                        {f.english}
+                      </p>
+                    </div>
+                    <PlayButton dialectId={d.id} phraseId={f.id} size="sm" />
+                  </li>
+                )
+              })}
+            </ul>
+          </section>
+        ))}
+      </div>
+    )
+  }
 
   const phrase = getPhrase(params.get('p') ?? '') ?? phrases[0]
   const standard = phrase.variants[STANDARD_ID]
@@ -34,6 +135,7 @@ export default function ComparePage() {
   return (
     <div className="space-y-4">
       <h1 className="text-xl font-bold">{t('compareTitle')}</h1>
+      {tabs}
 
       <label className="block">
         <span className="mb-1 block text-xs font-semibold text-slate-500">{t('pickPhrase')}</span>

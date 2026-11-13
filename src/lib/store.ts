@@ -16,6 +16,10 @@ export interface AppState {
   lang: Lang
   dialectId: string
   showTranslit: boolean
+  /** The visitor's own dialect; cards show meanings in it first. Null when not picked. */
+  myDialectId: string | null
+  /** True once the first-visit question about the visitor's dialect was answered or skipped. */
+  myDialectAsked: boolean
   favorites: string[]
   /** dialectId -> phrase ids marked as learned */
   learned: Record<string, string[]>
@@ -27,6 +31,8 @@ export interface AppState {
   toggleLang: () => void
   setDialect: (id: string) => void
   toggleTranslit: () => void
+  setMyDialect: (id: string | null) => void
+  skipMyDialect: () => void
   toggleFavorite: (dialectId: string, phraseId: string) => void
   toggleLearned: (dialectId: string, phraseId: string) => void
   recordQuiz: (mode: QuizMode, scope: string, correct: number, total: number) => void
@@ -37,6 +43,8 @@ export const initialState = {
   lang: 'ar' as Lang,
   dialectId: DEFAULT_DIALECT,
   showTranslit: false,
+  myDialectId: null as string | null,
+  myDialectAsked: false,
   favorites: [] as string[],
   learned: {} as Record<string, string[]>,
   bestScores: {} as Record<string, number>,
@@ -54,6 +62,8 @@ export const useApp = create<AppState>()(
       toggleLang: () => set((s) => ({ lang: s.lang === 'ar' ? 'en' : 'ar' })),
       setDialect: (dialectId) => set({ dialectId }),
       toggleTranslit: () => set((s) => ({ showTranslit: !s.showTranslit })),
+      setMyDialect: (myDialectId) => set({ myDialectId, myDialectAsked: true }),
+      skipMyDialect: () => set({ myDialectAsked: true }),
       toggleFavorite: (dialectId, phraseId) =>
         set((s) => ({ favorites: toggleIn(s.favorites, favKey(dialectId, phraseId)) })),
       toggleLearned: (dialectId, phraseId) =>
@@ -77,6 +87,8 @@ export const useApp = create<AppState>()(
         lang: s.lang,
         dialectId: s.dialectId,
         showTranslit: s.showTranslit,
+        myDialectId: s.myDialectId,
+        myDialectAsked: s.myDialectAsked,
         favorites: s.favorites,
         learned: s.learned,
         bestScores: s.bestScores,

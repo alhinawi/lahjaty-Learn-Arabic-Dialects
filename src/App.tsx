@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router'
 import Layout from './components/Layout'
 import { useApp } from './lib/store'
 import ComparePage from './pages/ComparePage'
+import DialectPage from './pages/DialectPage'
 import DialectsPage from './pages/DialectsPage'
 import FavoritesPage from './pages/FavoritesPage'
 import HomePage from './pages/HomePage'
@@ -11,6 +12,7 @@ import LessonsPage from './pages/LessonsPage'
 import NotFoundPage from './pages/NotFoundPage'
 import PracticePage from './pages/PracticePage'
 import QuizPage from './pages/QuizPage'
+import SettingsPage from './pages/SettingsPage'
 
 export default function App() {
   const lang = useApp((s) => s.lang)
@@ -31,6 +33,8 @@ export default function App() {
       <Route element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="dialects" element={<DialectsPage />} />
+        <Route path="dialects/:dialectId" element={<DialectPage />} />
+        <Route path="settings" element={<SettingsPage />} />
         <Route path="lessons" element={<LessonsPage />} />
         <Route path="lessons/:categoryId" element={<LessonPage />} />
         <Route path="compare" element={<ComparePage />} />

@@ -2,6 +2,7 @@ import { ChevronLeft, Columns3, GraduationCap } from 'lucide-react'
 import { Link } from 'react-router'
 import CategoryIcon from '../components/CategoryIcon'
 import DialectChip from '../components/DialectChip'
+import FamousHighlight from '../components/FamousHighlight'
 import ProgressBar from '../components/ProgressBar'
 import { categories, phrases, phrasesInCategory } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
@@ -37,6 +38,8 @@ export default function HomePage() {
           <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
         </Link>
       </section>
+
+      <FamousHighlight />
 
       <section className="space-y-3">
         <DialectChip next="/" />

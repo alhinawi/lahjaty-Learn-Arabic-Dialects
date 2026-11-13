@@ -2,8 +2,10 @@ import { Check, Columns3, Heart } from 'lucide-react'
 import { Link } from 'react-router'
 import { getDialect, hasAudio, STANDARD_ID, voiceFor } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
+import { baseInMyDialect } from '../lib/myDialect'
 import { favKey, useApp } from '../lib/store'
 import type { Phrase } from '../lib/types'
+import MyDialectLine from './MyDialectLine'
 import PlayButton from './PlayButton'
 
 interface Props {
@@ -21,6 +23,7 @@ export default function PhraseCard({ phrase, dialectId, showDialect = false }: P
   const isLearned = useApp((s) => (s.learned[dialectId] ?? []).includes(phrase.id))
   const toggleFavorite = useApp((s) => s.toggleFavorite)
   const toggleLearned = useApp((s) => s.toggleLearned)
+  const myDialectId = useApp((s) => s.myDialectId)
 
   const variant = phrase.variants[dialectId]
   const standard = phrase.variants[STANDARD_ID]
@@ -51,6 +54,8 @@ export default function PhraseCard({ phrase, dialectId, showDialect = false }: P
         </div>
         <PlayButton dialectId={dialectId} phraseId={phrase.id} />
       </div>
+
+      <MyDialectLine text={baseInMyDialect(phrase, dialectId, myDialectId)} />
 
       <dl className="mt-3 space-y-1.5 text-sm">
         <div className="flex gap-2">
