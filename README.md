@@ -1,8 +1,9 @@
 # Lahjaty · لهجتي
 
 Learn the Arabic dialects, for Arabs who want to understand other dialects and for
-learners of Arabic. 36 varieties (Modern Standard Arabic + 35 dialects), 60 everyday
-phrases in 9 situations.
+learners of Arabic. Modern Standard Arabic and dialects from every region, everyday
+phrases grouped by situation, and the famous phrases of each dialect. The content keeps
+growing, so nothing in the app or the docs states a fixed number of dialects or phrases.
 
 - Dialect picker grouped by region, with search
 - Lessons by situation, phrase cards with English meaning, Standard Arabic equivalent,

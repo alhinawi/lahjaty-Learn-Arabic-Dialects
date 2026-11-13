@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import CategoryIcon from '../components/CategoryIcon'
 import DialectChip from '../components/DialectChip'
 import ProgressBar from '../components/ProgressBar'
-import { categories, dialects, phrases, phrasesInCategory } from '../lib/content'
+import { categories, phrases, phrasesInCategory } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
 
@@ -27,7 +27,7 @@ export default function HomePage() {
         <p className="relative text-xs font-semibold tracking-wide text-sun-400">{t('tagline')}</p>
         <h1 className="relative mt-1 text-2xl leading-snug font-bold">{t('heroTitle')}</h1>
         <p className="relative mt-2 text-sm text-brand-100">
-          {t('heroBody', { dialects: dialects.length, phrases: phrases.length })}
+          {t('heroBody')}
         </p>
         <Link
           to="/lessons"
