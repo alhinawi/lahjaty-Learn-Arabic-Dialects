@@ -17,6 +17,7 @@ import PracticePage from './pages/PracticePage'
 import QuizPage from './pages/QuizPage'
 import SettingsPage from './pages/SettingsPage'
 import SharePage from './pages/SharePage'
+import FlashcardsPage from './pages/FlashcardsPage'
 import { syncSocialImage } from './lib/meta'
 
 export default function App() {
@@ -61,6 +62,7 @@ export default function App() {
         <Route path="lessons/:categoryId" element={<LessonPage />} />
         <Route path="compare" element={<ComparePage />} />
         <Route path="practice" element={<PracticePage />} />
+        <Route path="practice/cards" element={<FlashcardsPage />} />
         <Route path="practice/:mode" element={<QuizPage />} />
         <Route path="favorites" element={<FavoritesPage />} />
         <Route path="share/:dialectId/:phraseId" element={<SharePage />} />

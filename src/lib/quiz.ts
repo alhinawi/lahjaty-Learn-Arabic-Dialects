@@ -1,4 +1,5 @@
-import type { Dialect, Phrase } from './types'
+import { STANDARD_ID } from './content'
+import type { FamousPhrase, Dialect, Phrase } from './types'
 
 export type Rng = () => number
 
@@ -107,4 +108,56 @@ export function seededRng(seed: number): Rng {
     t ^= t + Math.imul(t ^ (t >>> 7), t | 61)
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296
   }
+}
+
+/**
+ * "Guess the dialect" with famous phrases: the words people of one dialect are known for. Wrong options are
+ * dialects that do not have the same words among their famous phrases, so there is one right answer.
+ */
+export function buildGuessQuiz(
+  famous: { dialectId: string; phrase: FamousPhrase }[],
+  pool: Dialect[],
+  count = 10,
+  rng: Rng = Math.random,
+  optionCount = 4,
+  everyday: Phrase[] = [],
+): MatchQuestion[] {
+  const ids = pool.map((d) => d.id).filter((id) => id !== STANDARD_ID)
+  const bare = (x: string) => x.replace(/[\u064B-\u065F\u0670\u0640؟?!.،,«»]/g, '').replace(/[أإآ]/g, 'ا').replace(/\s+/g, ' ').trim()
+  // Words said the same way in many places («مرحبا») make a guess impossible, so a phrase is asked only
+  // when no other dialect has the same words, among its famous phrases or its everyday ones.
+  const owners = new Map<string, Set<string>>()
+  const own = (text: string, id: string) => {
+    const k = bare(text)
+    if (!owners.has(k)) owners.set(k, new Set())
+    owners.get(k)!.add(id)
+  }
+  for (const { dialectId, phrase } of famous) own(phrase.text, dialectId)
+  for (const p of everyday) for (const [id, v] of Object.entries(p.variants)) if (id !== STANDARD_ID && v) own(v.text, id)
+  const textsOf = new Map<string, Set<string>>()
+  for (const { dialectId, phrase } of famous) {
+    if (!textsOf.has(dialectId)) textsOf.set(dialectId, new Set())
+    textsOf.get(dialectId)!.add(phrase.text)
+  }
+  const questions: MatchQuestion[] = []
+  const usedDialects = new Set<string>()
+  for (const { dialectId, phrase } of shuffle(famous, rng)) {
+    if (questions.length >= count) break
+    // one question per dialect in a round, so a round travels across the map
+    if (usedDialects.has(dialectId) || !ids.includes(dialectId)) continue
+    if ((owners.get(bare(phrase.text))?.size ?? 0) > 1) continue
+    const distractors = shuffle(ids, rng)
+      .filter((o) => o !== dialectId && !textsOf.get(o)?.has(phrase.text))
+      .slice(0, optionCount - 1)
+    if (distractors.length < optionCount - 1) continue
+    usedDialects.add(dialectId)
+    const asPhrase: Phrase = {
+      id: phrase.id,
+      category: 'famous',
+      english: phrase.english,
+      variants: { [dialectId]: { text: phrase.text }, [STANDARD_ID]: { text: phrase.standard } },
+    } as Phrase
+    questions.push({ kind: 'match', phrase: asPhrase, dialectId, options: shuffle([dialectId, ...distractors], rng), answer: dialectId })
+  }
+  return questions
 }

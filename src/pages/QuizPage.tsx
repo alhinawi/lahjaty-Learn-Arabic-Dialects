@@ -1,11 +1,11 @@
 import { ArrowLeft, Check, Trophy, X } from 'lucide-react'
 import { useMemo, useState } from 'react'
-import { Link, useParams } from 'react-router'
+import { Link, useParams, useSearchParams } from 'react-router'
 import PlayButton from '../components/PlayButton'
 import ProgressBar from '../components/ProgressBar'
-import { dialects, getDialect, getPhrase, phrases, STANDARD_ID } from '../lib/content'
+import { allFamous, categories, dialects, getDialect, getPhrase, phrases, STANDARD_ID } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
-import { buildMatchQuiz, buildMeaningQuiz } from '../lib/quiz'
+import { buildGuessQuiz, buildMatchQuiz, buildMeaningQuiz } from '../lib/quiz'
 import type { MatchQuestion, MeaningQuestion } from '../lib/quiz'
 import { useApp } from '../lib/store'
 import NotFoundPage from './NotFoundPage'
@@ -14,23 +14,31 @@ type Question = MeaningQuestion | MatchQuestion
 
 export default function QuizPage() {
   const { mode } = useParams()
-  if (mode !== 'meaning' && mode !== 'match') return <NotFoundPage />
-  return <Quiz key={mode} mode={mode} />
+  const [params] = useSearchParams()
+  if (mode !== 'meaning' && mode !== 'match' && mode !== 'guess') return <NotFoundPage />
+  const category = mode === 'meaning' ? categories.find((c) => c.id === params.get('c'))?.id : undefined
+  return <Quiz key={`${mode}|${category ?? ''}`} mode={mode} category={category} />
 }
 
-function Quiz({ mode }: { mode: 'meaning' | 'match' }) {
+function Quiz({ mode, category }: { mode: 'meaning' | 'match' | 'guess'; category?: string }) {
   const t = useT()
   const name = useName()
   const lang = useApp((s) => s.lang)
   const dialectId = useApp((s) => s.dialectId)
   const recordQuiz = useApp((s) => s.recordQuiz)
+  const markPracticed = useApp((s) => s.markPracticed)
   const [round, setRound] = useState(0)
 
   const questions: Question[] = useMemo(
-    () => (mode === 'meaning' ? buildMeaningQuiz(phrases, dialectId) : buildMatchQuiz(phrases, dialects)),
+    () =>
+      mode === 'meaning'
+        ? buildMeaningQuiz(category ? phrases.filter((p) => p.category === category) : phrases, dialectId)
+        : mode === 'guess'
+          ? buildGuessQuiz(allFamous, dialects, 10, Math.random, 4, phrases)
+          : buildMatchQuiz(phrases, dialects),
     // a new round reshuffles
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [mode, dialectId, round],
+    [mode, dialectId, round, category],
   )
   const [index, setIndex] = useState(0)
   const [picked, setPicked] = useState<string | null>(null)
@@ -47,9 +55,11 @@ function Quiz({ mode }: { mode: 'meaning' | 'match' }) {
 
   const q = questions[index]
   const total = questions.length
+  const cat = categories.find((c) => c.id === category)
+  const categoryName = cat ? (lang === 'ar' ? cat.name : cat.nameEn) : ''
 
   const optionLabel = (id: string) => {
-    if (mode === 'match') {
+    if (mode !== 'meaning') {
       const d = getDialect(id)!
       return { main: name(d), sub: lang === 'ar' ? d.country : d.countryEn, rtl: lang === 'ar' }
     }
@@ -68,7 +78,8 @@ function Quiz({ mode }: { mode: 'meaning' | 'match' }) {
 
   const next = () => {
     if (index + 1 >= total) {
-      recordQuiz(mode, mode === 'meaning' ? dialectId : 'all', score, total)
+      recordQuiz(mode, mode === 'meaning' ? (category ? `${dialectId}:${category}` : dialectId) : 'all', score, total)
+      markPracticed()
       setDone(true)
     } else {
       setIndex((i) => i + 1)
@@ -81,7 +92,7 @@ function Quiz({ mode }: { mode: 'meaning' | 'match' }) {
       <Link to="/practice" aria-label={t('back')} className="rounded-full p-2 text-slate-500 hover:bg-slate-100">
         <ArrowLeft className="h-5 w-5 rtl:rotate-180" aria-hidden />
       </Link>
-      <h1 className="text-lg font-bold">{mode === 'meaning' ? t('modeMeaning') : t('modeMatch')}</h1>
+      <h1 className="text-lg font-bold">{mode === 'meaning' ? (category ? `${t('modeMeaning')} · ${categoryName}` : t('modeMeaning')) : mode === 'guess' ? t('modeGuess') : t('modeMatch')}</h1>
     </div>
   )
 
@@ -122,7 +133,7 @@ function Quiz({ mode }: { mode: 'meaning' | 'match' }) {
           <p dir="rtl" lang="ar" className="dialect-text min-w-0 flex-1 text-3xl font-bold text-slate-900">
             {shown.text}
           </p>
-          <PlayButton dialectId={q.dialectId} phraseId={q.phrase.id} size="lg" />
+          {mode !== 'guess' && <PlayButton dialectId={q.dialectId} phraseId={q.phrase.id} size="lg" />}
         </div>
       </section>
 
@@ -160,6 +171,17 @@ function Quiz({ mode }: { mode: 'meaning' | 'match' }) {
           )
         })}
       </ul>
+
+      {picked && mode === 'guess' && (
+        <p className="rounded-2xl bg-sand-50 px-4 py-2.5 text-sm text-slate-700">
+          <span dir="rtl" lang="ar" className="dialect-text font-semibold">
+            {t('standardEq')}: {q.phrase.variants[STANDARD_ID]?.text}
+          </span>
+          <span dir="ltr" lang="en" className="block">
+            {q.phrase.english}
+          </span>
+        </p>
+      )}
 
       {picked && (
         <div className="flex items-center gap-3">

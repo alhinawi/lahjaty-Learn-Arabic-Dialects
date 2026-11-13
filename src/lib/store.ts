@@ -1,9 +1,11 @@
 import { create } from 'zustand'
 import { createJSONStorage, persist } from 'zustand/middleware'
+import { bumpStreak, dayKey, review } from './srs'
+import type { CardState, Streak } from './srs'
 import { DEFAULT_DIALECT } from './content'
 
 export type Lang = 'ar' | 'en'
-export type QuizMode = 'meaning' | 'match'
+export type QuizMode = 'meaning' | 'match' | 'guess'
 export type Theme = 'light' | 'dark' | 'system'
 
 /** A favorite is one phrase in one dialect: "<dialectId>|<phraseId>". */
@@ -28,6 +30,9 @@ export interface AppState {
   /** best score per quiz, key "<mode>|<dialectId or all>" -> percent */
   bestScores: Record<string, number>
   quizzesTaken: number
+  /** Flashcards: "<dialectId>|<phraseId>" -> box and due day. */
+  cards: Record<string, CardState>
+  streak: Streak
 
   setLang: (lang: Lang) => void
   toggleLang: () => void
@@ -40,6 +45,9 @@ export interface AppState {
   toggleLearned: (dialectId: string, phraseId: string) => void
   recordQuiz: (mode: QuizMode, scope: string, correct: number, total: number) => void
   resetProgress: () => void
+  reviewCard: (key: string, remembered: boolean) => void
+  /** Counts today as a practice day. */
+  markPracticed: () => void
 }
 
 export const initialState = {
@@ -53,6 +61,8 @@ export const initialState = {
   learned: {} as Record<string, string[]>,
   bestScores: {} as Record<string, number>,
   quizzesTaken: 0,
+  cards: {} as Record<string, CardState>,
+  streak: { count: 0, last: '' } as Streak,
 }
 
 const toggleIn = (list: string[], item: string) =>
@@ -82,7 +92,13 @@ export const useApp = create<AppState>()(
             bestScores: { ...s.bestScores, [key]: Math.max(s.bestScores[key] ?? 0, pct) },
           }
         }),
-      resetProgress: () => set({ learned: {}, bestScores: {}, quizzesTaken: 0 }),
+      resetProgress: () => set({ learned: {}, bestScores: {}, quizzesTaken: 0, cards: {}, streak: { count: 0, last: '' } }),
+      reviewCard: (key, remembered) =>
+        set((s) => {
+          const today = dayKey()
+          return { cards: { ...s.cards, [key]: review(s.cards[key], remembered, today) }, streak: bumpStreak(s.streak, today) }
+        }),
+      markPracticed: () => set((s) => ({ streak: bumpStreak(s.streak, dayKey()) })),
     }),
     {
       name: 'lahjaty:v1',
@@ -99,6 +115,8 @@ export const useApp = create<AppState>()(
         learned: s.learned,
         bestScores: s.bestScores,
         quizzesTaken: s.quizzesTaken,
+        cards: s.cards,
+        streak: s.streak,
       }),
     },
   ),
