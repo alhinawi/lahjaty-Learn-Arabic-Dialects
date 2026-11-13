@@ -25,6 +25,14 @@ npm test
 npm run build     # output in dist/
 ```
 
+## Deploy
+
+The same repo deploys on Vercel and on Cloudflare Pages (preset React (Vite), build command `npm run build`, output `dist`, Node 22 from `.nvmrc`).
+
+- `public/_redirects` sends unknown paths to `index.html` on Cloudflare; `vercel.json` does the same on Vercel.
+- `VITE_SITE_URL` sets the absolute site URL used for canonical links, `og:url`, `og:image` and the sitemap. Default: `https://lahjaty.vercel.app`.
+- Share cards are drawn at build time with resvg and sharp. If those native packages cannot load, or `OG_SKIP=1` is set, every page uses the prebuilt `public/og-default.jpg` and the build still succeeds.
+
 ## Content and audio
 
 See **[docs/CONTENT.md](docs/CONTENT.md)** for how to add audio, voices, phrases and

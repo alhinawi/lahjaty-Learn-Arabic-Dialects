@@ -40,7 +40,7 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = lang
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'
-    document.title = lang === 'ar' ? 'لهجاتي – Lahjaty | افهم كل عربي، من النيل إلى الفرات' : 'Lahjaty | Understand every Arab, from the Nile to the Euphrates'
+    document.title = lang === 'ar' ? 'لهجتي – Lahjaty | افهم كل عربي، من النيل إلى الفرات' : 'Lahjaty | Understand every Arab, from the Nile to the Euphrates'
   }, [lang])
 
   useEffect(() => {

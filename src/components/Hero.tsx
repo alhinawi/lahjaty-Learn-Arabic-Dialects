@@ -44,13 +44,20 @@ export default function Hero() {
       <div aria-hidden className="absolute -bottom-24 -start-16 h-56 w-56 rounded-full bg-brand-400/20 blur-2xl" />
       <p className="relative text-xs font-semibold tracking-wide text-sun-300">{t('tagline')}</p>
       <h1 className="relative mt-2 text-[1.7rem] leading-snug font-bold">{t('heroTitle')}</h1>
-      <p className="relative mt-2 text-sm leading-relaxed text-cream-100">{t('heroBody')}</p>
+      <p className="lead relative mt-3 text-[0.95rem] text-cream-100">{t('heroBody')}</p>
 
       {g && d && (
-        <div className="relative mt-4 flex items-center justify-between gap-3 rounded-2xl bg-white/[0.07] p-3 ring-1 ring-sun-400/30 backdrop-blur-sm">
-          <div className="min-w-0">
+        <div className="relative mt-4 flex flex-wrap items-center justify-between gap-x-3 gap-y-2 rounded-2xl bg-white/[0.07] p-3 ring-1 ring-sun-400/30 backdrop-blur-sm">
+          <div className="min-w-0 flex-1 basis-48">
             <p className="text-[11px] text-cream-200">{t('heroAsk')}</p>
-            <p key={g.text} dir="rtl" lang="ar" className="dialect-text animate-rise truncate text-3xl font-bold">
+            <p
+              key={g.text}
+              dir="rtl"
+              lang="ar"
+              className={`dialect-text animate-rise break-words text-balance font-bold leading-snug ${
+                g.text.length > 18 ? 'text-xl' : g.text.length > 12 ? 'text-2xl' : 'text-3xl'
+              }`}
+            >
               <span className="gold-text">{g.text}</span>
             </p>
           </div>

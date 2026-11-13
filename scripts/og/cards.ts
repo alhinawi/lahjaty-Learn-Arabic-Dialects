@@ -12,8 +12,9 @@ import { MAP_H, MAP_W, project, regionColors, regionShapes, toPath } from '../..
 import { EG_H, EG_W, egPath, egProject, egyptRegionColors, egyptShapes, nilePaths } from '../../src/lib/egypt'
 import type { RegionId } from '../../src/lib/types'
 
-export const W = 1200
-export const H = 630
+import { esc, H, W } from './html'
+
+export { esc, H, W }
 
 const fontDir = join(dirname(fileURLToPath(import.meta.url)), 'fonts')
 const fontFiles = readdirSync(fontDir).filter((f) => f.endsWith('.ttf')).map((f) => join(fontDir, f))
@@ -33,7 +34,6 @@ const C = {
   goldDeep: '#b8862f',
 }
 
-export const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
 // ---------- measuring ----------
 const widthCache = new Map<string, number>()
@@ -131,7 +131,7 @@ function logo(x: number, y: number, s: number) {
 function brandFooter(site: string) {
   const y = H - 74
   return `${logo(W - 90 - 44, y - 31, 44)}
-${text(W - 90 - 58, y, 'لهجاتي', { size: 34, family: DISPLAY, fill: 'url(#gold)' })}
+${text(W - 90 - 58, y, 'لهجتي', { size: 34, family: DISPLAY, fill: 'url(#gold)' })}
 ${text(90, y - 2, site, { size: 22, weight: 500, fill: C.cream3, anchor: 'start' })}`
 }
 
@@ -220,9 +220,9 @@ export function homeCard(c: HomeCard): string {
   let body = arabMap(36, H - mapH - 40, mapW, { faint: true })
   const markS = 104
   body += logo(R - markS, 82, markS)
-  const nameSize = fit('لهجاتي', DISPLAY, 132, 520)
-  body += `<g filter="url(#soft)" opacity=".45">${text(R - markS - 28, 178, 'لهجاتي', { size: nameSize, family: DISPLAY, fill: C.gold })}</g>`
-  body += text(R - markS - 28, 178, 'لهجاتي', { size: nameSize, family: DISPLAY, fill: 'url(#gold)' })
+  const nameSize = fit('لهجتي', DISPLAY, 132, 520)
+  body += `<g filter="url(#soft)" opacity=".45">${text(R - markS - 28, 178, 'لهجتي', { size: nameSize, family: DISPLAY, fill: C.gold })}</g>`
+  body += text(R - markS - 28, 178, 'لهجتي', { size: nameSize, family: DISPLAY, fill: 'url(#gold)' })
   body += text(R - markS - 32, 218, 'LAHJATY', { size: 20, weight: 500, fill: C.gold, spacing: 7 })
   let y = 300
   if (c.section) {

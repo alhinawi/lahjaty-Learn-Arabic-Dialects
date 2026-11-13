@@ -12,7 +12,23 @@ import { allFamous, categories, dialects, famousFor, getDialect, getPhrase, phra
 import { allEgyptNodes, egyptAncestors, egyptRegions } from '../../src/lib/egypt'
 import { translate } from '../../src/lib/i18n'
 import { famousSlug, ogImageFor, SITE_NAME, SITE_URL, sharePath } from '../../src/lib/og'
-import { dialectCard, egyptCard, esc, H, homeCard, phraseCard, renderJpeg, W } from './cards'
+import { esc, H, W } from './html'
+
+/**
+ * The card renderer needs native packages (resvg, sharp). When a build image cannot load them, or OG_SKIP=1,
+ * every page points at the prebuilt card committed in public/og-default.jpg instead, and the build goes on.
+ */
+type Cards = typeof import('./cards')
+let cards: Cards | undefined
+if (process.env.OG_SKIP !== '1') {
+  try {
+    cards = await import('./cards')
+  } catch (err) {
+    console.warn(`og: card renderer unavailable, using public/og-default.jpg (${(err as Error).message})`)
+  }
+}
+const FALLBACK_IMAGE = '/og-default.jpg'
+const failed = new Set<string>()
 
 const args = process.argv.slice(2)
 const only = args.includes('--only') ? new Set(args[args.indexOf('--only') + 1].split(',')) : undefined
@@ -33,14 +49,20 @@ interface Page {
 // ---------- cards ----------
 let drawn = 0
 const jobs: (() => Promise<void>)[] = []
-function draw(rel: string, svg: () => string) {
+function draw(rel: string, svg: (c: Cards) => string) {
   const key = rel.replace(/^\/og\//, '').replace(/\.jpg$/, '')
   if (only && !only.has(key)) return
   jobs.push(async () => {
-    const file = join(DIST, rel)
-    mkdirSync(dirname(file), { recursive: true })
-    writeFileSync(file, await renderJpeg(svg()))
-    drawn++
+    if (!cards) return void failed.add(rel)
+    try {
+      const file = join(DIST, rel)
+      mkdirSync(dirname(file), { recursive: true })
+      writeFileSync(file, await cards.renderJpeg(svg(cards)))
+      drawn++
+    } catch (err) {
+      failed.add(rel)
+      console.warn(`og: could not draw ${rel}: ${(err as Error).message}`)
+    }
   })
 }
 
@@ -50,7 +72,7 @@ const greetings = [...new Set(greetingIds.map((id) => how?.variants[id]?.text).f
 const slogan = t('heroTitle')
 const sloganEn = translate('en', 'heroTitle')
 
-draw('/og/home.jpg', () => homeCard({ slogan, sloganEn, greetings, site: SITE }))
+draw('/og/home.jpg', (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE }))
 const sections: [string, string, string][] = [
   ['dialects', t('allDialects'), t('tagline')],
   ['lessons', t('lessonsTitle'), t('heroBody').split('،')[0]],
@@ -60,19 +82,19 @@ const sections: [string, string, string][] = [
   ['favorites', t('favoritesTitle'), slogan],
   ['settings', t('settings'), slogan],
 ]
-for (const [id, title, body] of sections) draw(`/og/${id}.jpg`, () => homeCard({ slogan, sloganEn, greetings, site: SITE, section: title, sectionBody: body }))
-for (const c of categories) {
-  const sample = phrases.find((p) => p.category === c.id)
+for (const [id, title, body] of sections) draw(`/og/${id}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, section: title, sectionBody: body }))
+for (const cat of categories) {
+  const sample = phrases.find((p) => p.category === cat.id)
   const body = sample ? `${sample.variants[STANDARD_ID]?.text ?? ''} · ${sample.english}` : slogan
-  draw(`/og/lessons/${c.id}.jpg`, () => homeCard({ slogan, sloganEn, greetings, site: SITE, section: `${c.name} · ${c.nameEn}`, sectionBody: body }))
+  draw(`/og/lessons/${cat.id}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, section: `${cat.name} · ${cat.nameEn}`, sectionBody: body }))
 }
 
 const regionName = (id: string) => regions.find((r) => r.id === id)?.name ?? ''
 for (const d of dialects) {
   if (d.id === STANDARD_ID) continue
   const f = famousFor(d.id)[0]
-  draw(`/og/dialects/${d.id}.jpg`, () =>
-    dialectCard({
+  draw(`/og/dialects/${d.id}.jpg`, (c) =>
+    c.dialectCard({
       name: d.name,
       nameEn: d.nameEn,
       kicker: `لهجة · ${d.country ?? regionName(d.region)}`,
@@ -86,18 +108,18 @@ for (const d of dialects) {
 
 for (const { dialectId, phrase } of allFamous) {
   const d = getDialect(dialectId)!
-  draw(`/og/p/${dialectId}/${famousSlug(phrase.id)}.jpg`, () =>
-    phraseCard({ text: phrase.text, dialect: d.name, dialectEn: d.nameEn, standard: phrase.standard, english: phrase.english, region: d.region, site: SITE }),
+  draw(`/og/p/${dialectId}/${famousSlug(phrase.id)}.jpg`, (c) =>
+    c.phraseCard({ text: phrase.text, dialect: d.name, dialectEn: d.nameEn, standard: phrase.standard, english: phrase.english, region: d.region, site: SITE }),
   )
 }
 
-draw('/og/egypt.jpg', () => egyptCard({ title: t('egyptTitle'), titleEn: translate('en', 'egyptTitle'), kicker: 'لهجاتي · قسم مصر', summary: t('egyptCtaBody'), chips: egyptRegions.map((r) => r.name), site: SITE }))
+draw('/og/egypt.jpg', (c) => c.egyptCard({ title: t('egyptTitle'), titleEn: translate('en', 'egyptTitle'), kicker: 'لهجتي · قسم مصر', summary: t('egyptCtaBody'), chips: egyptRegions.map((r) => r.name), site: SITE }))
 for (const n of allEgyptNodes()) {
   const chain = egyptAncestors(n)
   const lit = new Set([n.id, ...chain.map((a) => a.id)])
   const kicker = [t('egyptTitle'), ...chain.map((a) => a.name)].join(' · ')
   const chips = n.kind === 'language' ? [t('egyptLanguage')] : (n.governorates?.ar ?? []).slice(0, 6)
-  draw(`/og/egypt/${n.id}.jpg`, () => egyptCard({ title: n.name, titleEn: n.nameEn, kicker, summary: n.summary?.ar, lit, chips, site: SITE }))
+  draw(`/og/egypt/${n.id}.jpg`, (c) => c.egyptCard({ title: n.name, titleEn: n.nameEn, kicker, summary: n.summary?.ar, lit, chips, site: SITE }))
 }
 
 // resvg draws one card at a time; sharp encodes on its own threads while the next card is drawn.
@@ -109,11 +131,17 @@ for (const job of jobs) {
 }
 await Promise.all(pending)
 
+// A card that could not be drawn falls back to the prebuilt default card.
+const imageFor = (path: string) => {
+  const rel = ogImageFor(path)
+  return failed.has(rel) ? FALLBACK_IMAGE : rel
+}
+
 // ---------- pages ----------
 const pages: Page[] = [
-  { path: '/', title: '', description: `${slogan}. ${t('heroBody')}`, imageAlt: `لهجاتي: ${slogan}`, sitemap: true },
-  ...sections.map(([id, title, body]) => ({ path: `/${id}`, title, description: `${body}. ${slogan}.`, imageAlt: `${title} – لهجاتي`, sitemap: !['favorites', 'settings', 'search'].includes(id) })),
-  ...categories.map((c) => ({ path: `/lessons/${c.id}`, title: `${c.name} – ${t('lessonsTitle')}`, description: `جمل «${c.name}» بكل اللهجات العربية، مع المعنى بالفصحى والإنجليزي. ${slogan}.`, imageAlt: `${c.name} – لهجاتي`, sitemap: true })),
+  { path: '/', title: '', description: `${slogan}. ${t('heroBody')}`, imageAlt: `لهجتي: ${slogan}`, sitemap: true },
+  ...sections.map(([id, title, body]) => ({ path: `/${id}`, title, description: `${body}. ${slogan}.`, imageAlt: `${title} – لهجتي`, sitemap: !['favorites', 'settings', 'search'].includes(id) })),
+  ...categories.map((c) => ({ path: `/lessons/${c.id}`, title: `${c.name} – ${t('lessonsTitle')}`, description: `جمل «${c.name}» بكل اللهجات العربية، مع المعنى بالفصحى والإنجليزي. ${slogan}.`, imageAlt: `${c.name} – لهجتي`, sitemap: true })),
   ...dialects
     .filter((d) => d.id !== STANDARD_ID)
     .map((d) => {
@@ -142,7 +170,7 @@ const pages: Page[] = [
 function headFor(p: Page) {
   const title = p.title ? `${p.title} | ${SITE_NAME}` : `${SITE_NAME} | ${slogan}`
   const url = SITE_URL + (p.path === '/' ? '/' : p.path)
-  const image = SITE_URL + ogImageFor(p.path)
+  const image = SITE_URL + imageFor(p.path)
   const desc = p.description.replace(/\s+/g, ' ').slice(0, 300)
   const m = (k: string, v: string, attr = 'property') => `<meta ${attr}="${k}" content="${esc(v)}" />`
   return [
@@ -187,7 +215,7 @@ if (!only) {
   writeFileSync(join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`)
   writeFileSync(join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`)
   // Every card a page points at must exist.
-  const missing = [...new Set(pages.map((p) => ogImageFor(p.path)))].filter((rel) => {
+  const missing = [...new Set(pages.map((p) => imageFor(p.path)))].filter((rel) => {
     try {
       readFileSync(join(DIST, rel))
       return false
@@ -196,7 +224,7 @@ if (!only) {
     }
   })
   if (missing.length) throw new Error(`Pages point at cards that were not drawn: ${missing.slice(0, 5).join(', ')}`)
-  console.log(`og: ${drawn} cards in ${((Date.now() - started) / 1000).toFixed(1)}s, ${pages.length} pages, ${urls.length} in the sitemap`)
+  console.log(`og: ${drawn} cards${failed.size ? ` (${failed.size} fell back to ${FALLBACK_IMAGE})` : ''} in ${((Date.now() - started) / 1000).toFixed(1)}s, ${pages.length} pages, ${urls.length} in the sitemap`)
 } else {
   console.log(`og: ${drawn} cards`)
 }
