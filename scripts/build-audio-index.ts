@@ -5,15 +5,16 @@
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import type { AudioIndex, Content } from '../src/lib/types.ts'
+import type { AudioIndex, Content, FamousContent } from '../src/lib/types.ts'
+import { audioPhraseIds } from '../src/lib/validate.ts'
 
 const root = join(import.meta.dirname, '..')
 const audioDir = join(root, 'public', 'audio')
 const outDir = join(root, 'src', 'generated')
 const content = JSON.parse(readFileSync(join(root, 'src', 'content', 'phrases.json'), 'utf8')) as Content
+const famous = JSON.parse(readFileSync(join(root, 'src', 'content', 'famous.json'), 'utf8')) as FamousContent
 
 const dialectIds = new Set(content.dialects.map((d) => d.id))
-const phraseIds = new Set(content.phrases.map((p) => p.id))
 const index: AudioIndex = {}
 const warnings: string[] = []
 
@@ -25,6 +26,7 @@ if (existsSync(audioDir)) {
       warnings.push(`public/audio/${dir}: not a known dialect id, ignored`)
       continue
     }
+    const phraseIds = new Set(audioPhraseIds(content, dir, famous))
     const ids: string[] = []
     for (const file of readdirSync(full).sort()) {
       if (!file.endsWith('.mp3')) continue

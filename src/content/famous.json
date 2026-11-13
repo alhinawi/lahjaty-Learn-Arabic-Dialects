@@ -1,0 +1,5008 @@
+{
+  "version": 1,
+  "concepts": [
+    {
+      "id": "now",
+      "name": "الآن",
+      "nameEn": "Now",
+      "words": {
+        "egypt": "دلوقتي",
+        "sudan": "هسّع",
+        "levant": "هلّق",
+        "iraq": "هسّه",
+        "gulf": "الحين",
+        "yemen": "ذلحين",
+        "maghreb": "دابا"
+      }
+    },
+    {
+      "id": "buddy",
+      "name": "يا صديقي",
+      "nameEn": "Hey buddy",
+      "words": {
+        "egypt": "يا صاحبي",
+        "sudan": "يا زول",
+        "levant": "يا زلمة",
+        "iraq": "يا خويه",
+        "gulf": "يا خوي",
+        "yemen": "يا صاحبي",
+        "maghreb": "يا خويا"
+      }
+    },
+    {
+      "id": "how_are_you",
+      "name": "كيف حالك؟",
+      "nameEn": "How are you?",
+      "base": "greetings.how_are_you"
+    },
+    {
+      "id": "what",
+      "name": "ماذا؟",
+      "nameEn": "What?",
+      "words": {
+        "egypt": "إيه؟",
+        "sudan": "شنو؟",
+        "levant": "شو؟",
+        "iraq": "شنو؟",
+        "gulf": "وش؟",
+        "yemen": "إيش؟",
+        "maghreb": "أشنو؟"
+      }
+    },
+    {
+      "id": "very",
+      "name": "جدًّا",
+      "nameEn": "Very",
+      "words": {
+        "egypt": "أوي",
+        "sudan": "شديد",
+        "levant": "كتير",
+        "iraq": "كلّش",
+        "gulf": "وايد",
+        "yemen": "مرّة",
+        "maghreb": "بزاف"
+      }
+    },
+    {
+      "id": "welcome",
+      "name": "أهلًا وسهلًا",
+      "nameEn": "Welcome",
+      "words": {
+        "egypt": "أهلًا وسهلًا",
+        "sudan": "حبابك",
+        "levant": "أهلا وسهلا",
+        "iraq": "هلا بيك",
+        "gulf": "حيّاك",
+        "yemen": "حيّا بك",
+        "maghreb": "مرحبا بيك"
+      }
+    },
+    {
+      "id": "want",
+      "name": "أريد",
+      "nameEn": "I want",
+      "words": {
+        "egypt": "عايز",
+        "sudan": "داير",
+        "levant": "بدّي",
+        "iraq": "أريد",
+        "gulf": "أبي",
+        "yemen": "أشتي",
+        "maghreb": "بغيت"
+      }
+    },
+    {
+      "id": "good",
+      "name": "جيّد",
+      "nameEn": "Good",
+      "words": {
+        "egypt": "كويّس",
+        "sudan": "كويّس",
+        "levant": "منيح",
+        "iraq": "زين",
+        "gulf": "زين",
+        "yemen": "تمام",
+        "maghreb": "مزيان"
+      }
+    },
+    {
+      "id": "alot",
+      "name": "كثيرًا",
+      "nameEn": "A lot",
+      "words": {
+        "egypt": "كتير",
+        "sudan": "كتير",
+        "levant": "كتير",
+        "iraq": "هواية",
+        "gulf": "وايد",
+        "yemen": "كثير",
+        "maghreb": "بزاف"
+      }
+    },
+    {
+      "id": "with_pleasure",
+      "name": "بكل سرور",
+      "nameEn": "Gladly",
+      "words": {
+        "egypt": "من عينيّا",
+        "sudan": "أبشر",
+        "levant": "تكرم عينك",
+        "iraq": "على عيني",
+        "gulf": "أبشر",
+        "yemen": "أبشر",
+        "maghreb": "مرحبا"
+      }
+    },
+    {
+      "id": "okay",
+      "name": "حسنًا",
+      "nameEn": "Okay",
+      "base": "expressions.okay"
+    },
+    {
+      "id": "sir",
+      "name": "يا سيّدي",
+      "nameEn": "Sir",
+      "words": {
+        "egypt": "يا باشا",
+        "sudan": "يا حاج",
+        "levant": "يا أستاذ",
+        "iraq": "عمّي",
+        "gulf": "يا طويل العمر",
+        "yemen": "يا شيخ",
+        "maghreb": "أسيدي"
+      }
+    },
+    {
+      "id": "wow",
+      "name": "يا للروعة!",
+      "nameEn": "Wow!",
+      "words": {
+        "egypt": "يا سلام!",
+        "sudan": "يا سلام!",
+        "levant": "يا سلام!",
+        "iraq": "يا سلام!",
+        "gulf": "ما شاء الله!",
+        "yemen": "يا سلام!",
+        "maghreb": "ما شاء الله!"
+      }
+    },
+    {
+      "id": "none",
+      "name": "لا يوجد",
+      "nameEn": "There isn't any",
+      "words": {
+        "egypt": "مفيش",
+        "sudan": "مافي",
+        "levant": "ما في",
+        "iraq": "ماكو",
+        "gulf": "ما فيه",
+        "yemen": "ما بش",
+        "maghreb": "ماكاينش"
+      }
+    },
+    {
+      "id": "thanks",
+      "name": "شكرًا",
+      "nameEn": "Thank you",
+      "base": "expressions.thank_you"
+    },
+    {
+      "id": "like_this",
+      "name": "هكذا",
+      "nameEn": "Like this",
+      "words": {
+        "egypt": "كده",
+        "sudan": "كدا",
+        "levant": "هيك",
+        "iraq": "هيچ",
+        "gulf": "كذا",
+        "yemen": "كذا",
+        "maghreb": "هكّا"
+      }
+    },
+    {
+      "id": "whats_up",
+      "name": "ما الأخبار؟",
+      "nameEn": "What's up?",
+      "base": "greetings.whats_new"
+    },
+    {
+      "id": "yes",
+      "name": "نعم",
+      "nameEn": "Yes",
+      "words": {
+        "egypt": "أيوه",
+        "sudan": "أيوا",
+        "levant": "إي",
+        "iraq": "إي",
+        "gulf": "إيه",
+        "yemen": "أيوه",
+        "maghreb": "إيه"
+      }
+    },
+    {
+      "id": "tea",
+      "name": "شاي",
+      "nameEn": "Tea",
+      "words": {
+        "egypt": "شاي",
+        "sudan": "شاي",
+        "levant": "شاي",
+        "iraq": "چاي",
+        "gulf": "شاي",
+        "yemen": "شاهي",
+        "maghreb": "أتاي"
+      }
+    },
+    {
+      "id": "dear",
+      "name": "يا عزيزي",
+      "nameEn": "My dear",
+      "words": {
+        "egypt": "يا حبيبي",
+        "sudan": "يا حبيب",
+        "levant": "يا عمري",
+        "iraq": "عيوني",
+        "gulf": "يا الغالي",
+        "yemen": "يا غالي",
+        "maghreb": "أحبيبي"
+      }
+    },
+    {
+      "id": "lets_go",
+      "name": "هيّا بنا",
+      "nameEn": "Let's go",
+      "words": {
+        "egypt": "يلّا بينا",
+        "sudan": "يلّا",
+        "levant": "يلّا",
+        "iraq": "يلّا",
+        "gulf": "يلّا",
+        "yemen": "هيّا",
+        "maghreb": "يالله"
+      }
+    },
+    {
+      "id": "dont_worry",
+      "name": "لا تقلق",
+      "nameEn": "Don't worry",
+      "base": "feelings.dont_worry"
+    },
+    {
+      "id": "really",
+      "name": "حقًّا؟",
+      "nameEn": "Really?",
+      "words": {
+        "egypt": "بجد؟",
+        "sudan": "جد؟",
+        "levant": "عن جد؟",
+        "iraq": "صدگ؟",
+        "gulf": "صدق؟",
+        "yemen": "صدق؟",
+        "maghreb": "بصّح؟"
+      }
+    },
+    {
+      "id": "enough",
+      "name": "كفى",
+      "nameEn": "Enough / That's it",
+      "words": {
+        "egypt": "خلاص",
+        "sudan": "خلاص",
+        "levant": "خلص",
+        "iraq": "بس",
+        "gulf": "خلاص",
+        "yemen": "خلاص",
+        "maghreb": "صافي"
+      }
+    },
+    {
+      "id": "no_problem",
+      "name": "لا مشكلة",
+      "nameEn": "No problem",
+      "base": "expressions.no_problem"
+    },
+    {
+      "id": "never_mind",
+      "name": "لا بأس",
+      "nameEn": "Never mind",
+      "words": {
+        "egypt": "معلش",
+        "sudan": "معليش",
+        "levant": "معليش",
+        "iraq": "ما عليه",
+        "gulf": "ما عليه",
+        "yemen": "معليش",
+        "maghreb": "ماشي مشكل"
+      }
+    },
+    {
+      "id": "how_is_it_going",
+      "name": "كيف الحال؟",
+      "nameEn": "How's it going?",
+      "base": "greetings.how_are_you"
+    },
+    {
+      "id": "beg",
+      "name": "أرجوك",
+      "nameEn": "Please, I beg you",
+      "words": {
+        "egypt": "والنبي",
+        "sudan": "الله يخليك",
+        "levant": "الله يخليك",
+        "iraq": "الله يخليك",
+        "gulf": "تكفى",
+        "yemen": "الله يخليك",
+        "maghreb": "الله يخليك"
+      }
+    },
+    {
+      "id": "how_much",
+      "name": "بكم هذا؟",
+      "nameEn": "How much is it?",
+      "base": "shopping.how_much"
+    },
+    {
+      "id": "house",
+      "name": "البيت",
+      "nameEn": "Home",
+      "words": {
+        "egypt": "البيت",
+        "sudan": "البيت",
+        "levant": "البيت",
+        "iraq": "البيت",
+        "gulf": "البيت",
+        "yemen": "البيت",
+        "maghreb": "الدار"
+      }
+    },
+    {
+      "id": "beautiful",
+      "name": "جميل",
+      "nameEn": "Beautiful",
+      "words": {
+        "egypt": "حلو",
+        "sudan": "سمح",
+        "levant": "حلو",
+        "iraq": "حلو",
+        "gulf": "حلو",
+        "yemen": "حالي",
+        "maghreb": "زوين"
+      }
+    },
+    {
+      "id": "what_want",
+      "name": "ماذا تريد؟",
+      "nameEn": "What do you want?",
+      "words": {
+        "egypt": "عايز إيه؟",
+        "sudan": "داير شنو؟",
+        "levant": "شو بدّك؟",
+        "iraq": "شتريد؟",
+        "gulf": "وش تبي؟",
+        "yemen": "إيش تشتي؟",
+        "maghreb": "أش بغيتي؟"
+      }
+    },
+    {
+      "id": "hello",
+      "name": "مرحبًا",
+      "nameEn": "Hello",
+      "base": "greetings.hello"
+    },
+    {
+      "id": "goodbye",
+      "name": "مع السلامة",
+      "nameEn": "Goodbye",
+      "base": "greetings.goodbye"
+    },
+    {
+      "id": "whats_wrong",
+      "name": "ما بك؟",
+      "nameEn": "What's wrong?",
+      "words": {
+        "egypt": "مالك؟",
+        "sudan": "مالك؟",
+        "levant": "شو بك؟",
+        "iraq": "شبيك؟",
+        "gulf": "وش فيك؟",
+        "yemen": "ما لك؟",
+        "maghreb": "مالك؟"
+      }
+    },
+    {
+      "id": "there_is",
+      "name": "يوجد",
+      "nameEn": "There is",
+      "words": {
+        "egypt": "فيه",
+        "sudan": "في",
+        "levant": "في",
+        "iraq": "أكو",
+        "gulf": "فيه",
+        "yemen": "بش",
+        "maghreb": "كاين"
+      }
+    },
+    {
+      "id": "wait",
+      "name": "انتظر",
+      "nameEn": "Wait",
+      "words": {
+        "egypt": "استنّى",
+        "sudan": "أصبر",
+        "levant": "استنّى",
+        "iraq": "اصبر",
+        "gulf": "اصبر",
+        "yemen": "اصبر",
+        "maghreb": "تسنّى"
+      }
+    },
+    {
+      "id": "a_little",
+      "name": "قليلًا",
+      "nameEn": "A little",
+      "words": {
+        "egypt": "شويّة",
+        "sudan": "شويّة",
+        "levant": "شوي",
+        "iraq": "شويّة",
+        "gulf": "شوي",
+        "yemen": "شويّة",
+        "maghreb": "شويّة"
+      }
+    },
+    {
+      "id": "not",
+      "name": "ليس",
+      "nameEn": "Not",
+      "words": {
+        "egypt": "مش",
+        "sudan": "ما",
+        "levant": "مش",
+        "iraq": "مو",
+        "gulf": "مو",
+        "yemen": "مش",
+        "maghreb": "ماشي"
+      }
+    },
+    {
+      "id": "i_wish",
+      "name": "يا ليت",
+      "nameEn": "I wish",
+      "words": {
+        "egypt": "يا ريت",
+        "sudan": "يا ريت",
+        "levant": "يا ريت",
+        "iraq": "يا ريت",
+        "gulf": "يا ليت",
+        "yemen": "يا ليت",
+        "maghreb": "يا ريت"
+      }
+    },
+    {
+      "id": "zaama",
+      "name": "يعني",
+      "nameEn": "I mean / So"
+    },
+    {
+      "id": "poor_thing",
+      "name": "يا للمسكين",
+      "nameEn": "Poor thing",
+      "words": {
+        "egypt": "يا حرام",
+        "sudan": "مسكين",
+        "levant": "حرام",
+        "iraq": "خطيّة",
+        "gulf": "مسكين",
+        "yemen": "مسكين",
+        "maghreb": "مسكين"
+      }
+    },
+    {
+      "id": "mom",
+      "name": "أمّي",
+      "nameEn": "Mom",
+      "words": {
+        "egypt": "ماما",
+        "sudan": "أمّي",
+        "levant": "ماما",
+        "iraq": "يمّه",
+        "gulf": "أمّي",
+        "yemen": "أمّي",
+        "maghreb": "مّي"
+      }
+    },
+    {
+      "id": "dad",
+      "name": "أبي",
+      "nameEn": "Dad",
+      "words": {
+        "egypt": "بابا",
+        "sudan": "أبوي",
+        "levant": "بابا",
+        "iraq": "بابا",
+        "gulf": "أبوي",
+        "yemen": "أبوي",
+        "maghreb": "بّا"
+      }
+    },
+    {
+      "id": "by_the_way",
+      "name": "بالمناسبة",
+      "nameEn": "By the way",
+      "words": {
+        "egypt": "على فكرة",
+        "sudan": "على فكرة",
+        "levant": "عفكرة"
+      }
+    },
+    {
+      "id": "how",
+      "name": "كيف؟",
+      "nameEn": "How?",
+      "words": {
+        "egypt": "إزّاي؟",
+        "sudan": "كيف؟",
+        "levant": "كيف؟",
+        "iraq": "شلون؟",
+        "gulf": "شلون؟",
+        "yemen": "كيف؟",
+        "maghreb": "كيفاش؟"
+      }
+    },
+    {
+      "id": "fast",
+      "name": "بسرعة",
+      "nameEn": "Quickly",
+      "words": {
+        "egypt": "بسرعة",
+        "sudan": "بسرعة",
+        "levant": "بسرعة",
+        "iraq": "بسرعة",
+        "gulf": "بسرعة",
+        "yemen": "بسرعة",
+        "maghreb": "دغيا"
+      }
+    },
+    {
+      "id": "who",
+      "name": "من؟",
+      "nameEn": "Who?",
+      "words": {
+        "egypt": "مين؟",
+        "sudan": "منو؟",
+        "levant": "مين؟",
+        "iraq": "منو؟",
+        "gulf": "منو؟",
+        "yemen": "من؟",
+        "maghreb": "شكون؟"
+      }
+    }
+  ],
+  "dialects": {
+    "fs": [
+      {
+        "id": "famous.ahlan_wa_sahlan",
+        "text": "أهلًا وسهلًا",
+        "english": "Welcome",
+        "standard": "أهلًا وسهلًا",
+        "noteAr": "ترحيب يصلح لكل مكان وكل ضيف",
+        "note": "A warm welcome that fits any place and any guest",
+        "example": "أهلًا وسهلًا بكم في بيتنا",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.kayfa_haluk",
+        "text": "كيف حالك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "السؤال الذي يفهمه كل العرب من المحيط إلى الخليج",
+        "note": "The one greeting every Arab understands, from Morocco to Oman",
+        "example": "كيف حالك يا صديقي؟ طال غيابك",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.madha",
+        "text": "ماذا؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال الفصحى، وكل لهجة لها بديل مشهور عنها",
+        "note": "The standard question word; every dialect has its own famous swap for it",
+        "example": "ماذا تريد أن تشرب؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.al_aan",
+        "text": "الآن",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "تتغيّر بشكل ملحوظ من لهجة لأخرى: دلوقتي، هلّق، الحين، دابا",
+        "note": "Changes a lot between dialects: dilwa'ti, halla', al-heen, daba",
+        "example": "سأخرج الآن وأعود بعد ساعة",
+        "concept": "now"
+      },
+      {
+        "id": "famous.jiddan",
+        "text": "جدًّا",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "تأتي بعد الصفة للتأكيد",
+        "note": "Comes after an adjective to make it stronger",
+        "example": "الطعام لذيذ جدًّا",
+        "concept": "very"
+      },
+      {
+        "id": "famous.bi_kull_surur",
+        "text": "بكلّ سرور",
+        "english": "With pleasure",
+        "standard": "بكلّ سرور",
+        "noteAr": "ردّ مهذّب حين يطلب منك أحد شيئًا",
+        "note": "A polite answer when someone asks you for something",
+        "example": "هل تساعدني؟ بكلّ سرور",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.ala_al_rahb",
+        "text": "على الرحب والسعة",
+        "english": "You're most welcome",
+        "standard": "على الرحب والسعة",
+        "noteAr": "ردّ أنيق على الشكر، مشهور في الإعلام والمسلسلات التاريخية",
+        "note": "An elegant reply to thanks, famous from news and historical dramas",
+        "example": "شكرًا لك. على الرحب والسعة",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.hasanan",
+        "text": "حسنًا",
+        "english": "All right",
+        "standard": "حسنًا",
+        "noteAr": "موافقة رسمية هادئة، تُسمع كثيرًا في الأفلام المدبلجة",
+        "note": "A calm formal yes, heard a lot in dubbed cartoons and films",
+        "example": "حسنًا، سنلتقي غدًا",
+        "concept": "okay"
+      },
+      {
+        "id": "famous.la_baas",
+        "text": "لا بأس",
+        "english": "No harm / It's fine",
+        "standard": "لا بأس",
+        "noteAr": "تقال لتهوين الأمر أو للموافقة",
+        "note": "Said to play something down or to agree",
+        "example": "تأخّرت قليلًا؟ لا بأس",
+        "concept": "never_mind"
+      },
+      {
+        "id": "famous.bil_taakid",
+        "text": "بالتأكيد",
+        "english": "Certainly",
+        "standard": "بالتأكيد",
+        "noteAr": "تأكيد قوي في الكلام الرسمي",
+        "note": "A strong yes in formal speech",
+        "example": "هل ستحضر؟ بالتأكيد",
+        "concept": "yes"
+      },
+      {
+        "id": "famous.shukran_jazilan",
+        "text": "شكرًا جزيلًا",
+        "english": "Thank you very much",
+        "standard": "شكرًا جزيلًا",
+        "noteAr": "شكر رسمي حارّ",
+        "note": "Warm formal thanks",
+        "example": "شكرًا جزيلًا على مساعدتك",
+        "concept": "thanks"
+      },
+      {
+        "id": "famous.ila_al_liqaa",
+        "text": "إلى اللقاء",
+        "english": "Goodbye / See you",
+        "standard": "إلى اللقاء",
+        "noteAr": "وداع رسمي مع أمل اللقاء مرة أخرى",
+        "note": "A formal goodbye that hopes to meet again",
+        "example": "إلى اللقاء في الحلقة القادمة",
+        "concept": "goodbye"
+      }
+    ],
+    "cai": [
+      {
+        "id": "famous.ya_3am",
+        "text": "يا عم",
+        "english": "Hey man / Dude",
+        "standard": "يا صديقي",
+        "noteAr": "نداء ودّي لأي حد، حتى لو أصغر منك",
+        "note": "A friendly way to call anyone, even someone younger than you",
+        "example": "يا عم سيبك من الكلام ده وتعالى نتمشّى",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.khalas",
+        "text": "خلاص",
+        "english": "That's it / Enough / Done",
+        "standard": "انتهى الأمر",
+        "noteAr": "كلمة بمليون معنى: موافقة، أو نهاية، أو كفاية",
+        "note": "One word, many uses: agreed, it's over, or that's enough",
+        "example": "خلاص، نتقابل بكرة الساعة خمسة",
+        "concept": "enough"
+      },
+      {
+        "id": "famous.mashi",
+        "text": "ماشي",
+        "english": "Okay / Fine",
+        "standard": "حسنًا",
+        "noteAr": "أشهر موافقة مصرية، وممكن تتقال بنبرة رضا أو زهق",
+        "note": "The classic Egyptian okay; the tone tells you if it's happy or fed up",
+        "example": "ماشي، هعدّي عليك بالليل",
+        "concept": "okay"
+      },
+      {
+        "id": "famous.eh_el_halawa",
+        "text": "إيه الحلاوة دي!",
+        "english": "How lovely is this!",
+        "standard": "ما أجمل هذا!",
+        "noteAr": "إعجاب بأي حاجة حلوة: أكل، مكان، لبس",
+        "note": "Praise for anything nice: food, a place, an outfit",
+        "example": "إيه الحلاوة دي! الشقّة دي جديدة؟",
+        "concept": "wow"
+      },
+      {
+        "id": "famous.awi",
+        "text": "أوي",
+        "english": "Very / So much",
+        "standard": "جدًّا",
+        "noteAr": "القاف بتبقى همزة، وتيجي بعد الصفة علطول",
+        "note": "The Q turns into a glottal stop; it always comes after the adjective",
+        "example": "الفيلم ده حلو أوي",
+        "concept": "very"
+      },
+      {
+        "id": "famous.delwa2ti",
+        "text": "دلوقتي",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "أصلها «في هذا الوقت»، ومفيش مصري مبيقولهاش",
+        "note": "Comes from 'at this time'; every Egyptian says it",
+        "example": "أنا جاي دلوقتي، استنّاني",
+        "concept": "now"
+      },
+      {
+        "id": "famous.aho",
+        "text": "أهو",
+        "english": "Here it is / There you go",
+        "standard": "ها هو",
+        "noteAr": "بتشاور بيها على حاجة قدّامك، أو بتأكّد بيها كلامك",
+        "note": "Points at something in front of you, or backs up what you said",
+        "example": "المفتاح أهو على الترابيزة"
+      },
+      {
+        "id": "famous.ya_basha",
+        "text": "يا باشا",
+        "english": "Boss! (friendly respect)",
+        "standard": "يا سيّدي",
+        "noteAr": "لقب قديم، بقى تحية هزار واحترام في نفس الوقت",
+        "note": "An old title that became a playful, respectful way to address anyone",
+        "example": "تحت أمرك يا باشا",
+        "concept": "sir"
+      },
+      {
+        "id": "famous.ma3lesh",
+        "text": "معلش",
+        "english": "Never mind / Sorry",
+        "standard": "لا بأس",
+        "noteAr": "اعتذار خفيف، أو طبطبة لما حد يزعل",
+        "note": "A light sorry, or comfort when someone is upset",
+        "example": "معلش يا صاحبي، خيرها في غيرها",
+        "concept": "never_mind"
+      },
+      {
+        "id": "famous.fel_mishmish",
+        "text": "في المشمش",
+        "english": "When pigs fly",
+        "standard": "هذا لن يحدث",
+        "noteAr": "المشمش موسمه قصيّر جدًّا، فبقت تعني حاجة مش هتحصل",
+        "note": "Apricot season is very short, so it means something that will never happen",
+        "example": "هيرجّع الفلوس؟ في المشمش!"
+      },
+      {
+        "id": "famous.ya_salam",
+        "text": "يا سلام!",
+        "english": "Wow! / Oh really?",
+        "standard": "يا للروعة!",
+        "noteAr": "إعجاب، وأحيانًا سخرية خفيفة حسب النبرة",
+        "note": "Admiration, or light sarcasm depending on the tone",
+        "example": "يا سلام! الملوخية دي تجنّن",
+        "concept": "wow"
+      },
+      {
+        "id": "famous.3ala_fekra",
+        "text": "على فكرة",
+        "english": "By the way",
+        "standard": "بالمناسبة",
+        "noteAr": "مقدّمة لمعلومة جديدة أو ملاحظة صغيّرة",
+        "note": "Opens a new fact or a small remark",
+        "example": "على فكرة، أنا شفته امبارح",
+        "concept": "by_the_way"
+      }
+    ],
+    "alx": [
+      {
+        "id": "famous.ana_nrooh",
+        "text": "أنا نروح",
+        "english": "I'm going (Alex style)",
+        "standard": "أنا سأذهب",
+        "noteAr": "الإسكندراني بيقول «ن» للمتكلّم المفرد، ودي أشهر علامة في لهجته",
+        "note": "Alexandrians use 'n-' for 'I', the best-known mark of their accent",
+        "example": "أنا نروح الشغل ونيجي بالليل"
+      },
+      {
+        "id": "famous.ana_n2ollak",
+        "text": "أنا نقولّك",
+        "english": "Let me tell you",
+        "standard": "دعني أخبرك",
+        "noteAr": "نفس قاعدة «ن»، بتبدأ بيها حكاية أو نصيحة",
+        "note": "Same 'n-' rule, used to start a story or advice",
+        "example": "أنا نقولّك على مطعم سمك يجنّن"
+      },
+      {
+        "id": "famous.qawi",
+        "text": "قوي",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "إسكندرية بتنطق القاف في «قوي» بدل «أوي» القاهرية",
+        "note": "Alexandria keeps the Q in 'qawi' instead of Cairo's 'awi'",
+        "example": "الجوّ حلو قوي النهاردة",
+        "concept": "very"
+      },
+      {
+        "id": "famous.ya_gada3",
+        "text": "يا جدع",
+        "english": "Hey man",
+        "standard": "يا صديقي",
+        "noteAr": "الجدع هو الشهم اللي يقف جنبك، والنداء ده علامة إسكندرانية",
+        "note": "A 'gada3' is a stand-up guy; calling people this is very Alexandrian",
+        "example": "إيه يا جدع، فينك من زمان؟",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.ya_m3allem",
+        "text": "يا معلّم",
+        "english": "Boss / Chief",
+        "standard": "يا أستاذ",
+        "noteAr": "تحية احترام لأي حد شاطر في شغله، من الصنايعي للصاحب",
+        "note": "Respect for anyone good at what they do, from a craftsman to a friend",
+        "example": "تسلم إيدك يا معلّم",
+        "concept": "sir"
+      },
+      {
+        "id": "famous.saba7_el_fol",
+        "text": "صباح الفل",
+        "english": "Morning as fresh as jasmine",
+        "standard": "صباح الخير",
+        "noteAr": "ردّ مبهج على صباح الخير",
+        "note": "A cheerful reply to good morning",
+        "example": "صباح الفل يا جارنا"
+      },
+      {
+        "id": "famous.khalas_ba2a",
+        "text": "خلاص بقى",
+        "english": "Enough already",
+        "standard": "كفى",
+        "noteAr": "«بقى» بتزوّد التأكيد، لما تكون زهقت",
+        "note": "'Ba'a' adds weight when you've had enough",
+        "example": "خلاص بقى، نروح ننام",
+        "concept": "enough"
+      },
+      {
+        "id": "famous.balash",
+        "text": "بلاش",
+        "english": "Let's not / Skip it",
+        "standard": "لا داعي",
+        "noteAr": "بتمنع بيها حد بلطف أو بتلغي فكرة",
+        "note": "A soft way to stop someone or drop an idea",
+        "example": "بلاش النهاردة، البحر هايج"
+      },
+      {
+        "id": "famous.yalla_3al_ba7r",
+        "text": "يلّا عالبحر",
+        "english": "Let's go to the sea",
+        "standard": "هيّا إلى البحر",
+        "noteAr": "البحر جزء من يوم أي إسكندراني، صيف وشتا",
+        "note": "The sea is part of every Alexandrian's day, summer or winter",
+        "example": "يلّا عالبحر ناكل ذرة مشوية"
+      },
+      {
+        "id": "famous.ya_kbeer",
+        "text": "يا كبير",
+        "english": "Big man!",
+        "standard": "يا سيّدي",
+        "noteAr": "مدح وهزار لما حد يعمل حاجة حلوة",
+        "note": "Praise with a smile when someone does something great",
+        "example": "إنت كبير يا كبير، كسبت الماتش",
+        "concept": "sir"
+      }
+    ],
+    "shq": [
+      {
+        "id": "famous.gawi",
+        "text": "جوي",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "الشرقاوي بينطق القاف جيم مصرية، ودي أشهر علاماته",
+        "note": "Sharqawis say Q as a hard G, their best-known mark",
+        "example": "الأكل حلو جوي",
+        "concept": "very"
+      },
+      {
+        "id": "famous.ya_marhab",
+        "text": "يا مرحب",
+        "english": "Welcome!",
+        "standard": "أهلًا وسهلًا",
+        "noteAr": "ترحيب ريفي من القلب، والشرقية مشهورة بالكرم",
+        "note": "A heartfelt country welcome; Sharqia is famous for hospitality",
+        "example": "يا مرحب يا مرحب، خش اتفضّل",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.etghadda_ma3ana",
+        "text": "اتفضّل اتغدّى معانا",
+        "english": "Come have lunch with us",
+        "standard": "تفضّل وتغدَّ معنا",
+        "noteAr": "مفيش ضيف يعدّي من غير ما يسمعها، ورفضها صعب جدًّا",
+        "note": "No guest passes without hearing it, and saying no is very hard",
+        "example": "ما فيش مشي قبل ما تتغدّى معانا"
+      },
+      {
+        "id": "famous.nawwart",
+        "text": "نوّرت",
+        "english": "You lit up the place",
+        "standard": "أضأت المكان بحضورك",
+        "noteAr": "ترحيب بالضيف أول ما يدخل",
+        "note": "Said to a guest the moment they arrive",
+        "example": "نوّرت الدار والبلد كلّها",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.el_gahwa",
+        "text": "الجهوة",
+        "english": "Coffee",
+        "standard": "القهوة",
+        "noteAr": "نفس القاف اللي بتبقى جيم، والجهوة أول حاجة بتتقدّم للضيف",
+        "note": "The same Q-to-G sound; coffee is the first thing a guest gets",
+        "example": "اعمل اتنين جهوة مظبوط"
+      },
+      {
+        "id": "famous.ya_wad_3ammi",
+        "text": "يا واد عمّي",
+        "english": "Hey cousin",
+        "standard": "يا ابن عمّي",
+        "noteAr": "نداء ريفي دافي بين الرجال",
+        "note": "A warm country call between men",
+        "example": "إزيّك يا واد عمّي، وحشتنا",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.el_gama3a",
+        "text": "الجماعة",
+        "english": "The folks (the family)",
+        "standard": "الأهل",
+        "noteAr": "بيقصد بيها أهل البيت كلهم من غير ما يسمّي حد",
+        "note": "Means the whole household without naming anyone",
+        "example": "الجماعة بيسلّموا عليك"
+      },
+      {
+        "id": "famous.3awez",
+        "text": "عاوز",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "الريف بيقول «عاوز» بالواو بدل «عايز»",
+        "note": "The countryside says 3awez with a W instead of 3ayez",
+        "example": "عاوز أروح الزجازيج بكرة",
+        "concept": "want"
+      },
+      {
+        "id": "famous.ezzay_el_hal",
+        "text": "إزّاي الحال؟",
+        "english": "How's it going?",
+        "standard": "كيف الحال؟",
+        "noteAr": "سؤال تاني بعد السلام، وممكن يتكرّر أكتر من مرة",
+        "note": "A second question after hello, often repeated a few times",
+        "example": "إزّاي الحال؟ وإزّاي الولاد؟",
+        "concept": "how_is_it_going"
+      },
+      {
+        "id": "famous.kattar_kheirak",
+        "text": "كتّر خيرك",
+        "english": "Thanks (may God increase your good)",
+        "standard": "شكرًا",
+        "noteAr": "شكر ريفي فيه دعاء",
+        "note": "Country-style thanks with a blessing",
+        "example": "كتّر خيرك يا حاج، تعبناك",
+        "concept": "thanks"
+      }
+    ],
+    "dkh": [
+      {
+        "id": "famous.khales",
+        "text": "خالص",
+        "english": "Totally / Very",
+        "standard": "جدًّا",
+        "noteAr": "في الدقهلية «خالص» بتتقال للتأكيد زي «أوي»",
+        "note": "In Dakahlia 'khales' boosts a word, like 'awi'",
+        "example": "الكورنيش حلو خالص بالليل",
+        "concept": "very"
+      },
+      {
+        "id": "famous.delwa2t",
+        "text": "دلوقت",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "الريف بيقصّر «دلوقتي» ويشيل آخرها",
+        "note": "The countryside clips the end off dilwa'ti",
+        "example": "أنا نازل المنصورة دلوقت",
+        "concept": "now"
+      },
+      {
+        "id": "famous.3awez",
+        "text": "عاوز",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "بالواو زي باقي الدلتا",
+        "note": "With a W, like the rest of the Delta",
+        "example": "عاوز فطير مشلتت من عند الفرن",
+        "concept": "want"
+      },
+      {
+        "id": "famous.ya_kbeer",
+        "text": "يا كبير",
+        "english": "Big man!",
+        "standard": "يا سيّدي",
+        "noteAr": "مدح بهزار بين شباب المنصورة",
+        "note": "Joking praise among Mansoura's young men",
+        "example": "تسلم يا كبير، ظبطتها",
+        "concept": "sir"
+      },
+      {
+        "id": "famous.ya_3am_el_hag",
+        "text": "يا عم الحاج",
+        "english": "Respected sir (to an elder)",
+        "standard": "يا سيّدي المحترم",
+        "noteAr": "نداء احترام لأي راجل كبير في السن",
+        "note": "A respectful call for any older man",
+        "example": "اتفضّل اقعد يا عم الحاج",
+        "concept": "sir"
+      },
+      {
+        "id": "famous.3al_korneesh",
+        "text": "نتقابل عالكورنيش",
+        "english": "Let's meet at the corniche",
+        "standard": "لنلتقِ عند الكورنيش",
+        "noteAr": "كورنيش النيل في المنصورة هو مكان الخروج الأشهر",
+        "note": "Mansoura's Nile corniche is the go-to place to hang out",
+        "example": "بالليل نتقابل عالكورنيش ونشرب حاجة"
+      },
+      {
+        "id": "famous.yalla_3al_2ahwa",
+        "text": "يلّا عالقهوة",
+        "english": "Let's go to the café",
+        "standard": "هيّا إلى المقهى",
+        "noteAr": "القهوة هنا معناها المقهى، مكان السهر والطاولة",
+        "note": "Here 'ahwa' is the café, the place for late nights and backgammon",
+        "example": "يلّا عالقهوة نلعب دور طاولة",
+        "concept": "lets_go"
+      },
+      {
+        "id": "famous.gada3",
+        "text": "جدع",
+        "english": "A stand-up guy",
+        "standard": "شهم ومخلص",
+        "noteAr": "أحلى مدح ممكن يتقال عن حد: بيقف جنب صحابه",
+        "note": "The best praise there is: someone who stands by his friends",
+        "example": "الواد ده جدع وميتسابش"
+      },
+      {
+        "id": "famous.mashy_ya_3am",
+        "text": "ماشي يا عم",
+        "english": "Okay, man",
+        "standard": "حسنًا يا صديقي",
+        "noteAr": "موافقة ودّية من غير نقاش كتير",
+        "note": "A friendly okay with no more arguing",
+        "example": "ماشي يا عم، اللي تشوفه",
+        "concept": "okay"
+      },
+      {
+        "id": "famous.ezzayak_ya_m3allem",
+        "text": "إزيّك يا معلّم؟",
+        "english": "How are you, chief?",
+        "standard": "كيف حالك يا أستاذ؟",
+        "noteAr": "سلام شعبي فيه احترام وحبّ",
+        "note": "A street greeting full of respect and warmth",
+        "example": "إزيّك يا معلّم؟ الشغل عامل إيه؟",
+        "concept": "how_are_you"
+      }
+    ],
+    "mnf": [
+      {
+        "id": "famous.3al_el_3al",
+        "text": "عال العال",
+        "english": "Excellent!",
+        "standard": "ممتاز",
+        "noteAr": "أعلى درجة من «عال»، يعني كل حاجة تمام",
+        "note": "The top level of 'good': everything is great",
+        "example": "الأكل عال العال، تسلم إيدك",
+        "concept": "good"
+      },
+      {
+        "id": "famous.ya_ibn_3ammi",
+        "text": "يا ابن عمّي",
+        "english": "Hey cousin",
+        "standard": "يا ابن عمّي",
+        "noteAr": "نداء ريفي لأي راجل من البلد",
+        "note": "A country call for any man from the village",
+        "example": "إزيّك يا ابن عمّي، عامل إيه في الغيط؟",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.7abba",
+        "text": "حبّة",
+        "english": "A little bit",
+        "standard": "قليلًا",
+        "noteAr": "بدل «شويّة»، زي حبّة القمح",
+        "note": "Instead of 'shwayya', like a single grain of wheat",
+        "example": "استنّى حبّة وأنا جاي",
+        "concept": "a_little"
+      },
+      {
+        "id": "famous.el_gheet",
+        "text": "الغيط",
+        "english": "The field",
+        "standard": "الحقل",
+        "noteAr": "الغيط هو قلب الحياة في الريف",
+        "note": "The field is the heart of country life",
+        "example": "أبويا في الغيط من الفجر"
+      },
+      {
+        "id": "famous.el_dar",
+        "text": "الدار",
+        "english": "The house",
+        "standard": "البيت",
+        "noteAr": "البيت في الريف اسمه الدار",
+        "note": "In the countryside, home is 'el-dar'",
+        "example": "تعالى الدار نتعشّى سوا",
+        "concept": "house"
+      },
+      {
+        "id": "famous.bel_hana",
+        "text": "بالهنا والشفا",
+        "english": "Enjoy your meal",
+        "standard": "بالهناء والشفاء",
+        "noteAr": "دعاء للي بياكل، ومبيتقالش مرة واحدة بس",
+        "note": "A wish for whoever is eating, and never said just once",
+        "example": "كل كمان، بالهنا والشفا"
+      },
+      {
+        "id": "famous.ya_khooya",
+        "text": "يا خويا",
+        "english": "My brother",
+        "standard": "يا أخي",
+        "noteAr": "نداء أخوي بين الصحاب",
+        "note": "A brotherly call between friends",
+        "example": "ماتقلقش يا خويا، أنا معاك",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.qawi",
+        "text": "قوي",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "القاف منطوقة بوضوح في «قوي»",
+        "note": "The Q is said clearly in 'qawi'",
+        "example": "الجو برد قوي النهاردة",
+        "concept": "very"
+      },
+      {
+        "id": "famous.da_kalam",
+        "text": "ده كلام!",
+        "english": "Now you're talking!",
+        "standard": "هذا هو الكلام الصحيح",
+        "noteAr": "لما حد يقول رأي عاجبك جدًّا",
+        "note": "When someone says something you really agree with",
+        "example": "نزرع رز السنة دي؟ ده كلام!"
+      },
+      {
+        "id": "famous.estanna_3alayya",
+        "text": "استنّى عليّا",
+        "english": "Wait for me",
+        "standard": "انتظرني",
+        "noteAr": "«عليّا» بدل «استنّاني»، طريقة ريفية حلوة",
+        "note": "'3alayya' instead of 'estannani', a sweet country twist",
+        "example": "استنّى عليّا لحد ما ألبس"
+      }
+    ],
+    "ghr": [
+      {
+        "id": "famous.ya_3ammena",
+        "text": "يا عمّنا",
+        "english": "Hey, our uncle",
+        "standard": "يا عمّنا",
+        "noteAr": "نداء مشهور في طنطا والغربية، فيه احترام وهزار",
+        "note": "A well-known call in Tanta and Gharbia, respectful and playful",
+        "example": "إيه يا عمّنا، فينك من زمان؟",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.7alawet_el_moled",
+        "text": "حلاوة المولد",
+        "english": "Mawlid sweets",
+        "standard": "حلوى المولد",
+        "noteAr": "مولد طنطا من أشهر الموالد في مصر، وحلاوته مشهورة",
+        "note": "Tanta's mawlid is one of Egypt's biggest, and its sweets are famous",
+        "example": "جبتلك حلاوة المولد من طنطا"
+      },
+      {
+        "id": "famous.khallik_gada3",
+        "text": "خلّيك جدع",
+        "english": "Be a good sport",
+        "standard": "كن شهمًا",
+        "noteAr": "طلب مساعدة بهزار",
+        "note": "Asking for a favor with a smile",
+        "example": "خلّيك جدع ووصّلني المحطّة",
+        "concept": "beg"
+      },
+      {
+        "id": "famous.3ala_3eini",
+        "text": "على عيني",
+        "english": "Gladly (on my eye)",
+        "standard": "بكلّ سرور",
+        "noteAr": "الطلب غالي زي عيني",
+        "note": "Your request is as dear as my own eye",
+        "example": "طلبك على عيني يا حاج",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.ma_tez3alsh",
+        "text": "ما تزعلش",
+        "english": "Don't be upset",
+        "standard": "لا تحزن",
+        "noteAr": "طبطبة واعتذار في نفس الوقت",
+        "note": "Comfort and a small apology together",
+        "example": "ما تزعلش مني، ماكانش قصدي",
+        "concept": "dont_worry"
+      },
+      {
+        "id": "famous.qawi",
+        "text": "قوي",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "القاف بتبان في كلام أهل الغربية",
+        "note": "The Q comes through in Gharbia speech",
+        "example": "المولد زحمة قوي السنة دي",
+        "concept": "very"
+      },
+      {
+        "id": "famous.delwa2t",
+        "text": "دلوقت",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "من غير الياء اللي في آخر الكلمة",
+        "note": "Without the final 'i'",
+        "example": "القطر واصل طنطا دلوقت",
+        "concept": "now"
+      },
+      {
+        "id": "famous.ya_sidi",
+        "text": "يا سيدي",
+        "english": "My dear sir",
+        "standard": "يا سيّدي",
+        "noteAr": "بتتقال في أول الكلام للتلطيف أو التأكيد",
+        "note": "Used to soften or stress what comes next",
+        "example": "يا سيدي ماشي، اللي تؤمر بيه",
+        "concept": "sir"
+      },
+      {
+        "id": "famous.ezzay_el_se7a",
+        "text": "إزّاي الصحّة؟",
+        "english": "How's your health?",
+        "standard": "كيف صحّتك؟",
+        "noteAr": "سؤال اهتمام معتاد للكبار",
+        "note": "A caring question, common with older people",
+        "example": "إزّاي الصحّة يا عمّنا؟ بخير؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.rabbena_yekhallik",
+        "text": "ربّنا يخلّيك",
+        "english": "God keep you (thanks)",
+        "standard": "حفظك الله",
+        "noteAr": "شكر فيه دعاء بالخير",
+        "note": "Thanks wrapped in a blessing",
+        "example": "ربّنا يخلّيك، مش عارف أشكرك إزّاي",
+        "concept": "thanks"
+      }
+    ],
+    "bhr": [
+      {
+        "id": "famous.ana_n2ool",
+        "text": "أنا نقول",
+        "english": "I say",
+        "standard": "أنا أقول",
+        "noteAr": "البحيرة جارة إسكندرية، فبتقول «ن» للمتكلّم زيها",
+        "note": "Beheira neighbors Alexandria, so it also uses 'n-' for 'I'",
+        "example": "أنا نقول نروح دمنهور بكرة"
+      },
+      {
+        "id": "famous.ne3mel_eh",
+        "text": "نعمل إيه؟",
+        "english": "What do I do?",
+        "standard": "ماذا أفعل؟",
+        "noteAr": "بتتقال للمفرد وللجمع، والسياق بيوضّح",
+        "note": "Works for 'I' and 'we'; context makes it clear",
+        "example": "العربية عطلت، نعمل إيه دلوقت؟"
+      },
+      {
+        "id": "famous.ya_gada3",
+        "text": "يا جدع",
+        "english": "Hey man",
+        "standard": "يا صديقي",
+        "noteAr": "نداء شبابي مشهور في البحيرة وإسكندرية",
+        "note": "A young people's call heard in Beheira and Alexandria",
+        "example": "تعالى يا جدع نشرب شاي",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.qawi",
+        "text": "قوي",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "بالقاف زي إسكندرية",
+        "note": "With the Q, like Alexandria",
+        "example": "الرز طالع حلو قوي",
+        "concept": "very"
+      },
+      {
+        "id": "famous.el_gheet",
+        "text": "الغيط",
+        "english": "The field",
+        "standard": "الحقل",
+        "noteAr": "البحيرة أرض زراعية واسعة، والغيط في كل حكاية",
+        "note": "Beheira is wide farmland, and the field is in every story",
+        "example": "نروح الغيط بدري قبل الحرّ"
+      },
+      {
+        "id": "famous.foot_3alayya",
+        "text": "فوت عليّا",
+        "english": "Drop by my place",
+        "standard": "مُرّ عليّ",
+        "noteAr": "عزومة بسيطة من غير تكليف",
+        "note": "A simple, easy invitation",
+        "example": "لما تيجي البلد فوت عليّا"
+      },
+      {
+        "id": "famous.el_gama3a",
+        "text": "الجماعة",
+        "english": "The folks",
+        "standard": "الأهل",
+        "noteAr": "أهل البيت كلهم في كلمة واحدة",
+        "note": "The whole household in one word",
+        "example": "سلّملي على الجماعة"
+      },
+      {
+        "id": "famous.kattar_kheirak",
+        "text": "كتّر خيرك",
+        "english": "Thanks",
+        "standard": "شكرًا",
+        "noteAr": "شكر ريفي فيه دعاء",
+        "note": "Country thanks with a blessing",
+        "example": "كتّر خيرك على الوكلة الحلوة",
+        "concept": "thanks"
+      },
+      {
+        "id": "famous.e7na_nas_baseeta",
+        "text": "إحنا ناس بسيطة",
+        "english": "We're simple folks",
+        "standard": "نحن أناس بسطاء",
+        "noteAr": "تواضع قبل ما يقدّموا الأكل، والأكل بيبقى كتير جدًّا",
+        "note": "Modesty before serving food, and then the food is a feast",
+        "example": "إحنا ناس بسيطة، اللي موجود ده"
+      },
+      {
+        "id": "famous.ya_wad",
+        "text": "يا واد",
+        "english": "Hey kid",
+        "standard": "يا ولد",
+        "noteAr": "نداء للصغيّر، أو بين الصحاب بهزار",
+        "note": "Calling a youngster, or a friend in jest",
+        "example": "يا واد هات الشاي من جوّه"
+      }
+    ],
+    "dmt": [
+      {
+        "id": "famous.ya_baladeena",
+        "text": "يا بلدينا",
+        "english": "Hey, fellow townsman",
+        "standard": "يا ابن بلدي",
+        "noteAr": "نداء لأي حد من نفس البلد، فيه ألفة وقرب",
+        "note": "Calling someone from your own town, full of closeness",
+        "example": "إنت من دمياط؟ أهلًا يا بلدينا",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.el_warsha",
+        "text": "الورشة",
+        "english": "The workshop",
+        "standard": "المصنع الصغير",
+        "noteAr": "دمياط مدينة شغل، وفي كل شارع ورشة",
+        "note": "Damietta is a working city with a workshop on every street",
+        "example": "بعد المدرسة بنروح الورشة نتعلّم الصنعة"
+      },
+      {
+        "id": "famous.el_mobilia",
+        "text": "الموبيليا الدمياطي",
+        "english": "Damietta furniture",
+        "standard": "الأثاث الدمياطي",
+        "noteAr": "أشهر أثاث في مصر، وأي عريس بيدوّر عليه",
+        "note": "Egypt's best-known furniture; every bride and groom looks for it",
+        "example": "العرسان نازلين دمياط ينقّوا الموبيليا"
+      },
+      {
+        "id": "famous.ras_el_bar",
+        "text": "نصيّف في راس البر",
+        "english": "Let's spend summer in Ras El Bar",
+        "standard": "لنقضِ الصيف في رأس البر",
+        "noteAr": "مصيف دمياط المشهور عند ملتقى النيل بالبحر",
+        "note": "Damietta's famous resort where the Nile meets the sea",
+        "example": "الصيف ده نصيّف في راس البر زي كل سنة"
+      },
+      {
+        "id": "famous.el_meshabbek",
+        "text": "المشبّك",
+        "english": "Mishabbek (syrup sweets)",
+        "standard": "حلوى المشبّك",
+        "noteAr": "حلويات دمياط مشهورة، والمشبّك أشهرها",
+        "note": "Damietta sweets are famous, and mishabbek leads the list",
+        "example": "ماترجعش من دمياط من غير علبة مشبّك"
+      },
+      {
+        "id": "famous.edak_ma3aya",
+        "text": "إيدك معايا",
+        "english": "Give me a hand",
+        "standard": "ساعدني",
+        "noteAr": "طلب مساعدة بين الناس اللي بتشتغل سوا",
+        "note": "Asking for help among people working together",
+        "example": "إيدك معايا نشيل الترابيزة دي",
+        "concept": "beg"
+      },
+      {
+        "id": "famous.3ala_mahlak",
+        "text": "على مهلك",
+        "english": "Take it easy",
+        "standard": "تمهّل",
+        "noteAr": "لما حد مستعجل أو متضايق",
+        "note": "When someone is in a rush or upset",
+        "example": "على مهلك، الشغل مش هيهرب",
+        "concept": "dont_worry"
+      },
+      {
+        "id": "famous.el_shoghl_mesh_3eib",
+        "text": "الشغل مش عيب",
+        "english": "Work is no shame",
+        "standard": "العمل ليس عيبًا",
+        "noteAr": "قاعدة دمياطية، الصغيّر والكبير بيشتغل",
+        "note": "A Damietta rule: young and old both work",
+        "example": "اشتغل أي حاجة، الشغل مش عيب"
+      },
+      {
+        "id": "famous.qawi",
+        "text": "قوي",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "بالقاف زي أغلب الدلتا",
+        "note": "With the Q, like most of the Delta",
+        "example": "المشبّك ده حلو قوي",
+        "concept": "very"
+      },
+      {
+        "id": "famous.3awez",
+        "text": "عاوز",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "بالواو زي الريف",
+        "note": "With a W, like the countryside",
+        "example": "عاوز أشتري أوضة سفرة",
+        "concept": "want"
+      }
+    ],
+    "kfs": [
+      {
+        "id": "famous.ya_rayyes",
+        "text": "يا ريّس",
+        "english": "Captain / Boss",
+        "standard": "يا قائد",
+        "noteAr": "لقب ريّس المركب عند الصيّادين، وبقى نداء لأي حد",
+        "note": "The fishermen's title for a boat captain, now used for anyone",
+        "example": "صباح الخير يا ريّس، الصيد عامل إيه؟",
+        "concept": "sir"
+      },
+      {
+        "id": "famous.el_balti",
+        "text": "البلطي",
+        "english": "Tilapia",
+        "standard": "سمك البلطي",
+        "noteAr": "كفر الشيخ بلد السمك، والبلطي ملك السفرة",
+        "note": "Kafr El Sheikh is fish country, and tilapia rules the table",
+        "example": "النهاردة الغدا بلطي مشوي"
+      },
+      {
+        "id": "famous.el_borollos",
+        "text": "بحيرة البرلس",
+        "english": "Lake Burullus",
+        "standard": "بحيرة البرلس",
+        "noteAr": "أشهر معالم كفر الشيخ ومصدر رزق الصيّادين",
+        "note": "Kafr El Sheikh's best-known landmark and the fishermen's living",
+        "example": "أبويا بيصطاد في البرلس من زمان"
+      },
+      {
+        "id": "famous.yalla_nestad",
+        "text": "يلّا نصطاد",
+        "english": "Let's go fishing",
+        "standard": "هيّا نصطاد",
+        "noteAr": "الصيد هنا شغل وفسحة في نفس الوقت",
+        "note": "Fishing here is both a job and a day out",
+        "example": "يلّا نصطاد بدري قبل الشمس",
+        "concept": "lets_go"
+      },
+      {
+        "id": "famous.el_roz_el_me3ammar",
+        "text": "الرز المعمّر",
+        "english": "Baked rice",
+        "standard": "الأرز المعمّر",
+        "noteAr": "أكلة ريفية بالرز واللبن في الفرن، وكفر الشيخ من أشهر بلاد الرز",
+        "note": "A country dish of rice and milk baked in the oven; Kafr El Sheikh is rice country",
+        "example": "أمّي عاملة رز معمّر النهاردة"
+      },
+      {
+        "id": "famous.el_markeb",
+        "text": "المركب",
+        "english": "The boat",
+        "standard": "القارب",
+        "noteAr": "المركب بيت تاني للصيّاد",
+        "note": "For a fisherman the boat is a second home",
+        "example": "المركب طالع الفجر وراجع المغرب"
+      },
+      {
+        "id": "famous.qawi",
+        "text": "قوي",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "بالقاف زي أغلب الدلتا",
+        "note": "With the Q, like most of the Delta",
+        "example": "السمك طازة قوي النهاردة",
+        "concept": "very"
+      },
+      {
+        "id": "famous.ezzayak_ya_rayyes",
+        "text": "إزيّك يا ريّس؟",
+        "english": "How are you, captain?",
+        "standard": "كيف حالك يا قائد؟",
+        "noteAr": "سلام صباحي مشهور على المينا",
+        "note": "A morning greeting heard at the harbor",
+        "example": "إزيّك يا ريّس؟ البحر عامل إيه؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.ma_ta2la2sh",
+        "text": "ما تقلقش",
+        "english": "Don't worry",
+        "standard": "لا تقلق",
+        "noteAr": "طمأنة وقت الشدّة",
+        "note": "Reassurance when things get hard",
+        "example": "ما تقلقش، المركب هيرجع قبل الليل",
+        "concept": "dont_worry"
+      },
+      {
+        "id": "famous.kattar_kheirak",
+        "text": "كتّر خيرك",
+        "english": "Thanks",
+        "standard": "شكرًا",
+        "noteAr": "شكر ريفي فيه دعاء",
+        "note": "Country thanks with a blessing",
+        "example": "كتّر خيرك يا ريّس، السمك تحفة",
+        "concept": "thanks"
+      }
+    ],
+    "sai": [
+      {
+        "id": "famous.ya_wad_3ammi",
+        "text": "يا ود عمّي",
+        "english": "Hey cousin",
+        "standard": "يا ابن عمّي",
+        "noteAr": "نداء محبّة لأي راجل، حتى لو مش قريبك فعلًا",
+        "note": "Warm way to call any man, related or not",
+        "example": "تعالى يا ود عمّي اشرب الشاي",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.gawi",
+        "text": "جوي",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "الصعيدي بينطق القاف جيم مصرية، ودي أول حاجة بتلفت الودان",
+        "note": "Sa'idis say Q as a hard G; it's the first thing ears notice",
+        "example": "الحرّ جوي النهارده",
+        "concept": "very"
+      },
+      {
+        "id": "famous.delwak",
+        "text": "دلوك",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "أقصر من «دلوقتي»، ومشهورة في الصعيد كله",
+        "note": "Shorter than Cairo's dilwa'ti, heard all over Upper Egypt",
+        "example": "هجيلك دلوك حالًا",
+        "concept": "now"
+      },
+      {
+        "id": "famous.3ad",
+        "text": "عاد",
+        "english": "Well then / So",
+        "standard": "إذن",
+        "noteAr": "كلمة بتدي الجملة طعم صعيدي وتأكيد",
+        "note": "A small word that gives the sentence Sa'idi flavor and emphasis",
+        "example": "وهنعمل إيه عاد؟"
+      },
+      {
+        "id": "famous.keef",
+        "text": "كيف؟",
+        "english": "How?",
+        "standard": "كيف؟",
+        "noteAr": "الصعيد بيستعمل «كيف» بدل «إزاي»",
+        "note": "Upper Egypt says 'keef' instead of Cairo's 'ezzay'",
+        "example": "كيف حالك يا خوي؟",
+        "concept": "how"
+      },
+      {
+        "id": "famous.ya_boy",
+        "text": "يا بوي!",
+        "english": "Oh my!",
+        "standard": "يا للعجب!",
+        "noteAr": "تعجّب أو خضّة، أصلها «يا أبوي»",
+        "note": "Surprise or a little shock; it literally means 'oh father'",
+        "example": "يا بوي! القطر فاتني"
+      },
+      {
+        "id": "famous.zein",
+        "text": "زين",
+        "english": "Good / Fine",
+        "standard": "جيّد",
+        "noteAr": "كلمة عربية قديمة لسه عايشة في الصعيد",
+        "note": "An old Arabic word still alive in Upper Egypt",
+        "example": "المحصول زين السنة دي",
+        "concept": "good"
+      },
+      {
+        "id": "famous.ya_khoy",
+        "text": "يا خوي",
+        "english": "My brother",
+        "standard": "يا أخي",
+        "noteAr": "نداء أخوي لأي حد بتحترمه",
+        "note": "A brotherly call for anyone you respect",
+        "example": "تسلم يا خوي، مش هنساهالك",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.mashy_el_hal",
+        "text": "ماشي الحال",
+        "english": "Things are fine",
+        "standard": "الأمور تسير بخير",
+        "noteAr": "ردّ متواضع على «عامل إيه؟»",
+        "note": "A modest answer to 'how are you doing?'",
+        "example": "الحمد لله، ماشي الحال",
+        "concept": "how_is_it_going"
+      },
+      {
+        "id": "famous.el_dar",
+        "text": "الدار",
+        "english": "The house",
+        "standard": "البيت",
+        "noteAr": "في الصعيد والريف البيت اسمه الدار",
+        "note": "In Upper Egypt and the countryside, home is 'el-dar'",
+        "example": "اتفضّل الدار دارك",
+        "concept": "house"
+      }
+    ],
+    "sin": [
+      {
+        "id": "famous.hala_wallah",
+        "text": "هلا والله",
+        "english": "Hello and welcome!",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب بدوي حارّ بالضيف",
+        "note": "A warm Bedouin welcome for a guest",
+        "example": "هلا والله بالضيف، اتفضّل",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.hayyak_allah",
+        "text": "حيّاك الله",
+        "english": "God greet you (welcome)",
+        "standard": "حيّاك الله",
+        "noteAr": "ترحيب ودعاء في نفس الوقت",
+        "note": "A welcome and a blessing at once",
+        "example": "حيّاك الله، الشاي جاهز",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.wesh",
+        "text": "وش؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال عند بدو سيناء، زي أهل الجزيرة",
+        "note": "The question word of Sinai's Bedouin, like in Arabia",
+        "example": "وش العلوم؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.wesh_tabi",
+        "text": "وش تبي؟",
+        "english": "What do you want?",
+        "standard": "ماذا تريد؟",
+        "noteAr": "سؤال مباشر لما تعرض مساعدة",
+        "note": "A direct question when offering help",
+        "example": "وش تبي من السوق؟",
+        "concept": "what_want"
+      },
+      {
+        "id": "famous.abshir",
+        "text": "أبشر",
+        "english": "Consider it done",
+        "standard": "سيتمّ ذلك",
+        "noteAr": "وعد بالمساعدة من غير تردّد",
+        "note": "A promise to help, no hesitation",
+        "example": "أبشر، بكرة الصبح تلاقيها عندك",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.zein",
+        "text": "زين",
+        "english": "Good",
+        "standard": "جيّد",
+        "noteAr": "موافقة ومدح بكلمة واحدة",
+        "note": "Agreement and praise in one word",
+        "example": "القهوة زينة اليوم",
+        "concept": "good"
+      },
+      {
+        "id": "famous.ya_khoy",
+        "text": "يا خوي",
+        "english": "My brother",
+        "standard": "يا أخي",
+        "noteAr": "نداء أخوي بين الرجال",
+        "note": "A brotherly call between men",
+        "example": "وين رايح يا خوي؟",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.3ala_rasi",
+        "text": "على راسي",
+        "english": "Gladly (on my head)",
+        "standard": "بكلّ سرور",
+        "noteAr": "الطلب فوق راسي، يعني بكل احترام",
+        "note": "Your request is on my head, meaning with full respect",
+        "example": "طلبك على راسي",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.e",
+        "text": "إي",
+        "english": "Yes",
+        "standard": "نعم",
+        "noteAr": "موافقة قصيرة جدًّا",
+        "note": "A very short yes",
+        "example": "إي، أنا جاي معك",
+        "concept": "yes"
+      },
+      {
+        "id": "famous.sawalef",
+        "text": "سوالف",
+        "english": "Stories / Chit-chat",
+        "standard": "أحاديث وحكايات",
+        "noteAr": "قعدة السوالف حول النار جزء من الليل البدوي",
+        "note": "Swapping stories around the fire is part of a Bedouin night",
+        "example": "خلّينا نقعد نتبادل السوالف"
+      }
+    ],
+    "dam": [
+      {
+        "id": "famous.shu",
+        "text": "شو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "أشهر كلمة شامية، وبتدخل في كل سؤال",
+        "note": "The most famous Levantine word, in almost every question",
+        "example": "شو بدّك تاكل اليوم؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.halla2",
+        "text": "هلّق",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "أصلها «هذا الوقت»، والشوام بيقولوها بهمزة بدل القاف",
+        "note": "From 'this time'; Damascenes say the Q as a glottal stop",
+        "example": "هلّق جاي، استنّاني شوي",
+        "concept": "now"
+      },
+      {
+        "id": "famous.baddi",
+        "text": "بدّي",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "كلمة الطلب الشامية، أصلها «بودّي»",
+        "note": "The Levantine 'I want', from 'by my wish'",
+        "example": "بدّي فنجان قهوة من فضلك",
+        "concept": "want"
+      },
+      {
+        "id": "famous.ya_reit",
+        "text": "يا ريت",
+        "english": "I wish",
+        "standard": "يا ليت",
+        "noteAr": "أمنية بسيطة بنبرة حلوة",
+        "note": "A simple wish with a sweet tone",
+        "example": "يا ريت نرجع عالشام بالصيف",
+        "concept": "i_wish"
+      },
+      {
+        "id": "famous.mnee7",
+        "text": "منيح",
+        "english": "Good",
+        "standard": "جيّد",
+        "noteAr": "كلمة المدح الشامية الأشهر",
+        "note": "The best-known Levantine 'good'",
+        "example": "الأكل منيح كتير هون",
+        "concept": "good"
+      },
+      {
+        "id": "famous.yaani",
+        "text": "يعني",
+        "english": "I mean / So-so",
+        "standard": "أعني",
+        "noteAr": "بتملا بيها الكلام، ولوحدها ممكن تعني «نص نص»",
+        "note": "A filler word; on its own it can mean 'so-so'",
+        "example": "كيف الفيلم؟ يعني، مو هالقد",
+        "concept": "zaama"
+      },
+      {
+        "id": "famous.tekram_3aynak",
+        "text": "تكرم عينك",
+        "english": "Gladly (for your eyes)",
+        "standard": "بكلّ سرور",
+        "noteAr": "ردّ راقي على أي طلب، مشهور في المسلسلات الشامية",
+        "note": "A classy reply to any request, famous from Syrian dramas",
+        "example": "تكرم عينك، بكرا بجيبلك ياه",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.ya_zalameh",
+        "text": "يا زلمة",
+        "english": "Hey man",
+        "standard": "يا رجل",
+        "noteAr": "نداء شامي بين الشباب، وممكن يبقى تعجّب",
+        "note": "A Levantine call between guys; can also show surprise",
+        "example": "يا زلمة وينك من زمان؟",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.kteer",
+        "text": "كتير",
+        "english": "Very / A lot",
+        "standard": "جدًّا",
+        "noteAr": "في الشام «كتير» بتقوم بشغل «جدًّا» بعد الصفة",
+        "note": "In the Levant 'kteer' does the job of 'very' after an adjective",
+        "example": "هالمحل حلو كتير",
+        "concept": "very"
+      },
+      {
+        "id": "famous.hek",
+        "text": "هيك",
+        "english": "Like this / So",
+        "standard": "هكذا",
+        "noteAr": "بتشرح بيها أو تقفل بيها الكلام",
+        "note": "Used to explain, or to wrap up a point",
+        "example": "هيك الحياة، شو بدنا نعمل؟",
+        "concept": "like_this"
+      },
+      {
+        "id": "famous.ya_3omri",
+        "text": "يا عمري",
+        "english": "My dear (my life)",
+        "standard": "يا عزيزي",
+        "noteAr": "تدليل للصغار والأحباب والأصحاب",
+        "note": "Affection for kids, loved ones and friends",
+        "example": "تعال يا عمري، لا تزعل",
+        "concept": "dear"
+      },
+      {
+        "id": "famous.ma_fi_mushkileh",
+        "text": "ما في مشكلة",
+        "english": "No problem",
+        "standard": "لا مشكلة",
+        "noteAr": "بتهوّن أي حاجة",
+        "note": "Makes anything feel easy",
+        "example": "تأخّرت؟ ما في مشكلة",
+        "concept": "no_problem"
+      }
+    ],
+    "alp": [
+      {
+        "id": "famous.shlonak",
+        "text": "شلونك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "حلب بتقول «شلونك» زي العراق، بعكس باقي الشام",
+        "note": "Aleppo says 'shlonak' like Iraq, unlike the rest of the Levant",
+        "example": "شلونك يا خيي، شلون الأهل؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.ya_khayyi",
+        "text": "يا خيّي",
+        "english": "My brother",
+        "standard": "يا أخي",
+        "noteAr": "نداء حلبي مشهور لأي صاحب",
+        "note": "A well-known Aleppo call for any friend",
+        "example": "لا تشيل هم يا خيّي",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.2addeish",
+        "text": "قدّيش؟",
+        "english": "How much?",
+        "standard": "كم؟",
+        "noteAr": "سؤال السعر في أسواق حلب القديمة",
+        "note": "The price question in Aleppo's old markets",
+        "example": "قدّيش هالصابونة؟",
+        "concept": "how_much"
+      },
+      {
+        "id": "famous.shu",
+        "text": "شو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال الشامية",
+        "note": "The Levantine question word",
+        "example": "شو عم تعمل؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.sabun_7alabi",
+        "text": "صابون حلبي",
+        "english": "Aleppo soap",
+        "standard": "صابون حلبي",
+        "noteAr": "من أشهر حاجات حلب بالعالم، معمول من زيت الزيتون والغار",
+        "note": "One of Aleppo's best-known products, made from olive and laurel oil",
+        "example": "جبتلك صابون حلبي أصلي"
+      },
+      {
+        "id": "famous.kebbeh",
+        "text": "الكبّة",
+        "english": "Kibbeh",
+        "standard": "الكبّة",
+        "noteAr": "حلب مشهورة بأنواع كتير من الكبّة، والأكل هناك فخر",
+        "note": "Aleppo is famous for many kinds of kibbeh; food there is a point of pride",
+        "example": "اليوم الغدا كبّة سفرجلية"
+      },
+      {
+        "id": "famous.halla2",
+        "text": "هلّق",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "زي باقي الشام",
+        "note": "Like the rest of the Levant",
+        "example": "هلّق بنطلع عالسوق",
+        "concept": "now"
+      },
+      {
+        "id": "famous.3ala_rasi",
+        "text": "على راسي",
+        "english": "Gladly",
+        "standard": "بكلّ سرور",
+        "noteAr": "الطلب فوق راسي، يعني بكل احترام",
+        "note": "Your request is on my head, meaning with full respect",
+        "example": "على راسي، هلّق ببعتلك ياه",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.kteer",
+        "text": "كتير",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "بعد الصفة زي باقي الشام",
+        "note": "After the adjective, like the rest of the Levant",
+        "example": "الكبّة طيبة كتير",
+        "concept": "very"
+      },
+      {
+        "id": "famous.yalla",
+        "text": "يلّا",
+        "english": "Come on / Let's go",
+        "standard": "هيّا",
+        "noteAr": "كلمة بتحرّك أي حد وأي حاجة",
+        "note": "A word that gets anyone moving",
+        "example": "يلّا يا شباب، تأخّرنا",
+        "concept": "lets_go"
+      }
+    ],
+    "leb": [
+      {
+        "id": "famous.kifak",
+        "text": "كيفك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "أشهر سؤال لبناني، وللبنت «كيفكِ»",
+        "note": "The famous Lebanese greeting; to a woman it's 'kifik'",
+        "example": "كيفك؟ شو الأخبار؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.hi_kifak_ca_va",
+        "text": "هاي، كيفك، سا ڤا؟",
+        "english": "Hi, how are you, ok?",
+        "standard": "مرحبًا، كيف حالك؟",
+        "noteAr": "أشهر تحية بثلاث لغات، والناس بتهزّر بيها على اللبنانيين بحبّ",
+        "note": "The famous three-language greeting that people tease Lebanese about, kindly",
+        "example": "هاي، كيفك، سا ڤا؟ شو عم تعمل؟",
+        "concept": "hello"
+      },
+      {
+        "id": "famous.yalla_bye",
+        "text": "يلّا باي",
+        "english": "Okay, bye!",
+        "standard": "مع السلامة",
+        "noteAr": "وداع لبناني مشهور بيخلط العربي والإنجليزي",
+        "note": "A famous Lebanese goodbye mixing Arabic and English",
+        "example": "يلّا باي، منحكي بكرا",
+        "concept": "goodbye"
+      },
+      {
+        "id": "famous.shu",
+        "text": "شو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال الشامية، وممكن تبقى لوحدها تعجّب",
+        "note": "The Levantine 'what', alone it can show surprise",
+        "example": "شو عم تحكي؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.ya_3eini",
+        "text": "يا عيني",
+        "english": "My dear (my eye)",
+        "standard": "يا عزيزي",
+        "noteAr": "تدليل لبناني بيتقال لأي حد بحبّ",
+        "note": "A Lebanese term of affection for anyone you like",
+        "example": "تفضّل يا عيني، اقعد",
+        "concept": "dear"
+      },
+      {
+        "id": "famous.ya_khayye",
+        "text": "يا خيّي",
+        "english": "Bro",
+        "standard": "يا أخي",
+        "noteAr": "نداء أخوي، وممكن يبقى تنهيدة زهق خفيفة",
+        "note": "Brotherly, or a little sigh of 'oh man'",
+        "example": "يا خيّي، زحمة السير ما بتخلص",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.ma3leish",
+        "text": "معليش",
+        "english": "Never mind",
+        "standard": "لا بأس",
+        "noteAr": "اعتذار أو تهوين",
+        "note": "A sorry, or 'it's fine'",
+        "example": "معليش، منرجع منحاول",
+        "concept": "never_mind"
+      },
+      {
+        "id": "famous.merci",
+        "text": "ميرسي",
+        "english": "Thanks",
+        "standard": "شكرًا",
+        "noteAr": "اللبنانيين بيقولوها بالفرنسي أكتر من «شكرًا»",
+        "note": "Lebanese use the French word more than 'shukran'",
+        "example": "ميرسي كتير، لطيف منك",
+        "concept": "thanks"
+      },
+      {
+        "id": "famous.halla2",
+        "text": "هلّق",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "زي باقي الشام",
+        "note": "Like the rest of the Levant",
+        "example": "هلّق بوصل، ربع ساعة",
+        "concept": "now"
+      },
+      {
+        "id": "famous.bte7ke_3arabe",
+        "text": "بتحكي عربي؟",
+        "english": "Do you speak Arabic?",
+        "standard": "هل تتكلّم العربية؟",
+        "noteAr": "الكلام في لبنان اسمه «حكي»",
+        "note": "In Lebanon, talking is called 'haki'",
+        "example": "إنت بتحكي عربي منيح!"
+      },
+      {
+        "id": "famous.walaw",
+        "text": "ولو!",
+        "english": "Of course! / Don't mention it",
+        "standard": "لا شكر على واجب",
+        "noteAr": "ردّ على الشكر، أو استغراب خفيف",
+        "note": "A reply to thanks, or mild 'come on!'",
+        "example": "شكرًا عالمساعدة. ولو، ولو!",
+        "concept": "with_pleasure"
+      }
+    ],
+    "psu": [
+      {
+        "id": "famous.shu_ya_zalameh",
+        "text": "شو يا زلمة؟",
+        "english": "What's up, man?",
+        "standard": "ما الأمر يا رجل؟",
+        "noteAr": "سؤال ودّي بين الشباب",
+        "note": "A friendly question between guys",
+        "example": "شو يا زلمة، وين مختفي؟",
+        "concept": "whats_up"
+      },
+      {
+        "id": "famous.ya_zalameh",
+        "text": "يا زلمة",
+        "english": "Hey man",
+        "standard": "يا رجل",
+        "noteAr": "نداء مشهور في فلسطين والأردن، وكمان للتعجّب",
+        "note": "A well-known call in Palestine and Jordan, also for surprise",
+        "example": "يا زلمة مش معقول!",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.wallah",
+        "text": "والله؟",
+        "english": "Really? (by God)",
+        "standard": "حقًّا؟",
+        "noteAr": "بتتقال للتأكيد أو للسؤال باستغراب",
+        "note": "Used to swear something is true, or to ask in surprise",
+        "example": "والله؟ نجحت؟ مبروك!",
+        "concept": "really"
+      },
+      {
+        "id": "famous.halla2",
+        "text": "هلّق",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "زي باقي الشام",
+        "note": "Like the rest of the Levant",
+        "example": "هلّق بنروح عالبلد",
+        "concept": "now"
+      },
+      {
+        "id": "famous.baddi",
+        "text": "بدّي",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "كلمة الطلب الشامية",
+        "note": "The Levantine 'I want'",
+        "example": "بدّي كنافة نابلسية",
+        "concept": "want"
+      },
+      {
+        "id": "famous.kunafa_nabulsiyye",
+        "text": "كنافة نابلسية",
+        "english": "Nablus kunafa",
+        "standard": "كنافة نابلسية",
+        "noteAr": "أشهر حلوى فلسطينية، بالجبنة النابلسية",
+        "note": "The most famous Palestinian sweet, made with Nabulsi cheese",
+        "example": "بعد الغدا بدنا كنافة نابلسية سخنة"
+      },
+      {
+        "id": "famous.3ala_rasi",
+        "text": "على راسي",
+        "english": "Gladly",
+        "standard": "بكلّ سرور",
+        "noteAr": "الطلب فوق راسي",
+        "note": "Your request is on my head",
+        "example": "على راسي، بكرا بتكون عندك",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.ya_7aram",
+        "text": "يا حرام",
+        "english": "Poor thing / What a pity",
+        "standard": "يا للأسف",
+        "noteAr": "تعاطف لما تسمع خبر مش حلو",
+        "note": "Sympathy when you hear bad news",
+        "example": "يا حرام، الله يشفيه",
+        "concept": "poor_thing"
+      },
+      {
+        "id": "famous.mabsoot",
+        "text": "مبسوط",
+        "english": "Happy",
+        "standard": "سعيد",
+        "noteAr": "ردّ معتاد على «كيفك»",
+        "note": "A usual reply to 'how are you?'",
+        "example": "الحمد لله، مبسوط كتير",
+        "concept": "good"
+      },
+      {
+        "id": "famous.yalla",
+        "text": "يلّا",
+        "english": "Let's go",
+        "standard": "هيّا",
+        "noteAr": "للاستعجال أو لبدء أي حاجة",
+        "note": "To hurry up or start anything",
+        "example": "يلّا عالبيت، الدنيا ليل",
+        "concept": "lets_go"
+      }
+    ],
+    "psr": [
+      {
+        "id": "famous.tsheefak",
+        "text": "تشيفك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "الفلاحي بيقلب الكاف «تش»، ودي أشهر علاماته",
+        "note": "Rural Palestinian turns K into 'tsh', its best-known mark",
+        "example": "تشيفك يا خال؟ تشيف الأهل؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.hassa",
+        "text": "هسّا",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي في الريف",
+        "note": "The countryside word for right now",
+        "example": "هسّا بنروح عالزيتون",
+        "concept": "now"
+      },
+      {
+        "id": "famous.ya_khal",
+        "text": "يا خال",
+        "english": "Uncle!",
+        "standard": "يا خالي",
+        "noteAr": "نداء احترام لأي راجل أكبر منك",
+        "note": "A respectful call for any older man",
+        "example": "تفضّل يا خال، الشاي جاهز",
+        "concept": "sir"
+      },
+      {
+        "id": "famous.heetsh",
+        "text": "هيتش",
+        "english": "Like this",
+        "standard": "هكذا",
+        "noteAr": "«هيك» بالنطق الفلاحي",
+        "note": "'Heek' with the rural 'tsh' sound",
+        "example": "اعملها هيتش، أسهل",
+        "concept": "like_this"
+      },
+      {
+        "id": "famous.mawsam_el_zeitun",
+        "text": "موسم الزيتون",
+        "english": "Olive season",
+        "standard": "موسم الزيتون",
+        "noteAr": "العيلة كلّها بتطلع تقطف سوا، وده أحلى موسم في السنة",
+        "note": "The whole family goes out to pick together, the best season of the year",
+        "example": "بموسم الزيتون كل القرية بتطلع عالأرض"
+      },
+      {
+        "id": "famous.yamma",
+        "text": "يمّا",
+        "english": "Mom",
+        "standard": "يا أمّي",
+        "noteAr": "نداء الأم بحنيّة، وكمان تعجّب «يمّا!»",
+        "note": "Calling mom tenderly, also 'oh my!'",
+        "example": "يمّا، الأكل زاكي كتير",
+        "concept": "mom"
+      },
+      {
+        "id": "famous.yaba",
+        "text": "يابا",
+        "english": "Dad",
+        "standard": "يا أبي",
+        "noteAr": "نداء الأب في الريف",
+        "note": "Calling dad in the countryside",
+        "example": "يابا وين حاطط المفتاح؟",
+        "concept": "dad"
+      },
+      {
+        "id": "famous.zaki",
+        "text": "زاكي",
+        "english": "Tasty",
+        "standard": "لذيذ",
+        "noteAr": "مدح الأكل في فلسطين",
+        "note": "How Palestinians praise food",
+        "example": "المسخّن زاكي كتير",
+        "concept": "good"
+      },
+      {
+        "id": "famous.tsalb",
+        "text": "تشلب",
+        "english": "Dog",
+        "standard": "كلب",
+        "noteAr": "مثال مشهور على قلب الكاف «تش»، الناس بتضحك عليه بحبّ",
+        "note": "A famous example of the K-to-tsh switch that people smile at",
+        "example": "التشلب بيحرس الحاكورة"
+      },
+      {
+        "id": "famous.ya_3ammi",
+        "text": "يا عمّي",
+        "english": "My uncle",
+        "standard": "يا عمّي",
+        "noteAr": "نداء لأي راجل كبير، أو بين الأصحاب بهزار",
+        "note": "Any older man, or friends in jest",
+        "example": "اسمع يا عمّي، القصة طويلة",
+        "concept": "sir"
+      }
+    ],
+    "jor": [
+      {
+        "id": "famous.hassa3",
+        "text": "هسّع",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "أشهر كلمة أردنية، والناس بتعرف الأردني منها",
+        "note": "The most famous Jordanian word; it gives a Jordanian away instantly",
+        "example": "هسّع باجي، خمس دقايق",
+        "concept": "now"
+      },
+      {
+        "id": "famous.ya_zalameh",
+        "text": "يا زلمة",
+        "english": "Hey man",
+        "standard": "يا رجل",
+        "noteAr": "نداء أردني معروف، وكمان للتعجّب",
+        "note": "A well-known Jordanian call, also for surprise",
+        "example": "يا زلمة خلّينا نروح",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.nashmi",
+        "text": "نشمي",
+        "english": "Brave and noble",
+        "standard": "شهم شجاع",
+        "noteAr": "أعلى مدح للرجل في الأردن، والبنت «نشمية»",
+        "note": "Top praise for a man in Jordan; for a woman 'nashmiyyeh'",
+        "example": "إنت نشمي والله، ما قصّرت"
+      },
+      {
+        "id": "famous.ya_hala",
+        "text": "يا هلا",
+        "english": "Welcome!",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب بدوي أردني، وممكن يتكرّر «يا هلا والله»",
+        "note": "A Bedouin-style Jordanian welcome, often doubled",
+        "example": "يا هلا والله، نوّرت",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.mansaf",
+        "text": "المنسف",
+        "english": "Mansaf",
+        "standard": "المنسف",
+        "noteAr": "الأكلة الوطنية الأردنية، لحم ورز وجميد",
+        "note": "Jordan's national dish of lamb, rice and jameed",
+        "example": "الجمعة عزايم على منسف عند سيدي"
+      },
+      {
+        "id": "famous.ya_ghali",
+        "text": "يا غالي",
+        "english": "My dear",
+        "standard": "يا عزيزي",
+        "noteAr": "نداء لأي حد عزيز عليك",
+        "note": "Calling anyone dear to you",
+        "example": "شكرًا يا غالي",
+        "concept": "dear"
+      },
+      {
+        "id": "famous.baddi",
+        "text": "بدّي",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "كلمة الطلب الشامية",
+        "note": "The Levantine 'I want'",
+        "example": "بدّي أروح عالبحر الميت",
+        "concept": "want"
+      },
+      {
+        "id": "famous.wallah_ma_bteshrab",
+        "text": "والله لتشرب",
+        "english": "You must have some (I insist)",
+        "standard": "أقسم أن تشرب",
+        "noteAr": "إصرار الكرم، ورفضه صعب جدًّا",
+        "note": "Insistent hospitality that is very hard to refuse",
+        "example": "والله لتشرب القهوة قبل ما تروح"
+      },
+      {
+        "id": "famous.mish_mushkileh",
+        "text": "مش مشكلة",
+        "english": "No problem",
+        "standard": "لا مشكلة",
+        "noteAr": "بتهوّن أي حاجة",
+        "note": "Makes anything feel easy",
+        "example": "مش مشكلة، بنلحق",
+        "concept": "no_problem"
+      },
+      {
+        "id": "famous.shu_bik",
+        "text": "شو بك؟",
+        "english": "What's wrong?",
+        "standard": "ما بك؟",
+        "noteAr": "سؤال اهتمام لما تشوف حد مش مبسوط",
+        "note": "A caring question when someone looks down",
+        "example": "شو بك ساكت؟ احكيلي",
+        "concept": "whats_wrong"
+      }
+    ],
+    "bag": [
+      {
+        "id": "famous.shlonak",
+        "text": "شلونك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "أشهر سؤال عراقي، أصله «شنو لونك»",
+        "note": "The famous Iraqi greeting, from 'what's your colour'",
+        "example": "شلونك عيني؟ شلون الأهل؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.hwaya",
+        "text": "هواية",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة عراقية مميّزة للكمية",
+        "note": "A distinctly Iraqi word for 'lots'",
+        "example": "عندي شغل هواية اليوم",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.kullish",
+        "text": "كلّش",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "بتيجي قبل الصفة، زي «كلّش حلو»",
+        "note": "Comes before the adjective, like 'kullish helu'",
+        "example": "المسكوف كلّش طيّب",
+        "concept": "very"
+      },
+      {
+        "id": "famous.khosh",
+        "text": "خوش",
+        "english": "Good / Nice",
+        "standard": "جيّد",
+        "noteAr": "مدح عراقي مشهور، وبيتحط قبل الكلمة",
+        "note": "Famous Iraqi praise that goes before the noun",
+        "example": "هذا خوش ولد، مؤدّب",
+        "concept": "good"
+      },
+      {
+        "id": "famous.aku_maku",
+        "text": "أكو ماكو؟",
+        "english": "Any news?",
+        "standard": "ما الأخبار؟",
+        "noteAr": "«أكو» يعني يوجد، و«ماكو» لا يوجد، ومع بعض سؤال عن الأخبار",
+        "note": "'Aku' is 'there is', 'maku' 'there isn't'; together they ask for news",
+        "example": "أكو ماكو؟ شكو عدك؟",
+        "concept": "whats_up"
+      },
+      {
+        "id": "famous.shaku_maku",
+        "text": "شكو ماكو؟",
+        "english": "What's going on?",
+        "standard": "ماذا يحدث؟",
+        "noteAr": "أشهر تحية عراقية بين الأصحاب",
+        "note": "The best-known Iraqi greeting between friends",
+        "example": "هلو عيني، شكو ماكو؟",
+        "concept": "whats_up"
+      },
+      {
+        "id": "famous.3yooni",
+        "text": "عيوني",
+        "english": "My dear (my eyes)",
+        "standard": "يا عزيزي",
+        "noteAr": "تدليل عراقي بيتقال لأي حد، حتى البائع في السوق",
+        "note": "Iraqi affection for anyone, even a shopkeeper",
+        "example": "تدلّل عيوني، هسّة أجيبه",
+        "concept": "dear"
+      },
+      {
+        "id": "famous.tedallal",
+        "text": "تدلّل",
+        "english": "At your service",
+        "standard": "أمرك",
+        "noteAr": "ردّ كريم على أي طلب، يعني اطلب اللي إنت عايزه",
+        "note": "A generous reply to any request: ask for anything",
+        "example": "تدلّل، البيت بيتك",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.hassa",
+        "text": "هسّة",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي في العراق",
+        "note": "Iraq's word for right now",
+        "example": "هسّة أوصل، لا تروح",
+        "concept": "now"
+      },
+      {
+        "id": "famous.yem3awwad",
+        "text": "يمعوّد",
+        "english": "Hey man",
+        "standard": "يا صديقي",
+        "noteAr": "نداء بغدادي مشهور بين الشباب، وممكن للتعجّب كمان",
+        "note": "A famous Baghdadi call between guys, also for surprise",
+        "example": "يمعوّد شنو هالزحمة!",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.chai",
+        "text": "چاي",
+        "english": "Tea",
+        "standard": "شاي",
+        "noteAr": "العراقي بينطق الشين «چ»، والشاي ما بيبطّلش",
+        "note": "Iraqis say 'chai' with a 'ch', and the tea never stops",
+        "example": "خلّي نشرب استكان چاي بالهيل",
+        "concept": "tea"
+      }
+    ],
+    "mos": [
+      {
+        "id": "famous.eesh",
+        "text": "إيش؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "الموصلي بيقول «إيش» بدل «شنو» البغدادية",
+        "note": "Mosulis say 'eesh' instead of Baghdad's 'shinu'",
+        "example": "إيش تريد تأكل؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.qultu",
+        "text": "قُلتو",
+        "english": "I said",
+        "standard": "قلتُ",
+        "noteAr": "الموصلية من لهجات «قِلتو»، وبتحافظ على القاف",
+        "note": "Mosul is a 'qeltu' dialect that keeps the Q",
+        "example": "قُلتو لك تعال بكرة"
+      },
+      {
+        "id": "famous.ghah",
+        "text": "غاح",
+        "english": "He went (Mosul R)",
+        "standard": "ذهب",
+        "noteAr": "الموصلي بينطق الراء قريبة من الغين، فـ«راح» تبقى «غاح»، ودي أشهر علاماته",
+        "note": "Mosulis say R close to a French R, so \"rah\" sounds like \"ghah\", their best-known mark",
+        "example": "غاح للسوق وغجع بسُرعة"
+      },
+      {
+        "id": "famous.beshqad",
+        "text": "بشقد؟",
+        "english": "How much?",
+        "standard": "بكم؟",
+        "noteAr": "سؤال السعر في أسواق الموصل",
+        "note": "The price question in Mosul's markets",
+        "example": "بشقد كيلو الكبّة؟",
+        "concept": "how_much"
+      },
+      {
+        "id": "famous.kubbat_mosul",
+        "text": "كُبّة الموصل",
+        "english": "Mosul kibbeh",
+        "standard": "كبّة الموصل",
+        "noteAr": "كبّة مدوّرة وكبيرة، من أشهر أكلات العراق",
+        "note": "Big round kibbeh, one of Iraq's best-known dishes",
+        "example": "ما أطيب من كُبّة الموصل بالشتا"
+      },
+      {
+        "id": "famous.kullish",
+        "text": "كلّش",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "زي باقي العراق، قبل الصفة",
+        "note": "Like the rest of Iraq, before the adjective",
+        "example": "الجو كلّش بارد اليوم",
+        "concept": "very"
+      },
+      {
+        "id": "famous.shlonak",
+        "text": "شلونك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "التحية العراقية المشهورة",
+        "note": "The famous Iraqi greeting",
+        "example": "شلونك يا خوي، شلون الشغل؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.hassa",
+        "text": "هسّا",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "هسّا جاي، انتظغني",
+        "concept": "now"
+      },
+      {
+        "id": "famous.ya_ma_7la",
+        "text": "يا ما أحلاه",
+        "english": "How lovely!",
+        "standard": "ما أجمله!",
+        "noteAr": "إعجاب بأي حاجة حلوة",
+        "note": "Praise for anything lovely",
+        "example": "يا ما أحلاه هالجامع القديم",
+        "concept": "wow"
+      },
+      {
+        "id": "famous.khosh",
+        "text": "خوش",
+        "english": "Good",
+        "standard": "جيّد",
+        "noteAr": "مدح عراقي مشهور",
+        "note": "Famous Iraqi praise",
+        "example": "خوش شغل، الله يعطيك العافية",
+        "concept": "good"
+      }
+    ],
+    "bas": [
+      {
+        "id": "famous.hala_bik",
+        "text": "هلا بيك",
+        "english": "Welcome / Hi there",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب بصراوي دافي",
+        "note": "A warm Basra welcome",
+        "example": "هلا بيك هلا، تفضّل",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.shaku",
+        "text": "شكو؟",
+        "english": "What's up?",
+        "standard": "ماذا هناك؟",
+        "noteAr": "سؤال سريع عن اللي حاصل",
+        "note": "A quick 'what's happening?'",
+        "example": "شكو؟ ليش الناس متجمّعة؟",
+        "concept": "whats_up"
+      },
+      {
+        "id": "famous.hwaya",
+        "text": "هواية",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة عراقية للكمية",
+        "note": "The Iraqi word for lots",
+        "example": "النخل هواية بالبصرة",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.shatt_el_3arab",
+        "text": "شطّ العرب",
+        "english": "Shatt al-Arab",
+        "standard": "شطّ العرب",
+        "noteAr": "النهر اللي بيتكوّن من دجلة والفرات، قلب البصرة",
+        "note": "The river formed by the Tigris and Euphrates, the heart of Basra",
+        "example": "عالمغرب نتمشّى على شطّ العرب"
+      },
+      {
+        "id": "famous.hech",
+        "text": "هيچ",
+        "english": "Like this",
+        "standard": "هكذا",
+        "noteAr": "الكاف بتبقى «چ» في كتير من الكلام العراقي",
+        "note": "The K often becomes 'ch' in Iraqi speech",
+        "example": "سوّيها هيچ، أسهل لك",
+        "concept": "like_this"
+      },
+      {
+        "id": "famous.shbeek",
+        "text": "شبيك؟",
+        "english": "What's wrong?",
+        "standard": "ما بك؟",
+        "noteAr": "سؤال اهتمام عراقي",
+        "note": "A caring Iraqi question",
+        "example": "شبيك ساكت اليوم؟",
+        "concept": "whats_wrong"
+      },
+      {
+        "id": "famous.maku",
+        "text": "ماكو",
+        "english": "There isn't",
+        "standard": "لا يوجد",
+        "noteAr": "كلمة عراقية شهيرة للنفي",
+        "note": "A famous Iraqi word for 'none'",
+        "example": "ماكو مشكلة، باچر نسوّيها",
+        "concept": "none"
+      },
+      {
+        "id": "famous.aku",
+        "text": "أكو",
+        "english": "There is",
+        "standard": "يوجد",
+        "noteAr": "العكس المشهور ل«ماكو»",
+        "note": "The famous opposite of 'maku'",
+        "example": "أكو سمك مسكوف اليوم؟",
+        "concept": "there_is"
+      },
+      {
+        "id": "famous.bachir",
+        "text": "باچر",
+        "english": "Tomorrow",
+        "standard": "غدًا",
+        "noteAr": "«باكر» بالنطق العراقي",
+        "note": "'Bukra' the Iraqi way",
+        "example": "باچر نروح للكورنيش"
+      },
+      {
+        "id": "famous.galbi",
+        "text": "گلبي",
+        "english": "My heart (my dear)",
+        "standard": "يا قلبي",
+        "noteAr": "القاف بتبقى جيم مصرية، والكلمة تدليل حلو",
+        "note": "The Q becomes a G; a sweet term of affection",
+        "example": "تدلّل كلبي، شتريد؟",
+        "concept": "dear"
+      }
+    ],
+    "naj": [
+      {
+        "id": "famous.wesh_lonak",
+        "text": "وش لونك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "أشهر سؤال نجدي، حرفيًّا «ما لونك؟»",
+        "note": "The famous Najdi greeting, literally 'what's your colour?'",
+        "example": "السلام عليكم، وش لونك؟ عساك طيب",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.wesh",
+        "text": "وش؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال النجدية",
+        "note": "The Najdi question word",
+        "example": "وش السالفة؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.abshir",
+        "text": "أبشر",
+        "english": "Consider it done",
+        "standard": "سيتمّ ذلك",
+        "noteAr": "أشهر ردّ سعودي على أي طلب، وعد من غير تردّد",
+        "note": "The famous Saudi reply to any request, a promise with no hesitation",
+        "example": "أبشر، بكرة توصلك",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.takfa",
+        "text": "تكفى",
+        "english": "Please, I beg you",
+        "standard": "أرجوك",
+        "noteAr": "رجاء قوي ما ينردّش غالبًا",
+        "note": "A strong plea that is hard to turn down",
+        "example": "تكفى ساعدني بهالشغلة",
+        "concept": "beg"
+      },
+      {
+        "id": "famous.al_7een",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي في الخليج ونجد",
+        "note": "The Gulf and Najd word for right now",
+        "example": "الحين جاي، انتظرني",
+        "concept": "now"
+      },
+      {
+        "id": "famous.ya_rjal",
+        "text": "يا رجّال",
+        "english": "Come on, man!",
+        "standard": "يا رجل",
+        "noteAr": "للتعجّب أو للإصرار بهزار",
+        "note": "For surprise or for friendly insisting",
+        "example": "يا رجّال خلّك معنا الليلة",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.marra",
+        "text": "مرّة",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "في السعودية «مرّة» بتقوم بشغل «جدًّا»",
+        "note": "In Saudi Arabia 'marra' does the job of 'very'",
+        "example": "القهوة مرّة زينة اليوم",
+        "concept": "very"
+      },
+      {
+        "id": "famous.wajid",
+        "text": "واجد",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة نجدية للكمية",
+        "note": "The Najdi word for lots",
+        "example": "عندنا نخل واجد",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.ya_hala",
+        "text": "يا هلا",
+        "english": "Welcome!",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب دافي، وغالبًا «يا هلا والله»",
+        "note": "A warm welcome, often 'ya hala wallah'",
+        "example": "يا هلا والله، حيّاك",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.zein",
+        "text": "زين",
+        "english": "Good / Okay",
+        "standard": "جيّد",
+        "noteAr": "موافقة ومدح في نفس الوقت",
+        "note": "Agreement and praise at once",
+        "example": "زين، نتقابل بعد العشا",
+        "concept": "okay"
+      },
+      {
+        "id": "famous.3asak_bkheir",
+        "text": "عساك بخير؟",
+        "english": "Hope you're well",
+        "standard": "أرجو أن تكون بخير",
+        "noteAr": "دعاء خفيف بيتقال في السلام",
+        "note": "A small wish used in greetings",
+        "example": "عساك بخير؟ وش لون العيال؟",
+        "concept": "how_are_you"
+      }
+    ],
+    "hij": [
+      {
+        "id": "famous.eesh",
+        "text": "إيش؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال الحجازية، مشهورة في جدة ومكة",
+        "note": "The Hejazi question word, famous in Jeddah and Mecca",
+        "example": "إيش تبغى تتعشّى؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.di7in",
+        "text": "دحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "أشهر كلمة حجازية للوقت الحالي",
+        "note": "The best-known Hejazi word for right now",
+        "example": "دحين أجيك، لا تمشي",
+        "concept": "now"
+      },
+      {
+        "id": "famous.marra",
+        "text": "مرّة",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "بمعنى «جدًّا»، وممكن تتكرّر «مرّة مرّة»",
+        "note": "Means 'very', and can be doubled for extra",
+        "example": "البليلة مرّة مرّة حلوة",
+        "concept": "very"
+      },
+      {
+        "id": "famous.abgha",
+        "text": "أبغى",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "كلمة الطلب الحجازية",
+        "note": "The Hejazi 'I want'",
+        "example": "أبغى شاي بالنعناع",
+        "concept": "want"
+      },
+      {
+        "id": "famous.ya_shaikh",
+        "text": "يا شيخ!",
+        "english": "Oh come on!",
+        "standard": "يا رجل!",
+        "noteAr": "تعجّب أو عدم تصديق بهزار",
+        "note": "Surprise or playful disbelief",
+        "example": "يا شيخ! من جدّك؟",
+        "concept": "really"
+      },
+      {
+        "id": "famous.kida",
+        "text": "كدا",
+        "english": "Like this",
+        "standard": "هكذا",
+        "noteAr": "قريبة من المصري، ومشهورة في جدة",
+        "note": "Close to Egyptian, very common in Jeddah",
+        "example": "خلّيها كدا، حلوة",
+        "concept": "like_this"
+      },
+      {
+        "id": "famous.tayyib",
+        "text": "طيّب",
+        "english": "Okay",
+        "standard": "حسنًا",
+        "noteAr": "موافقة بسيطة ومهذّبة",
+        "note": "A simple, polite okay",
+        "example": "طيّب، نشوفك بكرة",
+        "concept": "okay"
+      },
+      {
+        "id": "famous.ya_walad",
+        "text": "يا ولد",
+        "english": "Hey man",
+        "standard": "يا صديقي",
+        "noteAr": "نداء بين الشباب بهزار، وممكن للتعجّب",
+        "note": "A playful call between guys, or for surprise",
+        "example": "يا ولد على الزحمة!",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.balash",
+        "text": "بلاش",
+        "english": "Free / Let's not",
+        "standard": "مجانًا / لا داعي",
+        "noteAr": "ممكن تعني «بدون فلوس» أو «مش لازم»",
+        "note": "Can mean 'for free' or 'no need'",
+        "example": "الموية بلاش، خذ لك واحدة"
+      },
+      {
+        "id": "famous.mutabbaq",
+        "text": "المطبّق",
+        "english": "Mutabbaq",
+        "standard": "المطبّق",
+        "noteAr": "أكلة شارع حجازية مشهورة، عجينة محشية",
+        "note": "A famous Hejazi street food, stuffed folded dough",
+        "example": "خلّينا ناخذ مطبّق من البلد"
+      },
+      {
+        "id": "famous.wallah",
+        "text": "والله؟",
+        "english": "Really?",
+        "standard": "حقًّا؟",
+        "noteAr": "سؤال باستغراب لما تسمع خبر",
+        "note": "Asking in surprise at some news",
+        "example": "والله؟ رجع من السفر؟",
+        "concept": "really"
+      }
+    ],
+    "jiz": [
+      {
+        "id": "famous.hala_wallah",
+        "text": "هلا والله",
+        "english": "Hello, welcome!",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب دافي بالضيف",
+        "note": "A warm welcome for a guest",
+        "example": "هلا والله، البيت بيتك",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.wesh",
+        "text": "وش؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال في الجنوب",
+        "note": "The question word in the south",
+        "example": "وش صار؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.al_7een",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "الحين نطلع المزرعة",
+        "concept": "now"
+      },
+      {
+        "id": "famous.abshir",
+        "text": "أبشر",
+        "english": "Consider it done",
+        "standard": "سيتمّ ذلك",
+        "noteAr": "وعد بالمساعدة فورًا",
+        "note": "A promise to help right away",
+        "example": "أبشر بسعدك",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.ya_zein",
+        "text": "يا زينه!",
+        "english": "How lovely!",
+        "standard": "ما أجمله!",
+        "noteAr": "إعجاب بأي حاجة حلوة",
+        "note": "Praise for anything lovely",
+        "example": "يا زين الجبال بعد المطر!",
+        "concept": "wow"
+      },
+      {
+        "id": "famous.mangoo_jazan",
+        "text": "مانجو جازان",
+        "english": "Jazan mangoes",
+        "standard": "مانجو جازان",
+        "noteAr": "جازان مشهورة بالمانجو والفلّ",
+        "note": "Jazan is famous for its mangoes and jasmine",
+        "example": "مانجو جازان ما له مثيل"
+      },
+      {
+        "id": "famous.ya_khooy",
+        "text": "يا خوي",
+        "english": "My brother",
+        "standard": "يا أخي",
+        "noteAr": "نداء أخوي بين الرجال",
+        "note": "A brotherly call between men",
+        "example": "تعال يا خوي نتقهوى",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.marra",
+        "text": "مرّة",
+        "english": "Very",
+        "standard": "جدًّا",
+        "noteAr": "بمعنى «جدًّا» زي باقي السعودية",
+        "note": "'Very', like the rest of Saudi Arabia",
+        "example": "الجو مرّة حارّ اليوم",
+        "concept": "very"
+      },
+      {
+        "id": "famous.zein",
+        "text": "زين",
+        "english": "Good",
+        "standard": "جيّد",
+        "noteAr": "مدح وموافقة",
+        "note": "Praise and agreement",
+        "example": "العسل هذا زين",
+        "concept": "good"
+      },
+      {
+        "id": "famous.yalla",
+        "text": "يلّا",
+        "english": "Let's go",
+        "standard": "هيّا",
+        "noteAr": "للاستعجال أو بدء أي حاجة",
+        "note": "To hurry or start anything",
+        "example": "يلّا نمشي قبل المغرب",
+        "concept": "lets_go"
+      }
+    ],
+    "shm": [
+      {
+        "id": "famous.3lumak",
+        "text": "علومك؟",
+        "english": "What's new with you?",
+        "standard": "ما أخبارك؟",
+        "noteAr": "سؤال بدوي مشهور عن الأحوال والأخبار",
+        "note": "A well-known Bedouin question about news and life",
+        "example": "هلا والله، علومك؟",
+        "concept": "whats_up"
+      },
+      {
+        "id": "famous.labbeh",
+        "text": "لبّيه",
+        "english": "Yes? (at your service)",
+        "standard": "نعم، أنا حاضر",
+        "noteAr": "ردّ مهذّب لما حد يناديك",
+        "note": "A polite answer when someone calls you",
+        "example": "لبّيه يا الوالد، آمر",
+        "concept": "yes"
+      },
+      {
+        "id": "famous.hayyak",
+        "text": "حيّاك",
+        "english": "Welcome",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب بالضيف، وغالبًا «حيّاك الله»",
+        "note": "A welcome for a guest, often 'hayyak Allah'",
+        "example": "حيّاك تفضّل، القهوة جاهزة",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.wajid",
+        "text": "واجد",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة الكمية في الشمال",
+        "note": "The north's word for lots",
+        "example": "الناس واجد بالسوق",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.wesh_tabi",
+        "text": "وش تبي؟",
+        "english": "What do you want?",
+        "standard": "ماذا تريد؟",
+        "noteAr": "سؤال مباشر لما تعرض مساعدة",
+        "note": "A direct question when you offer help",
+        "example": "وش تبي من المدينة؟",
+        "concept": "what_want"
+      },
+      {
+        "id": "famous.al_7een",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "الحين نمشي",
+        "concept": "now"
+      },
+      {
+        "id": "famous.ya_ibn_al_7alal",
+        "text": "يا ابن الحلال",
+        "english": "My good man",
+        "standard": "يا رجل يا طيّب",
+        "noteAr": "نداء احترام لشخص ما تعرف اسمه",
+        "note": "A respectful call for someone whose name you don't know",
+        "example": "يا ابن الحلال وين طريق حائل؟",
+        "concept": "sir"
+      },
+      {
+        "id": "famous.abshir",
+        "text": "أبشر",
+        "english": "Consider it done",
+        "standard": "سيتمّ ذلك",
+        "noteAr": "وعد بالمساعدة",
+        "note": "A promise to help",
+        "example": "أبشر، أنا أوصلك",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.ya_hala",
+        "text": "يا هلا",
+        "english": "Welcome!",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب دافي",
+        "note": "A warm welcome",
+        "example": "يا هلا باللي جانا",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.zein",
+        "text": "زين",
+        "english": "Good",
+        "standard": "جيّد",
+        "noteAr": "مدح وموافقة",
+        "note": "Praise and agreement",
+        "example": "الربيع هالسنة زين",
+        "concept": "good"
+      }
+    ],
+    "kuw": [
+      {
+        "id": "famous.shlonak",
+        "text": "شلونك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "أشهر سؤال في الكويت",
+        "note": "The best-known greeting in Kuwait",
+        "example": "شلونك؟ شلون العيال؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.wayed",
+        "text": "وايد",
+        "english": "Very / A lot",
+        "standard": "كثيرًا",
+        "noteAr": "أشهر كلمة خليجية، بتنفع للكمية وللتأكيد",
+        "note": "The most famous Gulf word, for 'a lot' and 'very'",
+        "example": "الجو حارّ وايد اليوم",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.shno",
+        "text": "شنو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال الكويتية",
+        "note": "The Kuwaiti question word",
+        "example": "شنو قاعد تسوّي؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.chetheh",
+        "text": "جذي",
+        "english": "Like this",
+        "standard": "هكذا",
+        "noteAr": "الكاف بتبقى «تش»، وبتتكتب أحيانًا جيم",
+        "note": "The K turns into 'ch', sometimes written with a J",
+        "example": "لا تسوّيها جذي، خلني أعلمك",
+        "concept": "like_this"
+      },
+      {
+        "id": "famous.sij",
+        "text": "صج؟",
+        "english": "Really?",
+        "standard": "حقًّا؟",
+        "noteAr": "من «صدق»، سؤال استغراب شهير",
+        "note": "From 'sidq' (truth), a famous 'really?'",
+        "example": "صج؟ ما كنت أدري",
+        "concept": "really"
+      },
+      {
+        "id": "famous.maku",
+        "text": "ماكو",
+        "english": "There isn't",
+        "standard": "لا يوجد",
+        "noteAr": "كلمة مشتركة بين الكويت والعراق",
+        "note": "A word shared by Kuwait and Iraq",
+        "example": "ماكو شي بالثلاجة",
+        "concept": "none"
+      },
+      {
+        "id": "famous.ya_ma_7la",
+        "text": "يا حلاته",
+        "english": "How lovely!",
+        "standard": "ما أجمله!",
+        "noteAr": "إعجاب بأي حاجة حلوة",
+        "note": "Praise for anything lovely",
+        "example": "يا حلاته هالديوانية",
+        "concept": "wow"
+      },
+      {
+        "id": "famous.al_7een",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي في الخليج",
+        "note": "The Gulf word for right now",
+        "example": "الحين بمرّك",
+        "concept": "now"
+      },
+      {
+        "id": "famous.abi",
+        "text": "أبي",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "كلمة الطلب الخليجية",
+        "note": "The Gulf 'I want'",
+        "example": "أبي چاي حليب لو سمحت",
+        "concept": "want"
+      },
+      {
+        "id": "famous.diwaniyya",
+        "text": "الديوانية",
+        "english": "The diwaniya (men's gathering)",
+        "standard": "مجلس الرجال",
+        "noteAr": "مكان اللمّة والسوالف في الكويت، جزء من الحياة اليومية",
+        "note": "Kuwait's evening gathering place for chat, part of daily life",
+        "example": "نشوفك بالديوانية الليلة"
+      }
+    ],
+    "emi": [
+      {
+        "id": "famous.shu_7alak",
+        "text": "شحالك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "أشهر سؤال إماراتي، أصله «شو حالك»",
+        "note": "The famous Emirati greeting, from 'shu halak'",
+        "example": "شحالك؟ عساك بخير",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.wayed",
+        "text": "وايد",
+        "english": "Very / A lot",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة خليجية مشهورة للكمية وللتأكيد",
+        "note": "A famous Gulf word for 'a lot' and 'very'",
+        "example": "المول زحمة وايد",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.hayyak",
+        "text": "حيّاك",
+        "english": "Welcome",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب بالضيف، وكمان «حيّاك الله»",
+        "note": "A welcome for a guest, also 'hayyak Allah'",
+        "example": "حيّاك الله، تفضّل تقهوى",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.shu",
+        "text": "شو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال في الإمارات",
+        "note": "The question word in the Emirates",
+        "example": "شو تبا تتغدّى؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.baghait",
+        "text": "بغيت",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "كلمة الطلب الإماراتية، أصلها «بغى»",
+        "note": "The Emirati 'I want', from 'bagha' (to seek)",
+        "example": "بغيت كرك لو سمحت",
+        "concept": "want"
+      },
+      {
+        "id": "famous.heh",
+        "text": "هيه",
+        "english": "Yes",
+        "standard": "نعم",
+        "noteAr": "أشهر «أيوه» إماراتية",
+        "note": "The famous Emirati 'yes'",
+        "example": "هيه، أنا جاي معاك",
+        "concept": "yes"
+      },
+      {
+        "id": "famous.mub",
+        "text": "مب",
+        "english": "Not",
+        "standard": "ليس",
+        "noteAr": "أداة النفي الإماراتية المشهورة",
+        "note": "The well-known Emirati 'not'",
+        "example": "هذا مب صحّ، خلنا نشوف",
+        "concept": "not"
+      },
+      {
+        "id": "famous.karak",
+        "text": "كرك",
+        "english": "Karak tea",
+        "standard": "شاي بالحليب",
+        "noteAr": "شاي بالحليب والهيل، مشروب الشارع الأشهر في الإمارات",
+        "note": "Milk tea with cardamom, the Emirates' favorite street drink",
+        "example": "خلنا نمرّ ناخذ كرك",
+        "concept": "tea"
+      },
+      {
+        "id": "famous.al_7een",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "الحين أنا بالطريج",
+        "concept": "now"
+      },
+      {
+        "id": "famous.ya_7ayyallah",
+        "text": "يا حيه",
+        "english": "Welcome, come in",
+        "standard": "أهلًا وسهلًا",
+        "noteAr": "ترحيب حارّ أول ما الضيف يدخل",
+        "note": "A warm welcome the moment a guest steps in",
+        "example": "يا حيه ويا هلا باللي جا",
+        "concept": "welcome"
+      }
+    ],
+    "qat": [
+      {
+        "id": "famous.ishlonak",
+        "text": "إشحالك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "السلام القطري المشهور",
+        "note": "The well-known Qatari greeting",
+        "example": "إشحالك؟ إشحال الأهل؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.wayed",
+        "text": "وايد",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة الكمية الخليجية",
+        "note": "The Gulf word for lots",
+        "example": "فيه ناس وايد بالسوق",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.shno",
+        "text": "شنو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال في قطر",
+        "note": "The question word in Qatar",
+        "example": "شنو السالفة؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.sij",
+        "text": "صج؟",
+        "english": "Really?",
+        "standard": "حقًّا؟",
+        "noteAr": "سؤال استغراب من «صدق»",
+        "note": "A 'really?' from 'sidq'",
+        "example": "صج؟ خلصت الشغل؟",
+        "concept": "really"
+      },
+      {
+        "id": "famous.ya_hala",
+        "text": "يا هلا",
+        "english": "Welcome!",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب دافي",
+        "note": "A warm welcome",
+        "example": "يا هلا والله بالضيوف",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.abshir",
+        "text": "أبشر",
+        "english": "Consider it done",
+        "standard": "سيتمّ ذلك",
+        "noteAr": "وعد بالمساعدة",
+        "note": "A promise to help",
+        "example": "أبشر، باچر الصبح",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.al_7een",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "الحين نروح السوق واقف",
+        "concept": "now"
+      },
+      {
+        "id": "famous.souq_waqif",
+        "text": "سوق واقف",
+        "english": "Souq Waqif",
+        "standard": "سوق واقف",
+        "noteAr": "أشهر سوق قديم في الدوحة، مكان السهر والقهوة",
+        "note": "Doha's best-known old market, the place for evenings and coffee",
+        "example": "نتعشّى الليلة بسوق واقف"
+      },
+      {
+        "id": "famous.chai",
+        "text": "چاي",
+        "english": "Tea",
+        "standard": "شاي",
+        "noteAr": "الكاف أو الشين بتتنطق «تش»",
+        "note": "Said with a 'ch' sound",
+        "example": "چاي كرك لو سمحت",
+        "concept": "tea"
+      },
+      {
+        "id": "famous.zein",
+        "text": "زين",
+        "english": "Good / Okay",
+        "standard": "جيّد",
+        "noteAr": "موافقة ومدح",
+        "note": "Agreement and praise",
+        "example": "زين، اتفقنا",
+        "concept": "okay"
+      }
+    ],
+    "bah": [
+      {
+        "id": "famous.shlonak",
+        "text": "شلونك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "السلام البحريني المعتاد",
+        "note": "The usual Bahraini greeting",
+        "example": "شلونك حبيبي؟ شلون الشغل؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.wayed",
+        "text": "وايد",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة الكمية الخليجية",
+        "note": "The Gulf word for lots",
+        "example": "البحر حلو وايد اليوم",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.shno",
+        "text": "شنو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال البحرينية",
+        "note": "The Bahraini question word",
+        "example": "شنو قال لك؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.ya_ma_7la",
+        "text": "يا حلاته",
+        "english": "How lovely!",
+        "standard": "ما أجمله!",
+        "noteAr": "إعجاب بأي حاجة حلوة",
+        "note": "Praise for anything lovely",
+        "example": "يا حلاته هالمكان",
+        "concept": "wow"
+      },
+      {
+        "id": "famous.habibi",
+        "text": "حبيبي",
+        "english": "My dear",
+        "standard": "يا عزيزي",
+        "noteAr": "البحرينيين مشهورين بالطيبة، و«حبيبي» في كل جملة",
+        "note": "Bahrainis are known for warmth, with 'habibi' in every sentence",
+        "example": "تفضّل حبيبي، البيت بيتك",
+        "concept": "dear"
+      },
+      {
+        "id": "famous.maku",
+        "text": "ماكو",
+        "english": "There isn't",
+        "standard": "لا يوجد",
+        "noteAr": "كلمة النفي المشهورة",
+        "note": "The well-known 'none'",
+        "example": "ماكو زحمة اليوم",
+        "concept": "none"
+      },
+      {
+        "id": "famous.al_7een",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "الحين بنطلع المحرّق",
+        "concept": "now"
+      },
+      {
+        "id": "famous.chethi",
+        "text": "جذي",
+        "english": "Like this",
+        "standard": "هكذا",
+        "noteAr": "الكاف بتبقى «تش»",
+        "note": "The K becomes 'ch'",
+        "example": "سوّها جذي وخلاص",
+        "concept": "like_this"
+      },
+      {
+        "id": "famous.abi",
+        "text": "أبي",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "كلمة الطلب الخليجية",
+        "note": "The Gulf 'I want'",
+        "example": "أبي ماء لو سمحت",
+        "concept": "want"
+      },
+      {
+        "id": "famous.mashallah",
+        "text": "ما شاء الله",
+        "english": "Wonderful! (God has willed it)",
+        "standard": "ما شاء الله",
+        "noteAr": "إعجاب مع دعاء بالبركة",
+        "note": "Admiration with a wish for blessing",
+        "example": "ما شاء الله، ولدك كبر",
+        "concept": "wow"
+      }
+    ],
+    "oma": [
+      {
+        "id": "famous.kaif_7alak",
+        "text": "كيف حالك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "العُماني بيسأل أسئلة كتير بعد السلام، ودي أولها",
+        "note": "Omanis ask many questions after hello; this is the first",
+        "example": "كيف حالك؟ وكيف الأهل؟ وكيف الصحة؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.shu_al_akhbar",
+        "text": "شو الأخبار؟",
+        "english": "What's the news?",
+        "standard": "ما الأخبار؟",
+        "noteAr": "جزء من تبادل الأخبار المشهور في عُمان",
+        "note": "Part of Oman's famous news exchange",
+        "example": "شو الأخبار؟ شو العلوم؟",
+        "concept": "whats_up"
+      },
+      {
+        "id": "famous.wajid",
+        "text": "واجد",
+        "english": "A lot / Very",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة عُمانية مشهورة للكمية والتأكيد",
+        "note": "A well-known Omani word for 'lots' and 'very'",
+        "example": "الجو حارّ واجد اليوم",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.mashi",
+        "text": "ماشي",
+        "english": "Nothing / None",
+        "standard": "لا يوجد",
+        "noteAr": "في عُمان «ماشي» معناها مفيش، مش «تمام» زي مصر",
+        "note": "In Oman 'mashi' means 'nothing', not 'okay' as in Egypt",
+        "example": "ماشي أحد بالبيت الحين",
+        "concept": "none"
+      },
+      {
+        "id": "famous.heh",
+        "text": "هيه",
+        "english": "Yes",
+        "standard": "نعم",
+        "noteAr": "«أيوه» عُمانية قصيرة",
+        "note": "A short Omani 'yes'",
+        "example": "هيه، بنروح مع بعض",
+        "concept": "yes"
+      },
+      {
+        "id": "famous.qahwa_omani",
+        "text": "القهوة والحلوى",
+        "english": "Coffee and halwa",
+        "standard": "القهوة والحلوى",
+        "noteAr": "أول حاجة بتتقدّم للضيف في عُمان، والحلوى العُمانية مشهورة",
+        "note": "The first thing a guest gets in Oman; Omani halwa is famous",
+        "example": "تفضّل القهوة والحلوى أول"
+      },
+      {
+        "id": "famous.al_7een",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "الحين واصل مسقط",
+        "concept": "now"
+      },
+      {
+        "id": "famous.abshir",
+        "text": "أبشر",
+        "english": "Consider it done",
+        "standard": "سيتمّ ذلك",
+        "noteAr": "وعد بالمساعدة",
+        "note": "A promise to help",
+        "example": "أبشر، تامر أمر",
+        "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.ma_3aleih",
+        "text": "ما عليه",
+        "english": "It's fine / No worries",
+        "standard": "لا بأس",
+        "noteAr": "تهوين مشهور في عُمان",
+        "note": "A well-known Omani 'no worries'",
+        "example": "تأخّرت؟ ما عليه",
+        "concept": "no_problem"
+      },
+      {
+        "id": "famous.zain",
+        "text": "زين",
+        "english": "Good",
+        "standard": "جيّد",
+        "noteAr": "مدح وموافقة",
+        "note": "Praise and agreement",
+        "example": "الشواء زين السنة",
+        "concept": "good"
+      }
+    ],
+    "dho": [
+      {
+        "id": "famous.kaif_7alak",
+        "text": "كيف حالك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "السلام المعتاد في ظفار",
+        "note": "The usual greeting in Dhofar",
+        "example": "كيف حالك؟ كيف العيال؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.kharif",
+        "text": "الخريف",
+        "english": "The Khareef (monsoon season)",
+        "standard": "موسم الخريف",
+        "noteAr": "موسم الضباب والمطر الخفيف في صلالة، الناس بتيجي له من كل الخليج",
+        "note": "Salalah's season of mist and drizzle that draws visitors from across the Gulf",
+        "example": "نشوفك بالخريف، الجبال خضرا"
+      },
+      {
+        "id": "famous.wajid",
+        "text": "واجد",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة الكمية العُمانية",
+        "note": "The Omani word for lots",
+        "example": "الناس واجد بالخريف",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.hayyak",
+        "text": "حيّاك",
+        "english": "Welcome",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب بالضيف",
+        "note": "A welcome for a guest",
+        "example": "حيّاك الله في صلالة",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.shu",
+        "text": "شو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال",
+        "note": "The question word",
+        "example": "شو تبغى؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.heh",
+        "text": "هيه",
+        "english": "Yes",
+        "standard": "نعم",
+        "noteAr": "«أيوه» قصيرة",
+        "note": "A short 'yes'",
+        "example": "هيه، صحّ كلامك",
+        "concept": "yes"
+      },
+      {
+        "id": "famous.buyot_al_luban",
+        "text": "اللبان",
+        "english": "Frankincense",
+        "standard": "اللبان",
+        "noteAr": "ظفار أرض اللبان من آلاف السنين، وريحته في كل بيت",
+        "note": "Dhofar has been the land of frankincense for thousands of years; its scent is in every home",
+        "example": "بخّر البيت باللبان قبل ما يوصلون الضيوف"
+      },
+      {
+        "id": "famous.al_7een",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "الحين نطلع الجبل",
+        "concept": "now"
+      },
+      {
+        "id": "famous.mashi",
+        "text": "ماشي",
+        "english": "Nothing",
+        "standard": "لا يوجد",
+        "noteAr": "بمعنى مفيش، زي باقي عُمان",
+        "note": "Means 'nothing', like the rest of Oman",
+        "example": "ماشي مشكلة",
+        "concept": "none"
+      },
+      {
+        "id": "famous.zain",
+        "text": "زين",
+        "english": "Good",
+        "standard": "جيّد",
+        "noteAr": "مدح وموافقة",
+        "note": "Praise and agreement",
+        "example": "المطر زين السنة",
+        "concept": "good"
+      }
+    ],
+    "san": [
+      {
+        "id": "famous.kaif_7alak",
+        "text": "كيف حالك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "الصنعاني بيبدأ بيها وبيكمّل أسئلة كتير عن الحال",
+        "note": "Sana'anis start with it and keep asking after you",
+        "example": "كيف حالك؟ كيف الأهل؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.shi",
+        "text": "شي؟",
+        "english": "Is there?",
+        "standard": "هل يوجد؟",
+        "noteAr": "بمعنى «فيه» أو «هل يوجد»، مشهورة في اليمن",
+        "note": "Means 'is there?', very common in Yemen",
+        "example": "شي ماء بارد؟",
+        "concept": "there_is"
+      },
+      {
+        "id": "famous.ma_bish",
+        "text": "ما بش",
+        "english": "There isn't",
+        "standard": "لا يوجد",
+        "noteAr": "أشهر كلمة نفي يمنية",
+        "note": "The best-known Yemeni 'there isn't'",
+        "example": "ما بش مشكلة، نتقابل بكرة",
+        "concept": "none"
+      },
+      {
+        "id": "famous.gad",
+        "text": "قد",
+        "english": "Already / Is",
+        "standard": "قد",
+        "noteAr": "اليمني بيستعمل «قد» كتير قبل الفعل والاسم، وبينطقها بالجيم المصرية",
+        "note": "Yemenis use 'gad' a lot before verbs and nouns, with a hard G",
+        "example": "قد أنا جاهز، يا الله"
+      },
+      {
+        "id": "famous.ya_khi",
+        "text": "يا أخي",
+        "english": "My brother",
+        "standard": "يا أخي",
+        "noteAr": "نداء أخوي منتشر في صنعاء",
+        "note": "A brotherly call common in Sana'a",
+        "example": "يا أخي تفضّل اقعد",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.alheen",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "الحين بنروح السوق",
+        "concept": "now"
+      },
+      {
+        "id": "famous.qishr",
+        "text": "القشر",
+        "english": "Qishr (coffee husk drink)",
+        "standard": "شراب قشر البن",
+        "noteAr": "مشروب يمني شهير من قشر البن والزنجبيل",
+        "note": "A famous Yemeni drink of coffee husks and ginger",
+        "example": "تشرب قشر ولا شاي؟"
+      },
+      {
+        "id": "famous.bint_al_sahn",
+        "text": "بنت الصحن",
+        "english": "Bint al-Sahn (honey cake)",
+        "standard": "بنت الصحن",
+        "noteAr": "حلوى صنعانية مشهورة بالعسل والحبة السوداء",
+        "note": "A famous Sana'a sweet with honey and black seed",
+        "example": "ما فيش عزومة من غير بنت الصحن"
+      },
+      {
+        "id": "famous.sabr",
+        "text": "اصبر",
+        "english": "Hold on / Be patient",
+        "standard": "انتظر",
+        "noteAr": "بتتقال بمعنى «استنّى»",
+        "note": "Used to mean 'wait'",
+        "example": "اصبر شوية، جاي",
+        "concept": "wait"
+      },
+      {
+        "id": "famous.ya_salam",
+        "text": "يا سلام!",
+        "english": "Wow!",
+        "standard": "يا للروعة!",
+        "noteAr": "إعجاب بأي حاجة حلوة",
+        "note": "Praise for anything lovely",
+        "example": "يا سلام على صنعاء القديمة!",
+        "concept": "wow"
+      }
+    ],
+    "ade": [
+      {
+        "id": "famous.kaifak",
+        "text": "كيفك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "السلام العدني المعتاد",
+        "note": "The usual Aden greeting",
+        "example": "كيفك يا صاحبي؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.ma_bish",
+        "text": "ما بش",
+        "english": "There isn't",
+        "standard": "لا يوجد",
+        "noteAr": "كلمة النفي اليمنية المشهورة",
+        "note": "The famous Yemeni 'there isn't'",
+        "example": "ما بش زحمة اليوم",
+        "concept": "none"
+      },
+      {
+        "id": "famous.ya_sahbi",
+        "text": "يا صاحبي",
+        "english": "My friend",
+        "standard": "يا صديقي",
+        "noteAr": "نداء ودّي بين أهل عدن",
+        "note": "A friendly call among Adenis",
+        "example": "ما عليك يا صاحبي، أنا معك",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.alheen",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "الحين بننزل البحر",
+        "concept": "now"
+      },
+      {
+        "id": "famous.shahi_3adani",
+        "text": "شاهي عدني",
+        "english": "Adeni tea",
+        "standard": "شاي عدني",
+        "noteAr": "شاي بالحليب والهيل، واسمه في عدن «شاهي»",
+        "note": "Milk tea with cardamom; in Aden it's called 'shahi'",
+        "example": "خلّينا نشرب شاهي عدني عالبحر",
+        "concept": "tea"
+      },
+      {
+        "id": "famous.ma_3aleik",
+        "text": "ما عليك",
+        "english": "Don't worry",
+        "standard": "لا تقلق",
+        "noteAr": "طمأنة مشهورة في اليمن",
+        "note": "A well-known Yemeni reassurance",
+        "example": "ما عليك، كل شي بيتظبط",
+        "concept": "dont_worry"
+      },
+      {
+        "id": "famous.kareeter",
+        "text": "كريتر",
+        "english": "Cricket",
+        "standard": "الكريكيت",
+        "noteAr": "عدن اتأثّرت بالإنجليزي والهندي، وفي كلامها كلمات كتير منهم",
+        "note": "Aden picked up words from English and Hindi over the years",
+        "example": "العيال بيلعبوا كريتر في الحافة"
+      },
+      {
+        "id": "famous.ya_salam",
+        "text": "يا سلام",
+        "english": "Wow",
+        "standard": "يا للروعة",
+        "noteAr": "إعجاب بأي حاجة حلوة",
+        "note": "Praise for anything lovely",
+        "example": "يا سلام على هالغروب!",
+        "concept": "wow"
+      },
+      {
+        "id": "famous.sabr",
+        "text": "اصبر",
+        "english": "Wait",
+        "standard": "انتظر",
+        "noteAr": "بمعنى «استنّى»",
+        "note": "Means 'wait'",
+        "example": "اصبر دقيقة، بجيب المفتاح",
+        "concept": "wait"
+      },
+      {
+        "id": "famous.hayya",
+        "text": "هيّا",
+        "english": "Let's go",
+        "standard": "هيّا",
+        "noteAr": "للاستعجال أو البدء",
+        "note": "To hurry up or get started",
+        "example": "هيّا بنا قبل الزحمة",
+        "concept": "lets_go"
+      }
+    ],
+    "had": [
+      {
+        "id": "famous.kaif_7alak",
+        "text": "كيف حالك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "السلام الحضرمي المعتاد",
+        "note": "The usual Hadhrami greeting",
+        "example": "كيف حالك؟ عساك طيب",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.ma_bih",
+        "text": "ما به",
+        "english": "There isn't",
+        "standard": "لا يوجد",
+        "noteAr": "الحضرمي بيقول «ما به» بدل «ما بش»",
+        "note": "Hadhramis say 'ma bih' instead of 'ma bish'",
+        "example": "ما به أحد بالبيت",
+        "concept": "none"
+      },
+      {
+        "id": "famous.ho",
+        "text": "هو",
+        "english": "Yes",
+        "standard": "نعم",
+        "noteAr": "«أيوه» حضرمية مشهورة",
+        "note": "A well-known Hadhrami 'yes'",
+        "example": "هو، باجي معك",
+        "concept": "yes"
+      },
+      {
+        "id": "famous.alheen",
+        "text": "الحين",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "الحين نروح المكلا",
+        "concept": "now"
+      },
+      {
+        "id": "famous.shibam",
+        "text": "شبام",
+        "english": "Shibam",
+        "standard": "شبام",
+        "noteAr": "مدينة الأبراج الطينية في حضرموت، بيسمّوها «مانهاتن الصحراء»",
+        "note": "Hadhramaut's city of mud towers, nicknamed 'Manhattan of the desert'",
+        "example": "من شبام شفت الأبراج كلها"
+      },
+      {
+        "id": "famous.ya_waladi",
+        "text": "يا ولدي",
+        "english": "My son (my dear)",
+        "standard": "يا بنيّ",
+        "noteAr": "نداء حنون من الكبار للصغار",
+        "note": "A tender call from elders to youngsters",
+        "example": "تعال يا ولدي كل معنا",
+        "concept": "dear"
+      },
+      {
+        "id": "famous.3asal_do3an",
+        "text": "عسل دوعني",
+        "english": "Doani honey",
+        "standard": "عسل وادي دوعن",
+        "noteAr": "أشهر وأغلى عسل في اليمن، من وادي دوعن في حضرموت",
+        "note": "Yemen's best-known and priciest honey, from Wadi Do'an in Hadhramaut",
+        "example": "هديتك علبة عسل دوعني أصلي"
+      },
+      {
+        "id": "famous.ma_3aleik",
+        "text": "ما عليك",
+        "english": "Don't worry",
+        "standard": "لا تقلق",
+        "noteAr": "طمأنة معتادة",
+        "note": "A usual reassurance",
+        "example": "ما عليك، الأمور طيبة",
+        "concept": "dont_worry"
+      },
+      {
+        "id": "famous.tayyib",
+        "text": "طيّب",
+        "english": "Good / Okay",
+        "standard": "حسنًا",
+        "noteAr": "موافقة ومدح",
+        "note": "Agreement and praise",
+        "example": "طيّب، نشوفك بعد الصلاة",
+        "concept": "okay"
+      },
+      {
+        "id": "famous.mandi",
+        "text": "المندي",
+        "english": "Mandi",
+        "standard": "المندي",
+        "noteAr": "أكلة حضرمية بالرز واللحم، انتشرت في كل الجزيرة",
+        "note": "A Hadhrami dish of rice and meat that spread across Arabia",
+        "example": "الغدا اليوم مندي حضرمي"
+      }
+    ],
+    "sud": [
+      {
+        "id": "famous.zol",
+        "text": "يا زول",
+        "english": "Hey, person (buddy)",
+        "standard": "يا رجل",
+        "noteAr": "أشهر كلمة سودانية، «الزول» يعني الإنسان",
+        "note": "The best-known Sudanese word: 'zol' means a person",
+        "example": "يا زول وينك من زمان؟",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.shadeed",
+        "text": "شديد",
+        "english": "Very / Great",
+        "standard": "جدًّا",
+        "noteAr": "تأكيد ومدح، وممكن تيجي لوحدها ردّ بمعنى «تمام»",
+        "note": "Boosts a word, or stands alone as 'great'",
+        "example": "الأكل سمح شديد",
+        "concept": "very"
+      },
+      {
+        "id": "famous.7abbabak",
+        "text": "حبّابك",
+        "english": "Welcome!",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب سوداني دافي، وأحيانًا «حبّابك عشرة»",
+        "note": "A warm Sudanese welcome, sometimes 'ten times welcome'",
+        "example": "حبّابك عشرة، اتفضّل اقعد",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.sam7",
+        "text": "سمح",
+        "english": "Nice / Beautiful",
+        "standard": "جميل",
+        "noteAr": "مدح لأي حاجة حلوة: ناس، أكل، كلام",
+        "note": "Praise for anything nice: people, food, words",
+        "example": "الكلام دا سمح شديد",
+        "concept": "beautiful"
+      },
+      {
+        "id": "famous.mafi_3awja",
+        "text": "مافي عوجة",
+        "english": "No problem",
+        "standard": "لا مشكلة",
+        "noteAr": "«العوجة» هي المشكلة، والجملة دي بتهدّي أي موقف",
+        "note": "'3awja' means trouble; this calms any situation",
+        "example": "اتأخّرت؟ مافي عوجة",
+        "concept": "no_problem"
+      },
+      {
+        "id": "famous.hassi",
+        "text": "هسّي",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي في السودان",
+        "note": "Sudan's word for right now",
+        "example": "أنا جاي هسّي",
+        "concept": "now"
+      },
+      {
+        "id": "famous.shinu",
+        "text": "شنو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال السودانية",
+        "note": "The Sudanese question word",
+        "example": "الموضوع شنو؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.dayir",
+        "text": "داير",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "من «دار»، وبتتقال في أي طلب",
+        "note": "From 'to seek'; used for any request",
+        "example": "داير شاي باللبن",
+        "concept": "want"
+      },
+      {
+        "id": "famous.yakh",
+        "text": "ياخ",
+        "english": "Bro / Man",
+        "standard": "يا أخي",
+        "noteAr": "نداء مختصر بيدخل في نص الكلام كتير",
+        "note": "A short call that pops up mid-sentence a lot",
+        "example": "ياخ خلّيها عليّ",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.3adeel",
+        "text": "عديل",
+        "english": "Straight / Right",
+        "standard": "مستقيم / صحيح",
+        "noteAr": "بتوصف الطريق المستقيم أو الشغل المظبوط",
+        "note": "Describes a straight road or a job done right",
+        "example": "امشي عديل وبعدين لفّ شمال",
+        "concept": "good"
+      }
+    ],
+    "chd": [
+      {
+        "id": "famous.lafi",
+        "text": "لافي",
+        "english": "Fine (in peace)",
+        "standard": "بخير",
+        "noteAr": "ردّ مشهور على السلام، أصله «في العافية»",
+        "note": "A well-known reply to a greeting, from 'in good health'",
+        "example": "إنت لافي؟ لافي، الحمد لله",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.3afiya",
+        "text": "عافية",
+        "english": "Fine / Well",
+        "standard": "بخير وعافية",
+        "noteAr": "كلمة اطمئنان بتتكرّر في السلام",
+        "note": "A reassuring word repeated in greetings",
+        "example": "الأولاد عافية، كلّهم عافية"
+      },
+      {
+        "id": "famous.shunu",
+        "text": "شنو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال في عربية تشاد",
+        "note": "The question word in Chadian Arabic",
+        "example": "شنو دا اللي في السوق؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.hassa3",
+        "text": "هسّع",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "الوقت الحالي، قريبة من السودان",
+        "note": "Right now, close to Sudanese",
+        "example": "تعال هسّع قبل المطر",
+        "concept": "now"
+      },
+      {
+        "id": "famous.dayir",
+        "text": "داير",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "نفس كلمة السودان للطلب",
+        "note": "The same 'want' word as Sudan",
+        "example": "أنا داير أمشي السوق",
+        "concept": "want"
+      },
+      {
+        "id": "famous.sam7",
+        "text": "سمح",
+        "english": "Good / Nice",
+        "standard": "جيّد",
+        "noteAr": "مدح لأي حاجة مظبوطة",
+        "note": "Praise for anything done well",
+        "example": "العيش دا سمح",
+        "concept": "good"
+      },
+      {
+        "id": "famous.kede",
+        "text": "كدي",
+        "english": "Like this",
+        "standard": "هكذا",
+        "noteAr": "بتوضّح بيها طريقة عمل حاجة",
+        "note": "Used to show how something is done",
+        "example": "سوّيها كدي",
+        "concept": "like_this"
+      },
+      {
+        "id": "famous.el_7illa",
+        "text": "الحلّة",
+        "english": "The village / Neighborhood",
+        "standard": "القرية",
+        "noteAr": "الحلّة هي المكان اللي الناس ساكنة فيه مع بعض",
+        "note": "The 'hilla' is where people live together",
+        "example": "الناس كلّهم في الحلّة للعرس"
+      },
+      {
+        "id": "famous.yatu",
+        "text": "ياتو؟",
+        "english": "Which one?",
+        "standard": "أيّهم؟",
+        "noteAr": "سؤال للاختيار بين حاجتين أو أكتر",
+        "note": "Asks you to pick between things",
+        "example": "داير ياتو؟ دا ولا داك؟"
+      },
+      {
+        "id": "famous.abui",
+        "text": "أبوي",
+        "english": "Sir (to an elder)",
+        "standard": "يا والدي",
+        "noteAr": "نداء احترام لأي راجل كبير، زي أبوك",
+        "note": "A respectful call for any older man, like your own father",
+        "example": "أبوي، اتفضّل اقعد هنا",
+        "concept": "sir"
+      }
+    ],
+    "mar": [
+      {
+        "id": "famous.labas",
+        "text": "لا باس؟",
+        "english": "Are you well?",
+        "standard": "هل أنت بخير؟",
+        "noteAr": "أشهر سؤال مغربي، والردّ برضه «لا باس»",
+        "note": "The famous Moroccan greeting; the reply is also 'labas'",
+        "example": "السلام، لا باس؟ لا باس، الحمد لله",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.wakha",
+        "text": "واخا",
+        "english": "Okay",
+        "standard": "حسنًا",
+        "noteAr": "أشهر موافقة مغربية",
+        "note": "The best-known Moroccan okay",
+        "example": "واخا، نتشافو غدا",
+        "concept": "okay"
+      },
+      {
+        "id": "famous.bezzaf",
+        "text": "بزاف",
+        "english": "A lot / Very",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة مغاربية شهيرة للكمية والتأكيد",
+        "note": "A famous Maghrebi word for 'a lot' and 'very'",
+        "example": "زوين بزاف هاد المدينة",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.daba",
+        "text": "دابا",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "أشهر كلمة مغربية للوقت الحالي",
+        "note": "The best-known Moroccan word for right now",
+        "example": "دابا جاي، تسنّاني",
+        "concept": "now"
+      },
+      {
+        "id": "famous.wash",
+        "text": "واش؟",
+        "english": "Is it? / Do you?",
+        "standard": "هل؟",
+        "noteAr": "أداة السؤال المغربية في أول الجملة",
+        "note": "The Moroccan question marker at the start of a sentence",
+        "example": "واش نتا مغربي؟"
+      },
+      {
+        "id": "famous.zwin",
+        "text": "زوين",
+        "english": "Beautiful / Nice",
+        "standard": "جميل",
+        "noteAr": "المدح المغربي الأشهر",
+        "note": "The most common Moroccan praise",
+        "example": "المغرب زوين بزاف",
+        "concept": "beautiful"
+      },
+      {
+        "id": "famous.bghit",
+        "text": "بغيت",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "كلمة الطلب المغربية",
+        "note": "The Moroccan 'I want'",
+        "example": "بغيت أتاي بالنعناع",
+        "concept": "want"
+      },
+      {
+        "id": "famous.safi",
+        "text": "صافي",
+        "english": "That's it / Okay",
+        "standard": "انتهى",
+        "noteAr": "بتقفل بيها الكلام أو بتوافق",
+        "note": "Wraps up a conversation or means 'fine'",
+        "example": "صافي، سالينا",
+        "concept": "enough"
+      },
+      {
+        "id": "famous.khoya",
+        "text": "خويا",
+        "english": "My brother",
+        "standard": "يا أخي",
+        "noteAr": "نداء أخوي منتشر في المغرب",
+        "note": "A brotherly call common in Morocco",
+        "example": "شكراً خويا، الله يخليك",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.atay",
+        "text": "أتاي",
+        "english": "Tea",
+        "standard": "شاي",
+        "noteAr": "الشاي بالنعناع رمز الكرم المغربي",
+        "note": "Mint tea is the symbol of Moroccan hospitality",
+        "example": "تفضّل شرب أتاي معانا",
+        "concept": "tea"
+      },
+      {
+        "id": "famous.hshouma",
+        "text": "حشومة",
+        "english": "Shame! / That's rude",
+        "standard": "عيب",
+        "noteAr": "كلمة شهيرة بتتقال لأي تصرّف مش لايق",
+        "note": "A famous word for anything improper",
+        "example": "حشومة تهضر هكا مع الكبار"
+      }
+    ],
+    "jeb": [
+      {
+        "id": "famous.labas",
+        "text": "لا باس؟",
+        "english": "Are you well?",
+        "standard": "هل أنت بخير؟",
+        "noteAr": "السلام المغربي المعتاد",
+        "note": "The usual Moroccan greeting",
+        "example": "لا باس عليك؟ كلشي مزيان؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.wakha",
+        "text": "واخا",
+        "english": "Okay",
+        "standard": "حسنًا",
+        "noteAr": "موافقة مغربية",
+        "note": "A Moroccan okay",
+        "example": "واخا، نمشيو مع بعض",
+        "concept": "okay"
+      },
+      {
+        "id": "famous.daba",
+        "text": "دابا",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "دابا نطلع لشفشاون",
+        "concept": "now"
+      },
+      {
+        "id": "famous.bezzaf",
+        "text": "بزاف",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة الكمية المغاربية",
+        "note": "The Maghrebi word for lots",
+        "example": "البرد بزاف فالجبل",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.mzyan",
+        "text": "مزيان",
+        "english": "Good",
+        "standard": "جيّد",
+        "noteAr": "المدح المغربي المعتاد",
+        "note": "The usual Moroccan 'good'",
+        "example": "هاد الخبز مزيان",
+        "concept": "good"
+      },
+      {
+        "id": "famous.bghit",
+        "text": "بغيت",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "كلمة الطلب",
+        "note": "The 'I want' word",
+        "example": "بغيت نشوف الشاون الزرقا",
+        "concept": "want"
+      },
+      {
+        "id": "famous.shefshawen",
+        "text": "شفشاون الزرقا",
+        "english": "Blue Chefchaouen",
+        "standard": "شفشاون الزرقاء",
+        "noteAr": "مدينة جبلية مشهورة بيوتها الزرقاء",
+        "note": "A mountain town famous for its blue houses",
+        "example": "شفشاون الزرقا زوينة بزاف"
+      },
+      {
+        "id": "famous.khoya",
+        "text": "خويا",
+        "english": "My brother",
+        "standard": "يا أخي",
+        "noteAr": "نداء أخوي",
+        "note": "A brotherly call",
+        "example": "تعال خويا شرب أتاي",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.safi",
+        "text": "صافي",
+        "english": "That's it",
+        "standard": "انتهى",
+        "noteAr": "بتقفل بيها الكلام",
+        "note": "Wraps up the talk",
+        "example": "صافي، فهمت عليك",
+        "concept": "enough"
+      },
+      {
+        "id": "famous.wash",
+        "text": "واش؟",
+        "english": "Is it?",
+        "standard": "هل؟",
+        "noteAr": "أداة السؤال",
+        "note": "The question marker",
+        "example": "واش بعيد السوق؟"
+      }
+    ],
+    "alg": [
+      {
+        "id": "famous.wesh",
+        "text": "واش؟",
+        "english": "What? / Hey",
+        "standard": "ماذا؟",
+        "noteAr": "أشهر كلمة جزائرية، بتنفع سؤال وتحية مع بعض",
+        "note": "The most famous Algerian word, both a question and a greeting",
+        "example": "واش راك؟ واش الأخبار؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.wesh_rak",
+        "text": "واش راك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "التحية الجزائرية المشهورة",
+        "note": "The famous Algerian greeting",
+        "example": "واش راك خويا؟ لا باس؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.bezzaf",
+        "text": "بزاف",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة الكمية المغاربية",
+        "note": "The Maghrebi word for lots",
+        "example": "نحبّك بزاف",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.khouya",
+        "text": "خويا",
+        "english": "My brother",
+        "standard": "يا أخي",
+        "noteAr": "نداء أخوي منتشر",
+        "note": "A common brotherly call",
+        "example": "سامحني خويا",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.derwek",
+        "text": "درك",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي الجزائرية",
+        "note": "The Algerian word for right now",
+        "example": "درك نجي، استنّى",
+        "concept": "now"
+      },
+      {
+        "id": "famous.ya_kho",
+        "text": "يا خو",
+        "english": "Bro",
+        "standard": "يا أخي",
+        "noteAr": "نداء مختصر بين الشباب",
+        "note": "A short call between guys",
+        "example": "واش درت يا خو؟",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.sahbi",
+        "text": "صاحبي",
+        "english": "My friend",
+        "standard": "يا صديقي",
+        "noteAr": "نداء ودّي",
+        "note": "A friendly call",
+        "example": "صاحبي تاع بكري",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.hab",
+        "text": "نحب",
+        "english": "I want / I love",
+        "standard": "أريد / أحب",
+        "noteAr": "في الجزائر «نحب» بتنفع للطلب وللحبّ، والنون للمتكلّم",
+        "note": "In Algeria 'nhab' means both 'I want' and 'I love'; the 'n' is 'I'",
+        "example": "نحب قهوة بلا سكر",
+        "concept": "want"
+      },
+      {
+        "id": "famous.saha",
+        "text": "صحّة",
+        "english": "Bravo / Thanks / Cheers",
+        "standard": "أحسنت",
+        "noteAr": "كلمة جزائرية شهيرة للشكر والمدح، وكمان «صحّة عيدك»",
+        "note": "A famous Algerian word for thanks and praise, also in holiday wishes",
+        "example": "صحّة خويا، خدمة مليحة",
+        "concept": "thanks"
+      },
+      {
+        "id": "famous.mlih",
+        "text": "مليح",
+        "english": "Good",
+        "standard": "جيّد",
+        "noteAr": "المدح الجزائري المعتاد",
+        "note": "The usual Algerian 'good'",
+        "example": "هاد الفيلم مليح بزاف",
+        "concept": "good"
+      }
+    ],
+    "tun": [
+      {
+        "id": "famous.shniya_a7welek",
+        "text": "شنية أحوالك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "أشهر سؤال تونسي بعد السلام",
+        "note": "The famous Tunisian question after hello",
+        "example": "عسلامة، شنية أحوالك؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.aslema",
+        "text": "عسلامة",
+        "english": "Hi",
+        "standard": "مرحبًا",
+        "noteAr": "التحية التونسية الأشهر، أصلها «على السلامة»",
+        "note": "The best-known Tunisian hi, from 'ala al-salama'",
+        "example": "عسلامة يا جماعة",
+        "concept": "hello"
+      },
+      {
+        "id": "famous.barsha",
+        "text": "برشا",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "أشهر كلمة تونسية للكمية",
+        "note": "The most famous Tunisian word for lots",
+        "example": "نحبّ تونس برشا",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.yesser",
+        "text": "ياسر",
+        "english": "A lot / Very",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة تانية للكمية، مشهورة في العاصمة",
+        "note": "Another word for lots, common in Tunis",
+        "example": "الكسكسي باهي ياسر",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.behi",
+        "text": "باهي",
+        "english": "Good / Okay",
+        "standard": "جيّد",
+        "noteAr": "أشهر موافقة ومدح تونسي",
+        "note": "The most common Tunisian okay and praise",
+        "example": "باهي، نتلاقاو غدوة",
+        "concept": "okay"
+      },
+      {
+        "id": "famous.taw",
+        "text": "توّا",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي التونسية",
+        "note": "The Tunisian word for right now",
+        "example": "توّا نجي، استنّاني",
+        "concept": "now"
+      },
+      {
+        "id": "famous.shniya",
+        "text": "شنية؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال التونسية",
+        "note": "The Tunisian question word",
+        "example": "شنية تحبّ تاكل؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.yezzi",
+        "text": "يزّي",
+        "english": "Enough!",
+        "standard": "كفى",
+        "noteAr": "كلمة تونسية مشهورة لما تزهق",
+        "note": "A famous Tunisian word when you've had enough",
+        "example": "يزّي من الهرة",
+        "concept": "enough"
+      },
+      {
+        "id": "famous.ya_khouya",
+        "text": "يا خويا",
+        "english": "My brother",
+        "standard": "يا أخي",
+        "noteAr": "نداء أخوي",
+        "note": "A brotherly call",
+        "example": "يا خويا شبيك؟",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.nheb",
+        "text": "نحب",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "النون للمتكلّم، و«نحب» للطلب وللحبّ",
+        "note": "The 'n' is 'I', and 'nheb' means want and love",
+        "example": "نحب قهوة بالحليب",
+        "concept": "want"
+      }
+    ],
+    "tri": [
+      {
+        "id": "famous.shin_7alak",
+        "text": "شن حالك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "أشهر سؤال ليبي، وغالبًا بيتكرّر",
+        "note": "The famous Libyan greeting, often repeated",
+        "example": "شن حالك؟ شن أحوالك؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.halba",
+        "text": "هلبة",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "أشهر كلمة ليبية للكمية",
+        "note": "The best-known Libyan word for lots",
+        "example": "فيه ناس هلبة في السوق",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.tawa",
+        "text": "توا",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي الليبية",
+        "note": "The Libyan word for right now",
+        "example": "توا نجيك",
+        "concept": "now"
+      },
+      {
+        "id": "famous.bahi",
+        "text": "باهي",
+        "english": "Okay / Good",
+        "standard": "حسنًا",
+        "noteAr": "موافقة ومدح مشهور في ليبيا",
+        "note": "A well-known Libyan okay and praise",
+        "example": "باهي، نتقابلوا بكرة",
+        "concept": "okay"
+      },
+      {
+        "id": "famous.shin",
+        "text": "شنو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال الليبية",
+        "note": "The Libyan question word",
+        "example": "شنو صار؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.ya_ra3i",
+        "text": "يا راجل",
+        "english": "Hey man",
+        "standard": "يا رجل",
+        "noteAr": "نداء معتاد بين الرجال",
+        "note": "A usual call between men",
+        "example": "يا راجل وينك من زمان؟",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.nibi",
+        "text": "نبي",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "كلمة الطلب الليبية، بالنون للمتكلّم",
+        "note": "The Libyan 'I want', with 'n' for 'I'",
+        "example": "نبي شاهي أحمر",
+        "concept": "want"
+      },
+      {
+        "id": "famous.marhba",
+        "text": "مرحبا",
+        "english": "Welcome",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب بالضيف، وممكن يتكرّر «مرحبا مرحبا»",
+        "note": "A welcome for a guest, often doubled",
+        "example": "مرحبا مرحبا، نوّرت",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.khalli",
+        "text": "خلّي",
+        "english": "Leave it / Let it be",
+        "standard": "دعه",
+        "noteAr": "بتتقال لما تبطّل موضوع",
+        "note": "Said to drop a subject",
+        "example": "خلّيها عليّ، ما فيها شي",
+        "concept": "never_mind"
+      },
+      {
+        "id": "famous.shahi",
+        "text": "شاهي",
+        "english": "Tea",
+        "standard": "شاي",
+        "noteAr": "الشاهي الأحمر بالرغوة جزء من كل قعدة ليبية",
+        "note": "Strong red tea with foam is part of every Libyan gathering",
+        "example": "نشربوا شاهي أحمر بعد الغدا",
+        "concept": "tea"
+      }
+    ],
+    "ben": [
+      {
+        "id": "famous.shin_7alak",
+        "text": "شن حالك؟",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "السؤال الليبي المشهور",
+        "note": "The well-known Libyan greeting",
+        "example": "شن حالك؟ عساك باهي",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.halba",
+        "text": "هلبة",
+        "english": "A lot",
+        "standard": "كثيرًا",
+        "noteAr": "كلمة الكمية الليبية",
+        "note": "The Libyan word for lots",
+        "example": "البحر باهي هلبة اليوم",
+        "concept": "alot"
+      },
+      {
+        "id": "famous.gadeish",
+        "text": "قدّيش؟",
+        "english": "How much?",
+        "standard": "كم؟",
+        "noteAr": "القاف بتتنطق جيم مصرية في الشرق الليبي",
+        "note": "The Q is a hard G in eastern Libya",
+        "example": "قدّيش هالحوت؟",
+        "concept": "how_much"
+      },
+      {
+        "id": "famous.tawa",
+        "text": "توا",
+        "english": "Now",
+        "standard": "الآن",
+        "noteAr": "كلمة الوقت الحالي",
+        "note": "The word for right now",
+        "example": "توا نمشوا للكورنيش",
+        "concept": "now"
+      },
+      {
+        "id": "famous.bahi",
+        "text": "باهي",
+        "english": "Okay / Good",
+        "standard": "حسنًا",
+        "noteAr": "موافقة ومدح",
+        "note": "Agreement and praise",
+        "example": "باهي، نشوفك بالليل",
+        "concept": "okay"
+      },
+      {
+        "id": "famous.ya_gadda3",
+        "text": "يا جدع",
+        "english": "Hey man",
+        "standard": "يا صديقي",
+        "noteAr": "نداء شبابي مشهور في بنغازي",
+        "note": "A young people's call well known in Benghazi",
+        "example": "يا جدع تعال نتقهووا",
+        "concept": "buddy"
+      },
+      {
+        "id": "famous.nibi",
+        "text": "نبي",
+        "english": "I want",
+        "standard": "أريد",
+        "noteAr": "كلمة الطلب الليبية",
+        "note": "The Libyan 'I want'",
+        "example": "نبي نشري حوت طازة",
+        "concept": "want"
+      },
+      {
+        "id": "famous.marhba",
+        "text": "مرحبا",
+        "english": "Welcome",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب بالضيف",
+        "note": "A welcome for a guest",
+        "example": "مرحبا بيك، الدار دارك",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.shin",
+        "text": "شنو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال",
+        "note": "The question word",
+        "example": "شنو قالك؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.feshlum",
+        "text": "فشلوم",
+        "english": "Fishlum (spicy fish dish)",
+        "standard": "طبق سمك",
+        "noteAr": "مدينة على البحر، والسمك جزء من أكلها",
+        "note": "A seaside city where fish is part of every table",
+        "example": "نتغدّوا حوت اليوم"
+      }
+    ],
+    "has": [
+      {
+        "id": "famous.menni_bakhu",
+        "text": "الحمد لله بالخير",
+        "english": "Fine, thank God",
+        "standard": "بخير والحمد لله",
+        "noteAr": "ردّ معتاد على السلام في الحسانية",
+        "note": "A usual reply to greetings in Hassaniya",
+        "example": "الحمد لله بالخير، وانت؟",
+        "concept": "how_are_you"
+      },
+      {
+        "id": "famous.shtari",
+        "text": "شتاري؟",
+        "english": "What's new?",
+        "standard": "ما الجديد؟",
+        "noteAr": "أشهر سؤال حساني عن الأخبار، أصله «شنو طرأ»",
+        "note": "The famous Hassaniya 'what's new?', from 'what happened'",
+        "example": "السلام عليكم، شتاري؟",
+        "concept": "whats_up"
+      },
+      {
+        "id": "famous.ashnu",
+        "text": "أشنو؟",
+        "english": "What?",
+        "standard": "ماذا؟",
+        "noteAr": "كلمة السؤال الحسانية",
+        "note": "The Hassaniya question word",
+        "example": "أشنو تبا؟",
+        "concept": "what"
+      },
+      {
+        "id": "famous.visa3",
+        "text": "فيسع",
+        "english": "Quickly",
+        "standard": "بسرعة",
+        "noteAr": "أصلها «في الساعة»، ومشهورة في موريتانيا",
+        "note": "From 'in the hour'; well known in Mauritania",
+        "example": "جي فيسع، الناس تستنّى",
+        "concept": "fast"
+      },
+      {
+        "id": "famous.gaa3",
+        "text": "كاع",
+        "english": "All",
+        "standard": "كلّ",
+        "noteAr": "القاف بتتنطق جيم مصرية، والكلمة منتشرة في المغرب العربي",
+        "note": "Said with a hard G, common across the Maghreb",
+        "example": "الناس كاع جات للعرس"
+      },
+      {
+        "id": "famous.atay",
+        "text": "أتاي",
+        "english": "Tea",
+        "standard": "شاي",
+        "noteAr": "الشاي الموريتاني بيتقدّم تلات كاسات، وكل كاس ليه طعم",
+        "note": "Mauritanian tea comes in three glasses, each with its own taste",
+        "example": "الكاس الثالث من أتاي أحلى واحد",
+        "concept": "tea"
+      },
+      {
+        "id": "famous.marhba",
+        "text": "مرحبا",
+        "english": "Welcome",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب بالضيف، والكرم البدوي جزء من الحياة",
+        "note": "A welcome for a guest; Bedouin hospitality is a way of life",
+        "example": "مرحبا بيك، تفضّل أتاي",
+        "concept": "welcome"
+      },
+      {
+        "id": "famous.wakhayra",
+        "text": "ألا الخير",
+        "english": "Only good",
+        "standard": "لا شيء إلا الخير",
+        "noteAr": "الردّ الحساني المشهور على «شتاري؟»",
+        "note": "The famous Hassaniya reply to 'shtari?'",
+        "example": "شتاري؟ ألا الخير",
+        "concept": "how_is_it_going"
+      },
+      {
+        "id": "famous.vidou",
+        "text": "مزيان",
+        "english": "Good",
+        "standard": "جيّد",
+        "noteAr": "مدح معتاد",
+        "note": "A usual word of praise",
+        "example": "هذا اللبن مزيان",
+        "concept": "good"
+      },
+      {
+        "id": "famous.shkun",
+        "text": "شكون؟",
+        "english": "Who?",
+        "standard": "من؟",
+        "noteAr": "سؤال عن الشخص",
+        "note": "Asking who someone is",
+        "example": "شكون جاء اليوم؟",
+        "concept": "who"
+      }
+    ]
+  }
+}

@@ -63,3 +63,38 @@ export interface VoicesManifest {
 
 /** dialectId -> phrase ids that have an audio file */
 export type AudioIndex = Record<string, string[]>
+
+/** The everyday-wording groups used for "meaning in your dialect" on famous phrases. */
+export type WordGroup = 'egypt' | 'sudan' | 'levant' | 'iraq' | 'gulf' | 'yemen' | 'maghreb'
+
+/** A meaning that famous phrases from different dialects share, e.g. "now" or "very". */
+export interface Concept {
+  id: string
+  /** The meaning in Standard Arabic. */
+  name: string
+  nameEn: string
+  /** An everyday phrase with the same meaning; its variant in the visitor's dialect is shown. */
+  base?: string
+  /** The everyday word for this meaning in each group, used when the visitor's dialect has no phrase for it. */
+  words?: Partial<Record<WordGroup, string>>
+}
+
+export interface FamousPhrase {
+  /** Stable id, "famous.<slug>", unique within its dialect. Used in audio paths. Never rename. */
+  id: string
+  text: string
+  english: string
+  /** The meaning in Standard Arabic. */
+  standard: string
+  noteAr?: string
+  note?: string
+  example?: string
+  concept?: string
+}
+
+export interface FamousContent {
+  version: number
+  concepts: Concept[]
+  /** dialectId -> its famous phrases, most iconic first */
+  dialects: Record<string, FamousPhrase[]>
+}
