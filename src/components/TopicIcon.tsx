@@ -1,5 +1,11 @@
 import {
   Briefcase,
+  Building2,
+  ChefHat,
+  Moon,
+  PartyPopper,
+  Smartphone,
+  Trophy,
   Bus,
   CircleHelp,
   Clock,
@@ -53,6 +59,12 @@ const icons: Record<string, LucideIcon> = {
   slang: Flame,
   hand: Hand,
   zap: Zap,
+  chef: ChefHat,
+  city: Building2,
+  sports: Trophy,
+  tech: Smartphone,
+  religion: Moon,
+  occasions: PartyPopper,
 }
 
 export default function TopicIcon({ icon, className = 'h-5 w-5' }: { icon: string; className?: string }) {

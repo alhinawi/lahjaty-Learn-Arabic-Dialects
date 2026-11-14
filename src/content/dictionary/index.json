@@ -132,6 +132,30 @@
    "name": "المدرسة والجامعة",
    "nameEn": "School and university",
    "icon": "school"
+  },
+  {
+   "id": "expressions",
+   "name": "تحيات وتعبيرات يومية",
+   "nameEn": "Greetings and everyday expressions",
+   "icon": "hand"
+  },
+  {
+   "id": "slang",
+   "name": "كلام الشباب",
+   "nameEn": "Youth slang",
+   "icon": "slang"
+  },
+  {
+   "id": "kitchen",
+   "name": "المطبخ والطبخ",
+   "nameEn": "Kitchen and cooking",
+   "icon": "chef"
+  },
+  {
+   "id": "city",
+   "name": "المدينة والأماكن",
+   "nameEn": "Town and places",
+   "icon": "city"
   }
  ]
 }

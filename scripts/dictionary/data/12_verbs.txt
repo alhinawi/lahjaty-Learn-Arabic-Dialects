@@ -6,7 +6,7 @@ drink | شرب | to drink | v | ALL=شرب
 sleep | نام | to sleep | v | ALL=نام; MAJ=نعس; alg=رقد; tun=رقد; LY=رقد; sud=نام / رقد | cai: نمت متأخر امبارح. || mar: نعست معطّل البارح. || tun: رقدت متأخر البارح.
 wake_up | استيقظ | to wake up | v | EGS=صحي; LEVP=فاق / صحي; IQM=گعد; KHL=قعد; hij=صحي / قام; sud=صحى / قام; MA=فاق; jeb=فاق; alg=ناض; tun=فاق / قام; LY=ناض | bag: گعدت من النوم الساعة سبعة.
 see | رأى | to see | v | EGS=شاف; LEVP=شاف; IQM=شاف; KHL=شاف; OM=شاف; hij=شاف; YE=شاف; sud=شاف; MAGT=شاف; LY=شاف
-want | أراد | to want | v | EGS=عايز / عاوز; sai=رايد / عايز; LEVP=بدّو; IQM=يريد; KHL=يبي / يبغى; hij=يبغى; OM=يبا; YE=يشتي; sud=داير; MAJ=بغى; alg=حبّ / بغى; tun=حبّ; LY=يبّي; chd=داير | cai: أنا عايز قهوة. || dam: بدّي قهوة. || san: اشتي قهوة. || mar: بغيت قهوة.
+want | أراد | to want | v | EGS=عايز / عاوز; LEVP=بدّو; IQM=يريد; KHL=يبي / يبغى; hij=يبغى; OM=يبا; YE=يشتي; sud=داير; MAJ=بغى; alg=حبّ / بغى; tun=حبّ; LY=يبّي; chd=داير | cai: أنا عايز قهوة. || dam: بدّي قهوة. || san: اشتي قهوة. || mar: بغيت قهوة.
 say | قال | to say | v | ALL=قال
 talk | تكلّم | to talk | v | EGS=اتكلّم; LEVP=حكى; IQM=حچى; KHL=تكلّم / سولف; hij=تكلّم / هرج; YE=تكلّم; sud=اتكلّم / ونّس; MA=هضر; jeb=هضر; alg=هدر; tun=حكى / تكلّم; LY=تكلّم | leb: حكيت معو مبارح. || mar: هضرت معاه البارح.
 work | اشتغل | to work | v | EGS=اشتغل; LEVP=اشتغل; IQM=اشتغل; KHL=اشتغل; hij=اشتغل; sud=اشتغل; MAGT=خدم; LY=خدم | alg: نخدم في بنكة.

@@ -1,0 +1,68 @@
+@topic expressions | تحيات وتعبيرات يومية | Greetings and everyday expressions | hand
+hello | مرحبًا | hello | int | EGS=أهلًا; LEVP=مرحبا / أهلين; IQM=هلو / هلا; KHL=هلا / مرحبا; OM=هلا; hij=أهلين / هلا; sud=أهلًا / سلام; MA=سلام; jeb=سلام; alg=سلام; tun=عسلامة; LY=مرحبا
+how_are_you | كيف حالك؟ | how are you? | phr | EGS=إزيّك؟; LEVP=كيفك؟; IQM=شلونك؟; KHL=شلونك؟ / كيف حالك؟; OM=كيف حالك؟; hij=كيفك؟ / إيش لونك؟; YE=كيف حالك؟; sud=كيفك؟ / إزيّك؟; MA=لاباس؟ / كيداير؟; jeb=كيداير؟; alg=واش راك؟ / كي راك؟; tun=شنوّة أحوالك؟ / لاباس؟; LY=كيف حالك؟ / شن حالك؟
+good_morning | صباح الخير | good morning | phr | ALL=صباح الخير
+good_evening | مساء الخير | good evening | phr | ALL=مساء الخير
+good_night | تصبح على خير | good night | phr | ALL=تصبح على خير
+welcome | أهلًا وسهلًا | welcome | phr | ALL=أهلًا وسهلًا; KHL=حيّاك / هلا والله; sud=مرحب / أهلًا وسهلًا; MAGT=مرحبا بيك | naj: حيّاك الله، تفضّل. || mar: مرحبا بيك، دخل.
+here_you_go | تفضّل | here you go / come in | phr | ALL=تفضّل
+congratulations | مبروك | congratulations | int | ALL=مبروك
+excuse_me | عن إذنك | excuse me | phr | EGS=لو سمحت / عن إذنك; LEVP=عن إذنك / بعد إذنك; IQM=بلا زحمة / رجاءً; KHL=لو سمحت / عن إذنك; hij=لو سمحت; MA=سمح ليا; jeb=سمح ليا; alg=سمحلي; tun=سامحني
+never_mind | لا بأس | never mind / it's okay | phr | EGS=معلش; LEVP=معلش / ولا يهمّك; IQM=ماكو مشكلة / ولا يهمّك; KHL=عادي / ولا يهمّك; hij=معليش; sud=معليش; MA=ماشي مشكل; jeb=ماشي مشكل; alg=ماعليش; tun=ماعليش; LY=معليش | cai: معلش، حصل خير.
+enjoy_meal | بالهناء والشفاء | enjoy your meal | phr | EGS=بالهنا والشفا; LEVP=صحتين; IQM=بالعافية; KHL=بالعافية; hij=بالعافية; MA=بصحّتك; jeb=بصحّتك; alg=بالصحّة; tun=بالشفاء
+see_you | أراك لاحقًا | see you later | phr | EGS=أشوفك بعدين; LEVP=بشوفك بعدين; IQM=أشوفك بعدين; KHL=أشوفك بعدين; hij=أشوفك بعدين; MA=نشوفك من بعد; jeb=نشوفك من بعد; alg=نشوفك من بعد; tun=نشوفك مبعد
+very | جدًّا | very | adv | EGS=قوي / أوي; LEVP=كتير; IQM=كلّش; KHL=وايد / مرّة; OM=وايد; hij=مرّة; sud=شديد; MA=بزّاف; jeb=بزّاف; alg=بزّاف; tun=برشا; LY=واجد | cai: حلو أوي. || bag: كلّش حلو. || hij: حلو مرّة. || tun: باهي برشا.
+seriously | حقًّا؟ | seriously? / really? | phr | EGS=بجد؟; LEVP=عنجد؟ / جد؟; IQM=صدگ؟ / والله؟; KHL=صدق؟ / جد؟; hij=جد؟ / صدق؟; sud=والله؟; MA=بصّح؟; jeb=بصّح؟; alg=بصّح؟; tun=بالحق؟
+whats_up | ما الأخبار؟ | what's up? | phr | EGS=إيه الأخبار؟ / عامل إيه؟; LEVP=شو الأخبار؟; IQM=شكو ماكو؟; KHL=شخبارك؟ / وش السالفة؟; hij=إيش الأخبار؟; sud=أخبارك شنو؟; MA=آش خبار؟; jeb=آش خبار؟; alg=واش الأخبار؟; tun=آش ثمّة؟; LY=شن الجو؟ | bag: هلا بيك، شكو ماكو؟
+so_so | لا بأس | so-so / getting by | phr | EGS=ماشي الحال; LEVP=ماشي الحال; MA=غير هاكّا; jeb=غير هاكّا
+lets_go | هيّا | let's go / come on | int | ALL=يلّا
+
+@topic slang | كلام الشباب | Youth slang | slang
+awesome | رائع | awesome / cool | adj | EGS=جامد / تحفة; LEVP=بيجنّن; KHL=خطير; hij=خطير; MA=واعر; jeb=واعر; alg=هايل; tun=يهبّل | cai: الفيلم جامد. || leb: الفيلم بيجنّن. || mar: الفيلم واعر. || tun: الفيلم يهبّل.
+bro | يا صديقي | bro / mate | phr | EGS=يا صاحبي / يا معلّم / يا باشا; LEVP=يا زلمة / خيّو; IQM=أغاتي / عيوني; KHL=يا خوي / يا الحبيب; hij=يا شيخ / يا رجّال; sud=يا زول; MA=أصاحبي / خويا; jeb=خويا; alg=خويا / خو; tun=يا خويا / صاحبي
+kidding | يمزح | joking | v | EGS=بيهزّر; LEVP=عم يمزح; IQM=يتشاقى; KHL=يمزح / يستهبل; tun=يفدلك | cai: إنت بتهزّر؟ || bag: دتتشاقى؟
+broke | مفلس | broke (no money) | adj | EGS=مفلّس; LEVP=مفلّس; IQM=مفلّس; KHL=مفلّس; MA=مزلوط; jeb=مزلوط; alg=مزلوط
+chilled | مسترخٍ | relaxed / in a good mood | adj | EGS=رايق; LEVP=رايق; KHL=رايق; hij=رايق | cai: أنا رايق النهارده.
+annoying | مزعج | annoying (person) | adj | EGS=رخم / غلس; LEVP=تقيل; KHL=ثقيل / لزقة
+young_man | شاب | young man / guy | n | EGS=شاب / واد; LEVP=شب; IQM=شاب / ولد; KHL=شاب / ولد; MA=درّي; jeb=درّي; tun=طفل
+young_woman | شابّة | young woman / girl | n | EGS=بنت; LEVP=صبيّة / بنت; IQM=بنية; KHL=بنت; MA=درّية / بنت; jeb=درّية; alg=طفلة; tun=طفلة
+
+@topic kitchen | المطبخ والطبخ | Kitchen and cooking | chef
+pot | قِدر | pot | n | EGS=حلّة; LEVP=طنجرة; IQM=جدر; KHL=جدر / قدر; hij=قدر / حلّة; sud=حلّة; MA=طنجرة; jeb=طنجرة; alg=طنجرة / قدرة; tun=طنجرة | cai: حطّ الحلّة على النار. || dam: حطّ الطنجرة عالنار.
+frying_pan | مقلاة | frying pan | n | EGS=طاسة; LEVP=مقلاية; IQM=طاوة; KHL=طاوة / مقلاة; hij=مقلاة / طاوة; sud=طاوة; MA=مقلة; jeb=مقلة; alg=مقلة; tun=مقلة
+oven | فرن | oven | n | ALL=فرن
+stove | موقد | cooker / stove | n | EGS=بوتاجاز; LEVP=غاز; IQM=طبّاخ; KHL=طبّاخ / غاز; MA=بوطاغاز; alg=كوزينيار
+fork | شوكة | fork | n | ALL=شوكة; IQM=چطل; MAGT=فرشيطة
+glass | كأس | glass (for drinking) | n | EGS=كوباية; LEVP=كاسة / كبّاية; IQM=گلاص; KHL=گلاص / كوب; hij=كاسة; sud=كبّاية; MAGT=كاس; LY=كاس | cai: هات كوباية ميه. || bag: انطيني گلاص مي.
+teapot | إبريق | teapot | n | EGS=برّاد; LEVP=إبريق; IQM=قوري; MA=برّاد; jeb=برّاد; tun=برّاد
+spices | بهارات | spices | n | EGS=توابل / بهارات; LEVP=بهارات; IQM=بهارات; KHL=بهارات; hij=بهارات; MA=عطرية; jeb=عطرية
+oil | زيت | oil | n | ALL=زيت
+boil | غلى | to boil | v | EGS=غلى; LEVP=غلي; IQM=فوّر; KHL=غلى
+fry | قلى | to fry | v | ALL=قلى
+grill | شوى | to grill | v | ALL=شوى
+cut | قطّع | to cut / to chop | v | ALL=قطّع
+burnt | محروق | burnt | adj | ALL=محروق
+dishes | أوانٍ | the dishes (to wash) | n | EGS=مواعين; LEVP=جلي / صحون; IQM=مواعين; KHL=مواعين; hij=مواعين; sud=عدّة; MA=مواعن; jeb=مواعن; alg=ماعون; tun=ماعون | cai: اغسل المواعين. || dam: مين رح يعمل الجلي؟
+tray | صينية | tray | n | ALL=صينية
+recipe | وصفة | recipe | n | ALL=وصفة; EGS=طريقة / وصفة
+salty | مالح | salty | adj | ALL=مالح
+sweet_taste | حلو | sweet | adj | ALL=حلو
+sour | حامض | sour | adj | ALL=حامض
+
+@topic city | المدينة والأماكن | Town and places | city
+city_town | مدينة | city / town | n | ALL=مدينة; EGS=مدينة / بلد
+village | قرية | village | n | EGS=قرية / بلد / عزبة; LEVP=ضيعة / قرية; IQM=قرية; KHL=قرية; hij=قرية; sud=قرية / حلّة; MA=دوار; jeb=دوار / مدشر; alg=دشرة / دوار; tun=قرية | cai: أنا من البلد أصلًا. || leb: طالع عالضيعة.
+neighbourhood | حيّ | neighbourhood | n | EGS=حتّة / منطقة; LEVP=حارة / حيّ; IQM=محلّة / منطقة; KHL=فريج / حيّ; hij=حارة / حيّ; sud=حيّ; MA=حومة / درب; jeb=حومة; alg=حومة; tun=حومة | kuw: عيال الفريج. || alg: ولاد الحومة.
+mosque | مسجد | mosque | n | ALL=جامع / مسجد
+bank_place | بنك | bank | n | ALL=بنك; MAGT=بنكة
+restaurant | مطعم | restaurant | n | ALL=مطعم
+cafe | مقهى | café | n | EGS=قهوة / كافيه; LEVP=قهوة / مقهى; IQM=گهوة / چايخانة; KHL=قهوة / كوفي; hij=قهوة / كوفي; MAGT=قهوة
+bakery | مخبز | bakery | n | EGS=فرن / مخبز; LEVP=فرن; IQM=فرن / مخبز; KHL=مخبز / خبّاز; MA=مخبزة; alg=كوشة; tun=كوشة
+post_office | مكتب البريد | post office | n | EGS=بوستة / بريد; LEVP=بريد; IQM=بريد; KHL=بريد; MAGT=بوسطة
+square | ميدان | square (in a city) | n | EGS=ميدان; LEVP=ساحة; IQM=ساحة; KHL=ساحة; MAGT=ساحة
+roundabout | دوّار | roundabout | n | EGS=صينية; LEVP=دوّار; IQM=فلكة; KHL=دوّار; hij=دوّار / ميدان; MA=رومبوان | cai: لفّ من الصينية. || bag: ابقى سيده للفلكة.
+building | بناية | building | n | EGS=عمارة; LEVP=بناية; IQM=عمارة / بناية; KHL=عمارة / بناية; hij=عمارة; MAGT=عمارة
+apartment | شقّة | flat / apartment | n | EGS=شقّة; LEVP=شقّة / بيت; IQM=شقّة; KHL=شقّة; hij=شقّة; MAGT=شقّة; MA=شقّة / أبارطمة
+police_station | مركز الشرطة | police station | n | EGS=قسم; LEVP=مخفر; IQM=مركز شرطة; KHL=مخفر; MA=كوميسارية; jeb=كوميسارية; alg=كوميسارية
+downtown | وسط المدينة | city centre | n | EGS=وسط البلد; LEVP=وسط البلد / البلد
+hotel | فندق | hotel | n | EGS=فندق / أوتيل; LEVP=أوتيل / فندق; IQM=فندق / أوتيل; KHL=فندق; hij=فندق; sud=فندق; MAGT=أوطيل
