@@ -1,4 +1,5 @@
 import { Heart } from 'lucide-react'
+import EmptyState from '../components/EmptyState'
 import FamousCard from '../components/FamousCard'
 import PhraseCard from '../components/PhraseCard'
 import { getDialect, getFamous, getPhrase } from '../lib/content'
@@ -17,10 +18,7 @@ export default function FavoritesPage() {
     <div className="space-y-4">
       <h1 className="text-xl font-bold">{t('favoritesTitle')}</h1>
       {items.length === 0 ? (
-        <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-500">
-          <Heart className="mx-auto mb-3 h-8 w-8 text-rose-300" aria-hidden />
-          {t('favoritesEmpty')}
-        </div>
+        <EmptyState icon={Heart} title={t('favoritesEmptyTitle')} body={t('favoritesEmpty')} action={{ to: '/lessons', label: t('favoritesEmptyCta') }} />
       ) : (
         <div className="space-y-3">
           {items.map(({ dialectId, phraseId }) => {

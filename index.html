@@ -21,9 +21,32 @@
         if (t === 'dark' || (t === 'system' && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark')
       } catch (e) {}
     </script>
+    <style>
+      body { margin: 0; background: #fbf8f1; }
+      .dark body { background: #0d1413; }
+      .shell-bar { height: 56px; display: flex; align-items: center; gap: 10px; padding: 0 16px; background: linear-gradient(135deg, #0e5443, #08302a); }
+      .shell-logo { width: 36px; height: 36px; border-radius: 12px; background: #c99a3e; opacity: 0.85; }
+      .shell-main { max-width: 42rem; margin: 0 auto; padding: 16px; }
+      .shell-hero { border-radius: 2rem; padding: 20px; background: linear-gradient(135deg, #0e5443, #08302a); display: flex; flex-direction: column; gap: 12px; min-height: 220px; box-sizing: border-box; }
+      .shell-line { display: block; height: 12px; border-radius: 99px; background: rgba(255, 255, 255, 0.14); }
+      .shell-line.big { height: 22px; }
+      .shell-line.gold { background: rgba(243, 220, 156, 0.45); }
+      .shell-card { height: 88px; margin-top: 14px; border-radius: 1rem; background: #f5eedf; }
+      .dark .shell-card { background: #17201f; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Shown until the app starts, then replaced. Plain styles so it paints before any script. -->
+      <div class="shell" aria-hidden="true">
+        <div class="shell-bar"><span class="shell-logo"></span><span class="shell-line" style="width: 5rem"></span></div>
+        <div class="shell-main">
+          <div class="shell-hero"><span class="shell-line gold" style="width: 40%"></span><span class="shell-line big" style="width: 85%"></span><span class="shell-line big" style="width: 60%"></span><span class="shell-line" style="width: 90%"></span></div>
+          <div class="shell-card"></div>
+          <div class="shell-card"></div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

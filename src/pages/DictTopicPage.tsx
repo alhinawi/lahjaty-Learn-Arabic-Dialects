@@ -1,3 +1,4 @@
+import { SkeletonCards } from '../components/Skeleton'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useEffect } from 'react'
 import { Link, useLocation, useParams } from 'react-router'
@@ -52,7 +53,7 @@ export default function DictTopicPage() {
       <DialectChip next={`/dictionary/${topic.id}`} />
 
       {entries === null ? (
-        <p className="py-8 text-center text-sm text-slate-500">{t('dictLoading')}</p>
+        <SkeletonCards count={5} label={t('dictLoading')} />
       ) : (
         <div className="space-y-3">
           {[...withWord, ...without].map((e) => (

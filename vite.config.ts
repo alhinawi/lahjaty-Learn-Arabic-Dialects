@@ -3,11 +3,26 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import type { Plugin } from 'vite'
+
+/** Preloads the Arabic interface font so the first text paints in it without a late swap. */
+const preloadFonts = (): Plugin => ({
+  name: 'lahjaty-preload-fonts',
+  apply: 'build',
+  transformIndexHtml: {
+    order: 'post',
+    handler: (_html, ctx) =>
+      Object.keys(ctx.bundle ?? {})
+        .filter((f) => /readex-pro-arabic-wght-normal-[^/]*\.woff2$/.test(f))
+        .map((f) => ({ tag: 'link', attrs: { rel: 'preload', as: 'font', type: 'font/woff2', href: `/${f}`, crossorigin: '' }, injectTo: 'head' as const })),
+  },
+})
 
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    preloadFonts(),
     VitePWA({
       registerType: 'autoUpdate',
       injectRegister: false,
@@ -41,7 +56,7 @@ export default defineConfig({
       workbox: {
         // The app shell only: the main script and styles, the interface fonts and the icons.
         // Prerendered pages, dictionary topics and audio are cached the first time they are opened.
-        globPatterns: ['index.html', 'assets/index-*.{js,css}', 'assets/readex-pro-{arabic,latin}-wght-*.woff2', 'assets/el-messiri-*.woff2', 'favicon.svg', 'icons/*.png'],
+        globPatterns: ['index.html', 'assets/{index,vendor}-*.{js,css}', 'assets/*Page-*.js', 'assets/readex-pro-{arabic,latin}-wght-*.woff2', 'assets/el-messiri-*.woff2', 'favicon.svg', 'icons/*.png'],
         navigateFallback: '/index.html',
         navigateFallbackDenylist: [/^\/og\//, /^\/audio\//, /\.(xml|txt|jpg|png|mp3)$/],
         cleanupOutdatedCaches: true,
@@ -72,6 +87,14 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        // React and the router change rarely: their own file stays cached across deploys.
+        manualChunks: (id) => (/node_modules\/(react|react-dom|react-router|scheduler|zustand)\//.test(id) ? 'vendor' : undefined),
+      },
+    },
+  },
   test: {
     environment: 'node',
     include: ['src/**/*.test.ts', 'scripts/**/*.test.ts'],

@@ -1,8 +1,10 @@
 import { BookA, BookOpen, Columns3, GraduationCap, Heart, House, Languages, Moon, Search, Settings, Sun, Trophy } from 'lucide-react'
+import { Suspense } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
 import { useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
 import Onboarding from './Onboarding'
+import { PageSkeleton } from './Skeleton'
 import BadgeToast from './BadgeToast'
 import InstallPrompt from './InstallPrompt'
 import OfflineBanner from './OfflineBanner'
@@ -71,9 +73,11 @@ export default function Layout() {
       <OfflineBanner />
 
       <main className="mx-auto w-full max-w-2xl flex-1 px-4 pt-4 pb-28">
-        <div key={pathname} className="animate-rise">
-          <Outlet />
-        </div>
+        <Suspense fallback={<PageSkeleton label={t('dictLoading')} />}>
+          <div key={pathname} className="animate-rise">
+            <Outlet />
+          </div>
+        </Suspense>
       </main>
 
       <nav className="pb-safe fixed inset-x-0 bottom-0 z-20 border-t border-slate-200 bg-white/95 shadow-[0_-8px_24px_-12px_rgb(8_48_42/0.18)] backdrop-blur-md">

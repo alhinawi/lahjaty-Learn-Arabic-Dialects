@@ -58,6 +58,7 @@ export default function SearchBox({ initial = '', autoFocus = false, onSubmit }:
           placeholder={t('searchPlaceholder')}
           enterKeyHint="search"
           autoComplete="off"
+          role="combobox"
           aria-autocomplete="list"
           aria-controls={listId}
           aria-expanded={open && suggestions.length > 0}

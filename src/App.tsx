@@ -1,28 +1,29 @@
-import { useEffect } from 'react'
+import { useEffect, lazy } from 'react'
 import { Route, Routes, useLocation } from 'react-router'
 import Layout from './components/Layout'
 import { useApp } from './lib/store'
-import ComparePage from './pages/ComparePage'
-import DialectPage from './pages/DialectPage'
-import EgyptNodePage from './pages/EgyptNodePage'
-import EgyptPage from './pages/EgyptPage'
-import SearchPage from './pages/SearchPage'
-import DialectsPage from './pages/DialectsPage'
-import FavoritesPage from './pages/FavoritesPage'
 import HomePage from './pages/HomePage'
-import LessonPage from './pages/LessonPage'
-import LessonsPage from './pages/LessonsPage'
-import NotFoundPage from './pages/NotFoundPage'
-import PracticePage from './pages/PracticePage'
-import QuizPage from './pages/QuizPage'
-import SettingsPage from './pages/SettingsPage'
-import SharePage from './pages/SharePage'
-import FlashcardsPage from './pages/FlashcardsPage'
-import DictionaryPage from './pages/DictionaryPage'
-import DictTopicPage from './pages/DictTopicPage'
-import WordPage from './pages/WordPage'
-import ProfilePage from './pages/ProfilePage'
 import { syncSocialImage } from './lib/meta'
+
+const ComparePage = lazy(() => import('./pages/ComparePage'))
+const DialectPage = lazy(() => import('./pages/DialectPage'))
+const EgyptNodePage = lazy(() => import('./pages/EgyptNodePage'))
+const EgyptPage = lazy(() => import('./pages/EgyptPage'))
+const SearchPage = lazy(() => import('./pages/SearchPage'))
+const DialectsPage = lazy(() => import('./pages/DialectsPage'))
+const FavoritesPage = lazy(() => import('./pages/FavoritesPage'))
+const LessonPage = lazy(() => import('./pages/LessonPage'))
+const LessonsPage = lazy(() => import('./pages/LessonsPage'))
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
+const PracticePage = lazy(() => import('./pages/PracticePage'))
+const QuizPage = lazy(() => import('./pages/QuizPage'))
+const SettingsPage = lazy(() => import('./pages/SettingsPage'))
+const SharePage = lazy(() => import('./pages/SharePage'))
+const FlashcardsPage = lazy(() => import('./pages/FlashcardsPage'))
+const DictionaryPage = lazy(() => import('./pages/DictionaryPage'))
+const DictTopicPage = lazy(() => import('./pages/DictTopicPage'))
+const WordPage = lazy(() => import('./pages/WordPage'))
+const ProfilePage = lazy(() => import('./pages/ProfilePage'))
 
 export default function App() {
   const lang = useApp((s) => s.lang)

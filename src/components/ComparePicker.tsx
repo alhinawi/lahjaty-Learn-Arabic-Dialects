@@ -67,6 +67,7 @@ export default function ComparePicker({
           placeholder={t('compareSearchPlaceholder')}
           enterKeyHint="search"
           autoComplete="off"
+          role="combobox"
           aria-autocomplete="list"
           aria-controls={listId}
           aria-expanded={open && suggestions.length > 0}

@@ -9,6 +9,7 @@ export default function ProgressBar({ value, total, label }: { value: number; to
         aria-valuemin={0}
         aria-valuemax={total}
         aria-valuenow={value}
+        aria-label={label ?? `${value} / ${total}`}
       >
         <div className="h-full rounded-full bg-sun-500 transition-all" style={{ width: `${pct}%` }} />
       </div>

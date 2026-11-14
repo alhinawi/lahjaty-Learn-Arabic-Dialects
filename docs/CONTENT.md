@@ -322,3 +322,12 @@ The icons in `public/icons` are drawn from `public/favicon.svg`. After changing 
 The install card (`src/components/InstallPrompt.tsx`) appears only after the visitor practised or
 stayed a while, and "not now" hides it for two weeks. On iPhone it shows the Share menu steps.
 Settings has the same install button. `public/_headers` stops Cloudflare from caching `sw.js`.
+
+## Loading, empty states and speed
+
+Every page except the home page is its own script (`React.lazy` in `src/App.tsx`), loaded when it
+is opened; a soft skeleton (`src/components/Skeleton.tsx`) shows meanwhile, and the same skeletons
+show while a dictionary topic loads. React and the router sit in a separate `vendor` file that
+stays cached across deploys. `index.html` holds a plain painted shell that shows before any script,
+and the build preloads the Arabic interface font. Empty and not-found pages use
+`src/components/EmptyState.tsx`.

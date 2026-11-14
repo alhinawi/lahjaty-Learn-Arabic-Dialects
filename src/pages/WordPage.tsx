@@ -1,3 +1,4 @@
+import { PageSkeleton } from '../components/Skeleton'
 import { ChevronRight, Columns3, Quote } from 'lucide-react'
 import { Link, useParams } from 'react-router'
 import DictSearch from '../components/DictSearch'
@@ -37,7 +38,7 @@ export default function WordPage() {
       </div>
     )
   }
-  if (entry === null) return <p className="py-10 text-center text-sm text-slate-500">{t('dictLoading')}</p>
+  if (entry === null) return <PageSkeleton label={t('dictLoading')} />
   if (!entry) return <NotFoundPage />
 
   const topic = getTopic(topicOf(entry.id))
