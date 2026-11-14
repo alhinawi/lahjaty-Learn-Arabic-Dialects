@@ -36,6 +36,10 @@ export interface AppState {
   /** Flashcards: "<dialectId>|<phraseId>" -> box and due day. */
   cards: Record<string, CardState>
   streak: Streak
+  /** Days with any practice (YYYY-MM-DD), for the calendar on the profile page. */
+  practiceDays: string[]
+  /** Badges the visitor was already told about. Null until the first check, which tells nothing. */
+  seenBadges: string[] | null
 
   setLang: (lang: Lang) => void
   toggleLang: () => void
@@ -55,7 +59,17 @@ export interface AppState {
   reviewCard: (key: string, remembered: boolean) => void
   /** Counts today as a practice day. */
   markPracticed: () => void
+  markBadgesSeen: (ids: string[]) => void
 }
+
+/** Keeps a short history of practice days: enough for a year of calendar. */
+const MAX_DAYS = 400
+export const withDay = (days: string[], today: string) => (days.includes(today) ? days : [...days, today].slice(-MAX_DAYS))
+/** One practice today: the streak and the calendar both count it. */
+const practised = (s: Pick<AppState, 'streak' | 'practiceDays'>, today = dayKey()) => ({
+  streak: bumpStreak(s.streak, today),
+  practiceDays: withDay(s.practiceDays, today),
+})
 
 export const initialState = {
   lang: 'ar' as Lang,
@@ -71,6 +85,8 @@ export const initialState = {
   quizzesTaken: 0,
   cards: {} as Record<string, CardState>,
   streak: { count: 0, last: '' } as Streak,
+  practiceDays: [] as string[],
+  seenBadges: null as string[] | null,
 }
 
 const toggleIn = (list: string[], item: string) =>
@@ -92,23 +108,30 @@ export const useApp = create<AppState>()(
       toggleFavorite: (dialectId, phraseId) =>
         set((s) => ({ favorites: toggleIn(s.favorites, favKey(dialectId, phraseId)) })),
       toggleLearned: (dialectId, phraseId) =>
-        set((s) => ({ learned: { ...s.learned, [dialectId]: toggleIn(s.learned[dialectId] ?? [], phraseId) } })),
+        set((s) => {
+          const list = s.learned[dialectId] ?? []
+          const adding = !list.includes(phraseId)
+          return { learned: { ...s.learned, [dialectId]: toggleIn(list, phraseId) }, ...(adding ? practised(s) : {}) }
+        }),
       recordQuiz: (mode, scope, correct, total) =>
         set((s) => {
           const key = `${mode}|${scope}`
           const pct = total > 0 ? Math.round((correct / total) * 100) : 0
           return {
+            ...practised(s),
             quizzesTaken: s.quizzesTaken + 1,
             bestScores: { ...s.bestScores, [key]: Math.max(s.bestScores[key] ?? 0, pct) },
           }
         }),
-      resetProgress: () => set({ learned: {}, bestScores: {}, quizzesTaken: 0, cards: {}, streak: { count: 0, last: '' } }),
+      resetProgress: () =>
+        set({ learned: {}, bestScores: {}, quizzesTaken: 0, cards: {}, streak: { count: 0, last: '' }, practiceDays: [], seenBadges: [] }),
       reviewCard: (key, remembered) =>
         set((s) => {
           const today = dayKey()
-          return { cards: { ...s.cards, [key]: review(s.cards[key], remembered, today) }, streak: bumpStreak(s.streak, today) }
+          return { cards: { ...s.cards, [key]: review(s.cards[key], remembered, today) }, ...practised(s, today) }
         }),
-      markPracticed: () => set((s) => ({ streak: bumpStreak(s.streak, dayKey()) })),
+      markPracticed: () => set((s) => practised(s)),
+      markBadgesSeen: (ids) => set((s) => ({ seenBadges: [...new Set([...(s.seenBadges ?? []), ...ids])] })),
     }),
     {
       name: 'lahjaty:v1',
@@ -128,6 +151,8 @@ export const useApp = create<AppState>()(
         quizzesTaken: s.quizzesTaken,
         cards: s.cards,
         streak: s.streak,
+        practiceDays: s.practiceDays,
+        seenBadges: s.seenBadges,
       }),
     },
   ),

@@ -21,6 +21,7 @@ import FlashcardsPage from './pages/FlashcardsPage'
 import DictionaryPage from './pages/DictionaryPage'
 import DictTopicPage from './pages/DictTopicPage'
 import WordPage from './pages/WordPage'
+import ProfilePage from './pages/ProfilePage'
 import { syncSocialImage } from './lib/meta'
 
 export default function App() {
@@ -72,6 +73,7 @@ export default function App() {
         <Route path="word" element={<WordPage />} />
         <Route path="word/:entryId" element={<WordPage />} />
         <Route path="favorites" element={<FavoritesPage />} />
+        <Route path="profile" element={<ProfilePage />} />
         <Route path="share/:dialectId/:phraseId" element={<SharePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>

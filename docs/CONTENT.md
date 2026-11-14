@@ -295,3 +295,15 @@ Egypt-section page. Keys are dialect ids from `phrases.json`. Each entry has `wh
 list of `features`, every one as `{ "ar": "...", "en": "..." }`. The card shows on `/dialect/<id>`
 under the header. Write only well-documented features; a test checks that every key is a real
 dialect and that no text is empty.
+
+## Progress, levels and badges
+
+The profile page (`/profile`, `src/pages/ProfilePage.tsx`) shows the level, stats, a calendar of
+practice days and the badges. Everything is computed in `src/lib/achievements.ts` from what the
+browser already stores (learned phrases, flashcards, quizzes, favorites, streak and practice
+days); nothing is sent anywhere.
+
+To add a badge, add one line to `ACHIEVEMENTS` (an id, an icon, a goal and the number it counts)
+and the messages `badge_<id>` and `badge_<id>Body` in both languages in `src/lib/i18n.ts`. A test
+fails if either message is missing. A new badge is announced once, with a short message, the
+first time it is earned; badges earned before an update are marked seen quietly.

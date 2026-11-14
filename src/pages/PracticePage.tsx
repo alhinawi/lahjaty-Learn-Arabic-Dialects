@@ -1,6 +1,7 @@
 import { BookOpen, ChevronLeft, Flame, Layers, MapPinned, Shuffle } from 'lucide-react'
 import CategoryIcon from '../components/CategoryIcon'
 import { Link } from 'react-router'
+import ProfileCard from '../components/ProfileCard'
 import DialectChip from '../components/DialectChip'
 import { categories, getDialect, phrases } from '../lib/content'
 import { currentStreak, dayKey, dueCount } from '../lib/srs'
@@ -68,6 +69,7 @@ export default function PracticePage() {
           {t('streakDays', { n: days })}
         </span>
       </div>
+      <ProfileCard />
       <DialectChip next="/practice" />
       <h2 className="pt-2 text-sm font-bold text-slate-600">{t('practiceIntro')}</h2>
       <ul className="space-y-3">
