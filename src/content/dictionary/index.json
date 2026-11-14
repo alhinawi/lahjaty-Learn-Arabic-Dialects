@@ -60,6 +60,30 @@
    "name": "اللبس",
    "nameEn": "Clothes",
    "icon": "shirt"
+  },
+  {
+   "id": "animals",
+   "name": "الحيوانات",
+   "nameEn": "Animals",
+   "icon": "paw"
+  },
+  {
+   "id": "weather",
+   "name": "الجو والطقس",
+   "nameEn": "Weather and seasons",
+   "icon": "weather"
+  },
+  {
+   "id": "nature",
+   "name": "الطبيعة",
+   "nameEn": "Nature",
+   "icon": "nature"
+  },
+  {
+   "id": "colors",
+   "name": "الألوان",
+   "nameEn": "Colours",
+   "icon": "colors"
   }
  ]
 }

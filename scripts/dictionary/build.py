@@ -5,7 +5,11 @@ Run: npm run dict:build   (then commit both the .txt and the generated .json fil
 Line format inside a topic file:
   @topic <id> | <Arabic name> | <English name> | <icon>
   <slug> | <MSA> | <English> | <pos> | KEY=word; KEY=word ... | dialect: example || dialect: example
-KEY is a dialect id or a group below; later keys override earlier ones.
+KEY is a dialect id or a group below; later keys override earlier ones. "KEY=-" removes a word.
+
+To add words to an entry written in another file (for example, filling one dialect):
+  + <topicId>.<slug> | KEY=word; KEY=word | dialect: example
+These lines are applied after every topic is read.
 """
 import json, os, re, sys, glob
 
@@ -26,12 +30,37 @@ G = {
     'GLF': GLF, 'SA': SA, 'KHL': GLF + SA,
     'YE': ['san', 'ade'],
     'MA': ['mar'], 'MAJ': ['mar', 'jeb'], 'MAG': ['mar', 'alg'], 'MAGT': ['mar', 'alg', 'tun'],
+    'OM': ['oma', 'dho'], 'YEA': ['san', 'ade', 'had'],
     'LY': ['tri', 'ben'], 'TLY': ['tun', 'tri', 'ben'], 'NAF': ['mar', 'alg', 'tun', 'tri', 'ben'],
 }
 POS = {'n', 'v', 'adj', 'adv', 'pron', 'q', 'int', 'num', 'phr', 'conj', 'prep'}
 
 topics, errors = [], []
 seen = set()
+extends = []
+
+
+def apply_cells(words, cells, where):
+    for cell in [c.strip() for c in cells.split(';') if c.strip()]:
+        if '=' not in cell:
+            errors.append(f'{where}: bad cell {cell}'); continue
+        k, v = [x.strip() for x in cell.split('=', 1)]
+        for d in G.get(k, [k]):
+            if d not in DIALECTS: errors.append(f'{where}: unknown key {k}')
+            elif v == '-':
+                words.pop(d, None)
+            else:
+                words[d] = v
+
+
+def parse_examples(ex, words, where, into):
+    for e in [x.strip() for x in ex.split('||') if x.strip()]:
+        if ':' not in e:
+            errors.append(f'{where}: bad example {e}'); continue
+        d, t = [x.strip() for x in e.split(':', 1)]
+        if d not in words and d != 'fs': errors.append(f'{where}: example for {d} without a word')
+        into[d] = t
+
 for path in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', '*.txt'))):
     topic = None
     for n, raw in enumerate(open(path, encoding='utf8'), 1):
@@ -39,6 +68,9 @@ for path in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file
         if not line or line.startswith('#'):
             continue
         where = f'{os.path.basename(path)}:{n}'
+        if line.startswith('+'):
+            extends.append((where, line[1:].strip()))
+            continue
         if line.startswith('@topic'):
             tid, name, name_en, icon = [x.strip() for x in line[6:].split('|')]
             topic = {'id': tid, 'name': name, 'nameEn': name_en, 'icon': icon, 'entries': []}
@@ -55,25 +87,29 @@ for path in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file
         seen.add(cid)
         if pos not in POS: errors.append(f'{where}: bad pos {pos}')
         words = {}
-        for cell in [c.strip() for c in cells.split(';') if c.strip()]:
-            if '=' not in cell:
-                errors.append(f'{where}: bad cell {cell}'); continue
-            k, v = [x.strip() for x in cell.split('=', 1)]
-            ids = G.get(k, [k])
-            for d in ids:
-                if d not in DIALECTS: errors.append(f'{where}: unknown key {k}')
-                elif v == '-':
-                    words.pop(d, None)
-                else:
-                    words[d] = v
+        apply_cells(words, cells, where)
         examples = {}
-        for e in [x.strip() for x in ex.split('||') if x.strip()]:
-            d, t = [x.strip() for x in e.split(':', 1)]
-            if d not in words and d != 'fs': errors.append(f'{where}: example for {d} without a word')
-            examples[d] = t
-        entry = {'id': cid, 'fs': fs, 'en': en, 'pos': pos, 'words': {d: words[d] for d in DIALECTS if d in words}}
+        parse_examples(ex, words, where, examples)
+        entry = {'id': cid, 'fs': fs, 'en': en, 'pos': pos, 'words': words}
         if examples: entry['ex'] = examples
         topic['entries'].append(entry)
+
+by_id = {e['id']: e for t in topics for e in t['entries']}
+for where, line in extends:
+    parts = [x.strip() for x in line.split('|')]
+    e = by_id.get(parts[0])
+    if not e:
+        errors.append(f'{where}: unknown entry {parts[0]}'); continue
+    apply_cells(e['words'], parts[1] if len(parts) > 1 else '', where)
+    if len(parts) > 2:
+        e.setdefault('ex', {})
+        parse_examples(parts[2], e['words'], where, e['ex'])
+for t in topics:
+    for e in t['entries']:
+        e['words'] = {d: e['words'][d] for d in DIALECTS if d in e['words']}
+        if 'ex' in e:
+            e['ex'] = {d: x for d, x in e['ex'].items() if d == 'fs' or d in e['words']}
+            if not e['ex']: del e['ex']
 
 if errors:
     print('\n'.join(errors)); sys.exit(1)

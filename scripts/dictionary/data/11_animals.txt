@@ -1,0 +1,65 @@
+@topic animals | الحيوانات | Animals | paw
+animal | حيوان | animal | n | EGS=حيوان / بهيمة; LEVP=حيوان; IQM=حيوان; KHL=حيوان; OM=حيوان; hij=حيوان; YE=حيوان; sud=حيوان / بهيمة; MAGT=حيوان / بهيمة; LY=حيوان
+cat | قطة | cat | n | EGS=قطة / بسّة; LEVP=بسّة / قطّة; IQM=بزّونة; KHL=قطوة / بسّة; hij=بسّة / قطّة; sud=كديسة; MAJ=مشّ / قطّ; alg=قطّ / مشّ; tun=قطّوس; LY=قطّوس | cai: القطة نايمة على الكنبة. || bag: البزّونة نايمة. || tun: القطّوس راقد.
+dog | كلب | dog | n | EGS=كلب; LEVP=كلب; IQM=چلب; mos=كلب; KHL=كلب / چلب; OM=كلب; hij=كلب; YE=كلب; sud=كلب; MAGT=كلب / كلبة; LY=كلب; chd=كلب | bag: اكو چلب بالشارع.
+donkey | حمار | donkey | n | ALL=حمار
+horse | حصان | horse | n | EGS=حصان; LEVP=حصان / فرس; IQM=حصان / فرس; KHL=حصان / خيل; hij=حصان; sud=حصان; MAGT=عود; LY=حصان
+camel | جمل | camel | n | ALL=جمل; KHL=جمل / بعير; OM=جمل / بعير; has=جمل / بعير | naj: البعير في البر.
+cow | بقرة | cow | n | EGS=بقرة; LEVP=بقرة; IQM=هايشة; KHL=بقرة; OM=بقرة; hij=بقرة; YE=بقرة; sud=بقرة; MAGT=بقرة; LY=بقرة | bag: الهايشة بالبستان.
+sheep | خروف | sheep | n | EGS=خروف; LEVP=خاروف / غنمة; IQM=طلي; KHL=خروف / طلي; hij=خروف; sud=خروف; MAG=حولي / كبش; tun=علّوش | cai: اشترينا خروف العيد. || mar: شرينا حولي العيد. || tun: شرينا علّوش العيد.
+goat | ماعز | goat | n | EGS=معزة / عنزة; LEV=معزة / عنزة; psr=عنزة; IQM=صخلة / معزة; KHL=عنز; hij=عنز / معزة; sud=غنماية; MAGT=معزة; LY=معزة
+chicken | دجاجة | chicken / hen | n | EGS=فرخة; LEVP=جاجة; IQM=دجاجة; GLF=دياية / دجاجة; SA=دجاجة; hij=دجاجة; sud=جدادة; MAGT=دجاجة; LY=دجاجة | cai: هات فرخة من السوق. || dam: جبلي جاجة من السوق.
+bird | طائر | bird | n | EGS=عصفورة / طير; LEVP=عصفور / طير; IQM=طير / عصفور; KHL=طير; hij=طير / عصفور; sud=طير; MAJ=طير; alg=طير / عصفور; tun=عصفور; LY=طير
+fish | سمك | fish | n | EGS=سمك; LEVP=سمك; IQM=سمچ; mos=سمك; kuw=سمچ / سمك; qat=سمك; bah=سمك; emi=سمك; SA=سمك; OM=سمك; hij=سمك; YE=سمك; sud=سمك / حوت; MAGT=حوت; LY=حوت | bag: نتغدى سمچ مسگوف. || mar: كلينا الحوت.
+mouse | فأر | mouse / rat | n | EGS=فار; LEVP=فارة; IQM=فارة / جريدي; KHL=فار / فارة; hij=فار; sud=فار; MAGT=فار; LY=فار
+fly | ذبابة | fly (insect) | n | EGS=دبّانة; LEVP=دبّانة; IQM=ذبّانة; KHL=ذبّانة / ذبابة; hij=دبّانة; sud=ضبّانة / دبّانة; MAGT=دبّانة / ذبّانة; LY=ذبّانة
+mosquito | بعوضة | mosquito | n | EGS=ناموسة; LEVP=بقّة / بعوضة; IQM=بقّة; KHL=بعوضة; hij=ناموسة / بعوضة; sud=باعوضة; mar=ناموسة; alg=ناموسة; tun=ناموسة; LY=ناموسة | cai: الناموس مخلّاني مش عارف أنام.
+cockroach | صرصور | cockroach | n | EGS=صرصار; LEVP=صرصور; IQM=صرصر; KHL=صرصور / صرصار; hij=صرصار; sud=صرصار; MAG=سرّاق الزيت; tun=ڤرلّو
+ant | نملة | ant | n | EGS=نملة; LEVP=نملة; IQM=نملة; KHL=نملة; hij=نملة; sud=نملة; MAGT=نملة; LY=نملة
+snake | ثعبان | snake | n | EGS=تعبان; LEVP=حيّة; IQM=حيّة / أفعى; KHL=حيّة / داب; hij=تعبان / حنش; YE=حنش; sud=دبيب / تعبان; MAGT=حنش; LY=حنش | cai: شفت تعبان في الغيط. || kuw: شفت داب في البر.
+lion | أسد | lion | n | EGS=أسد; LEVP=أسد; IQM=أسد; KHL=أسد; hij=أسد; sud=أسد; MAGT=سبع / أسد; LY=أسد
+rabbit | أرنب | rabbit | n | EGS=أرنب; LEVP=أرنب; IQM=أرنب; KHL=أرنب; hij=أرنب; sud=أرنب; MA=قنية; jeb=قنية; alg=أرنب; tun=أرنب; LY=أرنب
+duck | بطة | duck | n | EGS=بطّة; LEVP=بطّة; IQM=بطّة; KHL=بطّة; hij=بطّة; sud=بطّة; MAGT=بطّة; LY=بطّة
+
+@topic weather | الجو والطقس | Weather and seasons | weather
+weather | طقس | weather | n | EGS=الجو; LEVP=الطقس / الجو; IQM=الجو; KHL=الجو; OM=الجو; hij=الجو; YE=الجو; sud=الجو; MAGT=الجو; LY=الجو | cai: الجو حلو النهارده. || dam: الطقس حلو اليوم.
+hot | حار | hot (weather) | adj | EGS=حر; LEVP=شوب; IQM=حار; KHL=حر; hij=حر; sud=حار; MAGT=سخون; LY=سخون | cai: الدنيا حر قوي. || dam: الدني شوب كتير.
+cold | بارد | cold | adj | EGS=برد / ساقع; LEVP=برد / بارد; IQM=بارد / برد; KHL=برد / بارد; hij=برد; sud=بارد; MAGT=بارد; LY=بارد | cai: الجو برد، البس جاكيت.
+rain | مطر | rain | n | EGS=مطرة / مطر; LEVP=شتي / مطر; IQM=مطر; KHL=مطر; OM=مطر; hij=مطر; YE=مطر; sud=مطرة; MAG=الشتا; tun=مطر; LY=مطر | leb: عم تشتي برّا. || mar: راه كتصب الشتا.
+wind | ريح | wind | n | EGS=هوا / ريح; LEVP=هوا; IQM=هوا; KHL=هوا / ريح; hij=هوا; sud=هوا; MAGT=ريح; LY=ريح
+sun | شمس | sun | n | ALL=شمس
+moon | قمر | moon | n | ALL=قمر
+cloud | سحابة | cloud | n | EGS=سحابة / غيمة; LEVP=غيمة; IQM=غيمة; KHL=غيمة / سحاب; hij=سحاب / غيمة; sud=سحابة; MAGT=سحابة; LY=سحابة
+snow | ثلج | snow | n | EGS=تلج; LEVP=تلج; IQM=ثلج; KHL=ثلج; hij=تلج; MAGT=ثلج; LY=ثلج | dam: نزل تلج عالجبل.
+dust | غبار | dust / dust storm | n | EGS=تراب / غبار; LEVP=غبرة; IQM=عجاج / طوز; KHL=غبار / عجاج / طوز; hij=غبار; sud=كتاحة / هبوب; MAGT=غبرة; LY=غبرة / قبلي | bag: اليوم عجاج. || sud: الهبوب جاي.
+umbrella | مظلة | umbrella | n | EGS=شمسية; LEVP=شمسية; IQM=شمسية; KHL=شمسية / مظلّة; hij=شمسية; MAGT=مظلّة
+summer | صيف | summer | n | EGS=صيف; LEVP=صيف; IQM=صيف; KHL=صيف / قيظ; OM=قيظ / صيف; hij=صيف; YE=صيف; sud=صيف; MAGT=صيف; LY=صيف
+winter | شتاء | winter | n | EGS=شتا; LEVP=شتي / شتا; IQM=شتا; KHL=شتا; hij=شتا; YE=شتا; sud=شتا; MAGT=شتا; LY=شتا
+
+@topic nature | الطبيعة | Nature | nature
+sea | بحر | sea | n | ALL=بحر | cai: نروح البحر في الصيف.
+river | نهر | river | n | EGS=نهر / النيل; LEVP=نهر; IQM=نهر / شط; KHL=نهر; hij=نهر; sud=بحر / النيل; MAGT=واد; LY=واد | bag: نتمشى عالشط. || sud: مشينا البحر.
+tree | شجرة | tree | n | EGS=شجرة; LEVP=شجرة; IQM=شجرة; KHL=شجرة; OM=شجرة; hij=شجرة; YE=شجرة; sud=شدرة; MAGT=شجرة; LY=شجرة
+flower | وردة | flower | n | EGS=وردة; LEVP=وردة / زهرة; IQM=وردة; KHL=وردة / زهرة; hij=وردة; sud=وردة / زهرة; MAGT=وردة / نوّارة; LY=وردة
+mountain | جبل | mountain | n | ALL=جبل
+desert | صحراء | desert | n | EGS=صحرا; LEVP=صحرا / برّية; IQM=صحرا / برّ; KHL=برّ / صحرا; OM=برّ / صحرا; hij=صحرا / برّ; sud=صحرا / خلا; MAGT=صحرا; LY=صحرا | kuw: نطلع البر بالشتا.
+sand | رمل | sand | n | EGS=رملة / رمل; LEVP=رمل; IQM=رمل; KHL=رمل; hij=رمل; sud=رمل; MAGT=رملة / رمل; LY=رملة
+stone | حجر | stone | n | EGS=حجر / زلطة; LEVP=حجر; IQM=حجارة; KHL=حصاة / حجر; hij=حجر; sud=حجر; MAGT=حجرة; LY=حجرة
+sky | سماء | sky | n | ALL=سما
+ground | أرض | ground / earth | n | EGS=أرض; LEVP=أرض; IQM=گاع; KHL=أرض; hij=أرض; sud=واطة; MAGT=أرض; LY=أرض | bag: وگع عالگاع. || sud: قعد في الواطة.
+garden | حديقة | garden / park | n | EGS=جنينة; LEVP=جنينة / حديقة; IQM=حديقة / بستان; KHL=حديقة; hij=حديقة; sud=جنينة; MAG=جردة; tun=جنينة; LY=حديقة
+fire | نار | fire | n | ALL=نار; mar=العافية / نار
+
+@topic colors | الألوان | Colours | colors
+color | لون | colour | n | ALL=لون | cai: بتحب أنهي لون؟
+white | أبيض | white | adj | EGS=أبيض; LEVP=أبيض; IQM=أبيض; KHL=أبيض; OM=أبيض; hij=أبيض; YE=أبيض; sud=أبيض; MAG=بيض; tun=أبيض; LY=أبيض
+black | أسود | black | adj | EGS=إسود; LEVP=أسود; IQM=أسود; KHL=أسود; OM=أسود; hij=أسود; YE=أسود; sud=أسود / أزرق; MAG=كحل; tun=أكحل; LY=أسود | mar: شريت صباط كحل. || tun: عندي كرهبة كحلة.
+red | أحمر | red | adj | EGS=أحمر; LEVP=أحمر; IQM=أحمر; KHL=أحمر; OM=أحمر; hij=أحمر; YE=أحمر; sud=أحمر; MAG=حمر; tun=أحمر; LY=أحمر
+green | أخضر | green | adj | EGS=أخضر; LEVP=أخضر; IQM=أخضر; KHL=أخضر; OM=أخضر; hij=أخضر; YE=أخضر; sud=أخضر; MAG=خضر; tun=أخضر; LY=أخضر
+blue | أزرق | blue | adj | EGS=أزرق / لبني; LEVP=أزرق; IQM=أزرق; KHL=أزرق; hij=أزرق; YE=أزرق; MAG=زرق; tun=أزرق; LY=أزرق
+yellow | أصفر | yellow | adj | EGS=أصفر; LEVP=أصفر; IQM=أصفر; KHL=أصفر; OM=أصفر; hij=أصفر; YE=أصفر; sud=أصفر; MAG=صفر; tun=أصفر; LY=أصفر
+brown | بني | brown | adj | EGS=بنّي; LEVP=بنّي; IQM=جوزي / قهوائي; KHL=بنّي; hij=بنّي; sud=بنّي
+orange_color | برتقالي | orange (colour) | adj | EGS=برتقاني; LEVP=برتقاني; IQM=برتقالي; KHL=برتقالي; hij=برتقالي; MAG=ليموني; tun=برتقالي
+pink | وردي | pink | adj | EGS=بمبي / روز; LEVP=زهري; IQM=وردي; KHL=وردي; hij=وردي; MAGT=وردي; LY=وردي | cai: لابسة فستان بمبي. || dam: لابسة فستان زهري.
+grey | رمادي | grey | adj | EGS=رمادي / رصاصي; LEV=رمادي / سكّني; psr=رمادي; IQM=رصاصي / رمادي; KHL=رمادي; hij=رمادي; MAGT=رمادي; LY=رمادي
+purple | بنفسجي | purple | adj | EGS=بنفسجي / موف; LEVP=بنفسجي / ليلكي; IQM=بنفسجي; KHL=بنفسجي; hij=بنفسجي; MAGT=بنفسجي
