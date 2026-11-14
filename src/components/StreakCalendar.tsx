@@ -5,6 +5,7 @@ import { practiceDaySet } from '../lib/achievements'
 import { useT } from '../lib/i18n'
 import { addDays, dayKey } from '../lib/srs'
 import { useApp } from '../lib/store'
+import { useHydrated } from '../lib/useHydrated'
 
 const WEEKS = 15
 
@@ -14,6 +15,8 @@ export default function StreakCalendar() {
   const lang = useApp((s) => s.lang)
   const streak = useApp((s) => s.streak)
   const practiceDays = useApp((s) => s.practiceDays)
+  // The grid is relative to today, which differs between the prerender day and the visit day: wait for mount.
+  const hydrated = useHydrated()
   const today = dayKey()
 
   const { columns, active } = useMemo(() => {
@@ -38,6 +41,8 @@ export default function StreakCalendar() {
 
   const fmt = new Intl.DateTimeFormat(lang === 'ar' ? 'ar-EG' : 'en-GB', { day: 'numeric', month: 'short' })
   const label = (day: string) => fmt.format(new Date(`${day}T00:00:00`))
+
+  if (!hydrated) return <div className="h-[7.5rem]" aria-hidden />
 
   return (
     <div>
