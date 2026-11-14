@@ -1,4 +1,5 @@
 import { BookOpen, ChevronLeft, MapPinned, Sparkles } from 'lucide-react'
+import DialectIntro from '../components/DialectIntro'
 import { Link, useNavigate, useParams } from 'react-router'
 import FamousCard from '../components/FamousCard'
 import { famousFor, getDialect, regions } from '../lib/content'
@@ -52,6 +53,8 @@ export default function DialectPage() {
           </Link>
         )}
       </section>
+
+      {!egyptNode && <DialectIntro dialectId={dialect.id} />}
 
       <section id="famous" className="space-y-3">
         <div>

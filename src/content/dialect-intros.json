@@ -1,0 +1,268 @@
+{
+  "dam": {
+    "where": { "ar": "دمشق وريفها، وتُفهم في سوريا كلها", "en": "Damascus and its countryside, understood all over Syria" },
+    "summary": { "ar": "الشامي الدمشقي هو لهجة المسلسلات السورية، ومن أسهل اللهجات على أذن العرب.", "en": "Damascene is the Arabic of Syrian TV drama and one of the easiest dialects for other Arabs to follow." },
+    "features": [
+      { "ar": "القاف تنطق همزة: «قلب» تصبح «ألب».", "en": "Qaf is a glottal stop: qalb 'heart' is ʔalb." },
+      { "ar": "الجيم تنطق مثل j في الفرنسية: «جميل» žamīl.", "en": "Jim is soft, like French j: žamīl." },
+      { "ar": "المضارع يأخذ «عم» للحاضر المستمر: «عم بكتب».", "en": "ʕam marks the ongoing present: ʕam biktob 'I am writing'." },
+      { "ar": "«بدّي» يعني أريد، و«هلّق» يعني الآن.", "en": "baddi means 'I want' and hallaʔ means 'now'." }
+    ]
+  },
+  "alp": {
+    "where": { "ar": "حلب وشمال سوريا", "en": "Aleppo and northern Syria" },
+    "summary": { "ar": "الحلبي قريب من الدمشقي، لكن له نغمة خاصة وكلمات كثير منها من التركية.", "en": "Aleppine is close to Damascene but has its own melody and many words from Turkish." },
+    "features": [
+      { "ar": "القاف همزة في المدينة مثل دمشق.", "en": "Qaf is a glottal stop in the city, as in Damascus." },
+      { "ar": "الفتحة في آخر الكلمة تميل كثيرًا إلى الياء: «حلوة» قريبة من «حلوي».", "en": "A final -a often leans towards -e/-i." },
+      { "ar": "كلمات تركية كثيرة في البيت والأكل.", "en": "Many Turkish words for home and food." }
+    ]
+  },
+  "leb": {
+    "where": { "ar": "بيروت وساحل لبنان", "en": "Beirut and the Lebanese coast" },
+    "summary": { "ar": "اللبناني لهجة شامية معروفة بخفتها وبخلطها الكلام بالفرنسية والإنجليزية.", "en": "Lebanese is a Levantine dialect known for its lightness and its mixing with French and English." },
+    "features": [
+      { "ar": "القاف همزة: «قال» تصبح «آل».", "en": "Qaf is a glottal stop: qāl is ʔāl." },
+      { "ar": "«شو» يعني ماذا، و«كتير» يعني جدًا.", "en": "šu means 'what' and ktīr means 'very'." },
+      { "ar": "تحيات مخلوطة مثل «هاي، كيفك، ساڤا؟».", "en": "Mixed greetings such as 'hi, kīfak, ça va?'." }
+    ]
+  },
+  "psu": {
+    "where": { "ar": "مدن فلسطين مثل القدس ويافا ونابلس", "en": "Palestinian cities such as Jerusalem, Jaffa and Nablus" },
+    "summary": { "ar": "لهجة المدن الفلسطينية قريبة جدًا من لهجة دمشق وبيروت.", "en": "Urban Palestinian is very close to the speech of Damascus and Beirut." },
+    "features": [
+      { "ar": "القاف همزة في المدن.", "en": "Qaf is a glottal stop in the cities." },
+      { "ar": "«هسّا» أو «هلّأ» يعني الآن.", "en": "hassa or hallaʔ means 'now'." },
+      { "ar": "النفي بـ «ما...ش» أحيانًا: «ما بعرفش».", "en": "Negation can wrap the verb: ma baʕrafš." }
+    ]
+  },
+  "psr": {
+    "where": { "ar": "قرى فلسطين وريفها", "en": "Palestinian villages and countryside" },
+    "summary": { "ar": "اللهجة الفلاحية الفلسطينية لها نطق مختلف واضح عن لهجة المدن.", "en": "Rural Palestinian sounds clearly different from city speech." },
+    "features": [
+      { "ar": "الكاف تنطق «تش» في كلمات كثيرة: «كيف» تصبح «تشيف».", "en": "Kaf often becomes ch: kīf is čīf." },
+      { "ar": "القاف تنطق كافًا: «قلب» تصبح «كلب».", "en": "Qaf becomes k: qalb is kalb." },
+      { "ar": "«مصاري» للفلوس مثل باقي الشام.", "en": "maṣāri for money, as elsewhere in the Levant." }
+    ]
+  },
+  "jor": {
+    "where": { "ar": "عمّان ومدن الأردن وقراه", "en": "Amman and Jordan's towns and villages" },
+    "summary": { "ar": "الأردني لهجة شامية، وفيها نطق مدني ونطق بدوي وفلاحي جنب بعض.", "en": "Jordanian is Levantine, with city, Bedouin and rural pronunciations side by side." },
+    "features": [
+      { "ar": "القاف تنطق g في كلام كثير من الرجال: «قال» gāl.", "en": "Many men say qaf as g: gāl." },
+      { "ar": "«هسّا» يعني الآن، و«زلمة» يعني رجل.", "en": "hassa means 'now' and zalameh means 'man'." },
+      { "ar": "«إشي» يعني شيء.", "en": "ʔiši means 'thing'." }
+    ]
+  },
+  "bag": {
+    "where": { "ar": "بغداد ووسط العراق", "en": "Baghdad and central Iraq" },
+    "summary": { "ar": "البغدادي هو العراقي اللي يعرفه العرب من الأغاني والمسلسلات.", "en": "Baghdadi is the Iraqi Arabic most Arabs know from songs and TV." },
+    "features": [
+      { "ar": "الكاف تنطق «چ» في كلمات كثيرة: «چبير» (كبير).", "en": "Kaf often becomes č: čibīr 'big'." },
+      { "ar": "القاف تنطق «گ»: «گال» (قال).", "en": "Qaf becomes g: gāl." },
+      { "ar": "«شكو ماكو؟» يعني ما الأخبار، و«كلّش» يعني جدًا.", "en": "šaku maku? means 'what's up?' and kulliš means 'very'." }
+    ]
+  },
+  "mos": {
+    "where": { "ar": "الموصل وشمال العراق", "en": "Mosul and northern Iraq" },
+    "summary": { "ar": "الموصلي من لهجات «قلتُ» القديمة، وهو مختلف بوضوح عن البغدادي.", "en": "Moslawi belongs to the old qəltu dialects and is clearly different from Baghdadi." },
+    "features": [
+      { "ar": "القاف تبقى قافًا: «قلتُ» وليس «گِلِت».", "en": "Qaf stays q: qəltu 'I said'." },
+      { "ar": "الراء تنطق غينًا عند كثيرين: «غاح» (راح).", "en": "Many say r as gh: ghāḥ 'he went'." },
+      { "ar": "نغمة قريبة من لهجة حلب.", "en": "Its melody is close to Aleppo's." }
+    ]
+  },
+  "bas": {
+    "where": { "ar": "البصرة وجنوب العراق", "en": "Basra and southern Iraq" },
+    "summary": { "ar": "البصراوي عراقي جنوبي قريب من لهجات الكويت والخليج.", "en": "Basrawi is southern Iraqi, close to Kuwaiti and Gulf speech." },
+    "features": [
+      { "ar": "القاف «گ» والكاف «چ» مثل بغداد.", "en": "Qaf is g and kaf is often č, as in Baghdad." },
+      { "ar": "الجيم تنطق ياء في بعض الكلمات مثل الخليج.", "en": "Jim becomes y in some words, as in the Gulf." },
+      { "ar": "كلمات بحرية وتجارية كثيرة بسبب الميناء.", "en": "Many sea and trade words from the port." }
+    ]
+  },
+  "naj": {
+    "where": { "ar": "الرياض ووسط السعودية", "en": "Riyadh and central Saudi Arabia" },
+    "summary": { "ar": "النجدي لهجة الرياض ووسط الجزيرة، وأصلها بدوي.", "en": "Najdi is the speech of Riyadh and central Arabia, Bedouin in origin." },
+    "features": [
+      { "ar": "القاف تنطق g: «قهوة» gahwa.", "en": "Qaf is g: gahwa 'coffee'." },
+      { "ar": "الكاف تنطق «تس» مع المؤنث في كلام كثيرين: «عليتس» (عليكِ).", "en": "Kaf can become ts for 'you' (feminine): ʕalēts." },
+      { "ar": "«وش» يعني ماذا، و«يبغى» يعني يريد.", "en": "wiš means 'what' and yabgha means 'he wants'." }
+    ]
+  },
+  "hij": {
+    "where": { "ar": "جدة ومكة والمدينة", "en": "Jeddah, Mecca and Medina" },
+    "summary": { "ar": "الحجازي لهجة مدن غرب السعودية، وفيه شبه واضح بالمصري.", "en": "Hijazi is the city speech of western Saudi Arabia, with a clear likeness to Egyptian." },
+    "features": [
+      { "ar": "القاف تنطق g أو قافًا، والجيم j.", "en": "Qaf is g or q, and jim is j." },
+      { "ar": "المضارع يأخذ «بـ» مثل المصري: «باكتب».", "en": "The present takes b-, as in Egyptian." },
+      { "ar": "«إيش» يعني ماذا، و«مرّة» يعني جدًا.", "en": "ʔēš means 'what' and marra means 'very'." }
+    ]
+  },
+  "jiz": {
+    "where": { "ar": "جازان وجنوب غرب السعودية", "en": "Jazan and south-western Saudi Arabia" },
+    "summary": { "ar": "الجازاني لهجة جنوبية قريبة من لهجات تهامة في اليمن.", "en": "Jazani is a southern dialect close to the Tihama speech of Yemen." },
+    "features": [
+      { "ar": "أداة التعريف «أم» بدل «ال» عند بعض المتكلمين: «امبيت».", "en": "Some speakers use am- instead of al- for 'the'." },
+      { "ar": "كلمات قديمة كثيرة لا تسمعها في باقي السعودية.", "en": "Many old words not heard elsewhere in Saudi Arabia." }
+    ]
+  },
+  "shm": {
+    "where": { "ar": "حائل والجوف وشمال السعودية", "en": "Ha'il, Al-Jawf and northern Saudi Arabia" },
+    "summary": { "ar": "اللهجة الشمالية بدوية، وقريبة من لهجات بادية الأردن والعراق.", "en": "Northern Saudi speech is Bedouin and close to the desert dialects of Jordan and Iraq." },
+    "features": [
+      { "ar": "القاف g والكاف «چ» في كلمات كثيرة.", "en": "Qaf is g and kaf is often č." },
+      { "ar": "كلمات بدوية عن الإبل والصحراء.", "en": "Bedouin words for camels and the desert." }
+    ]
+  },
+  "kuw": {
+    "where": { "ar": "الكويت", "en": "Kuwait" },
+    "summary": { "ar": "الكويتي لهجة خليجية معروفة من المسلسلات الخليجية.", "en": "Kuwaiti is a Gulf dialect well known from Gulf TV drama." },
+    "features": [
+      { "ar": "الجيم تنطق ياء: «ريّال» (رجّال)، «يبت» (جبت).", "en": "Jim becomes y: rayyāl 'man', yibt 'I brought'." },
+      { "ar": "الكاف «چ» في كلمات كثيرة: «چذي» (كذا).", "en": "Kaf often becomes č: čiðī 'like this'." },
+      { "ar": "«وايد» يعني جدًا، و«شلونك» يعني كيف حالك.", "en": "wāyid means 'very' and šlōnik 'how are you'." }
+    ]
+  },
+  "emi": {
+    "where": { "ar": "الإمارات", "en": "The UAE" },
+    "summary": { "ar": "الإماراتي لهجة خليجية، وفيها كلمات من الفارسية والهندية والإنجليزية بسبب التجارة.", "en": "Emirati is a Gulf dialect with words from Persian, Hindi and English through trade." },
+    "features": [
+      { "ar": "الجيم ياء في كلمات كثيرة مثل الكويت.", "en": "Jim is y in many words, as in Kuwait." },
+      { "ar": "«بيزات» للفلوس، و«وايد» يعني جدًا.", "en": "bēzāt for money and wāyid for 'very'." }
+    ]
+  },
+  "qat": {
+    "where": { "ar": "قطر", "en": "Qatar" },
+    "summary": { "ar": "القطري لهجة خليجية قريبة من النجدي والبحريني.", "en": "Qatari is a Gulf dialect close to Najdi and Bahraini." },
+    "features": [
+      { "ar": "القاف g والجيم ياء في كلمات كثيرة.", "en": "Qaf is g and jim is often y." },
+      { "ar": "«شلونك» و«وايد» مثل باقي الخليج.", "en": "šlōnik and wāyid, as across the Gulf." }
+    ]
+  },
+  "bah": {
+    "where": { "ar": "البحرين", "en": "Bahrain" },
+    "summary": { "ar": "في البحرين لهجتان أساسيتان: لهجة العرب ولهجة البحارنة، والموقع يعرض الكلام الشائع بينهما.", "en": "Bahrain has two main varieties, ʕArab and Baḥārna; the site shows the common everyday forms." },
+    "features": [
+      { "ar": "الكاف «چ» والجيم ياء في كلمات كثيرة.", "en": "Kaf is often č and jim often y." },
+      { "ar": "كلمات بحرية كثيرة من أيام الغوص على اللؤلؤ.", "en": "Many sea words from the pearl-diving days." }
+    ]
+  },
+  "oma": {
+    "where": { "ar": "مسقط وشمال عُمان", "en": "Muscat and northern Oman" },
+    "summary": { "ar": "العماني مختلف عن باقي الخليج في نطق وكلمات كثيرة.", "en": "Omani differs from the rest of the Gulf in many sounds and words." },
+    "features": [
+      { "ar": "الجيم تبقى جيمًا ولا تتحول ياء.", "en": "Jim stays j and does not turn into y." },
+      { "ar": "«يبا» يعني يريد، و«بيزات» للفلوس.", "en": "yiba means 'he wants' and bēzāt means money." }
+    ]
+  },
+  "dho": {
+    "where": { "ar": "ظفار وصلالة في جنوب عُمان", "en": "Dhofar and Salalah in southern Oman" },
+    "summary": { "ar": "الظفاري لهجة عربية جنوبية، وتعيش جنب لغات جنوبية قديمة مثل الشحرية والمهرية.", "en": "Dhofari is a southern Arabic dialect spoken beside old South Arabian languages such as Shehri and Mehri." },
+    "features": [
+      { "ar": "كلمات مشتركة مع لهجات حضرموت واليمن.", "en": "Shares many words with Hadhrami and Yemeni speech." }
+    ]
+  },
+  "san": {
+    "where": { "ar": "صنعاء والمرتفعات الشمالية في اليمن", "en": "Sana'a and Yemen's northern highlands" },
+    "summary": { "ar": "الصنعاني من أكثر اللهجات حفاظًا على كلمات قديمة.", "en": "Sanaani keeps many very old Arabic words." },
+    "features": [
+      { "ar": "القاف تنطق g: «قال» gāl.", "en": "Qaf is g: gāl." },
+      { "ar": "«اشتي» يعني أريد، و«زلط» للفلوس.", "en": "ʔašti means 'I want' and zalaṭ means money." },
+      { "ar": "«مابش» يعني لا يوجد.", "en": "mābiš means 'there isn't'." }
+    ]
+  },
+  "ade": {
+    "where": { "ar": "عدن وجنوب اليمن", "en": "Aden and southern Yemen" },
+    "summary": { "ar": "العدني لهجة مدينة ميناء، وفيها كلمات من الهندية والإنجليزية.", "en": "Adeni is a port-city dialect with words from Hindi and English." },
+    "features": [
+      { "ar": "الجيم تنطق g مثل المصري: «جمل» gamal.", "en": "Jim is a hard g, as in Egyptian: gamal." },
+      { "ar": "كلمات إنجليزية من أيام الميناء البريطاني.", "en": "English words from the British port days." }
+    ]
+  },
+  "had": {
+    "where": { "ar": "حضرموت في شرق اليمن", "en": "Hadramawt in eastern Yemen" },
+    "summary": { "ar": "الحضرمي لهجة مميزة، وسافرت مع الحضارم إلى الخليج وشرق آسيا وشرق أفريقيا.", "en": "Hadhrami is distinctive and travelled with Hadhrami migrants to the Gulf, South-East Asia and East Africa." },
+    "features": [
+      { "ar": "الجيم تنطق ياء عند كثيرين.", "en": "Many speakers say jim as y." },
+      { "ar": "كلمات من الملايوية والسواحيلية بسبب الهجرة.", "en": "Words from Malay and Swahili through migration." }
+    ]
+  },
+  "sud": {
+    "where": { "ar": "الخرطوم ووسط السودان", "en": "Khartoum and central Sudan" },
+    "summary": { "ar": "السوداني قريب من المصري في أشياء كثيرة، وله كلمات خاصة به.", "en": "Sudanese is close to Egyptian in many ways and has its own words." },
+    "features": [
+      { "ar": "القاف g والجيم j أو g حسب المنطقة.", "en": "Qaf is g; jim is j or g depending on the area." },
+      { "ar": "«داير» يعني أريد، و«شديد» يعني جدًا.", "en": "dāyir means 'I want' and šadīd means 'very'." },
+      { "ar": "«زول» يعني شخص أو صاحب.", "en": "zōl means 'person' or 'mate'." }
+    ]
+  },
+  "chd": {
+    "where": { "ar": "تشاد وأجزاء من النيجر ونيجيريا والكاميرون", "en": "Chad and parts of Niger, Nigeria and Cameroon" },
+    "summary": { "ar": "عربية تشاد لغة تواصل بين شعوب كثيرة في وسط أفريقيا، وقريبة من لهجة غرب السودان.", "en": "Chadian Arabic is a lingua franca across central Africa, close to western Sudanese speech." },
+    "features": [
+      { "ar": "أصوات الحلق تخف عند كثيرين.", "en": "Many speakers soften the throat sounds." },
+      { "ar": "«داير» يعني أريد مثل السوداني.", "en": "dāyir means 'I want', as in Sudanese." }
+    ]
+  },
+  "mar": {
+    "where": { "ar": "الدار البيضاء ومدن المغرب", "en": "Casablanca and Morocco's cities" },
+    "summary": { "ar": "الدارجة المغربية فيها كلمات من الأمازيغية والفرنسية والإسبانية، وتنطق الحروف المتحركة بسرعة.", "en": "Moroccan Darija has words from Amazigh, French and Spanish and drops many short vowels." },
+    "features": [
+      { "ar": "المضارع يأخذ «كـ»: «كنكتب» (أكتب).", "en": "The present takes ka-: kanktəb 'I write'." },
+      { "ar": "المتكلم المفرد يبدأ بـ «ن»: «نمشي» (أمشي).", "en": "'I' verbs start with n-: nmši 'I go'." },
+      { "ar": "«بزّاف» يعني كثير، و«واخا» يعني حسنًا.", "en": "bzzaf means 'a lot' and waxxa means 'okay'." }
+    ]
+  },
+  "jeb": {
+    "where": { "ar": "جبال شمال المغرب حول تطوان وشفشاون", "en": "The northern Moroccan mountains around Tetouan and Chefchaouen" },
+    "summary": { "ar": "الجبلي لهجة ريفية في شمال المغرب، وفيها كلمات إسبانية كثيرة.", "en": "Jebli is a rural dialect of northern Morocco with many Spanish words." },
+    "features": [
+      { "ar": "القاف تبقى قافًا أو تنطق همزة في بعض القرى.", "en": "Qaf stays q or becomes a glottal stop in some villages." },
+      { "ar": "كلمات إسبانية في الحياة اليومية.", "en": "Spanish words in daily life." }
+    ]
+  },
+  "alg": {
+    "where": { "ar": "الجزائر العاصمة", "en": "Algiers" },
+    "summary": { "ar": "الدارجة الجزائرية فيها كلمات فرنسية كثيرة، وبعض الكلمات الأمازيغية والتركية.", "en": "Algerian Darija has many French words and some Amazigh and Turkish ones." },
+    "features": [
+      { "ar": "«واش» يعني ماذا، و«راك» يعني أنت (كيف راك؟).", "en": "wāš means 'what' and rāk is used for 'you are' (kī rāk?)." },
+      { "ar": "المتكلم المفرد يبدأ بـ «ن» مثل المغرب.", "en": "'I' verbs start with n-, as in Morocco." },
+      { "ar": "«بزّاف» يعني كثير.", "en": "bzzaf means 'a lot'." }
+    ]
+  },
+  "tun": {
+    "where": { "ar": "تونس العاصمة ومدن الساحل", "en": "Tunis and the coastal towns" },
+    "summary": { "ar": "التونسي لهجة مغاربية فيها كلمات فرنسية وإيطالية وتركية.", "en": "Tunisian is a Maghrebi dialect with French, Italian and Turkish words." },
+    "features": [
+      { "ar": "«برشا» يعني كثير، و«باهي» يعني جيد.", "en": "barša means 'a lot' and bāhi means 'good'." },
+      { "ar": "«شنوّة» يعني ماذا.", "en": "šnuwwa means 'what'." },
+      { "ar": "المتكلم المفرد يبدأ بـ «ن»: «نحبّ» (أحب).", "en": "'I' verbs start with n-: nḥibb 'I love'." }
+    ]
+  },
+  "tri": {
+    "where": { "ar": "طرابلس وغرب ليبيا", "en": "Tripoli and western Libya" },
+    "summary": { "ar": "الطرابلسي لهجة مغاربية فيها كلمات إيطالية كثيرة.", "en": "Tripolitanian is a Maghrebi dialect with many Italian words." },
+    "features": [
+      { "ar": "القاف تنطق g: «قال» gāl.", "en": "Qaf is g: gāl." },
+      { "ar": "«شن» يعني ماذا، و«باهي» يعني جيد.", "en": "šin means 'what' and bāhi means 'good'." },
+      { "ar": "كلمات إيطالية في السيارات والبيت.", "en": "Italian words for cars and the home." }
+    ]
+  },
+  "ben": {
+    "where": { "ar": "بنغازي وشرق ليبيا", "en": "Benghazi and eastern Libya" },
+    "summary": { "ar": "لهجة بنغازي قريبة من لهجات بدو غرب مصر.", "en": "Benghazi speech is close to the Bedouin dialects of western Egypt." },
+    "features": [
+      { "ar": "القاف g مثل طرابلس.", "en": "Qaf is g, as in Tripoli." },
+      { "ar": "«شن» يعني ماذا.", "en": "šin means 'what'." }
+    ]
+  },
+  "has": {
+    "where": { "ar": "موريتانيا والصحراء الغربية وأجزاء من مالي", "en": "Mauritania, Western Sahara and parts of Mali" },
+    "summary": { "ar": "الحسانية لهجة بدوية عربية، وفيها كلمات من الأمازيغية ولغات غرب أفريقيا.", "en": "Hassaniya is a Bedouin Arabic dialect with words from Amazigh and West African languages." },
+    "features": [
+      { "ar": "القاف g في كلمات كثيرة.", "en": "Qaf is g in many words." },
+      { "ar": "تحتفظ بالثاء والذال مثل الفصحى.", "en": "Keeps th and dh as in Standard Arabic." }
+    ]
+  }
+}

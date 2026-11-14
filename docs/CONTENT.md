@@ -278,3 +278,11 @@ add a dialect, a phrase or an Egypt page to the content and its card and page ap
 
 الصور اللي بتظهر لما حد يشارك لينك من الموقع بتتعمل وقت البناء لوحدها، لكل صفحة ولكل لهجة ولكل جملة مشهورة.
 أي محتوى جديد بياخد صورته في البناء اللي بعده.
+
+## Dialect intros (dialects outside the Egypt section)
+
+`src/content/dialect-intros.json` holds a short "about this dialect" card for each dialect that has no
+Egypt-section page. Keys are dialect ids from `phrases.json`. Each entry has `where`, `summary` and a
+list of `features`, every one as `{ "ar": "...", "en": "..." }`. The card shows on `/dialect/<id>`
+under the header. Write only well-documented features; a test checks that every key is a real
+dialect and that no text is empty.
