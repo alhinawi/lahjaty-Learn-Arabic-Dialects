@@ -45,6 +45,8 @@ interface Page {
   imageAlt: string
   /** Pages that only exist to be shared stay out of the sitemap. */
   sitemap?: boolean
+  /** Extra schema.org data for the page, added to its JSON-LD graph. */
+  jsonLd?: Record<string, unknown>
 }
 
 // ---------- cards ----------
@@ -98,6 +100,7 @@ const sections: [string, string, string][] = [
   ['settings', t('settings'), slogan],
   ['dictionary', t('dictTitle'), t('dictBody')],
   ['word', t('dictWordInAll'), t('dictWordInAllBody')],
+  ['profile', t('profileTitle'), t('profilePrivate')],
 ]
 for (const [id, title, body] of sections) draw(`/og/${id}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, section: title, sectionBody: body }))
 for (const cat of categories) {
@@ -164,7 +167,7 @@ const imageFor = (path: string) => {
 // ---------- pages ----------
 const pages: Page[] = [
   { path: '/', title: '', description: `${slogan}. ${t('heroBody')}`, imageAlt: `لهجتي: ${slogan}`, sitemap: true },
-  ...sections.map(([id, title, body]) => ({ path: `/${id}`, title, description: `${body}. ${slogan}.`, imageAlt: `${title} – لهجتي`, sitemap: !['favorites', 'settings', 'search'].includes(id) })),
+  ...sections.map(([id, title, body]) => ({ path: `/${id}`, title, description: `${body}. ${slogan}.`, imageAlt: `${title} – لهجتي`, sitemap: !['favorites', 'settings', 'search', 'profile'].includes(id) })),
   ...categories.map((c) => ({ path: `/lessons/${c.id}`, title: `${c.name} – ${t('lessonsTitle')}`, description: `جمل «${c.name}» بكل اللهجات العربية، مع المعنى بالفصحى والإنجليزي. ${slogan}.`, imageAlt: `${c.name} – لهجتي`, sitemap: true })),
   ...dialects
     .filter((d) => d.id !== STANDARD_ID)
@@ -181,7 +184,20 @@ const pages: Page[] = [
   ...dict.index.topics.map((x) => ({ path: `/dictionary/${x.id}`, title: `${x.name} – ${t('dictTitle')}`, description: `كلمات «${x.name}» بكل اللهجات العربية، مع المقابل بالفصحى والمعنى بالإنجليزي. ${slogan}.`, imageAlt: `${x.name} – قاموس لهجتي`, sitemap: true })),
   ...dict.entries.map((e) => {
     const sample = Object.entries(e.words).slice(0, 6).map(([id, w]) => `${getDialect(id)?.name ?? id}: ${w}`).join('، ')
-    return { path: `/word/${e.id}`, title: `«${e.fs}» في كل لهجة`, description: `«${e.fs}» (${e.en}) بلهجات العرب: ${sample}.`, imageAlt: `«${e.fs}» في كل لهجة – لهجتي`, sitemap: true }
+    return {
+      path: `/word/${e.id}`,
+      title: `«${e.fs}» في كل لهجة`,
+      description: `«${e.fs}» (${e.en}) بلهجات العرب: ${sample}.`,
+      imageAlt: `«${e.fs}» في كل لهجة – لهجتي`,
+      sitemap: true,
+      jsonLd: {
+        '@type': 'DefinedTerm',
+        name: e.fs,
+        alternateName: [...new Set(Object.values(e.words))].slice(0, 20),
+        description: e.en,
+        inDefinedTermSet: { '@type': 'DefinedTermSet', name: t('dictTitle'), url: `${SITE_URL}/dictionary` },
+      },
+    }
   }),
   { path: '/egypt', title: t('egyptTitle'), description: t('egyptBody'), imageAlt: 'خريطة لهجات مصر', sitemap: true },
   ...allEgyptNodes().map((n) => ({ path: `/egypt/${n.id}`, title: `${n.name} – ${n.nameEn}`, description: n.summary?.ar ?? t('egyptBody'), imageAlt: `${n.name} على خريطة مصر`, sitemap: true })),
@@ -195,6 +211,39 @@ const pages: Page[] = [
       .map((d) => ({ path: sharePath(d.id, p.id), title: `«${p.variants[d.id]!.text}» بلهجة ${d.name}`, description: `بالفصحى: ${p.variants[STANDARD_ID]?.text ?? ''}. ${p.english}.`, imageAlt: `لهجة ${d.name} على الخريطة` })),
   ),
 ]
+
+// ---------- structured data ----------
+const titleByPath = new Map(pages.map((p) => [p.path, p.title]))
+/** Home > section > page, from the pages that exist at each step of the path. */
+function breadcrumbs(path: string) {
+  const parts = path.split('/').filter(Boolean)
+  if (parts.length < 2 || path.startsWith('/share/')) return null
+  const items = [{ name: SITE_NAME, url: `${SITE_URL}/` }]
+  for (let i = 1; i <= parts.length; i++) {
+    const sub = '/' + parts.slice(0, i).join('/')
+    const name = titleByPath.get(sub)
+    if (name) items.push({ name, url: SITE_URL + sub })
+  }
+  return {
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: x.url })),
+  }
+}
+const website = {
+  '@type': 'WebSite',
+  name: SITE_NAME,
+  alternateName: 'Lahjaty',
+  url: `${SITE_URL}/`,
+  description: `${slogan}. ${sloganEn}.`,
+  inLanguage: ['ar', 'en'],
+  potentialAction: { '@type': 'SearchAction', target: `${SITE_URL}/search?q={search_term_string}`, 'query-input': 'required name=search_term_string' },
+}
+function jsonLdFor(p: Page) {
+  const graph = [p.path === '/' ? website : null, breadcrumbs(p.path), p.jsonLd ?? null].filter(Boolean)
+  if (!graph.length) return ''
+  // Escapes < so no text in the data can close the script tag.
+  return `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c')}</script>`
+}
 
 function headFor(p: Page) {
   const title = p.title ? `${p.title} | ${SITE_NAME}` : `${SITE_NAME} | ${slogan}`
@@ -224,7 +273,10 @@ function headFor(p: Page) {
     m('twitter:description', desc, 'name'),
     m('twitter:image', image, 'name'),
     m('twitter:image:alt', p.imageAlt, 'name'),
-  ].join('\n    ')
+    jsonLdFor(p),
+  ]
+    .filter(Boolean)
+    .join('\n    ')
 }
 
 if (!only) {

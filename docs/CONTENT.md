@@ -331,3 +331,11 @@ show while a dictionary topic loads. React and the router sit in a separate `ven
 stays cached across deploys. `index.html` holds a plain painted shell that shows before any script,
 and the build preloads the Arabic interface font. Empty and not-found pages use
 `src/components/EmptyState.tsx`.
+
+## Search engines
+
+`scripts/og/build.ts` writes, for every page, its title, description, canonical link, share card
+and JSON-LD: the home page describes the site and its search, nested pages get breadcrumbs, and
+each dictionary word is a `DefinedTerm`. It also writes `sitemap.xml` and `robots.txt`. Personal
+pages (favorites, settings, search, profile) stay out of the sitemap. A page that needs extra
+structured data passes `jsonLd` in its entry in the `pages` list.
