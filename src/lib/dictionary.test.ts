@@ -4,6 +4,7 @@ import { describe, expect, it } from 'vitest'
 import { content } from './content'
 import { dictTopics, sameWordIn, searchDictionary } from './dictionary'
 import { ogImageFor } from './og'
+import { normalize } from './search'
 import type { DictEntry, DictTopicFile } from './types'
 import { dictAudioId, missingAudio, validateDictionary } from './validate'
 
@@ -28,7 +29,7 @@ describe('dictionary', () => {
       expect(searchDictionary(entries, e.en.split(/[,;(/]/)[0], 50).map((h) => h.entry.id)).toContain(e.id)
     }
     // a dialect word that differs from Standard Arabic is found and credited to a dialect
-    const e = entries.find((x) => x.words.cai && !x.words.cai.includes(x.fs))!
+    const e = entries.find((x) => x.words.cai && !normalize(x.words.cai).includes(normalize(x.fs)))!
     const hit = searchDictionary(entries, e.words.cai.split('/')[0], 50).find((h) => h.entry.id === e.id)
     expect(hit?.dialectId).toBeTruthy()
   })

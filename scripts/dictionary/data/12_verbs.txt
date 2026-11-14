@@ -1,0 +1,98 @@
+@topic verbs | أفعال يومية | Everyday verbs | verbs
+go | ذهب | to go | v | EGS=راح; LEVP=راح; IQM=راح; KHL=راح; OM=راح; hij=راح; YE=راح; sud=مشى / راح; MAGT=مشى; LY=مشى; chd=مشى | cai: رحت الشغل بدري. || mar: مشيت للخدمة بكري. || tun: مشيت للخدمة بكري.
+come | جاء | to come | v | EGS=جه / جا; LEVP=إجا; IQM=إجه; GLF=يا / جا; SA=جا; hij=جا; sud=جا; MAGT=جا; LY=جا | dam: إجا أخي مبارح. || kuw: يا أخوي أمس.
+eat | أكل | to eat | v | EGS=كل; LEVP=أكل; IQM=أكل; KHL=أكل / كل; hij=أكل / كل; YE=أكل; sud=أكل; MAGT=كلا; LY=كلا | cai: كلت ولّا لسه؟ || mar: كليتي ولا باقي؟
+drink | شرب | to drink | v | ALL=شرب
+sleep | نام | to sleep | v | ALL=نام; MAJ=نعس; alg=رقد; tun=رقد; LY=رقد; sud=نام / رقد | cai: نمت متأخر امبارح. || mar: نعست معطّل البارح. || tun: رقدت متأخر البارح.
+wake_up | استيقظ | to wake up | v | EGS=صحي; LEVP=فاق / صحي; IQM=گعد; KHL=قعد; hij=صحي / قام; sud=صحى / قام; MA=فاق; jeb=فاق; alg=ناض; tun=فاق / قام; LY=ناض | bag: گعدت من النوم الساعة سبعة.
+see | رأى | to see | v | EGS=شاف; LEVP=شاف; IQM=شاف; KHL=شاف; OM=شاف; hij=شاف; YE=شاف; sud=شاف; MAGT=شاف; LY=شاف
+want | أراد | to want | v | EGS=عايز / عاوز; sai=رايد / عايز; LEVP=بدّو; IQM=يريد; KHL=يبي / يبغى; hij=يبغى; OM=يبا; YE=يشتي; sud=داير; MAJ=بغى; alg=حبّ / بغى; tun=حبّ; LY=يبّي; chd=داير | cai: أنا عايز قهوة. || dam: بدّي قهوة. || san: اشتي قهوة. || mar: بغيت قهوة.
+say | قال | to say | v | ALL=قال
+talk | تكلّم | to talk | v | EGS=اتكلّم; LEVP=حكى; IQM=حچى; KHL=تكلّم / سولف; hij=تكلّم / هرج; YE=تكلّم; sud=اتكلّم / ونّس; MA=هضر; jeb=هضر; alg=هدر; tun=حكى / تكلّم; LY=تكلّم | leb: حكيت معو مبارح. || mar: هضرت معاه البارح.
+work | اشتغل | to work | v | EGS=اشتغل; LEVP=اشتغل; IQM=اشتغل; KHL=اشتغل; hij=اشتغل; sud=اشتغل; MAGT=خدم; LY=خدم | alg: نخدم في بنكة.
+do | فعل | to do / to make | v | EGS=عمل; LEVP=عمل; IQM=سوّى; KHL=سوّى; OM=سوّى; hij=سوّى / عمل; sud=عمل / سوّى; MAG=دار; tun=عمل; LY=دار | cai: بتعمل إيه؟ || bag: شدتسوّي؟ || mar: آش كدير؟
+open | فتح | to open | v | ALL=فتح; MAJ=حلّ; alg=حلّ; tun=حلّ | mar: حلّ الباب عافاك.
+close | أغلق | to close | v | EGS=قفل; LEVP=سكّر; IQM=سدّ; KHL=سكّر; hij=قفل / سكّر; sud=قفل; MA=سدّ; jeb=سدّ; alg=غلق / سدّ; tun=سكّر; LY=سكّر | cai: اقفل الباب. || dam: سكّر الباب.
+sit | جلس | to sit | v | EGS=قعد; LEVP=قعد; IQM=گعد; GLF=يلس / قعد; SA=جلس / قعد; hij=قعد; sud=قعد; MA=گلس; jeb=گلس; alg=قعد; tun=قعد; LY=قعد | kuw: يلس هني.
+stand_up | قام | to stand up / to get up | v | ALL=قام; MA=ناض; jeb=ناض; alg=ناض; LY=ناض / قام
+walk | مشى | to walk | v | ALL=مشى
+run | ركض | to run | v | EGS=جري; LEVP=ركض; IQM=ركض; KHL=ركض; hij=جرى; sud=جرى; MAGT=جرى; LY=جرى
+take | أخذ | to take | v | EGS=خد; LEVP=أخد; IQM=أخذ; KHL=أخذ / خذ; hij=أخد; YE=شلّ; sud=شال / أخد; MA=خدا; jeb=خدا; alg=دّا / خدا; tun=خذا; LY=خدا
+give | أعطى | to give | v | EGS=إدّى; LEVP=أعطى; IQM=نطى; KHL=عطى; OM=عطى; hij=أدّى / عطى; sud=أدّى; MAGT=عطى; LY=عطى | cai: إدّيني القلم. || bag: انطيني القلم.
+buy | اشترى | to buy | v | EGS=اشترى; LEVP=اشترى; IQM=اشترى; KHL=اشترى / شرى; hij=اشترى; YE=اشترى; sud=اشترى / شرا; MAGT=شرا; LY=شرا
+know | عرف | to know | v | ALL=عرف
+understand | فهم | to understand | v | ALL=فهم
+wait | انتظر | to wait | v | EGS=استنّى; LEVP=استنّى; IQM=انتظر; KHL=انتظر; hij=استنّى; MA=تسنّى; jeb=تسنّى; alg=استنّى / ترجّى; tun=استنّى | cai: استنّى شوية. || mar: تسنّى شوية.
+search | بحث | to look for | v | EGS=دوّر; LEVP=دوّر / فتّش; IQM=دوّر; KHL=دوّر; hij=دوّر; sud=فتّش; MA=قلّب; jeb=قلّب; alg=قلّب / حوّس; tun=لوّج
+bring | أحضر | to bring | v | EGS=جاب; LEVP=جاب; IQM=جاب; SA=جاب; GLF=ياب / جاب; hij=جاب; sud=جاب; MAGT=جاب; LY=جاب | cai: هات الشنطة. || kuw: ياب الشنطة.
+put | وضع | to put | v | EGS=حطّ; LEVP=حطّ; IQM=خلّى / حطّ; KHL=حطّ / خلّى; hij=حطّ; sud=ختّ; MAGT=حطّ; LY=حطّ
+play | لعب | to play | v | ALL=لعب
+cook | طبخ | to cook | v | ALL=طبخ; MAGT=طيّب
+wash | غسل | to wash | v | ALL=غسل
+clean | نظّف | to clean | v | EGS=نضّف; LEVP=نضّف; IQM=نظّف; KHL=نظّف; hij=نضّف; MA=نقّى; jeb=نقّى; alg=نقّى; tun=نظّف
+return | رجع | to come back | v | ALL=رجع
+go_out | خرج | to go out | v | EGS=خرج / طلع; LEVP=طلع; IQM=طلع; KHL=طلع; hij=طلع / خرج; sud=مرق; MAGT=خرج
+enter | دخل | to go in | v | ALL=دخل
+write | كتب | to write | v | ALL=كتب
+read | قرأ | to read | v | ALL=قرا
+learn | تعلّم | to learn | v | EGS=اتعلّم; LEVP=تعلّم; IQM=تعلّم; KHL=تعلّم; hij=اتعلّم; sud=اتعلّم; MAGT=تعلّم; LY=تعلّم
+love | أحبّ | to love / to like | v | ALL=حبّ; MA=حبّ / بغى
+forget | نسي | to forget | v | ALL=نسي
+remember | تذكّر | to remember | v | EGS=افتكر; LEVP=تذكّر; IQM=تذكّر; KHL=تذكّر; hij=افتكر / تذكّر; MA=عقل; jeb=عقل; alg=تفكّر; tun=تفكّر | cai: افتكرت اسمه. || mar: عقلت على سميتو.
+can | استطاع | to be able to | v | EGS=قدر; LEVP=قدر; IQM=گدر; KHL=قدر; hij=قدر; sud=قدر; MAGT=قدر; LY=قدر
+help | ساعد | to help | v | EGS=ساعد; LEVP=ساعد; IQM=ساعد; KHL=ساعد / عاون; hij=ساعد; sud=ساعد; MAGT=عاون
+live | سكن | to live (somewhere) | v | ALL=سكن
+send | أرسل | to send | v | EGS=بعت; LEVP=بعت; IQM=دزّ; KHL=رسل; sud=رسّل; MA=صيفط; jeb=صيفط; alg=بعث; tun=بعث | bag: دزّلي المسج. || mar: صيفط ليا الميساج.
+phone_call | اتّصل | to call (on the phone) | v | EGS=اتّصل / رنّ; LEVP=اتّصل / دقّ; IQM=خابر / اتّصل; KHL=اتّصل / دقّ; MA=عيّط; jeb=عيّط; alg=عيّط
+laugh | ضحك | to laugh | v | ALL=ضحك
+cry | بكى | to cry | v | EGS=عيّط; LEVP=بكي; IQM=بچى; KHL=بچى; kuw=صاح / بچى; hij=بكى; sud=بكى; MAGT=بكى; LY=بكى | cai: الولد قعد يعيّط.
+shower | استحمّ | to take a shower | v | EGS=استحمّى; LEVP=تحمّم; IQM=سبح; KHL=سبح; hij=تروّش; MAGT=دوّش
+
+@topic adjectives | صفات | Describing words | adjectives
+big | كبير | big | adj | ALL=كبير
+small | صغير | small | adj | EGS=صغيّر; LEVP=زغير / صغير; IQM=صغيّر / زغيّر; KHL=صغير; hij=صغيّر; sud=صغيّر; MAGT=صغير; LY=صغير
+good | جيّد | good / fine | adj | EGS=كويّس; LEVP=منيح / كويّس; leb=منيح; IQM=زين / خوش; KHL=زين; OM=زين; hij=كويّس / زين; sud=كويّس / سمح; MA=مزيان; jeb=مزيان; alg=مليح; tun=باهي; LY=باهي | cai: الأكل ده كويّس. || mar: هاد الماكلة مزيانة. || tun: الماكلة هاذي باهية.
+bad | سيّئ | bad | adj | EGS=وحش; LEVP=عاطل / مش منيح; IQM=مو زين / خايس; KHL=مو زين / خايس; hij=وحش / مو كويّس; sud=شين; MA=خايب; jeb=خايب; alg=ماشي مليح / خايب; tun=موش باهي / خايب
+beautiful | جميل | beautiful / nice | adj | EGS=حلو / جميل; LEVP=حلو; IQM=حلو; KHL=حلو / زين; hij=حلو; sud=سمح / حلو; MA=زوين; jeb=زوين; alg=شباب; tun=مزيان / زين
+ugly | قبيح | ugly | adj | EGS=وحش; LEVP=بشع; KHL=شين; hij=شين; sud=شين; MA=خايب; jeb=خايب; alg=خايب; tun=خايب; LY=شين
+new | جديد | new | adj | ALL=جديد
+old_thing | قديم | old (thing) | adj | ALL=قديم; LEVP=قديم / عتيق
+hot_food | ساخن | hot (food, water) | adj | EGS=سخن; LEVP=سخن; IQM=حار; KHL=حار; hij=حار / سخن; sud=حار; MAGT=سخون; LY=سخون
+cold_food | بارد | cold (drink, food) | adj | EGS=ساقع / بارد; LEVP=بارد; IQM=بارد; KHL=بارد; hij=بارد; sud=بارد; MAGT=بارد; LY=بارد | cai: عايز حاجة ساقعة.
+easy | سهل | easy | adj | ALL=سهل; MAGT=ساهل
+difficult | صعب | difficult | adj | ALL=صعب; MAG=صعيب; tun=صعيب
+fast | سريع | fast | adj | EGS=سريع; LEVP=سريع; IQM=سريع; KHL=سريع; MA=زربان; jeb=زربان
+expensive | غالٍ | expensive | adj | ALL=غالي | cai: ده غالي قوي. || mar: هادشي غالي بزاف.
+cheap | رخيص | cheap | adj | ALL=رخيص
+clean_adj | نظيف | clean | adj | EGS=نضيف; LEVP=نضيف; IQM=نظيف; KHL=نظيف; hij=نضيف; MA=نقي; jeb=نقي; alg=نقي; tun=نظيف
+dirty | وسخ | dirty | adj | EGS=وسخ; LEVP=وسخ; IQM=وصخ; KHL=وصخ; hij=وسخ; sud=وسخان; MAGT=موسّخ
+tall | طويل | tall / long | adj | ALL=طويل
+short | قصير | short | adj | ALL=قصير
+fat | سمين | fat | adj | EGS=تخين; LEVP=ناصح / سمين; IQM=سمين; KHL=سمين / متين; hij=مليان / سمين; sud=سمين; MA=غليض; jeb=غليض
+thin | نحيف | thin | adj | EGS=رفيع; LEVP=نحيف / ضعيف; IQM=ضعيف; KHL=ضعيف; MAGT=ضعيف
+empty | فارغ | empty | adj | EGS=فاضي; LEVP=فاضي; IQM=فارغ / فاضي; KHL=فاضي; hij=فاضي; MAGT=خاوي
+strong | قوي | strong | adj | ALL=قوي
+crazy | مجنون | crazy | adj | ALL=مجنون; IQM=مخبّل / مجنون; KHL=خبل / مجنون; MA=حمق / مسطي; jeb=حمق; alg=مهبول; tun=مهبول
+clever | ذكي | clever | adj | EGS=شاطر / ذكي; LEVP=شاطر / ذكي; IQM=ذكي / شاطر; KHL=ذكي; hij=شاطر / ذكي; sud=شاطر
+correct | صحيح | right / correct | adj | EGS=صح; LEVP=صح; IQM=صح; KHL=صح; hij=صح; sud=صح
+wrong | خطأ | wrong / mistake | adj | EGS=غلط; LEVP=غلط; IQM=غلط; KHL=غلط; hij=غلط; sud=غلط
+far | بعيد | far | adj | ALL=بعيد
+near | قريب | near / close | adj | ALL=قريب
+heavy | ثقيل | heavy | adj | EGS=تقيل; LEVP=تقيل; IQM=ثگيل; KHL=ثقيل; hij=تقيل; MAGT=تقيل; LY=تقيل
+light_weight | خفيف | light (not heavy) | adj | ALL=خفيف
+
+@topic feelings | مشاعر | Feelings | feelings
+happy | سعيد | happy | adj | EGS=مبسوط / فرحان; LEVP=مبسوط / فرحان; IQM=فرحان / مستانس; KHL=مستانس / فرحان; OM=فرحان / مستانس; hij=مبسوط / فرحان; sud=فرحان / مبسوط; MAGT=فرحان | cai: أنا مبسوط قوي النهارده. || kuw: أنا وايد مستانس اليوم.
+sad | حزين | sad / upset | adj | EGS=زعلان / حزين; LEVP=زعلان / حزين; IQM=حزين / ضايج; KHL=زعلان / ضايق; hij=زعلان; sud=زعلان / حزنان; MAGT=حزين; LY=زعلان
+angry | غاضب | angry | adj | EGS=متعصّب / زعلان; LEVP=معصّب; IQM=معصّب / زعلان; KHL=معصّب / زعلان; hij=زعلان / معصّب; sud=زعلان; MA=مقلّق / معصّب; jeb=مقلّق; alg=زعفان; tun=مغشّش | dam: ليش معصّب؟ || alg: علاش راك زعفان؟
+tired | متعب | tired | adj | ALL=تعبان; MAG=عيّان; jeb=عيّان | cai: أنا تعبان من الشغل. || mar: أنا عيّان من الخدمة.
+afraid | خائف | afraid | adj | ALL=خايف
+bored | ضجِر | bored | adj | EGS=زهقان; LEVP=زهقان / ضجران; KHL=طفشان / ملّان; hij=طفشان / زهقان; sud=زهجان; alg=قلقان; tun=قلقان | cai: أنا زهقان. || kuw: أنا طفشان.
+worried | قلق | worried | adj | EGS=قلقان; LEVP=قلقان; IQM=قلقان; KHL=قلقان; hij=قلقان
+upset | متضايق | upset / fed up | adj | EGS=متضايق / مخنوق; LEVP=متضايق; IQM=ضايج; KHL=ضايق / متضايق; hij=متضايق
+shy | خجلان | shy / embarrassed | adj | EGS=مكسوف / محرج; LEVP=مستحي; IQM=مستحي; KHL=مستحي; hij=مستحي; MAGT=حشمان; LY=حشمان
+jealous | غيران | jealous | adj | EGS=غيران; LEVP=غيران; IQM=غيران; KHL=غيران
+love_noun | حبّ | love | n | ALL=حبّ
+miss_you | اشتقت إليك | I miss you | phr | EGS=وحشتني; LEVP=اشتقتلك; IQM=اشتاقيتلك; KHL=اشتقت لك; hij=وحشتني; MAGT=توحّشتك; LY=توحّشتك
+dont_care | لا يهمّني | I don't care | phr | EGS=مش فارقة معايا; LEVP=ما بتفرق معي; IQM=ما يهمّني; KHL=ما يهمّني / عادي; MA=ما سوقيش; jeb=ما سوقيش; alg=ما يهمّنيش; tun=ما يهمّنيش
+calm | هادئ | calm | adj | EGS=هادي; LEVP=هادي; IQM=هادي; KHL=هادي; hij=هادي

@@ -84,6 +84,24 @@
    "name": "الألوان",
    "nameEn": "Colours",
    "icon": "colors"
+  },
+  {
+   "id": "verbs",
+   "name": "أفعال يومية",
+   "nameEn": "Everyday verbs",
+   "icon": "verbs"
+  },
+  {
+   "id": "adjectives",
+   "name": "صفات",
+   "nameEn": "Describing words",
+   "icon": "adjectives"
+  },
+  {
+   "id": "feelings",
+   "name": "مشاعر",
+   "nameEn": "Feelings",
+   "icon": "feelings"
   }
  ]
 }
