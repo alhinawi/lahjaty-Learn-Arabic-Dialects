@@ -1,3 +1,5 @@
+'use client'
+
 import { useMemo } from 'react'
 import { practiceDaySet } from '../lib/achievements'
 import { useT } from '../lib/i18n'

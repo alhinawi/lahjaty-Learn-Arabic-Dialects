@@ -1,3 +1,5 @@
+'use client'
+
 import { Search, X } from 'lucide-react'
 import { useDeferredValue, useId, useMemo, useState } from 'react'
 import { getConcept, getDialect } from '../lib/content'

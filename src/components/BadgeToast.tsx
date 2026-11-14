@@ -1,6 +1,8 @@
+'use client'
+
 import { Trophy, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 import { useT } from '../lib/i18n'
 import type { MessageKey } from '../lib/i18n'
 import { useApp } from '../lib/store'
@@ -43,7 +45,7 @@ export default function BadgeToast() {
         <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-b from-sun-300 to-sun-500 text-brand-950">
           <Trophy className="h-6 w-6" aria-hidden />
         </span>
-        <Link to="/profile" onClick={() => setShown(null)} className="min-w-0 flex-1">
+        <Link href="/profile" onClick={() => setShown(null)} className="min-w-0 flex-1">
           <p className="text-xs text-cream-200">{t('badgeEarned')}</p>
           <p className="truncate font-bold">{t(`badge_${shown}` as MessageKey)}</p>
         </Link>

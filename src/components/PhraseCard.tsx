@@ -1,5 +1,7 @@
+'use client'
+
 import { Check, Columns3, Heart } from 'lucide-react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 import { getDialect, hasAudio, STANDARD_ID, voiceFor } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { baseInMyDialect } from '../lib/myDialect'
@@ -95,8 +97,7 @@ export default function PhraseCard({ phrase, dialectId, showDialect = false }: P
           <Check className="h-3.5 w-3.5" aria-hidden />
           {isLearned ? t('learned') : t('markLearned')}
         </button>
-        <Link
-          to={`/compare?p=${encodeURIComponent(phrase.id)}`}
+        <Link href={`/compare?p=${encodeURIComponent(phrase.id)}`}
           className="flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-600 hover:bg-slate-200"
         >
           <Columns3 className="h-3.5 w-3.5" aria-hidden />

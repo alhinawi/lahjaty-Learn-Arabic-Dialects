@@ -1,3 +1,5 @@
+'use client'
+
 import { EG_H, EG_W, egPath, egProject, egyptRegionColors, egyptRegions, egyptShapes, nilePaths } from '../lib/egypt'
 import type { EgyptPoint } from '../lib/egypt'
 import { useApp } from '../lib/store'

@@ -1,6 +1,8 @@
+'use client'
+
 import { ChevronLeft, Map } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 import { allFamous, categories, dialects, getDialect, getPhrase, phrases, STANDARD_ID } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 
@@ -63,7 +65,7 @@ export default function Hero() {
           </div>
           <Link
             key={d.id}
-            to={`/dialects/${d.id}`}
+            href={`/dialects/${d.id}`}
             className="animate-fade shrink-0 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-sun-300 ring-1 ring-white/15"
           >
             {t('heroIn', { dialect: name(d) })}
@@ -72,15 +74,13 @@ export default function Hero() {
       )}
 
       <div className="relative mt-4 flex flex-wrap gap-2">
-        <Link
-          to="/lessons"
+        <Link href="/lessons"
           className="inline-flex items-center gap-1 rounded-full bg-gradient-to-b from-sun-300 to-sun-500 px-5 py-2.5 text-sm font-bold text-brand-950 shadow-lg shadow-sun-500/20 transition hover:brightness-105 active:scale-95"
         >
           {t('startLearning')}
           <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
         </Link>
-        <Link
-          to="/dialects"
+        <Link href="/dialects"
           className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2.5 text-sm font-semibold ring-1 ring-white/20 transition hover:bg-white/15 active:scale-95"
         >
           <Map className="h-4 w-4" aria-hidden />

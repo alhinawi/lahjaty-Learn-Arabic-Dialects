@@ -1,5 +1,7 @@
+'use client'
+
 import { Columns3, Heart, Quote } from 'lucide-react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 import { getDialect, hasAudio, STANDARD_ID, voiceFor } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { famousInMyDialect } from '../lib/myDialect'
@@ -79,8 +81,7 @@ export default function FamousCard({ phrase, dialectId, showDialect = false }: P
 
       <div className="mt-3 flex flex-wrap items-center gap-2 border-t border-slate-100 pt-3">
         {phrase.concept && (
-          <Link
-            to={`/compare?c=${encodeURIComponent(phrase.concept)}`}
+          <Link href={`/compare?c=${encodeURIComponent(phrase.concept)}`}
             className="flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-600 hover:bg-slate-200"
           >
             <Columns3 className="h-3.5 w-3.5" aria-hidden />

@@ -1,7 +1,9 @@
+'use client'
+
 import { Briefcase, Check, ChevronLeft, Clapperboard, Languages, Plane, Sparkles, Users } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
-import { useLocation } from 'react-router'
+import { usePathname } from 'next/navigation'
 import { getDialect } from '../lib/content'
 import { GOALS, SUGGESTED_TO_LEARN } from '../lib/goals'
 import type { GoalId } from '../lib/goals'
@@ -25,7 +27,7 @@ const STEPS = 3
  */
 export default function Onboarding() {
   const asked = useApp((s) => s.myDialectAsked)
-  const { pathname } = useLocation()
+  const pathname = usePathname() ?? '/'
   // A shared phrase link opens straight on the phrase; the welcome steps wait for the next visit.
   if (asked || pathname.startsWith('/share/')) return null
   return <Steps />

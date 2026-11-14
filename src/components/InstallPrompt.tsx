@@ -1,3 +1,5 @@
+'use client'
+
 import { Download, Share, SquarePlus, WifiOff, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { useT } from '../lib/i18n'

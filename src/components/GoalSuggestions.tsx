@@ -1,5 +1,7 @@
+'use client'
+
 import { ChevronLeft } from 'lucide-react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 import { goalCategories } from '../lib/goals'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
@@ -29,7 +31,7 @@ export default function GoalSuggestions() {
         {list.map((c) => (
           <Link
             key={c.id}
-            to={`/lessons/${c.id}`}
+            href={`/lessons/${c.id}`}
             className="lift flex w-32 shrink-0 flex-col gap-2 rounded-2xl bg-gradient-to-br from-brand-50 to-sand-100 p-3 ring-1 ring-sun-400/30"
           >
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-700 text-sun-300">

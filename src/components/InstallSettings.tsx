@@ -1,3 +1,5 @@
+'use client'
+
 import { CheckCircle2, Download, Share, SquarePlus } from 'lucide-react'
 import { useT } from '../lib/i18n'
 import { useInstall } from '../lib/pwa'

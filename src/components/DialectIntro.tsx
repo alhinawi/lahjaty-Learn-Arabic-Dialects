@@ -1,3 +1,5 @@
+'use client'
+
 import { MapPin, Sparkles } from 'lucide-react'
 import intros from '../content/dialect-intros.json'
 import { useBi } from '../lib/useBi'

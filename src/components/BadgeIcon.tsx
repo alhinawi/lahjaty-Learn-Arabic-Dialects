@@ -1,3 +1,5 @@
+'use client'
+
 import { BookOpen, Compass, Crown, Flame, Heart, Layers, Medal, Star, Type } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import type { BadgeIcon as BadgeIconId } from '../lib/achievements'

@@ -8,14 +8,15 @@
     "content:check": "tsx scripts/check-content.ts",
     "dict:build": "python3 scripts/dictionary/build.py",
     "predev": "npm run audio:index",
-    "dev": "vite",
+    "dev": "next dev",
     "prebuild": "npm run audio:index && npm run content:check",
-    "build": "tsc -b && vite build && npm run og",
+    "build": "next build && npm run og",
     "og": "tsx scripts/og/build.ts",
-    "preview": "vite preview",
+    "preview": "python3 -m http.server 4173 --directory out",
     "pretest": "npm run audio:index",
     "test": "vitest run",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -33,17 +34,15 @@
     "lucide-react": "^1.72.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "react-router": "^8.5.1",
-    "zustand": "^5.1.0"
+    "zustand": "^5.1.0",
+    "next": "^16.4.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
     "@resvg/resvg-js": "^2.6.2",
-    "@tailwindcss/vite": "^4.3.5",
-    "@types/node": "^22.20.5",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^4.7.0",
     "eslint": "^9.39.5",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.7",
@@ -51,11 +50,10 @@
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.5",
     "tsx": "^4.23.15",
-    "typescript": "~5.7.3",
+    "typescript": "^6.0.3",
     "typescript-eslint": "^8.72.2",
-    "vite": "^6.4.6",
-    "vite-plugin-pwa": "^2.0.0",
-    "vitest": "^5.1.0"
+    "vitest": "^5.1.0",
+    "@tailwindcss/postcss": "^4.3.5"
   },
   "private": true,
   "engines": {
