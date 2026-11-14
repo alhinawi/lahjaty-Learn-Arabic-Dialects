@@ -1,0 +1,30 @@
+# Extra words for dialects that had few entries. Only words that are well attested.
++ verbs.go | san=سار / راح; had=راح
++ verbs.talk | LY=هدرز / تكلّم
++ verbs.want | has=ادّور
++ verbs.clean | sud=نضّف; LY=نضّف
++ verbs.sit | chd=قعد; YE=قعد
++ verbs.see | chd=شاف; jiz=شاف; had=شاف; sin=شاف
++ verbs.say | chd=قال
++ adjectives.good | chd=سمح; has=زين; jiz=زين; had=زين; dho=زين
++ adjectives.beautiful | chd=سمح; has=زين
++ adjectives.big | chd=كبير
++ expressions.very | chd=شديد
++ slang.bro | chd=يا زول
++ slang.young_woman | sud=بت
++ health.hospital | LY=سبيطار / مستشفى; sud=مستشفى / إسبتالية; OM=مستشفى; jiz=مستشفى; had=مستشفى; YE=مستشفى; sin=مستشفى
++ health.doctor | OM=دكتور; jiz=دكتور; YE=دكتور / طبيب; had=دكتور
++ health.pharmacy | OM=صيدلية; jiz=صيدلية; YE=صيدلية; LY=صيدلية
++ health.fever | LY=سخانة
++ market.shop | OM=دكّان / محل; LY=دكّان; YE=دكّان
++ market.price | OM=سعر; YE=سعر
++ work.salary | OM=راتب / معاش; jiz=راتب; YE=راتب
++ work.company | OM=شركة
++ transport.traffic | LY=زحمة; OM=زحمة; YE=زحمة
++ transport.bicycle | LY=بشكليطة
++ transport.car | jiz=سيارة; had=سيارة; YE=سيارة
++ tech.mobile_phone | OM=تلفون / موبايل; jiz=جوّال; YE=تلفون / جوّال
++ tech.charger | OM=شاحن; jiz=شاحن; YE=شاحن; LY=شاحن
++ kitchen.teapot | LY=برّاد
++ kitchen.glass | OM=گلاص / كوب
++ occasions.wedding | OM=عرس; jiz=زواج / عرس; had=عرس
