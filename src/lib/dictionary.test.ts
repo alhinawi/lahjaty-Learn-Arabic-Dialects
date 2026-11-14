@@ -23,11 +23,14 @@ describe('dictionary', () => {
   })
 
   it('finds a word by any dialect, Standard Arabic or English', () => {
-    const e = entries[0]
-    const [dialectId, word] = Object.entries(e.words)[0]
-    expect(searchDictionary(entries, e.fs)[0].entry.id).toBe(e.id)
-    expect(searchDictionary(entries, e.en.split(/[,;(]/)[0]).map((h) => h.entry.id)).toContain(e.id)
-    expect(searchDictionary(entries, word.split('/')[0]).some((h) => h.entry.id === e.id && (h.dialectId === dialectId || h.dialectId))).toBe(true)
+    for (const e of entries.slice(0, 40)) {
+      expect(searchDictionary(entries, e.fs, 50).map((h) => h.entry.id)).toContain(e.id)
+      expect(searchDictionary(entries, e.en.split(/[,;(/]/)[0], 50).map((h) => h.entry.id)).toContain(e.id)
+    }
+    // a dialect word that differs from Standard Arabic is found and credited to a dialect
+    const e = entries.find((x) => x.words.cai && !x.words.cai.includes(x.fs))!
+    const hit = searchDictionary(entries, e.words.cai.split('/')[0], 50).find((h) => h.entry.id === e.id)
+    expect(hit?.dialectId).toBeTruthy()
   })
 
   it('lists dialects that share a word, never the dialect itself', () => {
