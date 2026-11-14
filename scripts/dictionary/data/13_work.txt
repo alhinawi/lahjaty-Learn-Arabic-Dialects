@@ -1,0 +1,89 @@
+@topic work | الشغل | Work | work
+work_noun | عمل | work | n | EGS=شغل; LEVP=شغل; IQM=شغل; KHL=شغل / دوام; hij=شغل / دوام; sud=شغل; MAGT=خدمة; LY=خدمة | cai: رايح الشغل. || mar: غادي للخدمة. || kuw: رايح الدوام.
+job | وظيفة | job | n | EGS=وظيفة / شغلانة; LEVP=وظيفة / شغلة; IQM=وظيفة; KHL=وظيفة; hij=وظيفة; sud=وظيفة; MAGT=خدمة
+office | مكتب | office | n | ALL=مكتب; MAGT=بيرو / مكتب
+boss | مدير | boss / manager | n | EGS=مدير / ريّس; LEVP=مدير; IQM=مدير; KHL=مدير; hij=مدير; sud=مدير; MAGT=شاف / مدير
+colleague | زميل | colleague | n | EGS=زميل; LEVP=زميل; IQM=زميل; KHL=زميل; hij=زميل; sud=زميل
+salary | راتب | salary | n | EGS=مرتّب; LEVP=معاش / راتب; IQM=راتب; KHL=راتب / معاش; hij=راتب / معاش; sud=ماهية / مرتّب; MA=خلصة; jeb=خلصة; alg=شهرية / خلصة; tun=شهرية; LY=مرتّب | cai: المرتّب نزل؟ || leb: نزل المعاش؟ || mar: خرجات الخلصة؟
+company | شركة | company | n | ALL=شركة
+meeting | اجتماع | meeting | n | ALL=اجتماع
+day_off | إجازة | day off / holiday | n | EGS=أجازة; LEVP=عطلة; IQM=عطلة / إجازة; KHL=إجازة; hij=إجازة; sud=إجازة; MAGT=كونجي | cai: بكره أجازة. || mar: غدا كونجي.
+working_hours | دوام | working hours / shift | n | LEVP=دوام; IQM=دوام; KHL=دوام; hij=دوام
+worker | عامل | worker | n | ALL=عامل; MAGT=خدّام
+fired | فُصل من العمل | got fired | v | EGS=اترفد; LEVP=انطرد; KHL=انطرد / انفصل | cai: اترفد من الشغل.
+unemployed | عاطل | unemployed | adj | EGS=عاطل / قاعد من غير شغل; IQM=عاطل; KHL=عاطل; MAGT=بطّال
+busy | مشغول | busy | adj | ALL=مشغول
+experience | خبرة | experience | n | ALL=خبرة
+interview | مقابلة | interview | n | ALL=مقابلة; EGS=إنترفيو / مقابلة
+
+@topic market | السوق والشراء | Market and shopping | market
+money | نقود | money | n | EGS=فلوس; LEV=مصاري; psr=مصاري; jor=مصاري / فلوس; IQM=فلوس; KHL=فلوس; emi=بيزات / فلوس; OM=بيزات; hij=فلوس; YE=زلط; sud=قروش; chd=قروش; MA=فلوس; jeb=فلوس; alg=دراهم; tun=فلوس; LY=فلوس | cai: معاكش فلوس؟ || dam: ما معي مصاري. || san: مابش معي زلط. || alg: ما عنديش الدراهم.
+market_place | سوق | market | n | ALL=سوق
+shop | محل | shop | n | EGS=محل; LEVP=محل / دكّان; IQM=محل / دكّان; KHL=محل / دكّان; hij=محل / دكّان; sud=دكّان; MAGT=حانوت
+price | سعر | price | n | EGS=سعر / تمن; LEVP=سعر / حقّ; IQM=سعر; KHL=سعر / قيمة; hij=سعر; MA=تمن; jeb=تمن; alg=سومة; tun=سوم | tun: قداش السوم؟
+discount | تخفيض | discount / sale | n | EGS=خصم / تخفيضات; LEVP=حسم / خصم; IQM=خصم; KHL=خصم / تخفيضات; hij=خصم; MAGT=صولد
+small_change | فكّة | small change (coins) | n | EGS=فكّة; LEVP=فراطة; IQM=خردة; KHL=خردة / فكّة; hij=فكّة; MAGT=صرف | cai: معاك فكّة؟ || dam: معك فراطة؟ || bag: عندك خردة؟ || mar: عندك الصرف؟
+plastic_bag | كيس | bag (plastic) | n | EGS=كيس; LEVP=كيس; IQM=كيس / علاگة; KHL=كيس; hij=كيس; MA=ميكة; jeb=ميكة
+pay | دفع | to pay | v | EGS=دفع; LEVP=دفع; IQM=دفع; KHL=دفع; hij=دفع; sud=دفع; MAGT=خلّص | mar: شحال خصّني نخلّص؟
+sell | باع | to sell | v | ALL=باع
+customer | زبون | customer | n | EGS=زبون; LEVP=زبون; IQM=زبون; KHL=زبون; hij=زبون; sud=زبون
+card | بطاقة | bank card | n | EGS=كارت / فيزا; LEVP=كرت / بطاقة; IQM=كارت / بطاقة; KHL=بطاقة / كرت; hij=بطاقة; MAGT=كارط
+bargain | ساوم | to bargain | v | EGS=فاصل; LEVP=فاصل; KHL=كاسر | cai: فاصل معاه شوية.
+size | مقاس | size (clothes) | n | EGS=مقاس; LEVP=قياس / نمرة; IQM=قياس; KHL=مقاس / قياس; hij=مقاس; MAG=طاي
+free_of_charge | مجّاني | free (no cost) | adj | EGS=ببلاش; LEVP=ببلاش / مجّاني; IQM=ببلاش / مجّاني; KHL=ببلاش / مجّاني; hij=ببلاش; MA=فابور / بلّاش; jeb=فابور; alg=باطل / بلّاش; tun=بلّاش | alg: هذا باطل، ما تخلّصش.
+
+@topic transport | المواصلات | Getting around | transport
+car | سيارة | car | n | EGS=عربية; LEVP=سيارة; IQM=سيارة; KHL=سيارة; kuw=سيارة / موتر; OM=سيارة; hij=سيارة; sud=عربية; MA=طوموبيل; jeb=طوموبيل; alg=طوموبيل; tun=كرهبة; LY=سيارة | cai: العربية عطلانة. || tun: الكرهبة معطّبة.
+bus | حافلة | bus | n | EGS=أتوبيس; LEVP=باص; IQM=باص; KHL=باص; hij=باص; sud=بص; MA=طوبيس; jeb=طوبيس; LY=باص
+taxi | سيارة أجرة | taxi | n | ALL=تاكسي; IQM=تكسي; MAGT=طاكسي
+train | قطار | train | n | EGS=قطر; LEVP=قطار; IQM=قطار / ريل; KHL=قطار; hij=قطار; sud=قطر; MAGT=تران | cai: القطر اتأخر. || mar: التران معطّل.
+metro | مترو | metro / underground | n | ALL=مترو
+plane | طائرة | plane | n | ALL=طيّارة
+airport | مطار | airport | n | ALL=مطار
+station | محطة | station / stop | n | ALL=محطة; MA=محطة / لاگار
+street | شارع | street | n | ALL=شارع; MA=زنقة / شارع; jeb=زنقة; tun=نهج / شارع
+traffic | ازدحام | traffic jam | n | EGS=زحمة; LEVP=زحمة; leb=عجقة / زحمة; IQM=زحمة; KHL=زحمة / زحام; hij=زحمة; sud=زحمة; MA=زحام; jeb=زحام; alg=زحمة / بوشون; tun=زحمة | cai: الطريق زحمة قوي. || leb: في عجقة عالطريق.
+ticket | تذكرة | ticket | n | EGS=تذكرة; LEVP=تذكرة; IQM=تذكرة / بطاقة; KHL=تذكرة / تكت; hij=تذكرة; sud=تذكرة; tun=تسكرة
+driver | سائق | driver | n | EGS=سوّاق; LEVP=سوّاق / شوفير; IQM=سايق; KHL=سوّاق / دريول; hij=سوّاق; sud=سوّاق; MAGT=شيفور
+motorbike | دراجة نارية | motorbike | n | EGS=موتوسيكل; LEVP=موتور / موتوسيكل; IQM=ماطور; KHL=دبّاب; MA=موطور; jeb=موطور; alg=موطو
+bicycle | دراجة | bicycle | n | EGS=عجلة; LEVP=بسكليت; IQM=بايسكل; KHL=سيكل; hij=سيكل; sud=عجلة; MA=بشكليط; jeb=بشكليط; alg=بيسيكلات; tun=بسكلات | cai: بروح الشغل بالعجلة. || bag: أروح للشغل بالبايسكل.
+right_side | يمين | right (direction) | n | ALL=يمين
+left_side | يسار | left (direction) | n | EGS=شمال; LEVP=شمال; IQM=يسار; KHL=يسار; hij=يسار / شمال; sud=شمال; MA=ليسر; jeb=ليسر | cai: خد شمال عند الإشارة.
+straight_on | مباشرةً | straight on | adv | EGS=على طول / دُغري; LEVP=دغري / على طول; IQM=سيده; KHL=سيده / على طول; hij=دُغري; sud=طوّالي; MA=نيشان; jeb=نيشان; alg=طول | bag: روح سيده. || mar: سير نيشان.
+stop_here | توقّف هنا | stop here (to a driver) | phr | EGS=على جنب هنا / نزّلني هنا; LEVP=نزّلني هون; IQM=نزّلني هنا; KHL=نزّلني هني / وقّف هني; hij=نزّلني هنا; sud=نزّلني هنا; MA=حبس هنا; jeb=حبس هنا; alg=حبس هنا; tun=وقّف هوني
+
+@topic health | الصحة | Health | health
+sick | مريض | sick / ill | adj | EGS=عيّان; LEVP=مريض; IQM=مريض; KHL=مريض; hij=مريض / تعبان; sud=عيّان; MAGT=مريض; LY=مريض | cai: أنا عيّان النهارده.
+doctor | طبيب | doctor | n | EGS=دكتور; LEVP=دكتور / حكيم; IQM=دكتور / طبيب; KHL=دكتور; hij=دكتور; sud=دكتور; MAGT=طبيب; LY=طبيب / دكتور
+hospital | مستشفى | hospital | n | EGS=مستشفى; LEVP=مستشفى; IQM=مستشفى; KHL=مستشفى; hij=مستشفى; sud=مستشفى; MA=صبيطار; jeb=صبيطار; alg=سبيطار; tun=سبيطار | mar: ديناه للصبيطار.
+pharmacy | صيدلية | pharmacy | n | EGS=أجزخانة / صيدلية; LEVP=صيدلية; IQM=صيدلية; KHL=صيدلية; hij=صيدلية; sud=صيدلية; MA=فرمسيان; jeb=فرمسيان; alg=فارماسي
+medicine | دواء | medicine | n | ALL=دوا
+pain | ألم | pain | n | EGS=وجع; LEVP=وجع; IQM=وجع; KHL=ألم / عوار; hij=وجع; sud=وجع; MA=ضرّ; jeb=ضرّ; alg=وجع; tun=وجيعة | cai: عندي وجع في ضهري. || mar: كيضرّني ظهري.
+headache | صداع | headache | n | EGS=صداع; LEVP=وجع راس; IQM=صداع / وجع راس; KHL=صداع; hij=صداع; sud=صداع
+fever | حمّى | fever | n | EGS=سخونية / حرارة; LEVP=حرارة / سخونة; IQM=حرارة / سخونة; KHL=حرارة / حمّى; hij=حرارة; MAGT=سخانة | cai: الولد عنده سخونية.
+cold_illness | زكام | a cold (illness) | n | EGS=برد / دور برد; LEVP=رشح / كريب; IQM=نشلة; KHL=زكام / نشلة; hij=زكام | cai: خدت دور برد. || bag: عندي نشلة.
+cough | سُعال | cough | n | ALL=كحّة; LEVP=قحّة / سعلة
+injection | حقنة | injection | n | EGS=حقنة; LEVP=إبرة; IQM=إبرة; KHL=إبرة; hij=إبرة; sud=حقنة / إبرة
+emergency | طوارئ | emergency | n | EGS=طوارئ; LEVP=طوارئ; IQM=طوارئ; KHL=طوارئ; hij=طوارئ; sud=طوارئ
+ambulance | إسعاف | ambulance | n | EGS=إسعاف; LEVP=إسعاف; IQM=إسعاف; KHL=إسعاف; hij=إسعاف; sud=إسعاف
+get_well | سلامتك | get well soon | phr | EGS=سلامتك / ألف سلامة; LEVP=سلامتك; IQM=سلامتك; KHL=سلامات / ما تشوف شر; hij=سلامتك; sud=سلامتك; MA=لاباس عليك; jeb=لاباس عليك
+blood | دم | blood | n | ALL=دم
+dizzy | دائخ | dizzy | adj | ALL=دايخ
+
+@topic school | المدرسة والجامعة | School and university | school
+school_place | مدرسة | school | n | ALL=مدرسة
+university | جامعة | university | n | ALL=جامعة
+teacher | مدرّس | teacher | n | EGS=مدرّس / أستاذ; LEVP=أستاذ / معلّم; IQM=مدرّس / أستاذ; KHL=مدرّس / أستاذ; hij=أستاذ / مدرّس; sud=أستاذ; MAGT=أستاذ / معلّم
+student | طالب | student / pupil | n | ALL=طالب; EGS=طالب / تلميذ; MAGT=تلميذ / طالب
+exam | امتحان | exam | n | ALL=امتحان; KHL=اختبار / امتحان; hij=اختبار | cai: عندي امتحان بكره. || naj: عندي اختبار بكرة.
+homework | واجب | homework | n | EGS=واجب; LEVP=وظيفة / فرض; IQM=واجب; KHL=واجب; hij=واجب; sud=واجب
+book | كتاب | book | n | ALL=كتاب
+notebook | دفتر | notebook | n | EGS=كشكول / كرّاسة; LEVP=دفتر; IQM=دفتر; KHL=دفتر; hij=دفتر; sud=كرّاسة; MA=كونّاش; jeb=كونّاش; alg=كرّاس; tun=كرّاس
+pen | قلم | pen | n | ALL=قلم; MAG=ستيلو; tun=ستيلو / قلم
+classroom | فصل | class / classroom | n | EGS=فصل; LEVP=صف; IQM=صف; KHL=فصل / صف; hij=فصل; sud=فصل; MAGT=قسم
+lesson | درس | lesson | n | ALL=درس
+grades | درجات | marks / grades | n | EGS=درجات; LEVP=علامات; IQM=درجات; KHL=درجات; hij=درجات; MA=نقط; jeb=نقط; alg=نقاط; tun=أعداد | dam: شو أخدت علامات؟ || tun: قداش خذيت في الأعداد؟
+pass_exam | نجح | to pass (an exam) | v | ALL=نجح
+fail_exam | رسب | to fail (an exam) | v | EGS=سقط; LEVP=رسب / سقط; IQM=رسب; KHL=رسب
+break_time | استراحة | break (at school) | n | EGS=فسحة; LEVP=فرصة / استراحة; IQM=فرصة; KHL=فسحة / فرصة; hij=فسحة
+study | ذاكر | to study | v | EGS=ذاكر; LEVP=درس; IQM=درس; KHL=ذاكر / درس; hij=ذاكر; sud=قرا; MAGT=قرا; LY=قرا | cai: لازم أذاكر النهارده. || mar: خصّني نقرا اليوم.

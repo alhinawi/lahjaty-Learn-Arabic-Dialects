@@ -102,6 +102,36 @@
    "name": "مشاعر",
    "nameEn": "Feelings",
    "icon": "feelings"
+  },
+  {
+   "id": "work",
+   "name": "الشغل",
+   "nameEn": "Work",
+   "icon": "work"
+  },
+  {
+   "id": "market",
+   "name": "السوق والشراء",
+   "nameEn": "Market and shopping",
+   "icon": "market"
+  },
+  {
+   "id": "transport",
+   "name": "المواصلات",
+   "nameEn": "Getting around",
+   "icon": "transport"
+  },
+  {
+   "id": "health",
+   "name": "الصحة",
+   "nameEn": "Health",
+   "icon": "health"
+  },
+  {
+   "id": "school",
+   "name": "المدرسة والجامعة",
+   "nameEn": "School and university",
+   "icon": "school"
   }
  ]
 }
