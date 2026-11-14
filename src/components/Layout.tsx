@@ -1,4 +1,4 @@
-import { BookOpen, Columns3, GraduationCap, Heart, House, Languages, Moon, Search, Settings, Sun } from 'lucide-react'
+import { BookA, BookOpen, Columns3, GraduationCap, Heart, House, Languages, Moon, Search, Settings, Sun } from 'lucide-react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
 import { useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
@@ -15,6 +15,7 @@ export default function Layout() {
   const nav = [
     { to: '/', label: t('navHome'), icon: House, end: true },
     { to: '/lessons', label: t('navLessons'), icon: BookOpen, end: false },
+    { to: '/dictionary', label: t('navDictionary'), icon: BookA, end: false },
     { to: '/compare', label: t('navCompare'), icon: Columns3, end: false },
     { to: '/practice', label: t('navPractice'), icon: GraduationCap, end: false },
     { to: '/favorites', label: t('navFavorites'), icon: Heart, end: false },

@@ -18,6 +18,9 @@ import QuizPage from './pages/QuizPage'
 import SettingsPage from './pages/SettingsPage'
 import SharePage from './pages/SharePage'
 import FlashcardsPage from './pages/FlashcardsPage'
+import DictionaryPage from './pages/DictionaryPage'
+import DictTopicPage from './pages/DictTopicPage'
+import WordPage from './pages/WordPage'
 import { syncSocialImage } from './lib/meta'
 
 export default function App() {
@@ -64,6 +67,10 @@ export default function App() {
         <Route path="practice" element={<PracticePage />} />
         <Route path="practice/cards" element={<FlashcardsPage />} />
         <Route path="practice/:mode" element={<QuizPage />} />
+        <Route path="dictionary" element={<DictionaryPage />} />
+        <Route path="dictionary/:topicId" element={<DictTopicPage />} />
+        <Route path="word" element={<WordPage />} />
+        <Route path="word/:entryId" element={<WordPage />} />
         <Route path="favorites" element={<FavoritesPage />} />
         <Route path="share/:dialectId/:phraseId" element={<SharePage />} />
         <Route path="*" element={<NotFoundPage />} />

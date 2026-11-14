@@ -1,0 +1,94 @@
+@topic food | الأكل والشرب | Food and drink | utensils
+bread | خبز | bread | n | EGS=عيش; LEVP=خبز; IQM=خبز; KHL=خبز; hij=عيش / خبز; YE=خبز / روتي; sud=عيش; NAF=خبز; alg=خبز / كسرة | cai: هات عيش وإنت جاي. || dam: جيب خبز وإنت جاي.
+water | ماء | water | n | EGS=ميّة; LEVP=ميّ; IQM=ماي; KHL=ماي; hij=موية; YE=ماء / ماي; sud=موية; MAJ=لما / الما; alg=الما; tun=ماء / الما | cai: عايز ميّة ساقعة. || bag: أريد ماي بارد.
+tea | شاي | tea | n | EGS=شاي; LEVP=شاي; IQM=چاي; KHL=شاي / چاي; kuw=چاي; hij=شاهي; YE=شاي / شاهي; sud=شاي; NAF=أتاي; alg=أتاي / شاي; tun=تاي; | bag: استكان چاي من فضلك. || mar: كاس ديال أتاي.
+coffee | قهوة | coffee | n | EGS=قهوة; LEVP=قهوة; IQM=قهوة; KHL=قهوة / گهوة; hij=قهوة; YE=قهوة / بن; sud=قهوة / جبنة; NAF=قهوة; alg=قهوة | sud: نشرب جبنة؟
+milk | حليب | milk | n | EGS=لبن; LEVP=حليب; IQM=حليب; KHL=حليب; hij=حليب; sud=لبن; NAF=حليب; alg=حليب | cai: اللبن خلص.
+yogurt | لبن رائب | yogurt | n | EGS=زبادي; LEVP=لبن; IQM=لبن / روب; KHL=روب / لبن; hij=زبادي; sud=روب; mar=الرايب / دانون; alg=ياغورت; tun=ياغورت / رايب
+sugar | سكر | sugar | n | ALL=سكّر
+salt | ملح | salt | n | ALL=ملح
+meat | لحم | meat | n | EGS=لحمة; LEVP=لحمة; IQM=لحم; KHL=لحم; hij=لحمة / لحم; sud=لحمة; NAF=لحم; alg=لحم
+chicken | دجاج | chicken | n | EGS=فراخ; LEVP=جاج; IQM=دجاج; KHL=دجاج / دياي; hij=دجاج / فراخ; sud=جداد; MAJ=دجاج / فروج; alg=دجاج; tun=دجاج; LY=دجاج | cai: الغدا فراخ ورز. || dam: الغدا جاج ورز.
+fish | سمك | fish | n | EGS=سمك; LEVP=سمك; IQM=سمچ / سمك; KHL=سمك / سمچ; hij=سمك; sud=سمك; MAJ=حوت; alg=حوت; tun=حوت; LY=حوت | mar: كانبغي الحوت بزاف.
+egg | بيض | eggs | n | EGS=بيض; LEVP=بيض; IQM=بيض; KHL=بيض; hij=بيض; sud=بيض; MAJ=بيض; alg=بيض / عظم; tun=عظم; LY=دحي / بيض
+rice | أرز | rice | n | EGS=رز; LEVP=رز; IQM=تمن; KHL=عيش; SA=رز / عيش; hij=رز; sud=رز; NAF=روز; alg=روز | bag: تمن ومرق. || kuw: عيش ولحم.
+cheese | جبن | cheese | n | EGS=جبنة; LEVP=جبنة; IQM=جبن; KHL=جبن / جبنة; hij=جبنة; sud=جبنة; MAJ=فرماج; alg=فرماج / جبن; tun=فرماج
+tomato | طماطم | tomatoes | n | EGS=طماطم; LEVP=بندورة; IQ=طماطة; mos=طماطة; KHL=طماط; hij=طماطم; sud=طماطم; MAJ=مطيشة; alg=طماطم; tun=طماطم; LY=طماطم | dam: كيلو بندورة. || mar: كيلو ديال مطيشة.
+potato | بطاطس | potatoes | n | EGS=بطاطس; LEVP=بطاطا; IQM=پتيتة; KHL=بطاط; hij=بطاطس; sud=بطاطس; MAJ=بطاطا; alg=بطاطا; tun=بطاطا; LY=بطاطا
+onion | بصل | onions | n | EGS=بصل; LEVP=بصل; IQM=بصل; KHL=بصل; hij=بصل; sud=بصل; MAJ=بصل; alg=بصل; tun=بصل; LY=بصل
+garlic | ثوم | garlic | n | EGS=توم; LEVP=توم; IQM=ثوم; KHL=ثوم; hij=ثوم; sud=توم; MAJ=ثومة / تومة; alg=ثوم; tun=ثوم
+pepper_bell | فلفل رومي | bell pepper | n | EGS=فلفل رومي; LEVP=فليفلة; IQ=فلفل / فلفل أخضر; KHL=فلفل; MAJ=فلفلة; alg=فلفل; tun=فلفل
+cucumber | خيار | cucumber | n | EGS=خيار; LEVP=خيار; IQM=خيار; KHL=خيار; hij=خيار; MAJ=خيار; alg=خيار; tun=خيار
+eggplant | باذنجان | eggplant | n | EGS=بتنجان; LEVP=باذنجان; IQM=باذنجان / بيتنجان; KHL=باذنجان; hij=باذنجان; sud=أسود; MAJ=بادنجال; alg=بادنجال / برانية; tun=باذنجال | sud: أسود مقلي.
+zucchini | كوسا | zucchini | n | EGS=كوسة; LEVP=كوسا; IQM=شجر; KHL=كوسة; MAJ=كورجيت; alg=كورجيت; tun=قرع | bag: محشي شجر.
+okra | بامية | okra | n | EGS=بامية; LEVP=بامية; IQM=بامية; KHL=بامية; hij=بامية; sud=بامية / ويكة; MAJ=ملوخية; alg=ملوخية / قناوية; tun=قناوية; LY=بامية
+lemon | ليمون | lemon | n | EGS=ليمون; LEVP=ليمون / حامض; IQM=نومي / ليمون; KHL=ليمون / لومي; hij=ليمون; sud=ليمون; MAJ=حامض; alg=ليم / قارس; tun=قارص / ليم
+orange_fruit | برتقال | orange (fruit) | n | EGS=برتقان; LEVP=برتقان; IQM=پرتقال; KHL=برتقال; hij=برتقان; sud=برتقان; MAJ=ليمون; alg=تشينة; tun=برتقال | mar: عصير ديال ليمون. || alg: عصير تشينة.
+apple | تفاح | apples | n | EGS=تفاح; LEVP=تفاح; IQM=تفاح; KHL=تفاح; hij=تفاح; sud=تفاح; MAJ=تفاح; alg=تفاح; tun=تفاح
+watermelon | بطيخ | watermelon | n | EGS=بطيخ; LEVP=بطيخ; IQM=رقي; KHL=جح / بطيخ; SA=حبحب / جح; hij=حبحب; sud=بطيخ; MAJ=دلاح; alg=دلاح; tun=دلاع; LY=دلاع | bag: الرقي حلو هالسنة. || hij: الحبحب حالي.
+dates | تمر | dates | n | EGS=بلح / تمر; LEVP=تمر; IQM=تمر; KHL=تمر; hij=تمر; sud=تمر / بلح; NAF=تمر; alg=تمر
+beans | فول | fava beans | n | EGS=فول; LEVP=فول; IQM=باقلا; KHL=فول / باجلا; hij=فول; sud=فول; NAF=فول; alg=فول | bag: باقلا بالدهن.
+chickpeas | حمص | chickpeas | n | EGS=حمص; LEVP=حمص; IQM=حمص / لبلبي; KHL=حمص / نخي; hij=حمص; sud=كبكبي; MAJ=حمص; alg=حمص; tun=حمص
+sweets | حلوى | sweets | n | EGS=حلويات / حاجة حلوة; LEVP=حلويات; IQM=حلويات / حلوة; KHL=حلويات / حلا; hij=حلويات / حلوى; sud=حلاوة; MAJ=حلوى / حلويات; alg=حلويات / حلوة; tun=حلو / حلويات
+juice | عصير | juice | n | ALL=عصير
+breakfast | فطور | breakfast | n | EGS=فطار; LEVP=فطور / ترويقة; IQM=ريوق; KHL=ريوق / فطور; hij=فطور; sud=فطور; MAJ=فطور; alg=فطور; tun=فطور | bag: خلي نتريّق بالأول. || dam: نتروَق سوا.
+lunch | غداء | lunch | n | EGS=غدا; LEVP=غدا; IQM=غدا; KHL=غدا; hij=غدا; sud=غدا; MAJ=غدا; alg=فطور / غدا; tun=فطور / غداء
+dinner | عشاء | dinner | n | EGS=عشا; LEVP=عشا; IQM=عشا; KHL=عشا; hij=عشا; sud=عشا; MAJ=عشا; alg=عشا; tun=عشا
+hungry | جائع | hungry | adj | EGS=جعان; LEVP=جوعان; IQM=جوعان; GLF=يوعان / جوعان; SA=جوعان; hij=جعان / جوعان; sud=جعان; MAJ=جيعان; alg=جيعان; tun=جيعان | cai: أنا جعان أوي. || mar: أنا جيعان بزاف.
+thirsty | عطشان | thirsty | adj | EGS=عطشان; LEVP=عطشان; IQM=عطشان; KHL=عطشان; hij=عطشان; sud=عطشان; NAF=عطشان; alg=عطشان
+delicious | لذيذ | delicious | adj | EGS=حلو / طعمه حلو; LEVP=طيب / زاكي; IQM=طيب; KHL=لذيذ / طيب; hij=لذيذ / حلو; sud=سمح / حلو; MAJ=بنين; alg=بنين; tun=بنين | dam: الأكل كتير طيب. || mar: هاد الماكلة بنينة.
+food | طعام | food | n | EGS=أكل; LEVP=أكل; IQM=أكل; KHL=أكل; hij=أكل; sud=أكل; MAJ=ماكلة; alg=ماكلة; tun=ماكلة; LY=ماكلة / وكل
+spoon | ملعقة | spoon | n | EGS=معلقة; LEVP=معلقة; IQM=خاشوگة; KHL=ملعقة / خاشوقة; hij=ملعقة; sud=معلقة; MAJ=معلقة / مغرفة; alg=مغرفة; tun=مغرفة | bag: انطيني خاشوگة. || alg: عطيني مغرفة.
+knife | سكين | knife | n | EGS=سكينة; LEVP=سكينة; IQM=سچّينة; KHL=سكّين / سچّين; hij=سكينة / سكين; sud=سكين; MAJ=موس; alg=موس; tun=سكّينة; LY=سكّينة
+cup | كوب | cup, glass | n | EGS=كباية / كوباية; LEVP=كاسة / كباية; IQM=استكان / گلاص; KHL=كوب / گلاص; hij=كاسة / كوب; sud=كباية; MAJ=كاس; alg=كاس; tun=كاس | bag: استكان چاي. || mar: كاس ديال الما.
+plate | صحن | plate | n | EGS=طبق; LEVP=صحن; IQM=ماعون / صحن; KHL=صحن / ماعون; hij=صحن; sud=صحن; MAJ=طبسيل; alg=طبسي; tun=صحن / طبسي | cai: هات طبق نضيف. || mar: جيب شي طبسيل.
+
+@topic home | البيت | Home | home
+house | بيت | house, home | n | EGS=بيت; LEVP=بيت; IQM=بيت; KHL=بيت; hij=بيت; YE=بيت; sud=بيت; MAJ=دار; alg=دار; tun=دار; LY=حوش | mar: راني فالدار. || tri: أنا في الحوش.
+room | غرفة | room | n | EGS=أوضة; LEVP=غرفة / أوضة; IQM=غرفة; KHL=غرفة / حجرة; hij=غرفة; sud=أوضة; MAJ=بيت; alg=بيت / شمبرة; tun=بيت; LY=دار | cai: أوضتي صغيرة. || mar: البيت ديالي صغيرة.
+kitchen | مطبخ | kitchen | n | EGS=مطبخ; LEVP=مطبخ; IQM=مطبخ; KHL=مطبخ; hij=مطبخ; sud=مطبخ / تكل; MAJ=كوزينة; alg=كوزينة; tun=كوجينة; 
+bathroom | حمام | bathroom | n | EGS=حمّام; LEVP=حمّام; IQM=حمّام / مرحاض; KHL=حمّام; hij=حمّام; sud=حمّام; MAJ=بيت الما / الطواليط; alg=بيت الما / بيت الراحة; tun=بيت البانو / التواليت | mar: فين بيت الما؟
+door | باب | door | n | ALL=باب
+window | نافذة | window | n | EGS=شبّاك; LEVP=شبّاك; IQM=شبّاك; KHL=دريشة / شبّاك; hij=شبّاك / طاقة; sud=شبّاك; MAJ=شرجم / سرجم; alg=طاقة; tun=شبّاك / طاقة; LY=شبّاك / طاقة | kuw: سكّر الدريشة. || mar: حل الشرجم.
+bed | سرير | bed | n | EGS=سرير; LEVP=تخت; IQM=چرپاية / سرير; KHL=سرير; hij=سرير; sud=سرير / عنقريب; MAJ=ناموسية / فراش; alg=فراش; tun=فرش | dam: نام عالتخت. || sud: رقد في العنقريب.
+chair | كرسي | chair | n | EGS=كرسي; LEVP=كرسي; IQM=كرسي / تختة; KHL=كرسي / چرسي; hij=كرسي; sud=كرسي / بنبر; MAJ=كرسي / شيز; alg=كرسي / شيز; tun=كرسي
+table | طاولة | table | n | EGS=ترابيزة / طربيزة; LEVP=طاولة; IQM=ميز; KHL=طاولة / ميز; hij=طاولة; sud=تربيزة; MAJ=طبلة; alg=طابلة / مايدة; tun=طاولة | bag: حطه على الميز.
+key | مفتاح | key | n | EGS=مفتاح; LEVP=مفتاح; IQM=مفتاح; KHL=مفتاح; hij=مفتاح; sud=مفتاح; MAJ=ساروت; alg=مفتاح; tun=مفتاح | mar: فين الساروت؟
+fridge | ثلاجة | fridge | n | EGS=تلاجة; LEVP=براد / تلاجة; IQM=ثلاجة; KHL=ثلاجة; hij=ثلاجة; sud=تلاجة; MAJ=تلاجة / فريجيدير; alg=ثلاجة / فريجيدير; tun=فريجيدير; LY=ثلاجة | leb: حطّها بالبراد.
+roof | سطح | roof | n | EGS=سطوح / سطح; LEVP=سطح; IQM=سطح; KHL=سطح; hij=سطح; sud=سقف / سطح; MAJ=سطح; alg=سطح; tun=سطح
+stairs | درج | stairs | n | EGS=سلم; LEVP=درج; IQM=درج; KHL=درج; hij=درج; sud=سلم; MAJ=دروج; alg=دروج; tun=دروج | cai: اطلع على السلم. || dam: طلاع عالدرج.
+light_lamp | مصباح | light, lamp | n | EGS=نور / لمبة; LEVP=ضو / لمبة; IQM=ضوا / گلوپ; KHL=لمبة / لايت; hij=لمبة; sud=لمبة; MAJ=ضو / بولة; alg=ضو / لامبة; tun=ضو / لامبة | cai: افتح النور. || dam: ضوّي الضو. || mar: شعل الضو.
+blanket | بطانية | blanket | n | EGS=بطانية; LEVP=حرام; IQM=بطانية; KHL=بطانية; hij=بطانية; sud=بطانية; MAJ=بطانية / كوفرطة; alg=بطانية / كوفرطة; tun=كوفرطة
+pillow | وسادة | pillow | n | EGS=مخدة; LEVP=مخدة; IQM=مخدة; KHL=مخدة; hij=مخدة; sud=مخدة; MAJ=مخدة; alg=مخدة; tun=مخدة
+furniture | أثاث | furniture | n | EGS=عفش; LEVP=عفش / فرش; IQM=أثاث; KHL=أثاث / فرش; hij=عفش; MAJ=الموبيليا; alg=الموبيليا / الأثاث; tun=الموبلية
+broom | مكنسة | broom | n | EGS=مقشّة; LEVP=مكنسة; IQM=مكنسة; KHL=مكنسة; hij=مكنسة; sud=مقشاشة; MAJ=شطابة; | cai: هاتي المقشّة.
+
+@topic body | جسم الإنسان | The body | heart-pulse
+head | رأس | head | n | EGS=راس; LEVP=راس; IQM=راس; KHL=راس; hij=راس; sud=راس; MAJ=راس; alg=راس; tun=راس
+hand | يد | hand | n | EGS=إيد; LEVP=إيد; IQM=إيد; KHL=يد / إيد; hij=يد; sud=إيد; MAJ=يدّ; alg=يدّ; tun=يدّ
+foot | قدم | foot, leg | n | EGS=رجل; LEVP=إجر; IQM=رجل; KHL=ريل / رجل; hij=رجل; sud=كرعة / رجل; MAJ=رجل; alg=رجل; tun=ساق / رجل | dam: إجري عم توجعني. || sud: كرعتي بتوجعني.
+eye | عين | eye | n | ALL=عين
+nose | أنف | nose | n | EGS=مناخير; LEVP=منخار / ناف; IQM=خشم; KHL=خشم; hij=خشم / أنف; sud=نخرة; MAJ=نيف; alg=نيف / خنشوش; tun=نيف | bag: خشمي مسدود. || mar: النيف ديالي مسدود.
+mouth | فم | mouth | n | EGS=بق; LEVP=تم; IQM=حلگ / فم; KHL=فم / حلج; hij=فم / بق; sud=خشم; MAJ=فم / فوم; alg=فم; tun=فم | dam: سكّر تمّك! || sud: أقفل خشمك!
+teeth | أسنان | teeth | n | EGS=سنان; LEVP=سنان; IQM=سنون / أسنان; KHL=ضروس / سنون; hij=سنون / أسنان; sud=سنون; MAJ=سنان; alg=سنان; tun=سنان
+ear | أذن | ear | n | EGS=ودن; LEVP=أدن / دينة; IQM=إذن; KHL=إذن; hij=أذن / ودن; sud=أضان; MAJ=وذن; alg=ودن; tun=وذن
+hair | شعر | hair | n | EGS=شعر; LEVP=شعر; IQM=شعر; KHL=شعر; hij=شعر; sud=شعر; MAJ=شعر; alg=شعر; tun=شعر
+stomach | بطن | stomach, belly | n | EGS=بطن / كرش; LEVP=بطن / معدة; IQM=بطن / معدة; KHL=بطن; hij=بطن; sud=بطن; MAJ=كرش; alg=كرش; tun=كرش; LY=كرش / بطن | mar: كرشي كتضرني.
+back | ظهر | back | n | EGS=ضهر; LEVP=ضهر; IQM=ظهر; KHL=ظهر; hij=ظهر; sud=ضهر; MAJ=ظهر; alg=ظهر; tun=ظهر
+face | وجه | face | n | EGS=وش; LEVP=وجه / وجّ; IQM=وجه; KHL=وجه / ويه; hij=وجه / وش; sud=وش; MAJ=وجه; alg=وجه; tun=وجه | cai: اغسل وشّك.
+finger | إصبع | finger | n | EGS=صباع; LEVP=إصبع; IQM=إصبع; KHL=صبع; hij=صباع / أصبع; sud=أصبع; MAJ=صبع; alg=صبع; tun=صبع
+heart | قلب | heart | n | ALL=قلب
+neck | رقبة | neck | n | EGS=رقبة; LEVP=رقبة; IQM=رقبة; KHL=رقبة; hij=رقبة; sud=رقبة; MAJ=عنق; alg=رقبة; tun=رقبة
+
+@topic clothes | اللبس | Clothes | shirt
+clothes | ملابس | clothes | n | EGS=هدوم; LEVP=تياب; IQM=هدوم; KHL=هدوم / ملابس; hij=ملابس / هدوم; sud=هدوم; MAJ=حوايج; alg=حوايج / لباس; tun=حوايج; LY=حوايج | cai: هلبس هدومي وننزل. || dam: بلبس تيابي ومننزل. || mar: نلبس حوايجي ونخرجو.
+shirt | قميص | shirt | n | EGS=قميص; LEVP=قميص; IQM=قميص; KHL=قميص / شميز; hij=قميص; sud=قميص; MAJ=قاميجة; alg=قمجة; tun=مريول / قميجة
+trousers | بنطال | trousers | n | EGS=بنطلون; LEVP=بنطلون; IQM=پنطرون; KHL=بنطلون; hij=بنطلون; sud=بنطلون; MAJ=سروال; alg=سروال; tun=سروال | bag: پنطروني جديد. || alg: سروالي جديد.
+shoes | حذاء | shoes | n | EGS=جزمة; LEVP=صبّاط / كندرة; IQM=قندرة / حذاء; KHL=جوتي; hij=جزمة; sud=جزمة / مركوب; MAJ=صبّاط; alg=صبّاط; tun=صبّاط | cai: الجزمة دي ضيقة. || dam: هالصبّاط ضيّق. || kuw: هالجوتي ضيّق.
+slippers | شبشب | slippers | n | EGS=شبشب; LEVP=شحاطة / شبشب; IQM=نعال; KHL=نعال; hij=زنوبة / شبشب; sud=سفنجة / شبشب; MAJ=صندالة / بلغة; alg=شلاكة; tun=شلاكة | hij: فين الزنوبة حقتي؟
+jacket | سترة | jacket | n | EGS=جاكيت; LEVP=جاكيت; IQM=سترة / جاكيت; KHL=جاكيت; hij=جاكيت; MAJ=كبّوط / جاكيطة; alg=كبّوط
+hat | قبعة | hat, cap | n | EGS=برنيطة / كاب; LEVP=بريطة / طاقية; IQM=شفقة / عراقچية; KHL=طاقية / كاب; hij=كاب; sud=طاقية; MAJ=طاقية / ترازي; alg=شاشية / كاسكيطة; tun=كاسكات / شاشية
+dress | فستان | dress | n | EGS=فستان; LEVP=فستان; IQM=نفنوف / فستان; KHL=فستان / نفنوف; hij=فستان; sud=فستان; MAJ=كسوة / روبة; alg=روبة / قندورة; tun=روبة / فستان | bag: لابسة نفنوف حلو.
+socks | جوارب | socks | n | EGS=شراب; LEVP=كلسات / جرابات; IQM=جواريب / جوارب; KHL=شراب / جوارب; hij=شراب; sud=شراب; MAJ=تقاشر; alg=قلاشط / تقاشر; tun=كلاسط / تقاشر | cai: الشراب النضيف فين؟ || mar: فين التقاشر؟
+bag | حقيبة | bag | n | EGS=شنطة; LEVP=شنطة; IQM=جنطة; KHL=شنطة / جنطة; hij=شنطة; sud=شنطة; MAJ=صاك; alg=ساك / صاك; tun=ساك / بالاسك | bag: وين جنطتي؟
+watch | ساعة يد | wristwatch | n | ALL=ساعة; mar=مكانة / ساعة

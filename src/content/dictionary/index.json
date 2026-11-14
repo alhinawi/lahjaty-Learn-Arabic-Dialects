@@ -1,0 +1,65 @@
+{
+ "version": 1,
+ "topics": [
+  {
+   "id": "basics",
+   "name": "الأساسيات",
+   "nameEn": "Basics",
+   "icon": "sparkles"
+  },
+  {
+   "id": "questions",
+   "name": "كلمات السؤال",
+   "nameEn": "Question words",
+   "icon": "help"
+  },
+  {
+   "id": "pronouns",
+   "name": "الضمائر والإشارة",
+   "nameEn": "Pronouns and pointers",
+   "icon": "user"
+  },
+  {
+   "id": "time",
+   "name": "الوقت",
+   "nameEn": "Time",
+   "icon": "clock"
+  },
+  {
+   "id": "numbers",
+   "name": "الأرقام والكميات",
+   "nameEn": "Numbers and amounts",
+   "icon": "hash"
+  },
+  {
+   "id": "family",
+   "name": "العائلة والناس",
+   "nameEn": "Family and people",
+   "icon": "users"
+  },
+  {
+   "id": "food",
+   "name": "الأكل والشرب",
+   "nameEn": "Food and drink",
+   "icon": "utensils"
+  },
+  {
+   "id": "home",
+   "name": "البيت",
+   "nameEn": "Home",
+   "icon": "home"
+  },
+  {
+   "id": "body",
+   "name": "جسم الإنسان",
+   "nameEn": "The body",
+   "icon": "heart-pulse"
+  },
+  {
+   "id": "clothes",
+   "name": "اللبس",
+   "nameEn": "Clothes",
+   "icon": "shirt"
+  }
+ ]
+}

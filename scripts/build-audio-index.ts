@@ -1,5 +1,5 @@
 /**
- * Scans public/audio/<dialectId>/<phraseId>.mp3 and writes src/generated/audio-index.json.
+ * Scans public/audio/<dialectId>/<phraseId>.mp3 (dictionary words: dict.<entryId>.mp3) and writes src/generated/audio-index.json.
  * The site reads that file to decide which play buttons to show.
  * Runs automatically before `npm run dev`, `npm run build` and `npm test`.
  */
@@ -7,6 +7,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSy
 import { join } from 'node:path'
 import type { AudioIndex, Content, FamousContent } from '../src/lib/types.ts'
 import { audioPhraseIds } from '../src/lib/validate.ts'
+import { readDictionary } from './lib/dictionary.ts'
 
 const root = join(import.meta.dirname, '..')
 const audioDir = join(root, 'public', 'audio')
@@ -14,6 +15,7 @@ const outDir = join(root, 'src', 'generated')
 const content = JSON.parse(readFileSync(join(root, 'src', 'content', 'phrases.json'), 'utf8')) as Content
 const famous = JSON.parse(readFileSync(join(root, 'src', 'content', 'famous.json'), 'utf8')) as FamousContent
 
+const dictionary = readDictionary(root).entries
 const dialectIds = new Set(content.dialects.map((d) => d.id))
 const index: AudioIndex = {}
 const warnings: string[] = []
@@ -26,7 +28,7 @@ if (existsSync(audioDir)) {
       warnings.push(`public/audio/${dir}: not a known dialect id, ignored`)
       continue
     }
-    const phraseIds = new Set(audioPhraseIds(content, dir, famous))
+    const phraseIds = new Set(audioPhraseIds(content, dir, famous, dictionary))
     const ids: string[] = []
     for (const file of readdirSync(full).sort()) {
       if (!file.endsWith('.mp3')) continue

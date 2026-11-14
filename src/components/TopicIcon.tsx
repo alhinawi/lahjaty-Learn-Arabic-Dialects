@@ -1,0 +1,61 @@
+import {
+  Briefcase,
+  Bus,
+  CircleHelp,
+  Clock,
+  CloudSun,
+  Flame,
+  Footprints,
+  GraduationCap,
+  Hand,
+  Hash,
+  HeartPulse,
+  House,
+  Leaf,
+  Palette,
+  PawPrint,
+  Ruler,
+  Shirt,
+  ShoppingBasket,
+  Smile,
+  Sparkles,
+  Stethoscope,
+  User,
+  Users,
+  UtensilsCrossed,
+  Zap,
+} from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
+
+const icons: Record<string, LucideIcon> = {
+  sparkles: Sparkles,
+  help: CircleHelp,
+  user: User,
+  clock: Clock,
+  hash: Hash,
+  users: Users,
+  utensils: UtensilsCrossed,
+  home: House,
+  'heart-pulse': HeartPulse,
+  shirt: Shirt,
+  paw: PawPrint,
+  weather: CloudSun,
+  verbs: Footprints,
+  adjectives: Ruler,
+  feelings: Smile,
+  work: Briefcase,
+  market: ShoppingBasket,
+  transport: Bus,
+  health: Stethoscope,
+  school: GraduationCap,
+  nature: Leaf,
+  colors: Palette,
+  slang: Flame,
+  hand: Hand,
+  zap: Zap,
+}
+
+export default function TopicIcon({ icon, className = 'h-5 w-5' }: { icon: string; className?: string }) {
+  const Icon = icons[icon] ?? Sparkles
+  return <Icon className={className} aria-hidden />
+}

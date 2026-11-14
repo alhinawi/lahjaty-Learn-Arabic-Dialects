@@ -13,7 +13,8 @@ export const SITE_NAME = 'لهجتي – Lahjaty'
 /** The file name of a famous phrase's card: its id without the shared prefix. */
 export const famousSlug = (id: string) => id.replace(/^famous\./, '')
 
-const SECTIONS = new Set(['dialects', 'lessons', 'compare', 'practice', 'search', 'favorites', 'settings'])
+const SECTIONS = new Set(['dialects', 'lessons', 'compare', 'practice', 'search', 'favorites', 'settings', 'dictionary', 'word'])
+const DICT_TOPIC = /^[a-z0-9_]+$/
 
 /**
  * The social card for a page, as a path under the site. The build writes one PNG for each of these
@@ -30,6 +31,8 @@ export function ogImageFor(pathname: string): string {
     return `/og/dialects/${b}.jpg`
   }
   if (a === 'lessons' && b) return `/og/lessons/${b}.jpg`
+  if (a === 'dictionary' && b && DICT_TOPIC.test(b)) return `/og/dictionary/${b}.jpg`
+  if (a === 'word' && b) return '/og/word.jpg'
   if (a && !b && SECTIONS.has(a)) return `/og/${a}.jpg`
   return '/og/home.jpg'
 }

@@ -1,0 +1,109 @@
+@topic basics | الأساسيات | Basics | sparkles
+yes | نعم | yes | int | EGS=أيوه; SY=إي; leb=إيه; PJP=آه; IQM=إي; GLF=إي; SA=إيه; hij=إيوه; YE=أيوه; sud=أيوه; MAJ=إيه; alg=إيه / واه; tun=إيه; LY=إيه | cai: أيوه، أنا جاي حالًا. || tun: إيه، نحب نمشي.
+no | لا | no | int | ALL=لا; EGS=لأ; LEVP=لأ; has=-; chd=- | cai: لأ، مش عايز. || dam: لأ، ما بدي.
+okay | حسنًا | okay | int | EGS=ماشي / طيب; LEVP=طيب / ماشي; IQ=زين / ماشي; GLF=زين / تمام; SA=طيب / تمام; hij=طيب / تمام; sud=تمام; MAJ=واخا; tun=باهي; LY=باهي | cai: ماشي، نتقابل بكرة. || mar: واخا، نتلاقاو غدّا.
+thanks | شكرًا | thank you | int | EGS=شكرًا / متشكّر; LEVP=شكرًا / يسلمو; IQ=شكرًا / عاشت إيدك; GLF=مشكور / شكرًا; SA=مشكور / يعطيك العافية; hij=شكرًا; sud=شكرًا; MA=شكرًا / الله يعطيك الصحة; alg=صحّيت / يعطيك الصحة; tun=يعيشك; LY=مشكور
+please | من فضلك | please | phr | EGS=لو سمحت / من فضلك; PJP=لو سمحت; dam=إذا بتريد; alp=إذا بتريد; leb=إذا بتريد / عمول معروف; IQ=رجاءً / بلا زحمة; KHL=لو سمحت; hij=لو سمحت / الله يخليك; sud=لو سمحت; MAJ=عافاك; alg=يعيشك / من فضلك; tun=بربّي / عيشك | cai: لو سمحت، الحساب. || mar: عافاك، شي قهوة.
+sorry | آسف | sorry | int | EGS=آسف / معلش; LEVP=آسف; leb=سوري / آسف; IQ=آسف; GLF=آسف / السموحة; SA=آسف / السموحة; hij=آسف; sud=آسف / معليش; MAJ=سمح ليا; alg=سمحلي / سامحني; tun=سامحني
+welcome_reply | عفوًا | you're welcome | phr | EGS=العفو; PJP=عفوًا / ولو; SY=ولو; leb=ولو / عفوًا; IQ=العفو; KHL=العفو / حيّاك; hij=العفو; sud=العفو; mar=بلا جميل; tun=بلا مزية
+goodbye | مع السلامة | goodbye | phr | EGS=مع السلامة / سلام; LEVP=مع السلامة / باي; IQM=مع السلامة / بأمان الله; KHL=مع السلامة / في أمان الله; hij=مع السلامة; sud=مع السلامة; mar=بسلامة; alg=بسلامة / تهلّا; tun=بالسلامة
+maybe | ربما | maybe | adv | EGS=يمكن / ممكن; LEVP=يمكن; dam=يمكن / بلكي; IQ=يمكن; KHL=يمكن; hij=يمكن; sud=يمكن / ممكن; mar=يمكن / واقيلا; alg=بالاك
+enough | كفى | enough | int | EGS=خلاص / كفاية; LEVP=خلص / بيكفي; IQ=بس / كافي; KHL=خلاص / بس; hij=خلاص / بس; sud=خلاص / كفاية; MAJ=صافي / باراكا; alg=بركا / صافي; tun=يزّي | cai: خلاص، كفاية كده. || tun: يزّي عاد!
+no_problem | لا مشكلة | no problem | phr | EGS=مفيش مشكلة; LEVP=ما في مشكلة; IQ=ماكو مشكلة; KHL=ما فيه مشكلة / عادي; hij=مافي مشكلة; sud=مافي مشكلة; MAJ=ماشي مشكل; alg=ماكانش مشكل; tun=ما فما حتى مشكل; LY=مافيش مشكلة
+there_is | يوجد | there is | phr | EGS=فيه; LEVP=في; IQM=أكو; KHL=فيه; hij=فيه; YE=في / فيش; sud=في; MAJ=كاين; alg=كاين; tun=فمّا; LY=فيه | cai: فيه عيش؟ || bag: أكو خبز؟ || mar: واش كاين الخبز؟
+there_isnt | لا يوجد | there isn't | phr | EGS=مفيش; LEVP=ما في; IQM=ماكو; KHL=ما فيه / مافي; hij=مافي; sud=مافي; MAJ=ماكاينش; alg=ماكانش; tun=ما فمّاش; LY=مافيش | cai: مفيش مشكلة. || bag: ماكو شي.
+alright_greeting | بخير | fine (I'm fine) | phr | EGS=كويس / الحمد لله; LEVP=منيح / الحمد لله; IQ=زين / الحمد لله; KHL=زين / بخير; hij=كويس / بخير; sud=كويس / تمام; MAJ=بيخير / لاباس; alg=لاباس / مليح; tun=لاباس / باهي; LY=باهي / لاباس
+
+@topic questions | كلمات السؤال | Question words | help
+what | ماذا | what | q | EGS=إيه; LEVP=شو; IQ=شنو / شو; mos=إيش; GLF=شنو; emi=شو; SA=وش; hij=إيش; YE=إيش; sud=شنو; MAJ=شنو / آش; alg=واش; tun=شنوّة / آش; LY=شن / شنو | cai: إنت بتعمل إيه؟ || dam: شو عم تعمل؟ || naj: وش تسوي؟
+why | لماذا | why | q | EGS=ليه; LEVP=ليش; IQM=ليش; GLF=ليش; SA=ليه / ليش; hij=ليش; YE=ليش; sud=ليه; MAGT=علاش; LY=علاش | cai: ليه اتأخرت؟ || alg: علاش تأخرت؟
+how | كيف | how | q | EGS=إزاي; LEVP=كيف; IQM=شلون; GLF=شلون; SA=كيف / شلون; hij=كيف; YE=كيف; sud=كيف; MAGT=كيفاش; LY=كيف | cai: أروح إزاي؟ || bag: شلون أروح؟
+where | أين | where | q | EGS=فين; LEVP=وين; IQM=وين; KHL=وين; hij=فين; sud=وين; MAJ=فين; alg=وين; tun=وين; LY=وين | cai: الحمّام فين؟ || mar: فين كاين الطواليط؟
+when | متى | when | q | EGS=إمتى; LEVP=إيمتى; IQ=شوكت; KHL=متى; hij=متى; YE=متى; sud=متين; mar=فوقاش / إمتى; alg=وقتاش; tun=وقتاش | cai: هتيجي إمتى؟ || bag: شوكت تجي؟
+who | من | who | q | EGS=مين; LEVP=مين; IQ=منو; GLF=منو; SA=مين / منهو; hij=مين; sud=منو; MAJ=شكون; alg=شكون; tun=شكون | cai: مين ده؟ || tun: شكون هذا؟
+how_much | بكم | how much (price) | q | EGS=بكام; SY=بقدّيش; leb=بقدّيش; PJP=بكم / قدّيش; IQ=بيش / بشكد; KHL=بكم; hij=بكم; YE=بكم; sud=بكم; MAJ=بشحال; alg=بقدّاش / بشحال; tun=بقدّاش; LY=بكم | cai: ده بكام؟ || mar: هادي بشحال؟
+how_many | كم | how many | q | EGS=كام; LEVP=كم; IQ=شكد / كم; KHL=كم; hij=كم; sud=كم; MAJ=شحال; alg=شحال / قدّاش; tun=قدّاش; LY=كم
+which | أي | which | q | EGS=أنهي; SY=أيّا; leb=أيّا; sud=ياتو; mar=أشمن; tun=آنا | cai: أنهي واحد؟ || sud: ياتو واحد؟
+from_where | من أين | from where | q | EGS=منين; LEVP=منين / من وين; IQM=منين; KHL=من وين; hij=من فين; sud=من وين; MAJ=منين; alg=منين; tun=منين; LY=منين | cai: إنت منين؟ || dam: إنت من وين؟
+whats_wrong | ما بك | what's wrong? | phr | EGS=مالك؟; LEVP=شو بك؟ / شو مالك؟; IQ=شبيك؟; KHL=شفيك؟ / وش فيك؟; hij=إيش فيك؟ / مالك؟; sud=مالك؟; MAJ=مالك؟ / آش بيك؟; alg=واش بيك؟ / واش بيك؟; tun=آش بيك؟ / شبيك؟; LY=شن بيك؟
+
+@topic pronouns | الضمائر والإشارة | Pronouns and pointers | user
+i | أنا | I | pron | EGS=أنا; LEVP=أنا; IQ=آني; mos=أنا; KHL=أنا; hij=أنا; YE=أنا; sud=أنا; MAJ=أنا; alg=أنا; tun=آنا; LY=أنا
+you_m | أنتَ | you (m.) | pron | EGS=إنت; LEVP=إنت; IQM=إنت; KHL=إنت; hij=إنت; YE=أنت; sud=إنت; MAG=نتا; tun=إنتي
+you_f | أنتِ | you (f.) | pron | EGS=إنتي; LEVP=إنتي; IQ=إنتي; KHL=إنتي; hij=إنتي; sud=إنتي; MAG=نتي; tun=إنتي
+he | هو | he | pron | EGS=هو; LEVP=هو; IQM=هو; KHL=هو; hij=هو; YE=هو; sud=هو; MAG=هو / هوّا; tun=هو; LY=هو
+she | هي | she | pron | EGS=هي; LEVP=هي; IQM=هي; KHL=هي; hij=هي; YE=هي; sud=هي; MAG=هي / هيّا; tun=هي; LY=هي
+we | نحن | we | pron | EGS=إحنا; SY=نحنا; leb=نحنا; PJP=إحنا; IQ=إحنا; GLF=إحنا; SA=حنّا; hij=إحنا; sud=نحنا; MAG=حنا; tun=أحنا
+you_pl | أنتم | you (pl.) | pron | EGS=إنتو; LEVP=إنتو; IQ=إنتو; KHL=إنتو; hij=إنتو; sud=إنتو; MAG=نتوما; tun=إنتوما
+they | هم | they | pron | EGS=هُمّا; SY=هنّي; leb=هنّي; PJP=هم; IQ=همّه; KHL=هم; hij=هم; sud=هم; MAG=هوما; tun=هوما
+this_m | هذا | this (m.) | pron | EGS=ده; SY=هاد; leb=هيدا; PJP=هاد / هادا; IQM=هذا; KHL=هذا; hij=دا / هادا; YE=هذا / ذا; sud=ده; MAG=هادا; tun=هذا | cai: ده بتاعي. || leb: هيدا إلي.
+this_f | هذه | this (f.) | pron | EGS=دي; SY=هاي / هادي; leb=هيدي; PJP=هاي / هادي; IQM=هاي; KHL=هذي; hij=دي / هادي; sud=دي; MAG=هادي; tun=هاذي
+these | هؤلاء | these | pron | EGS=دول; SY=هدول; leb=هودي; PJP=هدول; IQ=هذوله; hij=دول / هادول; sud=ديل; MAG=هادو; tun=هاذوما
+here | هنا | here | adv | EGS=هنا; LEVP=هون; IQ=هنا; GLF=هني; SA=هنا; hij=هنا; sud=هنا; MAJ=هنا / هنايا; alg=هنا / هنايا; tun=هوني | cai: تعالى هنا. || dam: تعا لهون. || tun: إيجا لهوني.
+there | هناك | there | adv | EGS=هناك; LEVP=هونيك; IQ=هناك; KHL=هناك; hij=هناك; sud=هناك; mar=تمّا; tun=غادي
+someone | أحد | someone | pron | EGS=حد; LEVP=حدا; IQ=واحد; KHL=أحد / واحد; hij=أحد / حد; MAJ=شي حد / شي واحد; tun=حد
+nothing | لا شيء | nothing | pron | EGS=ولا حاجة; LEVP=ولا شي; IQ=ولا شي; KHL=ولا شي; hij=ولا شي; sud=ولا حاجة; MAJ=والو; alg=والو; tun=شي / حتى شي; LY=شي / حتى شي | cai: مفيش حاجة، ولا حاجة. || mar: والو، ماكاين والو.
+something | شيء | something, thing | n | EGS=حاجة; LEVP=شي / شغلة; IQ=شي; KHL=شي; hij=حاجة / شي; sud=حاجة; MAJ=شي حاجة; alg=حاجة; tun=حاجة; LY=حاجة
+
+@topic time | الوقت | Time | clock
+now | الآن | now | adv | EG=دلوقتي; sai=دلوك / دلوقت; SY=هلّق; leb=هلّق; psu=هلّأ / هسّا; jor=هسّا; psr=هسّا; IQ=هسّه; KHL=الحين; oma=الحين; hij=دحين; san=ذلحين; ade=دحين; sud=هسّع; MAJ=دابا; alg=ضرك; tun=توّا; LY=توّا | cai: أنا جاي دلوقتي. || dam: هلّق جاي. || mar: جاي دابا.
+today | اليوم | today | adv | EGS=النهارده; LEVP=اليوم; IQM=اليوم; KHL=اليوم; hij=اليوم; YE=اليوم; sud=الليلة; NAF=اليوم; alg=اليوم | sud: الليلة ما عندي شغل.
+tomorrow | غدًا | tomorrow | adv | EGS=بكرة; LEVP=بكرا; IQ=باچر; GLF=باچر; SA=بكرة / باكر; hij=بكرة; sud=بكرة / باكر; MAJ=غدّا; alg=غدوة; tun=غدوة; LY=غدوة | cai: نتقابل بكرة. || kuw: نشوفك باچر.
+yesterday | أمس | yesterday | adv | EGS=إمبارح; LEVP=مبارح; IQ=البارحة; KHL=أمس; hij=أمس; sud=أمبارح; MAJ=البارح; alg=البارح; tun=البارح
+after_tomorrow | بعد غد | the day after tomorrow | adv | EGS=بعد بكرة; LEVP=بعد بكرا; IQ=عقب باچر; GLF=عقب باچر; SA=بعد بكرة; hij=بعد بكرة; sud=بعد بكرة; MAJ=بعد غدّا; alg=بعد غدوة; tun=بعد غدوة
+morning | صباح | morning | n | EGS=الصبح; LEVP=الصبح; IQM=الصبح; KHL=الصبح; hij=الصبح; sud=الصباح; MAJ=الصباح; alg=الصباح; tun=الصباح
+evening | مساء | evening | n | EGS=المسا / بالليل; LEVP=المسا; IQ=المسا; MAJ=العشية; alg=العشية; tun=العشية
+night | ليل | night | n | EGS=الليل; LEVP=الليل; IQM=الليل; KHL=الليل; hij=الليل; sud=الليل; NAF=الليل
+later | لاحقًا | later | adv | EGS=بعدين; LEVP=بعدين; IQ=بعدين; KHL=بعدين; hij=بعدين; sud=بعدين; MAJ=من بعد; alg=من بعد; tun=مبعد | cai: نتكلم بعدين. || tun: نحكيو مبعد.
+early | مبكرًا | early | adv | EGS=بدري; LEVP=بكّير; IQ=وكت; KHL=بدري; hij=بدري; sud=بدري; MAJ=بكري; alg=بكري; tun=بكري | cai: صحيت بدري. || bag: گعدت وكت.
+late | متأخرًا | late | adj | EGS=متأخر; LEVP=متأخر; IQ=متأخر; KHL=متأخر; hij=متأخر; sud=متأخر; mar=معطّل
+little_while | قليلًا | a little while | phr | EGS=شوية; LEVP=شوي; IQ=شويّة; KHL=شوي; hij=شوية; sud=شوية; MAJ=شوية; alg=شوية; tun=شوية
+always | دائمًا | always | adv | EGS=على طول / دايمًا; LEVP=دايمًا; IQ=دائمًا / دوم; KHL=دوم / دايم; hij=دايمًا / على طول; sud=طوّالي; MAJ=ديما; alg=ديما; tun=ديما
+never | أبدًا | never, not at all | adv | EGS=خالص / أبدًا; LEVP=أبدًا / بالمرّة; IQ=أبد; KHL=أبد; hij=أبدًا / خالص; tun=جملة | cai: مش فاهم خالص.
+week | أسبوع | week | n | EGS=أسبوع; LEVP=جمعة / أسبوع; IQ=إسبوع; KHL=أسبوع; hij=أسبوع; sud=أسبوع; mar=سيمانة; alg=سمانة / جمعة; tun=جمعة
+hour | ساعة | hour | n | ALL=ساعة
+day | يوم | day | n | EGS=يوم; LEVP=يوم; IQM=يوم; KHL=يوم; hij=يوم; YE=يوم; sud=يوم; MAJ=نهار; alg=نهار; tun=نهار
+year | سنة | year | n | EGS=سنة; LEVP=سنة; IQM=سنة; KHL=سنة; hij=سنة; YE=سنة; sud=سنة; MAJ=عام; alg=عام; tun=عام
+
+@topic numbers | الأرقام والكميات | Numbers and amounts | hash
+one | واحد | one | num | ALL=واحد
+two | اثنان | two | num | EGS=اتنين; SY=تنين; leb=تنين; PJP=اتنين; IQM=اثنين; KHL=ثنين; hij=اتنين; sud=اتنين; MAJ=جوج; alg=زوج; tun=زوز; LY=زوز
+three | ثلاثة | three | num | EGS=تلاتة; LEVP=تلاتة; IQM=ثلاثة; KHL=ثلاثة; hij=تلاتة; sud=تلاتة; NAF=تلاتة; alg=تلاتة
+four | أربعة | four | num | EGS=أربعة; LEVP=أربعة; IQM=أربعة; KHL=أربعة; hij=أربعة; sud=أربعة; MAJ=ربعة; alg=ربعة; tun=أربعة; LY=أربعة
+five | خمسة | five | num | ALL=خمسة
+six | ستة | six | num | ALL=ستّة
+seven | سبعة | seven | num | ALL=سبعة
+eight | ثمانية | eight | num | EGS=تمانية; LEVP=تمانية; IQM=ثمانية; KHL=ثمانية; hij=تمانية; sud=تمانية; MAJ=تمنية; alg=ثمنية; tun=ثمنية
+nine | تسعة | nine | num | ALL=تسعة
+ten | عشرة | ten | num | ALL=عشرة
+hundred | مئة | hundred | num | ALL=مية
+thousand | ألف | thousand | num | ALL=ألف
+half | نصف | half | n | ALL=نص
+a_lot | كثير | a lot | adv | EGS=كتير; LEVP=كتير; IQM=هوايه; KHL=وايد; SA=واجد / كثير; hij=كتير; sud=كتير; MAJ=بزاف; alg=بزاف; tun=برشا; LY=هلبا | cai: عندي شغل كتير. || kuw: عندي شغل وايد. || tun: عندي خدمة برشا.
+a_little | قليل | a little | adv | EGS=شوية; LEVP=شوي; IQM=شويّة; KHL=شوي; hij=شوية; sud=شوية; NAF=شوية
+all | كل | all, everything | pron | EGS=كل / كله; LEVP=كل / كلّه; IQ=كل / كلشي; KHL=كل / كله; hij=كل / كلّه; sud=كلّه; MAJ=كولشي / كاع; alg=قاع / كلّش; tun=الكل / كل شي | mar: كولشي مزيان. || alg: قاع مليح.
+
+@topic family | العائلة والناس | Family and people | users
+father | أب | father | n | EGS=أبويا / بابا; SY=بيّي / بابا; leb=بيّي / بابا; PJP=أبوي / يابا; IQM=أبوي / بابا; KHL=أبوي / الوالد; hij=أبويا; sud=أبوي; MAJ=بّا / بابا; alg=بابا; tun=بابا; LY=بوي
+mother | أم | mother | n | EGS=أمي / ماما; SY=إمّي / ماما; leb=إمّي / ماما; PJP=إمّي / يمّا; IQM=أمي / يُمّه; KHL=أمي / الوالدة; hij=أمي; sud=أمّي; MAJ=مّي / ماما; alg=يمّا / ماما; tun=أمّي / ماما
+brother | أخ | brother | n | EGS=أخويا; SY=خيّي; leb=خيّي; PJP=أخوي; IQM=أخوي; KHL=أخوي; hij=أخويا; sud=أخوي; MAJ=خويا; alg=خويا; tun=خويا; LY=خوي
+sister | أخت | sister | n | EGS=أختي; LEVP=أختي; IQM=أختي; KHL=أختي; hij=أختي; sud=أختي; MAJ=ختي; alg=ختي; tun=أختي
+son | ابن | son | n | EGS=ابن; LEVP=ابن; IQM=ابن; KHL=ولد; hij=ولد / ابن; sud=ولد; NAF=ولد; alg=ولد
+daughter | ابنة | daughter, girl | n | EGS=بنت; LEVP=بنت; IQM=بنت; KHL=بنت; hij=بنت; sud=بت; NAF=بنت; alg=طفلة / بنت
+grandfather | جد | grandfather | n | EGS=جدّو / جدّي; SY=جدّو / سيدو; leb=جدّو; PJP=سيدي; IQM=جدّو / جدّي; GLF=يدّي; SA=جدّي; hij=جدّي; sud=جدّي; MAJ=جدّي; alg=جدّي; tun=جدّي
+grandmother | جدة | grandmother | n | EGS=تيتة / جدّة; SY=تيتا / ستّي; leb=تيتا / ستّي; PJP=ستّي; IQM=بيبي / جدّة; GLF=يدّة; SA=جدّة; hij=جدّة; sud=حبّوبة; MAJ=جدّة; tun=جدّة | cai: رايح عند تيتة. || sud: ماشي لي حبّوبة.
+uncle_paternal | عم | paternal uncle | n | EGS=عمّ; LEVP=عمّ; IQM=عمّ; KHL=عمّ; hij=عمّ; YE=عمّ; sud=عمّ; NAF=عمّ; alg=عمّ
+uncle_maternal | خال | maternal uncle | n | EGS=خال; LEVP=خال; IQM=خال; KHL=خال; hij=خال; YE=خال; sud=خال; NAF=خال; alg=خال
+aunt_paternal | عمة | paternal aunt | n | EGS=عمّة; LEVP=عمّة; IQM=عمّة; KHL=عمّة; hij=عمّة; YE=عمّة; sud=عمّة; NAF=عمّة; alg=عمّة
+aunt_maternal | خالة | maternal aunt | n | EGS=خالة; LEVP=خالة; IQM=خالة; KHL=خالة; hij=خالة; YE=خالة; sud=خالة; NAF=خالة; alg=خالة
+husband | زوج | husband | n | EGS=جوز; LEVP=جوز; IQ=رجل / زوج; mos=زوج; GLF=ريّال / زوج; SA=رجّال / زوج; hij=زوج / رجّال; sud=راجل; NAF=راجل; alg=راجل
+wife | زوجة | wife | n | EGS=مراتي; LEVP=مرتي; IQM=مرتي / زوجتي; KHL=زوجتي / حرمتي; hij=زوجتي / حرمتي; sud=مرتي; MAJ=مراتي; alg=مرتي; tun=مرتي
+kids | أطفال | kids | n | EGS=عيال / أطفال; LEVP=ولاد; IQ=جهّال; GLF=يهال / عيال; SA=عيال; hij=أطفال / بزورة; sud=شُفّع; MAJ=دراري; alg=ذراري; tun=صغار | cai: العيال في المدرسة. || mar: الدراري فالمدرسة.
+friend | صديق | friend | n | EGS=صاحب; LEVP=رفيق / صاحب; IQ=صديق / رفيج; GLF=ربيع; SA=خويّ / صاحب; hij=صاحب; sud=صاحب; NAF=صاحب; alg=صاحب | kuw: هذا ربيعي من زمان.
+cousin | ابن العم | cousin (father's brother's son) | n | EGS=ابن عمّ; LEVP=ابن عمّ; IQM=ابن عمّ; KHL=ولد عمّ; hij=ولد عمّ; sud=ود عمّ; NAF=ولد عمّ; alg=ولد عمّ
+family | عائلة | family | n | EGS=عيلة; LEVP=عيلة; IQM=عائلة / أهل; KHL=أهل / عايلة; hij=عيلة; sud=أهل; mar=الفاميلة / العائلة; alg=العايلة / الفاميلة; tun=العايلة
+man | رجل | man | n | EGS=راجل; LEVP=زلمة; IQM=رجّال; GLF=ريّال; SA=رجّال; hij=رجّال; sud=راجل; NAF=راجل; alg=راجل | dam: هالزلمة منيح.
+woman | امرأة | woman | n | EGS=ست / مَرة; LEVP=مرا / ست; IQM=مَرة; KHL=حرمة; hij=حرمة / مرة; sud=مَرة; MAJ=مرا; alg=مرا; tun=مرا
+person | شخص | person | n | EGS=بني آدم / شخص; LEVP=شخص / حدا; IQ=شخص / واحد; KHL=شخص / واحد; sud=زول; MAJ=بنادم; alg=بنادم; tun=عبد | sud: الزول ده منو؟
+boy | ولد | boy | n | EGS=واد / ولد; LEVP=ولد / صبي; IQ=ولد; KHL=ولد / ياهل; hij=ولد; sud=ولد; MAJ=دري; alg=طفل; tun=ولد / طفل
+neighbor | جار | neighbor | n | EGS=جار; LEVP=جار; IQM=جار / جيران; KHL=جار / يار; hij=جار; sud=جار; NAF=جار; alg=جار

@@ -1,4 +1,4 @@
-import { ChevronLeft, Columns3, GraduationCap, MapPinned } from 'lucide-react'
+import { BookA, ChevronLeft, Columns3, GraduationCap, MapPinned } from 'lucide-react'
 import { Link } from 'react-router'
 import CategoryIcon from '../components/CategoryIcon'
 import DialectMap from '../components/DialectMap'
@@ -70,6 +70,17 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <Link to="/dictionary" className="lift flex items-center gap-3 rounded-2xl border border-sun-300 bg-white p-4 shadow-sm">
+        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-700 text-sun-300">
+          <BookA className="h-6 w-6" aria-hidden />
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block font-bold">{t('dictCta')}</span>
+          <span className="block text-xs text-slate-600">{t('dictCtaBody')}</span>
+        </span>
+        <ChevronLeft className="h-5 w-5 shrink-0 text-slate-400 ltr:rotate-180" aria-hidden />
+      </Link>
 
       <section className="grid grid-cols-2 gap-3">
         <Link to="/compare" className="lift rounded-2xl bg-sand-100 p-4 ring-1 ring-sun-400/25">

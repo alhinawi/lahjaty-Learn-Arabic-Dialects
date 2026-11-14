@@ -1,4 +1,4 @@
-import { ChevronLeft, MapPinned } from 'lucide-react'
+import { BookA, ChevronLeft, MapPinned } from 'lucide-react'
 import { KindBadge } from '../components/EgyptBits'
 import { getEgyptNode } from '../lib/egypt'
 import { useMemo } from 'react'
@@ -8,6 +8,8 @@ import SearchBox from '../components/SearchBox'
 import { dialectsByRegion, famousByConcept, getConcept, getDialect, STANDARD_ID } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { usePageMeta } from '../lib/meta'
+import { searchDictionary, useAllEntries } from '../lib/dictionary'
+import type { DictHit } from '../lib/dictionary'
 import { hitTitle, search } from '../lib/search'
 import type { SearchHit } from '../lib/search'
 import { useApp } from '../lib/store'
@@ -114,11 +116,56 @@ function ResultCard({ hit }: { hit: SearchHit }) {
   )
 }
 
+/** A dictionary word: Standard Arabic, English and a few dialects, the visitor's first. */
+function DictResult({ hit }: { hit: DictHit }) {
+  const t = useT()
+  const name = useName()
+  const myDialectId = useApp((s) => s.myDialectId)
+  const e = hit.entry
+  const order = dialectsByRegion().flatMap((g) => g.dialects.map((d) => d.id))
+  const ids = order.filter((id) => id !== STANDARD_ID && e.words[id])
+  const first = [...(myDialectId && e.words[myDialectId] ? [myDialectId] : []), ...(hit.dialectId && hit.dialectId !== myDialectId ? [hit.dialectId] : [])]
+  const shown = [...first, ...ids.filter((id) => !first.includes(id))].slice(0, 5)
+  return (
+    <Link to={`/word/${e.id}`} className="lift block rounded-3xl border border-slate-200 bg-white p-4 shadow-sm hover:border-sun-400">
+      <span className="flex items-center gap-2 text-[11px] font-bold text-sun-600">
+        <BookA className="h-3.5 w-3.5" aria-hidden />
+        {t('dictFromDictionary')}
+      </span>
+      <span dir="rtl" lang="ar" className="dialect-text mt-1 block text-lg font-bold text-slate-900">
+        {e.fs}
+      </span>
+      <span dir="ltr" lang="en" className="block text-xs text-slate-500">
+        {e.en}
+      </span>
+      <span className="mt-2 block space-y-0.5 text-sm">
+        {shown.map((id) => {
+          const d = getDialect(id)
+          return (
+            <span key={id} className="flex gap-2">
+              <span className="w-24 shrink-0 text-xs leading-6 text-slate-500">{d ? name(d) : id}</span>
+              <span dir="rtl" lang="ar" className="dialect-text font-semibold text-slate-800">
+                {e.words[id]}
+              </span>
+            </span>
+          )
+        })}
+      </span>
+      <span className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
+        {t('dictWordInAll')}
+        <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
+      </span>
+    </Link>
+  )
+}
+
 export default function SearchPage() {
   const t = useT()
   const [params, setParams] = useSearchParams()
   const q = params.get('q') ?? ''
   const hits = useMemo(() => search(q, 20), [q])
+  const entries = useAllEntries(!!q.trim())
+  const dictHits = useMemo(() => (entries && q.trim() ? searchDictionary(entries, q, 8) : []), [entries, q])
   usePageMeta(q ? `${q} – ${t('searchTitle')}` : t('searchTitle'), t('searchBody'))
 
   return (
@@ -130,12 +177,23 @@ export default function SearchPage() {
       <SearchBox key={q} initial={q} autoFocus={!q} onSubmit={(v) => setParams({ q: v })} />
       {q && (
         <p className="text-sm text-slate-600" aria-live="polite">
-          {hits.length ? t('searchCount', { n: hits.length, q }) : t('searchNone', { q })}
+          {hits.length + dictHits.length ? t('searchCount', { n: hits.length + dictHits.length, q }) : entries ? t('searchNone', { q }) : t('dictLoading')}
         </p>
       )}
       <div className="space-y-3">
         {hits.map((h) => (h.kind === 'egypt' ? <EgyptResult key={h.key} hit={h} /> : <ResultCard key={h.key} hit={h} />))}
       </div>
+      {dictHits.length > 0 && (
+        <section className="space-y-3">
+          <h2 className="flex items-center gap-1.5 text-lg font-bold">
+            <BookA className="h-5 w-5 text-sun-500" aria-hidden />
+            {t('dictTitle')}
+          </h2>
+          {dictHits.map((h) => (
+            <DictResult key={h.entry.id} hit={h} />
+          ))}
+        </section>
+      )}
     </div>
   )
 }

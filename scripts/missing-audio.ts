@@ -1,5 +1,5 @@
 /**
- * Lists phrases (everyday and famous) that have no audio yet, per dialect.
+ * Lists phrases (everyday and famous) and dictionary words that have no audio yet, per dialect.
  *   npm run audio:missing            -> summary for every dialect
  *   npm run audio:missing -- cai     -> full list for one dialect
  *   npm run audio:missing -- --json  -> machine-readable output
@@ -8,6 +8,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { AudioIndex, Content, FamousContent } from '../src/lib/types.ts'
 import { missingAudio } from '../src/lib/validate.ts'
+import { readDictionary } from './lib/dictionary.ts'
 
 const root = join(import.meta.dirname, '..')
 const content = JSON.parse(readFileSync(join(root, 'src', 'content', 'phrases.json'), 'utf8')) as Content
@@ -23,7 +24,7 @@ for (const d of content.dialects) {
 }
 
 const args = process.argv.slice(2)
-const rows = missingAudio(content, index, famous)
+const rows = missingAudio(content, index, famous, readDictionary(root).entries)
 
 if (args.includes('--json')) {
   console.log(JSON.stringify(rows, null, 2))
@@ -42,7 +43,7 @@ if (args.includes('--json')) {
     const d = content.dialects.find((x) => x.id === row.dialectId)!
     missing += row.missing.length
     total += row.total
-    console.log(`${row.dialectId.padEnd(5)} ${String(row.have).padStart(3)}/${row.total}  missing ${String(row.missing.length).padStart(3)}  ${d.nameEn}`)
+    console.log(`${row.dialectId.padEnd(5)} ${String(row.have).padStart(4)}/${row.total}  missing ${String(row.missing.length).padStart(4)}  ${d.nameEn}`)
   }
   console.log(`\nTotal missing: ${missing} of ${total}`)
   console.log('Run with a dialect id (e.g. `npm run audio:missing -- cai`) to list the files.')

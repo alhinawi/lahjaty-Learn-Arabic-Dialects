@@ -1,4 +1,4 @@
-import type { AudioIndex, Content, FamousContent, VoicesManifest } from './types'
+import type { AudioIndex, Content, DictEntry, DictIndex, DictTopicFile, FamousContent, VoicesManifest } from './types'
 
 const PHRASE_ID = /^[a-z0-9_]+\.[a-z0-9_]+$/
 const DIALECT_ID = /^[a-z0-9_-]+$/
@@ -103,15 +103,67 @@ export interface MissingAudioRow {
 }
 
 /** Every phrase id that can have audio in a dialect: the everyday phrases, then its famous phrases. */
-export function audioPhraseIds(content: Content, dialectId: string, famous?: FamousContent): string[] {
-  return [...content.phrases.map((p) => p.id), ...(famous?.dialects[dialectId] ?? []).map((f) => f.id)]
+export function audioPhraseIds(content: Content, dialectId: string, famous?: FamousContent, dictionary?: DictEntry[]): string[] {
+  return [
+    ...content.phrases.map((p) => p.id),
+    ...(famous?.dialects[dialectId] ?? []).map((f) => f.id),
+    ...(dictionary ? dictAudioIds(dictionary, dialectId) : []),
+  ]
 }
 
-export function missingAudio(content: Content, index: AudioIndex, famous?: FamousContent): MissingAudioRow[] {
+export function missingAudio(content: Content, index: AudioIndex, famous?: FamousContent, dictionary?: DictEntry[]): MissingAudioRow[] {
   return content.dialects.map((d) => {
     const have = new Set(index[d.id] ?? [])
-    const all = audioPhraseIds(content, d.id, famous)
+    const all = audioPhraseIds(content, d.id, famous, dictionary)
     const missing = all.filter((id) => !have.has(id))
     return { dialectId: d.id, have: all.length - missing.length, total: all.length, missing }
   })
+}
+
+// ---------- dictionary ----------
+
+const DICT_ENTRY_ID = /^[a-z0-9_]+\.[a-z0-9_]+$/
+const POS = new Set(['n', 'v', 'adj', 'adv', 'pron', 'q', 'int', 'num', 'phr', 'conj', 'prep'])
+
+/** The audio id of a dictionary word: public/audio/<dialectId>/dict.<entryId>.mp3 */
+export const dictAudioId = (entryId: string) => `dict.${entryId}`
+
+/** Checks the dictionary index and its topic files. An empty list means it is valid. */
+export function validateDictionary(content: Content, index: DictIndex, files: DictTopicFile[]): string[] {
+  const errors: string[] = []
+  const dialectIds = new Set(content.dialects.map((d) => d.id))
+  const topicIds = new Set<string>()
+  for (const t of index.topics) {
+    if (!/^[a-z0-9_]+$/.test(t.id)) errors.push(`dictionary topic "${t.id}": bad id`)
+    if (topicIds.has(t.id)) errors.push(`dictionary topic "${t.id}": duplicate id`)
+    topicIds.add(t.id)
+    if (!t.name?.trim() || !t.nameEn?.trim()) errors.push(`dictionary topic "${t.id}": name and nameEn are required`)
+    if (!files.some((f) => f.id === t.id)) errors.push(`dictionary topic "${t.id}": no file src/content/dictionary/${t.id}.json`)
+  }
+  const entryIds = new Set<string>()
+  for (const f of files) {
+    if (!topicIds.has(f.id)) errors.push(`dictionary file "${f.id}.json": topic is not in index.json`)
+    if (!f.entries.length) errors.push(`dictionary topic "${f.id}": no entries`)
+    for (const e of f.entries) {
+      const where = `dictionary "${e.id}"`
+      if (!DICT_ENTRY_ID.test(e.id) || e.id.split('.')[0] !== f.id) errors.push(`${where}: id must look like "${f.id}.slug"`)
+      if (entryIds.has(e.id)) errors.push(`${where}: duplicate id`)
+      entryIds.add(e.id)
+      if (!e.fs?.trim() || !e.en?.trim()) errors.push(`${where}: fs and en are required`)
+      if (!POS.has(e.pos)) errors.push(`${where}: unknown part of speech "${e.pos}"`)
+      for (const [d, w] of Object.entries(e.words)) {
+        if (!dialectIds.has(d) || d === 'fs') errors.push(`${where}: word for unknown dialect "${d}"`)
+        if (!w?.trim()) errors.push(`${where}: empty word for "${d}"`)
+      }
+      for (const d of Object.keys(e.ex ?? {})) {
+        if (d !== 'fs' && !e.words[d]) errors.push(`${where}: example for "${d}" without a word`)
+      }
+    }
+  }
+  return errors
+}
+
+/** Dictionary words that can have audio in a dialect: every word written for it (Standard Arabic: all of them). */
+export function dictAudioIds(entries: DictEntry[], dialectId: string): string[] {
+  return entries.filter((e) => dialectId === 'fs' || e.words[dialectId]).map((e) => dictAudioId(e.id))
 }

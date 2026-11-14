@@ -101,3 +101,40 @@ export interface FamousContent {
   /** dialectId -> its famous phrases, most iconic first */
   dialects: Record<string, FamousPhrase[]>
 }
+
+// ---------- dictionary ----------
+
+export type PartOfSpeech = 'n' | 'v' | 'adj' | 'adv' | 'pron' | 'q' | 'int' | 'num' | 'phr' | 'conj' | 'prep'
+
+export interface DictTopic {
+  /** Stable id, also the file name: src/content/dictionary/<id>.json */
+  id: string
+  name: string
+  nameEn: string
+  /** A key of TopicIcon's map. */
+  icon: string
+}
+
+export interface DictIndex {
+  version: number
+  topics: DictTopic[]
+}
+
+/** One meaning, shared by every dialect. Its id is used in URLs and audio paths: never rename. */
+export interface DictEntry {
+  /** "<topic>.<slug>" */
+  id: string
+  /** The word in Standard Arabic. */
+  fs: string
+  en: string
+  pos: PartOfSpeech
+  /** dialectId -> the word(s); several words are separated by " / ". Missing when not known. */
+  words: Record<string, string>
+  /** dialectId (or "fs") -> an example sentence */
+  ex?: Record<string, string>
+}
+
+export interface DictTopicFile {
+  id: string
+  entries: DictEntry[]
+}

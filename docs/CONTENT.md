@@ -10,6 +10,8 @@ dialects, new phrases). Everything is plain files in the repo. There is no backe
 | Dialects, regions, situations, phrases | `src/content/phrases.json` |
 | Famous phrases of each dialect, and the meanings they share | `src/content/famous.json` |
 | Voices and which voice reads what (optional) | `src/content/voices.json` |
+| Dictionary (generated from the authoring files, one JSON per topic) | `src/content/dictionary/*.json` |
+| Dictionary authoring files | `scripts/dictionary/data/*.txt` |
 | Audio files | `public/audio/<dialectId>/<phraseId>.mp3` |
 | Audio index (generated, do not edit, not committed) | `src/generated/audio-index.json` |
 
@@ -51,7 +53,7 @@ anything counted on screen is computed from these files.
 2. See what is still missing:
 
    ```bash
-   npm run audio:missing           # summary per dialect (everyday + famous phrases)
+   npm run audio:missing           # summary per dialect (everyday + famous phrases + dictionary words)
    npm run audio:missing -- cai    # every missing file path for one dialect
    npm run audio:missing -- --json # machine-readable
    ```
@@ -151,6 +153,50 @@ It is saved in the browser. Cards then show the meaning in that dialect first:
 
 English meaning stays under it. On the English interface cards show the English meaning.
 
+## Dictionary
+
+The dictionary («القاموس») is a list of meanings ("entries") grouped by topic. Every entry
+has one id shared by all dialects, so the topic pages, the «الكلمة في كل لهجة» page
+(`/word/<entryId>`) and the global search all read the same data. The site downloads one
+topic file at a time.
+
+Edit the authoring files in `scripts/dictionary/data/*.txt`, never the generated JSON:
+
+```
+@topic <topicId> | <Arabic name> | <English name> | <icon>
+<slug> | <Standard Arabic> | <English> | <pos> | KEY=word; KEY=word / other word | cai: example || dam: example
+```
+
+- `KEY` is a dialect id (`cai`, `dam`, `has`…) or a group defined at the top of
+  `scripts/dictionary/build.py` (`EGS` = Egypt incl. Upper Egypt, `LEVP`, `IQM`, `KHL`, `MAGT`, `LY`…).
+  Later keys override earlier ones; `KEY=-` removes a word set by a group.
+- Several words for one dialect are separated by ` / `.
+- Leave a dialect out when you do not know its word: the card shows a dash and nothing else.
+- `pos` is one of `n v adj adv pron q int num phr conj prep`.
+- `icon` is a key of `src/components/TopicIcon.tsx`.
+- The entry id is `<topicId>.<slug>`. **Never rename it** once published: it is in links and audio file names.
+
+Then run:
+
+```
+npm run dict:build      # writes src/content/dictionary/*.json
+npm run content:check   # validates it with everything else
+```
+
+Commit both the `.txt` and the generated `.json` files.
+
+### Dictionary audio
+
+Same folder as the dialect's phrases, with the entry id prefixed by `dict.`:
+
+```
+public/audio/<dialectId>/dict.<entryId>.mp3     e.g. public/audio/cai/dict.family.father.mp3
+public/audio/fs/dict.<entryId>.mp3              the Standard Arabic word
+```
+
+The play button appears only when the file exists. `npm run audio:missing` lists missing
+dictionary words too (only words that are written for that dialect).
+
 ## Adding a dialect
 
 1. Add it to `dialects`:
@@ -204,6 +250,10 @@ unknown voices, dialects or phrases.
 - **جملة جديدة**: أضفها إلى `phrases`، ومعرّفها يبدأ باسم الموقف، ولا بدّ من نصّ لكل اللهجات.
 - **لهجة جديدة**: أضفها إلى `dialects` مع منطقتها، ثم أضف نصّها في كل جملة، وأضف جملها المشهورة في `famous.json`.
 - **لا تغيّر المعرّفات** بعد إضافة الأصوات، لأن أسماء الملفات مربوطة بها.
+- **القاموس**: الكلمات في ملفات `scripts/dictionary/data/*.txt`، كل موضوع يبدأ بسطر `@topic`،
+  وكل كلمة سطر واحد فيه الفصحى والإنجليزي ونوع الكلمة وكلمة كل لهجة. بعد التعديل شغّل `npm run dict:build`.
+- **معرّف الكلمة** يكون `<الموضوع>.<الاسم>`، مثل `family.father`، ولا يتغيّر بعد النشر.
+- **صوت كلمة القاموس** في مجلّد اللهجة باسم `dict.<معرّف الكلمة>.mp3`، مثلًا `public/audio/cai/dict.family.father.mp3`.
 - **قبل الرفع** شغّل `npm run content:check` ثم `npm test` ثم `npm run build`.
 
 ## Social cards and page tags

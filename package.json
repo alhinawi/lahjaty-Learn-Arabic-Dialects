@@ -6,6 +6,7 @@
     "audio:index": "tsx scripts/build-audio-index.ts",
     "audio:missing": "tsx scripts/missing-audio.ts",
     "content:check": "tsx scripts/check-content.ts",
+    "dict:build": "python3 scripts/dictionary/build.py",
     "predev": "npm run audio:index",
     "dev": "vite",
     "prebuild": "npm run audio:index && npm run content:check",

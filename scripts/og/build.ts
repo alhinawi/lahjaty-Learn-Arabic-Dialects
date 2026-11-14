@@ -13,6 +13,7 @@ import { allEgyptNodes, egyptAncestors, egyptRegions } from '../../src/lib/egypt
 import { translate } from '../../src/lib/i18n'
 import { famousSlug, ogImageFor, SITE_NAME, SITE_URL, sharePath } from '../../src/lib/og'
 import { esc, H, W } from './html'
+import { readDictionary } from '../lib/dictionary'
 
 /**
  * The card renderer needs native packages (resvg, sharp). When a build image cannot load them, or OG_SKIP=1,
@@ -81,12 +82,21 @@ const sections: [string, string, string][] = [
   ['search', t('searchTitle'), t('searchBody')],
   ['favorites', t('favoritesTitle'), slogan],
   ['settings', t('settings'), slogan],
+  ['dictionary', t('dictTitle'), t('dictBody')],
+  ['word', t('dictWordInAll'), t('dictWordInAllBody')],
 ]
 for (const [id, title, body] of sections) draw(`/og/${id}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, section: title, sectionBody: body }))
 for (const cat of categories) {
   const sample = phrases.find((p) => p.category === cat.id)
   const body = sample ? `${sample.variants[STANDARD_ID]?.text ?? ''} · ${sample.english}` : slogan
   draw(`/og/lessons/${cat.id}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, section: `${cat.name} · ${cat.nameEn}`, sectionBody: body }))
+}
+
+const dict = readDictionary(process.cwd())
+for (const f of dict.files) {
+  const topic = dict.index.topics.find((x) => x.id === f.id)!
+  const body = f.entries.slice(0, 4).map((e) => e.fs).join(' · ')
+  draw(`/og/dictionary/${topic.id}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, section: `${topic.name} · ${topic.nameEn}`, sectionBody: body }))
 }
 
 const regionName = (id: string) => regions.find((r) => r.id === id)?.name ?? ''
@@ -154,6 +164,11 @@ const pages: Page[] = [
         sitemap: true,
       }
     }),
+  ...dict.index.topics.map((x) => ({ path: `/dictionary/${x.id}`, title: `${x.name} – ${t('dictTitle')}`, description: `كلمات «${x.name}» بكل اللهجات العربية، مع المقابل بالفصحى والمعنى بالإنجليزي. ${slogan}.`, imageAlt: `${x.name} – قاموس لهجتي`, sitemap: true })),
+  ...dict.entries.map((e) => {
+    const sample = Object.entries(e.words).slice(0, 6).map(([id, w]) => `${getDialect(id)?.name ?? id}: ${w}`).join('، ')
+    return { path: `/word/${e.id}`, title: `«${e.fs}» في كل لهجة`, description: `«${e.fs}» (${e.en}) بلهجات العرب: ${sample}.`, imageAlt: `«${e.fs}» في كل لهجة – لهجتي`, sitemap: true }
+  }),
   { path: '/egypt', title: t('egyptTitle'), description: t('egyptBody'), imageAlt: 'خريطة لهجات مصر', sitemap: true },
   ...allEgyptNodes().map((n) => ({ path: `/egypt/${n.id}`, title: `${n.name} – ${n.nameEn}`, description: n.summary?.ar ?? t('egyptBody'), imageAlt: `${n.name} على خريطة مصر`, sitemap: true })),
   ...allFamous.map(({ dialectId, phrase }) => {
