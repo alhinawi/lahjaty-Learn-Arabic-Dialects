@@ -307,3 +307,18 @@ To add a badge, add one line to `ACHIEVEMENTS` (an id, an icon, a goal and the n
 and the messages `badge_<id>` and `badge_<id>Body` in both languages in `src/lib/i18n.ts`. A test
 fails if either message is missing. A new badge is announced once, with a short message, the
 first time it is earned; badges earned before an update are marked seen quietly.
+
+## The installable app (PWA)
+
+`vite-plugin-pwa` (in `vite.config.ts`) writes the manifest and the service worker at build time.
+The service worker keeps the app shell (main script, styles, interface fonts, icons) ready offline;
+pages, dictionary topics, audio and share images are cached the first time they are opened, so
+they work offline afterwards. A new deploy replaces the old files by itself.
+
+The icons in `public/icons` are drawn from `public/favicon.svg`. After changing the logo, run:
+
+    python3 scripts/make-icons.py
+
+The install card (`src/components/InstallPrompt.tsx`) appears only after the visitor practised or
+stayed a while, and "not now" hides it for two weeks. On iPhone it shows the Share menu steps.
+Settings has the same install button. `public/_headers` stops Cloudflare from caching `sw.js`.

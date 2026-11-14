@@ -4,6 +4,8 @@ import { useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
 import Onboarding from './Onboarding'
 import BadgeToast from './BadgeToast'
+import InstallPrompt from './InstallPrompt'
+import OfflineBanner from './OfflineBanner'
 
 export default function Layout() {
   const t = useT()
@@ -66,6 +68,7 @@ export default function Layout() {
         </div>
         <div className="gold-rule opacity-70" />
       </header>
+      <OfflineBanner />
 
       <main className="mx-auto w-full max-w-2xl flex-1 px-4 pt-4 pb-28">
         <div key={pathname} className="animate-rise">
@@ -102,6 +105,7 @@ export default function Layout() {
       </nav>
       <Onboarding />
       <BadgeToast />
+      <InstallPrompt />
     </div>
   )
 }

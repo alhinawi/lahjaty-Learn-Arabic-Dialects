@@ -1,3 +1,4 @@
+import InstallSettings from '../components/InstallSettings'
 import { Languages, Monitor, Moon, Sun } from 'lucide-react'
 import MyDialectList from '../components/MyDialectList'
 import { getDialect } from '../lib/content'
@@ -72,6 +73,8 @@ export default function SettingsPage() {
         <p className="text-sm font-semibold text-brand-700">{mine ? name(mine) : t('myDialectNone')}</p>
         <MyDialectList />
       </section>
+
+      <InstallSettings />
 
       <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
         <h2 className="font-bold">{t('obRedo')}</h2>

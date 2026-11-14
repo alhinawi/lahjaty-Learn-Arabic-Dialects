@@ -40,6 +40,8 @@ export interface AppState {
   practiceDays: string[]
   /** Badges the visitor was already told about. Null until the first check, which tells nothing. */
   seenBadges: string[] | null
+  /** The install card stays away until this day (YYYY-MM-DD) after "not now". */
+  installSnoozedUntil: string
 
   setLang: (lang: Lang) => void
   toggleLang: () => void
@@ -60,6 +62,7 @@ export interface AppState {
   /** Counts today as a practice day. */
   markPracticed: () => void
   markBadgesSeen: (ids: string[]) => void
+  snoozeInstall: (until: string) => void
 }
 
 /** Keeps a short history of practice days: enough for a year of calendar. */
@@ -87,6 +90,7 @@ export const initialState = {
   streak: { count: 0, last: '' } as Streak,
   practiceDays: [] as string[],
   seenBadges: null as string[] | null,
+  installSnoozedUntil: '',
 }
 
 const toggleIn = (list: string[], item: string) =>
@@ -131,6 +135,7 @@ export const useApp = create<AppState>()(
           return { cards: { ...s.cards, [key]: review(s.cards[key], remembered, today) }, ...practised(s, today) }
         }),
       markPracticed: () => set((s) => practised(s)),
+      snoozeInstall: (until) => set({ installSnoozedUntil: until }),
       markBadgesSeen: (ids) => set((s) => ({ seenBadges: [...new Set([...(s.seenBadges ?? []), ...ids])] })),
     }),
     {
@@ -153,6 +158,7 @@ export const useApp = create<AppState>()(
         streak: s.streak,
         practiceDays: s.practiceDays,
         seenBadges: s.seenBadges,
+        installSnoozedUntil: s.installSnoozedUntil,
       }),
     },
   ),

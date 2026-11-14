@@ -10,6 +10,9 @@ import '@fontsource/el-messiri/latin-700.css'
 import '@fontsource/noto-naskh-arabic/arabic-500.css'
 import '@fontsource/noto-naskh-arabic/arabic-700.css'
 import './index.css'
+import { setupPwa } from './lib/pwa'
+
+setupPwa()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
