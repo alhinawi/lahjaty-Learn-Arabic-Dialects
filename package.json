@@ -10,7 +10,7 @@
     "predev": "npm run audio:index",
     "dev": "next dev",
     "prebuild": "npm run audio:index && npm run content:check",
-    "build": "next build && npm run og",
+    "build": "next build && npm run og && rm -rf dist && cp -r out dist",
     "og": "tsx scripts/og/build.ts",
     "preview": "python3 -m http.server 4173 --directory out",
     "pretest": "npm run audio:index",
