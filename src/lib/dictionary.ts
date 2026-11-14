@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import rawIndex from '../content/dictionary/index.json'
 import { dialects, getDialect, STANDARD_ID } from './content'
 import { normalize } from './search'
-import type { DictEntry, DictIndex, DictTopic, DictTopicFile } from './types'
+import type { DictEntry, DictIndex, DictTopic } from './types'
 import { dictAudioId } from './validate'
 
 export { dictAudioId }
@@ -13,9 +13,9 @@ const topicById = new Map(dictTopics.map((t) => [t.id, t]))
 export const getTopic = (id: string | undefined) => (id ? topicById.get(id) : undefined)
 export const topicOf = (entryId: string) => entryId.split('.')[0]
 
-/** One chunk per topic, so a page downloads only the topic it shows. */
-const loaders = import.meta.glob<DictTopicFile>(['../content/dictionary/*.json', '!../content/dictionary/index.json'], { import: 'default' })
-const loaderFor = (id: string) => loaders[`../content/dictionary/${id}.json`]
+import { topicLoaders } from './dictionaryLoaders'
+
+const loaderFor = (id: string) => topicLoaders[id]
 
 const cache = new Map<string, DictEntry[]>()
 const inflight = new Map<string, Promise<DictEntry[]>>()

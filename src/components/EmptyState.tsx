@@ -1,6 +1,8 @@
+'use client'
+
 import type { LucideIcon } from 'lucide-react'
 import type { ReactNode } from 'react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 
 /** A friendly empty or not-found state: an icon in a gold ring, a line or two, and one way forward. */
 export default function EmptyState({
@@ -27,8 +29,7 @@ export default function EmptyState({
         {body && <p className="mx-auto mt-1 max-w-xs text-sm text-slate-600">{body}</p>}
         {children}
         {action && (
-          <Link
-            to={action.to}
+          <Link href={action.to}
             className="mt-5 inline-flex items-center rounded-full bg-gradient-to-b from-sun-300 to-sun-500 px-5 py-2.5 text-sm font-bold text-brand-950 shadow-md shadow-sun-500/20 transition active:scale-95"
           >
             {action.label}

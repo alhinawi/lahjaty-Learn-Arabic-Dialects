@@ -2,12 +2,11 @@ import { getDialect, getFamous, isFamousId } from './content'
 import { getEgyptNode } from './egypt'
 
 /**
- * Where the site lives. Open Graph and Twitter need absolute links. Set VITE_SITE_URL (or SITE_URL) in the
- * host's build settings to change it, e.g. for a Cloudflare Pages domain.
+ * Where the site lives. Open Graph and Twitter need absolute links. Set NEXT_PUBLIC_SITE_URL (or SITE_URL
+ * for the build scripts) in the host's build settings to change it.
  */
-const viteEnv = (import.meta as { env?: Record<string, string | undefined> }).env
-const nodeEnv = typeof process !== 'undefined' ? process.env : undefined
-export const SITE_URL = (viteEnv?.VITE_SITE_URL || nodeEnv?.VITE_SITE_URL || nodeEnv?.SITE_URL || 'https://lahjaty.vercel.app').replace(/\/+$/, '')
+const env = typeof process !== 'undefined' ? process.env : undefined
+export const SITE_URL = (env?.NEXT_PUBLIC_SITE_URL || env?.SITE_URL || 'https://lahjaty.pages.dev').replace(/\/+$/, '')
 export const SITE_NAME = 'لهجتي – Lahjaty'
 
 /** The file name of a famous phrase's card: its id without the shared prefix. */

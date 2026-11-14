@@ -1,5 +1,7 @@
+'use client'
+
 import { Columns3, Quote } from 'lucide-react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 import { STANDARD_ID } from '../lib/content'
 import { dictAudioId, sameWordIn, wordIn } from '../lib/dictionary'
 import { useName, useT } from '../lib/i18n'
@@ -87,8 +89,7 @@ export default function DictEntryCard({ entry, dialectId }: Props) {
         </p>
       )}
 
-      <Link
-        to={`/word/${entry.id}`}
+      <Link href={`/word/${entry.id}`}
         className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-3 py-1.5 text-xs font-semibold text-brand-700 hover:bg-brand-100"
       >
         <Columns3 className="h-3.5 w-3.5" aria-hidden />

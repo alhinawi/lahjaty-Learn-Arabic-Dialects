@@ -1,5 +1,7 @@
+'use client'
+
 import { ChevronLeft, Languages, MessagesSquare } from 'lucide-react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 import type { EgyptNode, EgyptKind } from '../lib/egypt'
 import { egyptChildren, egyptRegionColors } from '../lib/egypt'
 import { useT } from '../lib/i18n'
@@ -29,8 +31,7 @@ export function EgyptNodeCard({ node }: { node: EgyptNode }) {
   const kids = egyptChildren(node)
   const where = node.area ? bi(node.area) : list(node.governorates).join(lang === 'ar' ? '، ' : ', ')
   return (
-    <Link
-      to={`/egypt/${node.id}`}
+    <Link href={`/egypt/${node.id}`}
       className="lift flex items-start gap-3 rounded-2xl border border-slate-200 bg-white p-3.5 shadow-sm hover:border-sun-400"
     >
       <span

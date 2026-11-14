@@ -1,6 +1,8 @@
+'use client'
+
 import { Search, X } from 'lucide-react'
 import { useDeferredValue, useId, useMemo, useState } from 'react'
-import { useNavigate } from 'react-router'
+import { useRouter } from 'next/navigation'
 import { getDialect } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { hitTitle, search } from '../lib/search'
@@ -12,7 +14,7 @@ export default function SearchBox({ initial = '', autoFocus = false, onSubmit }:
   const t = useT()
   const name = useName()
   const lang = useApp((s) => s.lang)
-  const navigate = useNavigate()
+  const router = useRouter()
   const [q, setQ] = useState(initial)
   const [open, setOpen] = useState(false)
   const deferred = useDeferredValue(q)
@@ -30,7 +32,7 @@ export default function SearchBox({ initial = '', autoFocus = false, onSubmit }:
     if (!v) return
     setOpen(false)
     if (onSubmit) onSubmit(v)
-    else navigate(`/search?q=${encodeURIComponent(v)}`)
+    else router.push(`/search?q=${encodeURIComponent(v)}`)
   }
 
   return (

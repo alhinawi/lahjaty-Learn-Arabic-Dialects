@@ -1,3 +1,5 @@
+'use client'
+
 /** Soft placeholders shown while a page or a dictionary topic loads. */
 export function SkeletonBlock({ className = '' }: { className?: string }) {
   return <div aria-hidden className={`skeleton rounded-2xl ${className}`} />

@@ -1,5 +1,7 @@
+'use client'
+
 import { ChevronLeft, MapPin } from 'lucide-react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 import { getDialect } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
@@ -12,8 +14,7 @@ export default function DialectChip({ next }: { next: string }) {
   const dialect = getDialect(useApp((s) => s.dialectId))
   if (!dialect) return null
   return (
-    <Link
-      to={`/dialects?next=${encodeURIComponent(next)}`}
+    <Link href={`/dialects?next=${encodeURIComponent(next)}`}
       className="flex items-center gap-3 rounded-2xl border border-brand-200 bg-white p-3 shadow-sm hover:border-brand-500"
     >
       <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-50 text-brand-700">

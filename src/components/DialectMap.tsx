@@ -1,6 +1,8 @@
+'use client'
+
 import { ChevronLeft, MapPin } from 'lucide-react'
 import { useState } from 'react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 import { dialects, getDialect, regions } from '../lib/content'
 import { MAP_H, MAP_W, project, regionColors, regionLabels, regionShapes, regionShort, toPath } from '../lib/geo'
 import { useName, useT } from '../lib/i18n'
@@ -136,8 +138,7 @@ export default function DialectMap({ compact = false }: { compact?: boolean }) {
         <ul className="flex flex-wrap gap-1.5">
           {inRegion.map((d) => (
             <li key={d.id}>
-              <Link
-                to={`/dialects/${d.id}`}
+              <Link href={`/dialects/${d.id}`}
                 className="lift inline-flex items-center gap-1 rounded-xl border border-slate-200 bg-sand-50 px-2.5 py-1.5 text-sm font-semibold text-slate-800"
               >
                 <MapPin className="h-3.5 w-3.5" style={{ color }} aria-hidden />
@@ -147,7 +148,7 @@ export default function DialectMap({ compact = false }: { compact?: boolean }) {
           ))}
         </ul>
         {compact || (
-          <Link to="/dialects" className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
+          <Link href="/dialects" className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
             {t('allDialects')}
             <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
           </Link>

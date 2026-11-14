@@ -1,12 +1,15 @@
+'use client'
+
 import { Briefcase, Check, ChevronLeft, Clapperboard, Languages, Plane, Sparkles, Users } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
-import { useLocation } from 'react-router'
+import { usePathname } from 'next/navigation'
 import { getDialect } from '../lib/content'
 import { GOALS, SUGGESTED_TO_LEARN } from '../lib/goals'
 import type { GoalId } from '../lib/goals'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
+import { useHydrated } from '../lib/useHydrated'
 import MyDialectList from './MyDialectList'
 
 const GOAL_ICONS: Record<GoalId, LucideIcon> = {
@@ -25,9 +28,11 @@ const STEPS = 3
  */
 export default function Onboarding() {
   const asked = useApp((s) => s.myDialectAsked)
-  const { pathname } = useLocation()
+  const hydrated = useHydrated()
+  const pathname = usePathname() ?? '/'
+  // Hidden until the saved state is read: it never prerenders, so returning visitors never see it flash.
   // A shared phrase link opens straight on the phrase; the welcome steps wait for the next visit.
-  if (asked || pathname.startsWith('/share/')) return null
+  if (!hydrated || asked || pathname.startsWith('/share/')) return null
   return <Steps />
 }
 
