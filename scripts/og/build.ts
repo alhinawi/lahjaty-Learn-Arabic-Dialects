@@ -75,21 +75,38 @@ const greetings = [...new Set(greetingIds.map((id) => how?.variants[id]?.text).f
 const slogan = t('heroTitle')
 const sloganEn = translate('en', 'heroTitle')
 
-// Full famous sayings from many dialects for the home collage, shuffled with a fixed seed so the card is stable.
-const isPhrase = (w: string) => w.trim().includes(' ') && [...w].length <= 34
-const phrasePool = [...new Set(allFamous.filter(({ dialectId }) => dialectId !== STANDARD_ID).map(({ phrase }) => phrase.text))].filter(isPhrase)
-function seededShuffle<T>(arr: T[], seed: number): T[] {
-  const a = [...arr]
-  let s = seed
-  for (let i = a.length - 1; i > 0; i--) {
-    s = (s * 1103515245 + 12345) % 2147483648
-    const j = s % (i + 1)
-    ;[a[i], a[j]] = [a[j]!, a[i]!]
-  }
-  return a
-}
-const homePhrases = seededShuffle(phrasePool, 5000)
-draw('/og/home.jpg', (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, phrases: homePhrases }))
+// The most famous phrase of each country, from its flagship dialect in famous.json. If a phrase text
+// ever disappears from the content, the dialect's first famous phrase takes its place, so the card
+// always builds and always matches the site.
+const COUNTRY_PICKS: [string, string][] = [
+  ['cai', 'يا عم'],
+  ['sud', 'يا زول'],
+  ['chd', 'لافي'],
+  ['dam', 'شو؟'],
+  ['leb', 'يا عيني'],
+  ['psu', 'على راسي'],
+  ['jor', 'نشمي'],
+  ['bag', 'شلونك؟'],
+  ['naj', 'أبشر'],
+  ['kuw', 'صج؟'],
+  ['emi', 'حيّاك'],
+  ['qat', 'إشحالك؟'],
+  ['bah', 'يا حلاته'],
+  ['oma', 'واجد'],
+  ['san', 'ما بش'],
+  ['mar', 'واخا'],
+  ['alg', 'واش راك؟'],
+  ['tun', 'عسلامة'],
+  ['tri', 'هلبة'],
+  ['has', 'شتاري؟'],
+]
+const countryPicks = COUNTRY_PICKS.map(([dialectId, wanted]) => {
+  const d = getDialect(dialectId)!
+  const fam = famousFor(dialectId)
+  const f = fam.find((x) => x.text === wanted) ?? fam[0]!
+  return { country: d.country ?? d.name, phrase: f.text, lonLat: [d.lon ?? 0, d.lat ?? 0] as [number, number] }
+})
+draw('/og/home.jpg', (c) => c.homeMapCard({ slogan, sloganEn, picks: countryPicks }))
 const sections: [string, string, string][] = [
   ['dialects', t('allDialects'), t('tagline')],
   ['lessons', t('lessonsTitle'), t('heroBody').split('،')[0]],

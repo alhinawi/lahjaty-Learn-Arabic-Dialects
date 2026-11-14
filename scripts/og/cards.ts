@@ -104,6 +104,7 @@ const defs = `<defs>
   <radialGradient id="fade" cx="0.62" cy="0.5" r="0.62"><stop offset=".25" stop-color="#000"/><stop offset="1" stop-color="#fff"/></radialGradient>
   <mask id="patMask"><rect width="${W}" height="${H}" fill="url(#fade)"/></mask>
   <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="18"/></filter>
+  <filter id="halo" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3.2"/></filter>
 </defs>`
 
 function background() {
@@ -152,15 +153,16 @@ function pill(xRight: number, y: number, label: string, o: { size?: number; fill
   }
 }
 
-/** The Arab-world map; one region can be lit in its own colour and a dot can mark a city. */
-function arabMap(x: number, y: number, width: number, o: { active?: RegionId; dot?: [number, number]; faint?: boolean } = {}) {
+/** The Arab-world map; one region can be lit in its own colour and a dot can mark a city. boost strengthens the faint map so text on it reads better. */
+function arabMap(x: number, y: number, width: number, o: { active?: RegionId; dot?: [number, number]; faint?: boolean; boost?: boolean } = {}) {
   const k = width / MAP_W
   const shapes = (Object.keys(regionShapes) as RegionId[])
     .map((id) => {
       const on = o.active === id
       const fill = o.faint ? C.gold : on ? regionColors[id] : C.cream
-      const fo = o.faint ? 0.07 : on ? 0.95 : 0.1
-      return `<path d="${toPath(regionShapes[id]!)}" fill="${fill}" fill-opacity="${fo}" stroke="${C.gold}" stroke-opacity="${on ? 0.95 : o.faint ? 0.32 : 0.45}" stroke-width="${(on ? 1.4 : 0.8) / k}" stroke-linejoin="round"/>`
+      const fo = o.faint ? (o.boost ? 0.12 : 0.07) : on ? 0.95 : 0.1
+      const so = on ? 0.95 : o.faint ? (o.boost ? 0.5 : 0.32) : 0.45
+      return `<path d="${toPath(regionShapes[id]!)}" fill="${fill}" fill-opacity="${fo}" stroke="${C.gold}" stroke-opacity="${so}" stroke-width="${(on ? 1.4 : 0.8) / k}" stroke-linejoin="round"/>`
     })
     .join('')
   let dot = ''
@@ -419,5 +421,55 @@ function homeCollageCard(c: HomeCard): string {
     const fs = fit(p, SANS, size, maxW, 15)
     body += `<g transform="translate(${x} ${y}) rotate(${rot})"><text x="0" y="0" font-family="${SANS}" font-weight="700" font-size="${fs}" fill="${fills[i % fills.length]}" text-anchor="middle">${esc(p)}</text></g>`
   })
+  return svgDoc(body)
+}
+
+export interface MapPick {
+  /** Country name in Arabic, e.g. مصر. */
+  country: string
+  /** The country's most famous phrase, from famous.json. */
+  phrase: string
+  /** Anchor point for the label on the map. */
+  lonLat: [number, number]
+}
+
+/** The home card: the brand, and the most famous phrase of each country sitting on its place on the map. */
+export function homeMapCard(c: { slogan: string; sloganEn: string; picks: MapPick[] }): string {
+  const R = W - 92
+  let body = logo(R - 72, 60, 72)
+  const nameSize = fit('لهجتي', DISPLAY, 76, 340)
+  const nameX = R - 72 - 20
+  body += `<g filter="url(#soft)" opacity=".5">${text(nameX, 140, 'لهجتي', { size: nameSize, family: DISPLAY, fill: C.gold })}</g>`
+  body += text(nameX, 140, 'لهجتي', { size: nameSize, family: DISPLAY, fill: 'url(#gold)' })
+  body += text(nameX - 2, 170, 'LAHJATY', { size: 15, weight: 500, fill: C.gold, spacing: 6 })
+  body += divider(R, R - 300, 452)
+  body += text(R, 508, c.slogan, { size: fit(c.slogan, SANS, 30, 420), fill: C.cream })
+  body += text(R, 546, c.sloganEn, { size: 16, weight: 500, fill: C.gold })
+  const mw = 890
+  const mh = arabMapHeight(mw)
+  const mx = 14
+  const my = (H - mh) / 2 + 20
+  body += arabMap(mx, my, mw, { faint: true, boost: true })
+  const k = mw / MAP_W
+  // Hand-tuned label offsets so crowded neighbours (the Levant, the Gulf) never overlap.
+  const nudges: Record<string, [number, number]> = {
+    'سوريا': [6, -46], 'لبنان': [-92, -16], 'فلسطين': [-110, 10], 'الأردن': [42, 62],
+    'العراق': [30, -14], 'الكويت': [30, 70], 'البحرين': [-60, 66], 'قطر': [30, 44],
+    'الإمارات': [96, 62], 'عُمان': [96, 14], 'السعودية': [-120, 52], 'اليمن': [30, 44],
+    'مصر': [-30, 70], 'السودان': [-16, 38], 'تشاد': [-6, 34],
+    'المغرب': [-20, 8], 'الجزائر': [-24, 44], 'تونس': [36, -44], 'ليبيا': [16, 34], 'موريتانيا': [30, 30],
+  }
+  const GOLD_BRIGHT = '#f2d98c'
+  for (const p of c.picks) {
+    const [px, py] = project(p.lonLat)
+    const [dx, dy] = nudges[p.country] ?? [0, 0]
+    const x = mx + px * k + dx
+    const y = my + py * k + dy
+    const s = fit(p.phrase, SANS, 27, 154, 12)
+    const label = text(x, y - s * 0.68, p.country, { size: 14.5, weight: 500, fill: C.gold, anchor: 'middle' })
+    const phrase = text(x, y, p.phrase, { size: s, anchor: 'middle', fill: GOLD_BRIGHT })
+    body += `<g filter="url(#halo)" opacity=".8">${text(x, y - s * 0.68, p.country, { size: 14.5, weight: 500, fill: C.ink, anchor: 'middle' })}${text(x, y, p.phrase, { size: s, anchor: 'middle', fill: C.ink })}</g>`
+    body += label + phrase
+  }
   return svgDoc(body)
 }
