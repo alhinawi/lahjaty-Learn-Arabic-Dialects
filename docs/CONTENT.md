@@ -143,8 +143,16 @@ Add an object to `phrases` in `src/content/phrases.json`:
 
 ## Meaning in the visitor's dialect
 
-Arab visitors pick their own dialect on first visit (Arabic interface) or in Settings.
-It is saved in the browser. Cards then show the meaning in that dialect first:
+On the first visit a short welcome flow (`src/components/Onboarding.tsx`, both interfaces) asks
+three things, each skippable: the visitor's own dialect (or "I don't speak Arabic yet"), why they
+are learning (a goal), and the dialect to learn. Settings can change the dialect and run the
+flow again. It is all saved in the browser.
+
+Goals live in `src/lib/goals.ts`: each goal lists the situation ids the home page suggests
+first. A goal needs `goal_<id>` and `goal_<id>Body` messages in `src/lib/i18n.ts`; a test
+checks both, and that every listed situation exists.
+
+Cards then show the meaning in the visitor's dialect first: Cards then show the meaning in that dialect first:
 
 - everyday phrase: the same phrase's text in the visitor's dialect;
 - famous phrase: the visitor's own famous phrase with the same `concept`, else the
@@ -220,7 +228,8 @@ dictionary words too (only words that are written for that dialect).
 
 Add `{ "id": "...", "name": "...", "nameEn": "..." }` to `categories`, then add an icon
 for it in `src/components/CategoryIcon.tsx` (any [lucide](https://lucide.dev) icon;
-unknown ids get a default icon).
+unknown ids get a default icon). To suggest it for a learning goal, add its id to that goal in
+`src/lib/goals.ts`.
 
 ## Check before you push
 

@@ -4,12 +4,25 @@ import { dialects, dialectsByRegion, searchDialects, STANDARD_ID } from '../lib/
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
 
-/** Searchable list of dialects for picking the visitor's own dialect. */
-export default function MyDialectList({ onPick }: { onPick?: () => void }) {
+/**
+ * Searchable list of dialects. By default it picks the visitor's own dialect in the store;
+ * pass value and onChange to pick something else (the welcome steps keep their answers locally).
+ */
+export default function MyDialectList({
+  onPick,
+  value,
+  onChange,
+}: {
+  onPick?: () => void
+  value?: string | null
+  onChange?: (id: string) => void
+}) {
   const t = useT()
   const name = useName()
-  const selected = useApp((s) => s.myDialectId)
-  const setMyDialect = useApp((s) => s.setMyDialect)
+  const stored = useApp((s) => s.myDialectId)
+  const storeSet = useApp((s) => s.setMyDialect)
+  const selected = value !== undefined ? value : stored
+  const setMyDialect = onChange ?? storeSet
   const [query, setQuery] = useState('')
   const groups = dialectsByRegion(searchDialects(query, dialects.filter((d) => d.id !== STANDARD_ID)))
 

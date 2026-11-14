@@ -3,6 +3,7 @@ import { createJSONStorage, persist } from 'zustand/middleware'
 import { bumpStreak, dayKey, review } from './srs'
 import type { CardState, Streak } from './srs'
 import { DEFAULT_DIALECT } from './content'
+import type { GoalId } from './goals'
 
 export type Lang = 'ar' | 'en'
 export type QuizMode = 'meaning' | 'match' | 'guess'
@@ -24,6 +25,8 @@ export interface AppState {
   myDialectId: string | null
   /** True once the first-visit question about the visitor's dialect was answered or skipped. */
   myDialectAsked: boolean
+  /** Why the visitor is learning, from the welcome steps. */
+  goal: GoalId | null
   favorites: string[]
   /** dialectId -> phrase ids marked as learned */
   learned: Record<string, string[]>
@@ -41,6 +44,10 @@ export interface AppState {
   toggleTranslit: () => void
   setMyDialect: (id: string | null) => void
   skipMyDialect: () => void
+  /** Ends the welcome steps with the visitor's answers. */
+  finishOnboarding: (answers: { myDialectId: string | null; goal: GoalId | null; dialectId: string }) => void
+  /** Shows the welcome steps again. */
+  restartOnboarding: () => void
   toggleFavorite: (dialectId: string, phraseId: string) => void
   toggleLearned: (dialectId: string, phraseId: string) => void
   recordQuiz: (mode: QuizMode, scope: string, correct: number, total: number) => void
@@ -57,6 +64,7 @@ export const initialState = {
   showTranslit: false,
   myDialectId: null as string | null,
   myDialectAsked: false,
+  goal: null as GoalId | null,
   favorites: [] as string[],
   learned: {} as Record<string, string[]>,
   bestScores: {} as Record<string, number>,
@@ -79,6 +87,8 @@ export const useApp = create<AppState>()(
       toggleTranslit: () => set((s) => ({ showTranslit: !s.showTranslit })),
       setMyDialect: (myDialectId) => set({ myDialectId, myDialectAsked: true }),
       skipMyDialect: () => set({ myDialectAsked: true }),
+      finishOnboarding: ({ myDialectId, goal, dialectId }) => set({ myDialectId, goal, dialectId, myDialectAsked: true }),
+      restartOnboarding: () => set({ myDialectAsked: false }),
       toggleFavorite: (dialectId, phraseId) =>
         set((s) => ({ favorites: toggleIn(s.favorites, favKey(dialectId, phraseId)) })),
       toggleLearned: (dialectId, phraseId) =>
@@ -111,6 +121,7 @@ export const useApp = create<AppState>()(
         showTranslit: s.showTranslit,
         myDialectId: s.myDialectId,
         myDialectAsked: s.myDialectAsked,
+        goal: s.goal,
         favorites: s.favorites,
         learned: s.learned,
         bestScores: s.bestScores,

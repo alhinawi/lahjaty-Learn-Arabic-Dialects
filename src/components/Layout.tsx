@@ -2,7 +2,7 @@ import { BookA, BookOpen, Columns3, GraduationCap, Heart, House, Languages, Moon
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
 import { useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
-import MyDialectSheet from './MyDialectSheet'
+import Onboarding from './Onboarding'
 
 export default function Layout() {
   const t = useT()
@@ -96,7 +96,7 @@ export default function Layout() {
           ))}
         </ul>
       </nav>
-      <MyDialectSheet />
+      <Onboarding />
     </div>
   )
 }

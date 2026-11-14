@@ -6,6 +6,7 @@ import Hero from '../components/Hero'
 import SearchBox from '../components/SearchBox'
 import DialectChip from '../components/DialectChip'
 import FamousHighlight from '../components/FamousHighlight'
+import GoalSuggestions from '../components/GoalSuggestions'
 import ProgressBar from '../components/ProgressBar'
 import { categories, phrases, phrasesInCategory } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
@@ -28,6 +29,8 @@ export default function HomePage() {
       <Hero />
 
       <SearchBox />
+
+      <GoalSuggestions />
 
       <FamousHighlight />
 

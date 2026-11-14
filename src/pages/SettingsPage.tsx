@@ -13,6 +13,7 @@ export default function SettingsPage() {
   const setMyDialect = useApp((s) => s.setMyDialect)
   const theme = useApp((s) => s.theme)
   const setTheme = useApp((s) => s.setTheme)
+  const restartOnboarding = useApp((s) => s.restartOnboarding)
 
   return (
     <div className="space-y-4">
@@ -70,6 +71,18 @@ export default function SettingsPage() {
         </div>
         <p className="text-sm font-semibold text-brand-700">{mine ? name(mine) : t('myDialectNone')}</p>
         <MyDialectList />
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+        <h2 className="font-bold">{t('obRedo')}</h2>
+        <p className="mt-0.5 text-sm text-slate-500">{t('obRedoBody')}</p>
+        <button
+          type="button"
+          onClick={restartOnboarding}
+          className="mt-3 rounded-full bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-700 hover:bg-brand-100"
+        >
+          {t('obRedo')}
+        </button>
       </section>
     </div>
   )
