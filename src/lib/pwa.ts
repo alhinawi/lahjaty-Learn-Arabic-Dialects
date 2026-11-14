@@ -31,9 +31,9 @@ export function setupPwa() {
     deferred = null
     notify()
   })
-  if ('serviceWorker' in navigator && import.meta.env.PROD) {
+  if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
     window.addEventListener('load', () => {
-      import('virtual:pwa-register').then(({ registerSW }) => registerSW({ immediate: true })).catch(() => {})
+      navigator.serviceWorker.register('/sw.js').catch(() => {})
     })
   }
 }

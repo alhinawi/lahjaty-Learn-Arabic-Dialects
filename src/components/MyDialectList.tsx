@@ -1,3 +1,5 @@
+'use client'
+
 import { Check, Search } from 'lucide-react'
 import { useState } from 'react'
 import { dialects, dialectsByRegion, searchDialects, STANDARD_ID } from '../lib/content'

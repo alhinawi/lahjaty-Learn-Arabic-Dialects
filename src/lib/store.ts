@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import { createJSONStorage, persist } from 'zustand/middleware'
+import type { StateStorage } from 'zustand/middleware'
 import { bumpStreak, dayKey, review } from './srs'
 import type { CardState, Streak } from './srs'
 import { DEFAULT_DIALECT } from './content'
@@ -93,6 +94,8 @@ export const initialState = {
   installSnoozedUntil: '',
 }
 
+const noopStorage: StateStorage = { getItem: () => null, setItem: () => {}, removeItem: () => {} }
+
 const toggleIn = (list: string[], item: string) =>
   list.includes(item) ? list.filter((x) => x !== item) : [...list, item]
 
@@ -141,7 +144,12 @@ export const useApp = create<AppState>()(
     {
       name: 'lahjaty:v1',
       version: 1,
-      storage: createJSONStorage(() => localStorage),
+      // Pages are prerendered with the default state; rehydrating synchronously on the client would make the
+      // first client render differ from the served HTML and React would discard the whole prerendered tree.
+      // AppShell calls useApp.persist.rehydrate() after mount instead, and store-driven UI fills in then.
+      skipHydration: true,
+      // On the server (build-time prerender) there is no localStorage: persist nothing, rehydrate on the client.
+      storage: createJSONStorage(() => (typeof window === 'undefined' ? noopStorage : window.localStorage)),
       partialize: (s) => ({
         lang: s.lang,
         theme: s.theme,
@@ -163,3 +171,4 @@ export const useApp = create<AppState>()(
     },
   ),
 )
+

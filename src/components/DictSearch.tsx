@@ -1,6 +1,8 @@
+'use client'
+
 import { Search, X } from 'lucide-react'
 import { useMemo, useState } from 'react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 import { getDialect } from '../lib/content'
 import { searchDictionary, useAllEntries } from '../lib/dictionary'
 import { useName, useT } from '../lib/i18n'
@@ -49,7 +51,7 @@ export default function DictSearch() {
             const d = h.dialectId ? getDialect(h.dialectId) : undefined
             return (
               <li key={h.entry.id}>
-                <Link to={`/word/${h.entry.id}`} className="flex items-center gap-3 px-4 py-3 hover:bg-brand-50">
+                <Link href={`/word/${h.entry.id}`} className="flex items-center gap-3 px-4 py-3 hover:bg-brand-50">
                   <span className="min-w-0 flex-1">
                     <span dir="rtl" lang="ar" className="dialect-text block font-bold text-slate-900">
                       {h.entry.fs}

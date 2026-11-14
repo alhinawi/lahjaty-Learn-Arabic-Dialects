@@ -1,3 +1,5 @@
+'use client'
+
 import { Play, Square } from 'lucide-react'
 import { useState } from 'react'
 import { isBroken, playAudio, stopAudio, usePlayingUrl } from '../lib/audio'

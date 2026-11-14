@@ -1,23 +1,24 @@
 /**
- * After `vite build`: draws the social cards into dist/og and writes one HTML file per page with its own
- * title, description, Open Graph and Twitter tags, so links shared on WhatsApp, Facebook or X show the
- * right card without a server. Also writes sitemap.xml and robots.txt.
+ * After `next build`: draws the social cards into out/og. The prerendered pages (Next static export)
+ * already carry their own title, description, Open Graph and Twitter tags, JSON-LD, sitemap.xml and
+ * robots.txt; this script only draws the images they point at. Any card that fails to draw is replaced
+ * by a copy of public/og-default.jpg, so no page ever points at a missing image.
  *
  *   npx tsx scripts/og/build.ts            (the build runs it)
  *   npx tsx scripts/og/build.ts --only home,dialects/cai --out /tmp/og   (draw a few cards to look at)
  */
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { copyFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { allFamous, categories, dialects, famousFor, getDialect, getPhrase, phrases, regions, STANDARD_ID } from '../../src/lib/content'
 import { allEgyptNodes, egyptAncestors, egyptRegions } from '../../src/lib/egypt'
 import { translate } from '../../src/lib/i18n'
-import { famousSlug, ogImageFor, SITE_NAME, SITE_URL, sharePath } from '../../src/lib/og'
-import { esc, H, W } from './html'
+import { famousSlug, ogImageFor, SITE_URL } from '../../src/lib/og'
+import { seoCatalog } from '../../src/lib/seo'
 import { readDictionary } from '../lib/dictionary'
 
 /**
  * The card renderer needs native packages (resvg, sharp). When a build image cannot load them, or OG_SKIP=1,
- * every page points at the prebuilt card committed in public/og-default.jpg instead, and the build goes on.
+ * every card slot gets a copy of the prebuilt card committed in public/og-default.jpg instead.
  */
 type Cards = typeof import('./cards')
 let cards: Cards | undefined
@@ -34,20 +35,9 @@ const failed = new Set<string>()
 const args = process.argv.slice(2)
 const only = args.includes('--only') ? new Set(args[args.indexOf('--only') + 1].split(',')) : undefined
 const outIdx = args.indexOf('--out')
-const DIST = outIdx >= 0 ? args[outIdx + 1] : 'dist'
+const DIST = outIdx >= 0 ? args[outIdx + 1] : 'out'
 const SITE = SITE_URL.replace(/^https?:\/\//, '')
 const t = (k: Parameters<typeof translate>[1]) => translate('ar', k)
-
-interface Page {
-  path: string
-  title: string
-  description: string
-  imageAlt: string
-  /** Pages that only exist to be shared stay out of the sitemap. */
-  sitemap?: boolean
-  /** Extra schema.org data for the page, added to its JSON-LD graph. */
-  jsonLd?: Record<string, unknown>
-}
 
 // ---------- cards ----------
 let drawn = 0
@@ -175,154 +165,25 @@ for (const job of jobs) {
 }
 await Promise.all(pending)
 
-// A card that could not be drawn falls back to the prebuilt default card.
-const imageFor = (path: string) => {
-  const rel = ogImageFor(path)
-  return failed.has(rel) ? FALLBACK_IMAGE : rel
-}
-
-// ---------- pages ----------
-const pages: Page[] = [
-  { path: '/', title: '', description: `${slogan}. ${t('heroBody')}`, imageAlt: `لهجتي: ${slogan}`, sitemap: true },
-  ...sections.map(([id, title, body]) => ({ path: `/${id}`, title, description: `${body}. ${slogan}.`, imageAlt: `${title} – لهجتي`, sitemap: !['favorites', 'settings', 'search', 'profile'].includes(id) })),
-  ...categories.map((c) => ({ path: `/lessons/${c.id}`, title: `${c.name} – ${t('lessonsTitle')}`, description: `جمل «${c.name}» بكل اللهجات العربية، مع المعنى بالفصحى والإنجليزي. ${slogan}.`, imageAlt: `${c.name} – لهجتي`, sitemap: true })),
-  ...dialects
-    .filter((d) => d.id !== STANDARD_ID)
-    .map((d) => {
-      const f = famousFor(d.id)[0]
-      return {
-        path: `/dialects/${d.id}`,
-        title: `لهجة ${d.name} (${d.nameEn})`,
-        description: `جمل الحياة اليومية بلهجة ${d.name}، وأشهر ما يقوله أهلها، مع المعنى بالفصحى والإنجليزي.${f ? ` «${f.text}»: ${f.standard}.` : ''}`,
-        imageAlt: `لهجة ${d.name} على الخريطة`,
-        sitemap: true,
-      }
-    }),
-  ...dict.index.topics.map((x) => ({ path: `/dictionary/${x.id}`, title: `${x.name} – ${t('dictTitle')}`, description: `كلمات «${x.name}» بكل اللهجات العربية، مع المقابل بالفصحى والمعنى بالإنجليزي. ${slogan}.`, imageAlt: `${x.name} – قاموس لهجتي`, sitemap: true })),
-  ...dict.entries.map((e) => {
-    const sample = Object.entries(e.words).slice(0, 6).map(([id, w]) => `${getDialect(id)?.name ?? id}: ${w}`).join('، ')
-    return {
-      path: `/word/${e.id}`,
-      title: `«${e.fs}» في كل لهجة`,
-      description: `«${e.fs}» (${e.en}) بلهجات العرب: ${sample}.`,
-      imageAlt: `«${e.fs}» في كل لهجة – لهجتي`,
-      sitemap: true,
-      jsonLd: {
-        '@type': 'DefinedTerm',
-        name: e.fs,
-        alternateName: [...new Set(Object.values(e.words))].slice(0, 20),
-        description: e.en,
-        inDefinedTermSet: { '@type': 'DefinedTermSet', name: t('dictTitle'), url: `${SITE_URL}/dictionary` },
-      },
-    }
-  }),
-  { path: '/egypt', title: t('egyptTitle'), description: t('egyptBody'), imageAlt: 'خريطة لهجات مصر', sitemap: true },
-  ...allEgyptNodes().map((n) => ({ path: `/egypt/${n.id}`, title: `${n.name} – ${n.nameEn}`, description: n.summary?.ar ?? t('egyptBody'), imageAlt: `${n.name} على خريطة مصر`, sitemap: true })),
-  ...allFamous.map(({ dialectId, phrase }) => {
-    const d = getDialect(dialectId)!
-    return { path: sharePath(dialectId, phrase.id), title: `«${phrase.text}» بلهجة ${d.name}`, description: `بالفصحى: ${phrase.standard}. ${phrase.english}. ${phrase.noteAr ?? ''}`.trim(), imageAlt: `«${phrase.text}» بلهجة ${d.name}` }
-  }),
-  ...phrases.flatMap((p) =>
-    dialects
-      .filter((d) => d.id !== STANDARD_ID && p.variants[d.id])
-      .map((d) => ({ path: sharePath(d.id, p.id), title: `«${p.variants[d.id]!.text}» بلهجة ${d.name}`, description: `بالفصحى: ${p.variants[STANDARD_ID]?.text ?? ''}. ${p.english}.`, imageAlt: `لهجة ${d.name} على الخريطة` })),
-  ),
-]
-
-// ---------- structured data ----------
-const titleByPath = new Map(pages.map((p) => [p.path, p.title]))
-/** Home > section > page, from the pages that exist at each step of the path. */
-function breadcrumbs(path: string) {
-  const parts = path.split('/').filter(Boolean)
-  if (parts.length < 2 || path.startsWith('/share/')) return null
-  const items = [{ name: SITE_NAME, url: `${SITE_URL}/` }]
-  for (let i = 1; i <= parts.length; i++) {
-    const sub = '/' + parts.slice(0, i).join('/')
-    const name = titleByPath.get(sub)
-    if (name) items.push({ name, url: SITE_URL + sub })
-  }
-  return {
-    '@type': 'BreadcrumbList',
-    itemListElement: items.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: x.url })),
-  }
-}
-const website = {
-  '@type': 'WebSite',
-  name: SITE_NAME,
-  alternateName: 'Lahjaty',
-  url: `${SITE_URL}/`,
-  description: `${slogan}. ${sloganEn}.`,
-  inLanguage: ['ar', 'en'],
-  potentialAction: { '@type': 'SearchAction', target: `${SITE_URL}/search?q={search_term_string}`, 'query-input': 'required name=search_term_string' },
-}
-function jsonLdFor(p: Page) {
-  const graph = [p.path === '/' ? website : null, breadcrumbs(p.path), p.jsonLd ?? null].filter(Boolean)
-  if (!graph.length) return ''
-  // Escapes < so no text in the data can close the script tag.
-  return `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c')}</script>`
-}
-
-function headFor(p: Page) {
-  const title = p.title ? `${p.title} | ${SITE_NAME}` : `${SITE_NAME} | ${slogan}`
-  const url = SITE_URL + (p.path === '/' ? '/' : p.path)
-  const image = SITE_URL + imageFor(p.path)
-  const desc = p.description.replace(/\s+/g, ' ').slice(0, 300)
-  const m = (k: string, v: string, attr = 'property') => `<meta ${attr}="${k}" content="${esc(v)}" />`
-  return [
-    `<title>${esc(title)}</title>`,
-    m('description', desc, 'name'),
-    `<link rel="canonical" href="${esc(url)}" />`,
-    m('og:type', 'website'),
-    m('og:site_name', SITE_NAME),
-    m('og:locale', 'ar_AR'),
-    m('og:locale:alternate', 'en_US'),
-    m('og:title', title),
-    m('og:description', desc),
-    m('og:url', url),
-    m('og:image', image),
-    m('og:image:secure_url', image),
-    m('og:image:type', 'image/jpeg'),
-    m('og:image:width', String(W)),
-    m('og:image:height', String(H)),
-    m('og:image:alt', p.imageAlt),
-    m('twitter:card', 'summary_large_image', 'name'),
-    m('twitter:title', title, 'name'),
-    m('twitter:description', desc, 'name'),
-    m('twitter:image', image, 'name'),
-    m('twitter:image:alt', p.imageAlt, 'name'),
-    jsonLdFor(p),
-  ]
-    .filter(Boolean)
-    .join('\n    ')
-}
-
+// ---------- verification ----------
+// Every page's metadata points at a card (src/lib/seo.ts + src/lib/og.ts); the card must exist.
+// A slot whose card failed to draw gets a copy of the prebuilt default card instead.
 if (!only) {
-  const template = readFileSync(join(DIST, 'index.html'), 'utf8')
-    .replace(/\s*<title>[\s\S]*?<\/title>/, '')
-    .replace(/\s*<meta name="description"[^>]*>/, '')
-    .replace(/\s*<meta (property|name)="(og|twitter):[^>]*>/g, '')
-  if (!template.includes('</head>')) throw new Error('dist/index.html has no </head>')
-  for (const p of pages) {
-    const html = template.replace('</head>', `  ${headFor(p)}\n  </head>`)
-    const file = p.path === '/' ? join(DIST, 'index.html') : join(DIST, p.path, 'index.html')
-    mkdirSync(dirname(file), { recursive: true })
-    writeFileSync(file, html)
-  }
-  const today = new Date().toISOString().slice(0, 10)
-  const urls = pages.filter((p) => p.sitemap).map((p) => `  <url><loc>${esc(SITE_URL + p.path)}</loc><lastmod>${today}</lastmod></url>`)
-  writeFileSync(join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`)
-  writeFileSync(join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`)
-  // Every card a page points at must exist.
-  const missing = [...new Set(pages.map((p) => imageFor(p.path)))].filter((rel) => {
-    try {
-      readFileSync(join(DIST, rel))
-      return false
-    } catch {
-      return true
+  const needed = [...new Set(seoCatalog().map((e) => ogImageFor(e.path)))]
+  let filled = 0
+  for (const rel of needed) {
+    if (!existsSync(join(DIST, rel))) {
+      const file = join(DIST, rel)
+      mkdirSync(dirname(file), { recursive: true })
+      copyFileSync('public/og-default.jpg', file)
+      filled++
     }
-  })
-  if (missing.length) throw new Error(`Pages point at cards that were not drawn: ${missing.slice(0, 5).join(', ')}`)
-  console.log(`og: ${drawn} cards${failed.size ? ` (${failed.size} fell back to ${FALLBACK_IMAGE})` : ''} in ${((Date.now() - started) / 1000).toFixed(1)}s, ${pages.length} pages, ${urls.length} in the sitemap`)
+  }
+  console.log(
+    `og: ${drawn} cards in ${((Date.now() - started) / 1000).toFixed(1)}s, ${needed.length} slots checked` +
+      (filled ? `, ${filled} filled with ${FALLBACK_IMAGE}` : '') +
+      (failed.size ? ` (${failed.size} failed)` : ''),
+  )
 } else {
   console.log(`og: ${drawn} cards`)
 }

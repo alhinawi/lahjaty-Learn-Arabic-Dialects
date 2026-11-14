@@ -1,5 +1,7 @@
+'use client'
+
 import { ChevronLeft, Trophy } from 'lucide-react'
-import { Link } from 'react-router'
+import Link from 'next/link'
 import { useT } from '../lib/i18n'
 import { useProgress } from '../lib/useProgress'
 
@@ -10,7 +12,7 @@ export default function ProfileCard() {
   const unlocked = badges.filter((b) => b.unlocked).length
   const pct = Math.round(((stats.xp - level.from) / (level.to - level.from)) * 100)
   return (
-    <Link to="/profile" className="lift flex items-center gap-3 rounded-2xl border border-sun-300/70 bg-white p-3.5 shadow-sm">
+    <Link href="/profile" className="lift flex items-center gap-3 rounded-2xl border border-sun-300/70 bg-white p-3.5 shadow-sm">
       <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-b from-brand-700 to-brand-900 text-sun-300 ring-2 ring-sun-400/50">
         <Trophy className="h-5 w-5" aria-hidden />
       </span>

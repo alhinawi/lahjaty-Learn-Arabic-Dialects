@@ -1,3 +1,5 @@
+'use client'
+
 import { getDialect } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
