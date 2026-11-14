@@ -1536,15 +1536,6 @@
         "example": "أبويا بيصطاد في البرلس من زمان"
       },
       {
-        "id": "famous.yalla_nestad",
-        "text": "يلّا نصطاد",
-        "english": "Let's go fishing",
-        "standard": "هيّا نصطاد",
-        "noteAr": "الصيد هنا شغل وفسحة في نفس الوقت",
-        "note": "Fishing here is both a job and a day out",
-        "example": "يلّا نصطاد بدري قبل الشمس"
-      },
-      {
         "id": "famous.el_roz_el_me3ammar",
         "text": "الرز المعمّر",
         "english": "Baked rice",

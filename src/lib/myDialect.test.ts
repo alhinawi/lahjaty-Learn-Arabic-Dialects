@@ -36,10 +36,10 @@ describe('famousInMyDialect', () => {
 })
 
 describe('famousInMyDialect only shows a true equivalent', () => {
-  it('does not answer "let\'s go fishing" with another dialect\'s "let\'s go for coffee"', () => {
-    const fishing = famousFor('kfs').find((f) => f.text === 'يلّا نصطاد')!
-    expect(fishing).toBeTruthy()
-    expect(famousInMyDialect(fishing, 'kfs', 'dkh')).toBeUndefined()
+  it('does not answer one dialect\'s local phrase with another dialect\'s different phrase', () => {
+    const tilapia = famousFor('kfs').find((f) => f.text === 'البلطي')!
+    expect(tilapia).toBeTruthy()
+    expect(famousInMyDialect(tilapia, 'kfs', 'dkh')).toBeUndefined()
     const coffee = famousFor('dkh').find((f) => f.text === 'يلّا عالقهوة')!
     for (const { phrase, dialectId } of allFamous) {
       expect(famousInMyDialect(phrase, dialectId, 'dkh')).not.toBe(coffee.text)

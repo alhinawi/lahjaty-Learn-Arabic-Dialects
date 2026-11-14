@@ -73,7 +73,21 @@ const greetings = [...new Set(greetingIds.map((id) => how?.variants[id]?.text).f
 const slogan = t('heroTitle')
 const sloganEn = translate('en', 'heroTitle')
 
-draw('/og/home.jpg', (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE }))
+// Full famous sayings from many dialects for the home collage, shuffled with a fixed seed so the card is stable.
+const isPhrase = (w: string) => w.trim().includes(' ') && [...w].length <= 34
+const phrasePool = [...new Set(allFamous.filter(({ dialectId }) => dialectId !== STANDARD_ID).map(({ phrase }) => phrase.text))].filter(isPhrase)
+function seededShuffle<T>(arr: T[], seed: number): T[] {
+  const a = [...arr]
+  let s = seed
+  for (let i = a.length - 1; i > 0; i--) {
+    s = (s * 1103515245 + 12345) % 2147483648
+    const j = s % (i + 1)
+    ;[a[i], a[j]] = [a[j]!, a[i]!]
+  }
+  return a
+}
+const homePhrases = seededShuffle(phrasePool, 5000)
+draw('/og/home.jpg', (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, phrases: homePhrases }))
 const sections: [string, string, string][] = [
   ['dialects', t('allDialects'), t('tagline')],
   ['lessons', t('lessonsTitle'), t('heroBody').split('،')[0]],

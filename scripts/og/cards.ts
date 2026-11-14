@@ -208,13 +208,18 @@ export interface HomeCard {
   sloganEn: string
   greetings: string[]
   site: string
+  /** Live counts shown under the divider: dialects, phrases, situations. */
+  stats?: [string, string][]
+  /** Famous sayings from many dialects for the collage. */
+  phrases?: string[]
   /** For an inner section: its title above the brand. */
   section?: string
   sectionBody?: string
 }
 
-/** The main card: the mark and name, the slogan, greetings from across the region, the map. */
+/** The main card: the mark and name, the slogan, the counts, and a collage of greetings from across the dialects. */
 export function homeCard(c: HomeCard): string {
+  if (!c.section) return homeCollageCard(c)
   const mapW = 560
   const mapH = arabMapHeight(mapW)
   let body = arabMap(36, H - mapH - 40, mapW, { faint: true })
@@ -374,5 +379,45 @@ export function egyptCard(c: EgyptCard): string {
     }
   }
   body += brandFooter(c.site)
+  return svgDoc(body)
+}
+
+/** The home card: the brand and the slogan over a scatter of famous sayings from across the dialects. */
+function homeCollageCard(c: HomeCard): string {
+  const R = W - 92
+  let body = logo(R - 72, 60, 72)
+  const nameSize = fit('لهجتي', DISPLAY, 92, 400)
+  const nameX = R - 72 - 26
+  body += `<g filter="url(#soft)" opacity=".5">${text(nameX, 158, 'لهجتي', { size: nameSize, family: DISPLAY, fill: C.gold })}</g>`
+  body += text(nameX, 158, 'لهجتي', { size: nameSize, family: DISPLAY, fill: 'url(#gold)' })
+  body += text(nameX - 4, 198, 'LAHJATY', { size: 17, weight: 500, fill: C.gold, spacing: 7 })
+  body += text(R, 274, c.slogan, { size: fit(c.slogan, SANS, 38, 980), fill: C.cream })
+  body += text(R, 312, c.sloganEn, { size: fit(c.sloganEn, SANS, 20, 980, 16, 500), weight: 500, fill: C.gold })
+  body += divider(R, R - 360, 348)
+  const fills = ['url(#gold)', C.cream, C.cream2, C.gold, C.cream3]
+  const spots: [number, number, number, number, number][] = [
+    [170, 122, 34, -4, 250],
+    [450, 118, 30, 3, 260],
+    [140, 210, 28, 5, 200],
+    [400, 215, 38, -3, 330],
+    [180, 305, 30, 3, 260],
+    [470, 300, 26, -5, 220],
+    [330, 392, 34, -3, 380],
+    [850, 398, 28, 4, 330],
+    [180, 480, 40, -3, 300],
+    [520, 486, 30, 4, 280],
+    [900, 484, 34, -4, 360],
+    [170, 566, 28, 3, 240],
+    [450, 566, 32, -3, 280],
+    [790, 568, 26, 4, 260],
+    [1060, 564, 30, -3, 220],
+  ]
+  const ps = c.phrases ?? []
+  spots.forEach(([x, y, size, rot, maxW], i) => {
+    const p = ps[i % ps.length]
+    if (!p) return
+    const fs = fit(p, SANS, size, maxW, 15)
+    body += `<g transform="translate(${x} ${y}) rotate(${rot})"><text x="0" y="0" font-family="${SANS}" font-weight="700" font-size="${fs}" fill="${fills[i % fills.length]}" text-anchor="middle">${esc(p)}</text></g>`
+  })
   return svgDoc(body)
 }
