@@ -1,0 +1,69 @@
+@topic sports | الرياضة | Sports | sports
+football | كرة القدم | football | n | EGS=كورة; LEVP=فوتبول / طابة; IQM=طوبة; KHL=كورة; hij=كورة; sud=كورة; MA=كورة / البالون; jeb=كورة; alg=بالون / كورة; tun=كورة; LY=كورة | cai: يلّا نلعب كورة. || bag: يلّا نلعب طوبة.
+ball | كرة | ball | n | EGS=كورة; LEVP=طابة; IQM=طوبة; KHL=كورة; hij=كورة; sud=كورة; MA=كورة; jeb=كورة; alg=بالون; tun=كورة; LY=كورة
+match | مباراة | match / game | n | EGS=ماتش; LEVP=ماتش / مباراة; IQM=مباراة / سباق; KHL=مباراة / ماتش; hij=مباراة / ماتش; sud=ماتش / كورة; MA=ماتش; jeb=ماتش; alg=ماتش; tun=ماتش; LY=ماتش / مباراة | cai: الماتش الساعة كام؟
+goal_score | هدف | goal (scored) | n | EGS=جون; LEVP=غول / هدف; IQM=گول / هدف; KHL=قول / هدف; hij=قول; sud=قون; MA=بوت; jeb=بوت; alg=بوت; tun=بوت; LY=قول | cai: جووون! || mar: ماركا بوت!
+team | فريق | team | n | EGS=فريق / منتخب; LEVP=فريق; IQM=فريق; KHL=فريق / نادي; hij=فريق; MAGT=فريق / إيكيب; alg=إيكيب / فريق
+club | نادٍ | club | n | ALL=نادي
+player | لاعب | player | n | ALL=لاعب; MAGT=لاعب / جووار
+win | فاز | to win | v | EGS=كسب; LEVP=ربح; IQM=فاز / غلب; KHL=فاز; hij=فاز; sud=غلب; MAGT=ربح; LY=ربح | cai: الأهلي كسب. || dam: مين ربح؟ || mar: شكون ربح؟
+lose | خسر | to lose | v | EGS=خسر / اتغلب; LEVP=خسر; IQM=خسر / انغلب; KHL=خسر / انغلب; hij=خسر; MAGT=خسر / تغلب
+draw | تعادل | draw (score) | n | EGS=تعادل; LEVP=تعادل; IQM=تعادل; KHL=تعادل; hij=تعادل; MAGT=تعادل / نول
+referee | حكم | referee | n | ALL=حكم; MAGT=أربيتر / حكم
+stadium | ملعب | stadium / pitch | n | EGS=ملعب / استاد; LEVP=ملعب; IQM=ملعب; KHL=ملعب / استاد; hij=ملعب; MAGT=ملعب / ستاد; alg=ستاد
+gym | صالة رياضية | gym | n | EGS=جيم; LEVP=نادي / جيم; IQM=جم / قاعة رياضة; KHL=نادي / جيم; hij=نادي / جيم; MAGT=صالة / سالة
+swimming | سباحة | swimming | n | ALL=سباحة; IQM=سباحة / سبح; MAGT=عوم | mar: كنبغي العوم.
+fan | مشجّع | fan (supporter) | n | EGS=مشجّع; LEVP=مشجّع; IQM=مشجّع; KHL=مشجّع; hij=مشجّع; MAGT=مشجّع / مناصر
+exercise | تمارين | to work out / exercise | n | EGS=تمارين / رياضة; LEVP=رياضة; IQM=رياضة / تمارين; KHL=تمارين / رياضة; hij=تمارين; MAGT=سبور / رياضة
+
+@topic tech | التكنولوجيا والموبايل | Technology and phones | tech
+mobile_phone | هاتف محمول | mobile phone | n | EGS=موبايل; LEVP=موبايل / خليوي; IQM=موبايل; KHL=تلفون / جوّال / موبايل; hij=جوّال; sud=موبايل / تلفون; MA=تيليفون / پورتابل; jeb=تيليفون; alg=پورتابل; tun=پورتابل / تليفون; LY=موبايل / تليفون | cai: الموبايل فصل شحن. || naj: الجوّال طافي. || alg: الپورتابل تاعي طفا.
+charger | شاحن | charger | n | EGS=شاحن; LEVP=شاحن / شارجر; IQM=شاحنة; KHL=شاحن; hij=شاحن; MAGT=شارجور | cai: معاك شاحن؟ || mar: عندك شي شارجور؟
+battery_dead | البطارية فرغت | battery's dead | phr | EGS=الموبايل فصل شحن; LEVP=خلص الشحن; IQM=خلص الشحن; KHL=خلص الشحن; hij=خلص الشحن; MAGT=كملت الباطري
+internet | إنترنت | internet | n | ALL=نت / إنترنت; MAGT=كونيكسيون / نت | cai: النت فاصل. || mar: ما كاينش الكونيكسيون.
+message | رسالة | message | n | EGS=رسالة / مسج; LEVP=رسالة / مسج; IQM=رسالة / مسج; KHL=رسالة / مسج; hij=رسالة; MAGT=ميساج
+computer | حاسوب | computer | n | EGS=كمبيوتر; LEVP=كمبيوتر; IQM=حاسبة / كمبيوتر; KHL=كمبيوتر; hij=كمبيوتر; MAGT=أورديناتور
+laptop | حاسوب محمول | laptop | n | ALL=لابتوب; MAGT=پيسي / لابتوب
+password | كلمة المرور | password | n | EGS=باسورد; LEVP=باسورد / كلمة السر; IQM=رمز / باسورد; KHL=رمز سري / باسورد; hij=رقم سري / باسورد; MAGT=مودپاس
+screen | شاشة | screen | n | ALL=شاشة; MAGT=إيكران
+photo | صورة | photo | n | ALL=صورة; MAGT=تصويرة / صورة
+voice_note | رسالة صوتية | voice note | n | EGS=فويس; LEVP=فويس / تسجيل; IQM=فويس / بصمة; KHL=فويس / بصمة; hij=فويس; MAGT=فوكال | kuw: طرّش لي بصمة.
+missed_call | مكالمة فائتة | missed call / quick ring | n | EGS=رنّة / ميسد كول; LEVP=ميسد كول; IQM=مسد كول; KHL=مسد كول; MA=بيب | cai: ادّيني رنّة لمّا توصل. || mar: عطيني بيب ملّي توصل.
+app | تطبيق | app | n | ALL=تطبيق / أبليكيشن; MAGT=أپليكاسيون / تطبيق
+download | تحميل | to download | v | EGS=نزّل; LEVP=نزّل; IQM=نزّل / حمّل; KHL=نزّل / حمّل; hij=نزّل; MAGT=تيليشارجا / نزّل | cai: نزّل الأبليكيشن.
+signal | تغطية | phone signal | n | EGS=شبكة; LEVP=إرسال; IQM=شبكة / تغطية; KHL=شبكة / تغطية; hij=شبكة; MAGT=ريزو | cai: مفيش شبكة هنا. || dam: ما في إرسال هون. || mar: ما كاينش الريزو.
+
+@topic religion | الدين في الكلام اليومي | Faith in everyday speech | religion
+inshallah | إن شاء الله | God willing | phr | ALL=إن شاء الله; MAGT=إن شاء الله / إنشالله
+mashallah | ما شاء الله | how wonderful (God has willed it) | phr | ALL=ما شاء الله; MAGT=تبارك الله / ما شاء الله
+alhamdulillah | الحمد لله | thank God | phr | ALL=الحمد لله; MAGT=الحمد لله / لاباس الحمد لله
+bismillah | بسم الله | in the name of God | phr | ALL=بسم الله
+subhanallah | سبحان الله | glory be to God | phr | ALL=سبحان الله
+god_bless | بارك الله فيك | God bless you (thanks) | phr | ALL=بارك الله فيك; EGS=ربنا يخليك / بارك الله فيك; LEVP=الله يخليك; IQM=الله يخليك; KHL=الله يعطيك العافية; MAGT=الله يبارك فيك; sud=الله يخليك
+god_knows | الله أعلم | God knows | phr | ALL=الله أعلم
+may_god_have_mercy | الله يرحمه | may God have mercy on him | phr | ALL=الله يرحمه; EGS=الله يرحمه / ربنا يرحمه
+god_willing_easy | الله يسهّل | may God make it easy | phr | ALL=الله يسهّل; EGS=ربنا يسهّل / الله يسهّل; MA=الله يسهّل / الله يعاون
+prayer | صلاة | prayer | n | ALL=صلاة; EGS=صلاة / صلا; MAGT=صلاة
+pray | صلّى | to pray | v | ALL=صلّى
+fasting | صيام | fasting | n | ALL=صيام; EGS=صيام / صوم; MAGT=صيام / صوم
+fasting_person | صائم | fasting (person) | adj | ALL=صايم
+iftar | إفطار | breaking the fast | n | ALL=فطار; MA=فطور; jeb=فطور; alg=فطور; tun=فطور
+suhoor | سحور | pre-dawn meal | n | ALL=سحور; MA=سحور / سحوريّة
+
+@topic occasions | المناسبات | Occasions and celebrations | occasions
+wedding | زفاف | wedding | n | EGS=فرح; LEVP=عرس; IQM=عرس; KHL=عرس; hij=زواج / عرس; YE=عرس; sud=عرس; MA=عرس; jeb=عرس; alg=عرس; tun=عرس; LY=عرس | cai: رايحين فرح بكره. || dam: رايحين على عرس بكرا.
+engagement | خطبة | engagement | n | ALL=خطبة; KHL=ملكة / خطبة; hij=ملكة / خطوبة; MA=خطوبة; jeb=خطوبة; alg=خطوبة
+bride | عروس | bride | n | ALL=عروس
+groom | عريس | groom | n | ALL=عريس
+birthday | عيد ميلاد | birthday | n | ALL=عيد ميلاد; MAGT=عيد ميلاد / أنيفرسار | cai: كل سنة وإنت طيب! || dam: كل سنة وإنت سالم!
+eid | عيد | Eid / holiday | n | ALL=عيد
+eid_greeting | عيد مبارك | happy Eid | phr | EGS=كل سنة وإنت طيب; LEVP=عيد مبارك / كل عام وإنت بخير; IQM=عيدكم مبارك / أيامكم سعيدة; KHL=عيدكم مبارك / من العايدين; hij=عيدكم مبارك / كل عام وإنت بخير; sud=عيد سعيد / كل سنة وإنت طيب; MA=عواشر مباركة; jeb=عواشر مباركة; alg=صحّة عيدكم; tun=عيدكم مبروك / صحّة عيدكم; LY=عيد مبارك
+eidiya | عيديّة | Eid money (for kids) | n | EGS=عيديّة; LEVP=عيديّة; IQM=عيديّة; KHL=عيادة / عيديّة; hij=عيديّة; MAGT=فلوس العيد
+ramadan_greeting | رمضان كريم | Ramadan Kareem | phr | ALL=رمضان كريم; EGS=رمضان كريم / رمضان مبارك; MAGT=رمضان مبارك / صحّة رمضانكم
+gift | هدية | gift | n | ALL=هديّة; MA=كادو / هديّة; jeb=هديّة; alg=كادو; tun=كادو / هديّة
+party | حفلة | party | n | EGS=حفلة; LEVP=حفلة / سهرة; IQM=حفلة; KHL=حفلة; hij=حفلة; MAGT=حفلة / فيتة
+guests | ضيوف | guests | n | ALL=ضيوف; EGS=ضيوف / ضيف; KHL=ضيوف / معازيب
+condolences | البقاء لله | my condolences | phr | EGS=البقيّة في حياتك; LEVP=الله يرحمه / البقاء لله; IQM=الباقية بحياتك; KHL=عظّم الله أجركم; hij=عظّم الله أجركم; sud=البركة فيكم; MA=الله يعظّم الأجر; jeb=الله يعظّم الأجر; alg=الله يرحمو; tun=الله يرحمو | cai: البقيّة في حياتك. || naj: عظّم الله أجركم.
+new_baby | مولود جديد | new baby | n | EGS=بيبي / مولود; LEVP=مولود / بيبي; IQM=مولود / بيبي; KHL=مولود / بيبي; MAGT=بيبي / زيادة
+sebou | احتفال بالمولود | baby's naming party | n | EGS=سبوع; MA=سبوع / عقيقة; jeb=سبوع; alg=سبوع | cai: سبوع البيبي يوم الجمعة.
+happy_occasion | كل عام وأنت بخير | many happy returns | phr | EGS=كل سنة وإنت طيب; LEVP=كل سنة وإنت سالم; IQM=كل عام وإنت بخير; KHL=كل عام وإنت بخير; hij=كل سنة وإنت طيب; sud=كل سنة وإنت طيب; MAGT=كل عام وإنت بخير

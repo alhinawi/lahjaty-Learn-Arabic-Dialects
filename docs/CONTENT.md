@@ -173,7 +173,11 @@ Edit the authoring files in `scripts/dictionary/data/*.txt`, never the generated
 - Several words for one dialect are separated by ` / `.
 - Leave a dialect out when you do not know its word: the card shows a dash and nothing else.
 - `pos` is one of `n v adj adv pron q int num phr conj prep`.
-- `icon` is a key of `src/components/TopicIcon.tsx`.
+- `icon` is a key of `src/components/TopicIcon.tsx`. A new icon needs one import and one key there;
+  an unknown key falls back to the sparkles icon.
+- One file can hold several topics (each starts with its own `@topic` line). Files are read in name
+  order, and that order is the order of the topic tiles on `/dictionary`. Add a new file with the next
+  number rather than reordering old ones.
 - The entry id is `<topicId>.<slug>`. **Never rename it** once published: it is in links and audio file names.
 
 Then run:

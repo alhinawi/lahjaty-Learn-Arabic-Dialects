@@ -156,6 +156,30 @@
    "name": "المدينة والأماكن",
    "nameEn": "Town and places",
    "icon": "city"
+  },
+  {
+   "id": "sports",
+   "name": "الرياضة",
+   "nameEn": "Sports",
+   "icon": "sports"
+  },
+  {
+   "id": "tech",
+   "name": "التكنولوجيا والموبايل",
+   "nameEn": "Technology and phones",
+   "icon": "tech"
+  },
+  {
+   "id": "religion",
+   "name": "الدين في الكلام اليومي",
+   "nameEn": "Faith in everyday speech",
+   "icon": "religion"
+  },
+  {
+   "id": "occasions",
+   "name": "المناسبات",
+   "nameEn": "Occasions and celebrations",
+   "icon": "occasions"
   }
  ]
 }
