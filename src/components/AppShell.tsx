@@ -9,6 +9,7 @@ import { useT } from '../lib/i18n'
 import { setupPwa } from '../lib/pwa'
 import { useApp } from '../lib/store'
 import BadgeToast from './BadgeToast'
+import AuthButton from './AuthButton'
 import InstallPrompt from './InstallPrompt'
 import OfflineBanner from './OfflineBanner'
 import Onboarding from './Onboarding'
@@ -121,6 +122,7 @@ export default function AppShell({ children }: { children: ReactNode }) {
               <Languages className="h-4 w-4" aria-hidden />
               <span>{t('langToggle')}</span>
             </button>
+            <AuthButton />
             <button
               type="button"
               onClick={() => setMenuOpen((o) => !o)}
