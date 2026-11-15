@@ -1,57 +1,68 @@
-# Lahjaty · لهجتي
+# Lahjaty | لهجتي
 
-Learn the Arabic dialects, for Arabs who want to understand other dialects and for
-learners of Arabic. Modern Standard Arabic and dialects from every region, everyday
-phrases grouped by situation, and the famous phrases of each dialect. The content keeps
-growing, so nothing in the app or the docs states a fixed number of dialects or phrases.
+[Open the live site](https://lahjaty.pages.dev/)
 
-- Dialect picker grouped by region, with search
-- Lessons by situation, phrase cards with English meaning, Standard Arabic equivalent,
-  transliteration (where available) and audio (where available)
-- Compare view: one sentence in Standard Arabic and every dialect side by side
-- Practice: pick the meaning, and guess the dialect of a sentence
-- Favorites and progress saved in the browser (localStorage); no accounts, no backend
-- Arabic UI (RTL) with an English UI toggle (LTR), mobile first
+Explore everyday Arabic across regions and dialects, with Standard Arabic and English meanings beside the phrases. Arabic RTL and English LTR interfaces are included.
 
-Stack: Next.js (static export), React, TypeScript, Tailwind CSS, Zustand. Deploys to
-Cloudflare Pages as a static site: every page is prerendered HTML (home, dialects,
-lessons, dictionary topics, one page per word and per shared phrase).
+## Live walkthrough
 
-## Run
+![Signed-out walkthrough of Lahjaty](docs/demo/walkthrough.gif)
+
+[Watch or download the MP4 recording](docs/demo/walkthrough.mp4). Two-voice Egyptian-Arabic narrated walkthrough, recorded from the live site on November 15, 2026; the interface may change as development continues.
+
+## Features
+
+- Searchable dialect picker, regional browsing and lessons by everyday situation.
+- Phrase cards with meanings, transliteration and audio where available.
+- Side-by-side dialect comparison, dictionary views and practice activities.
+- Favorites and learning progress, with browser storage for guest use.
+- Account/profile screens and a separate Hono + D1 backend in `backend/` for account features. This is no longer a frontend-only repository.
+- Prerendered routes, share cards and an offline service worker.
+
+## Stack
+
+Next.js App Router with static export, React, TypeScript, Tailwind CSS and Zustand. Cloudflare Pages hosts the frontend; the separate account API uses Hono, Workers and D1.
+
+## Run locally
 
 ```bash
 npm install
-npm run dev       # http://localhost:3000
+npm run dev          # http://localhost:3000
+npm run typecheck
 npm test
-npm run build     # static site in out/ (next build, then the og cards)
-npm run preview   # serve out/ on http://localhost:4173
+npm run build        # static output in out/, copied to dist/
+npm run preview      # http://localhost:4173
 ```
 
-## Deploy
-
-Deploys on Cloudflare Pages: build command `npm run build`, output directory `out`, Node 22.
-
-- Every route is a prerendered page with its own title, description, Open Graph/Twitter tags and JSON-LD (`src/lib/seo.ts` is the one catalog behind pages, `app/sitemap.ts` and `app/robots.ts`).
-- `NEXT_PUBLIC_SITE_URL` (or `SITE_URL` for the scripts) sets the absolute site URL used for canonical links, `og:url`, `og:image` and the sitemap. Default: `https://lahjaty.pages.dev`.
-- Share cards are drawn at build time with resvg and sharp into `out/og`. If those native packages cannot load, or `OG_SKIP=1` is set, every card slot gets a copy of the prebuilt `public/og-default.jpg` and the build still succeeds.
-- `public/_headers` carries the cache and security headers; the service worker `public/sw.js` caches pages, assets, audio and cards for offline use.
+Use a current Node.js LTS release compatible with the installed Next.js version. `predev`, `pretest` and `prebuild` generate the audio index automatically.
 
 ## Content and audio
 
-See **[docs/CONTENT.md](docs/CONTENT.md)** for how to add audio, voices, phrases and
-dialects (English, with an Arabic summary).
+See [the content guide](docs/CONTENT.md). Audio is optional per phrase; missing audio is not fabricated.
 
-Quick version: drop MP3s in `public/audio/<dialectId>/<phraseId>.mp3` and run
-`npm run audio:missing` to see what is left.
-
-## Layout
-
+```bash
+npm run content:check
+npm run audio:missing
 ```
-src/content/phrases.json    all dialects, regions, situations and phrases
-src/content/voices.json     optional voice manifest
-public/audio/               audio files
-scripts/                    audio index, missing-audio report, content check, og cards
-src/app/                    routes (one prerendered page each), metadata, sitemap
-src/lib/                    data access, quiz logic, store, i18n, the seo catalog
-src/screens/, src/components/  UI (client components rendered by the app routes)
+
+- `src/content/phrases.json`: dialects, situations and phrases.
+- `src/content/voices.json`: optional voice metadata.
+- `public/audio/`: phrase recordings.
+- `src/screens/`, `src/components/`: learning UI.
+- `src/lib/`: data, translations, state and SEO helpers.
+
+## Deployment and accounts
+
+Build command: `npm run build`. Static output: `out/` (also copied to `dist/`). `NEXT_PUBLIC_SITE_URL` controls canonical links; `SITE_URL` is used by build scripts. Share cards are generated during the build, with a prebuilt fallback if optional native rendering dependencies are unavailable.
+
+The API has separate dependencies and configuration:
+
+```bash
+cd backend
+npm install
+npm run db:migrate:local
+npm run dev
+npm run typecheck
 ```
+
+Local D1 migrations do not change the remote database. Configure Google OAuth and other private secrets on the Worker, not in public frontend environment variables. Account availability depends on that deployment.
