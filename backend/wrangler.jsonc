@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lahjaty-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-01",
+  "vars": {
+    // Comma separated. The site address(es) allowed to call the API from a browser.
+    "ALLOWED_ORIGINS": "https://lahjaty.pages.dev,http://localhost:3000,http://localhost:4173"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "lahjaty",
+      "database_id": "4662b91b-ecd5-4d97-a884-f6ae1e528441",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
