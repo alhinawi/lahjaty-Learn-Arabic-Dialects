@@ -58,7 +58,7 @@ export default function AuthModal({ onClose, initialError = null }: { onClose: (
         role="dialog"
         aria-modal="true"
         aria-labelledby="auth-title"
-        className="animate-pop w-full max-w-sm rounded-3xl bg-white p-5 shadow-2xl dark:bg-slate-900 dark:text-slate-100"
+        className="animate-pop max-h-[calc(100dvh-2rem)] w-full max-w-sm overflow-y-auto rounded-3xl bg-white p-5 shadow-2xl dark:bg-slate-900 dark:text-slate-100"
       >
         <div className="flex items-start justify-between gap-3">
           <div>
