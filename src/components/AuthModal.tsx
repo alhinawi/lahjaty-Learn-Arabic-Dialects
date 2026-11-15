@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { X } from 'lucide-react'
 import { useT } from '../lib/i18n'
 import { apiLogin, apiRegister, googleLoginUrl, type AuthErrorCode } from '../lib/api'
@@ -46,7 +47,9 @@ export default function AuthModal({ onClose, initialError = null }: { onClose: (
 
   const errKey = (error ? `authErr_${error}` : null) as Parameters<typeof t>[0] | null
 
-  return (
+  // Rendered in a portal: the header has its own stacking context (sticky + z-20),
+  // which would put the fixed bottom nav (also z-20, later in the DOM) above this dialog.
+  return createPortal(
     <div
       className="fixed inset-0 z-50 flex items-end justify-center bg-brand-950/60 p-4 backdrop-blur-sm sm:items-center"
       onPointerDown={(e) => {
@@ -150,6 +153,7 @@ export default function AuthModal({ onClose, initialError = null }: { onClose: (
           </button>
         </form>
       </div>
-    </div>
+    </div>,
+    document.body,
   )
 }
