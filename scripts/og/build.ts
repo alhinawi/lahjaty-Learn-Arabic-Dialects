@@ -135,8 +135,11 @@ for (const concept of concepts) {
   const present = WORD_GROUPS.filter((g) => words[g])
   if (!present.length) continue
   // Chips are this concept's own signature word in each region, in macro-region order, duplicates shown once.
-  const chips = [...new Set(present.map((g) => words[g]!))]
-  const body = present.map((g) => GROUP_CARD_LABEL[g]).join(' · ')
+  // The subtitle names only the regions whose chips fit on the card; the rest are counted, never implied.
+  const { chips, shownGroups, hidden } = cards?.conceptChipLayout(words, WORD_GROUPS) ?? {
+    chips: [], shownGroups: present, hidden: 0,
+  }
+  const body = shownGroups.map((g) => GROUP_CARD_LABEL[g]).join(' · ') + (hidden > 0 ? ` · مناطق أخرى: ${hidden}` : '')
   draw(`/og/concepts/${concept.id}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings: chips, site: SITE, section: `${concept.name} · ${concept.nameEn}`, sectionBody: body }))
 }
 for (const cat of categories) {
