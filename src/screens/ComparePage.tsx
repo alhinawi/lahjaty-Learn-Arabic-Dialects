@@ -1,6 +1,7 @@
 'use client'
 
-import { Search, Type } from 'lucide-react'
+import { ChevronLeft, Search, Type } from 'lucide-react'
+import Link from 'next/link'
 import { useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import ComparePicker from '../components/ComparePicker'
@@ -80,6 +81,10 @@ export default function ComparePage() {
           <p dir="rtl" lang="ar" className="dialect-text text-2xl font-bold">
             {concept.name}
           </p>
+          <Link href={`/concepts/${concept.id}/`} className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-sun-300 hover:text-sun-400">
+            {t('conceptInAll', { concept: concept.name })}
+            <ChevronLeft className="h-3 w-3 ltr:rotate-180" aria-hidden />
+          </Link>
         </section>
         <h2 className="text-sm font-bold text-slate-500">{t('dialectsThatHaveIt')}</h2>
         <label className="relative block">
