@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { allFamous, dialects, STANDARD_ID } from './content'
+import { allFamous, concepts, dialects, STANDARD_ID } from './content'
 import { allEgyptNodes } from './egypt'
 import { famousSlug, ogImageFor, sharePath } from './og'
 
@@ -19,5 +19,13 @@ describe('ogImageFor', () => {
 
   it('shares an everyday phrase with its dialect card', () => {
     expect(ogImageFor(sharePath('cai', 'greetings.how_are_you'))).toBe('/og/dialects/cai.jpg')
+  })
+
+  it('gives every concept with regional words its own card, others the concepts card', () => {
+    for (const c of concepts) {
+      const has = Object.keys(c.words ?? {}).length > 0
+      expect(ogImageFor(`/concepts/${c.id}/`), c.id).toBe(has ? `/og/concepts/${c.id}.jpg` : '/og/concepts.jpg')
+    }
+    expect(ogImageFor('/concepts/')).toBe('/og/concepts.jpg')
   })
 })
