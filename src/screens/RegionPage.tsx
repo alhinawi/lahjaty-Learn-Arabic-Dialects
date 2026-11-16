@@ -1,8 +1,9 @@
 'use client'
 
-import { ChevronLeft, ChevronRight, Lightbulb, Map } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Lightbulb, Map, Sparkles } from 'lucide-react'
 import Link from 'next/link'
-import { dialectsInGroup, groupWords } from '../lib/content'
+import FamousCard from '../components/FamousCard'
+import { dialectsInGroup, famousFor, groupWords } from '../lib/content'
 import type { WordGroup } from '../lib/types'
 import { useName, useT } from '../lib/i18n'
 import { GROUP_KEY } from './RegionsPage'
@@ -13,6 +14,13 @@ export default function RegionPage({ group }: { group: WordGroup }) {
   const name = useName()
   const groupDialects = dialectsInGroup(group)
   const words = groupWords(group)
+  // One signature famous phrase per dialect of the region, capped so the hub stays a summary.
+  const famousSample = groupDialects
+    .flatMap((d) => {
+      const fam = famousFor(d.id)
+      return fam.length ? [{ dialectId: d.id, phrase: fam[0] }] : []
+    })
+    .slice(0, 6)
 
   return (
     <div className="space-y-4">
@@ -32,6 +40,18 @@ export default function RegionPage({ group }: { group: WordGroup }) {
           {t('regionDialectCount', { n: groupDialects.length })} · {t('regionWordCount', { n: words.length })}
         </p>
       </header>
+
+      {famousSample.length > 0 && (
+        <section className="space-y-3">
+          <h2 className="flex items-center gap-1.5 text-lg font-bold">
+            <Sparkles className="h-5 w-5 text-sun-500" aria-hidden />
+            {t('regionFamousTitle')}
+          </h2>
+          {famousSample.map(({ dialectId, phrase }) => (
+            <FamousCard key={phrase.id} phrase={phrase} dialectId={dialectId} showDialect />
+          ))}
+        </section>
+      )}
 
       <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
         <h2 className="mb-2 text-sm font-bold">{t('regionDialectsTitle')}</h2>
