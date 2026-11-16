@@ -69,7 +69,12 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
           <dl className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
             {regionWords.map(([group, word]) => (
               <div key={group} className="flex items-baseline gap-1.5">
-                <dt className="text-slate-500">{REGION_LABEL[group] ?? group}:</dt>
+                <dt className="text-slate-500">
+                  <Link href={`/regions/${group}/`} className="underline-offset-2 hover:text-brand-700 hover:underline">
+                    {REGION_LABEL[group] ?? group}
+                  </Link>
+                  :
+                </dt>
                 <dd dir="rtl" lang="ar" className="dialect-text font-bold text-brand-800">{word}</dd>
               </div>
             ))}
