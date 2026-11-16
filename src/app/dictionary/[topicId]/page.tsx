@@ -23,7 +23,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <JsonLd path={`/dictionary/${topicId}`} />
-      <DictTopicPage topicId={topicId} />
+      <DictTopicPage topicId={topicId} initialEntries={topicEntries.get(topicId)} />
     </>
   )
 }
