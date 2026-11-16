@@ -9,7 +9,7 @@
  */
 import { copyFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
-import { allFamous, categories, dialects, dialectsInGroup, famousFor, getDialect, getPhrase, groupWords, phrases, regions, STANDARD_ID, WORD_GROUPS } from '../../src/lib/content'
+import { allFamous, categories, concepts, dialects, dialectsInGroup, famousFor, getDialect, getPhrase, groupWords, phrases, regions, STANDARD_ID, WORD_GROUPS } from '../../src/lib/content'
 import { allEgyptNodes, egyptAncestors, egyptRegions } from '../../src/lib/egypt'
 import { translate } from '../../src/lib/i18n'
 import { famousSlug, ogImageFor, SITE_URL } from '../../src/lib/og'
@@ -129,6 +129,15 @@ for (const group of WORD_GROUPS) {
   // Chips come from this region's own attributed famous phrases, never the global greeting pool.
   const chips = [...new Set(groupDialects.map((d) => famousFor(d.id)[0]?.text).filter((x): x is string => !!x))]
   draw(`/og/regions/${group}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings: chips, site: SITE, section: `لهجات ${label}`, sectionBody: body }))
+}
+for (const concept of concepts) {
+  const words = concept.words ?? {}
+  const present = WORD_GROUPS.filter((g) => words[g])
+  if (!present.length) continue
+  // Chips are this concept's own signature word in each region, in macro-region order, duplicates shown once.
+  const chips = [...new Set(present.map((g) => words[g]!))]
+  const body = present.map((g) => GROUP_CARD_LABEL[g]).join(' · ')
+  draw(`/og/concepts/${concept.id}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings: chips, site: SITE, section: `${concept.name} · ${concept.nameEn}`, sectionBody: body }))
 }
 for (const cat of categories) {
   const sample = phrases.find((p) => p.category === cat.id)
