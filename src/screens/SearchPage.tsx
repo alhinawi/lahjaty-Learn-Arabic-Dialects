@@ -8,11 +8,11 @@ import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import PlayButton from '../components/PlayButton'
 import SearchBox from '../components/SearchBox'
-import { dialectsByRegion, famousByConcept, getConcept, getDialect, STANDARD_ID } from '../lib/content'
+import { dialectsByRegion, dialectsInGroup, famousByConcept, getConcept, getDialect, groupWords, STANDARD_ID } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { searchDictionary, useAllEntries } from '../lib/dictionary'
 import type { DictHit } from '../lib/dictionary'
-import { hitTitle, search } from '../lib/search'
+import { hitTitle, regionLabel, search } from '../lib/search'
 import type { SearchHit } from '../lib/search'
 import { useApp } from '../lib/store'
 import type { Dialect } from '../lib/types'
@@ -25,7 +25,7 @@ interface Row {
 }
 
 function rowsFor(hit: SearchHit): Row[] {
-  if (hit.kind === 'egypt') return []
+  if (hit.kind === 'egypt' || hit.kind === 'region') return []
   if (hit.kind === 'phrase') {
     return Object.entries(hit.phrase.variants).flatMap(([id, v]) => {
       const d = id === STANDARD_ID ? undefined : getDialect(id)
@@ -108,13 +108,43 @@ function ResultCard({ hit }: { hit: SearchHit }) {
           <ul className="space-y-0.5">{dialects.map((d) => line(byId.get(d.id)!))}</ul>
         </section>
       ))}
-      {compareHref && (
-        <Link href={compareHref} className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
-          {t('searchCompare')}
-          <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
-        </Link>
-      )}
+      <div className="mt-3 flex flex-wrap items-center gap-4">
+        {compareHref && (
+          <Link href={compareHref} className="inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
+            {t('searchCompare')}
+            <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
+          </Link>
+        )}
+        {hit.kind === 'concept' && (
+          <Link href={`/concepts/${hit.conceptId}/`} className="inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
+            {t('conceptOpen')}
+            <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
+          </Link>
+        )}
+      </div>
     </article>
+  )
+}
+
+/** A macro-region: its name and a taste of what's on its hub page. */
+function RegionResult({ hit }: { hit: Extract<SearchHit, { kind: 'region' }> }) {
+  const t = useT()
+  const lang = useApp((s) => s.lang)
+  const dialects = dialectsInGroup(hit.group)
+  const words = groupWords(hit.group)
+  return (
+    <Link href={`/regions/${hit.group}/`} className="lift flex items-center gap-3 rounded-3xl border border-slate-200 bg-white p-4 shadow-sm hover:border-sun-400">
+      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-brand-50 text-brand-700 ring-1 ring-brand-100">
+        <MapPinned className="h-5 w-5" aria-hidden />
+      </span>
+      <span className="min-w-0 flex-1">
+        <span dir={lang === 'ar' ? 'rtl' : 'ltr'} className="dialect-text block truncate text-base font-bold text-slate-900">{regionLabel(hit.group, lang)}</span>
+        <span className="text-xs text-slate-500">
+          {t('regionDialectCount', { n: dialects.length })} · {t('regionWordCount', { n: words.length })}
+        </span>
+      </span>
+      <ChevronLeft className="h-4 w-4 shrink-0 text-slate-500 ltr:rotate-180" aria-hidden />
+    </Link>
   )
 }
 
@@ -183,7 +213,7 @@ export default function SearchPage() {
         </p>
       )}
       <div className="space-y-3">
-        {hits.map((h) => (h.kind === 'egypt' ? <EgyptResult key={h.key} hit={h} /> : <ResultCard key={h.key} hit={h} />))}
+        {hits.map((h) => (h.kind === 'egypt' ? <EgyptResult key={h.key} hit={h} /> : h.kind === 'region' ? <RegionResult key={h.key} hit={h} /> : <ResultCard key={h.key} hit={h} />))}
       </div>
       {dictHits.length > 0 && (
         <section className="space-y-3">

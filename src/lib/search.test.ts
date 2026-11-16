@@ -33,6 +33,13 @@ describe('search', () => {
     expect(search('الدقهليه').some((h) => h.kind === 'egypt')).toBe(true)
   })
 
+  it('finds every macro-region by its Arabic and English name', () => {
+    for (const [q, group] of [['الخليج', 'gulf'], ['gulf', 'gulf'], ['المغرب العربي', 'maghreb'], ['maghreb', 'maghreb'], ['الشام', 'levant']] as const) {
+      const hit = search(q).find((h) => h.kind === 'region' && h.group === group)
+      expect(hit, q).toBeTruthy()
+    }
+  })
+
   it('returns nothing for an empty query', () => {
     expect(search('   ')).toEqual([])
   })
