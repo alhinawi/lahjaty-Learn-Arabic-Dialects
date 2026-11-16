@@ -1,13 +1,15 @@
 import type { Metadata } from 'next'
 import JsonLd from '../../../components/JsonLd'
 import ConceptPage from '../../../screens/ConceptPage'
-import { concepts, famousByConcept } from '../../../lib/content'
+import { concepts, famousByConcept, STANDARD_ID } from '../../../lib/content'
 import { metadataFor } from '../../../lib/seo'
 
 export const dynamicParams = false
 
 export function generateStaticParams() {
-  return concepts.filter((c) => famousByConcept(c.id).length > 0).map((c) => ({ conceptId: c.id }))
+  return concepts
+    .filter((c) => famousByConcept(c.id).some((v) => v.dialectId !== STANDARD_ID))
+    .map((c) => ({ conceptId: c.id }))
 }
 
 interface Props {

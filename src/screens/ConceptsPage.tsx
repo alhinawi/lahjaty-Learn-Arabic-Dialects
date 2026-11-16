@@ -2,14 +2,15 @@
 
 import { ChevronLeft, Lightbulb } from 'lucide-react'
 import Link from 'next/link'
-import { concepts, famousByConcept } from '../lib/content'
+import { concepts, famousByConcept, STANDARD_ID } from '../lib/content'
 import { useT } from '../lib/i18n'
 
 /** Every concept that at least one dialect has a famous phrase for, as an index of meaning-first pages. */
 export default function ConceptsPage() {
   const t = useT()
+  // Standard Arabic is the reference, not a dialect: count real dialect variants only.
   const used = concepts
-    .map((c) => ({ concept: c, variants: famousByConcept(c.id) }))
+    .map((c) => ({ concept: c, variants: famousByConcept(c.id).filter((v) => v.dialectId !== STANDARD_ID) }))
     .filter((x) => x.variants.length > 0)
 
   return (
