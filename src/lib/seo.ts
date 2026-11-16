@@ -44,8 +44,15 @@ export interface SeoEntry {
   title: string
   description: string
   imageAlt: string
-  /** Pages that only exist to be shared or are personal stay out of the sitemap. */
-  sitemap?: boolean
+  /**
+   * Explicit indexing intent, decided per route type on its content:
+   * true = canonical content page, listed in the sitemap and indexable;
+   * false = interactive shell, personal page or share target, kept out of
+   * the sitemap and served with robots noindex,follow. Required so a new
+   * route cannot silently default either way; the coverage test in
+   * seo.test.ts fails when a route type has no catalog entry at all.
+   */
+  sitemap: boolean
   /** Extra schema.org data for the page, added to its JSON-LD graph. */
   jsonLd?: Record<string, unknown>
 }
@@ -77,12 +84,14 @@ export function seoCatalog(): SeoEntry[] {
       // Interactive shells (pickers, personal pages, client-only tools) stay out of the sitemap and get noindex below.
       sitemap: !['favorites', 'settings', 'search', 'profile', 'compare'].includes(id),
     })),
-    { path: '/practice/cards', title: t('modeCards'), description: `${t('modeCardsBody')}. ${slogan}.`, imageAlt: `${t('modeCards')} – لهجتي` },
+    // Interactive drill modes: client-rendered shells, discoverable through the /practice landing.
+    { path: '/practice/cards', title: t('modeCards'), description: `${t('modeCardsBody')}. ${slogan}.`, imageAlt: `${t('modeCards')} – لهجتي`, sitemap: false },
     ...(['meaning', 'match', 'guess'] as const).map((mode) => ({
       path: `/practice/${mode}`,
       title: t('practiceTitle'),
       description: `${t('practiceBody')}. ${slogan}.`,
       imageAlt: `${t('practiceTitle')} – لهجتي`,
+      sitemap: false,
     })),
     ...categories.map((c) => ({
       path: `/lessons/${c.id}`,
@@ -189,6 +198,8 @@ export function seoCatalog(): SeoEntry[] {
         title: `«${phrase.text}» بلهجة ${d.name}`,
         description: `بالفصحى: ${phrase.standard}. ${phrase.english}. ${phrase.noteAr ?? ''}`.trim(),
         imageAlt: `«${phrase.text}» بلهجة ${d.name}`,
+        // Thin share target: one phrase in one dialect, canonical content lives on the dialect/concept pages.
+        sitemap: false,
       }
     }),
     ...phrases.flatMap((p) =>
@@ -199,6 +210,8 @@ export function seoCatalog(): SeoEntry[] {
           title: `«${p.variants[d.id]!.text}» بلهجة ${d.name}`,
           description: `بالفصحى: ${p.variants[STANDARD_ID]?.text ?? ''}. ${p.english}.`,
           imageAlt: `لهجة ${d.name} على الخريطة`,
+          // Thin share target, same call as the famous-phrase shares above.
+          sitemap: false,
         })),
     ),
   ]
