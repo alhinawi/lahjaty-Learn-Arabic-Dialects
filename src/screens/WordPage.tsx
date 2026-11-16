@@ -8,13 +8,17 @@ import PlayButton from '../components/PlayButton'
 import { dialectsByRegion, getDialect, STANDARD_ID } from '../lib/content'
 import { conceptForEntry } from '../lib/conceptDict'
 import { dictAudioId, getTopic, topicOf, useEntry } from '../lib/dictionary'
-import type { DictEntry } from '../lib/types'
+import { topicEntries } from '../lib/dictionaryAll'
+import rawDictIndex from '../content/dictionary/index.json'
+import type { DictEntry, DictIndex } from '../lib/types'
 import { useName, useT } from '../lib/i18n'
 import type { MessageKey } from '../lib/i18n'
 import { useApp } from '../lib/store'
 import NotFoundPage from './NotFoundPage'
 
 /** /word: search for a word. /word/:entryId: that word in every dialect, grouped by region. */
+const dictTopics = (rawDictIndex as DictIndex).topics
+
 export default function WordPage({ entryId, initialEntry }: { entryId?: string; initialEntry?: DictEntry }) {
   const t = useT()
   const name = useName()
@@ -36,6 +40,32 @@ export default function WordPage({ entryId, initialEntry }: { entryId?: string; 
         <Link href="/dictionary" className="block text-center text-sm font-semibold text-brand-700">
           {t('dictAllTopics')}
         </Link>
+
+        {/* Browse every word by topic: real links in the prerendered HTML, so crawlers and
+            no-JS visitors reach all word pages and users can browse without searching. */}
+        {dictTopics.map((topic) => (
+          <section key={topic.id} className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
+            <h2 className="mb-2 font-bold">
+              <Link href={`/dictionary/${topic.id}`} className="text-brand-700 hover:underline">
+                {name(topic)}
+              </Link>
+            </h2>
+            <ul className="flex flex-wrap gap-1.5">
+              {(topicEntries.get(topic.id) ?? []).map((e) => (
+                <li key={e.id}>
+                  <Link
+                    href={`/word/${e.id}`}
+                    dir="rtl"
+                    lang="ar"
+                    className="dialect-text inline-block rounded-full bg-brand-50 px-3 py-1.5 text-sm font-semibold text-brand-700 hover:bg-brand-100"
+                  >
+                    {e.fs}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
       </div>
     )
   }
