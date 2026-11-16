@@ -3,18 +3,10 @@
 import { ChevronLeft, Map } from 'lucide-react'
 import Link from 'next/link'
 import { dialectsInGroup, groupWords, WORD_GROUPS } from '../lib/content'
-import type { WordGroup } from '../lib/types'
-import { useT, type MessageKey } from '../lib/i18n'
+import { useT } from '../lib/i18n'
+import { GROUP_KEY } from '../lib/regionsMeta'
 
-export const GROUP_KEY: Record<WordGroup, MessageKey> = {
-  egypt: 'groupEgypt',
-  sudan: 'groupSudan',
-  levant: 'groupLevant',
-  iraq: 'groupIraq',
-  gulf: 'groupGulf',
-  yemen: 'groupYemen',
-  maghreb: 'groupMaghreb',
-}
+export { GROUP_KEY }
 
 /** The macro-regions of the Arabic dialect world, each with its dialects and signature words. */
 export default function RegionsPage() {
