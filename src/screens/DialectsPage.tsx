@@ -7,19 +7,8 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import { audioCount, dialectsByRegion, searchDialects } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
-import type { WordGroup } from '../lib/types'
 import DialectMap from '../components/DialectMap'
-import { GROUP_KEY } from './RegionsPage'
-
-/** App regions that map to macro-region hubs; the Nile valley spans two. */
-const REGION_HUBS: Partial<Record<string, WordGroup[]>> = {
-  nile: ['egypt', 'sudan'],
-  levant: ['levant'],
-  iraq: ['iraq'],
-  gulf: ['gulf'],
-  yemen: ['yemen'],
-  maghreb: ['maghreb'],
-}
+import { GROUP_KEY, REGION_HUBS } from '../lib/regionsMeta'
 
 export default function DialectsPage() {
   const t = useT()
