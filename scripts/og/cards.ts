@@ -10,7 +10,7 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { MAP_H, MAP_W, project, regionColors, regionShapes, toPath } from '../../src/lib/geo'
 import { EG_H, EG_W, egPath, egProject, egyptRegionColors, egyptShapes, nilePaths } from '../../src/lib/egypt'
-import type { RegionId } from '../../src/lib/types'
+import type { RegionId, WordGroup } from '../../src/lib/types'
 
 import { esc, H, W } from './html'
 
@@ -219,6 +219,28 @@ export interface HomeCard {
   sectionBody?: string
 }
 
+/** How many leading chips an inner-section card has room for (mirrors the layout loop in homeCard). */
+export function fittingChips(chips: string[]): number {
+  let x = R
+  let n = 0
+  for (const g of chips) {
+    const p = pill(x, 0, g, { size: 27 })
+    if (x - p.w < 640) break
+    n++
+    x -= p.w + 14
+  }
+  return n
+}
+
+/** Regions represented by the visible, deduplicated prefix of concept chips. */
+export function conceptChipLayout(words: Partial<Record<WordGroup, string>>, order: WordGroup[]) {
+  const present = order.filter((g) => words[g])
+  const chips = [...new Set(present.map((g) => words[g]!))]
+  const visible = chips.slice(0, fittingChips(chips))
+  const shownGroups = present.filter((g) => visible.includes(words[g]!))
+  return { chips, visible, shownGroups, hidden: present.length - shownGroups.length }
+}
+
 /** The main card: the mark and name, the slogan, the counts, and a collage of greetings from across the dialects. */
 export function homeCard(c: HomeCard): string {
   if (!c.section) return homeCollageCard(c)
@@ -249,9 +271,8 @@ export function homeCard(c: HomeCard): string {
   // greetings, right to left
   let x = R
   const gy = y + 66
-  for (const g of c.greetings) {
+  for (const g of c.greetings.slice(0, fittingChips(c.greetings))) {
     const p = pill(x, gy, g, { size: 27 })
-    if (x - p.w < 640) break
     body += p.svg
     x -= p.w + 14
   }
