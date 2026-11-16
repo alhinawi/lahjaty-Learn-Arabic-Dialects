@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import JsonLd from '../../components/JsonLd'
+import DialectsIndexStatic from '../../components/DialectsIndexStatic'
 import DialectsPage from '../../screens/DialectsPage'
 import { metadataFor } from '../../lib/seo'
 
@@ -10,7 +11,7 @@ export default function Page() {
   return (
     <>
       <JsonLd path="/dialects" />
-      <Suspense><DialectsPage /></Suspense>
+      <Suspense fallback={<DialectsIndexStatic />}><DialectsPage /></Suspense>
     </>
   )
 }
