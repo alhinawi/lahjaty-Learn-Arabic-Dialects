@@ -61,10 +61,16 @@ export default function FamousGrid() {
           </h2>
           <p className="text-xs text-slate-500">{t('famousGridBody')}</p>
         </div>
-        <Link href="/dialects" className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-brand-700">
-          {t('seeAllFamous')}
-          <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
-        </Link>
+        <span className="flex shrink-0 flex-col items-end gap-1">
+          <Link href="/dialects" className="inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
+            {t('seeAllFamous')}
+            <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
+          </Link>
+          <Link href="/concepts/" className="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-brand-700">
+            {t('browseConcepts')}
+            <ChevronLeft className="h-3.5 w-3.5 ltr:rotate-180" aria-hidden />
+          </Link>
+        </span>
       </div>
       <ul className="stagger grid grid-cols-2 gap-2.5">
         {list.map((d) => {
