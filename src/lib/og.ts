@@ -1,4 +1,5 @@
 import { getConcept, getDialect, getFamous, isFamousId } from './content'
+import { dictEntryById } from './dictionaryAll'
 import { getEgyptNode } from './egypt'
 
 /**
@@ -32,7 +33,8 @@ export function ogImageFor(pathname: string): string {
   }
   if (a === 'lessons' && b) return `/og/lessons/${b}.jpg`
   if (a === 'dictionary' && b && DICT_TOPIC.test(b)) return `/og/dictionary/${b}.jpg`
-  if (a === 'word' && b) return '/og/word.jpg'
+  if (a === 'word' && b && dictEntryById.has(b)) return `/og/words/${b}.jpg`
+  if (a === 'word') return '/og/word.jpg'
   if (a === 'concepts' && b && getConcept(b) && Object.keys(getConcept(b)!.words ?? {}).length > 0) return `/og/concepts/${b}.jpg`
   if (a === 'concepts') return '/og/concepts.jpg'
   if (a === 'regions' && b && WORD_GROUP_IDS.has(b)) return `/og/regions/${b}.jpg`
