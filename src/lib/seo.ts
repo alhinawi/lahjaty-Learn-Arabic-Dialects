@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { allFamous, categories, dialects, famousFor, getDialect, phrases, STANDARD_ID } from './content'
+import { allFamous, categories, concepts, dialects, famousByConcept, famousFor, getDialect, phrases, STANDARD_ID } from './content'
 import { allDictEntries, topicEntries } from './dictionaryAll'
 import { allEgyptNodes } from './egypt'
 import { translate } from './i18n'
@@ -35,6 +35,7 @@ const sections: [string, string, string][] = [
   ['settings', t('settings'), slogan],
   ['dictionary', t('dictTitle'), t('dictBody')],
   ['word', t('dictWordInAll'), t('dictWordInAllBody')],
+  ['concepts', t('conceptsTitle'), t('conceptsBody')],
   ['profile', t('profileTitle'), t('profilePrivate')],
 ]
 
@@ -113,6 +114,29 @@ export function seoCatalog(): SeoEntry[] {
       imageAlt: `${n.name} على خريطة مصر`,
       sitemap: true,
     })),
+    ...concepts
+      .map((c) => ({ concept: c, variants: famousByConcept(c.id).filter((v) => v.dialectId !== STANDARD_ID) }))
+      .filter((x) => x.variants.length > 0)
+      .flatMap(({ concept, variants }) => {
+        const sample = variants
+          .slice(0, 6)
+          .map((v) => `${getDialect(v.dialectId)?.name ?? v.dialectId}: ${v.phrase.text}`)
+          .join('، ')
+        const entry: SeoEntry = {
+          path: `/concepts/${concept.id}`,
+          title: `«${concept.name}» في كل اللهجات`,
+          description: `معنى «${concept.name}» (${concept.nameEn}) بلهجات العرب: ${sample}.`,
+          imageAlt: `«${concept.name}» في كل اللهجات – لهجتي`,
+          sitemap: true,
+          jsonLd: {
+            '@type': 'DefinedTerm',
+            name: concept.name,
+            alternateName: [concept.nameEn, ...new Set(variants.map((v) => v.phrase.text))].slice(0, 20),
+            inDefinedTermSet: { '@type': 'DefinedTermSet', name: t('conceptsTitle'), url: `${SITE_URL}/concepts` },
+          },
+        }
+        return [entry]
+      }),
     ...allFamous.map(({ dialectId, phrase }) => {
       const d = getDialect(dialectId)!
       return {
