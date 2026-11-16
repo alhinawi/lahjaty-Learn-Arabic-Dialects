@@ -9,16 +9,17 @@ import DictEntryCard from '../components/DictEntryCard'
 import TopicIcon from '../components/TopicIcon'
 import { getDialect } from '../lib/content'
 import { dictTopics, getTopic, useTopic } from '../lib/dictionary'
+import type { DictEntry } from '../lib/types'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
 import NotFoundPage from './NotFoundPage'
 
-export default function DictTopicPage({ topicId }: { topicId: string }) {
+export default function DictTopicPage({ topicId, initialEntries }: { topicId: string; initialEntries?: DictEntry[] }) {
   const t = useT()
   const name = useName()
   const topic = getTopic(topicId)
   const dialect = getDialect(useApp((s) => s.dialectId))
-  const entries = useTopic(topic?.id)
+  const entries = useTopic(topic?.id, initialEntries)
   const loaded = entries !== null
   useEffect(() => {
     const hash = window.location.hash
