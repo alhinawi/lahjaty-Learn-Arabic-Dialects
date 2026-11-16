@@ -71,4 +71,5 @@ const files: DictTopicFile[] = [
 ]
 
 export const allDictEntries: DictEntry[] = files.flatMap((f) => f.entries)
+export const dictEntryById = new Map(allDictEntries.map((e) => [e.id, e] as const))
 export const topicEntries = new Map(index.topics.map((t, i) => [t.id, files[i].entries] as const))

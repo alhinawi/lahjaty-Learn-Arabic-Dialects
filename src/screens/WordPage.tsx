@@ -8,16 +8,17 @@ import PlayButton from '../components/PlayButton'
 import { dialectsByRegion, getDialect, STANDARD_ID } from '../lib/content'
 import { conceptForEntry } from '../lib/conceptDict'
 import { dictAudioId, getTopic, topicOf, useEntry } from '../lib/dictionary'
+import type { DictEntry } from '../lib/types'
 import { useName, useT } from '../lib/i18n'
 import type { MessageKey } from '../lib/i18n'
 import { useApp } from '../lib/store'
 import NotFoundPage from './NotFoundPage'
 
 /** /word: search for a word. /word/:entryId: that word in every dialect, grouped by region. */
-export default function WordPage({ entryId }: { entryId?: string }) {
+export default function WordPage({ entryId, initialEntry }: { entryId?: string; initialEntry?: DictEntry }) {
   const t = useT()
   const name = useName()
-  const entry = useEntry(entryId)
+  const entry = useEntry(entryId, initialEntry)
   const myDialectId = useApp((s) => s.myDialectId)
   const lang = useApp((s) => s.lang)
 
