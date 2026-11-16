@@ -1,7 +1,8 @@
-import { allFamous, getConcept, phrases, STANDARD_ID } from './content'
+import { allFamous, getConcept, phrases, STANDARD_ID, WORD_GROUPS } from './content'
 import { allEgyptNodes } from './egypt'
 import type { EgyptNode } from './egypt'
-import type { FamousPhrase, Phrase } from './types'
+import { translate, type MessageKey } from './i18n'
+import type { FamousPhrase, Phrase, WordGroup } from './types'
 
 const TASHKEEL = /[\u0610-\u061a\u064b-\u065f\u0670\u06d6-\u06ed\u0640]/g
 const ARABIC_DIGITS = '٠١٢٣٤٥٦٧٨٩'
@@ -32,6 +33,22 @@ export type SearchHit =
   | { kind: 'concept'; key: string; conceptId: string; score: number; matched: string; dialectId?: string }
   | { kind: 'famous'; key: string; dialectId: string; phrase: FamousPhrase; score: number; matched: string }
   | { kind: 'egypt'; key: string; node: EgyptNode; score: number; matched: string; dialectId?: string }
+  | { kind: 'region'; key: string; group: WordGroup; score: number; matched: string; dialectId?: string }
+
+/** The macro-regions, searchable by their Arabic and English names. */
+const GROUP_LABEL_KEY: Record<WordGroup, MessageKey> = {
+  egypt: 'groupEgypt',
+  sudan: 'groupSudan',
+  levant: 'groupLevant',
+  iraq: 'groupIraq',
+  gulf: 'groupGulf',
+  yemen: 'groupYemen',
+  maghreb: 'groupMaghreb',
+}
+
+export function regionLabel(group: WordGroup, lang: 'ar' | 'en'): string {
+  return translate(lang, GROUP_LABEL_KEY[group])
+}
 
 type DistributiveOmit<T, K extends PropertyKey> = T extends unknown ? Omit<T, K> : never
 
@@ -78,6 +95,11 @@ function build(): Doc[] {
     } else {
       docs.push({ hit: { kind: 'famous', key: `f:${dialectId}:${phrase.id}`, dialectId, phrase }, fields })
     }
+  }
+  for (const group of WORD_GROUPS) {
+    const ar = regionLabel(group, 'ar')
+    const en = regionLabel(group, 'en')
+    docs.push({ hit: { kind: 'region', key: `r:${group}`, group }, fields: [[normalize(ar), ar, undefined], [normalize(en), en, undefined]] })
   }
   for (const n of allEgyptNodes()) {
     const texts = [n.name, n.nameEn, ...(n.governorates?.ar ?? []), ...(n.governorates?.en ?? [])]
@@ -132,6 +154,7 @@ export function hitTitle(hit: SearchHit, lang: 'ar' | 'en'): string {
     return lang === 'ar' ? c.name : c.nameEn
   }
   if (hit.kind === 'egypt') return lang === 'ar' ? hit.node.name : hit.node.nameEn
+  if (hit.kind === 'region') return regionLabel(hit.group, lang)
   return lang === 'ar' ? hit.phrase.standard : hit.phrase.english
 }
 
