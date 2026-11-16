@@ -5,7 +5,7 @@ import DialectIntro from '../components/DialectIntro'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import FamousCard from '../components/FamousCard'
-import { famousFor, getDialect, regions, wordGroup } from '../lib/content'
+import { famousFor, getDialect, groupWords, regions, wordGroup } from '../lib/content'
 import { egyptNodeForDialect } from '../lib/egypt'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
@@ -24,6 +24,7 @@ export default function DialectPage({ dialectId }: { dialectId: string }) {
   const region = regions.find((r) => r.id === dialect.region)
   const group = wordGroup(dialect)
   const famous = famousFor(dialect.id)
+  const regionWords = group ? groupWords(group) : []
   const isLearning = learning === dialect.id
 
   const egyptNode = egyptNodeForDialect(dialect.id)
@@ -79,6 +80,33 @@ export default function DialectPage({ dialectId }: { dialectId: string }) {
           <FamousCard key={f.id} phrase={f} dialectId={dialect.id} />
         ))}
       </section>
+
+      {group && regionWords.length > 0 && (
+        <section className="space-y-3">
+          <h2 className="flex items-center gap-1.5 text-lg font-bold">
+            <MapPinned className="h-5 w-5 text-sun-500" aria-hidden />
+            {t('dialectRegionWords', { region: t(GROUP_KEY[group]) })}
+          </h2>
+          <ul className="flex flex-wrap gap-2">
+            {regionWords.slice(0, 12).map(({ concept, word }) => (
+              <li key={concept.id}>
+                <Link
+                  href={`/concepts/${concept.id}/`}
+                  dir="rtl"
+                  lang="ar"
+                  className="dialect-text lift inline-block rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm font-bold text-brand-800 shadow-sm hover:border-sun-400"
+                >
+                  {word}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link href={`/regions/${group}/`} className="inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
+            {t('dialectRegionWordsAll', { n: regionWords.length })}
+            <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
+          </Link>
+        </section>
+      )}
 
       <Link href="/dialects" className="block text-center text-sm font-semibold text-brand-700">
         {t('chooseDialect')}
