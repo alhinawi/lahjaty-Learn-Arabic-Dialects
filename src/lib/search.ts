@@ -1,4 +1,4 @@
-import { allFamous, getConcept, phrases, STANDARD_ID, WORD_GROUPS } from './content'
+import { allFamous, concepts, getConcept, phrases, STANDARD_ID, WORD_GROUPS } from './content'
 import { allEgyptNodes } from './egypt'
 import type { EgyptNode } from './egypt'
 import { translate, type MessageKey } from './i18n'
@@ -71,26 +71,24 @@ function build(): Doc[] {
     docs.push({ hit: { kind: 'phrase', key: `p:${p.id}`, phrase: p }, fields })
   }
   const byConcept = new Map<string, Doc>()
+  for (const c of concepts) {
+    // Macro-region words have no single-dialect attribution. Keep dialectId undefined.
+    const texts = [c.name, c.nameEn, ...Object.values(c.words ?? {})]
+    const doc: Doc = {
+      hit: { kind: 'concept', key: `c:${c.id}`, conceptId: c.id },
+      fields: [...new Set(texts)].map((text) => [normalize(text), text, undefined]),
+    }
+    byConcept.set(c.id, doc)
+    docs.push(doc)
+  }
   for (const { dialectId, phrase } of allFamous) {
     const fields: Doc['fields'] = [
       [normalize(phrase.text), phrase.text, dialectId],
       [normalize(phrase.english), phrase.english, undefined],
       [normalize(phrase.standard), phrase.standard, undefined],
     ]
-    if (phrase.concept && getConcept(phrase.concept)) {
-      let doc: Doc | undefined = byConcept.get(phrase.concept)
-      if (!doc) {
-        const c = getConcept(phrase.concept)!
-        doc = {
-          hit: { kind: 'concept', key: `c:${c.id}`, conceptId: c.id },
-          fields: [
-            [normalize(c.name), c.name, undefined],
-            [normalize(c.nameEn), c.nameEn, undefined],
-          ],
-        }
-        byConcept.set(phrase.concept, doc)
-        docs.push(doc)
-      }
+    const doc = phrase.concept ? byConcept.get(phrase.concept) : undefined
+    if (doc) {
       doc.fields.push(...fields)
     } else {
       docs.push({ hit: { kind: 'famous', key: `f:${dialectId}:${phrase.id}`, dialectId, phrase }, fields })
@@ -156,6 +154,13 @@ export function hitTitle(hit: SearchHit, lang: 'ar' | 'en'): string {
   if (hit.kind === 'egypt') return lang === 'ar' ? hit.node.name : hit.node.nameEn
   if (hit.kind === 'region') return regionLabel(hit.group, lang)
   return lang === 'ar' ? hit.phrase.standard : hit.phrase.english
+}
+
+/** Regions whose signature word is the matched field, without narrowing it to a dialect. */
+export function regionalMatchGroups(hit: SearchHit): WordGroup[] {
+  if (hit.kind !== 'concept') return []
+  const words = getConcept(hit.conceptId)?.words
+  return WORD_GROUPS.filter((group) => words?.[group] && normalize(words[group]!) === normalize(hit.matched))
 }
 
 export type ComparableHit =

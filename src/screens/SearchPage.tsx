@@ -12,7 +12,7 @@ import { dialectsByRegion, dialectsInGroup, famousByConcept, getConcept, getDial
 import { useName, useT } from '../lib/i18n'
 import { searchDictionary, useAllEntries } from '../lib/dictionary'
 import type { DictHit } from '../lib/dictionary'
-import { hitTitle, regionLabel, search } from '../lib/search'
+import { hitTitle, regionalMatchGroups, regionLabel, search } from '../lib/search'
 import type { SearchHit } from '../lib/search'
 import { useApp } from '../lib/store'
 import type { Dialect } from '../lib/types'
@@ -71,6 +71,7 @@ function ResultCard({ hit }: { hit: SearchHit }) {
   const name = useName()
   const lang = useApp((s) => s.lang)
   const myDialectId = useApp((s) => s.myDialectId)
+  const matchedRegions = regionalMatchGroups(hit)
   const rows = rowsFor(hit)
   const mine = rows.find((r) => r.dialect.id === myDialectId)
   const rest = rows.filter((r) => r !== mine)
@@ -100,6 +101,12 @@ function ResultCard({ hit }: { hit: SearchHit }) {
           {english && <span dir="ltr">{english}</span>}
           {standard && lang === 'en' && <span dir="rtl" lang="ar" className="ms-2">{standard}</span>}
         </p>
+        {matchedRegions.length > 0 && (
+          <p className="mt-2 rounded-xl bg-brand-50 px-2.5 py-2 text-xs text-brand-800">
+            <bdi dir="rtl" lang="ar" className="dialect-text font-bold">{hit.matched}</bdi>
+            <span className="ms-2">{matchedRegions.map((g) => regionLabel(g, lang)).join(' · ')}</span>
+          </p>
+        )}
       </header>
       {mine && <ul className="mb-2">{line(mine, true)}</ul>}
       {groups.map(({ region, dialects }) => (
