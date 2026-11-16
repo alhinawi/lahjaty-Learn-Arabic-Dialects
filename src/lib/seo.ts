@@ -1,8 +1,22 @@
 import type { Metadata } from 'next'
-import { allFamous, categories, concepts, dialects, famousByConcept, famousFor, getDialect, phrases, STANDARD_ID } from './content'
+import {
+  allFamous,
+  categories,
+  concepts,
+  dialects,
+  dialectsInGroup,
+  famousByConcept,
+  famousFor,
+  getDialect,
+  groupWords,
+  phrases,
+  STANDARD_ID,
+  WORD_GROUPS,
+} from './content'
 import { allDictEntries, topicEntries } from './dictionaryAll'
 import { allEgyptNodes } from './egypt'
-import { translate } from './i18n'
+import { translate, type MessageKey } from './i18n'
+import type { WordGroup } from './types'
 import { ogImageFor, SITE_NAME, SITE_URL, sharePath } from './og'
 
 /** The social cards are drawn 1200x630 (scripts/og). */
@@ -11,6 +25,17 @@ const OG_H = 630
 
 const t = (k: Parameters<typeof translate>[1]) => translate('ar', k)
 const slogan = t('heroTitle')
+
+/** Arabic labels for the region hub pages, keyed like the client screens. */
+const GROUP_SEO_KEY: Record<WordGroup, MessageKey> = {
+  egypt: 'groupEgypt',
+  sudan: 'groupSudan',
+  levant: 'groupLevant',
+  iraq: 'groupIraq',
+  gulf: 'groupGulf',
+  yemen: 'groupYemen',
+  maghreb: 'groupMaghreb',
+}
 
 export interface SeoEntry {
   /** Site-relative path without a trailing slash; '/' for the home page. */
@@ -36,6 +61,7 @@ const sections: [string, string, string][] = [
   ['dictionary', t('dictTitle'), t('dictBody')],
   ['word', t('dictWordInAll'), t('dictWordInAllBody')],
   ['concepts', t('conceptsTitle'), t('conceptsBody')],
+  ['regions', t('regionsTitle'), t('regionsBody')],
   ['profile', t('profileTitle'), t('profilePrivate')],
 ]
 
@@ -137,6 +163,24 @@ export function seoCatalog(): SeoEntry[] {
         }
         return [entry]
       }),
+    ...WORD_GROUPS.map((group) => {
+      const label = t(GROUP_SEO_KEY[group])
+      const groupDialects = dialectsInGroup(group)
+      const words = groupWords(group)
+      return {
+        path: `/regions/${group}`,
+        title: `لهجات ${label}`,
+        description: `${groupDialects.length} لهجة في ${label}: ${groupDialects.map((d) => d.name).join('، ')}. والكلمة المميزة لـ${words.length} معنى.`,
+        imageAlt: `لهجات ${label} – لهجتي`,
+        sitemap: true,
+        jsonLd: {
+          '@type': 'CollectionPage',
+          name: `لهجات ${label}`,
+          about: label,
+          isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+        },
+      }
+    }),
     ...allFamous.map(({ dialectId, phrase }) => {
       const d = getDialect(dialectId)!
       return {
