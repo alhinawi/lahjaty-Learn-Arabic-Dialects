@@ -38,7 +38,9 @@ export default function DialectPage({ dialectId }: { dialectId: string }) {
           ) : (
             region && name(region)
           )}
-          {dialect.country && ` · ${lang === 'ar' ? dialect.country : dialect.countryEn}`}
+          {dialect.country &&
+            (!group || (lang === 'ar' ? dialect.country : dialect.countryEn) !== t(GROUP_KEY[group])) &&
+            ` · ${lang === 'ar' ? dialect.country : dialect.countryEn}`}
         </p>
         <h1 className="mt-1 text-2xl font-bold">{name(dialect)}</h1>
         <button
