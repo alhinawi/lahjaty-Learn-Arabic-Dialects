@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { phrases } from './content'
-import { comparableHits, normalize, search } from './search'
+import { concepts, phrases } from './content'
+import { comparableHits, normalize, regionalMatchGroups, search } from './search'
 
 describe('normalize', () => {
   it('folds hamza, taa marbuta, alif maqsura and tashkeel', () => {
@@ -57,5 +57,29 @@ describe('comparableHits', () => {
     expect(hits.every((h) => h.kind === 'concept')).toBe(true)
     expect(new Set(hits.map((h) => h.id)).size).toBe(hits.length)
     expect(hits.map((h) => h.id)).toContain('now')
+  })
+})
+
+
+describe('regional-word coverage', () => {
+  it('retrieves the correct concept for every regional word within normal search limits', () => {
+    let checked = 0
+    for (const c of concepts) {
+      for (const [group, word] of Object.entries(c.words ?? {})) {
+        const hits = search(word)
+        const matching = hits.filter((h) => h.kind === 'concept' && h.conceptId === c.id)
+        expect(matching.length, `${c.id}/${group}: ${word}`).toBe(1)
+        expect(regionalMatchGroups(matching[0]), `${c.id}/${group}`).toContain(group)
+        checked++
+      }
+    }
+    expect(checked).toBe(255)
+  })
+
+  it('does not assign macro-region words to an arbitrary single dialect', () => {
+    const hit = search('ذلحين').find((h) => h.kind === 'concept' && h.conceptId === 'now')!
+    expect(hit).toBeTruthy()
+    expect(hit.dialectId).toBeUndefined()
+    expect(regionalMatchGroups(hit)).toEqual(['yemen'])
   })
 })
