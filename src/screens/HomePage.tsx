@@ -8,6 +8,7 @@ import Hero from '../components/Hero'
 import SearchBox from '../components/SearchBox'
 import DialectChip from '../components/DialectChip'
 import FamousGrid from '../components/FamousGrid'
+import RegionsStrip from '../components/RegionsStrip'
 import GoalSuggestions from '../components/GoalSuggestions'
 import ProgressBar from '../components/ProgressBar'
 import { categories, phrases, phrasesInCategory } from '../lib/content'
@@ -31,6 +32,8 @@ export default function HomePage() {
       <Hero />
 
       <FamousGrid />
+
+      <RegionsStrip />
 
       <SearchBox />
 
