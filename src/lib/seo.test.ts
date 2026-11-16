@@ -13,7 +13,7 @@ import {
 import { allDictEntries, topicEntries } from './dictionaryAll'
 import { allEgyptNodes } from './egypt'
 import { sharePath } from './og'
-import { metadataFor, seoByPath, seoCatalog } from './seo'
+import { metadataFor, jsonLdFor, seoByPath, seoCatalog } from './seo'
 
 /** Every route pattern that has a page, e.g. '/concepts/[conceptId]', from src/app on disk. */
 function routePatterns(): string[] {
@@ -105,5 +105,31 @@ describe('seo catalog route coverage', () => {
     }
     const { dialectId, phrase } = allFamous[0]
     expect(seoByPath.get(sharePath(dialectId, phrase.id))!.sitemap).toBe(false)
+  })
+
+  it('describes every index page as an ItemList of exactly the child pages it links to', () => {
+    const indexes: [string, number][] = [
+      ['/lessons', categories.length],
+      ['/dialects', dialects.filter((d) => d.id !== STANDARD_ID).length],
+      ['/dictionary', topicEntries.size],
+      ['/word', allDictEntries.length],
+      ['/concepts', concepts.filter((c) => famousByConcept(c.id).some((v) => v.dialectId !== STANDARD_ID)).length],
+      ['/regions', WORD_GROUPS.length],
+    ]
+    const paths = new Set(catalog.map((e) => e.path))
+    for (const [path, count] of indexes) {
+      const ld = jsonLdFor(path)
+      expect(ld, path).not.toBeNull()
+      const graph = JSON.parse(ld!)['@graph'] as { '@type': string; numberOfItems?: number; itemListElement?: { position: number; url: string }[] }[]
+      const list = graph.find((x) => x['@type'] === 'ItemList')
+      expect(list, path).toBeDefined()
+      expect(list!.numberOfItems, path).toBe(count)
+      expect(list!.itemListElement, path).toHaveLength(count)
+      for (const [i, item] of list!.itemListElement!.entries()) {
+        expect(item.position, `${path} item ${i}`).toBe(i + 1)
+        const itemPath = item.url.replace(/^https?:\/\/[^/]+/, '')
+        expect(paths.has(itemPath), `${path} lists non-page ${itemPath}`).toBe(true)
+      }
+    }
   })
 })

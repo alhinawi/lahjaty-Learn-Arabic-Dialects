@@ -72,6 +72,29 @@ const sections: [string, string, string][] = [
   ['profile', t('profileTitle'), t('profilePrivate')],
 ]
 
+/** schema.org ItemList for one index page, listing exactly the child pages that index links to. */
+const itemList = (name: string, paths: string[]): Record<string, unknown> => ({
+  '@type': 'ItemList',
+  name,
+  numberOfItems: paths.length,
+  itemListElement: paths.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE_URL}${p}` })),
+})
+
+/** Concept pages the catalog actually ships: those with at least one dialect variant. */
+const conceptPaths = concepts
+  .filter((c) => famousByConcept(c.id).some((v) => v.dialectId !== STANDARD_ID))
+  .map((c) => `/concepts/${c.id}`)
+
+/** Index sections whose visible content is a list of child pages, as structured data. */
+const sectionItemLists: Record<string, Record<string, unknown>> = {
+  lessons: itemList(t('lessonsTitle'), categories.map((c) => `/lessons/${c.id}`)),
+  dialects: itemList(t('allDialects'), dialects.filter((d) => d.id !== STANDARD_ID).map((d) => `/dialects/${d.id}`)),
+  dictionary: itemList(t('dictTitle'), [...topicEntries.keys()].map((id) => `/dictionary/${id}`)),
+  word: itemList(t('dictWordInAll'), allDictEntries.map((e) => `/word/${e.id}`)),
+  concepts: itemList(t('conceptsTitle'), conceptPaths),
+  regions: itemList(t('regionsTitle'), WORD_GROUPS.map((g) => `/regions/${g}`)),
+}
+
 /** Every prerendered page with its title, description and card: one catalog for metadata, sitemap and the og build. */
 export function seoCatalog(): SeoEntry[] {
   return [
@@ -83,6 +106,7 @@ export function seoCatalog(): SeoEntry[] {
       imageAlt: `${title} – لهجتي`,
       // Interactive shells (pickers, personal pages, client-only tools) stay out of the sitemap and get noindex below.
       sitemap: !['favorites', 'settings', 'search', 'profile', 'compare'].includes(id),
+      jsonLd: sectionItemLists[id],
     })),
     // Interactive drill modes: client-rendered shells, discoverable through the /practice landing.
     { path: '/practice/cards', title: t('modeCards'), description: `${t('modeCardsBody')}. ${slogan}.`, imageAlt: `${t('modeCards')} – لهجتي`, sitemap: false },
