@@ -108,6 +108,7 @@ const sections: [string, string, string][] = [
   ['dictionary', t('dictTitle'), t('dictBody')],
   ['word', t('dictWordInAll'), t('dictWordInAllBody')],
   ['concepts', t('conceptsTitle'), t('conceptsBody')],
+  ['regions', t('regionsTitle'), t('regionsBody')],
   ['profile', t('profileTitle'), t('profilePrivate')],
 ]
 for (const [id, title, body] of sections) draw(`/og/${id}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, section: title, sectionBody: body }))

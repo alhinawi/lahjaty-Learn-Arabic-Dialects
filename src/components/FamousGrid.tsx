@@ -70,6 +70,10 @@ export default function FamousGrid() {
             {t('browseConcepts')}
             <ChevronLeft className="h-3.5 w-3.5 ltr:rotate-180" aria-hidden />
           </Link>
+          <Link href="/regions/" className="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-brand-700">
+            {t('regionsExplore')}
+            <ChevronLeft className="h-3.5 w-3.5 ltr:rotate-180" aria-hidden />
+          </Link>
         </span>
       </div>
       <ul className="stagger grid grid-cols-2 gap-2.5">

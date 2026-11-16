@@ -107,6 +107,22 @@ export function wordGroup(d: Dialect | undefined): WordGroup | undefined {
   return d.region
 }
 
+/** The seven macro-regions used for concept words and region hubs, in display order. */
+export const WORD_GROUPS: WordGroup[] = ['egypt', 'sudan', 'levant', 'iraq', 'gulf', 'yemen', 'maghreb']
+
+/** Every dialect that belongs to a macro-region. */
+export function dialectsInGroup(group: WordGroup): Dialect[] {
+  return dialects.filter((d) => wordGroup(d) === group)
+}
+
+/** Concepts that carry a signature word for a macro-region, with the word itself. */
+export function groupWords(group: WordGroup): { concept: Concept; word: string }[] {
+  return concepts.flatMap((concept) => {
+    const word = concept.words?.[group]
+    return word ? [{ concept, word }] : []
+  })
+}
+
 /** Days since 1970 on the visitor's own clock, so "today" changes at local midnight. */
 export const localDay = (now = new Date()) => Math.floor((now.getTime() - now.getTimezoneOffset() * 60000) / 86400000)
 
