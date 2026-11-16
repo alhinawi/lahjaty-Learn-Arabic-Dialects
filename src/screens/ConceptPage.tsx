@@ -24,7 +24,7 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
   if (!concept) return <NotFoundPage />
 
   const variants = famousByConcept(concept.id).filter(({ dialectId }) => dialectId !== STANDARD_ID)
-  const index = concepts.filter((c) => famousByConcept(c.id).length > 0)
+  const index = concepts.filter((c) => famousByConcept(c.id).some((v) => v.dialectId !== STANDARD_ID))
   const i = index.findIndex((c) => c.id === concept.id)
   const prev = i > 0 ? index[i - 1] : undefined
   const next = i >= 0 && i < index.length - 1 ? index[i + 1] : undefined
