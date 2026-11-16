@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { allFamous, concepts, dialects, STANDARD_ID } from './content'
+import { allDictEntries } from './dictionaryAll'
 import { allEgyptNodes } from './egypt'
 import { famousSlug, ogImageFor, sharePath } from './og'
 
@@ -27,5 +28,11 @@ describe('ogImageFor', () => {
       expect(ogImageFor(`/concepts/${c.id}/`), c.id).toBe(has ? `/og/concepts/${c.id}.jpg` : '/og/concepts.jpg')
     }
     expect(ogImageFor('/concepts/')).toBe('/og/concepts.jpg')
+  })
+
+  it('gives every dictionary word its own card, unknown words the shared one', () => {
+    for (const e of allDictEntries) expect(ogImageFor(`/word/${e.id}/`), e.id).toBe(`/og/words/${e.id}.jpg`)
+    expect(ogImageFor('/word/not.a.word')).toBe('/og/word.jpg')
+    expect(ogImageFor('/word')).toBe('/og/word.jpg')
   })
 })

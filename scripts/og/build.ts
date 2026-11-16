@@ -149,6 +149,17 @@ for (const cat of categories) {
 }
 
 const dict = readDictionary(process.cwd())
+for (const entry of dict.files.flatMap((f) => f.entries)) {
+  // One representative word per macro-region (first dialect of the region that has one), first spelling variant.
+  const byRegion: Partial<Record<(typeof WORD_GROUPS)[number], string>> = {}
+  for (const group of WORD_GROUPS) {
+    const d = dialectsInGroup(group).find((x) => entry.words[x.id])
+    if (d) byRegion[group] = entry.words[d.id]!.split('/')[0]!.trim()
+  }
+  const { chips, shownGroups, hidden } = cards?.conceptChipLayout(byRegion, WORD_GROUPS) ?? { chips: [], shownGroups: [], hidden: 0 }
+  const body = shownGroups.map((g) => GROUP_CARD_LABEL[g]).join(' · ') + (hidden > 0 ? ` · مناطق أخرى: ${hidden}` : '')
+  draw(`/og/words/${entry.id}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings: chips, site: SITE, section: `${entry.fs} · ${entry.en}`, sectionBody: body }))
+}
 for (const f of dict.files) {
   const topic = dict.index.topics.find((x) => x.id === f.id)!
   const body = f.entries.slice(0, 4).map((e) => e.fs).join(' · ')
