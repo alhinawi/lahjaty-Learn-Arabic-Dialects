@@ -1,6 +1,6 @@
 'use client'
 
-import { Columns3, Heart, Quote } from 'lucide-react'
+import { Columns3, Heart, Lightbulb, Quote } from 'lucide-react'
 import Link from 'next/link'
 import { getDialect, hasAudio, STANDARD_ID, voiceFor } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
@@ -86,6 +86,14 @@ export default function FamousCard({ phrase, dialectId, showDialect = false }: P
           >
             <Columns3 className="h-3.5 w-3.5" aria-hidden />
             {t('compareThis')}
+          </Link>
+        )}
+        {phrase.concept && (
+          <Link href={`/concepts/${phrase.concept}/`}
+            className="flex items-center gap-1 rounded-full bg-sun-300/30 px-3 py-1.5 text-xs font-semibold text-amber-700 hover:bg-sun-300/60"
+          >
+            <Lightbulb className="h-3.5 w-3.5" aria-hidden />
+            {t('conceptAllLink')}
           </Link>
         )}
         <span className="ms-auto" />
