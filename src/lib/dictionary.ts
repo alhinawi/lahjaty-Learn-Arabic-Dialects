@@ -42,19 +42,24 @@ export function loadEntry(entryId: string): Promise<DictEntry | undefined> {
   return loadTopic(topicOf(entryId)).then((list) => list.find((e) => e.id === entryId))
 }
 
-/** Loads one topic; null while loading. */
-export function useTopic(id: string | undefined): DictEntry[] | null {
-  const [state, setState] = useState<{ id?: string; entries: DictEntry[] | null }>(() => ({ id, entries: id ? cache.get(id) ?? null : [] }))
+/** Loads one topic; null while loading. A prerendered `initial` skips the fetch entirely. */
+export function useTopic(id: string | undefined, initial?: DictEntry[]): DictEntry[] | null {
+  const [state, setState] = useState<{ id?: string; entries: DictEntry[] | null }>(() => ({ id, entries: id ? cache.get(id) ?? initial ?? null : [] }))
   useEffect(() => {
     let alive = true
     if (!id) return
+    if (initial && !cache.has(id)) cache.set(id, initial)
+    if (cache.has(id)) {
+      setState({ id, entries: cache.get(id)! })
+      return
+    }
     loadTopic(id).then((entries) => alive && setState({ id, entries }))
     return () => {
       alive = false
     }
-  }, [id])
+  }, [id, initial])
   if (!id) return []
-  if (state.id !== id) return cache.get(id) ?? null
+  if (state.id !== id) return cache.get(id) ?? initial ?? null
   return state.entries
 }
 
@@ -72,8 +77,8 @@ export function useAllEntries(enabled = true): DictEntry[] | null {
   return entries
 }
 
-export function useEntry(entryId: string | undefined): DictEntry | null | undefined {
-  const list = useTopic(entryId ? topicOf(entryId) : undefined)
+export function useEntry(entryId: string | undefined, initial?: DictEntry): DictEntry | null | undefined {
+  const list = useTopic(entryId ? topicOf(entryId) : undefined, initial ? [initial] : undefined)
   if (!entryId) return undefined
   if (list === null) return null
   return list.find((e) => e.id === entryId)

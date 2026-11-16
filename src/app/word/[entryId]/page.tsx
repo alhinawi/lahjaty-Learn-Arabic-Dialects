@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import JsonLd from '../../../components/JsonLd'
 import WordPage from '../../../screens/WordPage'
 import { metadataFor } from '../../../lib/seo'
-import { allDictEntries } from '../../../lib/dictionaryAll'
+import { allDictEntries, dictEntryById } from '../../../lib/dictionaryAll'
 export const dynamicParams = false
 
 export function generateStaticParams() {
@@ -23,7 +23,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <JsonLd path={`/word/${entryId}`} />
-      <WordPage entryId={entryId} />
+      <WordPage entryId={entryId} initialEntry={dictEntryById.get(entryId)} />
     </>
   )
 }
