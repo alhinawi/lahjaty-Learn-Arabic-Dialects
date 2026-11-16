@@ -13,6 +13,7 @@ export const SITE_NAME = 'لهجتي – Lahjaty'
 export const famousSlug = (id: string) => id.replace(/^famous\./, '')
 
 const SECTIONS = new Set(['dialects', 'lessons', 'compare', 'practice', 'search', 'favorites', 'settings', 'dictionary', 'word', 'concepts', 'regions'])
+const WORD_GROUP_IDS = new Set(['egypt', 'sudan', 'levant', 'iraq', 'gulf', 'yemen', 'maghreb'])
 const DICT_TOPIC = /^[a-z0-9_]+$/
 
 /**
@@ -33,6 +34,7 @@ export function ogImageFor(pathname: string): string {
   if (a === 'dictionary' && b && DICT_TOPIC.test(b)) return `/og/dictionary/${b}.jpg`
   if (a === 'word' && b) return '/og/word.jpg'
   if (a === 'concepts') return '/og/concepts.jpg'
+  if (a === 'regions' && b && WORD_GROUP_IDS.has(b)) return `/og/regions/${b}.jpg`
   if (a === 'regions') return '/og/regions.jpg'
   if (a && !b && SECTIONS.has(a)) return `/og/${a}.jpg`
   return '/og/home.jpg'
