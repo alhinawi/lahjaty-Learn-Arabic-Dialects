@@ -9,7 +9,7 @@
  */
 import { copyFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
-import { allFamous, categories, dialects, famousFor, getDialect, getPhrase, phrases, regions, STANDARD_ID } from '../../src/lib/content'
+import { allFamous, categories, dialects, dialectsInGroup, famousFor, getDialect, getPhrase, groupWords, phrases, regions, STANDARD_ID, WORD_GROUPS } from '../../src/lib/content'
 import { allEgyptNodes, egyptAncestors, egyptRegions } from '../../src/lib/egypt'
 import { translate } from '../../src/lib/i18n'
 import { famousSlug, ogImageFor, SITE_URL } from '../../src/lib/og'
@@ -112,6 +112,21 @@ const sections: [string, string, string][] = [
   ['profile', t('profileTitle'), t('profilePrivate')],
 ]
 for (const [id, title, body] of sections) draw(`/og/${id}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, section: title, sectionBody: body }))
+const GROUP_CARD_LABEL: Record<(typeof WORD_GROUPS)[number], string> = {
+  egypt: 'مصر',
+  sudan: 'السودان',
+  levant: 'الشام',
+  iraq: 'العراق',
+  gulf: 'الخليج',
+  yemen: 'اليمن',
+  maghreb: 'المغرب العربي',
+}
+for (const group of WORD_GROUPS) {
+  const label = GROUP_CARD_LABEL[group]
+  const names = dialectsInGroup(group).map((d) => d.name)
+  const body = `${names.slice(0, 4).join('، ')}${names.length > 4 ? '…' : ''} · ${groupWords(group).length} كلمة`
+  draw(`/og/regions/${group}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, section: `لهجات ${label}`, sectionBody: body }))
+}
 for (const cat of categories) {
   const sample = phrases.find((p) => p.category === cat.id)
   const body = sample ? `${sample.variants[STANDARD_ID]?.text ?? ''} · ${sample.english}` : slogan
