@@ -74,7 +74,8 @@ export function seoCatalog(): SeoEntry[] {
       title,
       description: `${body}. ${slogan}.`,
       imageAlt: `${title} – لهجتي`,
-      sitemap: !['favorites', 'settings', 'search', 'profile'].includes(id),
+      // Interactive shells (pickers, personal pages, client-only tools) stay out of the sitemap and get noindex below.
+      sitemap: !['favorites', 'settings', 'search', 'profile', 'compare'].includes(id),
     })),
     { path: '/practice/cards', title: t('modeCards'), description: `${t('modeCardsBody')}. ${slogan}.`, imageAlt: `${t('modeCards')} – لهجتي` },
     ...(['meaning', 'match', 'guess'] as const).map((mode) => ({
@@ -225,6 +226,8 @@ export function metadataFor(path: string): Metadata {
     title: { absolute: title },
     description,
     alternates: { canonical: url },
+    // Out-of-sitemap pages are interactive shells or share targets: keep them findable through links, out of the index.
+    robots: e.sitemap ? undefined : { index: false, follow: true },
     openGraph: {
       type: 'website',
       siteName: SITE_NAME,
