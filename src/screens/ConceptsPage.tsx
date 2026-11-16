@@ -2,16 +2,21 @@
 
 import { ChevronLeft, Lightbulb } from 'lucide-react'
 import Link from 'next/link'
-import { concepts, famousByConcept, STANDARD_ID } from '../lib/content'
+import { useState } from 'react'
+import { concepts, famousByConcept, STANDARD_ID, WORD_GROUPS } from '../lib/content'
+import type { WordGroup } from '../lib/types'
 import { useT } from '../lib/i18n'
+import { GROUP_KEY } from './RegionsPage'
 
 /** Every concept that at least one dialect has a famous phrase for, as an index of meaning-first pages. */
 export default function ConceptsPage() {
   const t = useT()
+  const [group, setGroup] = useState<WordGroup | 'all'>('all')
   // Standard Arabic is the reference, not a dialect: count real dialect variants only.
   const used = concepts
     .map((c) => ({ concept: c, variants: famousByConcept(c.id).filter((v) => v.dialectId !== STANDARD_ID) }))
     .filter((x) => x.variants.length > 0)
+  const shown = group === 'all' ? used : used.filter(({ concept }) => concept.words?.[group])
 
   return (
     <div className="space-y-4">
@@ -23,8 +28,30 @@ export default function ConceptsPage() {
         <p className="mt-1 text-sm text-cream-100">{t('conceptsBody')}</p>
       </header>
 
+      <div className="flex flex-wrap gap-1.5" role="group" aria-label={t('regionsTitle')}>
+        <button
+          type="button"
+          onClick={() => setGroup('all')}
+          aria-pressed={group === 'all'}
+          className={`rounded-full px-3 py-1.5 text-xs font-semibold shadow-sm transition ${group === 'all' ? 'bg-brand-700 text-white' : 'bg-white text-slate-600 ring-1 ring-slate-200 hover:ring-sun-400'}`}
+        >
+          {t('conceptsFilterAll')}
+        </button>
+        {WORD_GROUPS.map((g) => (
+          <button
+            key={g}
+            type="button"
+            onClick={() => setGroup(g)}
+            aria-pressed={group === g}
+            className={`rounded-full px-3 py-1.5 text-xs font-semibold shadow-sm transition ${group === g ? 'bg-brand-700 text-white' : 'bg-white text-slate-600 ring-1 ring-slate-200 hover:ring-sun-400'}`}
+          >
+            {t(GROUP_KEY[g])}
+          </button>
+        ))}
+      </div>
+
       <ul className="stagger grid grid-cols-2 gap-2.5">
-        {used.map(({ concept, variants }) => (
+        {shown.map(({ concept, variants }) => (
           <li key={concept.id}>
             <Link
               href={`/concepts/${concept.id}/`}
@@ -32,6 +59,11 @@ export default function ConceptsPage() {
             >
               <span dir="rtl" lang="ar" className="dialect-text text-xl font-bold text-brand-800">{concept.name}</span>
               <span dir="ltr" lang="en" className="text-start text-xs text-slate-500">{concept.nameEn}</span>
+              {group !== 'all' && concept.words?.[group] && (
+                <span dir="rtl" lang="ar" className="dialect-text mt-1 text-sm font-semibold text-amber-700">
+                  {concept.words[group]}
+                </span>
+              )}
               <span className="mt-auto flex items-center justify-between pt-2 text-[11px] font-semibold text-brand-700">
                 {t('conceptDialectCount', { n: variants.length })}
                 <ChevronLeft className="h-3.5 w-3.5 ltr:rotate-180" aria-hidden />
