@@ -2,11 +2,24 @@
 
 import { Check, Search } from 'lucide-react'
 import { useState } from 'react'
+import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { audioCount, dialectsByRegion, searchDialects } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
+import type { WordGroup } from '../lib/types'
 import DialectMap from '../components/DialectMap'
+import { GROUP_KEY } from './RegionsPage'
+
+/** App regions that map to macro-region hubs; the Nile valley spans two. */
+const REGION_HUBS: Partial<Record<string, WordGroup[]>> = {
+  nile: ['egypt', 'sudan'],
+  levant: ['levant'],
+  iraq: ['iraq'],
+  gulf: ['gulf'],
+  yemen: ['yemen'],
+  maghreb: ['maghreb'],
+}
 
 export default function DialectsPage() {
   const t = useT()
@@ -41,7 +54,21 @@ export default function DialectsPage() {
 
       {groups.map(({ region, dialects }) => (
         <section key={region.id}>
-          <h2 className="mb-2 text-sm font-bold text-slate-500">{name(region)}</h2>
+          <h2 className="mb-2 flex items-baseline gap-2 text-sm font-bold text-slate-500">
+            {(REGION_HUBS[region.id] ?? []).length === 1 ? (
+              <Link href={`/regions/${REGION_HUBS[region.id]![0]}/`} className="underline-offset-2 hover:text-brand-700 hover:underline">
+                {name(region)}
+              </Link>
+            ) : (
+              name(region)
+            )}
+            {(REGION_HUBS[region.id] ?? []).length > 1 &&
+              REGION_HUBS[region.id]!.map((g) => (
+                <Link key={g} href={`/regions/${g}/`} className="text-xs font-semibold text-brand-700 underline-offset-2 hover:underline">
+                  {t(GROUP_KEY[g])}
+                </Link>
+              ))}
+          </h2>
           <ul className="grid grid-cols-2 gap-2">
             {dialects.map((d) => {
               const isSelected = d.id === selected
