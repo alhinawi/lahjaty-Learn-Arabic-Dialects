@@ -123,9 +123,12 @@ const GROUP_CARD_LABEL: Record<(typeof WORD_GROUPS)[number], string> = {
 }
 for (const group of WORD_GROUPS) {
   const label = GROUP_CARD_LABEL[group]
-  const names = dialectsInGroup(group).map((d) => d.name)
+  const groupDialects = dialectsInGroup(group)
+  const names = groupDialects.map((d) => d.name)
   const body = `${names.slice(0, 4).join('، ')}${names.length > 4 ? '…' : ''} · ${groupWords(group).length} كلمة`
-  draw(`/og/regions/${group}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings, site: SITE, section: `لهجات ${label}`, sectionBody: body }))
+  // Chips come from this region's own attributed famous phrases, never the global greeting pool.
+  const chips = [...new Set(groupDialects.map((d) => famousFor(d.id)[0]?.text).filter((x): x is string => !!x))]
+  draw(`/og/regions/${group}.jpg`, (c) => c.homeCard({ slogan, sloganEn, greetings: chips, site: SITE, section: `لهجات ${label}`, sectionBody: body }))
 }
 for (const cat of categories) {
   const sample = phrases.find((p) => p.category === cat.id)
