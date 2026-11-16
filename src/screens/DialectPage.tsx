@@ -5,11 +5,12 @@ import DialectIntro from '../components/DialectIntro'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import FamousCard from '../components/FamousCard'
-import { famousFor, getDialect, regions } from '../lib/content'
+import { famousFor, getDialect, regions, wordGroup } from '../lib/content'
 import { egyptNodeForDialect } from '../lib/egypt'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
 import NotFoundPage from './NotFoundPage'
+import { GROUP_KEY } from './RegionsPage'
 
 export default function DialectPage({ dialectId }: { dialectId: string }) {
   const t = useT()
@@ -21,6 +22,7 @@ export default function DialectPage({ dialectId }: { dialectId: string }) {
   const dialect = getDialect(dialectId)
   if (!dialect) return <NotFoundPage />
   const region = regions.find((r) => r.id === dialect.region)
+  const group = wordGroup(dialect)
   const famous = famousFor(dialect.id)
   const isLearning = learning === dialect.id
 
@@ -29,7 +31,13 @@ export default function DialectPage({ dialectId }: { dialectId: string }) {
     <div className="space-y-4">
       <section className="rounded-3xl bg-gradient-to-br from-brand-700 to-brand-900 p-5 text-white shadow">
         <p className="text-xs text-cream-200">
-          {region && name(region)}
+          {group ? (
+            <Link href={`/regions/${group}/`} className="underline-offset-2 hover:underline">
+              {t(GROUP_KEY[group])}
+            </Link>
+          ) : (
+            region && name(region)
+          )}
           {dialect.country && ` · ${lang === 'ar' ? dialect.country : dialect.countryEn}`}
         </p>
         <h1 className="mt-1 text-2xl font-bold">{name(dialect)}</h1>
