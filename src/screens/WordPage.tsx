@@ -1,11 +1,12 @@
 'use client'
 
 import { PageSkeleton } from '../components/Skeleton'
-import { ChevronRight, Columns3, Quote } from 'lucide-react'
+import { ChevronRight, Columns3, Lightbulb, Quote } from 'lucide-react'
 import Link from 'next/link'
 import DictSearch from '../components/DictSearch'
 import PlayButton from '../components/PlayButton'
 import { dialectsByRegion, getDialect, STANDARD_ID } from '../lib/content'
+import { conceptForEntry } from '../lib/conceptDict'
 import { dictAudioId, getTopic, topicOf, useEntry } from '../lib/dictionary'
 import { useName, useT } from '../lib/i18n'
 import type { MessageKey } from '../lib/i18n'
@@ -45,6 +46,7 @@ export default function WordPage({ entryId }: { entryId?: string }) {
     .map((g) => ({ region: g.region, dialects: g.dialects.filter((d) => d.id !== STANDARD_ID && entry.words[d.id]) }))
     .filter((g) => g.dialects.length)
   const mine = myDialectId && myDialectId !== STANDARD_ID ? getDialect(myDialectId) : undefined
+  const concept = conceptForEntry(entry)
 
   return (
     <div className="space-y-4">
@@ -68,6 +70,12 @@ export default function WordPage({ entryId }: { entryId?: string }) {
         <p dir="ltr" lang="en" className="mt-1 text-sm text-cream-200">
           {entry.en}
         </p>
+        {concept && (
+          <Link href={`/concepts/${concept.id}/`} className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold text-cream-100 ring-1 ring-white/20 hover:bg-white/15">
+            <Lightbulb className="h-3.5 w-3.5 text-sun-300" aria-hidden />
+            {t('dictSeeConcept', { concept: concept.name })}
+          </Link>
+        )}
         {entry.ex?.fs && (
           <p className="mt-3 flex items-start gap-1.5 text-sm text-cream-100">
             <Quote className="mt-0.5 h-3.5 w-3.5 shrink-0 text-sun-300" aria-hidden />
