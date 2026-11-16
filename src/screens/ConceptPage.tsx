@@ -1,8 +1,9 @@
 'use client'
 
-import { ChevronLeft, ChevronRight, Lightbulb, Share2 } from 'lucide-react'
+import { BookA, ChevronLeft, ChevronRight, Lightbulb, Share2 } from 'lucide-react'
 import Link from 'next/link'
 import { concepts, famousByConcept, getConcept, getDialect, STANDARD_ID } from '../lib/content'
+import { entryForConcept } from '../lib/conceptDict'
 import { sharePath } from '../lib/og'
 import { useT } from '../lib/i18n'
 import NotFoundPage from './NotFoundPage'
@@ -29,6 +30,7 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
   const prev = i > 0 ? index[i - 1] : undefined
   const next = i >= 0 && i < index.length - 1 ? index[i + 1] : undefined
   const regionWords = Object.entries(concept.words ?? {})
+  const dictEntry = entryForConcept(concept)
 
   return (
     <div className="space-y-4">
@@ -61,6 +63,12 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
         <p dir="ltr" lang="en" className="mt-1 text-end text-sm text-cream-100">{concept.nameEn}</p>
         <p className="mt-2 text-sm text-cream-100">{t('conceptInAllBody')}</p>
         <p className="mt-1 text-xs font-semibold text-sun-300">{t('conceptDialectCount', { n: variants.length })}</p>
+        {dictEntry && (
+          <Link href={`/word/${dictEntry.id}/`} className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold text-cream-100 ring-1 ring-white/20 hover:bg-white/15">
+            <BookA className="h-3.5 w-3.5 text-sun-300" aria-hidden />
+            {t('conceptSeeDict', { word: dictEntry.fs })}
+          </Link>
+        )}
       </header>
 
       {regionWords.length > 0 && (
