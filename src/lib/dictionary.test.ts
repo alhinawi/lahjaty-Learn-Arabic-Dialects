@@ -49,6 +49,6 @@ describe('dictionary', () => {
   it('gives dictionary pages their social cards', () => {
     expect(ogImageFor('/dictionary')).toBe('/og/dictionary.jpg')
     expect(ogImageFor(`/dictionary/${dictTopics[0].id}`)).toBe(`/og/dictionary/${dictTopics[0].id}.jpg`)
-    expect(ogImageFor('/word/family.father')).toBe('/og/word.jpg')
+    expect(ogImageFor('/word/family.father')).toBe('/og/words/family.father.jpg')
   })
 })
