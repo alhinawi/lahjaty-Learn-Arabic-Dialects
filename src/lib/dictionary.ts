@@ -44,23 +44,22 @@ export function loadEntry(entryId: string): Promise<DictEntry | undefined> {
 
 /** Loads one topic; null while loading. A prerendered `initial` skips the fetch entirely. */
 export function useTopic(id: string | undefined, initial?: DictEntry[]): DictEntry[] | null {
-  const [state, setState] = useState<{ id?: string; entries: DictEntry[] | null }>(() => ({ id, entries: id ? cache.get(id) ?? initial ?? null : [] }))
+  const [asyncState, setAsyncState] = useState<{ id?: string; entries: DictEntry[] | null }>({ entries: null })
   useEffect(() => {
     let alive = true
     if (!id) return
     if (initial && !cache.has(id)) cache.set(id, initial)
-    if (cache.has(id)) {
-      setState({ id, entries: cache.get(id)! })
-      return
-    }
-    loadTopic(id).then((entries) => alive && setState({ id, entries }))
+    if (cache.has(id)) return
+    loadTopic(id).then((entries) => alive && setAsyncState({ id, entries }))
     return () => {
       alive = false
     }
   }, [id, initial])
   if (!id) return []
-  if (state.id !== id) return cache.get(id) ?? initial ?? null
-  return state.entries
+  const hit = cache.get(id)
+  if (hit) return hit
+  if (asyncState.id === id) return asyncState.entries
+  return initial ?? null
 }
 
 /** Loads every topic once `enabled` is true; null until then. */
