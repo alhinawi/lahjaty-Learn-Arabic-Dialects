@@ -1,0 +1,12 @@
+# Iraqi (Baghdad + Basra) final fills: 546 -> 557
++ adjectives.ugly | IQ=شين
++ city.downtown | IQ=وسط المدينة
++ expressions.so_so | IQ=ماشي الحال
++ feelings.bored | IQ=زهقان
++ market.bargain | IQ=ساوم
++ occasions.sebou | IQ=عقيقة
++ questions.which | IQ=أي
++ slang.awesome | IQ=خوش
++ slang.chilled | IQ=رايق
++ slang.annoying | IQ=ثقيل
++ work.fired | IQ=انطرد / انفصل
