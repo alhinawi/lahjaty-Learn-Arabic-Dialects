@@ -1,0 +1,31 @@
+# Moroccan (mar) fills: attested Moroccan darija (ملّان، رواح، بيكو، تسكرة/بياط، ريكري، عمري ما، طرّدوه).
+# Completes mar to 557/557.
++ adjectives.clever | mar=شاطر / ذكي
++ adjectives.correct | mar=صحيح
++ adjectives.wrong | mar=غلط
++ city.downtown | mar=وسط المدينة
++ colors.brown | mar=قهوي / بنّي
++ feelings.bored | mar=ملّان
++ feelings.worried | mar=قلقان
++ feelings.upset | mar=مضايق
++ feelings.jealous | mar=غيران
++ feelings.calm | mar=هادي
++ health.headache | mar=صداع / وجع الراس
++ health.cold_illness | mar=برد / رواح
++ health.injection | mar=بيكو / حقنة
++ health.emergency | mar=طوارئ
++ health.ambulance | mar=إسعاف
++ kitchen.boil | mar=غلى
++ market.customer | mar=زبون
++ market.bargain | mar=ساوم / فاصل
++ school.homework | mar=واجبات
++ school.fail_exam | mar=رسب
++ school.break_time | mar=فسحة / ريكري
++ slang.kidding | mar=يمزح
++ slang.chilled | mar=رايق
++ slang.annoying | mar=تقيل
++ time.never | mar=عمري ما / أبدًا
++ transport.ticket | mar=تسكرة / بياط
++ work.colleague | mar=زميل / كوليغ
++ work.working_hours | mar=دوام
++ work.fired | mar=طرّدوه / انفصل
