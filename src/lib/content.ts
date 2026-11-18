@@ -2,6 +2,7 @@ import rawFamous from '../content/famous.json'
 import rawContent from '../content/phrases.json'
 import rawVoices from '../content/voices.json'
 import rawAudioIndex from '../generated/audio-index.json'
+import rawTtsVoices from '../generated/tts-voices.json'
 import type {
   AudioIndex,
   Category,
@@ -12,6 +13,7 @@ import type {
   FamousPhrase,
   Phrase,
   Region,
+  TtsVoiceMap,
   Voice,
   VoicesManifest,
   WordGroup,
@@ -21,6 +23,7 @@ export const content = rawContent as Content
 export const voicesManifest = rawVoices as VoicesManifest
 export const famousContent = rawFamous as FamousContent
 const audioIndex = rawAudioIndex as AudioIndex
+const ttsVoices = rawTtsVoices as TtsVoiceMap
 
 export const regions: Region[] = content.regions
 export const dialects: Dialect[] = content.dialects
@@ -69,10 +72,22 @@ export function searchDialects(query: string, list: Dialect[] = dialects): Diale
   )
 }
 
-export const hasAudio = (dialectId: string, phraseId: string) => audioSets.get(dialectId)?.has(phraseId) ?? false
+/** Dialects with a proxied ElevenLabs voice on the accounts Worker. */
+export const ttsDialects = () => Object.keys(ttsVoices)
 
-export const audioUrl = (dialectId: string, phraseId: string) =>
-  `/audio/${encodeURIComponent(dialectId)}/${encodeURIComponent(phraseId)}.mp3`
+export const hasTtsVoice = (dialectId: string) => dialectId in ttsVoices
+
+export const hasAudio = (dialectId: string, phraseId: string) =>
+  (audioSets.get(dialectId)?.has(phraseId) ?? false) || hasTtsVoice(dialectId)
+
+const API_BASE = (process.env.NEXT_PUBLIC_LAHJATY_API_URL || 'https://lahjaty-api.hnz.workers.dev').replace(/\/$/, '')
+
+export const audioUrl = (dialectId: string, phraseId: string) => {
+  const local = `/audio/${encodeURIComponent(dialectId)}/${encodeURIComponent(phraseId)}.mp3`
+  if (audioSets.get(dialectId)?.has(phraseId)) return local
+  if (hasTtsVoice(dialectId)) return `${API_BASE}/api/tts/${encodeURIComponent(dialectId)}/${encodeURIComponent(phraseId)}.mp3`
+  return local
+}
 
 export const audioCount = (dialectId: string) => audioSets.get(dialectId)?.size ?? 0
 

@@ -3,6 +3,7 @@ import { cors } from 'hono/cors'
 import { hashPassword, newToken, sha256Hex, verifyPassword } from './crypto'
 import { asBody, email, str, ValidationError } from './validate'
 import { finishGoogleLogin, googleConfigured, startGoogleLogin } from './google'
+import { registerTts } from './tts'
 
 type Env = { Bindings: Cloudflare.Env; Variables: { userId: number } }
 
@@ -21,6 +22,7 @@ app.onError((err, c) => {
   console.error(err)
   return c.json({ error: 'server_error' }, 500)
 })
+registerTts(app)
 app.notFound((c) => c.json({ error: 'not_found' }, 404))
 
 async function json(c: { req: { json: () => Promise<unknown> } }) {
