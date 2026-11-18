@@ -406,7 +406,7 @@
 + basics.welcome_reply | jeb=بلا جميل; tri=مرحبا بيك / بلا زحمة; ben=مرحبا بيك / بلا زحمة; has=العفو
 + basics.goodbye | jeb=بسلامة; tri=بسلامة; ben=بسلامة; has=مع السلامة
 + basics.maybe | jeb=يمكن / واقيلا; tri=يمكن; ben=يمكن
-+ questions.when | jeb=فوقاش / إمتى; tri=وقتاش; ben=وقتاش; has=متى
++ questions.when | jeb=فوقاش / إمتى; tri=وقتاش; ben=وقتاش
 + questions.which | jeb=أشمن; tri=أنّي; ben=أنّي
 + pronouns.you_m | jeb=نتا; tri=إنتا; ben=إنتا
 + pronouns.you_f | jeb=نتي; tri=إنتي; ben=إنتي
@@ -415,36 +415,36 @@
 + pronouns.they | jeb=هوما; tri=هومّة; ben=هومّة
 + pronouns.this_f | jeb=هادي; tri=هاي / هاذي; ben=هاي / هاذي
 + pronouns.these | jeb=هادو; tri=هاذوم; ben=هاذوم
-+ pronouns.there | jeb=تمّا; tri=هنيك; ben=هنيك; has=هناك
-+ time.late | jeb=معطّل; tri=متأخر; ben=متأخر; has=متأخر
++ pronouns.there | jeb=تمّا; tri=هنيك; ben=هنيك
++ time.late | jeb=معطّل; tri=متأخر; ben=متأخر
 + time.never | jeb=عمري ما; tri=جملة; ben=جملة
-+ time.week | jeb=سيمانة; tri=جمعة; ben=جمعة; has=أسبوع
++ time.week | jeb=سيمانة; tri=جمعة; ben=جمعة
 + family.family | jeb=الفاميلة / العائلة; tri=العايلة; ben=العايلة
 + food.yogurt | jeb=الرايب; tri=ياغورت; ben=ياغورت
 + animals.sheep | jeb=حولي / كبش; tri=علّوش / خروف; ben=علّوش / خروف; has=خروف
-+ animals.cockroach | jeb=سرّاق الزيت; tri=صرصار; ben=صرصار; has=صرصور
++ animals.cockroach | jeb=سرّاق الزيت; tri=صرصار; ben=صرصار
 + weather.umbrella | jeb=مظلّة; tri=مظلّة; ben=مظلّة; has=مظلة
 + colors.brown | jeb=بنّي / قهوي; tri=بنّي / كحلي; ben=بنّي / كحلي; has=بُنّي
 + verbs.help | jeb=عاون; tri=عاون; ben=عاون; has=ساعد
-+ verbs.shower | jeb=دوّش; tri=دوّش; ben=دوّش; has=استحمّ
-+ adjectives.dirty | jeb=موسّخ; tri=موسّخ; ben=موسّخ; has=متسخ
-+ adjectives.thin | jeb=ضعيف; tri=ضعيف; ben=ضعيف; has=نحيف
-+ adjectives.empty | jeb=خاوي; tri=خاوي; ben=خاوي; has=فارغ
++ verbs.shower | jeb=دوّش; tri=دوّش; ben=دوّش
++ adjectives.dirty | jeb=موسّخ; tri=موسّخ; ben=موسّخ
++ adjectives.thin | jeb=ضعيف; tri=ضعيف; ben=ضعيف
++ adjectives.empty | jeb=خاوي; tri=خاوي; ben=خاوي
 + adjectives.clever | jeb=شاطر / ذكي; tri=شاطر / ذكي; ben=شاطر / ذكي; has=ذكي
 + adjectives.correct | jeb=صحيح; tri=صح; ben=صح; has=صحيح
-+ adjectives.wrong | jeb=غلط; tri=غلط; ben=غلط; has=خاطئ
-+ feelings.happy | jeb=فرحان; tri=فرحان; ben=فرحان; has=سعيد
++ adjectives.wrong | jeb=غلط; tri=غلط; ben=غلط; has=غلط
++ feelings.happy | jeb=فرحان; tri=فرحان; ben=فرحان; has=فرحان
 + feelings.bored | jeb=ملّان; tri=ملّان; ben=ملّان
-+ feelings.worried | jeb=قلقان; tri=قلقان; ben=قلقان; has=قلِق
-+ feelings.upset | jeb=مضايق / زعلان; tri=متضايق; ben=متضايق; has=منزعج
-+ feelings.jealous | jeb=غيران; tri=غيران; ben=غيران; has=غيور
-+ feelings.calm | jeb=هادي; tri=هادي; ben=هادي; has=هادئ
-+ work.job | jeb=خدمة; tri=خدمة; ben=خدمة; has=وظيفة
++ feelings.worried | jeb=قلقان; tri=قلقان; ben=قلقان; has=قلقان
++ feelings.upset | jeb=مضايق / زعلان; tri=متضايق; ben=متضايق; has=زعلان
++ feelings.jealous | jeb=غيران; tri=غيران; ben=غيران; has=غيران
++ feelings.calm | jeb=هادي; tri=هادي; ben=هادي; has=هادي
++ work.job | jeb=خدمة; tri=خدمة; ben=خدمة; has=شغل
 + work.boss | jeb=شاف / مدير; tri=مدير; ben=مدير; has=مدير
 + work.colleague | jeb=كوليغ / زميل; tri=زميل; ben=زميل; has=زميل
-+ work.day_off | jeb=كونجي; tri=عطلة; ben=عطلة; has=إجازة
++ work.day_off | jeb=كونجي; tri=عطلة; ben=عطلة; has=عطلة
 + work.working_hours | jeb=الدوام; tri=الدوام; ben=الدوام
 + work.fired | jeb=طرّدوه; tri=انطرد; ben=انطرد
-+ work.unemployed | jeb=بطّال; tri=بطّال; ben=بطّال; has=عاطل
-+ market.discount | jeb=صولد; tri=صولد / تخفيض; ben=صولد / تخفيض; has=خصم
++ work.unemployed | jeb=بطّال; tri=بطّال; ben=بطّال
++ market.discount | jeb=صولد; tri=صولد / تخفيض; ben=صولد / تخفيض
 + market.small_change | jeb=صرف; tri=صرف; ben=صرف
