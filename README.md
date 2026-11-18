@@ -21,6 +21,18 @@ situation, and the famous phrases of each dialect.
 
 ---
 
+## Live preview
+
+Captured from the current Arabic live site on 18 November 2026. The short GIF cycles through home, Cairo dialect phrases and the lesson list. These are actual navigation captures, not generated mockups.
+
+[![Lahjaty live home, dialect and lessons tour](docs/media/demo.gif)](https://lahjaty.pages.dev/)
+
+| Desktop | Mobile |
+| --- | --- |
+| ![Lahjaty home on desktop](docs/media/desktop.webp) | ![Lahjaty home on mobile](docs/media/mobile.webp) |
+
+[Explore Cairo phrases](https://lahjaty.pages.dev/dialects/cai/) · [Browse lessons](https://lahjaty.pages.dev/lessons/)
+
 ## Features
 
 - **Dialect picker** grouped by region, with search.
@@ -35,8 +47,8 @@ situation, and the famous phrases of each dialect.
   description, Open Graph/Twitter tags and JSON-LD.
 - **Works offline** — a service worker caches pages, assets, audio and share cards.
 
-The content keeps growing, so nothing in the app or the docs states a fixed number of
-dialects or phrases.
+The content keeps growing. Counts visible in these screenshots describe the capture
+date, not a permanent catalog size.
 
 ## Stack
 
