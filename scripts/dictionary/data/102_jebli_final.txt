@@ -1,0 +1,18 @@
+# Jebli (jeb) final fills: northern Morocco shares the pan-Moroccan darija of the mar column.
+# Completes jeb to 557/557.
++ city.downtown | jeb=وسط المدينة
++ health.headache | jeb=صداع / وجع الراس
++ health.cold_illness | jeb=برد / رواح
++ health.injection | jeb=بيكو / حقنة
++ health.emergency | jeb=طوارئ
++ health.ambulance | jeb=إسعاف
++ kitchen.boil | jeb=غلى
++ market.customer | jeb=زبون
++ market.bargain | jeb=ساوم / فاصل
++ school.homework | jeb=واجبات
++ school.fail_exam | jeb=رسب
++ school.break_time | jeb=فسحة / ريكري
++ slang.kidding | jeb=يمزح
++ slang.chilled | jeb=رايق
++ slang.annoying | jeb=تقيل
++ transport.ticket | jeb=تسكرة / بياط
