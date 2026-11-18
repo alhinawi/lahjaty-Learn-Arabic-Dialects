@@ -19,3 +19,8 @@ CREATE TABLE tts_state (
   key TEXT PRIMARY KEY,
   value INTEGER
 );
+CREATE TABLE tts_cache (
+  cache_key TEXT PRIMARY KEY,
+  audio BLOB NOT NULL,
+  created_at TEXT NOT NULL
+);
