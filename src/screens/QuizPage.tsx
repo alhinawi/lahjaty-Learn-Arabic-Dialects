@@ -135,7 +135,7 @@ function Quiz({ mode, category }: { mode: 'meaning' | 'match' | 'guess'; categor
           <p dir="rtl" lang="ar" className="dialect-text min-w-0 flex-1 text-3xl font-bold text-slate-900">
             {shown.text}
           </p>
-          {mode !== 'guess' && <PlayButton dialectId={q.dialectId} phraseId={q.phrase.id} size="lg" />}
+          {mode !== 'guess' && <PlayButton dialectId={q.dialectId} phraseId={q.phrase.id} text={shown.text} size="lg" />}
         </div>
       </section>
 

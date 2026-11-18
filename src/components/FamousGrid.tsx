@@ -40,7 +40,7 @@ export default function FamousGrid() {
           <p dir="rtl" lang="ar" className="dialect-text min-w-0 flex-1 text-3xl font-bold text-slate-900">
             {today.phrase.text}
           </p>
-          <PlayButton dialectId={today.dialectId} phraseId={today.phrase.id} />
+          <PlayButton dialectId={today.dialectId} phraseId={today.phrase.id} text={today.phrase.text} />
         </div>
         <MyDialectLine text={famousInMyDialect(today.phrase, today.dialectId, myDialectId)} />
         <p dir="ltr" lang="en" className="mt-2 text-start text-sm text-slate-700">
@@ -90,7 +90,7 @@ export default function FamousGrid() {
                     {name(d)}
                     {d.country && <span className="font-normal text-slate-500"> · {lang === 'ar' ? d.country : d.countryEn}</span>}
                   </span>
-                  <PlayButton dialectId={d.id} phraseId={phrase.id} size="sm" />
+                  <PlayButton dialectId={d.id} phraseId={phrase.id} text={phrase.text} size="sm" />
                 </span>
                 <span dir="rtl" lang="ar" className="dialect-text mt-1.5 text-xl leading-snug font-bold text-brand-800">
                   {phrase.text}

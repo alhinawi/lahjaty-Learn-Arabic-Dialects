@@ -89,7 +89,7 @@ function ResultCard({ hit }: { hit: SearchHit }) {
       <Link href={r.href} dir="rtl" lang="ar" className={`dialect-text min-w-0 flex-1 text-[15px] ${strong ? 'font-bold text-brand-800' : 'font-semibold text-slate-900'}`}>
         {r.text}
       </Link>
-      <PlayButton dialectId={r.dialect.id} phraseId={r.phraseId} size="sm" />
+      <PlayButton dialectId={r.dialect.id} phraseId={r.phraseId} text={r.text} size="sm" />
     </li>
   )
 
