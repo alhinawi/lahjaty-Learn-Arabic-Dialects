@@ -41,9 +41,11 @@ export function registerTts<E extends { Bindings: Cloudflare.Env }>(app: Hono<E>
 
     const model = c.env.TTS_MODEL || TTS_MODEL_DEFAULT
     const cacheKey = `tts/${dialect}/${slug}.${voice.voiceId}.${model}.mp3`
-    const hit = await c.env.AUDIO.get(cacheKey)
+    const hit = await c.env.DB.prepare('SELECT audio FROM tts_cache WHERE cache_key = ?')
+      .bind(cacheKey)
+      .first<{ audio: ArrayBuffer }>()
     if (hit) {
-      return new Response(hit.body, {
+      return new Response(hit.audio, {
         headers: {
           'Content-Type': 'audio/mpeg',
           'Cache-Control': 'public, max-age=31536000, immutable',
@@ -81,7 +83,9 @@ export function registerTts<E extends { Bindings: Cloudflare.Env }>(app: Hono<E>
     const audio = await res.arrayBuffer()
     c.executionCtx.waitUntil(
       Promise.all([
-        c.env.AUDIO.put(cacheKey, audio, { httpMetadata: { contentType: 'audio/mpeg' } }),
+        c.env.DB.prepare('INSERT OR REPLACE INTO tts_cache (cache_key, audio, created_at) VALUES (?, ?, ?)')
+          .bind(cacheKey, audio, new Date().toISOString())
+          .run(),
         c.env.DB.prepare(
           'INSERT INTO tts_usage (day, chars) VALUES (?, ?) ON CONFLICT(day) DO UPDATE SET chars = chars + ?',
         ).bind(today, row.chars, row.chars).run(),
