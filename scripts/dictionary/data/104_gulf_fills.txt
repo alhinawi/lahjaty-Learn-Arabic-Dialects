@@ -1,0 +1,8 @@
+# Gulf (Najdi, Shammari, Kuwaiti, Emirati, Qatari, Bahraini, Omani, Dhofari) + Jizani final fills: 550/551 -> 557
++ city.downtown | KHL=وسط المدينة; OM=وسط المدينة; jiz=وسط المدينة
++ expressions.so_so | KHL=ماشي الحال; OM=ماشي الحال; jiz=ماشي الحال
++ kitchen.teapot | KHL=برّاد; OM=برّاد / إبريق; jiz=إبريق / برّاد
++ occasions.sebou | KHL=عقيقة; OM=عقيقة; jiz=عقيقة
++ pronouns.these | KHL=هذولا; OM=هذولا / دول
++ questions.which | KHL=أي; OM=أي; jiz=أي
++ time.evening | KHL=المسا / العشية; OM=المسا / العشية; jiz=المسا / العشية
