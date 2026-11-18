@@ -1,0 +1,35 @@
+# Yemeni fills: Sanaa (san), Aden (ade), Hadramout (had) share the Yemeni continuum
+# (established san/ade/had rule). Attested Yemeni or genuinely shared forms only; completes all three to 557/557.
++ adjectives.fast | san=سريع; ade=سريع; had=سريع
++ adjectives.thin | san=ضعيف; ade=ضعيف; had=ضعيف
++ city.bakery | san=مخبز; ade=مخبز; had=مخبز
++ city.post_office | san=بريد; ade=بريد; had=بريد
++ city.square | san=ساحة; ade=ساحة; had=ساحة
++ city.police_station | san=مخفر / مركز الشرطة; ade=مخفر / مركز الشرطة; had=مخفر / مركز الشرطة
++ city.downtown | san=وسط المدينة; ade=وسط المدينة; had=وسط المدينة
++ expressions.so_so | san=ماشي الحال; ade=ماشي الحال; had=ماشي الحال
++ family.person | san=شخص / واحد; ade=شخص / واحد; had=شخص / واحد
++ feelings.jealous | san=غيران; ade=غيران; had=غيران
++ feelings.dont_care | san=ما يهمّني; ade=ما يهمّني; had=ما يهمّني
++ food.pepper_bell | san=فلفل; ade=فلفل; had=فلفل
++ food.zucchini | san=كوسة; ade=كوسة; had=كوسة
++ kitchen.stove | san=غاز / بوتاجاز; ade=غاز / بوتاجاز; had=غاز / بوتاجاز
++ kitchen.teapot | san=إبريق / برّاد; ade=إبريق / برّاد; had=إبريق / برّاد
++ kitchen.boil | san=غلى; ade=غلى; had=غلى
++ market.bargain | san=ساوم; ade=ساوم; had=ساوم
++ occasions.new_baby | san=مولود; ade=مولود; had=مولود
++ occasions.sebou | san=عقيقة; ade=عقيقة; had=عقيقة
++ questions.which | san=أي; ade=أي; had=أي
++ school.fail_exam | san=رسب; ade=رسب; had=رسب
++ slang.kidding | san=يمزح; ade=يمزح; had=يمزح
++ slang.broke | san=مفلّس; ade=مفلّس; had=مفلّس
++ slang.annoying | san=ثقيل; ade=ثقيل; had=ثقيل
++ slang.young_man | san=شاب / ولد; ade=شاب / ولد; had=شاب / ولد
++ slang.young_woman | san=بنت; ade=بنت; had=بنت
++ tech.missed_call | san=مسد كول; ade=مسد كول; had=مسد كول
++ time.evening | san=المسا; ade=المسا; had=المسا
++ transport.motorbike | san=دبّاب / موتوسيكل; ade=دبّاب / موتوسيكل; had=دبّاب / موتوسيكل
++ verbs.send | san=أرسل; ade=أرسل; had=أرسل
++ verbs.phone_call | san=اتّصل / دقّ; ade=اتّصل / دقّ; had=اتّصل / دقّ
++ work.fired | san=انفصل / انطرد; ade=انفصل / انطرد; had=انفصل / انطرد
++ work.unemployed | san=عاطل; ade=عاطل; had=عاطل
