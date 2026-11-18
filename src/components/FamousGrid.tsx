@@ -18,7 +18,31 @@ export default function FamousGrid() {
   const name = useName()
   const lang = useApp((s) => s.lang)
   const myDialectId = useApp((s) => s.myDialectId)
-  const list = dialects.filter((d) => d.id !== STANDARD_ID && famousFor(d.id).length > 0)
+  // Front grid: two distinctive dialects per country (owner request), in a curated order,
+  // so the home page fronts countries instead of every governorate-level dialect.
+  const FRONT_ORDER = [
+    'cai', 'sai', 'naj', 'hij', 'dam', 'alp', 'leb', 'psu', 'psr', 'jor', 'bag', 'mos',
+    'kuw', 'emi', 'qat', 'bah', 'oma', 'dho', 'san', 'ade', 'sud', 'chd', 'mar', 'jeb',
+    'alg', 'tun', 'tri', 'ben', 'has',
+  ]
+  const byCountry = new Map<string, typeof dialects>()
+  for (const d of dialects) {
+    if (d.id === STANDARD_ID || famousFor(d.id).length === 0) continue
+    const key = d.countryEn ?? d.country ?? ''
+    const arr = byCountry.get(key) ?? []
+    arr.push(d)
+    byCountry.set(key, arr)
+  }
+  const list = [...byCountry.values()].flatMap((arr) =>
+    arr
+      .slice()
+      .sort((a, b) => {
+        const ia = FRONT_ORDER.indexOf(a.id)
+        const ib = FRONT_ORDER.indexOf(b.id)
+        return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib)
+      })
+      .slice(0, 2),
+  )
   const today = phraseOfTheDay()
   const todayDialect = getDialect(today.dialectId)!
   const note = lang === 'ar' ? today.phrase.noteAr ?? today.phrase.note : today.phrase.note
