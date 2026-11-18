@@ -99,7 +99,6 @@ aunt_maternal | خالة | maternal aunt | n | EGS=خالة; LEVP=خالة; IQM=
 husband | زوج | husband | n | EGS=جوز; LEVP=جوز; IQ=رجل / زوج; mos=زوج; GLF=ريّال / زوج; SA=رجّال / زوج; hij=زوج / رجّال; sud=راجل; NAF=راجل; alg=راجل
 wife | زوجة | wife | n | EGS=مراتي; LEVP=مرتي; IQM=مرتي / زوجتي; KHL=زوجتي / حرمتي; hij=زوجتي / حرمتي; sud=مرتي; MAJ=مراتي; alg=مرتي; tun=مرتي
 kids | أطفال | kids | n | EGS=عيال / أطفال; LEVP=ولاد; IQ=جهّال; GLF=يهال / عيال; SA=عيال; hij=أطفال / بزورة; sud=شُفّع; MAJ=دراري; alg=ذراري; tun=صغار | cai: العيال في المدرسة. || mar: الدراري فالمدرسة.
-friend | صديق | friend | n | EGS=صاحب; LEVP=رفيق / صاحب; IQ=صديق / رفيج; GLF=ربيع; SA=خويّ / صاحب; hij=صاحب; sud=صاحب; NAF=صاحب; alg=صاحب | kuw: هذا ربيعي من زمان.
 cousin | ابن العم | cousin (father's brother's son) | n | EGS=ابن عمّ; LEVP=ابن عمّ; IQM=ابن عمّ; KHL=ولد عمّ; hij=ولد عمّ; sud=ود عمّ; NAF=ولد عمّ; alg=ولد عمّ
 family | عائلة | family | n | EGS=عيلة; LEVP=عيلة; IQM=عائلة / أهل; KHL=أهل / عايلة; hij=عيلة; sud=أهل; mar=الفاميلة / العائلة; alg=العايلة / الفاميلة; tun=العايلة
 man | رجل | man | n | EGS=راجل; LEVP=زلمة; IQM=رجّال; GLF=ريّال; SA=رجّال; hij=رجّال; sud=راجل; NAF=راجل; alg=راجل | dam: هالزلمة منيح.
@@ -107,3 +106,12 @@ woman | امرأة | woman | n | EGS=ست / مَرة; LEVP=مرا / ست; IQM=م
 person | شخص | person | n | EGS=بني آدم / شخص; LEVP=شخص / حدا; IQ=شخص / واحد; KHL=شخص / واحد; sud=زول; MAJ=بنادم; alg=بنادم; tun=عبد | sud: الزول ده منو؟
 boy | ولد | boy | n | EGS=واد / ولد; LEVP=ولد / صبي; IQ=ولد; KHL=ولد / ياهل; hij=ولد; sud=ولد; MAJ=دري; alg=طفل; tun=ولد / طفل
 neighbor | جار | neighbor | n | EGS=جار; LEVP=جار; IQM=جار / جيران; KHL=جار / يار; hij=جار; sud=جار; NAF=جار; alg=جار
+house | بيت | house | n | EGS=بيت; LEVP=بيت; IQM=بيت; KHL=بيت; hij=بيت; YEA=بيت; sud=بيت; chd=بيت; NAF=دار; has=دار | cai: البيت بتاعنا قريب. || mar: الدار ديالنا قريبة.
+street | شارع | street | n | EGS=شارع; LEVP=شارع; IQM=شارع; KHL=شارع; hij=شارع; YEA=شارع; sud=شارع; chd=شارع; MAJ=زنقة; alg=زنقة; tun=نهج; LY=شارع; has=شارع
+water | ماء | water | n | EGS=مية; LEV=مي; IQM=مي; KHL=موية; hij=موية; YEA=مية; sud=موية; chd=موية; NAF=ما; has=الماء | cai: عايز كباية مية. || bag: عندك ماي؟
+bread | خبز | bread | n | EGS=عيش; LEV=خبز; IQM=خبز; KHL=خبز; hij=خبز; YEA=خبز; sud=عيش; chd=عيش; NAF=خبز; has=خبز
+money | مال | money | n | EGS=فلوس; LEVP=مصاري; IQM=فلوس; KHL=فلوس; hij=فلوس; YEA=فلوس; sud=فلوس; chd=فلوس; NAF=فلوس / دراهم; has=فلوس
+day | يوم | day | n | ALL=يوم; tun=نهار
+night | ليل | night | n | ALL=ليل
+work | عمل | work (job) | n | EGS=شغل; LEVP=شغل; IQM=شغل; KHL=شغل; hij=شغل; YEA=شغل; sud=شغل; chd=شغل; NAF=خدمة; LY=شغل; has=شغل | alg: راني في الخدمة.
+car | سيارة | car | n | EGS=عربية; LEV=سيارة; IQM=سيارة; KHL=سيارة; hij=سيارة; YEA=سيارة; sud=عربية; chd=عربية; MAJ=طوموبيل; alg=طوموبيل; tun=كرهبة; LY=عربية; has=سيارة
