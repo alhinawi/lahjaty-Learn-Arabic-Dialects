@@ -1592,6 +1592,12 @@
         "note": "Country thanks with a blessing",
         "example": "كتّر خيرك يا ريّس، السمك تحفة",
         "concept": "thanks"
+      },
+      {
+        "id": "famous.sidi_ibrahim_desouki",
+        "text": "سيدي إبراهيم الدسوقي",
+        "english": "Sidi Ibrahim El-Desouki, the famous saint of Desouk in Kafr El-Sheikh",
+        "standard": "سيدي إبراهيم الدسوقي"
       }
     ],
     "sai": [
@@ -5021,6 +5027,30 @@
         "text": "بحيرة الملاحة",
         "english": "The saltwater lake of Port Said, a city landmark",
         "standard": "بحيرة الملاحة في بورسعيد"
+      },
+      {
+        "id": "famous.juha_suez",
+        "text": "جحا السويسي",
+        "english": "Juha, the comic folk character whose tales belong to Suez",
+        "standard": "جحا أهل السويس"
+      },
+      {
+        "id": "famous.bor_fouad",
+        "text": "بورفؤاد",
+        "english": "Port Fouad, Port Said's sister city across the canal",
+        "standard": "مدينة بورفؤاد"
+      },
+      {
+        "id": "famous.lake_timsah",
+        "text": "بحيرة التمساح",
+        "english": "Lake Timsah, the Crocodile Lake of Ismailia",
+        "standard": "بحيرة التمساح في الإسماعيلية"
+      },
+      {
+        "id": "famous.mango_ismailia",
+        "text": "مانجو الإسماعيلية",
+        "english": "Ismailia's famous mangoes, a source of city pride",
+        "standard": "مانجو الإسماعيلية"
       }
     ],
     "bdw": [
@@ -5059,6 +5089,30 @@
         "text": "الجار قبل الدار",
         "english": "The neighbor before the house (bedouin proverb)",
         "standard": "اختر الجار قبل الدار"
+      },
+      {
+        "id": "famous.cleopatra_bath",
+        "text": "حمام كليوباترا",
+        "english": "Cleopatra's Bath, the famous rock pool of Matrouh",
+        "standard": "حمام كليوباترا في مرسى مطروح"
+      },
+      {
+        "id": "famous.ageeba",
+        "text": "عجيبة",
+        "english": "Ageeba, Matrouh's famous cliff beach",
+        "standard": "شاطئ عجيبة"
+      },
+      {
+        "id": "famous.alamein",
+        "text": "العلمين",
+        "english": "El Alamein, the famous World War II battle site in Matrouh",
+        "standard": "العلمين"
+      },
+      {
+        "id": "famous.rommel_cave",
+        "text": "كهف رومل",
+        "english": "Rommel's Cave, the WWII landmark of Matrouh",
+        "standard": "كهف رومل في مطروح"
       }
     ]
   }
