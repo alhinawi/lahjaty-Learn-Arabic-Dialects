@@ -10,10 +10,9 @@ only ever calls the Worker.
 
 ## One-time wiring (owner side)
 
-1. Create the R2 bucket and apply the migration:
+1. Apply the migration:
    ```
    cd backend
-   wrangler r2 bucket create lahjaty-audio
    wrangler d1 migrations apply lahjaty --remote
    ```
 2. Set the secrets (pool first, then the two Lahjaty-dedicated keys; this
@@ -36,8 +35,9 @@ only ever calls the Worker.
 
 - The Worker only speaks texts listed in `tts_manifest`; anything else is 404,
   so nobody can burn characters with arbitrary text.
-- Each text is paid once: audio is cached in R2 forever, keyed by
-  dialect + slug + voice + model.
+- Each text is paid once: audio is cached in D1 forever (`tts_cache` table),
+  keyed by dialect + slug + voice + model. (R2 would be cheaper at scale, but
+  it is not enabled on the account; D1's free tier covers this easily.)
 - Daily cap: `TTS_DAILY_CHAR_CAP` (var, default 9000 chars/UTC day).
 - Pool keys rotate round-robin; a key that answers quota-exceeded is parked
   until the 1st of next month. The two Lahjaty keys are used only when the
