@@ -4984,6 +4984,34 @@
         "example": "شكون جاء اليوم؟",
         "concept": "who"
       }
+    ],
+    "cnl": [
+      {
+        "id": "famous.port_said_song",
+        "text": "بورسعيد يا بورسعيد",
+        "english": "Port Said, oh Port Said - the iconic song refrain every Egyptian knows",
+        "standard": "بورسعيد يا بورسعيد"
+      },
+      {
+        "id": "famous.ya_simsimiya",
+        "text": "يا أهل السيمسمية",
+        "english": "Hey people of the simsimiyya (the Canal cities' iconic lyre and music tradition)",
+        "standard": "يا أهل السيمسمية"
+      }
+    ],
+    "bdw": [
+      {
+        "id": "famous.hala_wallah",
+        "text": "هلا والله",
+        "english": "A warm bedouin hello",
+        "standard": "مرحباً وأهلاً"
+      },
+      {
+        "id": "famous.ya_hala_beldeef",
+        "text": "يا هلا بالضيف",
+        "english": "Welcome, guest (bedouin hospitality greeting)",
+        "standard": "مرحباً بالضيف"
+      }
     ]
   }
 }
