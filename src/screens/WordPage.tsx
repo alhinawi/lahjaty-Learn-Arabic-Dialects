@@ -96,7 +96,7 @@ export default function WordPage({ entryId, initialEntry }: { entryId?: string; 
           <h1 dir="rtl" lang="ar" className="dialect-text min-w-0 flex-1 text-3xl font-bold">
             {entry.fs}
           </h1>
-          <PlayButton dialectId={STANDARD_ID} phraseId={dictAudioId(entry.id)} size="sm" />
+          <PlayButton dialectId={STANDARD_ID} phraseId={dictAudioId(entry.id)} text={entry.fs} size="sm" />
         </div>
         <p dir="ltr" lang="en" className="mt-1 text-sm text-cream-200">
           {entry.en}
@@ -144,7 +144,7 @@ export default function WordPage({ entryId, initialEntry }: { entryId?: string; 
                   <p dir="rtl" lang="ar" className="dialect-text min-w-0 flex-1 text-lg font-bold text-slate-900">
                     {entry.words[d.id]}
                   </p>
-                  <PlayButton dialectId={d.id} phraseId={dictAudioId(entry.id)} size="sm" />
+                  <PlayButton dialectId={d.id} phraseId={dictAudioId(entry.id)} text={entry.words[d.id]} size="sm" />
                 </div>
                 {entry.ex?.[d.id] && (
                   <p dir="rtl" lang="ar" className="dialect-text mt-1 ps-[7.75rem] text-sm text-slate-600">
