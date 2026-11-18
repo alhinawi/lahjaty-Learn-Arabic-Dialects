@@ -1,0 +1,93 @@
+# Sudanese (sud) fills for concepts missing them; Chadian (chd) copies Sudanese (established chd<-sud rule).
+# Only shared/standard words genuinely used in Sudan or attested Sudanese colloquial (زول، وحشتني، السماية، جامد).
++ adjectives.fast | sud=سريع; chd=سريع
++ adjectives.clean_adj | sud=نضيف; chd=نضيف
++ adjectives.thin | sud=رفيع; chd=رفيع
++ adjectives.empty | sud=فاضي; chd=فاضي
++ adjectives.heavy | sud=تقيل; chd=تقيل
++ city.cafe | sud=قهوة; chd=قهوة
++ city.bakery | sud=مخبز; chd=مخبز
++ city.post_office | sud=بريد; chd=بريد
++ city.square | sud=ميدان; chd=ميدان
++ city.roundabout | sud=دوّار; chd=دوّار
++ city.building | sud=عمارة; chd=عمارة
++ city.apartment | sud=شقّة; chd=شقّة
++ city.police_station | sud=قسم; chd=قسم
++ city.downtown | sud=وسط البلد; chd=وسط البلد
++ clothes.jacket | sud=جاكيت; chd=جاكيت
++ colors.blue | sud=أزرق; chd=أزرق
++ colors.orange_color | sud=برتقالي; chd=برتقالي
++ colors.pink | sud=وردي; chd=وردي
++ colors.grey | sud=رمادي; chd=رمادي
++ colors.purple | sud=بنفسجي; chd=بنفسجي
++ expressions.excuse_me | sud=عن إذنك / لو سمحت; chd=عن إذنك / لو سمحت
++ expressions.enjoy_meal | sud=بالهنا والشفا; chd=بالهنا والشفا
++ expressions.see_you | sud=أشوفك بعدين; chd=أشوفك بعدين
++ expressions.so_so | sud=ماشي الحال; chd=ماشي الحال
++ feelings.worried | sud=قلقان; chd=قلقان
++ feelings.upset | sud=متضايق; chd=متضايق
++ feelings.shy | sud=مستحي; chd=مستحي
++ feelings.jealous | sud=غيران; chd=غيران
++ feelings.miss_you | sud=وحشتني; chd=وحشتني
++ feelings.dont_care | sud=مش فارقة معاي; chd=مش فارقة معاي
++ feelings.calm | sud=هادي; chd=هادي
++ food.pepper_bell | sud=فلفل رومي; chd=فلفل رومي
++ food.cucumber | sud=خيار; chd=خيار
++ food.zucchini | sud=كوسة; chd=كوسة
++ health.fever | sud=سخونية / حرارة; chd=سخونية / حرارة
++ health.cold_illness | sud=برد / دور برد; chd=برد / دور برد
++ home.furniture | sud=عفش; chd=عفش
++ kitchen.stove | sud=بوتاجاز / غاز; chd=بوتاجاز / غاز
++ kitchen.teapot | sud=برّاد; chd=برّاد
++ kitchen.spices | sud=بهارات; chd=بهارات
++ kitchen.boil | sud=غلى; chd=غلى
++ market.price | sud=سعر; chd=سعر
++ market.discount | sud=خصم / تخفيضات; chd=خصم / تخفيضات
++ market.small_change | sud=فكّة; chd=فكّة
++ market.plastic_bag | sud=كيس; chd=كيس
++ market.card | sud=كارت / بطاقة; chd=كارت / بطاقة
++ market.bargain | sud=فاصل; chd=فاصل
++ market.size | sud=مقاس; chd=مقاس
++ market.free_of_charge | sud=ببلاش / مجّاني; chd=ببلاش / مجّاني
++ occasions.eidiya | sud=عيديّة; chd=عيديّة
++ occasions.party | sud=حفلة; chd=حفلة
++ occasions.new_baby | sud=مولود / بيبي; chd=مولود / بيبي
++ occasions.sebou | sud=السماية / سبوع; chd=السماية / سبوع
++ pronouns.someone | sud=حد / زول; chd=حد / زول
++ school.grades | sud=درجات; chd=درجات
++ school.fail_exam | sud=سقط / رسب; chd=سقط / رسب
++ school.break_time | sud=فسحة; chd=فسحة
++ slang.awesome | sud=جامد / خطير; chd=جامد / خطير
++ slang.kidding | sud=بيهزّر; chd=بيهزّر
++ slang.broke | sud=مفلّس; chd=مفلّس
++ slang.chilled | sud=رايق; chd=رايق
++ slang.annoying | sud=تقيل; chd=تقيل
++ slang.young_man | sud=ولد / شاب; chd=ولد / شاب
++ sports.team | sud=فريق; chd=فريق
++ sports.lose | sud=خسر / انغلب; chd=خسر / انغلب
++ sports.draw | sud=تعادل; chd=تعادل
++ sports.stadium | sud=ملعب / استاد; chd=ملعب / استاد
++ sports.gym | sud=جيم; chd=جيم
++ sports.fan | sud=مشجّع; chd=مشجّع
++ sports.exercise | sud=تمارين / رياضة; chd=تمارين / رياضة
++ tech.charger | sud=شاحن; chd=شاحن
++ tech.battery_dead | sud=خلص الشحن; chd=خلص الشحن
++ tech.message | sud=رسالة / مسج; chd=رسالة / مسج
++ tech.computer | sud=كمبيوتر; chd=كمبيوتر
++ tech.password | sud=باسورد / كلمة السر; chd=باسورد / كلمة السر
++ tech.voice_note | sud=فويس; chd=فويس
++ tech.missed_call | sud=رنّة / مسد كول; chd=رنّة / مسد كول
++ tech.download | sud=نزّل; chd=نزّل
++ tech.signal | sud=شبكة; chd=شبكة
++ time.evening | sud=المسا; chd=المسا
++ time.never | sud=أبدًا / خالص; chd=أبدًا / خالص
++ transport.motorbike | sud=موتوسيكل; chd=موتوسيكل
++ verbs.wait | sud=استنّى; chd=استنّى
++ verbs.remember | sud=افتكر; chd=افتكر
++ verbs.phone_call | sud=اتّصل / رنّ; chd=اتّصل / رنّ
++ verbs.shower | sud=استحمّى; chd=استحمّى
++ weather.snow | sud=تلج; chd=تلج
++ weather.umbrella | sud=شمسية; chd=شمسية
++ work.working_hours | sud=دوام; chd=دوام
++ work.fired | sud=اترفد / انفصل; chd=اترفد / انفصل
++ work.unemployed | sud=عاطل; chd=عاطل
