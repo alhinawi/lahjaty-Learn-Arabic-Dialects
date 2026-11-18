@@ -37,7 +37,7 @@ export default function SharePage({ dialectId = '', phraseId = '' }: { dialectId
           «{text}»
         </p>
         <div className="mt-3 flex justify-center">
-          <PlayButton dialectId={dialectId} phraseId={phraseId} />
+          <PlayButton dialectId={dialectId} phraseId={phraseId} text={text} />
         </div>
         <dl className="mt-4 space-y-1 text-sm">
           {standard && (

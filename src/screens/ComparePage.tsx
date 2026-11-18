@@ -119,7 +119,7 @@ export default function ComparePage() {
                         {f.english}
                       </p>
                     </div>
-                    <PlayButton dialectId={d.id} phraseId={f.id} size="sm" />
+                    <PlayButton dialectId={d.id} phraseId={f.id} text={f.text} size="sm" />
                   </li>
                 )
               })}
@@ -159,7 +159,7 @@ export default function ComparePage() {
               </p>
             )}
           </div>
-          <PlayButton dialectId={STANDARD_ID} phraseId={phrase.id} />
+          <PlayButton dialectId={STANDARD_ID} phraseId={phrase.id} text={standard.text} />
         </div>
         {(lang === 'ar' ? phrase.noteAr : phrase.note) && (
           <p className="mt-2 text-xs text-cream-100">{lang === 'ar' ? phrase.noteAr : phrase.note}</p>
@@ -219,7 +219,7 @@ export default function ComparePage() {
                       </p>
                     )}
                   </div>
-                  <PlayButton dialectId={d.id} phraseId={phrase.id} size="sm" />
+                  <PlayButton dialectId={d.id} phraseId={phrase.id} text={v?.text} size="sm" />
                 </li>
               )
             })}

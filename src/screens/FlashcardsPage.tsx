@@ -125,7 +125,7 @@ export default function FlashcardsPage() {
             <>
               <MyDialectLine text={baseInMyDialect(phrase, dialectId, myDialectId)} />
               <div className="flex justify-center">
-                <PlayButton dialectId={dialectId} phraseId={phrase.id} />
+                <PlayButton dialectId={dialectId} phraseId={phrase.id} text={phrase.variants[dialectId]?.text} />
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <button type="button" onClick={() => answer(false)} className="flex items-center justify-center gap-2 rounded-2xl border border-rose-200 bg-rose-50 py-3 font-bold text-rose-800">
