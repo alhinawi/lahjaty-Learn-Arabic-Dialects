@@ -1,0 +1,35 @@
+# Hijazi (hij) fills: urban Hejaz (Jeddah/Mecca) shares the peninsula vocabulary of the naj column,
+# with attested Hijazi usage where it stands out (المسا، عقيقة، ماشي الحال). Completes hij to 557/557.
++ adjectives.fast | hij=سريع
++ adjectives.thin | hij=ضعيف
++ city.bakery | hij=مخبز
++ city.post_office | hij=بريد
++ city.square | hij=ساحة
++ city.police_station | hij=مخفر
++ city.downtown | hij=وسط المدينة
++ expressions.so_so | hij=ماشي الحال
++ family.person | hij=شخص / واحد
++ feelings.jealous | hij=غيران
++ feelings.dont_care | hij=ما يهمّني / عادي
++ food.pepper_bell | hij=فلفل
++ food.zucchini | hij=كوسة
++ kitchen.stove | hij=طبّاخ / غاز
++ kitchen.teapot | hij=إبريق / برّاد
++ kitchen.boil | hij=غلى
++ market.bargain | hij=كاسر / ساوم
++ occasions.new_baby | hij=مولود / بيبي
++ occasions.sebou | hij=عقيقة
++ questions.which | hij=أي
++ school.fail_exam | hij=رسب
++ slang.kidding | hij=يمزح / يستهبل
++ slang.broke | hij=مفلّس
++ slang.annoying | hij=ثقيل / لزقة
++ slang.young_man | hij=شاب / ولد
++ slang.young_woman | hij=بنت
++ tech.missed_call | hij=مسد كول
++ time.evening | hij=المسا
++ transport.motorbike | hij=دبّاب
++ verbs.send | hij=أرسل
++ verbs.phone_call | hij=اتّصل / دقّ
++ work.fired | hij=انطرد / انفصل
++ work.unemployed | hij=عاطل
