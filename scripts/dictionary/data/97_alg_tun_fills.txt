@@ -1,0 +1,60 @@
+# Algerian (alg) and Tunisian (tun) fills. Only attested forms: Algerian واخا/ياك، رونبوان، قهوي، بيكو، ميكة، درّي، عطرية؛ Tunisian باهي، بلا مزية، بوليسية، وسط البلاد، كريب، سبوع، كار.
++ adjectives.fast | alg=سريع; tun=سريع
++ adjectives.fat | alg=غليض; tun=سمين
++ adjectives.clever | alg=شاطر / ذكي; tun=شاطر / ذكي
++ adjectives.correct | alg=صحيح; tun=صحيح
++ adjectives.wrong | alg=غالط; tun=غالط
++ basics.okay | alg=واخا / ياك
++ basics.welcome_reply | alg=بلا مزية / العفو
++ basics.maybe | tun=يمكن
++ city.roundabout | alg=رونبوان / دوّار; tun=دوّار
++ city.police_station | tun=بوليسية / مركز الشرطة
++ city.downtown | alg=وسط المدينة; tun=وسط البلاد
++ clothes.jacket | tun=جاكيطة
++ colors.brown | alg=قهوي / بني; tun=قهوي
++ expressions.so_so | alg=غير هاكّا; tun=ماشي الحال
++ family.grandmother | alg=جدّة
++ feelings.worried | alg=قلقان; tun=قلقان
++ feelings.upset | alg=متضايق; tun=متضايق
++ feelings.jealous | alg=غيران; tun=غيران
++ feelings.calm | alg=هادي; tun=هادي
++ health.pharmacy | tun=صيدلية / فارماسي
++ health.headache | alg=صداع; tun=صداع / وجع الراس
++ health.cold_illness | alg=زكام / برد; tun=كريب / رشح
++ health.injection | alg=بيكو / حقنة; tun=حقنة
++ health.emergency | alg=طوارئ; tun=طوارئ
++ health.ambulance | alg=إسعاف; tun=إسعاف
++ health.get_well | alg=لاباس عليك / سلامتك; tun=سلامتك
++ home.broom | alg=شطابة; tun=مكنسة
++ kitchen.stove | tun=بوطاغاز
++ kitchen.teapot | alg=برّاد
++ kitchen.spices | alg=عطرية; tun=بهارات
++ kitchen.boil | alg=غلى; tun=غلى
++ market.plastic_bag | alg=ميكة; tun=كيس
++ market.customer | alg=زبون; tun=زبون
++ market.bargain | alg=فاصل; tun=فاصل
++ market.size | tun=مقاس
++ occasions.sebou | tun=سبوع
++ pronouns.there | alg=تمّا
++ pronouns.someone | alg=شي حد
++ questions.which | alg=أنهو / أشمن
++ school.homework | alg=واجبات; tun=واجب
++ school.fail_exam | alg=رسب; tun=رسب
++ school.break_time | alg=فسحة; tun=فسحة
++ slang.kidding | alg=يمزح
++ slang.broke | tun=مفلّس
++ slang.chilled | alg=رايق; tun=رايق
++ slang.annoying | alg=تقيل; tun=تقيل
++ slang.young_man | alg=درّي / شب
++ tech.missed_call | alg=بيب / ميسد كول; tun=ميسد كول
++ time.late | alg=معطّل; tun=متأخر
++ time.never | alg=أبدًا / عمري
++ transport.bus | alg=طوبيس; tun=باص / كار
++ transport.ticket | alg=تسكرة
++ transport.motorbike | tun=موطور
++ transport.left_side | alg=ليسر; tun=ليسر
++ transport.straight_on | tun=طول
++ verbs.phone_call | tun=عيّط
++ work.colleague | alg=زميل; tun=زميل
++ work.working_hours | alg=دوام; tun=دوام
++ work.fired | alg=انفصل من الخدمة; tun=انفصل من الخدمة
