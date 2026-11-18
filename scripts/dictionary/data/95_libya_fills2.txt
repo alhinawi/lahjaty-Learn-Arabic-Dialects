@@ -1,0 +1,57 @@
+# Libyan fills round 2: Tripoli (tri), Benghazi (ben); Matrouh Bedouin (bdw) copies Benghazi (Awlad Ali rule).
+# Attested Libyan usage or words genuinely shared in Libya (كوجينة, طاسة, مغرفة, جيعان, بنين, توم, بادنجال...).
++ food.cheese | tri=جبنة; ben=جبنة; bdw=جبنة
++ food.garlic | tri=توم; ben=توم; bdw=توم
++ food.pepper_bell | tri=فلفل; ben=فلفل; bdw=فلفل
++ food.cucumber | tri=خيار; ben=خيار; bdw=خيار
++ food.eggplant | tri=بادنجال; ben=بادنجال; bdw=بادنجال
++ food.zucchini | tri=كوسة; ben=كوسة; bdw=كوسة
++ food.lemon | tri=ليمون; ben=ليمون; bdw=ليمون
++ food.orange_fruit | tri=برتقال; ben=برتقال; bdw=برتقال
++ food.apple | tri=تفاح; ben=تفاح; bdw=تفاح
++ food.chickpeas | tri=حمص; ben=حمص; bdw=حمص
++ food.sweets | tri=حلويات; ben=حلويات; bdw=حلويات
++ food.breakfast | tri=فطور; ben=فطور; bdw=فطور
++ food.lunch | tri=غدا; ben=غدا; bdw=غدا
++ food.dinner | tri=عشا; ben=عشا; bdw=عشا
++ food.hungry | tri=جيعان; ben=جيعان; bdw=جيعان
++ food.delicious | tri=بنين; ben=بنين; bdw=بنين
++ food.spoon | tri=مغرفة; ben=مغرفة; bdw=مغرفة
++ food.cup | tri=كاس; ben=كاس; bdw=كاس
++ food.plate | tri=صحن; ben=صحن; bdw=صحن
++ health.pain | tri=وجع; ben=وجع; bdw=وجع
++ health.headache | tri=صداع; ben=صداع; bdw=صداع
++ health.cold_illness | tri=برد / دور برد; ben=برد / دور برد; bdw=برد / دور برد
++ health.injection | tri=حقنة / إبرة; ben=حقنة / إبرة; bdw=حقنة / إبرة
++ health.emergency | tri=طوارئ; ben=طوارئ; bdw=طوارئ
++ health.ambulance | tri=إسعاف; ben=إسعاف; bdw=إسعاف
++ health.get_well | tri=سلامتك; ben=سلامتك; bdw=سلامتك
++ home.kitchen | tri=كوجينة; ben=كوجينة; bdw=كوجينة
++ home.bathroom | tri=حمّام; ben=حمّام; bdw=حمّام
++ home.bed | tri=سرير; ben=سرير; bdw=سرير
++ home.chair | tri=كرسي; ben=كرسي; bdw=كرسي
++ home.table | tri=طاولة; ben=طاولة; bdw=طاولة
++ home.key | tri=مفتاح; ben=مفتاح; bdw=مفتاح
++ home.roof | tri=سطح; ben=سطح; bdw=سطح
++ home.stairs | tri=درج; ben=درج; bdw=درج
++ home.light_lamp | tri=لمبة / ضو; ben=لمبة / ضو; bdw=لمبة / ضو
++ home.blanket | tri=بطانية; ben=بطانية; bdw=بطانية
++ home.pillow | tri=مخدة; ben=مخدة; bdw=مخدة
++ home.furniture | tri=عفش; ben=عفش; bdw=عفش
++ home.broom | tri=مقشة; ben=مقشة; bdw=مقشة
++ kitchen.pot | tri=قدر; ben=قدر; bdw=قدر
++ kitchen.frying_pan | tri=طاسة / مقلة; ben=طاسة / مقلة; bdw=طاسة / مقلة
++ kitchen.stove | tri=بوتاجاز / غاز; ben=بوتاجاز / غاز; bdw=بوتاجاز / غاز
++ kitchen.spices | tri=بهارات; ben=بهارات; bdw=بهارات
++ kitchen.boil | tri=غلى; ben=غلى; bdw=غلى
++ kitchen.dishes | tri=مواعن; ben=مواعن; bdw=مواعن
++ market.price | tri=سعر; ben=سعر; bdw=سعر
++ market.plastic_bag | tri=كيس; ben=كيس; bdw=كيس
++ market.pay | tri=خلّص; ben=خلّص; bdw=خلّص
++ market.customer | tri=زبون; ben=زبون; bdw=زبون
++ market.card | tri=كارت / بطاقة; ben=كارت / بطاقة; bdw=كارت / بطاقة
++ market.bargain | tri=فاصل; ben=فاصل; bdw=فاصل
++ market.size | tri=مقاس; ben=مقاس; bdw=مقاس
++ market.free_of_charge | tri=ببلاش / مجّاني; ben=ببلاش / مجّاني; bdw=ببلاش / مجّاني
++ numbers.eight | tri=تمنية; ben=تمنية; bdw=تمنية
++ numbers.all | tri=كلّه / الكل; ben=كلّه / الكل; bdw=كلّه / الكل
