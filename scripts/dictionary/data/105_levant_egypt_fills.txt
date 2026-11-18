@@ -1,0 +1,5 @@
+# Levant (Damascus, Aleppo, Lebanese, Palestinian, Jordanian) + Egypt (all 10 + Sa'idi + Canal) final fills -> 557
++ work.working_hours | EGS=دوام; cnl=دوام
++ occasions.sebou | LEVP=عقيقة
++ work.unemployed | LEVP=عاطل عن العمل
++ questions.which | psu=أنهي; psr=أنهي; jor=أي / أنهي
