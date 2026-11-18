@@ -47,6 +47,11 @@ export default function Hero() {
 
   return (
     <section className="pattern-stars relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand-800 via-brand-900 to-brand-950 p-5 pb-4 text-white shadow-lg">
+      {/* Real photograph of brass lanterns in a Cairo bazaar (Unsplash, free license).
+          Site rule: imagery is photoreal only, never illustrated or cartoon style. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/img/hero-lanterns.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
+      <div aria-hidden className="absolute inset-0 bg-gradient-to-br from-brand-900/95 via-brand-900/85 to-brand-950/90" />
       <div aria-hidden className="absolute -top-24 -end-20 h-64 w-64 rounded-full bg-sun-400/15 blur-2xl" />
       <div aria-hidden className="absolute -bottom-24 -start-16 h-56 w-56 rounded-full bg-brand-400/20 blur-2xl" />
       <p className="relative text-xs font-semibold tracking-wide text-sun-300">{t('tagline')}</p>
