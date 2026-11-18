@@ -1,0 +1,62 @@
+# Libyan fills: Tripoli (tri), Benghazi (ben); Matrouh Bedouin (bdw) copies Benghazi (Awlad Ali Libyan-type bedouin rule).
+# Only attested Libyan usage or standard words genuinely used in Libya.
++ adjectives.bad | tri=خايب; ben=خايب; bdw=خايب
++ adjectives.beautiful | tri=زين / باهي; ben=زين / باهي; bdw=زين / باهي
++ adjectives.fast | tri=سريع; ben=سريع; bdw=سريع
++ adjectives.clean_adj | tri=نظيف; ben=نظيف; bdw=نظيف
++ adjectives.fat | tri=سمين; ben=سمين; bdw=سمين
++ basics.please | tri=لو سمحت / عيشك; ben=لو سمحت / عيشك; bdw=لو سمحت / عيشك
++ basics.sorry | tri=سامحني; ben=سامحني; bdw=سامحني
++ basics.enough | tri=بس / بركا; ben=بركا / بس; bdw=بركا / بس
++ body.head | tri=راس; ben=راس; bdw=راس
++ body.hand | tri=يدّ; ben=يدّ; bdw=يدّ
++ body.foot | tri=رجل; ben=رجل; bdw=رجل
++ body.nose | tri=نيف; ben=نيف; bdw=نيف
++ body.mouth | tri=فم; ben=فم; bdw=فم
++ body.teeth | tri=سنان; ben=سنان; bdw=سنان
++ body.ear | tri=ودن; ben=ودن; bdw=ودن
++ body.hair | tri=شعر; ben=شعر; bdw=شعر
++ body.back | tri=ظهر; ben=ظهر; bdw=ظهر
++ body.face | tri=وجه; ben=وجه; bdw=وجه
++ body.finger | tri=صبع; ben=صبع; bdw=صبع
++ body.neck | tri=رقبة; ben=رقبة; bdw=رقبة
++ city.village | tri=قرية; ben=قرية; bdw=قرية
++ city.neighbourhood | tri=حومة; ben=حومة; bdw=حومة
++ city.cafe | tri=قهوة; ben=قهوة; bdw=قهوة
++ city.bakery | tri=كوشة; ben=كوشة; bdw=كوشة
++ city.post_office | tri=بريد; ben=بريد; bdw=بريد
++ city.square | tri=ساحة; ben=ساحة; bdw=ساحة
++ city.roundabout | tri=دوّار; ben=دوّار; bdw=دوّار
++ city.building | tri=عمارة; ben=عمارة; bdw=عمارة
++ city.apartment | tri=شقّة; ben=شقّة; bdw=شقّة
++ city.police_station | tri=مركز الشرطة; ben=مركز الشرطة; bdw=مركز الشرطة
++ city.downtown | tri=وسط البلاد; ben=وسط البلاد; bdw=وسط البلاد
++ city.hotel | tri=فندق / أوطيل; ben=فندق / أوطيل; bdw=فندق
++ clothes.shirt | tri=قميجة; ben=قميجة; bdw=قميجة
++ clothes.trousers | tri=سروال; ben=سروال; bdw=سروال
++ clothes.shoes | tri=صبّاط; ben=صبّاط; bdw=صبّاط
++ clothes.slippers | tri=شبشب; ben=شبشب; bdw=شبشب
++ clothes.jacket | tri=جاكيت; ben=جاكيت; bdw=جاكيت
++ clothes.hat | tri=شاشية / كاسكات; ben=شاشية / كاسكات; bdw=شاشية
++ clothes.dress | tri=فستان; ben=فستان; bdw=فستان
++ clothes.socks | tri=تقاشر; ben=تقاشر; bdw=تقاشر
++ clothes.bag | tri=ساك; ben=ساك; bdw=ساك
++ colors.orange_color | tri=برتقالي; ben=برتقالي; bdw=برتقالي
++ colors.purple | tri=بنفسجي; ben=بنفسجي; bdw=بنفسجي
++ expressions.excuse_me | tri=عن إذنك / سامحني; ben=عن إذنك / سامحني; bdw=عن إذنك / سامحني
++ expressions.enjoy_meal | tri=بالشفاء; ben=بالشفاء; bdw=بالشفاء
++ expressions.see_you | tri=نشوفك من بعد; ben=نشوفك من بعد; bdw=نشوفك من بعد
++ expressions.seriously | tri=بالحق؟ / والله؟; ben=بالحق؟ / والله؟; bdw=بالحق؟ / والله؟
++ expressions.so_so | tri=ماشي الحال; ben=ماشي الحال; bdw=ماشي الحال
++ family.mother | tri=أمّي / ماما; ben=أمّي / ماما; bdw=أمّي
++ family.sister | tri=أختي; ben=أختي; bdw=أختي
++ family.grandfather | tri=جدّي; ben=جدّي; bdw=جدّي
++ family.grandmother | tri=جدّة; ben=جدّة; bdw=جدّة
++ family.wife | tri=مرتي; ben=مرتي; bdw=مرتي
++ family.kids | tri=صغار; ben=صغار; bdw=صغار
++ family.woman | tri=مرا; ben=مرا; bdw=مرا
++ family.person | tri=بنادم; ben=بنادم; bdw=بنادم
++ family.boy | tri=ولد; ben=ولد; bdw=ولد
++ feelings.angry | tri=زعفان; ben=زعفان; bdw=زعفان
++ feelings.dont_care | tri=ما يهمّنيش; ben=ما يهمّنيش; bdw=ما يهمّنيش
++ food.water | tri=الما / ماء; ben=الما / ماء; bdw=الما / ماء
