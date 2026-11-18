@@ -1,0 +1,405 @@
++ adjectives.small | oma=صغير; dho=صغير; chd=صغيّر; had=صغيّر; san=صغيّر; ade=صغيّر; jiz=صغير; sin=زغير / صغير; has=صغير
++ adjectives.good | san=زين; ade=زين; sin=منيح / كويّس
++ adjectives.bad | oma=مو زين / خايس; dho=مو زين / خايس; chd=شين; had=وحش / مو كويّس; san=وحش / مو كويّس; ade=وحش / مو كويّس; jiz=مو زين / خايس; sin=عاطل / مش منيح
++ adjectives.beautiful | oma=حلو / زين; dho=حلو / زين; had=حلو; san=حلو; ade=حلو; jiz=حلو / زين; sin=حلو
++ adjectives.ugly | oma=شين; dho=شين; chd=شين; had=شين; san=شين; ade=شين; jiz=شين; sin=بشع
++ adjectives.hot_food | oma=حار; dho=حار; chd=حار; had=حار / سخن; san=حار / سخن; ade=حار / سخن; jiz=حار; sin=سخن
++ adjectives.cold_food | oma=بارد; dho=بارد; chd=بارد; had=بارد; san=بارد; ade=بارد; jiz=بارد; sin=بارد; has=بارد
++ adjectives.fast | oma=سريع; dho=سريع; jiz=سريع; sin=سريع
++ adjectives.clean_adj | oma=نظيف; dho=نظيف; had=نضيف; san=نضيف; ade=نضيف; jiz=نظيف; sin=نضيف; has=نظيف
++ adjectives.dirty | oma=وصخ; dho=وصخ; chd=وسخان; had=وسخ; san=وسخ; ade=وسخ; jiz=وصخ; sin=وسخ
++ adjectives.fat | oma=سمين / متين; dho=سمين / متين; chd=سمين; had=مليان / سمين; san=مليان / سمين; ade=مليان / سمين; jiz=سمين / متين; sin=ناصح / سمين
++ adjectives.thin | oma=ضعيف; dho=ضعيف; jiz=ضعيف; sin=نحيف / ضعيف
++ adjectives.empty | oma=فاضي; dho=فاضي; had=فاضي; san=فاضي; ade=فاضي; jiz=فاضي; sin=فاضي
++ adjectives.clever | oma=ذكي; dho=ذكي; chd=شاطر; had=شاطر / ذكي; san=شاطر / ذكي; ade=شاطر / ذكي; jiz=ذكي; sin=شاطر / ذكي
++ adjectives.correct | oma=صح; dho=صح; chd=صح; had=صح; san=صح; ade=صح; jiz=صح; sin=صح
++ adjectives.wrong | oma=غلط; dho=غلط; chd=غلط; had=غلط; san=غلط; ade=غلط; jiz=غلط; sin=غلط
++ adjectives.heavy | oma=ثقيل; dho=ثقيل; had=تقيل; san=تقيل; ade=تقيل; jiz=ثقيل; sin=تقيل
++ animals.animal | chd=حيوان / بهيمة; had=حيوان; jiz=حيوان; sin=حيوان
++ animals.cat | oma=قطوة / بسّة; dho=قطوة / بسّة; chd=كديسة; had=بسّة / قطّة; san=بسّة / قطّة; ade=بسّة / قطّة; jiz=قطوة / بسّة; sin=بسّة / قطّة
++ animals.dog | had=كلب; jiz=كلب / چلب; sin=كلب
++ animals.horse | oma=حصان / خيل; dho=حصان / خيل; chd=حصان; had=حصان; san=حصان; ade=حصان; jiz=حصان / خيل; sin=حصان / فرس
++ animals.cow | chd=بقرة; had=بقرة; jiz=بقرة; sin=بقرة; has=بقرة
++ animals.sheep | oma=خروف / طلي; dho=خروف / طلي; chd=خروف; had=خروف; san=خروف; ade=خروف; jiz=خروف / طلي; sin=خاروف / غنمة
++ animals.goat | oma=عنز; dho=عنز; chd=غنماية; had=عنز / معزة; san=عنز / معزة; ade=عنز / معزة; jiz=عنز; sin=معزة / عنزة
++ animals.chicken | oma=دياية / دجاجة; dho=دياية / دجاجة; chd=جدادة; had=دجاجة; san=دجاجة; ade=دجاجة; jiz=دجاجة; sin=جاجة; has=دجاجة
++ animals.bird | oma=طير; dho=طير; chd=طير; had=طير / عصفور; san=طير / عصفور; ade=طير / عصفور; jiz=طير; sin=عصفور / طير
++ animals.fish | chd=سمك / حوت; had=سمك; jiz=سمك; sin=سمك
++ animals.mouse | oma=فار / فارة; dho=فار / فارة; chd=فار; had=فار; san=فار; ade=فار; jiz=فار / فارة; sin=فارة
++ animals.fly | oma=ذبّانة / ذبابة; dho=ذبّانة / ذبابة; chd=ضبّانة / دبّانة; had=دبّانة; san=دبّانة; ade=دبّانة; jiz=ذبّانة / ذبابة; sin=دبّانة
++ animals.mosquito | oma=بعوضة; dho=بعوضة; chd=باعوضة; had=ناموسة / بعوضة; san=ناموسة / بعوضة; ade=ناموسة / بعوضة; jiz=بعوضة; sin=بقّة / بعوضة
++ animals.cockroach | oma=صرصور / صرصار; dho=صرصور / صرصار; chd=صرصار; had=صرصار; san=صرصار; ade=صرصار; jiz=صرصور / صرصار; sin=صرصور
++ animals.ant | oma=نملة; dho=نملة; chd=نملة; had=نملة; san=نملة; ade=نملة; jiz=نملة; sin=نملة; has=نملة
++ animals.snake | oma=حيّة / داب; dho=حيّة / داب; chd=دبيب / تعبان; had=حنش; jiz=حيّة / داب; sin=حيّة
++ animals.lion | oma=أسد; dho=أسد; chd=أسد; had=أسد; san=أسد; ade=أسد; jiz=أسد; sin=أسد
++ animals.rabbit | oma=أرنب; dho=أرنب; chd=أرنب; had=أرنب; san=أرنب; ade=أرنب; jiz=أرنب; sin=أرنب; has=أرنب
++ animals.duck | oma=بطّة; dho=بطّة; chd=بطّة; had=بطّة; san=بطّة; ade=بطّة; jiz=بطّة; sin=بطّة
++ basics.yes | oma=إي; dho=إي; chd=أيوه; had=أيوه; jiz=إيه; sin=آه
++ basics.no | chd=لا; has=لا
++ basics.okay | oma=زين / تمام; dho=زين / تمام; chd=تمام; had=طيب / تمام; san=طيب / تمام; ade=طيب / تمام; jiz=طيب / تمام; sin=طيب / ماشي
++ basics.thanks | oma=مشكور / شكرًا; dho=مشكور / شكرًا; chd=شكرًا; had=شكرًا; san=شكرًا; ade=شكرًا; jiz=مشكور / يعطيك العافية; sin=شكرًا / يسلمو
++ basics.please | oma=لو سمحت; dho=لو سمحت; chd=لو سمحت; had=لو سمحت / الله يخليك; san=لو سمحت / الله يخليك; ade=لو سمحت / الله يخليك; jiz=لو سمحت; sin=لو سمحت
++ basics.sorry | oma=آسف / السموحة; dho=آسف / السموحة; chd=آسف / معليش; had=آسف; san=آسف; ade=آسف; jiz=آسف / السموحة; sin=آسف
++ basics.welcome_reply | oma=العفو / حيّاك; dho=العفو / حيّاك; chd=العفو; had=العفو; san=العفو; ade=العفو; jiz=العفو / حيّاك; sin=عفوًا / ولو
++ basics.goodbye | oma=مع السلامة / في أمان الله; dho=مع السلامة / في أمان الله; chd=مع السلامة; had=مع السلامة; san=مع السلامة; ade=مع السلامة; jiz=مع السلامة / في أمان الله; sin=مع السلامة / باي
++ basics.maybe | oma=يمكن; dho=يمكن; chd=يمكن / ممكن; had=يمكن; san=يمكن; ade=يمكن; jiz=يمكن; sin=يمكن
++ basics.enough | oma=خلاص / بس; dho=خلاص / بس; chd=خلاص / كفاية; had=خلاص / بس; san=خلاص / بس; ade=خلاص / بس; jiz=خلاص / بس; sin=خلص / بيكفي
++ basics.no_problem | oma=ما فيه مشكلة / عادي; dho=ما فيه مشكلة / عادي; chd=مافي مشكلة; had=مافي مشكلة; san=مافي مشكلة; ade=مافي مشكلة; jiz=ما فيه مشكلة / عادي; sin=ما في مشكلة
++ basics.there_is | oma=فيه; dho=فيه; chd=في; had=في / فيش; jiz=فيه; sin=في
++ basics.there_isnt | oma=ما فيه / مافي; dho=ما فيه / مافي; chd=مافي; had=مافي; san=مافي; ade=مافي; jiz=ما فيه / مافي; sin=ما في
++ basics.alright_greeting | oma=زين / بخير; dho=زين / بخير; chd=كويس / تمام; had=كويس / بخير; san=كويس / بخير; ade=كويس / بخير; jiz=زين / بخير; sin=منيح / الحمد لله
++ body.head | oma=راس; dho=راس; chd=راس; had=راس; san=راس; ade=راس; jiz=راس; sin=راس
++ body.hand | oma=يد / إيد; dho=يد / إيد; chd=إيد; had=يد; san=يد; ade=يد; jiz=يد / إيد; sin=إيد
++ body.foot | oma=ريل / رجل; dho=ريل / رجل; chd=كرعة / رجل; had=رجل; san=رجل; ade=رجل; jiz=ريل / رجل; sin=إجر
++ body.nose | oma=خشم; dho=خشم; chd=نخرة; had=خشم / أنف; san=خشم / أنف; ade=خشم / أنف; jiz=خشم; sin=منخار / ناف
++ body.mouth | oma=فم / حلج; dho=فم / حلج; chd=خشم; had=فم / بق; san=فم / بق; ade=فم / بق; jiz=فم / حلج; sin=تم; has=فم
++ body.teeth | oma=ضروس / سنون; dho=ضروس / سنون; chd=سنون; had=سنون / أسنان; san=سنون / أسنان; ade=سنون / أسنان; jiz=ضروس / سنون; sin=سنان
++ body.ear | oma=إذن; dho=إذن; chd=أضان; had=أذن / ودن; san=أذن / ودن; ade=أذن / ودن; jiz=إذن; sin=أدن / دينة
++ body.hair | oma=شعر; dho=شعر; chd=شعر; had=شعر; san=شعر; ade=شعر; jiz=شعر; sin=شعر; has=شعر
++ body.stomach | oma=بطن; dho=بطن; chd=بطن; had=بطن; san=بطن; ade=بطن; jiz=بطن; sin=بطن / معدة
++ body.back | oma=ظهر; dho=ظهر; chd=ضهر; had=ظهر; san=ظهر; ade=ظهر; jiz=ظهر; sin=ضهر; has=ظهر
++ body.face | oma=وجه / ويه; dho=وجه / ويه; chd=وش; had=وجه / وش; san=وجه / وش; ade=وجه / وش; jiz=وجه / ويه; sin=وجه / وجّ; has=وجه
++ body.finger | oma=صبع; dho=صبع; chd=أصبع; had=صباع / أصبع; san=صباع / أصبع; ade=صباع / أصبع; jiz=صبع; sin=إصبع
++ body.neck | oma=رقبة; dho=رقبة; chd=رقبة; had=رقبة; san=رقبة; ade=رقبة; jiz=رقبة; sin=رقبة; has=رقبة
++ city.village | oma=قرية; dho=قرية; chd=قرية / حلّة; had=قرية; san=قرية; ade=قرية; jiz=قرية; sin=ضيعة / قرية; has=قرية
++ city.neighbourhood | oma=فريج / حيّ; dho=فريج / حيّ; chd=حيّ; had=حارة / حيّ; san=حارة / حيّ; ade=حارة / حيّ; jiz=فريج / حيّ; sin=حارة / حيّ
++ city.cafe | oma=قهوة / كوفي; dho=قهوة / كوفي; had=قهوة / كوفي; san=قهوة / كوفي; ade=قهوة / كوفي; jiz=قهوة / كوفي; sin=قهوة / مقهى
++ city.bakery | oma=مخبز / خبّاز; dho=مخبز / خبّاز; jiz=مخبز / خبّاز; sin=فرن
++ city.post_office | oma=بريد; dho=بريد; jiz=بريد; sin=بريد
++ city.square | oma=ساحة; dho=ساحة; jiz=ساحة; sin=ساحة
++ city.roundabout | oma=دوّار; dho=دوّار; had=دوّار / ميدان; san=دوّار / ميدان; ade=دوّار / ميدان; jiz=دوّار; sin=دوّار
++ city.building | oma=عمارة / بناية; dho=عمارة / بناية; had=عمارة; san=عمارة; ade=عمارة; jiz=عمارة / بناية; sin=بناية
++ city.apartment | oma=شقّة; dho=شقّة; had=شقّة; san=شقّة; ade=شقّة; jiz=شقّة; sin=شقّة / بيت; has=شقّة
++ city.police_station | oma=مخفر; dho=مخفر; jiz=مخفر; sin=مخفر
++ city.downtown | sin=وسط البلد / البلد
++ city.hotel | oma=فندق; dho=فندق; chd=فندق; had=فندق; san=فندق; ade=فندق; jiz=فندق; sin=أوتيل / فندق
++ clothes.clothes | oma=هدوم / ملابس; dho=هدوم / ملابس; chd=هدوم; had=ملابس / هدوم; san=ملابس / هدوم; ade=ملابس / هدوم; jiz=هدوم / ملابس; sin=تياب
++ clothes.shirt | oma=قميص / شميز; dho=قميص / شميز; chd=قميص; had=قميص; san=قميص; ade=قميص; jiz=قميص / شميز; sin=قميص
++ clothes.trousers | oma=بنطلون; dho=بنطلون; chd=بنطلون; had=بنطلون; san=بنطلون; ade=بنطلون; jiz=بنطلون; sin=بنطلون
++ clothes.shoes | oma=جوتي; dho=جوتي; chd=جزمة / مركوب; had=جزمة; san=جزمة; ade=جزمة; jiz=جوتي; sin=صبّاط / كندرة
++ clothes.slippers | oma=نعال; dho=نعال; chd=سفنجة / شبشب; had=زنوبة / شبشب; san=زنوبة / شبشب; ade=زنوبة / شبشب; jiz=نعال; sin=شحاطة / شبشب
++ clothes.jacket | oma=جاكيت; dho=جاكيت; had=جاكيت; san=جاكيت; ade=جاكيت; jiz=جاكيت; sin=جاكيت
++ clothes.hat | oma=طاقية / كاب; dho=طاقية / كاب; chd=طاقية; had=كاب; san=كاب; ade=كاب; jiz=طاقية / كاب; sin=بريطة / طاقية
++ clothes.dress | oma=فستان / نفنوف; dho=فستان / نفنوف; chd=فستان; had=فستان; san=فستان; ade=فستان; jiz=فستان / نفنوف; sin=فستان
++ clothes.socks | oma=شراب / جوارب; dho=شراب / جوارب; chd=شراب; had=شراب; san=شراب; ade=شراب; jiz=شراب / جوارب; sin=كلسات / جرابات
++ clothes.bag | oma=شنطة / جنطة; dho=شنطة / جنطة; chd=شنطة; had=شنطة; san=شنطة; ade=شنطة; jiz=شنطة / جنطة; sin=شنطة
++ clothes.rice | oma=روز; dho=روز; jiz=روز; sin=رز; psr=رز
++ clothes.chicken | oma=دجاج / دياي; dho=دجاج / دياي; jiz=دجاج / دياي; sin=دجاج; psr=دجاج
++ clothes.meat | oma=لحم; dho=لحم; jiz=لحم; sin=لحمة; psr=لحمة
++ clothes.milk | oma=حليب; dho=حليب; jiz=حليب; sin=حليب; psr=حليب
++ clothes.eggs | oma=بيض; dho=بيض; jiz=بيض; sin=بيض; psr=بيض
++ clothes.breakfast | oma=فطور; dho=فطور; jiz=فطور; sin=فطور / ترويقة; psr=فطور / ترويقة
++ colors.white | chd=أبيض; had=أبيض; jiz=أبيض; sin=أبيض; has=أبيض
++ colors.black | chd=أسود / أزرق; had=أسود; jiz=أسود; sin=أسود
++ colors.red | chd=أحمر; had=أحمر; jiz=أحمر; sin=أحمر; has=أحمر
++ colors.green | chd=أخضر; had=أخضر; jiz=أخضر; sin=أخضر; has=أخضر
++ colors.blue | oma=أزرق; dho=أزرق; had=أزرق; jiz=أزرق; sin=أزرق; has=أزرق
++ colors.yellow | chd=أصفر; had=أصفر; jiz=أصفر; sin=أصفر; has=أصفر
++ colors.brown | oma=بنّي; dho=بنّي; chd=بنّي; had=بنّي; san=بنّي; ade=بنّي; jiz=بنّي; sin=بنّي
++ colors.orange_color | oma=برتقالي; dho=برتقالي; had=برتقالي; san=برتقالي; ade=برتقالي; jiz=برتقالي; sin=برتقاني; has=برتقالي
++ colors.pink | oma=وردي; dho=وردي; had=وردي; san=وردي; ade=وردي; jiz=وردي; sin=زهري; has=وردي
++ colors.grey | oma=رمادي; dho=رمادي; had=رمادي; san=رمادي; ade=رمادي; jiz=رمادي; sin=رمادي / سكّني; has=رمادي
++ colors.purple | oma=بنفسجي; dho=بنفسجي; had=بنفسجي; san=بنفسجي; ade=بنفسجي; jiz=بنفسجي; sin=بنفسجي / ليلكي; has=بنفسجي
++ expressions.hello | chd=أهلًا / سلام; had=أهلين / هلا; san=أهلين / هلا; ade=أهلين / هلا; jiz=هلا / مرحبا; sin=مرحبا / أهلين
++ expressions.how_are_you | chd=كيفك؟ / إزيّك؟; had=كيف حالك؟; jiz=شلونك؟ / كيف حالك؟; sin=كيفك؟
++ expressions.excuse_me | oma=لو سمحت / عن إذنك; dho=لو سمحت / عن إذنك; had=لو سمحت; san=لو سمحت; ade=لو سمحت; jiz=لو سمحت / عن إذنك; sin=عن إذنك / بعد إذنك
++ expressions.never_mind | oma=عادي / ولا يهمّك; dho=عادي / ولا يهمّك; chd=معليش; had=معليش; san=معليش; ade=معليش; jiz=عادي / ولا يهمّك; sin=معلش / ولا يهمّك
++ expressions.enjoy_meal | oma=بالعافية; dho=بالعافية; had=بالعافية; san=بالعافية; ade=بالعافية; jiz=بالعافية; sin=صحتين
++ expressions.see_you | oma=أشوفك بعدين; dho=أشوفك بعدين; had=أشوفك بعدين; san=أشوفك بعدين; ade=أشوفك بعدين; jiz=أشوفك بعدين; sin=بشوفك بعدين
++ expressions.very | had=مرّة; san=مرّة; ade=مرّة; jiz=وايد / مرّة; sin=كتير
++ expressions.seriously | oma=صدق؟ / جد؟; dho=صدق؟ / جد؟; chd=والله؟; had=جد؟ / صدق؟; san=جد؟ / صدق؟; ade=جد؟ / صدق؟; jiz=صدق؟ / جد؟; sin=عنجد؟ / جد؟
++ expressions.whats_up | oma=شخبارك؟ / وش السالفة؟; dho=شخبارك؟ / وش السالفة؟; chd=أخبارك شنو؟; had=إيش الأخبار؟; san=إيش الأخبار؟; ade=إيش الأخبار؟; jiz=شخبارك؟ / وش السالفة؟; sin=شو الأخبار؟
++ expressions.so_so | sin=ماشي الحال
++ family.father | oma=أبوي / الوالد; dho=أبوي / الوالد; chd=أبوي; had=أبويا; san=أبويا; ade=أبويا; jiz=أبوي / الوالد; sin=أبوي / يابا
++ family.mother | oma=أمي / الوالدة; dho=أمي / الوالدة; chd=أمّي; had=أمي; san=أمي; ade=أمي; jiz=أمي / الوالدة; sin=إمّي / يمّا
++ family.brother | oma=أخوي; dho=أخوي; chd=أخوي; had=أخويا; san=أخويا; ade=أخويا; jiz=أخوي; sin=أخوي
++ family.sister | oma=أختي; dho=أختي; chd=أختي; had=أختي; san=أختي; ade=أختي; jiz=أختي; sin=أختي
++ family.son | oma=ولد; dho=ولد; chd=ولد; had=ولد / ابن; san=ولد / ابن; ade=ولد / ابن; jiz=ولد; sin=ابن
++ family.daughter | oma=بنت; dho=بنت; chd=بت; had=بنت; san=بنت; ade=بنت; jiz=بنت; sin=بنت
++ family.grandfather | oma=يدّي; dho=يدّي; chd=جدّي; had=جدّي; san=جدّي; ade=جدّي; jiz=جدّي; sin=سيدي
++ family.grandmother | oma=يدّة; dho=يدّة; chd=حبّوبة; had=جدّة; san=جدّة; ade=جدّة; jiz=جدّة; sin=ستّي
++ family.uncle_paternal | oma=عمّ; dho=عمّ; chd=عمّ; had=عمّ; jiz=عمّ; sin=عمّ
++ family.uncle_maternal | oma=خال; dho=خال; chd=خال; had=خال; jiz=خال; sin=خال; has=خال
++ family.aunt_paternal | oma=عمّة; dho=عمّة; chd=عمّة; had=عمّة; jiz=عمّة; sin=عمّة
++ family.aunt_maternal | oma=خالة; dho=خالة; chd=خالة; had=خالة; jiz=خالة; sin=خالة; has=خالة
++ family.husband | oma=ريّال / زوج; dho=ريّال / زوج; chd=راجل; had=زوج / رجّال; san=زوج / رجّال; ade=زوج / رجّال; jiz=رجّال / زوج; sin=جوز
++ family.wife | oma=زوجتي / حرمتي; dho=زوجتي / حرمتي; chd=مرتي; had=زوجتي / حرمتي; san=زوجتي / حرمتي; ade=زوجتي / حرمتي; jiz=زوجتي / حرمتي; sin=مرتي
++ family.kids | oma=يهال / عيال; dho=يهال / عيال; chd=شُفّع; had=أطفال / بزورة; san=أطفال / بزورة; ade=أطفال / بزورة; jiz=عيال; sin=ولاد
++ family.cousin | oma=ولد عمّ; dho=ولد عمّ; chd=ود عمّ; had=ولد عمّ; san=ولد عمّ; ade=ولد عمّ; jiz=ولد عمّ; sin=ابن عمّ
++ family.family | oma=أهل / عايلة; dho=أهل / عايلة; chd=أهل; had=عيلة; san=عيلة; ade=عيلة; jiz=أهل / عايلة; sin=عيلة
++ family.man | oma=ريّال; dho=ريّال; chd=راجل; had=رجّال; san=رجّال; ade=رجّال; jiz=رجّال; sin=زلمة
++ family.woman | oma=حرمة; dho=حرمة; chd=مَرة; had=حرمة / مرة; san=حرمة / مرة; ade=حرمة / مرة; jiz=حرمة; sin=مرا / ست
++ family.person | oma=شخص / واحد; dho=شخص / واحد; chd=زول; jiz=شخص / واحد; sin=شخص / حدا
++ family.boy | oma=ولد / ياهل; dho=ولد / ياهل; chd=ولد; had=ولد; san=ولد; ade=ولد; jiz=ولد / ياهل; sin=ولد / صبي
++ family.neighbor | oma=جار / يار; dho=جار / يار; chd=جار; had=جار; san=جار; ade=جار; jiz=جار / يار; sin=جار; has=جار
++ family.house | oma=بيت; dho=بيت; jiz=بيت; sin=بيت
++ family.street | oma=شارع; dho=شارع; jiz=شارع; sin=شارع
++ family.water | oma=موية; dho=موية; jiz=موية; sin=مي; psr=مي
++ family.bread | oma=خبز; dho=خبز; jiz=خبز; sin=خبز; psr=خبز
++ family.money | oma=فلوس; dho=فلوس; jiz=فلوس; sin=مصاري
++ family.work | oma=شغل; dho=شغل; jiz=شغل; sin=شغل
++ family.car | oma=سيارة; dho=سيارة; jiz=سيارة; sin=سيارة; psr=سيارة
++ feelings.happy | chd=فرحان / مبسوط; had=مبسوط / فرحان; san=مبسوط / فرحان; ade=مبسوط / فرحان; jiz=مستانس / فرحان; sin=مبسوط / فرحان
++ feelings.sad | oma=زعلان / ضايق; dho=زعلان / ضايق; chd=زعلان / حزنان; had=زعلان; san=زعلان; ade=زعلان; jiz=زعلان / ضايق; sin=زعلان / حزين; has=حزين
++ feelings.angry | oma=معصّب / زعلان; dho=معصّب / زعلان; chd=زعلان; had=زعلان / معصّب; san=زعلان / معصّب; ade=زعلان / معصّب; jiz=معصّب / زعلان; sin=معصّب
++ feelings.bored | oma=طفشان / ملّان; dho=طفشان / ملّان; chd=زهجان; had=طفشان / زهقان; san=طفشان / زهقان; ade=طفشان / زهقان; jiz=طفشان / ملّان; sin=زهقان / ضجران
++ feelings.worried | oma=قلقان; dho=قلقان; had=قلقان; san=قلقان; ade=قلقان; jiz=قلقان; sin=قلقان
++ feelings.upset | oma=ضايق / متضايق; dho=ضايق / متضايق; had=متضايق; san=متضايق; ade=متضايق; jiz=ضايق / متضايق; sin=متضايق
++ feelings.shy | oma=مستحي; dho=مستحي; had=مستحي; san=مستحي; ade=مستحي; jiz=مستحي; sin=مستحي
++ feelings.jealous | oma=غيران; dho=غيران; jiz=غيران; sin=غيران
++ feelings.miss_you | oma=اشتقت لك; dho=اشتقت لك; had=وحشتني; san=وحشتني; ade=وحشتني; jiz=اشتقت لك; sin=اشتقتلك
++ feelings.dont_care | oma=ما يهمّني / عادي; dho=ما يهمّني / عادي; jiz=ما يهمّني / عادي; sin=ما بتفرق معي
++ feelings.calm | oma=هادي; dho=هادي; had=هادي; san=هادي; ade=هادي; jiz=هادي; sin=هادي
++ food.bread | oma=خبز; dho=خبز; chd=عيش; had=خبز / روتي; jiz=خبز; sin=خبز; has=خبز
++ food.water | oma=ماي; dho=ماي; chd=موية; had=ماء / ماي; jiz=ماي; sin=ميّ
++ food.tea | oma=شاي / چاي; dho=شاي / چاي; chd=شاي; had=شاي / شاهي; jiz=شاي / چاي; sin=شاي
++ food.coffee | oma=قهوة / گهوة; dho=قهوة / گهوة; chd=قهوة / جبنة; had=قهوة / بن; jiz=قهوة / گهوة; sin=قهوة; has=قهوة
++ food.milk | oma=حليب; dho=حليب; chd=لبن; had=حليب; san=حليب; ade=حليب; jiz=حليب; sin=حليب; has=حليب
++ food.yogurt | oma=روب / لبن; dho=روب / لبن; chd=روب; had=زبادي; san=زبادي; ade=زبادي; jiz=روب / لبن; sin=لبن
++ food.meat | oma=لحم; dho=لحم; chd=لحمة; had=لحمة / لحم; san=لحمة / لحم; ade=لحمة / لحم; jiz=لحم; sin=لحمة; has=لحم
++ food.chicken | oma=دجاج / دياي; dho=دجاج / دياي; chd=جداد; had=دجاج / فراخ; san=دجاج / فراخ; ade=دجاج / فراخ; jiz=دجاج / دياي; sin=جاج; has=دجاج
++ food.fish | oma=سمك / سمچ; dho=سمك / سمچ; chd=سمك; had=سمك; san=سمك; ade=سمك; jiz=سمك / سمچ; sin=سمك
++ food.egg | oma=بيض; dho=بيض; chd=بيض; had=بيض; san=بيض; ade=بيض; jiz=بيض; sin=بيض; has=بيض
++ food.rice | oma=عيش; dho=عيش; chd=رز; had=رز; san=رز; ade=رز; jiz=رز / عيش; sin=رز
++ food.cheese | oma=جبن / جبنة; dho=جبن / جبنة; chd=جبنة; had=جبنة; san=جبنة; ade=جبنة; jiz=جبن / جبنة; sin=جبنة
++ food.tomato | oma=طماط; dho=طماط; chd=طماطم; had=طماطم; san=طماطم; ade=طماطم; jiz=طماط; sin=بندورة; has=طماطم
++ food.potato | oma=بطاط; dho=بطاط; chd=بطاطس; had=بطاطس; san=بطاطس; ade=بطاطس; jiz=بطاط; sin=بطاطا
++ food.onion | oma=بصل; dho=بصل; chd=بصل; had=بصل; san=بصل; ade=بصل; jiz=بصل; sin=بصل; has=بصل
++ food.garlic | oma=ثوم; dho=ثوم; chd=توم; had=ثوم; san=ثوم; ade=ثوم; jiz=ثوم; sin=توم; has=ثوم
++ food.pepper_bell | oma=فلفل; dho=فلفل; jiz=فلفل; sin=فليفلة
++ food.cucumber | oma=خيار; dho=خيار; had=خيار; san=خيار; ade=خيار; jiz=خيار; sin=خيار; has=خيار
++ food.eggplant | oma=باذنجان; dho=باذنجان; chd=أسود; had=باذنجان; san=باذنجان; ade=باذنجان; jiz=باذنجان; sin=باذنجان
++ food.zucchini | oma=كوسة; dho=كوسة; jiz=كوسة; sin=كوسا
++ food.okra | oma=بامية; dho=بامية; chd=بامية / ويكة; had=بامية; san=بامية; ade=بامية; jiz=بامية; sin=بامية
++ food.lemon | oma=ليمون / لومي; dho=ليمون / لومي; chd=ليمون; had=ليمون; san=ليمون; ade=ليمون; jiz=ليمون / لومي; sin=ليمون / حامض
++ food.orange_fruit | oma=برتقال; dho=برتقال; chd=برتقان; had=برتقان; san=برتقان; ade=برتقان; jiz=برتقال; sin=برتقان; has=برتقال
++ food.apple | oma=تفاح; dho=تفاح; chd=تفاح; had=تفاح; san=تفاح; ade=تفاح; jiz=تفاح; sin=تفاح; has=تفاح
++ food.watermelon | oma=جح / بطيخ; dho=جح / بطيخ; chd=بطيخ; had=حبحب; san=حبحب; ade=حبحب; jiz=حبحب / جح; sin=بطيخ
++ food.dates | oma=تمر; dho=تمر; chd=تمر / بلح; had=تمر; san=تمر; ade=تمر; jiz=تمر; sin=تمر; has=تمر
++ food.beans | oma=فول / باجلا; dho=فول / باجلا; chd=فول; had=فول; san=فول; ade=فول; jiz=فول / باجلا; sin=فول; has=فول
++ food.chickpeas | oma=حمص / نخي; dho=حمص / نخي; chd=كبكبي; had=حمص; san=حمص; ade=حمص; jiz=حمص / نخي; sin=حمص; has=حمص
++ food.sweets | oma=حلويات / حلا; dho=حلويات / حلا; chd=حلاوة; had=حلويات / حلوى; san=حلويات / حلوى; ade=حلويات / حلوى; jiz=حلويات / حلا; sin=حلويات
++ food.breakfast | oma=ريوق / فطور; dho=ريوق / فطور; chd=فطور; had=فطور; san=فطور; ade=فطور; jiz=ريوق / فطور; sin=فطور / ترويقة; has=فطور
++ food.lunch | oma=غدا; dho=غدا; chd=غدا; had=غدا; san=غدا; ade=غدا; jiz=غدا; sin=غدا
++ food.dinner | oma=عشا; dho=عشا; chd=عشا; had=عشا; san=عشا; ade=عشا; jiz=عشا; sin=عشا
++ food.hungry | oma=يوعان / جوعان; dho=يوعان / جوعان; chd=جعان; had=جعان / جوعان; san=جعان / جوعان; ade=جعان / جوعان; jiz=جوعان; sin=جوعان
++ food.thirsty | oma=عطشان; dho=عطشان; chd=عطشان; had=عطشان; san=عطشان; ade=عطشان; jiz=عطشان; sin=عطشان; has=عطشان
++ food.delicious | oma=لذيذ / طيب; dho=لذيذ / طيب; chd=سمح / حلو; had=لذيذ / حلو; san=لذيذ / حلو; ade=لذيذ / حلو; jiz=لذيذ / طيب; sin=طيب / زاكي
++ food.food | oma=أكل; dho=أكل; chd=أكل; had=أكل; san=أكل; ade=أكل; jiz=أكل; sin=أكل
++ food.spoon | oma=ملعقة / خاشوقة; dho=ملعقة / خاشوقة; chd=معلقة; had=ملعقة; san=ملعقة; ade=ملعقة; jiz=ملعقة / خاشوقة; sin=معلقة
++ food.knife | oma=سكّين / سچّين; dho=سكّين / سچّين; chd=سكين; had=سكينة / سكين; san=سكينة / سكين; ade=سكينة / سكين; jiz=سكّين / سچّين; sin=سكينة
++ food.cup | oma=كوب / گلاص; dho=كوب / گلاص; chd=كباية; had=كاسة / كوب; san=كاسة / كوب; ade=كاسة / كوب; jiz=كوب / گلاص; sin=كاسة / كباية
++ food.plate | oma=صحن / ماعون; dho=صحن / ماعون; chd=صحن; had=صحن; san=صحن; ade=صحن; jiz=صحن / ماعون; sin=صحن
++ health.sick | oma=مريض; dho=مريض; chd=عيّان; had=مريض / تعبان; san=مريض / تعبان; ade=مريض / تعبان; jiz=مريض; sin=مريض; has=مريض
++ health.doctor | chd=دكتور; sin=دكتور / حكيم; has=طبيب
++ health.hospital | chd=مستشفى / إسبتالية
++ health.pharmacy | chd=صيدلية; had=صيدلية; sin=صيدلية
++ health.pain | oma=ألم / عوار; dho=ألم / عوار; chd=وجع; had=وجع; san=وجع; ade=وجع; jiz=ألم / عوار; sin=وجع
++ health.headache | oma=صداع; dho=صداع; chd=صداع; had=صداع; san=صداع; ade=صداع; jiz=صداع; sin=وجع راس
++ health.fever | oma=حرارة / حمّى; dho=حرارة / حمّى; had=حرارة; san=حرارة; ade=حرارة; jiz=حرارة / حمّى; sin=حرارة / سخونة
++ health.cold_illness | oma=زكام / نشلة; dho=زكام / نشلة; had=زكام; san=زكام; ade=زكام; jiz=زكام / نشلة; sin=رشح / كريب
++ health.injection | oma=إبرة; dho=إبرة; chd=حقنة / إبرة; had=إبرة; san=إبرة; ade=إبرة; jiz=إبرة; sin=إبرة
++ health.emergency | oma=طوارئ; dho=طوارئ; chd=طوارئ; had=طوارئ; san=طوارئ; ade=طوارئ; jiz=طوارئ; sin=طوارئ
++ health.ambulance | oma=إسعاف; dho=إسعاف; chd=إسعاف; had=إسعاف; san=إسعاف; ade=إسعاف; jiz=إسعاف; sin=إسعاف
++ health.get_well | oma=سلامات / ما تشوف شر; dho=سلامات / ما تشوف شر; chd=سلامتك; had=سلامتك; san=سلامتك; ade=سلامتك; jiz=سلامات / ما تشوف شر; sin=سلامتك
++ home.house | oma=بيت; dho=بيت; chd=بيت; had=بيت; jiz=بيت; sin=بيت
++ home.room | oma=غرفة / حجرة; dho=غرفة / حجرة; chd=أوضة; had=غرفة; san=غرفة; ade=غرفة; jiz=غرفة / حجرة; sin=غرفة / أوضة
++ home.kitchen | oma=مطبخ; dho=مطبخ; chd=مطبخ / تكل; had=مطبخ; san=مطبخ; ade=مطبخ; jiz=مطبخ; sin=مطبخ
++ home.bathroom | oma=حمّام; dho=حمّام; chd=حمّام; had=حمّام; san=حمّام; ade=حمّام; jiz=حمّام; sin=حمّام
++ home.window | oma=دريشة / شبّاك; dho=دريشة / شبّاك; chd=شبّاك; had=شبّاك / طاقة; san=شبّاك / طاقة; ade=شبّاك / طاقة; jiz=دريشة / شبّاك; sin=شبّاك
++ home.bed | oma=سرير; dho=سرير; chd=سرير / عنقريب; had=سرير; san=سرير; ade=سرير; jiz=سرير; sin=تخت
++ home.chair | oma=كرسي / چرسي; dho=كرسي / چرسي; chd=كرسي / بنبر; had=كرسي; san=كرسي; ade=كرسي; jiz=كرسي / چرسي; sin=كرسي; has=كرسي
++ home.table | oma=طاولة / ميز; dho=طاولة / ميز; chd=تربيزة; had=طاولة; san=طاولة; ade=طاولة; jiz=طاولة / ميز; sin=طاولة; has=طاولة
++ home.key | oma=مفتاح; dho=مفتاح; chd=مفتاح; had=مفتاح; san=مفتاح; ade=مفتاح; jiz=مفتاح; sin=مفتاح; has=مفتاح
++ home.fridge | oma=ثلاجة; dho=ثلاجة; chd=تلاجة; had=ثلاجة; san=ثلاجة; ade=ثلاجة; jiz=ثلاجة; sin=براد / تلاجة
++ home.roof | oma=سطح; dho=سطح; chd=سقف / سطح; had=سطح; san=سطح; ade=سطح; jiz=سطح; sin=سطح; has=سطح
++ home.stairs | oma=درج; dho=درج; chd=سلم; had=درج; san=درج; ade=درج; jiz=درج; sin=درج
++ home.light_lamp | oma=لمبة / لايت; dho=لمبة / لايت; chd=لمبة; had=لمبة; san=لمبة; ade=لمبة; jiz=لمبة / لايت; sin=ضو / لمبة
++ home.blanket | oma=بطانية; dho=بطانية; chd=بطانية; had=بطانية; san=بطانية; ade=بطانية; jiz=بطانية; sin=حرام
++ home.pillow | oma=مخدة; dho=مخدة; chd=مخدة; had=مخدة; san=مخدة; ade=مخدة; jiz=مخدة; sin=مخدة
++ home.furniture | oma=أثاث / فرش; dho=أثاث / فرش; had=عفش; san=عفش; ade=عفش; jiz=أثاث / فرش; sin=عفش / فرش
++ home.broom | oma=مكنسة; dho=مكنسة; chd=مقشاشة; had=مكنسة; san=مكنسة; ade=مكنسة; jiz=مكنسة; sin=مكنسة
++ kitchen.pot | oma=جدر / قدر; dho=جدر / قدر; chd=حلّة; had=قدر / حلّة; san=قدر / حلّة; ade=قدر / حلّة; jiz=جدر / قدر; sin=طنجرة
++ kitchen.frying_pan | oma=طاوة / مقلاة; dho=طاوة / مقلاة; chd=طاوة; had=مقلاة / طاوة; san=مقلاة / طاوة; ade=مقلاة / طاوة; jiz=طاوة / مقلاة; sin=مقلاية
++ kitchen.stove | oma=طبّاخ / غاز; dho=طبّاخ / غاز; jiz=طبّاخ / غاز; sin=غاز
++ kitchen.glass | chd=كبّاية; had=كاسة; san=كاسة; ade=كاسة; jiz=گلاص / كوب; sin=كاسة / كبّاية
++ kitchen.teapot | sin=إبريق
++ kitchen.spices | oma=بهارات; dho=بهارات; had=بهارات; san=بهارات; ade=بهارات; jiz=بهارات; sin=بهارات
++ kitchen.boil | oma=غلى; dho=غلى; jiz=غلى; sin=غلي
++ kitchen.dishes | oma=مواعين; dho=مواعين; chd=عدّة; had=مواعين; san=مواعين; ade=مواعين; jiz=مواعين; sin=جلي / صحون
++ market.money | had=زلط; jiz=فلوس; sin=مصاري / فلوس
++ market.shop | chd=دكّان; had=دكّان; jiz=محل / دكّان; sin=محل / دكّان
++ market.price | had=سعر; jiz=سعر / قيمة; sin=سعر / حقّ
++ market.discount | oma=خصم / تخفيضات; dho=خصم / تخفيضات; had=خصم; san=خصم; ade=خصم; jiz=خصم / تخفيضات; sin=حسم / خصم
++ market.small_change | oma=خردة / فكّة; dho=خردة / فكّة; had=فكّة; san=فكّة; ade=فكّة; jiz=خردة / فكّة; sin=فراطة
++ market.plastic_bag | oma=كيس; dho=كيس; had=كيس; san=كيس; ade=كيس; jiz=كيس; sin=كيس
++ market.pay | oma=دفع; dho=دفع; chd=دفع; had=دفع; san=دفع; ade=دفع; jiz=دفع; sin=دفع
++ market.customer | oma=زبون; dho=زبون; chd=زبون; had=زبون; san=زبون; ade=زبون; jiz=زبون; sin=زبون
++ market.card | oma=بطاقة / كرت; dho=بطاقة / كرت; had=بطاقة; san=بطاقة; ade=بطاقة; jiz=بطاقة / كرت; sin=كرت / بطاقة
++ market.bargain | oma=كاسر; dho=كاسر; jiz=كاسر; sin=فاصل
++ market.size | oma=مقاس / قياس; dho=مقاس / قياس; had=مقاس; san=مقاس; ade=مقاس; jiz=مقاس / قياس; sin=قياس / نمرة
++ market.free_of_charge | oma=ببلاش / مجّاني; dho=ببلاش / مجّاني; had=ببلاش; san=ببلاش; ade=ببلاش; jiz=ببلاش / مجّاني; sin=ببلاش / مجّاني
++ nature.river | oma=نهر; dho=نهر; chd=بحر / النيل; had=نهر; san=نهر; ade=نهر; jiz=نهر; sin=نهر
++ nature.tree | chd=شدرة; had=شجرة; jiz=شجرة; sin=شجرة; has=شجرة
++ nature.flower | oma=وردة / زهرة; dho=وردة / زهرة; chd=وردة / زهرة; had=وردة; san=وردة; ade=وردة; jiz=وردة / زهرة; sin=وردة / زهرة
++ nature.desert | chd=صحرا / خلا; had=صحرا / برّ; san=صحرا / برّ; ade=صحرا / برّ; jiz=برّ / صحرا; sin=صحرا / برّية
++ nature.sand | oma=رمل; dho=رمل; chd=رمل; had=رمل; san=رمل; ade=رمل; jiz=رمل; sin=رمل
++ nature.stone | oma=حصاة / حجر; dho=حصاة / حجر; chd=حجر; had=حجر; san=حجر; ade=حجر; jiz=حصاة / حجر; sin=حجر
++ nature.ground | oma=أرض; dho=أرض; chd=واطة; had=أرض; san=أرض; ade=أرض; jiz=أرض; sin=أرض; has=أرض
++ nature.garden | oma=حديقة; dho=حديقة; chd=جنينة; had=حديقة; san=حديقة; ade=حديقة; jiz=حديقة; sin=جنينة / حديقة
++ numbers.two | oma=ثنين; dho=ثنين; chd=اتنين; had=اتنين; san=اتنين; ade=اتنين; jiz=ثنين; sin=اتنين
++ numbers.three | oma=ثلاثة; dho=ثلاثة; chd=تلاتة; had=تلاتة; san=تلاتة; ade=تلاتة; jiz=ثلاثة; sin=تلاتة
++ numbers.four | oma=أربعة; dho=أربعة; chd=أربعة; had=أربعة; san=أربعة; ade=أربعة; jiz=أربعة; sin=أربعة; has=أربعة
++ numbers.eight | oma=ثمانية; dho=ثمانية; chd=تمانية; had=تمانية; san=تمانية; ade=تمانية; jiz=ثمانية; sin=تمانية
++ numbers.a_lot | oma=وايد; dho=وايد; chd=كتير; had=كتير; san=كتير; ade=كتير; jiz=واجد / كثير; sin=كتير
++ numbers.a_little | oma=شوي; dho=شوي; chd=شوية; had=شوية; san=شوية; ade=شوية; jiz=شوي; sin=شوي
++ numbers.all | oma=كل / كله; dho=كل / كله; chd=كلّه; had=كل / كلّه; san=كل / كلّه; ade=كل / كلّه; jiz=كل / كله; sin=كل / كلّه
++ occasions.wedding | chd=عرس; sin=عرس
++ occasions.eid_greeting | oma=عيدكم مبارك / من العايدين; dho=عيدكم مبارك / من العايدين; chd=عيد سعيد / كل سنة وإنت طيب; had=عيدكم مبارك / كل عام وإنت بخير; san=عيدكم مبارك / كل عام وإنت بخير; ade=عيدكم مبارك / كل عام وإنت بخير; jiz=عيدكم مبارك / من العايدين; sin=عيد مبارك / كل عام وإنت بخير
++ occasions.eidiya | oma=عيادة / عيديّة; dho=عيادة / عيديّة; had=عيديّة; san=عيديّة; ade=عيديّة; jiz=عيادة / عيديّة; sin=عيديّة
++ occasions.party | oma=حفلة; dho=حفلة; had=حفلة; san=حفلة; ade=حفلة; jiz=حفلة; sin=حفلة / سهرة
++ occasions.condolences | oma=عظّم الله أجركم; dho=عظّم الله أجركم; chd=البركة فيكم; had=عظّم الله أجركم; san=عظّم الله أجركم; ade=عظّم الله أجركم; jiz=عظّم الله أجركم; sin=الله يرحمه / البقاء لله
++ occasions.new_baby | oma=مولود / بيبي; dho=مولود / بيبي; jiz=مولود / بيبي; sin=مولود / بيبي
++ occasions.sebou | sin=سبوع
++ occasions.happy_occasion | oma=كل عام وإنت بخير; dho=كل عام وإنت بخير; chd=كل سنة وإنت طيب; had=كل سنة وإنت طيب; san=كل سنة وإنت طيب; ade=كل سنة وإنت طيب; jiz=كل عام وإنت بخير; sin=كل سنة وإنت سالم
++ pronouns.i | oma=أنا; dho=أنا; chd=أنا; had=أنا; jiz=أنا; sin=أنا; has=أنا
++ pronouns.you_m | oma=إنت; dho=إنت; chd=إنت; had=أنت; jiz=إنت; sin=إنت
++ pronouns.you_f | oma=إنتي; dho=إنتي; chd=إنتي; had=إنتي; san=إنتي; ade=إنتي; jiz=إنتي; sin=إنتي
++ pronouns.he | oma=هو; dho=هو; chd=هو; had=هو; jiz=هو; sin=هو; has=هو
++ pronouns.she | oma=هي; dho=هي; chd=هي; had=هي; jiz=هي; sin=هي; has=هي
++ pronouns.we | oma=إحنا; dho=إحنا; chd=نحنا; had=إحنا; san=إحنا; ade=إحنا; jiz=حنّا; sin=إحنا
++ pronouns.you_pl | oma=إنتو; dho=إنتو; chd=إنتو; had=إنتو; san=إنتو; ade=إنتو; jiz=إنتو; sin=إنتو
++ pronouns.they | oma=هم; dho=هم; chd=هم; had=هم; san=هم; ade=هم; jiz=هم; sin=هم
++ pronouns.this_m | oma=هذا; dho=هذا; chd=ده; had=هذا / ذا; jiz=هذا; sin=هاد / هادا; has=هذا
++ pronouns.this_f | oma=هذي; dho=هذي; chd=دي; had=دي / هادي; san=دي / هادي; ade=دي / هادي; jiz=هذي; sin=هاي / هادي
++ pronouns.these | chd=ديل; had=دول / هادول; san=دول / هادول; ade=دول / هادول; jiz=دول / هادول; sin=هدول
++ pronouns.here | oma=هني; dho=هني; chd=هنا; had=هنا; san=هنا; ade=هنا; jiz=هنا; sin=هون
++ pronouns.there | oma=هناك; dho=هناك; chd=هناك; had=هناك; san=هناك; ade=هناك; jiz=هناك; sin=هونيك
++ pronouns.someone | oma=أحد / واحد; dho=أحد / واحد; had=أحد / حد; san=أحد / حد; ade=أحد / حد; jiz=أحد / واحد; sin=حدا
++ pronouns.nothing | oma=ولا شي; dho=ولا شي; chd=ولا حاجة; had=ولا شي; san=ولا شي; ade=ولا شي; jiz=ولا شي; sin=ولا شي
++ pronouns.something | oma=شي; dho=شي; chd=حاجة; had=حاجة / شي; san=حاجة / شي; ade=حاجة / شي; jiz=شي; sin=شي / شغلة
++ questions.what | oma=شو; dho=شو; chd=شنو; had=إيش; jiz=وش; sin=شو
++ questions.why | oma=ليش; dho=ليش; chd=ليه; had=ليش; jiz=ليه / ليش; sin=ليش
++ questions.how | oma=شلون; dho=شلون; chd=كيف; had=كيف; jiz=كيف / شلون; sin=كيف
++ questions.where | oma=وين; dho=وين; chd=وين; had=فين; san=فين; ade=فين; jiz=وين; sin=وين
++ questions.when | oma=متى; dho=متى; chd=متين; had=متى; jiz=متى; sin=إيمتى
++ questions.who | oma=منو; dho=منو; chd=منو; had=مين; san=مين; ade=مين; jiz=مين / منهو; sin=مين
++ questions.how_much | oma=بكم; dho=بكم; chd=بكم; had=بكم; jiz=بكم; sin=بكم / قدّيش
++ questions.how_many | oma=كم; dho=كم; chd=كم; had=كم; san=كم; ade=كم; jiz=كم; sin=كم
++ questions.which | chd=ياتو; sin=أنهي; psr=أيّا
++ questions.from_where | oma=من وين; dho=من وين; chd=من وين; had=من فين; san=من فين; ade=من فين; jiz=من وين; sin=منين / من وين
++ questions.whats_wrong | oma=شفيك؟ / وش فيك؟; dho=شفيك؟ / وش فيك؟; chd=مالك؟; had=إيش فيك؟ / مالك؟; san=إيش فيك؟ / مالك؟; ade=إيش فيك؟ / مالك؟; jiz=شفيك؟ / وش فيك؟; sin=شو بك؟ / شو مالك؟
++ school.teacher | oma=مدرّس / أستاذ; dho=مدرّس / أستاذ; chd=أستاذ; had=أستاذ / مدرّس; san=أستاذ / مدرّس; ade=أستاذ / مدرّس; jiz=مدرّس / أستاذ; sin=أستاذ / معلّم
++ school.homework | oma=واجب; dho=واجب; chd=واجب; had=واجب; san=واجب; ade=واجب; jiz=واجب; sin=وظيفة / فرض
++ school.notebook | oma=دفتر; dho=دفتر; chd=كرّاسة; had=دفتر; san=دفتر; ade=دفتر; jiz=دفتر; sin=دفتر
++ school.classroom | oma=فصل / صف; dho=فصل / صف; chd=فصل; had=فصل; san=فصل; ade=فصل; jiz=فصل / صف; sin=صف
++ school.grades | oma=درجات; dho=درجات; had=درجات; san=درجات; ade=درجات; jiz=درجات; sin=علامات
++ school.fail_exam | oma=رسب; dho=رسب; jiz=رسب; sin=رسب / سقط
++ school.break_time | oma=فسحة / فرصة; dho=فسحة / فرصة; had=فسحة; san=فسحة; ade=فسحة; jiz=فسحة / فرصة; sin=فرصة / استراحة
++ school.study | oma=ذاكر / درس; dho=ذاكر / درس; chd=قرا; had=ذاكر; san=ذاكر; ade=ذاكر; jiz=ذاكر / درس; sin=درس
++ slang.awesome | oma=خطير; dho=خطير; had=خطير; san=خطير; ade=خطير; jiz=خطير; sin=بيجنّن
++ slang.bro | oma=يا خوي / يا الحبيب; dho=يا خوي / يا الحبيب; had=يا شيخ / يا رجّال; san=يا شيخ / يا رجّال; ade=يا شيخ / يا رجّال; jiz=يا خوي / يا الحبيب; sin=يا زلمة / خيّو
++ slang.kidding | oma=يمزح / يستهبل; dho=يمزح / يستهبل; jiz=يمزح / يستهبل; sin=عم يمزح
++ slang.broke | oma=مفلّس; dho=مفلّس; jiz=مفلّس; sin=مفلّس
++ slang.chilled | oma=رايق; dho=رايق; had=رايق; san=رايق; ade=رايق; jiz=رايق; sin=رايق
++ slang.annoying | oma=ثقيل / لزقة; dho=ثقيل / لزقة; jiz=ثقيل / لزقة; sin=تقيل
++ slang.young_man | oma=شاب / ولد; dho=شاب / ولد; jiz=شاب / ولد; sin=شب
++ slang.young_woman | oma=بنت; dho=بنت; chd=بت; jiz=بنت; sin=صبيّة / بنت
++ sports.football | oma=كورة; dho=كورة; chd=كورة; had=كورة; san=كورة; ade=كورة; jiz=كورة; sin=فوتبول / طابة
++ sports.ball | oma=كورة; dho=كورة; chd=كورة; had=كورة; san=كورة; ade=كورة; jiz=كورة; sin=طابة
++ sports.match | oma=مباراة / ماتش; dho=مباراة / ماتش; chd=ماتش / كورة; had=مباراة / ماتش; san=مباراة / ماتش; ade=مباراة / ماتش; jiz=مباراة / ماتش; sin=ماتش / مباراة
++ sports.goal_score | oma=قول / هدف; dho=قول / هدف; chd=قون; had=قول; san=قول; ade=قول; jiz=قول / هدف; sin=غول / هدف
++ sports.team | oma=فريق / نادي; dho=فريق / نادي; had=فريق; san=فريق; ade=فريق; jiz=فريق / نادي; sin=فريق
++ sports.win | oma=فاز; dho=فاز; chd=غلب; had=فاز; san=فاز; ade=فاز; jiz=فاز; sin=ربح
++ sports.lose | oma=خسر / انغلب; dho=خسر / انغلب; had=خسر; san=خسر; ade=خسر; jiz=خسر / انغلب; sin=خسر
++ sports.draw | oma=تعادل; dho=تعادل; had=تعادل; san=تعادل; ade=تعادل; jiz=تعادل; sin=تعادل
++ sports.stadium | oma=ملعب / استاد; dho=ملعب / استاد; had=ملعب; san=ملعب; ade=ملعب; jiz=ملعب / استاد; sin=ملعب
++ sports.gym | oma=نادي / جيم; dho=نادي / جيم; had=نادي / جيم; san=نادي / جيم; ade=نادي / جيم; jiz=نادي / جيم; sin=نادي / جيم
++ sports.fan | oma=مشجّع; dho=مشجّع; had=مشجّع; san=مشجّع; ade=مشجّع; jiz=مشجّع; sin=مشجّع
++ sports.exercise | oma=تمارين / رياضة; dho=تمارين / رياضة; had=تمارين; san=تمارين; ade=تمارين; jiz=تمارين / رياضة; sin=رياضة
++ tech.mobile_phone | chd=موبايل / تلفون; had=تلفون / جوّال; sin=موبايل / خليوي
++ tech.charger | had=شاحن; sin=شاحن / شارجر
++ tech.battery_dead | oma=خلص الشحن; dho=خلص الشحن; had=خلص الشحن; san=خلص الشحن; ade=خلص الشحن; jiz=خلص الشحن; sin=خلص الشحن
++ tech.message | oma=رسالة / مسج; dho=رسالة / مسج; had=رسالة; san=رسالة; ade=رسالة; jiz=رسالة / مسج; sin=رسالة / مسج
++ tech.computer | oma=كمبيوتر; dho=كمبيوتر; had=كمبيوتر; san=كمبيوتر; ade=كمبيوتر; jiz=كمبيوتر; sin=كمبيوتر
++ tech.password | oma=رمز سري / باسورد; dho=رمز سري / باسورد; had=رقم سري / باسورد; san=رقم سري / باسورد; ade=رقم سري / باسورد; jiz=رمز سري / باسورد; sin=باسورد / كلمة السر
++ tech.voice_note | oma=فويس / بصمة; dho=فويس / بصمة; had=فويس; san=فويس; ade=فويس; jiz=فويس / بصمة; sin=فويس / تسجيل
++ tech.missed_call | oma=مسد كول; dho=مسد كول; jiz=مسد كول; sin=ميسد كول
++ tech.download | oma=نزّل / حمّل; dho=نزّل / حمّل; had=نزّل; san=نزّل; ade=نزّل; jiz=نزّل / حمّل; sin=نزّل
++ tech.signal | oma=شبكة / تغطية; dho=شبكة / تغطية; had=شبكة; san=شبكة; ade=شبكة; jiz=شبكة / تغطية; sin=إرسال
++ time.now | dho=الحين; chd=هسّع; had=ذلحين; jiz=الحين; sin=هسّا
++ time.today | oma=اليوم; dho=اليوم; chd=الليلة; had=اليوم; jiz=اليوم; sin=اليوم; has=اليوم
++ time.tomorrow | oma=باچر; dho=باچر; chd=بكرة / باكر; had=بكرة; san=بكرة; ade=بكرة; jiz=بكرة / باكر; sin=بكرا
++ time.yesterday | oma=أمس; dho=أمس; chd=أمبارح; had=أمس; san=أمس; ade=أمس; jiz=أمس; sin=مبارح
++ time.after_tomorrow | oma=عقب باچر; dho=عقب باچر; chd=بعد بكرة; had=بعد بكرة; san=بعد بكرة; ade=بعد بكرة; jiz=بعد بكرة; sin=بعد بكرا
++ time.morning | oma=الصبح; dho=الصبح; chd=الصباح; had=الصبح; san=الصبح; ade=الصبح; jiz=الصبح; sin=الصبح
++ time.evening | sin=المسا
++ time.night | oma=الليل; dho=الليل; chd=الليل; had=الليل; san=الليل; ade=الليل; jiz=الليل; sin=الليل
++ time.later | oma=بعدين; dho=بعدين; chd=بعدين; had=بعدين; san=بعدين; ade=بعدين; jiz=بعدين; sin=بعدين
++ time.early | oma=بدري; dho=بدري; chd=بدري; had=بدري; san=بدري; ade=بدري; jiz=بدري; sin=بكّير
++ time.late | oma=متأخر; dho=متأخر; chd=متأخر; had=متأخر; san=متأخر; ade=متأخر; jiz=متأخر; sin=متأخر
++ time.little_while | oma=شوي; dho=شوي; chd=شوية; had=شوية; san=شوية; ade=شوية; jiz=شوي; sin=شوي
++ time.always | oma=دوم / دايم; dho=دوم / دايم; chd=طوّالي; had=دايمًا / على طول; san=دايمًا / على طول; ade=دايمًا / على طول; jiz=دوم / دايم; sin=دايمًا
++ time.never | oma=أبد; dho=أبد; had=أبدًا / خالص; san=أبدًا / خالص; ade=أبدًا / خالص; jiz=أبد; sin=أبدًا / بالمرّة
++ time.week | oma=أسبوع; dho=أسبوع; chd=أسبوع; had=أسبوع; san=أسبوع; ade=أسبوع; jiz=أسبوع; sin=جمعة / أسبوع
++ time.day | oma=يوم; dho=يوم; chd=يوم; had=يوم; jiz=يوم; sin=يوم
++ time.year | oma=سنة; dho=سنة; chd=سنة; had=سنة; jiz=سنة; sin=سنة
++ transport.car | chd=عربية; sin=سيارة
++ transport.bus | oma=باص; dho=باص; chd=بص; had=باص; san=باص; ade=باص; jiz=باص; sin=باص
++ transport.train | oma=قطار; dho=قطار; chd=قطر; had=قطار; san=قطار; ade=قطار; jiz=قطار; sin=قطار
++ transport.traffic | chd=زحمة; had=زحمة; jiz=زحمة / زحام; sin=زحمة
++ transport.ticket | oma=تذكرة / تكت; dho=تذكرة / تكت; chd=تذكرة; had=تذكرة; san=تذكرة; ade=تذكرة; jiz=تذكرة / تكت; sin=تذكرة
++ transport.driver | oma=سوّاق / دريول; dho=سوّاق / دريول; chd=سوّاق; had=سوّاق; san=سوّاق; ade=سوّاق; jiz=سوّاق / دريول; sin=سوّاق / شوفير
++ transport.motorbike | oma=دبّاب; dho=دبّاب; jiz=دبّاب; sin=موتور / موتوسيكل
++ transport.bicycle | oma=سيكل; dho=سيكل; chd=عجلة; had=سيكل; san=سيكل; ade=سيكل; jiz=سيكل; sin=بسكليت
++ transport.left_side | oma=يسار; dho=يسار; chd=شمال; had=يسار / شمال; san=يسار / شمال; ade=يسار / شمال; jiz=يسار; sin=شمال
++ transport.straight_on | oma=سيده / على طول; dho=سيده / على طول; chd=طوّالي; had=دُغري; san=دُغري; ade=دُغري; jiz=سيده / على طول; sin=دغري / على طول
++ transport.stop_here | oma=نزّلني هني / وقّف هني; dho=نزّلني هني / وقّف هني; chd=نزّلني هنا; had=نزّلني هنا; san=نزّلني هنا; ade=نزّلني هنا; jiz=نزّلني هني / وقّف هني; sin=نزّلني هون
++ verbs.go | jiz=راح; sin=راح
++ verbs.come | oma=يا / جا; dho=يا / جا; chd=جا; had=جا; san=جا; ade=جا; jiz=جا; sin=إجا
++ verbs.eat | oma=أكل / كل; dho=أكل / كل; chd=أكل; had=أكل; jiz=أكل / كل; sin=أكل
++ verbs.wake_up | oma=قعد; dho=قعد; chd=صحى / قام; had=صحي / قام; san=صحي / قام; ade=صحي / قام; jiz=قعد; sin=فاق / صحي
++ verbs.want | had=يشتي; jiz=يبي / يبغى; sin=بدّو
++ verbs.talk | oma=تكلّم / سولف; dho=تكلّم / سولف; chd=اتكلّم / ونّس; had=تكلّم; jiz=تكلّم / سولف; sin=حكى
++ verbs.work | oma=اشتغل; dho=اشتغل; chd=اشتغل; had=اشتغل; san=اشتغل; ade=اشتغل; jiz=اشتغل; sin=اشتغل
++ verbs.do | chd=عمل / سوّى; had=سوّى / عمل; san=سوّى / عمل; ade=سوّى / عمل; jiz=سوّى; sin=عمل
++ verbs.close | oma=سكّر; dho=سكّر; chd=قفل; had=قفل / سكّر; san=قفل / سكّر; ade=قفل / سكّر; jiz=سكّر; sin=سكّر
++ verbs.sit | oma=يلس / قعد; dho=يلس / قعد; had=قعد; jiz=جلس / قعد; sin=قعد
++ verbs.run | oma=ركض; dho=ركض; chd=جرى; had=جرى; san=جرى; ade=جرى; jiz=ركض; sin=ركض
++ verbs.take | oma=أخذ / خذ; dho=أخذ / خذ; chd=شال / أخد; had=شلّ; jiz=أخذ / خذ; sin=أخد
++ verbs.give | chd=أدّى; had=أدّى / عطى; san=أدّى / عطى; ade=أدّى / عطى; jiz=عطى; sin=أعطى
++ verbs.buy | oma=اشترى / شرى; dho=اشترى / شرى; chd=اشترى / شرا; had=اشترى; jiz=اشترى / شرى; sin=اشترى
++ verbs.wait | oma=انتظر; dho=انتظر; had=استنّى; san=استنّى; ade=استنّى; jiz=انتظر; sin=استنّى
++ verbs.search | oma=دوّر; dho=دوّر; chd=فتّش; had=دوّر; san=دوّر; ade=دوّر; jiz=دوّر; sin=دوّر / فتّش
++ verbs.bring | oma=ياب / جاب; dho=ياب / جاب; chd=جاب; had=جاب; san=جاب; ade=جاب; jiz=جاب; sin=جاب
++ verbs.put | oma=حطّ / خلّى; dho=حطّ / خلّى; chd=ختّ; had=حطّ; san=حطّ; ade=حطّ; jiz=حطّ / خلّى; sin=حطّ
++ verbs.clean | oma=نظّف; dho=نظّف; chd=نضّف; had=نضّف; san=نضّف; ade=نضّف; jiz=نظّف; sin=نضّف; has=نظّف
++ verbs.go_out | oma=طلع; dho=طلع; chd=مرق; had=طلع / خرج; san=طلع / خرج; ade=طلع / خرج; jiz=طلع; sin=طلع; has=خرج
++ verbs.learn | oma=تعلّم; dho=تعلّم; chd=اتعلّم; had=اتعلّم; san=اتعلّم; ade=اتعلّم; jiz=تعلّم; sin=تعلّم; has=تعلّم
++ verbs.remember | oma=تذكّر; dho=تذكّر; had=افتكر / تذكّر; san=افتكر / تذكّر; ade=افتكر / تذكّر; jiz=تذكّر; sin=تذكّر
++ verbs.can | oma=قدر; dho=قدر; chd=قدر; had=قدر; san=قدر; ade=قدر; jiz=قدر; sin=قدر
++ verbs.help | oma=ساعد / عاون; dho=ساعد / عاون; chd=ساعد; had=ساعد; san=ساعد; ade=ساعد; jiz=ساعد / عاون; sin=ساعد
++ verbs.send | oma=رسل; dho=رسل; chd=رسّل; jiz=رسل; sin=بعت
++ verbs.phone_call | oma=اتّصل / دقّ; dho=اتّصل / دقّ; jiz=اتّصل / دقّ; sin=اتّصل / دقّ
++ verbs.cry | oma=بچى; dho=بچى; chd=بكى; had=بكى; san=بكى; ade=بكى; jiz=بچى; sin=بكي; has=بكى
++ verbs.shower | oma=سبح; dho=سبح; had=تروّش; san=تروّش; ade=تروّش; jiz=سبح; sin=تحمّم
++ weather.weather | chd=الجو; had=الجو; jiz=الجو; sin=الطقس / الجو
++ weather.hot | oma=حر; dho=حر; chd=حار; had=حر; san=حر; ade=حر; jiz=حر; sin=شوب
++ weather.cold | oma=برد / بارد; dho=برد / بارد; chd=بارد; had=برد; san=برد; ade=برد; jiz=برد / بارد; sin=برد / بارد; has=بارد
++ weather.rain | chd=مطرة; had=مطر; jiz=مطر; sin=شتي / مطر; has=مطر
++ weather.wind | oma=هوا / ريح; dho=هوا / ريح; chd=هوا; had=هوا; san=هوا; ade=هوا; jiz=هوا / ريح; sin=هوا; has=ريح
++ weather.cloud | oma=غيمة / سحاب; dho=غيمة / سحاب; chd=سحابة; had=سحاب / غيمة; san=سحاب / غيمة; ade=سحاب / غيمة; jiz=غيمة / سحاب; sin=غيمة; has=سحابة
++ weather.snow | oma=ثلج; dho=ثلج; had=تلج; san=تلج; ade=تلج; jiz=ثلج; sin=تلج; has=ثلج
++ weather.dust | oma=غبار / عجاج / طوز; dho=غبار / عجاج / طوز; chd=كتاحة / هبوب; had=غبار; san=غبار; ade=غبار; jiz=غبار / عجاج / طوز; sin=غبرة
++ weather.umbrella | oma=شمسية / مظلّة; dho=شمسية / مظلّة; had=شمسية; san=شمسية; ade=شمسية; jiz=شمسية / مظلّة; sin=شمسية
++ weather.summer | chd=صيف; had=صيف; jiz=صيف / قيظ; sin=صيف; has=صيف
++ weather.winter | oma=شتا; dho=شتا; chd=شتا; had=شتا; jiz=شتا; sin=شتي / شتا
++ work.work_noun | oma=شغل / دوام; dho=شغل / دوام; chd=شغل; had=شغل / دوام; san=شغل / دوام; ade=شغل / دوام; jiz=شغل / دوام; sin=شغل
++ work.job | oma=وظيفة; dho=وظيفة; chd=وظيفة; had=وظيفة; san=وظيفة; ade=وظيفة; jiz=وظيفة; sin=وظيفة / شغلة
++ work.boss | oma=مدير; dho=مدير; chd=مدير; had=مدير; san=مدير; ade=مدير; jiz=مدير; sin=مدير
++ work.colleague | oma=زميل; dho=زميل; chd=زميل; had=زميل; san=زميل; ade=زميل; jiz=زميل; sin=زميل
++ work.salary | chd=ماهية / مرتّب; had=راتب; sin=معاش / راتب
++ work.day_off | oma=إجازة; dho=إجازة; chd=إجازة; had=إجازة; san=إجازة; ade=إجازة; jiz=إجازة; sin=عطلة
++ work.working_hours | oma=دوام; dho=دوام; had=دوام; san=دوام; ade=دوام; jiz=دوام; sin=دوام
++ work.fired | oma=انطرد / انفصل; dho=انطرد / انفصل; jiz=انطرد / انفصل; sin=انطرد
++ work.unemployed | oma=عاطل; dho=عاطل; jiz=عاطل; sin=عاطل / قاعد من غير شغل
