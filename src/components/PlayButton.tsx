@@ -5,7 +5,7 @@ import { useState, useSyncExternalStore } from 'react'
 import { isBroken, playAudio, stopAudio, usePlayingUrl } from '../lib/audio'
 import { audioUrl, hasAudio } from '../lib/content'
 import { useT } from '../lib/i18n'
-import { speak, speakSupported, stopSpeak, useSpeakingText } from '../lib/speak'
+import { speak, stopSpeak, useSpeakingText, useSpeakSupported } from '../lib/speak'
 
 interface Props {
   dialectId: string
@@ -32,7 +32,8 @@ export default function PlayButton({ dialectId, phraseId, text, size = 'md' }: P
   )
 
   const hasFile = hasAudio(dialectId, phraseId) && !failed
-  const canSpeak = mounted && !!text?.trim() && speakSupported()
+  const edgeVoice = useSpeakSupported()
+  const canSpeak = mounted && !!text?.trim() && edgeVoice
   if (!hasFile && !canSpeak) return null
 
   const active = hasFile ? playing : speaking

@@ -67,6 +67,9 @@ export interface VoicesManifest {
 /** dialectId -> phrase ids that have an audio file */
 export type AudioIndex = Record<string, string[]>
 
+/** dialectId -> ElevenLabs voice served by the /api/tts proxy */
+export type TtsVoiceMap = Record<string, { voiceId: string; name: string }>
+
 /** The everyday-wording groups used for "meaning in your dialect" on famous phrases. */
 export type WordGroup = 'egypt' | 'sudan' | 'levant' | 'iraq' | 'gulf' | 'yemen' | 'maghreb'
 

@@ -7,6 +7,12 @@
     // Comma separated. The site address(es) allowed to call the API from a browser.
     "ALLOWED_ORIGINS": "https://lahjaty.pages.dev,http://localhost:3000,http://localhost:4173"
   },
+  "r2_buckets": [
+    {
+      "binding": "AUDIO",
+      "bucket_name": "lahjaty-audio"
+    }
+  ],
   "d1_databases": [
     {
       "binding": "DB",
