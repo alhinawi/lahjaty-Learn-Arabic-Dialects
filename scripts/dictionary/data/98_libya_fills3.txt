@@ -1,0 +1,65 @@
+# Libyan fills round 3 (final): completes Tripoli (tri) and Benghazi (ben) to 557/557.
+# Matrouh Bedouin (bdw) copies Benghazi (Awlad Ali rule). Attested Libyan usage only.
++ occasions.eidiya | tri=عيديّة; ben=عيديّة; bdw=عيديّة
++ occasions.party | tri=حفلة; ben=حفلة; bdw=حفلة
++ occasions.condolences | tri=البقاء لله / الله يرحمو; ben=البقاء لله / الله يرحمو; bdw=البقاء لله / الله يرحمو
++ occasions.new_baby | tri=مولود / بيبي; ben=مولود / بيبي; bdw=مولود / بيبي
++ occasions.sebou | tri=سبوع; ben=سبوع; bdw=سبوع
++ occasions.happy_occasion | tri=كل سنة وإنت طيب; ben=كل سنة وإنت طيب; bdw=كل سنة وإنت طيب
++ pronouns.this_m | tri=هاذا; ben=هاذا; bdw=هاذا
++ pronouns.here | tri=هنا / هون; ben=هنا / هون; bdw=هنا / هون
++ pronouns.someone | tri=حد; ben=حد; bdw=حد
++ questions.who | tri=منو; ben=منو; bdw=منو
++ school.teacher | tri=مدرّس / أستاذ; ben=مدرّس / أستاذ; bdw=مدرّس / أستاذ
++ school.homework | tri=واجب; ben=واجب; bdw=واجب
++ school.notebook | tri=كرّاسة; ben=كرّاسة; bdw=كرّاسة
++ school.classroom | tri=فصل; ben=فصل; bdw=فصل
++ school.grades | tri=درجات; ben=درجات; bdw=درجات
++ school.fail_exam | tri=رسب / سقط; ben=رسب / سقط; bdw=رسب / سقط
++ school.break_time | tri=فسحة; ben=فسحة; bdw=فسحة
++ slang.awesome | tri=خطير / جامد; ben=خطير / جامد; bdw=خطير / جامد
++ slang.bro | tri=يا خويا / يا صاحبي; ben=يا خويا / يا صاحبي; bdw=يا خويا / يا صاحبي
++ slang.kidding | tri=بيهزّر; ben=بيهزّر; bdw=بيهزّر
++ slang.broke | tri=مفلّس; ben=مفلّس; bdw=مفلّس
++ slang.chilled | tri=رايق; ben=رايق; bdw=رايق
++ slang.annoying | tri=تقيل; ben=تقيل; bdw=تقيل
++ slang.young_man | tri=ولد / شاب; ben=ولد / شاب; bdw=ولد / شاب
++ slang.young_woman | tri=بنت; ben=بنت; bdw=بنت
++ sports.team | tri=فريق; ben=فريق; bdw=فريق
++ sports.lose | tri=خسر / انغلب; ben=خسر / انغلب; bdw=خسر / انغلب
++ sports.draw | tri=تعادل; ben=تعادل; bdw=تعادل
++ sports.stadium | tri=ملعب / استاد; ben=ملعب / استاد; bdw=ملعب / استاد
++ sports.gym | tri=جيم; ben=جيم; bdw=جيم
++ sports.fan | tri=مشجّع; ben=مشجّع; bdw=مشجّع
++ sports.exercise | tri=تمارين / رياضة; ben=تمارين / رياضة; bdw=تمارين / رياضة
++ tech.battery_dead | tri=خلص الشحن; ben=خلص الشحن; bdw=خلص الشحن
++ tech.message | tri=رسالة / مسج; ben=رسالة / مسج; bdw=رسالة / مسج
++ tech.computer | tri=كمبيوتر; ben=كمبيوتر; bdw=كمبيوتر
++ tech.password | tri=باسورد / كلمة السر; ben=باسورد / كلمة السر; bdw=باسورد / كلمة السر
++ tech.voice_note | tri=فويس; ben=فويس; bdw=فويس
++ tech.missed_call | tri=رنّة / ميسد كول; ben=رنّة / ميسد كول; bdw=رنّة / ميسد كول
++ tech.download | tri=نزّل; ben=نزّل; bdw=نزّل
++ tech.signal | tri=شبكة; ben=شبكة; bdw=شبكة
++ time.yesterday | tri=أمبارح; ben=أمبارح; bdw=أمبارح
++ time.after_tomorrow | tri=بعد بكرة; ben=بعد بكرة; bdw=بعد بكرة
++ time.morning | tri=الصباح; ben=الصباح; bdw=الصباح
++ time.evening | tri=العشية; ben=العشية; bdw=العشية
++ time.later | tri=بعدين; ben=بعدين; bdw=بعدين
++ time.early | tri=بدري; ben=بدري; bdw=بدري
++ time.little_while | tri=شوية; ben=شوية; bdw=شوية
++ time.always | tri=دايمًا / على طول; ben=دايمًا / على طول; bdw=دايمًا / على طول
++ time.day | tri=يوم; ben=يوم; bdw=يوم
++ time.year | tri=سنة / عام; ben=سنة / عام; bdw=سنة / عام
++ transport.train | tri=قطر; ben=قطر; bdw=قطر
++ transport.ticket | tri=تذكرة; ben=تذكرة; bdw=تذكرة
++ transport.driver | tri=سوّاق; ben=سوّاق; bdw=سوّاق
++ transport.motorbike | tri=موتوسيكل; ben=موتوسيكل; bdw=موتوسيكل
++ transport.left_side | tri=شمال; ben=شمال; bdw=شمال
++ transport.straight_on | tri=على طول / دُغري; ben=على طول / دُغري; bdw=على طول / دُغري
++ transport.stop_here | tri=نزّلني هنا; ben=نزّلني هنا; bdw=نزّلني هنا
++ verbs.wait | tri=استنّى; ben=استنّى; bdw=استنّى
++ verbs.search | tri=دوّر / فتّش; ben=دوّر / فتّش; bdw=دوّر / فتّش
++ verbs.go_out | tri=خرج / طلع; ben=خرج / طلع; bdw=خرج / طلع
++ verbs.remember | tri=افتكر; ben=افتكر; bdw=افتكر
++ verbs.send | tri=بعت; ben=بعت; bdw=بعت
++ verbs.phone_call | tri=اتّصل / رنّ; ben=اتّصل / رنّ; bdw=اتّصل / رنّ
