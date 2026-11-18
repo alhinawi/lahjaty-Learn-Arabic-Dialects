@@ -6,16 +6,21 @@ import Link from 'next/link'
 import { allFamous, categories, dialects, getDialect, getPhrase, phrases, STANDARD_ID } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 
-function buildGreetings() {
+/** One greeting per country: the first listed dialect of each country speaks for it. */
+export function buildGreetings() {
   const p = getPhrase('greetings.how_are_you')
   if (!p) return []
-  const seen = new Set<string>()
+  const seenCountry = new Set<string>()
+  const seenText = new Set<string>()
   return dialects
     .filter((d) => d.id !== STANDARD_ID)
     .flatMap((d) => {
       const text = p.variants[d.id]?.text
-      if (!text || seen.has(text)) return []
-      seen.add(text)
+      if (!text || seenText.has(text)) return []
+      const country = d.country || d.id
+      if (seenCountry.has(country)) return []
+      seenCountry.add(country)
+      seenText.add(text)
       return [{ dialectId: d.id, text }]
     })
 }
