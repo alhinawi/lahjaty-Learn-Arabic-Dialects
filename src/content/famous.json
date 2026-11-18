@@ -4997,6 +4997,30 @@
         "text": "يا أهل السيمسمية",
         "english": "Hey people of the simsimiyya (the Canal cities' iconic lyre and music tradition)",
         "standard": "يا أهل السيمسمية"
+      },
+      {
+        "id": "famous.demonyms_canal",
+        "text": "سوايسة وبورسعيدية وإسماعلاوية",
+        "english": "People of Suez, Port Said and Ismailia (the Canal city demonyms)",
+        "standard": "أهل السويس وبورسعيد والإسماعيلية"
+      },
+      {
+        "id": "famous.sammakiya",
+        "text": "السماكية",
+        "english": "Suez's famous canal-side fish cooks and fish restaurants",
+        "standard": "طاهو السمك ومطاعمه"
+      },
+      {
+        "id": "famous.ismailia_beauty",
+        "text": "الإسماعيلية مدينة الجمال والسحر",
+        "english": "Ismailia, the City of Beauty and Enchantment (its known nickname)",
+        "standard": "الإسماعيلية مدينة الجمال والسحر"
+      },
+      {
+        "id": "famous.bahr_el_malaha",
+        "text": "بحيرة الملاحة",
+        "english": "The saltwater lake of Port Said, a city landmark",
+        "standard": "بحيرة الملاحة في بورسعيد"
       }
     ],
     "bdw": [
@@ -5011,6 +5035,30 @@
         "text": "يا هلا بالضيف",
         "english": "Welcome, guest (bedouin hospitality greeting)",
         "standard": "مرحباً بالضيف"
+      },
+      {
+        "id": "famous.asa_omrak_taweel",
+        "text": "عسى عمرك طويل",
+        "english": "May your life be long (warm bedouin wish)",
+        "standard": "أتمنى لك طول العمر"
+      },
+      {
+        "id": "famous.awlad_ali",
+        "text": "أولاد علي",
+        "english": "The Awlad Ali bedouin tribes of Matrouh and the North Coast",
+        "standard": "قبائل أولاد علي"
+      },
+      {
+        "id": "famous.teen_matrouh",
+        "text": "تين مطروح",
+        "english": "Matrouh figs - the North Coast's famous figs",
+        "standard": "تين مرسى مطروح"
+      },
+      {
+        "id": "famous.el_gar_gabl_el_dar",
+        "text": "الجار قبل الدار",
+        "english": "The neighbor before the house (bedouin proverb)",
+        "standard": "اختر الجار قبل الدار"
       }
     ]
   }
