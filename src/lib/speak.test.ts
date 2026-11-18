@@ -15,53 +15,61 @@ class FakeUtterance {
   }
 }
 
-function installSpeech(voices: Array<{ lang: string }> = []) {
+const EDGE = { lang: 'ar-EG', name: 'Microsoft Hoda Online (Natural) - Arabic (Egypt)' }
+const GOOGLE = { lang: 'ar-XA', name: 'Google العربية' }
+
+function installSpeech(voices: Array<{ lang: string; name: string }> = []) {
   const cancel = vi.fn()
   const speakFn = vi.fn()
   ;(globalThis as Record<string, unknown>).window = {
-    speechSynthesis: {
-      cancel,
-      speak: speakFn,
-      getVoices: () => voices,
-    },
+    speechSynthesis: { cancel, speak: speakFn, getVoices: () => voices },
   }
   ;(globalThis as Record<string, unknown>).SpeechSynthesisUtterance = FakeUtterance
   return { cancel, speakFn }
 }
 
 afterEach(() => {
+  stopSpeak()
   delete (globalThis as Record<string, unknown>).window
   delete (globalThis as Record<string, unknown>).SpeechSynthesisUtterance
 })
 
-describe('browser speech fallback', () => {
+describe('browser speech fallback (Edge voices only)', () => {
   it('reports no support without the Web Speech API', () => {
     expect(speakSupported()).toBe(false)
     speak('مرحبا')
     expect(speakingText()).toBeNull()
   })
 
-  it('speaks with an Arabic voice when the device has one', () => {
-    const { speakFn } = installSpeech([{ lang: 'en-US' }, { lang: 'ar-EG' }])
+  it('speaks with an Edge Arabic voice when one is installed', () => {
+    const { speakFn } = installSpeech([{ lang: 'en-US', name: 'Microsoft Aria' }, EDGE])
     expect(speakSupported()).toBe(true)
     speak('إزيك')
     expect(speakingText()).toBe('إزيك')
     const u = FakeUtterance.last!
     expect(speakFn).toHaveBeenCalledWith(u)
     expect(u.lang).toBe('ar-EG')
-    expect(u.voice).toEqual({ lang: 'ar-EG' })
+    expect(u.voice).toEqual(EDGE)
     expect(u.rate).toBeLessThan(1)
   })
 
-  it('falls back to generic Arabic when no Arabic voice is installed', () => {
-    installSpeech([{ lang: 'en-US' }])
+  it('never selects a Google voice, even when it is the only Arabic one', () => {
+    const { speakFn } = installSpeech([GOOGLE, { lang: 'en-US', name: 'Microsoft Aria' }])
+    expect(speakSupported()).toBe(false)
     speak('مرحبا')
-    expect(FakeUtterance.last!.lang).toBe('ar')
-    expect(FakeUtterance.last!.voice).toBeNull()
+    expect(speakFn).not.toHaveBeenCalled()
+    expect(speakingText()).toBeNull()
+  })
+
+  it('stays silent when no Edge Arabic voice exists instead of using a default voice', () => {
+    const { speakFn } = installSpeech([{ lang: 'en-US', name: 'Microsoft Aria' }])
+    expect(speakSupported()).toBe(false)
+    speak('مرحبا')
+    expect(speakFn).not.toHaveBeenCalled()
   })
 
   it('cancels the previous utterance before speaking again', () => {
-    const { cancel, speakFn } = installSpeech()
+    const { cancel, speakFn } = installSpeech([EDGE])
     speak('واحد')
     speak('اتنين')
     expect(cancel).toHaveBeenCalledTimes(2)
@@ -70,7 +78,7 @@ describe('browser speech fallback', () => {
   })
 
   it('clears the speaking state when the utterance ends', () => {
-    installSpeech()
+    installSpeech([EDGE])
     speak('سلام')
     expect(speakingText()).toBe('سلام')
     FakeUtterance.last!.onend!()
@@ -78,7 +86,7 @@ describe('browser speech fallback', () => {
   })
 
   it('stop cancels speech and clears the state', () => {
-    const { cancel } = installSpeech()
+    const { cancel } = installSpeech([EDGE])
     speak('تمام')
     stopSpeak()
     expect(cancel).toHaveBeenCalled()
@@ -86,7 +94,7 @@ describe('browser speech fallback', () => {
   })
 
   it('ignores empty text', () => {
-    const { speakFn } = installSpeech()
+    const { speakFn } = installSpeech([EDGE])
     speak('   ')
     expect(speakFn).not.toHaveBeenCalled()
     expect(speakingText()).toBeNull()
