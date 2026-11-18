@@ -122,7 +122,6 @@ export default function AppShell({ children }: { children: ReactNode }) {
               <Languages className="h-4 w-4" aria-hidden />
               <span>{t('langToggle')}</span>
             </button>
-            <AuthButton />
             <button
               type="button"
               onClick={() => setMenuOpen((o) => !o)}
@@ -153,6 +152,7 @@ export default function AppShell({ children }: { children: ReactNode }) {
                       {dark ? t('themeToLight') : t('themeToDark')}
                     </button>
                   </li>
+                  <AuthButton variant="menu" onNavigate={() => setMenuOpen(false)} />
                 </ul>
               </div>
             )}

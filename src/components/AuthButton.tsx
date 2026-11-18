@@ -12,7 +12,15 @@ import AuthModal from './AuthModal'
  * confirms sign-in is configured (/api/auth/config), so guests and offline
  * visitors never see it. When signed in it shows the account name and a logout.
  */
-export default function AuthButton() {
+export default function AuthButton({
+  variant = 'header',
+  onNavigate,
+}: {
+  /** 'menu' renders list-item rows for the burger menu instead of header pills. */
+  variant?: 'header' | 'menu'
+  /** Called when an action is taken, so the parent menu can close. */
+  onNavigate?: () => void
+}) {
   const t = useT()
   const user = useAuth((s) => s.user)
   const [enabled, setEnabled] = useState(false)
@@ -58,6 +66,55 @@ export default function AuthButton() {
   }, [menuOpen])
 
   if (!enabled) return null
+
+  const itemCls = 'flex w-full items-center gap-3 px-4 py-2.5 text-sm font-medium hover:bg-sand-100'
+
+  if (variant === 'menu') {
+    if (user) {
+      return (
+        <>
+          <li className="border-t border-slate-200 px-4 py-2.5">
+            <span className="flex items-center gap-3 text-sm font-medium">
+              <User className="h-4 w-4 text-brand-700" aria-hidden />
+              <span className="truncate">{user.name}</span>
+            </span>
+            <span className="block truncate ps-7 text-xs text-slate-500" dir="ltr">
+              {user.email}
+            </span>
+          </li>
+          <li>
+            <button
+              type="button"
+              onClick={() => {
+                onNavigate?.()
+                void signOut()
+              }}
+              className={itemCls}
+            >
+              <LogOut className="h-4 w-4 text-brand-700" aria-hidden />
+              {t('authLogout')}
+            </button>
+          </li>
+        </>
+      )
+    }
+    return (
+      <li className="border-t border-slate-200">
+        <button
+          type="button"
+          onClick={() => {
+            onNavigate?.()
+            setModalOpen(true)
+          }}
+          className={itemCls}
+        >
+          <LogIn className="h-4 w-4 text-brand-700" aria-hidden />
+          {t('authSignIn')}
+        </button>
+        {modalOpen && <AuthModal initialError={googleError ? 'google_failed' : null} onClose={() => setModalOpen(false)} />}
+      </li>
+    )
+  }
 
   if (user) {
     return (
