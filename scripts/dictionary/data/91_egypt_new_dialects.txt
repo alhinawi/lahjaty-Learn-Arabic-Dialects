@@ -1,0 +1,558 @@
+# Canal Cities (cnl) filled from the Cairene column (Cairene-Canal continuum); Matrouh/North-Coast Bedouin (bdw) from the Benghazi column (Awlad Ali Libyan-type bedouin). Auto-derived, one form per entry.
++ basics.yes | cnl=أيوه; bdw=إيه
++ basics.no | cnl=لأ; bdw=لا
++ basics.okay | cnl=ماشي / طيب; bdw=باهي
++ basics.thanks | cnl=شكرًا / متشكّر; bdw=مشكور
++ basics.please | cnl=لو سمحت / من فضلك
++ basics.sorry | cnl=آسف / معلش
++ basics.welcome_reply | cnl=العفو; bdw=مرحبا بيك / بلا زحمة
++ basics.goodbye | cnl=مع السلامة / سلام; bdw=بسلامة
++ basics.maybe | cnl=يمكن / ممكن; bdw=يمكن
++ basics.enough | cnl=خلاص / كفاية
++ basics.no_problem | cnl=مفيش مشكلة; bdw=مافيش مشكلة
++ basics.there_is | cnl=فيه; bdw=فيه
++ basics.there_isnt | cnl=مفيش; bdw=مافيش
++ basics.alright_greeting | cnl=كويس / الحمد لله; bdw=باهي / لاباس
++ questions.what | cnl=إيه; bdw=شن / شنو
++ questions.why | cnl=ليه; bdw=علاش
++ questions.how | cnl=إزاي; bdw=كيف
++ questions.where | cnl=فين; bdw=وين
++ questions.when | cnl=إمتى; bdw=وقتاش
++ questions.who | cnl=مين
++ questions.how_much | cnl=بكام; bdw=بكم
++ questions.how_many | cnl=كام; bdw=كم
++ questions.which | cnl=أنهي; bdw=أنّي
++ questions.from_where | cnl=منين; bdw=منين
++ questions.whats_wrong | cnl=مالك؟; bdw=شن بيك؟
++ pronouns.i | cnl=أنا; bdw=أنا
++ pronouns.you_m | cnl=إنت; bdw=إنتا
++ pronouns.you_f | cnl=إنتي; bdw=إنتي
++ pronouns.he | cnl=هو; bdw=هو
++ pronouns.she | cnl=هي; bdw=هي
++ pronouns.we | cnl=إحنا; bdw=أحنا
++ pronouns.you_pl | cnl=إنتو; bdw=إنتوا
++ pronouns.they | cnl=هُمّا; bdw=هومّة
++ pronouns.this_m | cnl=ده
++ pronouns.this_f | cnl=دي; bdw=هاي / هاذي
++ pronouns.these | cnl=دول; bdw=هاذوم
++ pronouns.here | cnl=هنا
++ pronouns.there | cnl=هناك; bdw=هنيك
++ pronouns.someone | cnl=حد
++ pronouns.nothing | cnl=ولا حاجة; bdw=شي / حتى شي
++ pronouns.something | cnl=حاجة; bdw=حاجة
++ time.now | cnl=دلوقتي; bdw=توّا
++ time.today | cnl=النهارده; bdw=اليوم
++ time.tomorrow | cnl=بكرة; bdw=غدوة
++ time.yesterday | cnl=إمبارح
++ time.after_tomorrow | cnl=بعد بكرة
++ time.morning | cnl=الصبح
++ time.evening | cnl=المسا / بالليل
++ time.night | cnl=الليل; bdw=الليل
++ time.later | cnl=بعدين
++ time.early | cnl=بدري
++ time.late | cnl=متأخر; bdw=متأخر
++ time.little_while | cnl=شوية
++ time.always | cnl=على طول / دايمًا
++ time.never | cnl=خالص / أبدًا; bdw=جملة
++ time.week | cnl=أسبوع; bdw=جمعة
++ time.hour | cnl=ساعة; bdw=ساعة
++ time.day | cnl=يوم
++ time.year | cnl=سنة
++ numbers.one | cnl=واحد; bdw=واحد
++ numbers.two | cnl=اتنين; bdw=زوز
++ numbers.three | cnl=تلاتة; bdw=تلاتة
++ numbers.four | cnl=أربعة; bdw=أربعة
++ numbers.five | cnl=خمسة; bdw=خمسة
++ numbers.six | cnl=ستّة; bdw=ستّة
++ numbers.seven | cnl=سبعة; bdw=سبعة
++ numbers.eight | cnl=تمانية
++ numbers.nine | cnl=تسعة; bdw=تسعة
++ numbers.ten | cnl=عشرة; bdw=عشرة
++ numbers.hundred | cnl=مية; bdw=مية
++ numbers.thousand | cnl=ألف; bdw=ألف
++ numbers.half | cnl=نص; bdw=نص
++ numbers.a_lot | cnl=كتير; bdw=هلبا
++ numbers.a_little | cnl=شوية; bdw=شوية
++ numbers.all | cnl=كل / كله
++ family.father | cnl=أبويا / بابا; bdw=بوي
++ family.mother | cnl=أمي / ماما
++ family.brother | cnl=أخويا; bdw=خوي
++ family.sister | cnl=أختي
++ family.son | cnl=ابن; bdw=ولد
++ family.daughter | cnl=بنت; bdw=بنت
++ family.grandfather | cnl=جدّو / جدّي
++ family.grandmother | cnl=تيتة / جدّة
++ family.uncle_paternal | cnl=عمّ; bdw=عمّ
++ family.uncle_maternal | cnl=خال; bdw=خال
++ family.aunt_paternal | cnl=عمّة; bdw=عمّة
++ family.aunt_maternal | cnl=خالة; bdw=خالة
++ family.husband | cnl=جوز; bdw=راجل
++ family.wife | cnl=مراتي
++ family.kids | cnl=عيال / أطفال
++ family.cousin | cnl=ابن عمّ; bdw=ولد عمّ
++ family.family | cnl=عيلة; bdw=العايلة
++ family.man | cnl=راجل; bdw=راجل
++ family.woman | cnl=ست / مَرة
++ family.person | cnl=بني آدم / شخص
++ family.boy | cnl=واد / ولد
++ family.neighbor | cnl=جار; bdw=جار
++ family.house | cnl=بيت; bdw=دار
++ family.street | cnl=شارع; bdw=شارع
++ family.water | cnl=مية; bdw=ما
++ family.bread | cnl=عيش; bdw=خبز
++ family.money | cnl=فلوس; bdw=فلوس / دراهم
++ family.day | cnl=يوم; bdw=يوم
++ family.night | cnl=ليل; bdw=ليل
++ family.work | cnl=شغل; bdw=شغل
++ family.car | cnl=عربية; bdw=عربية
++ food.bread | cnl=عيش; bdw=خبز
++ food.water | cnl=ميّة
++ food.tea | cnl=شاي; bdw=أتاي
++ food.coffee | cnl=قهوة; bdw=قهوة
++ food.milk | cnl=لبن; bdw=حليب
++ food.yogurt | cnl=زبادي; bdw=ياغورت
++ food.sugar | cnl=سكّر; bdw=سكّر
++ food.salt | cnl=ملح; bdw=ملح
++ food.meat | cnl=لحمة; bdw=لحم
++ food.chicken | cnl=فراخ; bdw=دجاج
++ food.fish | cnl=سمك; bdw=حوت
++ food.egg | cnl=بيض; bdw=دحي / بيض
++ food.rice | cnl=رز; bdw=روز
++ food.cheese | cnl=جبنة
++ food.tomato | cnl=طماطم; bdw=طماطم
++ food.potato | cnl=بطاطس; bdw=بطاطا
++ food.onion | cnl=بصل; bdw=بصل
++ food.garlic | cnl=توم
++ food.pepper_bell | cnl=فلفل رومي
++ food.cucumber | cnl=خيار
++ food.eggplant | cnl=بتنجان
++ food.zucchini | cnl=كوسة
++ food.okra | cnl=بامية; bdw=بامية
++ food.lemon | cnl=ليمون
++ food.orange_fruit | cnl=برتقان
++ food.apple | cnl=تفاح
++ food.watermelon | cnl=بطيخ; bdw=دلاع
++ food.dates | cnl=بلح / تمر; bdw=تمر
++ food.beans | cnl=فول; bdw=فول
++ food.chickpeas | cnl=حمص
++ food.sweets | cnl=حلويات / حاجة حلوة
++ food.juice | cnl=عصير; bdw=عصير
++ food.breakfast | cnl=فطار
++ food.lunch | cnl=غدا
++ food.dinner | cnl=عشا
++ food.hungry | cnl=جعان
++ food.thirsty | cnl=عطشان; bdw=عطشان
++ food.delicious | cnl=حلو / طعمه حلو
++ food.food | cnl=أكل; bdw=ماكلة / وكل
++ food.spoon | cnl=معلقة
++ food.knife | cnl=سكينة; bdw=سكّينة
++ food.cup | cnl=كباية / كوباية
++ food.plate | cnl=طبق
++ home.house | cnl=بيت; bdw=حوش
++ home.room | cnl=أوضة; bdw=دار
++ home.kitchen | cnl=مطبخ
++ home.bathroom | cnl=حمّام
++ home.door | cnl=باب; bdw=باب
++ home.window | cnl=شبّاك; bdw=شبّاك / طاقة
++ home.bed | cnl=سرير
++ home.chair | cnl=كرسي
++ home.table | cnl=ترابيزة / طربيزة
++ home.key | cnl=مفتاح
++ home.fridge | cnl=تلاجة; bdw=ثلاجة
++ home.roof | cnl=سطوح / سطح
++ home.stairs | cnl=سلم
++ home.light_lamp | cnl=نور / لمبة
++ home.blanket | cnl=بطانية
++ home.pillow | cnl=مخدة
++ home.furniture | cnl=عفش
++ home.broom | cnl=مقشّة
++ body.head | cnl=راس
++ body.hand | cnl=إيد
++ body.foot | cnl=رجل
++ body.eye | cnl=عين; bdw=عين
++ body.nose | cnl=مناخير
++ body.mouth | cnl=بق
++ body.teeth | cnl=سنان
++ body.ear | cnl=ودن
++ body.hair | cnl=شعر
++ body.stomach | cnl=بطن / كرش; bdw=كرش / بطن
++ body.back | cnl=ضهر
++ body.face | cnl=وش
++ body.finger | cnl=صباع
++ body.heart | cnl=قلب; bdw=قلب
++ body.neck | cnl=رقبة
++ clothes.clothes | cnl=هدوم; bdw=حوايج
++ clothes.shirt | cnl=قميص
++ clothes.trousers | cnl=بنطلون
++ clothes.shoes | cnl=جزمة
++ clothes.slippers | cnl=شبشب
++ clothes.jacket | cnl=جاكيت
++ clothes.hat | cnl=برنيطة / كاب
++ clothes.dress | cnl=فستان
++ clothes.socks | cnl=شراب
++ clothes.bag | cnl=شنطة
++ clothes.watch | cnl=ساعة; bdw=ساعة
++ clothes.rice | cnl=رز; bdw=روز
++ clothes.chicken | cnl=فراخ; bdw=دجاج
++ clothes.fish | cnl=سمك; bdw=سمك
++ clothes.meat | cnl=لحمة; bdw=لحم
++ clothes.milk | cnl=لبن; bdw=حليب
++ clothes.tea | cnl=شاي; bdw=شاي
++ clothes.sugar | cnl=سكر; bdw=سكر
++ clothes.salt | cnl=ملح; bdw=ملح
++ clothes.eggs | cnl=بيض; bdw=بيض
++ clothes.breakfast | cnl=فطار; bdw=فطور
++ animals.animal | cnl=حيوان / بهيمة; bdw=حيوان
++ animals.cat | cnl=قطة / بسّة; bdw=قطّوس
++ animals.dog | cnl=كلب; bdw=كلب
++ animals.donkey | cnl=حمار; bdw=حمار
++ animals.horse | cnl=حصان; bdw=حصان
++ animals.camel | cnl=جمل; bdw=جمل
++ animals.cow | cnl=بقرة; bdw=بقرة
++ animals.sheep | cnl=خروف; bdw=علّوش / خروف
++ animals.goat | cnl=معزة / عنزة; bdw=معزة
++ animals.chicken | cnl=فرخة; bdw=دجاجة
++ animals.bird | cnl=عصفورة / طير; bdw=طير
++ animals.fish | cnl=سمك; bdw=حوت
++ animals.mouse | cnl=فار; bdw=فار
++ animals.fly | cnl=دبّانة; bdw=ذبّانة
++ animals.mosquito | cnl=ناموسة; bdw=ناموسة
++ animals.cockroach | cnl=صرصار; bdw=صرصار
++ animals.ant | cnl=نملة; bdw=نملة
++ animals.snake | cnl=تعبان; bdw=حنش
++ animals.lion | cnl=أسد; bdw=أسد
++ animals.rabbit | cnl=أرنب; bdw=أرنب
++ animals.duck | cnl=بطّة; bdw=بطّة
++ weather.weather | cnl=الجو; bdw=الجو
++ weather.hot | cnl=حر; bdw=سخون
++ weather.cold | cnl=برد / ساقع; bdw=بارد
++ weather.rain | cnl=مطرة / مطر; bdw=مطر
++ weather.wind | cnl=هوا / ريح; bdw=ريح
++ weather.sun | cnl=شمس; bdw=شمس
++ weather.moon | cnl=قمر; bdw=قمر
++ weather.cloud | cnl=سحابة / غيمة; bdw=سحابة
++ weather.snow | cnl=تلج; bdw=ثلج
++ weather.dust | cnl=تراب / غبار; bdw=غبرة / قبلي
++ weather.umbrella | cnl=شمسية; bdw=مظلّة
++ weather.summer | cnl=صيف; bdw=صيف
++ weather.winter | cnl=شتا; bdw=شتا
++ nature.sea | cnl=بحر; bdw=بحر
++ nature.river | cnl=نهر / النيل; bdw=واد
++ nature.tree | cnl=شجرة; bdw=شجرة
++ nature.flower | cnl=وردة; bdw=وردة
++ nature.mountain | cnl=جبل; bdw=جبل
++ nature.desert | cnl=صحرا; bdw=صحرا
++ nature.sand | cnl=رملة / رمل; bdw=رملة
++ nature.stone | cnl=حجر / زلطة; bdw=حجرة
++ nature.sky | cnl=سما; bdw=سما
++ nature.ground | cnl=أرض; bdw=أرض
++ nature.garden | cnl=جنينة; bdw=حديقة
++ nature.fire | cnl=نار; bdw=نار
++ colors.color | cnl=لون; bdw=لون
++ colors.white | cnl=أبيض; bdw=أبيض
++ colors.black | cnl=إسود; bdw=أسود
++ colors.red | cnl=أحمر; bdw=أحمر
++ colors.green | cnl=أخضر; bdw=أخضر
++ colors.blue | cnl=أزرق / لبني; bdw=أزرق
++ colors.yellow | cnl=أصفر; bdw=أصفر
++ colors.brown | cnl=بنّي; bdw=بنّي / كحلي
++ colors.orange_color | cnl=برتقاني
++ colors.pink | cnl=بمبي / روز; bdw=وردي
++ colors.grey | cnl=رمادي / رصاصي; bdw=رمادي
++ colors.purple | cnl=بنفسجي / موف
++ verbs.go | cnl=راح; bdw=مشى
++ verbs.come | cnl=جه / جا; bdw=جا
++ verbs.eat | cnl=كل; bdw=كلا
++ verbs.drink | cnl=شرب; bdw=شرب
++ verbs.sleep | cnl=نام; bdw=رقد
++ verbs.wake_up | cnl=صحي; bdw=ناض
++ verbs.see | cnl=شاف; bdw=شاف
++ verbs.want | cnl=عايز / عاوز; bdw=يبّي
++ verbs.say | cnl=قال; bdw=قال
++ verbs.talk | cnl=اتكلّم; bdw=هدرز / تكلّم
++ verbs.work | cnl=اشتغل; bdw=خدم
++ verbs.do | cnl=عمل; bdw=دار
++ verbs.open | cnl=فتح; bdw=فتح
++ verbs.close | cnl=قفل; bdw=سكّر
++ verbs.sit | cnl=قعد; bdw=قعد
++ verbs.stand_up | cnl=قام; bdw=ناض / قام
++ verbs.walk | cnl=مشى; bdw=مشى
++ verbs.run | cnl=جري; bdw=جرى
++ verbs.take | cnl=خد; bdw=خدا
++ verbs.give | cnl=إدّى; bdw=عطى
++ verbs.buy | cnl=اشترى; bdw=شرا
++ verbs.know | cnl=عرف; bdw=عرف
++ verbs.understand | cnl=فهم; bdw=فهم
++ verbs.wait | cnl=استنّى
++ verbs.search | cnl=دوّر
++ verbs.bring | cnl=جاب; bdw=جاب
++ verbs.put | cnl=حطّ; bdw=حطّ
++ verbs.play | cnl=لعب; bdw=لعب
++ verbs.cook | cnl=طبخ; bdw=طبخ
++ verbs.wash | cnl=غسل; bdw=غسل
++ verbs.clean | cnl=نضّف; bdw=نضّف
++ verbs.return | cnl=رجع; bdw=رجع
++ verbs.go_out | cnl=خرج / طلع
++ verbs.enter | cnl=دخل; bdw=دخل
++ verbs.write | cnl=كتب; bdw=كتب
++ verbs.read | cnl=قرا; bdw=قرا
++ verbs.learn | cnl=اتعلّم; bdw=تعلّم
++ verbs.love | cnl=حبّ; bdw=حبّ
++ verbs.forget | cnl=نسي; bdw=نسي
++ verbs.remember | cnl=افتكر
++ verbs.can | cnl=قدر; bdw=قدر
++ verbs.help | cnl=ساعد; bdw=عاون
++ verbs.live | cnl=سكن; bdw=سكن
++ verbs.send | cnl=بعت
++ verbs.phone_call | cnl=اتّصل / رنّ
++ verbs.laugh | cnl=ضحك; bdw=ضحك
++ verbs.cry | cnl=عيّط; bdw=بكى
++ verbs.shower | cnl=استحمّى; bdw=دوّش
++ adjectives.big | cnl=كبير; bdw=كبير
++ adjectives.small | cnl=صغيّر; bdw=صغير
++ adjectives.good | cnl=كويّس; bdw=باهي
++ adjectives.bad | cnl=وحش
++ adjectives.beautiful | cnl=حلو / جميل
++ adjectives.ugly | cnl=وحش; bdw=شين
++ adjectives.new | cnl=جديد; bdw=جديد
++ adjectives.old_thing | cnl=قديم; bdw=قديم
++ adjectives.hot_food | cnl=سخن; bdw=سخون
++ adjectives.cold_food | cnl=ساقع / بارد; bdw=بارد
++ adjectives.easy | cnl=سهل; bdw=سهل
++ adjectives.difficult | cnl=صعب; bdw=صعب
++ adjectives.fast | cnl=سريع
++ adjectives.expensive | cnl=غالي; bdw=غالي
++ adjectives.cheap | cnl=رخيص; bdw=رخيص
++ adjectives.clean_adj | cnl=نضيف
++ adjectives.dirty | cnl=وسخ; bdw=موسّخ
++ adjectives.tall | cnl=طويل; bdw=طويل
++ adjectives.short | cnl=قصير; bdw=قصير
++ adjectives.fat | cnl=تخين
++ adjectives.thin | cnl=رفيع; bdw=ضعيف
++ adjectives.empty | cnl=فاضي; bdw=خاوي
++ adjectives.strong | cnl=قوي; bdw=قوي
++ adjectives.crazy | cnl=مجنون; bdw=مجنون
++ adjectives.clever | cnl=شاطر / ذكي; bdw=شاطر / ذكي
++ adjectives.correct | cnl=صح; bdw=صح
++ adjectives.wrong | cnl=غلط; bdw=غلط
++ adjectives.far | cnl=بعيد; bdw=بعيد
++ adjectives.near | cnl=قريب; bdw=قريب
++ adjectives.heavy | cnl=تقيل; bdw=تقيل
++ adjectives.light_weight | cnl=خفيف; bdw=خفيف
++ feelings.happy | cnl=مبسوط / فرحان; bdw=فرحان
++ feelings.sad | cnl=زعلان / حزين; bdw=زعلان
++ feelings.angry | cnl=متعصّب / زعلان
++ feelings.tired | cnl=تعبان; bdw=تعبان
++ feelings.afraid | cnl=خايف; bdw=خايف
++ feelings.bored | cnl=زهقان; bdw=ملّان
++ feelings.worried | cnl=قلقان; bdw=قلقان
++ feelings.upset | cnl=متضايق / مخنوق; bdw=متضايق
++ feelings.shy | cnl=مكسوف / محرج; bdw=حشمان
++ feelings.jealous | cnl=غيران; bdw=غيران
++ feelings.love_noun | cnl=حبّ; bdw=حبّ
++ feelings.miss_you | cnl=وحشتني; bdw=توحّشتك
++ feelings.dont_care | cnl=مش فارقة معايا
++ feelings.calm | cnl=هادي; bdw=هادي
++ work.work_noun | cnl=شغل; bdw=خدمة
++ work.job | cnl=وظيفة / شغلانة; bdw=خدمة
++ work.office | cnl=مكتب; bdw=مكتب
++ work.boss | cnl=مدير / ريّس; bdw=مدير
++ work.colleague | cnl=زميل; bdw=زميل
++ work.salary | cnl=مرتّب; bdw=مرتّب
++ work.company | cnl=شركة; bdw=شركة
++ work.meeting | cnl=اجتماع; bdw=اجتماع
++ work.day_off | cnl=أجازة; bdw=عطلة
++ work.working_hours | bdw=الدوام
++ work.worker | cnl=عامل; bdw=عامل
++ work.fired | cnl=اترفد; bdw=انطرد
++ work.unemployed | cnl=عاطل / قاعد من غير شغل; bdw=بطّال
++ work.busy | cnl=مشغول; bdw=مشغول
++ work.experience | cnl=خبرة; bdw=خبرة
++ work.interview | cnl=إنترفيو / مقابلة; bdw=مقابلة
++ market.money | cnl=فلوس; bdw=فلوس
++ market.market_place | cnl=سوق; bdw=سوق
++ market.shop | cnl=محل; bdw=دكّان
++ market.price | cnl=سعر / تمن
++ market.discount | cnl=خصم / تخفيضات; bdw=صولد / تخفيض
++ market.small_change | cnl=فكّة; bdw=صرف
++ market.plastic_bag | cnl=كيس
++ market.pay | cnl=دفع
++ market.sell | cnl=باع; bdw=باع
++ market.customer | cnl=زبون
++ market.card | cnl=كارت / فيزا
++ market.bargain | cnl=فاصل
++ market.size | cnl=مقاس
++ market.free_of_charge | cnl=ببلاش
++ transport.car | cnl=عربية; bdw=سيارة
++ transport.bus | cnl=أتوبيس; bdw=باص
++ transport.taxi | cnl=تاكسي; bdw=تاكسي
++ transport.train | cnl=قطر
++ transport.metro | cnl=مترو; bdw=مترو
++ transport.plane | cnl=طيّارة; bdw=طيّارة
++ transport.airport | cnl=مطار; bdw=مطار
++ transport.station | cnl=محطة; bdw=محطة
++ transport.street | cnl=شارع; bdw=شارع
++ transport.traffic | cnl=زحمة; bdw=زحمة
++ transport.ticket | cnl=تذكرة
++ transport.driver | cnl=سوّاق
++ transport.motorbike | cnl=موتوسيكل
++ transport.bicycle | cnl=عجلة; bdw=بشكليطة
++ transport.right_side | cnl=يمين; bdw=يمين
++ transport.left_side | cnl=شمال
++ transport.straight_on | cnl=على طول / دُغري
++ transport.stop_here | cnl=على جنب هنا / نزّلني هنا
++ health.sick | cnl=عيّان; bdw=مريض
++ health.doctor | cnl=دكتور; bdw=طبيب / دكتور
++ health.hospital | cnl=مستشفى; bdw=سبيطار / مستشفى
++ health.pharmacy | cnl=أجزخانة / صيدلية; bdw=صيدلية
++ health.medicine | cnl=دوا; bdw=دوا
++ health.pain | cnl=وجع
++ health.headache | cnl=صداع
++ health.fever | cnl=سخونية / حرارة; bdw=سخانة
++ health.cold_illness | cnl=برد / دور برد
++ health.cough | cnl=كحّة; bdw=كحّة
++ health.injection | cnl=حقنة
++ health.emergency | cnl=طوارئ
++ health.ambulance | cnl=إسعاف
++ health.get_well | cnl=سلامتك / ألف سلامة
++ health.blood | cnl=دم; bdw=دم
++ health.dizzy | cnl=دايخ; bdw=دايخ
++ school.school_place | cnl=مدرسة; bdw=مدرسة
++ school.university | cnl=جامعة; bdw=جامعة
++ school.teacher | cnl=مدرّس / أستاذ
++ school.student | cnl=طالب / تلميذ; bdw=طالب
++ school.exam | cnl=امتحان; bdw=امتحان
++ school.homework | cnl=واجب
++ school.book | cnl=كتاب; bdw=كتاب
++ school.notebook | cnl=كشكول / كرّاسة
++ school.pen | cnl=قلم; bdw=قلم
++ school.classroom | cnl=فصل
++ school.lesson | cnl=درس; bdw=درس
++ school.grades | cnl=درجات
++ school.pass_exam | cnl=نجح; bdw=نجح
++ school.fail_exam | cnl=سقط
++ school.break_time | cnl=فسحة
++ school.study | cnl=ذاكر; bdw=قرا
++ expressions.hello | cnl=أهلًا; bdw=مرحبا
++ expressions.how_are_you | cnl=إزيّك؟; bdw=كيف حالك؟ / شن حالك؟
++ expressions.good_morning | cnl=صباح الخير; bdw=صباح الخير
++ expressions.good_evening | cnl=مساء الخير; bdw=مساء الخير
++ expressions.good_night | cnl=تصبح على خير; bdw=تصبح على خير
++ expressions.welcome | cnl=أهلًا وسهلًا; bdw=أهلًا وسهلًا
++ expressions.here_you_go | cnl=تفضّل; bdw=تفضّل
++ expressions.congratulations | cnl=مبروك; bdw=مبروك
++ expressions.excuse_me | cnl=لو سمحت / عن إذنك
++ expressions.never_mind | cnl=معلش; bdw=معليش
++ expressions.enjoy_meal | cnl=بالهنا والشفا
++ expressions.see_you | cnl=أشوفك بعدين
++ expressions.very | cnl=قوي / أوي; bdw=واجد
++ expressions.seriously | cnl=بجد؟
++ expressions.whats_up | cnl=إيه الأخبار؟ / عامل إيه؟; bdw=شن الجو؟
++ expressions.so_so | cnl=ماشي الحال
++ expressions.lets_go | cnl=يلّا; bdw=يلّا
++ slang.awesome | cnl=جامد / تحفة
++ slang.bro | cnl=يا صاحبي / يا معلّم / يا باشا
++ slang.kidding | cnl=بيهزّر
++ slang.broke | cnl=مفلّس
++ slang.chilled | cnl=رايق
++ slang.annoying | cnl=رخم / غلس
++ slang.young_man | cnl=شاب / واد
++ slang.young_woman | cnl=بنت
++ kitchen.pot | cnl=حلّة
++ kitchen.frying_pan | cnl=طاسة
++ kitchen.oven | cnl=فرن; bdw=فرن
++ kitchen.stove | cnl=بوتاجاز
++ kitchen.fork | cnl=شوكة; bdw=شوكة
++ kitchen.glass | cnl=كوباية; bdw=كاس
++ kitchen.teapot | cnl=برّاد; bdw=برّاد
++ kitchen.spices | cnl=توابل / بهارات
++ kitchen.oil | cnl=زيت; bdw=زيت
++ kitchen.boil | cnl=غلى
++ kitchen.fry | cnl=قلى; bdw=قلى
++ kitchen.grill | cnl=شوى; bdw=شوى
++ kitchen.cut | cnl=قطّع; bdw=قطّع
++ kitchen.burnt | cnl=محروق; bdw=محروق
++ kitchen.dishes | cnl=مواعين
++ kitchen.tray | cnl=صينية; bdw=صينية
++ kitchen.recipe | cnl=طريقة / وصفة; bdw=وصفة
++ kitchen.salty | cnl=مالح; bdw=مالح
++ kitchen.sweet_taste | cnl=حلو; bdw=حلو
++ kitchen.sour | cnl=حامض; bdw=حامض
++ city.city_town | cnl=مدينة / بلد; bdw=مدينة
++ city.village | cnl=قرية / بلد / عزبة
++ city.neighbourhood | cnl=حتّة / منطقة
++ city.mosque | cnl=جامع / مسجد; bdw=جامع / مسجد
++ city.bank_place | cnl=بنك; bdw=بنك
++ city.restaurant | cnl=مطعم; bdw=مطعم
++ city.cafe | cnl=قهوة / كافيه
++ city.bakery | cnl=فرن / مخبز
++ city.post_office | cnl=بوستة / بريد
++ city.square | cnl=ميدان
++ city.roundabout | cnl=صينية
++ city.building | cnl=عمارة
++ city.apartment | cnl=شقّة
++ city.police_station | cnl=قسم
++ city.downtown | cnl=وسط البلد
++ city.hotel | cnl=فندق / أوتيل
++ sports.football | cnl=كورة; bdw=كورة
++ sports.ball | cnl=كورة; bdw=كورة
++ sports.match | cnl=ماتش; bdw=ماتش / مباراة
++ sports.goal_score | cnl=جون; bdw=قول
++ sports.team | cnl=فريق / منتخب
++ sports.club | cnl=نادي; bdw=نادي
++ sports.player | cnl=لاعب; bdw=لاعب
++ sports.win | cnl=كسب; bdw=ربح
++ sports.lose | cnl=خسر / اتغلب
++ sports.draw | cnl=تعادل
++ sports.referee | cnl=حكم; bdw=حكم
++ sports.stadium | cnl=ملعب / استاد
++ sports.gym | cnl=جيم
++ sports.swimming | cnl=سباحة; bdw=سباحة
++ sports.fan | cnl=مشجّع
++ sports.exercise | cnl=تمارين / رياضة
++ tech.mobile_phone | cnl=موبايل; bdw=موبايل / تليفون
++ tech.charger | cnl=شاحن; bdw=شاحن
++ tech.battery_dead | cnl=الموبايل فصل شحن
++ tech.internet | cnl=نت / إنترنت; bdw=نت / إنترنت
++ tech.message | cnl=رسالة / مسج
++ tech.computer | cnl=كمبيوتر
++ tech.laptop | cnl=لابتوب; bdw=لابتوب
++ tech.password | cnl=باسورد
++ tech.screen | cnl=شاشة; bdw=شاشة
++ tech.photo | cnl=صورة; bdw=صورة
++ tech.voice_note | cnl=فويس
++ tech.missed_call | cnl=رنّة / ميسد كول
++ tech.app | cnl=تطبيق / أبليكيشن; bdw=تطبيق / أبليكيشن
++ tech.download | cnl=نزّل
++ tech.signal | cnl=شبكة
++ religion.inshallah | cnl=إن شاء الله; bdw=إن شاء الله
++ religion.mashallah | cnl=ما شاء الله; bdw=ما شاء الله
++ religion.alhamdulillah | cnl=الحمد لله; bdw=الحمد لله
++ religion.bismillah | cnl=بسم الله; bdw=بسم الله
++ religion.subhanallah | cnl=سبحان الله; bdw=سبحان الله
++ religion.god_bless | cnl=ربنا يخليك / بارك الله فيك; bdw=بارك الله فيك
++ religion.god_knows | cnl=الله أعلم; bdw=الله أعلم
++ religion.may_god_have_mercy | cnl=الله يرحمه / ربنا يرحمه; bdw=الله يرحمه
++ religion.god_willing_easy | cnl=ربنا يسهّل / الله يسهّل; bdw=الله يسهّل
++ religion.prayer | cnl=صلاة / صلا; bdw=صلاة
++ religion.pray | cnl=صلّى; bdw=صلّى
++ religion.fasting | cnl=صيام / صوم; bdw=صيام
++ religion.fasting_person | cnl=صايم; bdw=صايم
++ religion.iftar | cnl=فطار; bdw=فطار
++ religion.suhoor | cnl=سحور; bdw=سحور
++ occasions.wedding | cnl=فرح; bdw=عرس
++ occasions.engagement | cnl=خطبة; bdw=خطبة
++ occasions.bride | cnl=عروس; bdw=عروس
++ occasions.groom | cnl=عريس; bdw=عريس
++ occasions.birthday | cnl=عيد ميلاد; bdw=عيد ميلاد
++ occasions.eid | cnl=عيد; bdw=عيد
++ occasions.eid_greeting | cnl=كل سنة وإنت طيب; bdw=عيد مبارك
++ occasions.eidiya | cnl=عيديّة
++ occasions.ramadan_greeting | cnl=رمضان كريم / رمضان مبارك; bdw=رمضان كريم
++ occasions.gift | cnl=هديّة; bdw=هديّة
++ occasions.party | cnl=حفلة
++ occasions.guests | cnl=ضيوف / ضيف; bdw=ضيوف
++ occasions.condolences | cnl=البقيّة في حياتك
++ occasions.new_baby | cnl=بيبي / مولود
++ occasions.sebou | cnl=سبوع
++ occasions.happy_occasion | cnl=كل سنة وإنت طيب
