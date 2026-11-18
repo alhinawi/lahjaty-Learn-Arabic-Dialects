@@ -92,3 +92,13 @@ dress | فستان | dress | n | EGS=فستان; LEVP=فستان; IQM=نفنوف
 socks | جوارب | socks | n | EGS=شراب; LEVP=كلسات / جرابات; IQM=جواريب / جوارب; KHL=شراب / جوارب; hij=شراب; sud=شراب; MAJ=تقاشر; alg=قلاشط / تقاشر; tun=كلاسط / تقاشر | cai: الشراب النضيف فين؟ || mar: فين التقاشر؟
 bag | حقيبة | bag | n | EGS=شنطة; LEVP=شنطة; IQM=جنطة; KHL=شنطة / جنطة; hij=شنطة; sud=شنطة; MAJ=صاك; alg=ساك / صاك; tun=ساك / بالاسك | bag: وين جنطتي؟
 watch | ساعة يد | wristwatch | n | ALL=ساعة; mar=مكانة / ساعة
+rice | أرز | rice | n | EGS=رز; LEV=رز; IQM=تمن; KHL=روز; SA=روز; hij=روز; YEA=روز; sud=أرز; chd=أرز; NAF=روز; has=أرز
+chicken | دجاج | chicken | n | EGS=فراخ; LEV=دجاج; IQM=دجاج; KHL=دجاج / دياي; hij=دجاج; YEA=دجاج; sud=دجاج; chd=دجاج; NAF=دجاج; has=دجاج
+fish | سمك | fish | n | ALL=سمك
+meat | لحم | meat | n | EGS=لحمة; LEV=لحمة; IQM=لحم; KHL=لحم; hij=لحم; YEA=لحم; sud=لحمة; chd=لحم; NAF=لحم; has=لحم
+milk | حليب | milk | n | EGS=لبن; LEV=حليب; IQM=حليب; KHL=حليب; hij=حليب; YEA=حليب; sud=لبن; chd=لبن; NAF=حليب; has=حليب
+tea | شاي | tea | n | ALL=شاي
+sugar | سكر | sugar | n | ALL=سكر
+salt | ملح | salt | n | ALL=ملح
+eggs | بيض | eggs | n | EGS=بيض; LEV=بيض; IQM=بيض; KHL=بيض; hij=بيض; YEA=بيض; sud=بيض; chd=بيض; MAJ=بيض; alg=بيض; tun=عظم; LY=بيض; has=بيض
+breakfast | فطور | breakfast | n | EGS=فطار; LEV=فطور / ترويقة; IQM=فطور; bag=ريوگ; KHL=فطور; hij=فطور; YEA=فطور; sud=فطور; chd=فطور; NAF=فطور; has=فطور
