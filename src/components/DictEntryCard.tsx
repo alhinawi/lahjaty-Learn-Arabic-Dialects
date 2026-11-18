@@ -37,7 +37,7 @@ export default function DictEntryCard({ entry, dialectId }: Props) {
           </p>
           <p className="mt-0.5 text-xs font-semibold text-sun-600">{t(`pos_${entry.pos}` as MessageKey)}</p>
         </div>
-        {word && <PlayButton dialectId={dialectId} phraseId={dictAudioId(entry.id)} size="sm" />}
+        {word && <PlayButton dialectId={dialectId} phraseId={dictAudioId(entry.id)} text={word} size="sm" />}
       </div>
 
       {mine && myDialect && (

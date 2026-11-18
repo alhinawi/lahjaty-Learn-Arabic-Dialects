@@ -55,7 +55,7 @@ export default function PhraseCard({ phrase, dialectId, showDialect = false }: P
             </p>
           )}
         </div>
-        <PlayButton dialectId={dialectId} phraseId={phrase.id} />
+        <PlayButton dialectId={dialectId} phraseId={phrase.id} text={variant.text} />
       </div>
 
       <MyDialectLine text={baseInMyDialect(phrase, dialectId, myDialectId)} />

@@ -44,7 +44,7 @@ export default function FamousCard({ phrase, dialectId, showDialect = false }: P
         <p dir="rtl" lang="ar" className="dialect-text min-w-0 flex-1 text-2xl font-bold text-slate-900">
           {phrase.text}
         </p>
-        <PlayButton dialectId={dialectId} phraseId={phrase.id} />
+        <PlayButton dialectId={dialectId} phraseId={phrase.id} text={phrase.text} />
       </div>
 
       <MyDialectLine text={mine} />
