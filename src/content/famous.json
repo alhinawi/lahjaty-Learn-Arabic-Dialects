@@ -711,6 +711,15 @@
         "noteAr": "كلمة المجاملة الأشهر في الفصحى وكل اللهجات: للدعوة والتقديم والرد على الاستئذان",
         "note": "The single most useful courtesy word in Arabic: come in, go ahead, here you are, all in one",
         "example": "تفضّل، البيت بيتك"
+      },
+      {
+        "id": "famous.afwan",
+        "text": "عفواً",
+        "english": "you are welcome / excuse me",
+        "standard": "عفواً",
+        "noteAr": "رد الشكر الأشهر في الفصحى، وبتتقال كمان للاستئذان وجلب الانتباه",
+        "note": "The classic reply to 'thank you' in MSA, also used to say excuse me or get someone's attention",
+        "example": "— شكراً جزيلاً! — عفواً، هذا واجبنا"
       }
     ],
     "cai": [
@@ -840,6 +849,15 @@
         "noteAr": "أشهر سوق أثري في القاهرة القديمة، جنبه قهوة الفيشاوي",
         "note": "Khan el-Khalili is Cairo's most famous historic bazaar, home to the legendary El Fishawy coffeehouse",
         "example": "لازم تعدي على خان الخليلي وانت في القاهرة"
+      },
+      {
+        "id": "famous.cairo_tower",
+        "text": "برج القاهرة",
+        "english": "Cairo Tower",
+        "standard": "برج القاهرة",
+        "noteAr": "أطول بناء في مصر زمان، على جزيرة الزمالك، من فوقه بتشوف القاهرة كلها",
+        "note": "Cairo Tower on Zamalek island was for decades Egypt's tallest structure, with a view over the whole city",
+        "example": "من برج القاهرة بتشوف النيل والأهرامات يوم الصفا"
       }
     ],
     "alx": [
@@ -964,6 +982,15 @@
         "noteAr": "المكتبة الحديثة المبنية على نفس أرض المكتبة القديمة، منارة العلم في إسكندرية",
         "note": "Bibliotheca Alexandrina revives the ancient Library of Alexandria as a modern beacon of learning on the Mediterranean",
         "example": "مكتبة إسكندرية فيها ملايين الكتب والمعارض"
+      },
+      {
+        "id": "famous.kabda_iskandarani",
+        "text": "كبدة إسكندراني",
+        "english": "Alexandrian liver sandwich",
+        "standard": "كبدة إسكندراني",
+        "noteAr": "أشهر سندوتش شارع في إسكندرية، كبدة مقلية بالثوم والشطة في عيش فينو",
+        "note": "The Alexandrian liver sandwich, fried liver with garlic and chili in fino bread, is the city's street food icon",
+        "example": "كبدة إسكندراني على الكورنيش ولا أحلى"
       }
     ],
     "shq": [
@@ -2086,6 +2113,15 @@
         "noteAr": "مدينة الغوص والهدوء على خليج العقبة في جنوب سيناء، أشهرها البلو هول",
         "note": "Dahab on the Gulf of Aqaba is Sinai's laid-back diving town, home to the famous Blue Hole",
         "example": "دهب أحلى مكان للغطس في سيناء"
+      },
+      {
+        "id": "famous.sharm_el_sheikh",
+        "text": "شرم الشيخ",
+        "english": "Sharm el-Sheikh",
+        "standard": "شرم الشيخ",
+        "noteAr": "مدينة الغوص العالمية في أقصى جنوب سيناء، شعابها المرجانية من الأجمل في العالم",
+        "note": "Sharm el-Sheikh at the tip of South Sinai is a world diving capital with some of the finest coral reefs",
+        "example": "شرم الشيخ فيها خليج نعمة ومحمية راس محمد"
       }
     ],
     "dam": [
@@ -2217,6 +2253,15 @@
         "noteAr": "أشهر سوق مسقوف في دمشق القديمة، بين قلعة دمشق والجامع الأموي",
         "note": "Souk al-Hamidiyeh is Old Damascus's iconic covered bazaar, running from the citadel to the Umayyad Mosque",
         "example": "بوظة بكداش في آخر سوق الحميدية ما بتتفوّت"
+      },
+      {
+        "id": "famous.umayyad_mosque",
+        "text": "الجامع الأموي",
+        "english": "the Umayyad Mosque",
+        "standard": "الجامع الأموي",
+        "noteAr": "من أقدم وأعظم جوامع العالم، في قلب دمشق القديمة من ١٣٠٠ سنة",
+        "note": "The Umayyad Mosque in the heart of Old Damascus is one of the oldest and grandest mosques in the world",
+        "example": "سوق الحميدية بيوصلك لباب الجامع الأموي"
       }
     ],
     "alp": [
@@ -2474,6 +2519,15 @@
         "noteAr": "أشهر معلم طبيعي في بيروت، صخرتان في البحر عند الكورنيش",
         "note": "The Raouche (Pigeon) Rocks off Beirut's corniche are the city's most famous natural landmark",
         "example": "غروب الشمس عند الروشة من أحلى مناظر بيروت"
+      },
+      {
+        "id": "famous.baalbek",
+        "text": "بعلبك",
+        "english": "Baalbek",
+        "standard": "بعلبك",
+        "noteAr": "مدينة الشمس الرومانية في البقاع، فيها أضخم معابد رومانية بالعالم، تراث عالمي",
+        "note": "Baalbek in the Beqaa holds the largest Roman temples in the world and hosts Lebanon's oldest festival",
+        "example": "معبد باخوس في بعلبك أكبر من البارثينون"
       }
     ],
     "psu": [
@@ -2602,6 +2656,15 @@
         "noteAr": "طبق الدجاج بالبصل والسماق على خبز الطابون بزيت الزيتون، أشهر أكلة فلسطينية",
         "note": "Musakhan, chicken with sumac onions on taboon bread drenched in olive oil, is Palestine's signature dish",
         "example": "في موسم الزيتون بنعمل مسخن على أكله"
+      },
+      {
+        "id": "famous.bab_al_amoud",
+        "text": "باب العامود",
+        "english": "Damascus Gate",
+        "standard": "باب العامود",
+        "noteAr": "أشهر أبواب القدس القديمة، مدرجاته ساحة الناس في رمضان والأعياد",
+        "note": "Damascus Gate is the most famous gate of Jerusalem's Old City, its steps a gathering place in Ramadan and on feast days",
+        "example": "في رمضان القدس كلها بتكون عند باب العامود"
       }
     ],
     "psr": [
@@ -2728,6 +2791,15 @@
         "noteAr": "الخبز المخبوز على الحجارة السخنة في فرن الطين، أساس كل بيت فلاحي",
         "note": "Taboon bread, baked on hot pebbles in a clay oven, is the heart of every Palestinian village kitchen",
         "example": "ريحة خبز الطابون الصبح ما تتعوض"
+      },
+      {
+        "id": "famous.al_khalil",
+        "text": "الخليل",
+        "english": "Hebron",
+        "standard": "الخليل",
+        "noteAr": "مدينة الحرم الإبراهيمي والزجاج والخزف، من أقدم مدن فلسطين",
+        "note": "Hebron, city of the Ibrahimi sanctuary and famous glass and pottery workshops, is one of Palestine's oldest cities",
+        "example": "زجاج الخليل مشهور من مئات السنين"
       }
     ],
     "jor": [
@@ -2985,6 +3057,15 @@
         "noteAr": "شارع الكتب والمكتبات القديمة في قلب بغداد، ملتقى المثقفين كل جمعة",
         "note": "Al-Mutanabbi Street is Baghdad's historic book market and the weekly meeting place of Iraqi intellectuals",
         "example": "يوم الجمعة نروح لشارع المتنبي نشتري كتب"
+      },
+      {
+        "id": "famous.al_kadhimiya",
+        "text": "الكاظمية",
+        "english": "Kadhimiya",
+        "standard": "الكاظمية",
+        "noteAr": "الحي القديم على الكاظم شمال بغداد، فيه أشهر مرقد في العراق وسوق تراثي",
+        "note": "Kadhimiya is Baghdad's historic shrine district on the river, with one of Iraq's most visited sanctuaries and an old bazaar",
+        "example": "الكاظمية في الزيارات بتتعمر بالناس"
       }
     ],
     "mos": [
@@ -3369,6 +3450,15 @@
         "noteAr": "المباني الطينية القديمة في الدرعية، أول عاصمة للدولة السعودية، تراث عالمي",
         "note": "At-Turaif in Diriyah, the mudbrick quarter of the first Saudi capital, is a UNESCO World Heritage site",
         "example": "حي الطريف من أجمل الأماكن التراثية في الرياض"
+      },
+      {
+        "id": "famous.kingdom_tower",
+        "text": "برج المملكة",
+        "english": "Kingdom Centre Tower",
+        "standard": "برج المملكة",
+        "noteAr": "أشهر برج في الرياض، شكله فاتورة مفتوحة من فوق، فيه جسر مشاهدة على ارتفاع ٣٠٠ متر",
+        "note": "The Kingdom Centre is Riyadh's most famous tower, with its open inverted arch and 300-metre sky bridge",
+        "example": "برج المملكة من علامات الرياض الحديثة"
       }
     ],
     "hij": [
@@ -3497,6 +3587,15 @@
         "noteAr": "حي جدة القديمة ببيوتها ذات الرواشين، تراث عالمي",
         "note": "Al-Balad, historic Jeddah with its coral-stone houses and wooden rawasheen balconies, is UNESCO-listed",
         "example": "البلد في رمضان غير شكل"
+      },
+      {
+        "id": "famous.al_haram_al_makki",
+        "text": "المسجد الحرام",
+        "english": "the Grand Mosque of Makkah",
+        "standard": "المسجد الحرام",
+        "noteAr": "أعظم مسجد في العالم وفيه الكعبة، في قلب مكة في الحجاز",
+        "note": "The Grand Mosque in Makkah, home of the Kaaba, is the holiest site in Islam and the heart of the Hijaz",
+        "example": "المسجد الحرام بيسع ملايين المصلين"
       }
     ],
     "jiz": [
@@ -5293,6 +5392,15 @@
         "noteAr": "ساحة مراكش الشهيرة، مسرح مفتوح للحكواتية والموسيقى والأكل، تراث عالمي",
         "note": "Jemaa el-Fnaa in Marrakech is a UNESCO-listed open-air theatre of storytellers, musicians and food stalls",
         "example": "جامع الفنا بالليل عالم لحالها"
+      },
+      {
+        "id": "famous.hassan_ii_mosque",
+        "text": "مسجد الحسن الثاني",
+        "english": "Hassan II Mosque",
+        "standard": "مسجد الحسن الثاني",
+        "noteAr": "جامع كازابلانكا على البحر، مئذنته أعلى مئذنة في العالم",
+        "note": "The Hassan II Mosque in Casablanca stands partly over the Atlantic and has the world's tallest minaret",
+        "example": "مسجد الحسن الثاني نصو فوق المحيط"
       }
     ],
     "jeb": [
