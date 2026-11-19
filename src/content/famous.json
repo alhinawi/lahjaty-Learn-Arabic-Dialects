@@ -2231,6 +2231,16 @@
         "note": "To hurry up or start anything",
         "example": "يلّا عالبيت، الدنيا ليل",
         "concept": "lets_go"
+      },
+      {
+        "id": "famous.mnee7",
+        "text": "منيح",
+        "english": "Good / fine",
+        "standard": "جيد",
+        "noteAr": "كلمة الجودة الفلسطينية الأشهر، تسمعها في كل بيت",
+        "note": "Palestine's signature word for good; you hear it in every home",
+        "example": "الشغل منيح اليوم؟ منيح الحمدلله.",
+        "concept": "good"
       }
     ],
     "psr": [
@@ -2429,6 +2439,16 @@
         "note": "A caring question when someone looks down",
         "example": "شو بك ساكت؟ احكيلي",
         "concept": "whats_wrong"
+      },
+      {
+        "id": "famous.abshir",
+        "text": "أبشر",
+        "english": "Gladly / consider it done",
+        "standard": "بكل سرور",
+        "noteAr": "موافقة سريعة وواثقة، أصلها بدوي أردني",
+        "note": "A quick, confident yes with Bedouin Jordanian roots",
+        "example": "أبشر، بوصلك المطار بكرة الصبح.",
+        "concept": "with_pleasure"
       }
     ],
     "bag": [
@@ -2640,6 +2660,16 @@
         "note": "Famous Iraqi praise",
         "example": "خوش شغل، الله يعطيك العافية",
         "concept": "good"
+      },
+      {
+        "id": "famous.aku_maku",
+        "text": "أكو ماكو",
+        "english": "There is / there isn't",
+        "standard": "يوجد / لا يوجد",
+        "noteAr": "الثنائية الموصلية الأشهر: أكو للوجود وماكو للعدم",
+        "note": "The classic Mosuli pair: aku for there is, maku for there isn't",
+        "example": "أكو چاي بالبيت؟ ماكو، خلص.",
+        "concept": "there_is"
       }
     ],
     "bas": [
@@ -3266,6 +3296,16 @@
         "noteAr": "مكان اللمّة والسوالف في الكويت، جزء من الحياة اليومية",
         "note": "Kuwait's evening gathering place for chat, part of daily life",
         "example": "نشوفك بالديوانية الليلة"
+      },
+      {
+        "id": "famous.zain",
+        "text": "زين",
+        "english": "Good / okay",
+        "standard": "جيد / حسنًا",
+        "noteAr": "أشهر كلمة كويتية للرضا والموافقة",
+        "note": "The classic Kuwaiti word for being fine with something",
+        "example": "زين، نتفق على باجر الساعة أربع.",
+        "concept": "good"
       }
     ],
     "emi": [
@@ -3368,6 +3408,16 @@
         "note": "A warm welcome the moment a guest steps in",
         "example": "يا حيه ويا هلا باللي جا",
         "concept": "welcome"
+      },
+      {
+        "id": "famous.khith_rahatak",
+        "text": "خذ راحتك",
+        "english": "Make yourself at home",
+        "standard": "تفضل براحتك",
+        "noteAr": "جملة الكرم الإماراتية الأولى لأي ضيف",
+        "note": "The first line of Emirati hospitality for any guest",
+        "example": "خذ راحتك، البيت بيتك.",
+        "concept": "no_problem"
       }
     ],
     "qat": [
@@ -3871,6 +3921,16 @@
         "note": "Praise for anything lovely",
         "example": "يا سلام على صنعاء القديمة!",
         "concept": "wow"
+      },
+      {
+        "id": "famous.dhal7een",
+        "text": "ذلحين",
+        "english": "Right now",
+        "standard": "الآن",
+        "noteAr": "الصنعانية الأصيلة لكلمة الآن",
+        "note": "The Sanaani way to say right now",
+        "example": "تعال ذلحين، ما فيش وقت.",
+        "concept": "now"
       }
     ],
     "ade": [
@@ -4173,6 +4233,16 @@
         "note": "Describes a straight road or a job done right",
         "example": "امشي عديل وبعدين لفّ شمال",
         "concept": "good"
+      },
+      {
+        "id": "famous.shid_7elak",
+        "text": "شدّ حيلك",
+        "english": "Hang in there / push through",
+        "standard": "اجتهد وثابر",
+        "noteAr": "كلمة التشجيع السودانية الأولى في الشغل والمذاكرة",
+        "note": "Sudan's number one word of encouragement, for work or study",
+        "example": "شدّ حيلك، باقي يومين ونخلص.",
+        "concept": "lets_go"
       }
     ],
     "chd": [
@@ -4584,6 +4654,16 @@
         "note": "The usual Algerian 'good'",
         "example": "هاد الفيلم مليح بزاف",
         "concept": "good"
+      },
+      {
+        "id": "famous.sh7al",
+        "text": "شحال",
+        "english": "How much / how many",
+        "standard": "كم",
+        "noteAr": "سؤال الكمية الأشهر في الجزائر",
+        "note": "Algeria's go-to word for asking how much or how many",
+        "example": "شحال عندك عام؟",
+        "concept": "how_much"
       }
     ],
     "tun": [
