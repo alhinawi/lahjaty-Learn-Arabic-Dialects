@@ -1778,6 +1778,15 @@
         "noteAr": "مقولة فخر صعيدية أصيلة: الصعيد دايماً فوق",
         "note": "A classic line of Sa'idi pride: Upper Egypt always comes out on top",
         "example": "متنساش أصلك: الصعيد فوق!"
+      },
+      {
+        "id": "famous.el_3omda",
+        "text": "العمدة",
+        "english": "the village mayor (Omda)",
+        "standard": "عمدة القرية",
+        "noteAr": "أكبر شخصية في القرية في الصعيد، بيفضّ المشاكل ويقود المناسبات",
+        "note": "The Omda is the most powerful figure in a Sa'idi village, famous from countless Egyptian films and series set in Upper Egypt",
+        "example": "العمدة دعا أهل القرية كلهم على العزومة"
       }
     ],
     "sin": [
@@ -2120,6 +2129,15 @@
         "note": "Aleppo's signature term of endearment, for a loved one, daughter or friend",
         "example": "يا مو، تعي اشربي معنا فنجان قهوة.",
         "concept": "dear"
+      },
+      {
+        "id": "famous.qal3at_7alab",
+        "text": "قلعة حلب",
+        "english": "Aleppo Citadel",
+        "standard": "قلعة حلب",
+        "noteAr": "من أقدم وأكبر قلاع العالم، في قلب حلب القديمة",
+        "note": "The Citadel of Aleppo is one of the oldest and largest castles in the world, crowning the old city",
+        "example": "من قلعة حلب بتشوف المدينة كلها"
       }
     ],
     "leb": [
@@ -2350,6 +2368,15 @@
         "note": "Palestine's signature word for good; you hear it in every home",
         "example": "الشغل منيح اليوم؟ منيح الحمدلله.",
         "concept": "good"
+      },
+      {
+        "id": "famous.yafa_oranges",
+        "text": "برتقال يافا",
+        "english": "Jaffa oranges",
+        "standard": "برتقال يافا",
+        "noteAr": "أشهر محصول فلسطيني قبل ١٩٤٨ وصار رمز للمدينة",
+        "note": "Jaffa oranges were Palestine's most famous export and remain a symbol of the city and of Palestinian heritage",
+        "example": "برتقال يافا انشهر بكل الدنيا"
       }
     ],
     "psr": [
@@ -2567,6 +2594,15 @@
         "note": "A quick, confident yes with Bedouin Jordanian roots",
         "example": "أبشر، بوصلك المطار بكرة الصبح.",
         "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.shai_maramiyeh",
+        "text": "الشاي بالميرمية",
+        "english": "sage tea",
+        "standard": "شاي الميرمية",
+        "noteAr": "المشروب البيتي الأول في الأردن، ينقدم للضيوف بأي وقت",
+        "note": "Sage tea is the staple home drink in Jordan, offered to guests at any hour",
+        "example": "اعمليلنا شاي بالميرمية يا ماما"
       }
     ],
     "bag": [
@@ -3478,6 +3514,15 @@
         "note": "The classic Kuwaiti word for being fine with something",
         "example": "زين، نتفق على باجر الساعة أربع.",
         "concept": "good"
+      },
+      {
+        "id": "famous.machboos",
+        "text": "المچبوس",
+        "english": "machboos (spiced rice dish)",
+        "standard": "الأرز المتبل باللحم أو الدجاج",
+        "noteAr": "الطبق الوطني الكويتي، رز متبل بالبهارات واللومي مع لحم أو دياي أو سمج",
+        "note": "Machboos is Kuwait's national rice dish, spiced with baharat and loomi (dried lime), served with meat, chicken or fish",
+        "example": "اليوم الغدا مچبوس دياي"
       }
     ],
     "emi": [
@@ -3590,6 +3635,15 @@
         "note": "The first line of Emirati hospitality for any guest",
         "example": "خذ راحتك، البيت بيتك.",
         "concept": "no_problem"
+      },
+      {
+        "id": "famous.burj_khalifa",
+        "text": "برج خليفة",
+        "english": "Burj Khalifa",
+        "standard": "برج خليفة",
+        "noteAr": "أطول بناية في العالم، ٨٢٨ متر في قلب دبي",
+        "note": "Burj Khalifa in Dubai is the tallest building in the world at 828 metres",
+        "example": "بالعيد نشوف الألعاب النارية عند برج خليفة"
       }
     ],
     "qat": [
@@ -3701,6 +3755,15 @@
         "note": "A quick, heartfelt Qatari welcome for any guest",
         "example": "حياك، تفضل البيت بيتك.",
         "concept": "welcome"
+      },
+      {
+        "id": "famous.katara",
+        "text": "كتارا",
+        "english": "Katara Cultural Village",
+        "standard": "قرية كتارا الثقافية",
+        "noteAr": "أشهر معلم ثقافي في الدوحة، عروض ومهرجانات طول السنة",
+        "note": "Katara is Doha's cultural village on the waterfront, home to festivals, amphitheatre shows and galleries",
+        "example": "يلا نروح كتارا العصر"
       }
     ],
     "bah": [
@@ -3813,6 +3876,15 @@
         "note": "The Bahraini word for being extra dressed up on an occasion",
         "example": "رايح عرس؟ كاشخة اليوم!",
         "concept": "beautiful"
+      },
+      {
+        "id": "famous.lulu_bahrain",
+        "text": "لؤلؤ البحرين",
+        "english": "Bahraini pearls",
+        "standard": "لؤلؤ البحرين",
+        "noteAr": "البحرين كانت عاصمة الغوص على اللؤلؤ في العالم",
+        "note": "Bahrain was the world capital of natural pearl diving, and its pearling heritage is UNESCO-listed",
+        "example": "جدي كان غواص لؤلؤ في المحرق"
       }
     ],
     "oma": [
@@ -3924,6 +3996,15 @@
         "note": "The Omani hospitality tray of coffee, sweets and fruit served to guests",
         "example": "تفضل، الفوالة جاهزة.",
         "concept": "house"
+      },
+      {
+        "id": "famous.7alwa_omani",
+        "text": "الحلوى العمانية",
+        "english": "Omani halwa",
+        "standard": "الحلوى العمانية",
+        "noteAr": "حلوى الزعفران والهيل وماء الورد، تتقدم مع القهوة في كل مناسبة",
+        "note": "Omani halwa, made with saffron, cardamom and rosewater, is served with coffee at every celebration",
+        "example": "العيد ما يحلى إلا بالحلوى العمانية"
       }
     ],
     "dho": [
@@ -4142,6 +4223,15 @@
         "note": "The Sanaani way to say right now",
         "example": "تعال ذلحين، ما فيش وقت.",
         "concept": "now"
+      },
+      {
+        "id": "famous.bab_al_yemen",
+        "text": "باب اليمن",
+        "english": "Bab al-Yaman (Old Sana'a gate)",
+        "standard": "باب اليمن",
+        "noteAr": "البوابة الشهيرة لصنعاء القديمة ومدخل سوقها القديم",
+        "note": "Bab al-Yaman is the iconic gate of Old Sana'a, a UNESCO World Heritage city, leading into its ancient souq",
+        "example": "نمشي من باب اليمن لسوق الملح"
       }
     ],
     "ade": [
@@ -4472,6 +4562,15 @@
         "note": "Sudan's number one word of encouragement, for work or study",
         "example": "شدّ حيلك، باقي يومين ونخلص.",
         "concept": "lets_go"
+      },
+      {
+        "id": "famous.karkade",
+        "text": "الكركدي",
+        "english": "karkade (hibiscus tea)",
+        "standard": "الكركديه",
+        "noteAr": "مشروب الكركدي البارد أشهر مشروب سوداني في الصيف",
+        "note": "Cold karkade (hibiscus) is Sudan's signature summer drink, served sweetened at gatherings",
+        "example": "اشربيلي كاسة كركدي بارد"
       }
     ],
     "chd": [
@@ -4920,6 +5019,15 @@
         "note": "Algeria's go-to word for asking how much or how many",
         "example": "شحال عندك عام؟",
         "concept": "how_much"
+      },
+      {
+        "id": "famous.rai_music",
+        "text": "الراي",
+        "english": "raï music",
+        "standard": "موسيقى الراي",
+        "noteAr": "وهران عاصمة الراي، والشاب خالد والشاب مامي أشهر نجومه",
+        "note": "Raï music was born in Oran and made Algeria famous worldwide through stars like Cheb Khaled and Cheb Mami",
+        "example": "نحب نسمع الراي في العرس"
       }
     ],
     "tun": [
