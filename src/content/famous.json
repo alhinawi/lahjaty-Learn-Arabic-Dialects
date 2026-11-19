@@ -919,6 +919,15 @@
         "note": "Praise with a smile when someone does something great",
         "example": "إنت كبير يا كبير، كسبت الماتش",
         "concept": "sir"
+      },
+      {
+        "id": "famous.el_ba7r_3ali",
+        "text": "البحر عالي النهاردة",
+        "english": "The sea is rough today",
+        "standard": "البحر مرتفع الموج اليوم",
+        "noteAr": "جملة إسكندرانية أصيلة لما الموج يبقى عالي والكورنيش يتقفل",
+        "note": "A true Alexandrian line for rough-sea days when the Corniche closes",
+        "example": "البحر عالي النهاردة، بلاش ننزل الماية."
       }
     ],
     "shq": [
@@ -1018,6 +1027,15 @@
         "note": "Country-style thanks with a blessing",
         "example": "كتّر خيرك يا حاج، تعبناك",
         "concept": "thanks"
+      },
+      {
+        "id": "famous.tell_basta",
+        "text": "تل بسطا",
+        "english": "Tell Basta, the ancient site",
+        "standard": "تل بسطا الأثري",
+        "noteAr": "أثر الزقازيق الشهير، مدينة بوباستس القديمة في قلب الشرقية",
+        "note": "Zagazig's famous ruin, the ancient city of Bubastis in the heart of Sharqia",
+        "example": "عدّوا على تل بسطا وانتوا في الزقازيق."
       }
     ],
     "dkh": [
@@ -1117,6 +1135,15 @@
         "note": "A street greeting full of respect and warmth",
         "example": "إزيّك يا معلّم؟ الشغل عامل إيه؟",
         "concept": "how_are_you"
+      },
+      {
+        "id": "famous.gamasa",
+        "text": "مصيف جمصة",
+        "english": "Gamasa beach resort",
+        "standard": "مصيف جمصة على البحر المتوسط",
+        "noteAr": "مصيف أهل المنصورة والدقهلية المفضل على البحر المتوسط",
+        "note": "The favorite summer beach of Mansoura people on the Mediterranean",
+        "example": "الصيف ده هننزل جمصة اسبوع."
       }
     ],
     "mnf": [
@@ -1215,6 +1242,15 @@
         "noteAr": "«عليّا» بدل «استنّاني»، طريقة ريفية حلوة",
         "note": "'3alayya' instead of 'estannani', a sweet country twist",
         "example": "استنّى عليّا لحد ما ألبس"
+      },
+      {
+        "id": "famous.menoufi_3aneed",
+        "text": "المنوفي عنيد",
+        "english": "The Menoufi is stubborn",
+        "standard": "أهل المنوفية معروفون بالعناد",
+        "noteAr": "مقولة مصرية محببة عن أهل المنوفية وصلابتهم في المواقف",
+        "note": "A beloved Egyptian saying about Menoufia people standing their ground",
+        "example": "خلاص قرر، والمنوفي عنيد، مش هيغير رأيه."
       }
     ],
     "ghr": [
@@ -1314,6 +1350,15 @@
         "note": "Thanks wrapped in a blessing",
         "example": "ربّنا يخلّيك، مش عارف أشكرك إزّاي",
         "concept": "thanks"
+      },
+      {
+        "id": "famous.moulid_el_badawi",
+        "text": "مولد السيد البدوي",
+        "english": "The Badawi festival of Tanta",
+        "standard": "مولد السيد أحمد البدوي في طنطا",
+        "noteAr": "أشهر مولد في مصر، بيملى طنطا ناس وحلاوة كل سنة",
+        "note": "Egypt's most famous moulid, filling Tanta with people and sweets every year",
+        "example": "هاتلي حلاوة المولد من طنطا في مولد السيد البدوي."
       }
     ],
     "bhr": [
@@ -1409,6 +1454,15 @@
         "noteAr": "نداء للصغيّر، أو بين الصحاب بهزار",
         "note": "Calling a youngster, or a friend in jest",
         "example": "يا واد هات الشاي من جوّه"
+      },
+      {
+        "id": "famous.wadi_natrun",
+        "text": "وادي النطرون",
+        "english": "Wadi Natrun",
+        "standard": "وادي النطرون في البحيرة",
+        "noteAr": "الوادي الشهير بأديرته القديمة وملحه على طريق مصر إسكندرية الصحراوي",
+        "note": "The famous valley of ancient monasteries and salt on the Cairo-Alexandria desert road",
+        "example": "قفلنا في وادي النطرون وشفنا الأديرة."
       }
     ],
     "dmt": [
@@ -1504,6 +1558,15 @@
         "note": "With a W, like the countryside",
         "example": "عاوز أشتري أوضة سفرة",
         "concept": "want"
+      },
+      {
+        "id": "famous.gibna_domyati",
+        "text": "جبنة دمياطية",
+        "english": "Domiati cheese",
+        "standard": "الجبنة الدمياطية البيضاء",
+        "noteAr": "أشهر جبنة بيضاء في مصر، سميت على دمياط بلدها",
+        "note": "Egypt's most famous white cheese, named after its home Damietta",
+        "example": "فطار دمياطي أصلي: جبنة دمياطية وعيش بلدي."
       }
     ],
     "kfs": [
@@ -1598,6 +1661,15 @@
         "text": "سيدي إبراهيم الدسوقي",
         "english": "Sidi Ibrahim El-Desouki, the famous saint of Desouk in Kafr El-Sheikh",
         "standard": "سيدي إبراهيم الدسوقي"
+      },
+      {
+        "id": "famous.baltim",
+        "text": "مصيف بلطيم",
+        "english": "Baltim beach resort",
+        "standard": "مصيف بلطيم في كفر الشيخ",
+        "noteAr": "مصيف أهل كفر الشيخ والدلتا على البحر المتوسط",
+        "note": "The Mediterranean resort of Kafr El Sheikh and the Delta",
+        "example": "في الصيف كل العيلة بتنزل بلطيم."
       }
     ],
     "sai": [
