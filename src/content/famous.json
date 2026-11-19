@@ -1697,6 +1697,15 @@
         "note": "In Upper Egypt and the countryside, home is 'el-dar'",
         "example": "اتفضّل الدار دارك",
         "concept": "house"
+      },
+      {
+        "id": "famous.el_sa3eed_fo2",
+        "text": "الصعيد فوق",
+        "english": "Upper Egypt is on top",
+        "standard": "الصعيد في الأعلى",
+        "noteAr": "مقولة فخر صعيدية أصيلة: الصعيد دايماً فوق",
+        "note": "A classic line of Sa'idi pride: Upper Egypt always comes out on top",
+        "example": "متنساش أصلك: الصعيد فوق!"
       }
     ],
     "sin": [
@@ -2020,6 +2029,16 @@
         "note": "A word that gets anyone moving",
         "example": "يلّا يا شباب، تأخّرنا",
         "concept": "lets_go"
+      },
+      {
+        "id": "famous.ya_mo",
+        "text": "يا مو",
+        "english": "Dear / sweetie",
+        "standard": "يا عزيزتي",
+        "noteAr": "كلمة الدلع الحلبية الأشهر، تُقال للحبيبة والبنت والصاحبة",
+        "note": "Aleppo's signature term of endearment, for a loved one, daughter or friend",
+        "example": "يا مو، تعي اشربي معنا فنجان قهوة.",
+        "concept": "dear"
       }
     ],
     "leb": [
@@ -3519,6 +3538,16 @@
         "note": "Agreement and praise",
         "example": "زين، اتفقنا",
         "concept": "okay"
+      },
+      {
+        "id": "famous.7ayak",
+        "text": "حياك",
+        "english": "Welcome / come in",
+        "standard": "أهلًا بك",
+        "noteAr": "ترحيب قطري سريع يُقال للضيف من قلب",
+        "note": "A quick, heartfelt Qatari welcome for any guest",
+        "example": "حياك، تفضل البيت بيتك.",
+        "concept": "welcome"
       }
     ],
     "bah": [
@@ -3621,6 +3650,16 @@
         "note": "Admiration with a wish for blessing",
         "example": "ما شاء الله، ولدك كبر",
         "concept": "wow"
+      },
+      {
+        "id": "famous.kashkha",
+        "text": "كاشخة",
+        "english": "All dressed up / fancy",
+        "standard": "أنيق جداً",
+        "noteAr": "كلمة بحرينية للأناقة الزايدة في المناسبات",
+        "note": "The Bahraini word for being extra dressed up on an occasion",
+        "example": "رايح عرس؟ كاشخة اليوم!",
+        "concept": "beautiful"
       }
     ],
     "oma": [
@@ -3722,6 +3761,16 @@
         "note": "Praise and agreement",
         "example": "الشواء زين السنة",
         "concept": "good"
+      },
+      {
+        "id": "famous.fawala",
+        "text": "الفوالة",
+        "english": "The Omani welcome spread",
+        "standard": "مائدة الضيافة",
+        "noteAr": "صينية الضيافة العمانية: قهوة وحلويات وفواكه تُقدّم للضيف",
+        "note": "The Omani hospitality tray of coffee, sweets and fruit served to guests",
+        "example": "تفضل، الفوالة جاهزة.",
+        "concept": "house"
       }
     ],
     "dho": [
@@ -4766,6 +4815,16 @@
         "note": "The 'n' is 'I', and 'nheb' means want and love",
         "example": "نحب قهوة بالحليب",
         "concept": "want"
+      },
+      {
+        "id": "famous.famma",
+        "text": "فما",
+        "english": "There is / there are",
+        "standard": "يوجد",
+        "noteAr": "كلمة الوجود التونسية الأشهر، تبدأ بيها أغلب الجمل",
+        "note": "Tunisia's signature there-is word; half of all sentences start with it",
+        "example": "فما قهوة قريبة من هنا؟",
+        "concept": "there_is"
       }
     ],
     "tri": [
@@ -5069,6 +5128,16 @@
         "note": "Asking who someone is",
         "example": "شكون جاء اليوم؟",
         "concept": "who"
+      },
+      {
+        "id": "famous.ash7alek",
+        "text": "اشحالك",
+        "english": "How are you?",
+        "standard": "كيف حالك؟",
+        "noteAr": "التحية الحسانية الأصلية، تسمعها في كل لقاء",
+        "note": "The original Hassaniya greeting, heard at every meeting",
+        "example": "اشحالك يا ولد بلدي؟",
+        "concept": "how_are_you"
       }
     ],
     "cnl": [
