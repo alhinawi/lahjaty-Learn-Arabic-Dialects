@@ -955,6 +955,15 @@
         "noteAr": "قلعة على البحر مكان منارة إسكندرية القديمة",
         "note": "Qaitbay Citadel stands on the site of the ancient Lighthouse of Alexandria, one of the wonders of the ancient world",
         "example": "مين ما راحش قلعة قايتباي لما جه إسكندرية؟"
+      },
+      {
+        "id": "famous.bibliotheca",
+        "text": "مكتبة إسكندرية",
+        "english": "Bibliotheca Alexandrina",
+        "standard": "مكتبة إسكندرية",
+        "noteAr": "المكتبة الحديثة المبنية على نفس أرض المكتبة القديمة، منارة العلم في إسكندرية",
+        "note": "Bibliotheca Alexandrina revives the ancient Library of Alexandria as a modern beacon of learning on the Mediterranean",
+        "example": "مكتبة إسكندرية فيها ملايين الكتب والمعارض"
       }
     ],
     "shq": [
@@ -1996,6 +2005,15 @@
         "noteAr": "من أقدم أديرة العالم الشغالة، عند جبل موسى في جنوب سيناء",
         "note": "St. Catherine's Monastery at the foot of Mount Sinai is one of the oldest working monasteries in the world",
         "example": "السياح بييجوا من كل حتة يزوروا سانت كاترين"
+      },
+      {
+        "id": "famous.dahab",
+        "text": "دهب",
+        "english": "Dahab",
+        "standard": "دهب",
+        "noteAr": "مدينة الغوص والهدوء على خليج العقبة في جنوب سيناء، أشهرها البلو هول",
+        "note": "Dahab on the Gulf of Aqaba is Sinai's laid-back diving town, home to the famous Blue Hole",
+        "example": "دهب أحلى مكان للغطس في سيناء"
       }
     ],
     "dam": [
@@ -2494,6 +2512,15 @@
         "noteAr": "أشهر محصول فلسطيني قبل ١٩٤٨ وصار رمز للمدينة",
         "note": "Jaffa oranges were Palestine's most famous export and remain a symbol of the city and of Palestinian heritage",
         "example": "برتقال يافا انشهر بكل الدنيا"
+      },
+      {
+        "id": "famous.musakhan",
+        "text": "المسخن",
+        "english": "musakhan",
+        "standard": "المسخن",
+        "noteAr": "طبق الدجاج بالبصل والسماق على خبز الطابون بزيت الزيتون، أشهر أكلة فلسطينية",
+        "note": "Musakhan, chicken with sumac onions on taboon bread drenched in olive oil, is Palestine's signature dish",
+        "example": "في موسم الزيتون بنعمل مسخن على أكله"
       }
     ],
     "psr": [
@@ -2611,6 +2638,15 @@
         "noteAr": "الحطة الفلسطينية، رمز الهوية، وبتتنسج في الخليل من مئات السنين",
         "note": "The black-and-white keffiyeh is the iconic symbol of Palestinian identity, traditionally woven in Hebron",
         "example": "جدي ما بينزل من البيت من غير الكوفية"
+      },
+      {
+        "id": "famous.khubz_taboon",
+        "text": "خبز الطابون",
+        "english": "taboon bread",
+        "standard": "خبز الطابون",
+        "noteAr": "الخبز المخبوز على الحجارة السخنة في فرن الطين، أساس كل بيت فلاحي",
+        "note": "Taboon bread, baked on hot pebbles in a clay oven, is the heart of every Palestinian village kitchen",
+        "example": "ريحة خبز الطابون الصبح ما تتعوض"
       }
     ],
     "jor": [
@@ -2729,6 +2765,15 @@
         "noteAr": "المشروب البيتي الأول في الأردن، ينقدم للضيوف بأي وقت",
         "note": "Sage tea is the staple home drink in Jordan, offered to guests at any hour",
         "example": "اعمليلنا شاي بالميرمية يا ماما"
+      },
+      {
+        "id": "famous.petra",
+        "text": "البترا",
+        "english": "Petra",
+        "standard": "البترا",
+        "noteAr": "المدينة الوردية المنحوتة في الصخر، من عجائب الدنيا السبع الجديدة",
+        "note": "Petra, the rose-red Nabataean city carved in rock, is one of the New Seven Wonders of the World",
+        "example": "أي زائر للأردن لازم يشوف البترا"
       }
     ],
     "bag": [
@@ -2977,6 +3022,15 @@
         "noteAr": "مئذنة الجامع النوري المايلة، أشهر معلم في الموصل من ٨٠٠ سنة",
         "note": "The leaning Al-Hadba minaret of the Al-Nuri Mosque has been Mosul's most famous landmark for 800 years",
         "example": "الحدباء كانت على صدر العملة العراقية زمان"
+      },
+      {
+        "id": "famous.nineveh",
+        "text": "نينوى",
+        "english": "ancient Nineveh",
+        "standard": "نينوى",
+        "noteAr": "عاصمة الإمبراطورية الآشورية، أطلالها على الضفة الشرقية للموصل",
+        "note": "The ruins of Nineveh, capital of the Assyrian Empire, lie on Mosul's eastern bank",
+        "example": "الموصل مدينة على أرض نينوى"
       }
     ],
     "bas": [
@@ -3712,6 +3766,15 @@
         "noteAr": "الطبق الوطني الكويتي، رز متبل بالبهارات واللومي مع لحم أو دياي أو سمج",
         "note": "Machboos is Kuwait's national rice dish, spiced with baharat and loomi (dried lime), served with meat, chicken or fish",
         "example": "اليوم الغدا مچبوس دياي"
+      },
+      {
+        "id": "famous.abraj_al_kuwait",
+        "text": "أبراج الكويت",
+        "english": "Kuwait Towers",
+        "standard": "أبراج الكويت",
+        "noteAr": "الأبراج الثلاثة على البحر، أشهر علم في الكويت من سنة ١٩٧٩",
+        "note": "The three Kuwait Towers on the seafront have been the country's most famous landmark since 1979",
+        "example": "أبراج الكويت على صدر الدينار القديم"
       }
     ],
     "emi": [
@@ -3833,6 +3896,15 @@
         "noteAr": "أطول بناية في العالم، ٨٢٨ متر في قلب دبي",
         "note": "Burj Khalifa in Dubai is the tallest building in the world at 828 metres",
         "example": "بالعيد نشوف الألعاب النارية عند برج خليفة"
+      },
+      {
+        "id": "famous.palm_jumeirah",
+        "text": "نخلة جميرا",
+        "english": "Palm Jumeirah",
+        "standard": "نخلة جميرا",
+        "noteAr": "الجزيرة الصناعية على شكل نخلة في دبي، تشوفها من الفضاء",
+        "note": "Palm Jumeirah, Dubai's palm-shaped artificial island, is visible from space",
+        "example": "نخلة جميرا من أشهر صور دبي في العالم"
       }
     ],
     "qat": [
@@ -3953,6 +4025,15 @@
         "noteAr": "أشهر معلم ثقافي في الدوحة، عروض ومهرجانات طول السنة",
         "note": "Katara is Doha's cultural village on the waterfront, home to festivals, amphitheatre shows and galleries",
         "example": "يلا نروح كتارا العصر"
+      },
+      {
+        "id": "famous.thareed",
+        "text": "الثريد",
+        "english": "thareed",
+        "standard": "الثريد",
+        "noteAr": "خبز الرقاق بالمرق واللحم، أكل رمضان الأول في قطر والخليج",
+        "note": "Thareed, thin bread soaked in meat broth, is the number one Ramadan dish in Qatar and the Gulf",
+        "example": "في رمضان الثريد ما يفوت على الفطور"
       }
     ],
     "bah": [
@@ -4074,6 +4155,15 @@
         "noteAr": "البحرين كانت عاصمة الغوص على اللؤلؤ في العالم",
         "note": "Bahrain was the world capital of natural pearl diving, and its pearling heritage is UNESCO-listed",
         "example": "جدي كان غواص لؤلؤ في المحرق"
+      },
+      {
+        "id": "famous.shajarat_al_hayat",
+        "text": "شجرة الحياة",
+        "english": "the Tree of Life",
+        "standard": "شجرة الحياة",
+        "noteAr": "شجرة عمرها أكثر من ٤٠٠ سنة واقفة لحالها في وسط الصحرا البحرينية",
+        "note": "Bahrain's Tree of Life has stood alone in the desert for over 400 years with no known water source",
+        "example": "شجرة الحياة من غرائب البحرين"
       }
     ],
     "oma": [
@@ -4194,6 +4284,15 @@
         "noteAr": "حلوى الزعفران والهيل وماء الورد، تتقدم مع القهوة في كل مناسبة",
         "note": "Omani halwa, made with saffron, cardamom and rosewater, is served with coffee at every celebration",
         "example": "العيد ما يحلى إلا بالحلوى العمانية"
+      },
+      {
+        "id": "famous.jabal_shams",
+        "text": "جبل شمس",
+        "english": "Jebel Shams",
+        "standard": "جبل شمس",
+        "noteAr": "أعلى قمة في عمان، وعنده أخدود يسمونه جراند كانيون العرب",
+        "note": "Jebel Shams is Oman's highest peak, overlooking the 'Grand Canyon of Arabia'",
+        "example": "التخييم على جبل شمس في الشتاء شي ثاني"
       }
     ],
     "dho": [
@@ -4312,6 +4411,15 @@
         "noteAr": "عاصمة ظفار، بتتحول لجنة خضرا في موسم الخريف",
         "note": "Salalah, the capital of Dhofar, turns into a green paradise during the khareef monsoon season",
         "example": "في الخريف العالم كله بتروح صلالة"
+      },
+      {
+        "id": "famous.wadi_darbat",
+        "text": "وادي دربات",
+        "english": "Wadi Darbat",
+        "standard": "وادي دربات",
+        "noteAr": "وادي الشلالات والبحيرات قرب صلالة، بياخد العقل في الخريف",
+        "note": "Wadi Darbat near Salalah turns into a valley of waterfalls and lakes during the khareef",
+        "example": "في الخريف وادي دربات يصير أخضر كله"
       }
     ],
     "san": [
