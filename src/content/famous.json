@@ -1949,6 +1949,15 @@
         "noteAr": "أكبر شخصية في القرية في الصعيد، بيفضّ المشاكل ويقود المناسبات",
         "note": "The Omda is the most powerful figure in a Sa'idi village, famous from countless Egyptian films and series set in Upper Egypt",
         "example": "العمدة دعا أهل القرية كلهم على العزومة"
+      },
+      {
+        "id": "famous.luxor",
+        "text": "الأقصر",
+        "english": "Luxor",
+        "standard": "الأقصر",
+        "noteAr": "طيبة القديمة، فيها تلت آثار العالم: الكرنك والأقصر ووادي الملوك",
+        "note": "Luxor, ancient Thebes, holds a third of the world's antiquities: Karnak, Luxor Temple and the Valley of the Kings",
+        "example": "الصعيد كله تاريخ والأقصر عاصمته"
       }
     ],
     "sin": [
@@ -3221,6 +3230,15 @@
         "noteAr": "البصرة كانت أكبر بستان نخيل في العالم، والتمر البصري من أفخر الأنواع",
         "note": "Basra was once home to the world's largest date-palm groves, and its dates are among the finest",
         "example": "الحلو البصري ما يتعوض"
+      },
+      {
+        "id": "famous.al_ahwar",
+        "text": "الأهوار",
+        "english": "the Mesopotamian Marshes",
+        "standard": "الأهوار",
+        "noteAr": "جنات الماء والبردي جنوب العراق قرب البصرة، بيوت القصب والمشحوف، تراث عالمي",
+        "note": "The Ahwar marshes south of Basra, with their reed houses and mashoof canoes, are a UNESCO World Heritage site",
+        "example": "أهل الأهوار عايشين على الصيد والجاموس"
       }
     ],
     "naj": [
@@ -3598,6 +3616,15 @@
         "noteAr": "أرخبيل مرجاني في البحر الأحمر قدام جيزان، محمية طبيعية",
         "note": "The Farasan Islands off Jizan are a Red Sea coral archipelago and a protected marine sanctuary",
         "example": "في فرسان تشوف الغزلان والغوص حلو"
+      },
+      {
+        "id": "famous.dosariyah_castle",
+        "text": "قلعة الدوسرية",
+        "english": "Al-Dosariyah Castle",
+        "standard": "قلعة الدوسرية",
+        "noteAr": "القلعة العثمانية على الجبل في وسط جيزان، شايفة المدينة والبحر",
+        "note": "Al-Dosariyah Castle is an Ottoman-era fort on a hill overlooking Jizan city and the sea",
+        "example": "من قلعة الدوسرية تشوف جيزان كلها"
       }
     ],
     "shm": [
@@ -3718,6 +3745,15 @@
         "noteAr": "طلعة البر بالشتاء مع الشبة والقهوة، من أحلى عادات أهل الشمال",
         "note": "The kashta, a winter desert camping trip with fire and coffee, is a beloved northern Saudi tradition",
         "example": "الجمعة الجاية عندنا كشتة في البر"
+      },
+      {
+        "id": "famous.aarif_fort",
+        "text": "قلعة أعيرف",
+        "english": "A'arif Fort",
+        "standard": "قلعة أعيرف",
+        "noteAr": "القلعة الطينية على الجبل في وسط حايل، من أقدم معالم الشمال",
+        "note": "A'arif Fort is the mudbrick citadel on a hill in the centre of Hail, one of the north's oldest landmarks",
+        "example": "قلعة أعيرف من رموز حايل"
       }
     ],
     "kuw": [
@@ -4610,6 +4646,15 @@
         "noteAr": "البوابة الشهيرة لصنعاء القديمة ومدخل سوقها القديم",
         "note": "Bab al-Yaman is the iconic gate of Old Sana'a, a UNESCO World Heritage city, leading into its ancient souq",
         "example": "نمشي من باب اليمن لسوق الملح"
+      },
+      {
+        "id": "famous.souk_al_milh",
+        "text": "سوق الملح",
+        "english": "Souk al-Milh",
+        "standard": "سوق الملح",
+        "noteAr": "السوق القديم جوه باب اليمن، تلقى فيه كل شي من البهارات للجمبية",
+        "note": "Souk al-Milh inside Bab al-Yemen is Old Sana'a's great market, from spices to janbiya daggers",
+        "example": "سوق الملح أقدم سوق في صنعاء"
       }
     ],
     "ade": [
@@ -4729,6 +4774,15 @@
         "noteAr": "صهاريج مية قديمة متعمدة في جبل شمسان بعدن، عمرها أكثر من ألف سنة",
         "note": "The ancient Tawila water cisterns carved into Jabal Shamsan are Aden's most distinctive landmark",
         "example": "صهاريج الطويلة من عجائب عدن القديمة"
+      },
+      {
+        "id": "famous.port_aden",
+        "text": "ميناء عدن",
+        "english": "the Port of Aden",
+        "standard": "ميناء عدن",
+        "noteAr": "من أقدم وأهم مواني العالم، كان محطة الفحم لسفن نصف الدنيا",
+        "note": "The Port of Aden was once one of the busiest coaling stations in the world, on the route between Europe and Asia",
+        "example": "ميناء عدن كان من أكبر مواني العالم زمان"
       }
     ],
     "had": [
@@ -4846,6 +4900,15 @@
         "noteAr": "مدينة العلم والعلماء في وادي حضرموت، فيها أعلى مئذنة طينية في العالم",
         "note": "Tarim in Wadi Hadhramaut is famed as a city of scholars and holds the world's tallest mudbrick minaret",
         "example": "في تريم أكثر من ٣٦٠ مسجد"
+      },
+      {
+        "id": "famous.al_mukalla",
+        "text": "المكلا",
+        "english": "Mukalla",
+        "standard": "المكلا",
+        "noteAr": "عاصمة حضرموت على البحر، بيوتها البيضا طالعة من الجبل للشاطي",
+        "note": "Mukalla, the coastal capital of Hadhramaut, is known for its white houses climbing from the shore up the cliffs",
+        "example": "المكلا بوابة حضرموت على بحر العرب"
       }
     ],
     "sud": [
@@ -4967,6 +5030,15 @@
         "noteAr": "مشروب الكركدي البارد أشهر مشروب سوداني في الصيف",
         "note": "Cold karkade (hibiscus) is Sudan's signature summer drink, served sweetened at gatherings",
         "example": "اشربيلي كاسة كركدي بارد"
+      },
+      {
+        "id": "famous.tuti_island",
+        "text": "جزيرة توتي",
+        "english": "Tuti Island",
+        "standard": "جزيرة توتي",
+        "noteAr": "الجزيرة الخضرا في ملتقى النيلين بالخرطوم، مزارعها بتسقي العاصمة",
+        "note": "Tuti Island sits at the meeting point of the two Niles in Khartoum and its farms feed the capital",
+        "example": "توتي أخضر مكان في الخرطوم"
       }
     ],
     "chd": [
@@ -5084,6 +5156,15 @@
         "noteAr": "البحيرة اللي الدولة اتسمت على اسمها، مصدر رزق لملايين الناس",
         "note": "Lake Chad gave the country its name and supports millions of people across four countries",
         "example": "الصيادين عايشين على بحيرة تشاد"
+      },
+      {
+        "id": "famous.zakouma",
+        "text": "زاكوما",
+        "english": "Zakouma National Park",
+        "standard": "منتزه زاكوما الوطني",
+        "noteAr": "أشهر محمية في تشاد، فيها الفيلة والزراف وطيور ما تتلقاش في حتة ثانية",
+        "note": "Zakouma National Park is Chad's most famous wildlife reserve, home to elephants and rare birds",
+        "example": "زاكوما من أحسن محميات أفريقيا"
       }
     ],
     "mar": [
@@ -5590,6 +5671,15 @@
         "noteAr": "المدينة الفينيقية العظيمة، عاصمة إمبراطورية هانيبال، قدام تونس العاصمة",
         "note": "Ancient Carthage, the great Phoenician city-state of Hannibal, stood just outside modern Tunis",
         "example": "آثار قرطاج بتشد السياح من كل بلاد"
+      },
+      {
+        "id": "famous.sidi_bou_said",
+        "text": "سيدي بوسعيد",
+        "english": "Sidi Bou Said",
+        "standard": "سيدي بوسعيد",
+        "noteAr": "القرية الزرقا والبيضا على الجبل فوق البحر، أشهر صورة في تونس",
+        "note": "Sidi Bou Said, the blue-and-white village above the sea, is the most famous postcard of Tunisia",
+        "example": "سيدي بوسعيد أجمل قرية في تونس"
       }
     ],
     "tri": [
@@ -5710,6 +5800,15 @@
         "noteAr": "قلعة طرابلس الكبيرة على البحر، أشهر معلم في العاصمة الليبية",
         "note": "The Red Castle is Tripoli's iconic fortress on the seafront, overlooking the old medina",
         "example": "السرايا الحمراء في قلب طرابلس"
+      },
+      {
+        "id": "famous.old_town_tripoli",
+        "text": "المدينة القديمة",
+        "english": "Tripoli's Old Town",
+        "standard": "المدينة القديمة طرابلس",
+        "noteAr": "أزقة وأسواق طرابلس القديمة حوالين السرايا الحمراء، فيها الجامع الكبير والقوس الروماني",
+        "note": "Tripoli's Old Town around the Red Castle holds the Great Mosque, the Roman arch and the old souqs",
+        "example": "المدينة القديمة فيها أحلى حلى وصناعة تقليدية"
       }
     ],
     "ben": [
@@ -5829,6 +5928,15 @@
         "noteAr": "السوق القديم في وسط بنغازي، اسمه من سعف النخيل اللي كان يتباع فيه",
         "note": "Souk el-Jarid is Benghazi's historic old market, named after the palm fronds once sold there",
         "example": "سوق الجريد من أقدم أسواق بنغازي"
+      },
+      {
+        "id": "famous.jami3at_benghazi",
+        "text": "جامعة بنغازي",
+        "english": "the University of Benghazi",
+        "standard": "جامعة بنغازي",
+        "noteAr": "أول جامعة في ليبيا، اتأسست سنة ١٩٥٥ في قصر المنار",
+        "note": "The University of Benghazi, founded in 1955 in Al-Manar Palace, was the first university in Libya",
+        "example": "جامعة بنغازي هي أقدم جامعة في ليبيا"
       }
     ],
     "has": [
@@ -5948,6 +6056,15 @@
         "noteAr": "مدينة المكتبات القديمة في الصحرا الموريتانية، تراث عالمي ومنارة العلم",
         "note": "Chinguetti, the desert library city of Mauritania, is a UNESCO site famed for its ancient manuscripts",
         "example": "شنقيط كانت محطة قوافل الحج والعلم"
+      },
+      {
+        "id": "famous.ouadane",
+        "text": "وادان",
+        "english": "Ouadane",
+        "standard": "وادان",
+        "noteAr": "مدينة القوافل القديمة في آدرار، أطلالها الحجرية تراث عالمي مثل شنقيط",
+        "note": "Ouadane in the Adrar is an ancient caravan town whose stone ruins are UNESCO-listed, like Chinguetti",
+        "example": "وادان كانت محطة قوافل الملح والذهب"
       }
     ],
     "cnl": [
