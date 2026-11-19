@@ -1081,6 +1081,15 @@
         "noteAr": "زعيم الثورة العرابية، اتولد في قرية هرية رزنة بالشرقية",
         "note": "Ahmed Urabi, leader of the 1881-82 Urabi revolt, was born in the village of Hreyeh Razna in Sharqia",
         "example": "الشرقية بلد أحمد عرابي"
+      },
+      {
+        "id": "famous.ashar_ramadan",
+        "text": "العاشر من رمضان",
+        "english": "10th of Ramadan City",
+        "standard": "مدينة العاشر من رمضان",
+        "noteAr": "أول مدينة صناعية جديدة في مصر، في قلب الشرقية، اتسمت على يوم العبور",
+        "note": "10th of Ramadan City in Sharqia was Egypt's first new industrial city, named after the day of the 1973 crossing",
+        "example": "العاشر من رمضان فيها أكبر مصانع في مصر"
       }
     ],
     "dkh": [
@@ -1198,6 +1207,15 @@
         "noteAr": "البيت الأثري في المنصورة اللي اتسجن فيه لويس التاسع ملك فرنسا",
         "note": "The historic house in Mansoura where King Louis IX of France was held prisoner after the Seventh Crusade",
         "example": "دار ابن لقمان بقت متحف في قلب المنصورة"
+      },
+      {
+        "id": "famous.lake_manzala",
+        "text": "بحيرة المنزلة",
+        "english": "Lake Manzala",
+        "standard": "بحيرة المنزلة",
+        "noteAr": "أكبر بحيرات الدلتا، عيشة الصيادين في الدقهلية وبورسعيد ودمياط",
+        "note": "Lake Manzala is the largest of the Nile Delta lakes and the livelihood of fishermen across three governorates",
+        "example": "سمك بحيرة المنزلة من أحسن ما يتقلي"
       }
     ],
     "mnf": [
@@ -1314,6 +1332,15 @@
         "noteAr": "قرية في المنوفية اتولد فيها رئيسين: السادات ومبارك",
         "note": "A Monufia village famous as the birthplace of two Egyptian presidents, Sadat and Mubarak",
         "example": "ميت أبو الكوم قرية صغيرة بس اسمها كبير"
+      },
+      {
+        "id": "famous.sers_el_layan",
+        "text": "سرس الليان",
+        "english": "Sers El-Layan",
+        "standard": "سرس الليان",
+        "noteAr": "القرية الفرعونية في المنوفية اللي فيها متحف مفتوح للآثار",
+        "note": "Sers El-Layan in Monufia is a living Pharaonic-themed village with an open-air antiquities museum",
+        "example": "سرس الليان مشهورة بالتماثيل الفرعونية"
       }
     ],
     "ghr": [
@@ -1431,6 +1458,15 @@
         "noteAr": "عاصمة الغزل والنسيج في مصر، في قلب الغربية",
         "note": "El Mahalla El Kubra in Gharbia is Egypt's textile capital, home to its largest weaving mills",
         "example": "شغل المحلة كله غزل ونسيج"
+      },
+      {
+        "id": "famous.ghazl_el_mahalla_club",
+        "text": "غزل المحلة",
+        "english": "Ghazl El-Mahalla club",
+        "standard": "نادي غزل المحلة",
+        "noteAr": "نادي عمال الغزل العريق، من كبار أندية الدوري المصري زمان",
+        "note": "Ghazl El-Mahalla, the textile workers' club, is one of the historic names of Egyptian football",
+        "example": "غزل المحلة أخد الدوري سنة ٧٣"
       }
     ],
     "bhr": [
@@ -1544,6 +1580,15 @@
         "noteAr": "الحجر اللي فك بيه شامبليون الهيروغليفية، اتلقى في رشيد بالبحيرة سنة ١٧٩٩",
         "note": "The Rosetta Stone, key to deciphering hieroglyphs, was found in Rashid in Beheira in 1799",
         "example": "حجر رشيد أشهر أثر اتلقى في البحيرة"
+      },
+      {
+        "id": "famous.lake_mariout",
+        "text": "بحيرة مريوط",
+        "english": "Lake Mariout",
+        "standard": "بحيرة مريوط",
+        "noteAr": "البحيرة القديمة بين البحيرة وإسكندرية، من أقدم مناطق الصيد في مصر",
+        "note": "Lake Mariout, between Beheira and Alexandria, is one of Egypt's oldest fishing grounds",
+        "example": "بحيرة مريوط مذكورة من أيام الفراعنة"
       }
     ],
     "dmt": [
@@ -1657,6 +1702,15 @@
         "noteAr": "من أهم مواني مصر على المتوسط، والموبيليا الدمياطية بتتصدر منه",
         "note": "Damietta Port is one of Egypt's main Mediterranean ports, exporting the city's famous furniture",
         "example": "الشحنة طلعت من ميناء دمياط"
+      },
+      {
+        "id": "famous.ezbet_el_borg",
+        "text": "عزبة البرج",
+        "english": "Ezbet El-Borg",
+        "standard": "عزبة البرج",
+        "noteAr": "مدينة الصيادين وبناة المراكب عند مصب النيل في دمياط",
+        "note": "Ezbet El-Borg at the Nile mouth is Damietta's fishermen and shipwrights town",
+        "example": "مراكب الصيد كلها بتتعمل في عزبة البرج"
       }
     ],
     "kfs": [
@@ -1769,6 +1823,15 @@
         "noteAr": "مدينة في كفر الشيخ مشهورة بكثرة مساجدها ومآذنها التاريخية",
         "note": "Fuwa in Kafr El-Sheikh is known as the city of minarets for its many historic mosques",
         "example": "فوة مليانة مساجد عمرها مئات السنين"
+      },
+      {
+        "id": "famous.sakha",
+        "text": "سخا",
+        "english": "Sakha",
+        "standard": "سخا",
+        "noteAr": "القرية اللي فيها صخرة أثرية عليها أثر قدم، ومزار قبطي شهير",
+        "note": "Sakha in Kafr El-Sheikh holds a famous rock said to bear a sacred footprint and a renowned Coptic shrine",
+        "example": "سخا مزار بيجيلها ناس من كل حتة"
       }
     ],
     "sai": [
@@ -2264,6 +2327,15 @@
         "noteAr": "من أقدم وأكبر قلاع العالم، في قلب حلب القديمة",
         "note": "The Citadel of Aleppo is one of the oldest and largest castles in the world, crowning the old city",
         "example": "من قلعة حلب بتشوف المدينة كلها"
+      },
+      {
+        "id": "famous.kibbeh_halabiyeh",
+        "text": "الكبة الحلبية",
+        "english": "Aleppine kibbeh",
+        "standard": "الكبة الحلبية",
+        "noteAr": "حلب عاصمة الكبة في العالم العربي، فيها أكتر من ٢٠ نوع",
+        "note": "Aleppo is the kibbeh capital of the Arab world with more than twenty local varieties",
+        "example": "الكبة الحلبية على الفطور ولا أحلى"
       }
     ],
     "leb": [
@@ -5258,6 +5330,15 @@
         "noteAr": "الحمامة البيضاء، مدينة أندلسية في قلب الشمال، مدينتها القديمة تراث عالمي",
         "note": "Tetouan, the 'white dove' of northern Morocco, has a UNESCO-listed Andalusian medina",
         "example": "تطوان مدينة أندلسية بامتياز"
+      },
+      {
+        "id": "famous.assilah",
+        "text": "أصيلة",
+        "english": "Asilah",
+        "standard": "أصيلة",
+        "noteAr": "مدينة الجداريات على الأطلسي في شمال المغرب، مهرجانها الثقافي عالمي",
+        "note": "Asilah on Morocco's Atlantic coast is famed for its murals and international cultural festival",
+        "example": "في الصيف أصيلة كلها فن وألوان"
       }
     ],
     "alg": [
@@ -5379,6 +5460,15 @@
         "noteAr": "وهران عاصمة الراي، والشاب خالد والشاب مامي أشهر نجومه",
         "note": "Raï music was born in Oran and made Algeria famous worldwide through stars like Cheb Khaled and Cheb Mami",
         "example": "نحب نسمع الراي في العرس"
+      },
+      {
+        "id": "famous.casbah_algiers",
+        "text": "القصبة",
+        "english": "the Casbah of Algiers",
+        "standard": "قصبة الجزائر",
+        "noteAr": "المدينة العتيقة فوق البحر في الجزائر العاصمة، تراث عالمي ورمز الثورة",
+        "note": "The Casbah, Algiers' Ottoman-era old city above the sea, is a UNESCO site and a symbol of the revolution",
+        "example": "القصبة فيها أزقة ضيقة وبيوت عثمانية"
       }
     ],
     "tun": [
@@ -5938,6 +6028,15 @@
         "noteAr": "المدينة اللي بتوصل أفريقيا بآسيا على قناة السويس، عندها الكوبري والمعدية",
         "note": "El-Qantara is where Africa meets Asia across the Suez Canal, with its famous bridge and ferry",
         "example": "عدينا القنطرة واحنا رايحين سيناء"
+      },
+      {
+        "id": "famous.bitter_lakes",
+        "text": "البحيرات المرة",
+        "english": "the Bitter Lakes",
+        "standard": "البحيرات المرة",
+        "noteAr": "البحيرتان المالحتان اللي قناة السويس بتعدي فيهم بين الإسماعيلية والسويس",
+        "note": "The Bitter Lakes are the salt lakes the Suez Canal crosses between Ismailia and Suez",
+        "example": "السفن بتستنى في البحيرات المرة"
       }
     ],
     "bdw": [
@@ -6018,6 +6117,15 @@
         "noteAr": "النسيج البدوي الملون اللي تتعمل منه بيوت الشعر والسجاد، مسجل في اليونسكو",
         "note": "Sadu is the traditional geometric Bedouin weaving used for tents and rugs, listed by UNESCO",
         "example": "الحرمة الكبيرة لسه بتغزل السدو"
+      },
+      {
+        "id": "famous.jabal_dakrur",
+        "text": "جبل الدكرور",
+        "english": "Jebel Dakrur",
+        "standard": "جبل الدكرور",
+        "noteAr": "جبل سيوة المشهور بحمامات الرمل السخنة اللي بتعالج المفاصل",
+        "note": "Jebel Dakrur in Siwa is famous for its healing hot-sand baths, a tradition every summer",
+        "example": "أهل سيوة بيروحوا جبل الدكرور لحمامات الرمل"
       }
     ]
   }
