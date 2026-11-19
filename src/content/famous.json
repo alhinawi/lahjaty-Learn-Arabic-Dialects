@@ -1879,6 +1879,15 @@
         "noteAr": "قعدة السوالف حول النار جزء من الليل البدوي",
         "note": "Swapping stories around the fire is part of a Bedouin night",
         "example": "خلّينا نقعد نتبادل السوالف"
+      },
+      {
+        "id": "famous.oyun_musa",
+        "text": "عيون موسى",
+        "english": "The Springs of Moses",
+        "standard": "عيون موسى في جنوب سيناء",
+        "noteAr": "الينابيع الشهيرة على خليج السويس، مزار أهل سيناء وضيوفها من زمان",
+        "note": "The famous springs on the Gulf of Suez, a long-time Sinai landmark",
+        "example": "في الطريق للطور لازم نقف عند عيون موسى."
       }
     ],
     "dam": [
@@ -2431,6 +2440,15 @@
         "note": "Any older man, or friends in jest",
         "example": "اسمع يا عمّي، القصة طويلة",
         "concept": "sir"
+      },
+      {
+        "id": "famous.maqluba",
+        "text": "المقلوبة",
+        "english": "Maqluba, the upside-down dish",
+        "standard": "طبق المقلوبة الفلسطيني",
+        "noteAr": "طبق فلسطين الأول في العزومات: رز وخضار يتقلب قدام الضيوف",
+        "note": "Palestine's number one gathering dish: rice and vegetables flipped in front of the guests",
+        "example": "اليوم الجمعة، يعني مقلوبة على الغدا."
       }
     ],
     "jor": [
@@ -2861,6 +2879,15 @@
         "note": "The Q becomes a G; a sweet term of affection",
         "example": "تدلّل كلبي، شتريد؟",
         "concept": "dear"
+      },
+      {
+        "id": "famous.masgouf",
+        "text": "المسقوف",
+        "english": "Iraqi grilled fish",
+        "standard": "السمك المشوي العراقي",
+        "noteAr": "أشهر أكلة عراقية، والبصرة أهل السمك أول ناس تعرفه",
+        "note": "Iraq's most famous dish, and Basra's fish people know it best",
+        "example": "البصرة بلا مسقوف على شط العرب؟ ما تصير!"
       }
     ],
     "naj": [
@@ -3184,6 +3211,15 @@
         "note": "To hurry or start anything",
         "example": "يلّا نمشي قبل المغرب",
         "concept": "lets_go"
+      },
+      {
+        "id": "famous.fayfa",
+        "text": "فيفا",
+        "english": "Jabal Fayfa",
+        "standard": "جبل فيفا في جازان",
+        "noteAr": "الجبل الأخضر المعلّق في السحاب، فخر أهل جازان",
+        "note": "The green mountain hanging in the clouds, the pride of Jazan",
+        "example": "فيفا ما تتفوت، خضرة طول السنة."
       }
     ],
     "shm": [
@@ -3286,6 +3322,15 @@
         "note": "Praise and agreement",
         "example": "الربيع هالسنة زين",
         "concept": "good"
+      },
+      {
+        "id": "famous.ahla_ahal_7ail",
+        "text": "يا هلا بأهل حايل",
+        "english": "Welcome, people of Hail",
+        "standard": "أهلًا بأهل حائل",
+        "noteAr": "تحية الكرم الشمري، حايل قلب شمر ودار الجود",
+        "note": "The Shammari hospitality greeting; Hail is the heart of Shammar and generosity",
+        "example": "يا هلا بأهل حايل، كرام من زمان."
       }
     ],
     "kuw": [
@@ -3943,6 +3988,15 @@
         "note": "Praise and agreement",
         "example": "المطر زين السنة",
         "concept": "good"
+      },
+      {
+        "id": "famous.mashakek",
+        "text": "مشكاك",
+        "english": "Grilled meat skewers",
+        "standard": "أسياخ اللحم المشوي",
+        "noteAr": "أشهر أكلة شارع عمانية، تلقاها في كل سوق في ظفار",
+        "note": "Oman's favorite street food, found in every Dhofar market",
+        "example": "العشا الليلة مشكاك من السوق."
       }
     ],
     "san": [
@@ -4153,6 +4207,15 @@
         "note": "To hurry up or get started",
         "example": "هيّا بنا قبل الزحمة",
         "concept": "lets_go"
+      },
+      {
+        "id": "famous.malooh",
+        "text": "الملوح",
+        "english": "Yemeni layered bread",
+        "standard": "خبز الملوح اليمني",
+        "noteAr": "الخبز اليمني المورّق بالسمن، عدني بامتياز على الفطور",
+        "note": "The buttery layered Yemeni bread, an Adeni breakfast staple",
+        "example": "فطورنا ملوح وعسل وسمن بلدي."
       }
     ],
     "had": [
@@ -4252,6 +4315,15 @@
         "noteAr": "أكلة حضرمية بالرز واللحم، انتشرت في كل الجزيرة",
         "note": "A Hadhrami dish of rice and meat that spread across Arabia",
         "example": "الغدا اليوم مندي حضرمي"
+      },
+      {
+        "id": "famous.madhbi",
+        "text": "المظبي",
+        "english": "Hadhrami stone-grilled meat",
+        "standard": "اللحم المطبوخ على الحجر الساخن",
+        "noteAr": "أكلة حضرموت الشهيرة: لحم يتطبخ على حجر ملتهب",
+        "note": "Hadhramout's famous dish: meat cooked on a blazing hot stone",
+        "example": "جربت المظبي في المكلا؟ شي ثاني."
       }
     ],
     "sud": [
@@ -4673,6 +4745,15 @@
         "noteAr": "أداة السؤال",
         "note": "The question marker",
         "example": "واش بعيد السوق؟"
+      },
+      {
+        "id": "famous.aicha_kandicha",
+        "text": "عيشة قنديشة",
+        "english": "Aisha Qandisha, the folk legend",
+        "standard": "الأسطورة الشعبية عيشة قنديشة",
+        "noteAr": "أشهر شخصية في التراث الشعبي لشمال المغرب، يتقال اسمها للتخويف بالحب",
+        "note": "The most famous folk figure of northern Morocco, her name is used in playful scaring",
+        "example": "سير للدار بكري، غادي تجيك عيشة قنديشة!"
       }
     ],
     "alg": [
@@ -4999,6 +5080,15 @@
         "note": "Strong red tea with foam is part of every Libyan gathering",
         "example": "نشربوا شاهي أحمر بعد الغدا",
         "concept": "tea"
+      },
+      {
+        "id": "famous.bazeen",
+        "text": "البازين",
+        "english": "Libyan barley dough dish",
+        "standard": "طبق البازين الليبي",
+        "noteAr": "أشهر طبق ليبي، عجينة الشعير مع المرق في نص الطبق",
+        "note": "Libya's most famous dish: barley dough with sauce in the middle",
+        "example": "البازين يوم الجمعة عندنا عادة."
       }
     ],
     "ben": [
@@ -5100,6 +5190,15 @@
         "noteAr": "مدينة على البحر، والسمك جزء من أكلها",
         "note": "A seaside city where fish is part of every table",
         "example": "نتغدّوا حوت اليوم"
+      },
+      {
+        "id": "famous.mbatten",
+        "text": "المبطّن",
+        "english": "Stuffed fried potato slices",
+        "standard": "شرائح البطاطس المحشوة المقلية",
+        "noteAr": "أكلة برقة المحبوبة: بطاطس محشوة لحم مفروم مقلية",
+        "note": "Cyrenaica's beloved dish: potato slices stuffed with minced meat and fried",
+        "example": "المبطّن على العشا الليلة في بنغازي."
       }
     ],
     "has": [
@@ -5334,6 +5433,15 @@
         "text": "كهف رومل",
         "english": "Rommel's Cave, the WWII landmark of Matrouh",
         "standard": "كهف رومل في مطروح"
+      },
+      {
+        "id": "famous.tamr_siwa",
+        "text": "تمور سيوة",
+        "english": "Siwa dates",
+        "standard": "تمور واحة سيوة",
+        "noteAr": "تمر سيوة من أحسن تمر في مصر، والواحة كلها نخيل",
+        "note": "Siwa's dates are among Egypt's finest; the whole oasis is palm trees",
+        "example": "جبت معايا تمور سيوة من مطروح."
       }
     ]
   }
