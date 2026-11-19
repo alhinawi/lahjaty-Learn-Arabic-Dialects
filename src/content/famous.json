@@ -702,6 +702,15 @@
         "note": "A formal goodbye that hopes to meet again",
         "example": "إلى اللقاء في الحلقة القادمة",
         "concept": "goodbye"
+      },
+      {
+        "id": "famous.tafaddal",
+        "text": "تفضّل",
+        "english": "please, go ahead / here you are",
+        "standard": "تفضّل",
+        "noteAr": "كلمة المجاملة الأشهر في الفصحى وكل اللهجات: للدعوة والتقديم والرد على الاستئذان",
+        "note": "The single most useful courtesy word in Arabic: come in, go ahead, here you are, all in one",
+        "example": "تفضّل، البيت بيتك"
       }
     ],
     "cai": [
@@ -822,6 +831,15 @@
         "note": "Opens a new fact or a small remark",
         "example": "على فكرة، أنا شفته امبارح",
         "concept": "by_the_way"
+      },
+      {
+        "id": "famous.khan_el_khalili",
+        "text": "خان الخليلي",
+        "english": "Khan el-Khalili",
+        "standard": "خان الخليلي",
+        "noteAr": "أشهر سوق أثري في القاهرة القديمة، جنبه قهوة الفيشاوي",
+        "note": "Khan el-Khalili is Cairo's most famous historic bazaar, home to the legendary El Fishawy coffeehouse",
+        "example": "لازم تعدي على خان الخليلي وانت في القاهرة"
       }
     ],
     "alx": [
@@ -2100,6 +2118,15 @@
         "note": "Makes anything feel easy",
         "example": "تأخّرت؟ ما في مشكلة",
         "concept": "no_problem"
+      },
+      {
+        "id": "famous.souk_al_hamidiyeh",
+        "text": "سوق الحميدية",
+        "english": "Souk al-Hamidiyeh",
+        "standard": "سوق الحميدية",
+        "noteAr": "أشهر سوق مسقوف في دمشق القديمة، بين قلعة دمشق والجامع الأموي",
+        "note": "Souk al-Hamidiyeh is Old Damascus's iconic covered bazaar, running from the citadel to the Umayyad Mosque",
+        "example": "بوظة بكداش في آخر سوق الحميدية ما بتتفوّت"
       }
     ],
     "alp": [
@@ -2339,6 +2366,15 @@
         "noteAr": "الطريقة اللبنانية الأشهر لقول «ما يخصّك» بنبرة ناعمة أو حادة",
         "note": "The classic Lebanese 'not your business', said soft or sharp depending on tone",
         "example": "شو رأيك؟ ضلّ برا أحسنلك."
+      },
+      {
+        "id": "famous.raouche",
+        "text": "صخرة الروشة",
+        "english": "the Raouche Rock",
+        "standard": "صخرة الروشة",
+        "noteAr": "أشهر معلم طبيعي في بيروت، صخرتان في البحر عند الكورنيش",
+        "note": "The Raouche (Pigeon) Rocks off Beirut's corniche are the city's most famous natural landmark",
+        "example": "غروب الشمس عند الروشة من أحلى مناظر بيروت"
       }
     ],
     "psu": [
@@ -2814,6 +2850,15 @@
         "noteAr": "الچاي العراقي في الكاسة الزجاجية الصغيرة، ما يكمل يوم بغدادي بدونه",
         "note": "Iraqi tea in the small glass cup; no Baghdadi day is complete without it",
         "example": "گعدة وشاي استكان، ماكو أحلى."
+      },
+      {
+        "id": "famous.shari3_al_mutanabbi",
+        "text": "شارع المتنبي",
+        "english": "Al-Mutanabbi Street",
+        "standard": "شارع المتنبي",
+        "noteAr": "شارع الكتب والمكتبات القديمة في قلب بغداد، ملتقى المثقفين كل جمعة",
+        "note": "Al-Mutanabbi Street is Baghdad's historic book market and the weekly meeting place of Iraqi intellectuals",
+        "example": "يوم الجمعة نروح لشارع المتنبي نشتري كتب"
       }
     ],
     "mos": [
@@ -3171,6 +3216,15 @@
         "noteAr": "النداء النجدي الأصيل للاحترام، يُقال للكبير والضيف",
         "note": "The classic Najdi respectful address, for elders and guests",
         "example": "يا طويل العمر، تفضل القهوة جاهزة."
+      },
+      {
+        "id": "famous.al_turaif",
+        "text": "حي الطريف",
+        "english": "At-Turaif, Diriyah",
+        "standard": "حي الطريف بالدرعية",
+        "noteAr": "المباني الطينية القديمة في الدرعية، أول عاصمة للدولة السعودية، تراث عالمي",
+        "note": "At-Turaif in Diriyah, the mudbrick quarter of the first Saudi capital, is a UNESCO World Heritage site",
+        "example": "حي الطريف من أجمل الأماكن التراثية في الرياض"
       }
     ],
     "hij": [
@@ -3290,6 +3344,15 @@
         "noteAr": "كلمة الطمأنينة الحجازية الأولى، تسمعها في جدة ومكة كل يوم",
         "note": "Hijaz's number one reassurance, heard daily in Jeddah and Makkah",
         "example": "ولا يهمك، أنا أتصرف في الموضوع."
+      },
+      {
+        "id": "famous.al_balad",
+        "text": "البلد",
+        "english": "Historic Jeddah (Al-Balad)",
+        "standard": "جدة التاريخية",
+        "noteAr": "حي جدة القديمة ببيوتها ذات الرواشين، تراث عالمي",
+        "note": "Al-Balad, historic Jeddah with its coral-stone houses and wooden rawasheen balconies, is UNESCO-listed",
+        "example": "البلد في رمضان غير شكل"
       }
     ],
     "jiz": [
@@ -4960,6 +5023,15 @@
         "noteAr": "الدعاء المغربي الأشهر، يتقال شكراً وعرفاناً في أي موقف",
         "note": "Morocco's most famous blessing, said as thanks in almost any situation",
         "example": "تفضل اتعشى معانا، الله يرحم الوالدين."
+      },
+      {
+        "id": "famous.jemaa_el_fna",
+        "text": "ساحة جامع الفنا",
+        "english": "Jemaa el-Fnaa square",
+        "standard": "ساحة جامع الفنا",
+        "noteAr": "ساحة مراكش الشهيرة، مسرح مفتوح للحكواتية والموسيقى والأكل، تراث عالمي",
+        "note": "Jemaa el-Fnaa in Marrakech is a UNESCO-listed open-air theatre of storytellers, musicians and food stalls",
+        "example": "جامع الفنا بالليل عالم لحالها"
       }
     ],
     "jeb": [
