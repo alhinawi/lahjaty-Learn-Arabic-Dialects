@@ -2231,6 +2231,15 @@
         "note": "A reply to thanks, or mild 'come on!'",
         "example": "شكرًا عالمساعدة. ولو، ولو!",
         "concept": "with_pleasure"
+      },
+      {
+        "id": "famous.tdal_barra",
+        "text": "ضلّ برا",
+        "english": "Stay out of it / none of your business",
+        "standard": "لا تتدخل في الأمر",
+        "noteAr": "الطريقة اللبنانية الأشهر لقول «ما يخصّك» بنبرة ناعمة أو حادة",
+        "note": "The classic Lebanese 'not your business', said soft or sharp depending on tone",
+        "example": "شو رأيك؟ ضلّ برا أحسنلك."
       }
     ],
     "psu": [
@@ -2670,6 +2679,15 @@
         "note": "Iraqis say 'chai' with a 'ch', and the tea never stops",
         "example": "خلّي نشرب استكان چاي بالهيل",
         "concept": "tea"
+      },
+      {
+        "id": "famous.istikan",
+        "text": "شاي الاستكان",
+        "english": "Istikan tea",
+        "standard": "الشاي في كوب الاستكان الزجاجي",
+        "noteAr": "الچاي العراقي في الكاسة الزجاجية الصغيرة، ما يكمل يوم بغدادي بدونه",
+        "note": "Iraqi tea in the small glass cup; no Baghdadi day is complete without it",
+        "example": "گعدة وشاي استكان، ماكو أحلى."
       }
     ],
     "mos": [
@@ -3000,6 +3018,15 @@
         "note": "A small wish used in greetings",
         "example": "عساك بخير؟ وش لون العيال؟",
         "concept": "how_are_you"
+      },
+      {
+        "id": "famous.ya_taweel_el_omr",
+        "text": "يا طويل العمر",
+        "english": "O long-lived one (respectful address)",
+        "standard": "يا صاحب العمر الطويل",
+        "noteAr": "النداء النجدي الأصيل للاحترام، يُقال للكبير والضيف",
+        "note": "The classic Najdi respectful address, for elders and guests",
+        "example": "يا طويل العمر، تفضل القهوة جاهزة."
       }
     ],
     "hij": [
@@ -3110,6 +3137,15 @@
         "note": "Asking in surprise at some news",
         "example": "والله؟ رجع من السفر؟",
         "concept": "really"
+      },
+      {
+        "id": "famous.walla_yhemmak",
+        "text": "ولا يهمك",
+        "english": "Don't worry about it",
+        "standard": "لا تقلق",
+        "noteAr": "كلمة الطمأنينة الحجازية الأولى، تسمعها في جدة ومكة كل يوم",
+        "note": "Hijaz's number one reassurance, heard daily in Jeddah and Makkah",
+        "example": "ولا يهمك، أنا أتصرف في الموضوع."
       }
     ],
     "jiz": [
@@ -4535,6 +4571,15 @@
         "note": "A respectful call for any older man, like your own father",
         "example": "أبوي، اتفضّل اقعد هنا",
         "concept": "sir"
+      },
+      {
+        "id": "famous.ndjamena",
+        "text": "نجمينا",
+        "english": "N'Djamena, the capital",
+        "standard": "نجامينا عاصمة تشاد",
+        "noteAr": "عاصمة تشاد وأكبر مدنها، على ضفة نهر شاري",
+        "note": "Chad's capital and biggest city, on the Chari river",
+        "example": "أهلي ساكنين في نجمينا من زمان."
       }
     ],
     "mar": [
@@ -4645,6 +4690,15 @@
         "noteAr": "كلمة شهيرة بتتقال لأي تصرّف مش لايق",
         "note": "A famous word for anything improper",
         "example": "حشومة تهضر هكا مع الكبار"
+      },
+      {
+        "id": "famous.allah_yer7am_lwalidin",
+        "text": "الله يرحم الوالدين",
+        "english": "May God have mercy on your parents",
+        "standard": "رحم الله والديك",
+        "noteAr": "الدعاء المغربي الأشهر، يتقال شكراً وعرفاناً في أي موقف",
+        "note": "Morocco's most famous blessing, said as thanks in almost any situation",
+        "example": "تفضل اتعشى معانا، الله يرحم الوالدين."
       }
     ],
     "jeb": [
@@ -5371,6 +5425,15 @@
         "text": "مانجو الإسماعيلية",
         "english": "Ismailia's famous mangoes, a source of city pride",
         "standard": "مانجو الإسماعيلية"
+      },
+      {
+        "id": "famous.new_suez_canal",
+        "text": "قناة السويس الجديدة",
+        "english": "The New Suez Canal",
+        "standard": "قناة السويس الجديدة المفتوحة سنة 2015",
+        "noteAr": "التفريعة الجديدة للقناة اللي اتفتحت سنة 2015، فخر مدن القناة",
+        "note": "The canal's new lane opened in 2015, a point of pride for the Canal cities",
+        "example": "السفن دلوقتي بتعدي من قناة السويس الجديدة في الاتجاهين."
       }
     ],
     "bdw": [
