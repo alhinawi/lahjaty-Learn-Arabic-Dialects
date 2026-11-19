@@ -928,6 +928,15 @@
         "noteAr": "جملة إسكندرانية أصيلة لما الموج يبقى عالي والكورنيش يتقفل",
         "note": "A true Alexandrian line for rough-sea days when the Corniche closes",
         "example": "البحر عالي النهاردة، بلاش ننزل الماية."
+      },
+      {
+        "id": "famous.qaitbay",
+        "text": "قلعة قايتباي",
+        "english": "Qaitbay Citadel",
+        "standard": "قلعة قايتباي",
+        "noteAr": "قلعة على البحر مكان منارة إسكندرية القديمة",
+        "note": "Qaitbay Citadel stands on the site of the ancient Lighthouse of Alexandria, one of the wonders of the ancient world",
+        "example": "مين ما راحش قلعة قايتباي لما جه إسكندرية؟"
       }
     ],
     "shq": [
@@ -1036,6 +1045,15 @@
         "noteAr": "أثر الزقازيق الشهير، مدينة بوباستس القديمة في قلب الشرقية",
         "note": "Zagazig's famous ruin, the ancient city of Bubastis in the heart of Sharqia",
         "example": "عدّوا على تل بسطا وانتوا في الزقازيق."
+      },
+      {
+        "id": "famous.ahmed_orabi",
+        "text": "أحمد عرابي",
+        "english": "Ahmed Urabi",
+        "standard": "أحمد عرابي",
+        "noteAr": "زعيم الثورة العرابية، اتولد في قرية هرية رزنة بالشرقية",
+        "note": "Ahmed Urabi, leader of the 1881-82 Urabi revolt, was born in the village of Hreyeh Razna in Sharqia",
+        "example": "الشرقية بلد أحمد عرابي"
       }
     ],
     "dkh": [
@@ -1144,6 +1162,15 @@
         "noteAr": "مصيف أهل المنصورة والدقهلية المفضل على البحر المتوسط",
         "note": "The favorite summer beach of Mansoura people on the Mediterranean",
         "example": "الصيف ده هننزل جمصة اسبوع."
+      },
+      {
+        "id": "famous.dar_ibn_luqman",
+        "text": "دار ابن لقمان",
+        "english": "Dar Ibn Luqman",
+        "standard": "دار ابن لقمان",
+        "noteAr": "البيت الأثري في المنصورة اللي اتسجن فيه لويس التاسع ملك فرنسا",
+        "note": "The historic house in Mansoura where King Louis IX of France was held prisoner after the Seventh Crusade",
+        "example": "دار ابن لقمان بقت متحف في قلب المنصورة"
       }
     ],
     "mnf": [
@@ -1251,6 +1278,15 @@
         "noteAr": "مقولة مصرية محببة عن أهل المنوفية وصلابتهم في المواقف",
         "note": "A beloved Egyptian saying about Menoufia people standing their ground",
         "example": "خلاص قرر، والمنوفي عنيد، مش هيغير رأيه."
+      },
+      {
+        "id": "famous.mit_abu_el_kom",
+        "text": "ميت أبو الكوم",
+        "english": "Mit Abu El Kom",
+        "standard": "ميت أبو الكوم",
+        "noteAr": "قرية في المنوفية اتولد فيها رئيسين: السادات ومبارك",
+        "note": "A Monufia village famous as the birthplace of two Egyptian presidents, Sadat and Mubarak",
+        "example": "ميت أبو الكوم قرية صغيرة بس اسمها كبير"
       }
     ],
     "ghr": [
@@ -1359,6 +1395,15 @@
         "noteAr": "أشهر مولد في مصر، بيملى طنطا ناس وحلاوة كل سنة",
         "note": "Egypt's most famous moulid, filling Tanta with people and sweets every year",
         "example": "هاتلي حلاوة المولد من طنطا في مولد السيد البدوي."
+      },
+      {
+        "id": "famous.el_mahalla",
+        "text": "المحلة الكبرى",
+        "english": "El Mahalla El Kubra",
+        "standard": "المحلة الكبرى",
+        "noteAr": "عاصمة الغزل والنسيج في مصر، في قلب الغربية",
+        "note": "El Mahalla El Kubra in Gharbia is Egypt's textile capital, home to its largest weaving mills",
+        "example": "شغل المحلة كله غزل ونسيج"
       }
     ],
     "bhr": [
@@ -1463,6 +1508,15 @@
         "noteAr": "الوادي الشهير بأديرته القديمة وملحه على طريق مصر إسكندرية الصحراوي",
         "note": "The famous valley of ancient monasteries and salt on the Cairo-Alexandria desert road",
         "example": "قفلنا في وادي النطرون وشفنا الأديرة."
+      },
+      {
+        "id": "famous.rosetta_stone",
+        "text": "حجر رشيد",
+        "english": "the Rosetta Stone",
+        "standard": "حجر رشيد",
+        "noteAr": "الحجر اللي فك بيه شامبليون الهيروغليفية، اتلقى في رشيد بالبحيرة سنة ١٧٩٩",
+        "note": "The Rosetta Stone, key to deciphering hieroglyphs, was found in Rashid in Beheira in 1799",
+        "example": "حجر رشيد أشهر أثر اتلقى في البحيرة"
       }
     ],
     "dmt": [
@@ -1567,6 +1621,15 @@
         "noteAr": "أشهر جبنة بيضاء في مصر، سميت على دمياط بلدها",
         "note": "Egypt's most famous white cheese, named after its home Damietta",
         "example": "فطار دمياطي أصلي: جبنة دمياطية وعيش بلدي."
+      },
+      {
+        "id": "famous.damietta_port",
+        "text": "ميناء دمياط",
+        "english": "Damietta Port",
+        "standard": "ميناء دمياط",
+        "noteAr": "من أهم مواني مصر على المتوسط، والموبيليا الدمياطية بتتصدر منه",
+        "note": "Damietta Port is one of Egypt's main Mediterranean ports, exporting the city's famous furniture",
+        "example": "الشحنة طلعت من ميناء دمياط"
       }
     ],
     "kfs": [
@@ -1670,6 +1733,15 @@
         "noteAr": "مصيف أهل كفر الشيخ والدلتا على البحر المتوسط",
         "note": "The Mediterranean resort of Kafr El Sheikh and the Delta",
         "example": "في الصيف كل العيلة بتنزل بلطيم."
+      },
+      {
+        "id": "famous.fuwa",
+        "text": "فوة",
+        "english": "Fuwa, city of minarets",
+        "standard": "فوة",
+        "noteAr": "مدينة في كفر الشيخ مشهورة بكثرة مساجدها ومآذنها التاريخية",
+        "note": "Fuwa in Kafr El-Sheikh is known as the city of minarets for its many historic mosques",
+        "example": "فوة مليانة مساجد عمرها مئات السنين"
       }
     ],
     "sai": [
@@ -1897,6 +1969,15 @@
         "noteAr": "الينابيع الشهيرة على خليج السويس، مزار أهل سيناء وضيوفها من زمان",
         "note": "The famous springs on the Gulf of Suez, a long-time Sinai landmark",
         "example": "في الطريق للطور لازم نقف عند عيون موسى."
+      },
+      {
+        "id": "famous.st_catherine",
+        "text": "دير سانت كاترين",
+        "english": "St. Catherine's Monastery",
+        "standard": "دير سانت كاترين",
+        "noteAr": "من أقدم أديرة العالم الشغالة، عند جبل موسى في جنوب سيناء",
+        "note": "St. Catherine's Monastery at the foot of Mount Sinai is one of the oldest working monasteries in the world",
+        "example": "السياح بييجوا من كل حتة يزوروا سانت كاترين"
       }
     ],
     "dam": [
@@ -2485,6 +2566,15 @@
         "noteAr": "طبق فلسطين الأول في العزومات: رز وخضار يتقلب قدام الضيوف",
         "note": "Palestine's number one gathering dish: rice and vegetables flipped in front of the guests",
         "example": "اليوم الجمعة، يعني مقلوبة على الغدا."
+      },
+      {
+        "id": "famous.el_kuffiyeh",
+        "text": "الكوفية",
+        "english": "the keffiyeh",
+        "standard": "الكوفية الفلسطينية",
+        "noteAr": "الحطة الفلسطينية، رمز الهوية، وبتتنسج في الخليل من مئات السنين",
+        "note": "The black-and-white keffiyeh is the iconic symbol of Palestinian identity, traditionally woven in Hebron",
+        "example": "جدي ما بينزل من البيت من غير الكوفية"
       }
     ],
     "jor": [
@@ -2833,6 +2923,15 @@
         "note": "The classic Mosuli pair: aku for there is, maku for there isn't",
         "example": "أكو چاي بالبيت؟ ماكو، خلص.",
         "concept": "there_is"
+      },
+      {
+        "id": "famous.al_hadba",
+        "text": "المنارة الحدباء",
+        "english": "Al-Hadba Minaret",
+        "standard": "منارة الجامع النوري",
+        "noteAr": "مئذنة الجامع النوري المايلة، أشهر معلم في الموصل من ٨٠٠ سنة",
+        "note": "The leaning Al-Hadba minaret of the Al-Nuri Mosque has been Mosul's most famous landmark for 800 years",
+        "example": "الحدباء كانت على صدر العملة العراقية زمان"
       }
     ],
     "bas": [
@@ -2942,6 +3041,15 @@
         "noteAr": "أشهر أكلة عراقية، والبصرة أهل السمك أول ناس تعرفه",
         "note": "Iraq's most famous dish, and Basra's fish people know it best",
         "example": "البصرة بلا مسقوف على شط العرب؟ ما تصير!"
+      },
+      {
+        "id": "famous.basra_dates",
+        "text": "تمور البصرة",
+        "english": "Basra dates",
+        "standard": "تمور البصرة",
+        "noteAr": "البصرة كانت أكبر بستان نخيل في العالم، والتمر البصري من أفخر الأنواع",
+        "note": "Basra was once home to the world's largest date-palm groves, and its dates are among the finest",
+        "example": "الحلو البصري ما يتعوض"
       }
     ],
     "naj": [
@@ -3292,6 +3400,15 @@
         "noteAr": "الجبل الأخضر المعلّق في السحاب، فخر أهل جازان",
         "note": "The green mountain hanging in the clouds, the pride of Jazan",
         "example": "فيفا ما تتفوت، خضرة طول السنة."
+      },
+      {
+        "id": "famous.farasan",
+        "text": "جزر فرسان",
+        "english": "the Farasan Islands",
+        "standard": "جزر فرسان",
+        "noteAr": "أرخبيل مرجاني في البحر الأحمر قدام جيزان، محمية طبيعية",
+        "note": "The Farasan Islands off Jizan are a Red Sea coral archipelago and a protected marine sanctuary",
+        "example": "في فرسان تشوف الغزلان والغوص حلو"
       }
     ],
     "shm": [
@@ -3403,6 +3520,15 @@
         "noteAr": "تحية الكرم الشمري، حايل قلب شمر ودار الجود",
         "note": "The Shammari hospitality greeting; Hail is the heart of Shammar and generosity",
         "example": "يا هلا بأهل حايل، كرام من زمان."
+      },
+      {
+        "id": "famous.el_kashta",
+        "text": "الكشتة",
+        "english": "the kashta (desert camping trip)",
+        "standard": "الرحلة البرية",
+        "noteAr": "طلعة البر بالشتاء مع الشبة والقهوة، من أحلى عادات أهل الشمال",
+        "note": "The kashta, a winter desert camping trip with fire and coffee, is a beloved northern Saudi tradition",
+        "example": "الجمعة الجاية عندنا كشتة في البر"
       }
     ],
     "kuw": [
@@ -4114,6 +4240,15 @@
         "noteAr": "أشهر أكلة شارع عمانية، تلقاها في كل سوق في ظفار",
         "note": "Oman's favorite street food, found in every Dhofar market",
         "example": "العشا الليلة مشكاك من السوق."
+      },
+      {
+        "id": "famous.salalah",
+        "text": "صلالة",
+        "english": "Salalah",
+        "standard": "صلالة",
+        "noteAr": "عاصمة ظفار، بتتحول لجنة خضرا في موسم الخريف",
+        "note": "Salalah, the capital of Dhofar, turns into a green paradise during the khareef monsoon season",
+        "example": "في الخريف العالم كله بتروح صلالة"
       }
     ],
     "san": [
@@ -4342,6 +4477,15 @@
         "noteAr": "الخبز اليمني المورّق بالسمن، عدني بامتياز على الفطور",
         "note": "The buttery layered Yemeni bread, an Adeni breakfast staple",
         "example": "فطورنا ملوح وعسل وسمن بلدي."
+      },
+      {
+        "id": "famous.tawila_tanks",
+        "text": "صهاريج الطويلة",
+        "english": "the Tawila Tanks",
+        "standard": "صهاريج الطويلة",
+        "noteAr": "صهاريج مية قديمة متعمدة في جبل شمسان بعدن، عمرها أكثر من ألف سنة",
+        "note": "The ancient Tawila water cisterns carved into Jabal Shamsan are Aden's most distinctive landmark",
+        "example": "صهاريج الطويلة من عجائب عدن القديمة"
       }
     ],
     "had": [
@@ -4450,6 +4594,15 @@
         "noteAr": "أكلة حضرموت الشهيرة: لحم يتطبخ على حجر ملتهب",
         "note": "Hadhramout's famous dish: meat cooked on a blazing hot stone",
         "example": "جربت المظبي في المكلا؟ شي ثاني."
+      },
+      {
+        "id": "famous.tarim",
+        "text": "تريم",
+        "english": "Tarim",
+        "standard": "تريم",
+        "noteAr": "مدينة العلم والعلماء في وادي حضرموت، فيها أعلى مئذنة طينية في العالم",
+        "note": "Tarim in Wadi Hadhramaut is famed as a city of scholars and holds the world's tallest mudbrick minaret",
+        "example": "في تريم أكثر من ٣٦٠ مسجد"
       }
     ],
     "sud": [
@@ -4679,6 +4832,15 @@
         "noteAr": "عاصمة تشاد وأكبر مدنها، على ضفة نهر شاري",
         "note": "Chad's capital and biggest city, on the Chari river",
         "example": "أهلي ساكنين في نجمينا من زمان."
+      },
+      {
+        "id": "famous.lake_chad",
+        "text": "بحيرة تشاد",
+        "english": "Lake Chad",
+        "standard": "بحيرة تشاد",
+        "noteAr": "البحيرة اللي الدولة اتسمت على اسمها، مصدر رزق لملايين الناس",
+        "note": "Lake Chad gave the country its name and supports millions of people across four countries",
+        "example": "الصيادين عايشين على بحيرة تشاد"
       }
     ],
     "mar": [
@@ -4907,6 +5069,15 @@
         "noteAr": "أشهر شخصية في التراث الشعبي لشمال المغرب، يتقال اسمها للتخويف بالحب",
         "note": "The most famous folk figure of northern Morocco, her name is used in playful scaring",
         "example": "سير للدار بكري، غادي تجيك عيشة قنديشة!"
+      },
+      {
+        "id": "famous.tetouan",
+        "text": "تطوان",
+        "english": "Tetouan",
+        "standard": "تطوان",
+        "noteAr": "الحمامة البيضاء، مدينة أندلسية في قلب الشمال، مدينتها القديمة تراث عالمي",
+        "note": "Tetouan, the 'white dove' of northern Morocco, has a UNESCO-listed Andalusian medina",
+        "example": "تطوان مدينة أندلسية بامتياز"
       }
     ],
     "alg": [
@@ -5140,6 +5311,15 @@
         "note": "Tunisia's signature there-is word; half of all sentences start with it",
         "example": "فما قهوة قريبة من هنا؟",
         "concept": "there_is"
+      },
+      {
+        "id": "famous.carthage",
+        "text": "قرطاج",
+        "english": "Carthage",
+        "standard": "قرطاج",
+        "noteAr": "المدينة الفينيقية العظيمة، عاصمة إمبراطورية هانيبال، قدام تونس العاصمة",
+        "note": "Ancient Carthage, the great Phoenician city-state of Hannibal, stood just outside modern Tunis",
+        "example": "آثار قرطاج بتشد السياح من كل بلاد"
       }
     ],
     "tri": [
@@ -5251,6 +5431,15 @@
         "noteAr": "أشهر طبق ليبي، عجينة الشعير مع المرق في نص الطبق",
         "note": "Libya's most famous dish: barley dough with sauce in the middle",
         "example": "البازين يوم الجمعة عندنا عادة."
+      },
+      {
+        "id": "famous.red_castle",
+        "text": "السرايا الحمراء",
+        "english": "the Red Castle (Assaraya Alhamra)",
+        "standard": "السرايا الحمراء",
+        "noteAr": "قلعة طرابلس الكبيرة على البحر، أشهر معلم في العاصمة الليبية",
+        "note": "The Red Castle is Tripoli's iconic fortress on the seafront, overlooking the old medina",
+        "example": "السرايا الحمراء في قلب طرابلس"
       }
     ],
     "ben": [
@@ -5361,6 +5550,15 @@
         "noteAr": "أكلة برقة المحبوبة: بطاطس محشوة لحم مفروم مقلية",
         "note": "Cyrenaica's beloved dish: potato slices stuffed with minced meat and fried",
         "example": "المبطّن على العشا الليلة في بنغازي."
+      },
+      {
+        "id": "famous.souk_el_jarid",
+        "text": "سوق الجريد",
+        "english": "Souk el-Jarid",
+        "standard": "سوق الجريد",
+        "noteAr": "السوق القديم في وسط بنغازي، اسمه من سعف النخيل اللي كان يتباع فيه",
+        "note": "Souk el-Jarid is Benghazi's historic old market, named after the palm fronds once sold there",
+        "example": "سوق الجريد من أقدم أسواق بنغازي"
       }
     ],
     "has": [
@@ -5471,6 +5669,15 @@
         "note": "The original Hassaniya greeting, heard at every meeting",
         "example": "اشحالك يا ولد بلدي؟",
         "concept": "how_are_you"
+      },
+      {
+        "id": "famous.chinguetti",
+        "text": "شنقيط",
+        "english": "Chinguetti",
+        "standard": "شنقيط",
+        "noteAr": "مدينة المكتبات القديمة في الصحرا الموريتانية، تراث عالمي ومنارة العلم",
+        "note": "Chinguetti, the desert library city of Mauritania, is a UNESCO site famed for its ancient manuscripts",
+        "example": "شنقيط كانت محطة قوافل الحج والعلم"
       }
     ],
     "cnl": [
@@ -5542,6 +5749,15 @@
         "noteAr": "التفريعة الجديدة للقناة اللي اتفتحت سنة 2015، فخر مدن القناة",
         "note": "The canal's new lane opened in 2015, a point of pride for the Canal cities",
         "example": "السفن دلوقتي بتعدي من قناة السويس الجديدة في الاتجاهين."
+      },
+      {
+        "id": "famous.el_qantara",
+        "text": "القنطرة",
+        "english": "El-Qantara",
+        "standard": "القنطرة",
+        "noteAr": "المدينة اللي بتوصل أفريقيا بآسيا على قناة السويس، عندها الكوبري والمعدية",
+        "note": "El-Qantara is where Africa meets Asia across the Suez Canal, with its famous bridge and ferry",
+        "example": "عدينا القنطرة واحنا رايحين سيناء"
       }
     ],
     "bdw": [
@@ -5613,6 +5829,15 @@
         "noteAr": "تمر سيوة من أحسن تمر في مصر، والواحة كلها نخيل",
         "note": "Siwa's dates are among Egypt's finest; the whole oasis is palm trees",
         "example": "جبت معايا تمور سيوة من مطروح."
+      },
+      {
+        "id": "famous.sadu",
+        "text": "السدو",
+        "english": "sadu weaving",
+        "standard": "النسيج البدوي التقليدي",
+        "noteAr": "النسيج البدوي الملون اللي تتعمل منه بيوت الشعر والسجاد، مسجل في اليونسكو",
+        "note": "Sadu is the traditional geometric Bedouin weaving used for tents and rugs, listed by UNESCO",
+        "example": "الحرمة الكبيرة لسه بتغزل السدو"
       }
     ]
   }
