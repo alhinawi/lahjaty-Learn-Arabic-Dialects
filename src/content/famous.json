@@ -3797,6 +3797,15 @@
         "noteAr": "الزبير غرب البصرة، مدينة قديمة بأسوار وآثار، من أقدم مدن العراق الإسلامية",
         "note": "Zubair west of Basra is a walled old town, one of Iraq's earliest Islamic cities",
         "example": "الزبير أقدم مدن العراق الإسلامية"
+      },
+      {
+        "id": "famous.abu_al_khaseeb",
+        "text": "أبو الخصيب",
+        "english": "Abu Al-Khaseeb",
+        "standard": "أبو الخصيب",
+        "noteAr": "أبو الخصيب، قضاء النخيل والتمور على شط العرب جنوب البصرة",
+        "note": "Abu Al-Khaseeb is the palm and date district on Shatt Al-Arab south of Basra",
+        "example": "نخيل أبو الخصيب على طول الشط"
       }
     ],
     "naj": [
@@ -4255,6 +4264,15 @@
         "noteAr": "جبل القهر في الريث شرق جازان، من أعلى قمم الجنوب الغربي، وإطلالته على تهامة",
         "note": "Jabal al-Qahar in al-Raith east of Jizan is among the southwest's highest peaks, overlooking Tihama",
         "example": "من قمة القهر تشوف تهامة كلها"
+      },
+      {
+        "id": "famous.abu_areesh",
+        "text": "أبو عريش",
+        "english": "Abu Arish",
+        "standard": "أبو عريش",
+        "noteAr": "أبو عريش، من أقدم مدن جازان، وسوقها الشعبي من أشهر أسواق المنطقة",
+        "note": "Abu Arish is among Jizan's oldest towns, with one of the region's best-known markets",
+        "example": "سوق أبو عريش يوم الثلاثاء"
       }
     ],
     "shm": [
@@ -4402,6 +4420,15 @@
         "noteAr": "جبل سلمى في حائل، جبل أحمر ونقوش قديمة، ومقصد أهل المنطقة في الكشتات",
         "note": "Jabal Salma in Ha'il is a red mountain with ancient carvings, a favorite camping spot for locals",
         "example": "الشتاء في سلمى غير"
+      },
+      {
+        "id": "famous.faid",
+        "text": "فيد",
+        "english": "Faid",
+        "standard": "فيد",
+        "noteAr": "فيد، بلدة تاريخية جنوب حايل، كانت محطة على طريق زبيدة للحج",
+        "note": "Faid is a historic town south of Ha'il, once a stop on the Zubaydah pilgrimage road",
+        "example": "فيد على درب زبيدة"
       }
     ],
     "kuw": [
@@ -5483,6 +5510,15 @@
         "noteAr": "دار الحجر في وادي ظهر قرب صنعاء، قصر مبني فوق صخرة، من أشهر معالم اليمن",
         "note": "Dar al-Hajar in Wadi Dhahr near Sana'a is a palace built on a single rock, an icon of Yemen",
         "example": "دار الحجر باين من بعيد فوق الصخرة"
+      },
+      {
+        "id": "famous.saleh_mosque",
+        "text": "جامع الصالح",
+        "english": "Al-Saleh Mosque",
+        "standard": "جامع الصالح",
+        "noteAr": "جامع الصالح في صنعاء، أكبر جامع في اليمن، بمآذنه الست",
+        "note": "Al-Saleh Mosque in Sana'a is Yemen's largest, with six minarets",
+        "example": "جامع الصالح يتسع لعشرات الآلاف"
       }
     ],
     "ade": [
@@ -5629,6 +5665,15 @@
         "noteAr": "خور مكسر في عدن، الحي اللي فيه المطار وجامعة عدن وكورنيش جميل على الخور",
         "note": "Khor Maksar is Aden's modern quarter, home of the airport, Aden University and a pretty lagoon corniche",
         "example": "خور مكسر قلب عدن الحديث"
+      },
+      {
+        "id": "famous.tawahi",
+        "text": "التواهي",
+        "english": "Tawahi",
+        "standard": "التواهي",
+        "noteAr": "التواهي، حي عدن العريق عند الميناء، من أيام الإنجليز",
+        "note": "Tawahi is Aden's old quarter by the port, dating to the British era",
+        "example": "التواهي سمّوها ستيمبوينت زمان"
       }
     ],
     "had": [
@@ -5773,6 +5818,15 @@
         "noteAr": "وادي دوعن في حضرموت، قراه الملونة معلقة على الجبال، ومنه أغلى عسل في العالم",
         "note": "Wadi Do'an in Hadhramaut has colorful villages clinging to the cliffs and produces the world's priciest honey",
         "example": "بيوت دوعن معلقة على الجبل"
+      },
+      {
+        "id": "famous.shihr",
+        "text": "الشحر",
+        "english": "Al-Shihr",
+        "standard": "الشحر",
+        "noteAr": "الشحر، ميناء حضرموت القديم، منه كان يطلع البخور والسمك المجفف",
+        "note": "Al-Shihr is Hadhramaut's old port, once shipping frankincense and dried fish",
+        "example": "الشحر ميناء حضرموت من زمان"
       }
     ],
     "sud": [
@@ -5921,6 +5975,15 @@
         "noteAr": "أهرامات مروي في الشمالية، أهرامات مملكة كوش النوبية، أكثر من 200 هرم في الصحراء",
         "note": "The pyramids of Meroe, built by the Nubian Kingdom of Kush, number over 200 in the desert",
         "example": "أهرامات مروي أكثر من أهرامات مصر عدداً"
+      },
+      {
+        "id": "famous.omdurman",
+        "text": "أم درمان",
+        "english": "Omdurman",
+        "standard": "أم درمان",
+        "noteAr": "أم درمان، أكبر مدن السودان، وسوقها الشعبي من أشهر أسواق البلد",
+        "note": "Omdurman is Sudan's largest city, and its open market among the country's most famous",
+        "example": "سوق أم درمان فيه كل حاجة"
       }
     ],
     "chd": [
@@ -6065,6 +6128,15 @@
         "noteAr": "هضبة إنيدي في شمال تشاد، كثبان وتكوينات صخرية وأقواس طبيعية، مسجلة في اليونسكو",
         "note": "The Ennedi plateau in northern Chad is a land of dunes, rock formations and natural arches, a UNESCO site",
         "example": "إنيدي أجمل صحراء تشاد"
+      },
+      {
+        "id": "famous.njamena",
+        "text": "نجامينا",
+        "english": "N'Djamena",
+        "standard": "نجامينا",
+        "noteAr": "نجامينا، عاصمة تشاد، على نهر شاري قبالة الكاميرون",
+        "note": "N'Djamena, Chad's capital, sits on the Chari river facing Cameroon",
+        "example": "نجامينا على ضفة شاري"
       }
     ],
     "mar": [
@@ -7145,6 +7217,15 @@
         "noteAr": "محمية حوض أركين على الأطلسي، من أكبر محميات الطيور المهاجرة في أفريقيا، مسجلة في اليونسكو",
         "note": "Banc d'Arguin on the Atlantic is among Africa's biggest migratory-bird sanctuaries, a UNESCO site",
         "example": "حوض أركين مليان طيور وسمك"
+      },
+      {
+        "id": "famous.oualata",
+        "text": "ولاتة",
+        "english": "Oualata",
+        "standard": "ولاتة",
+        "noteAr": "ولاتة، مدينة قديمة في الحوض الشرقي، مسجلة في اليونسكو مع شنقيط ووادان",
+        "note": "Oualata is an ancient town in the Hodh Ech Chargui, UNESCO-listed with Chinguetti and Ouadane",
+        "example": "ولاتة من مدن الباظور القديمة"
       }
     ],
     "cnl": [
