@@ -1153,6 +1153,15 @@
         "noteAr": "من أقدم مدن الشرقية على طريق الحج القديم، فيها آثار إسلامية عمرها قرون",
         "note": "Bilbeis is one of Sharqia's oldest cities, a stop on the old Hajj road with centuries-old Islamic monuments",
         "example": "بلبيس من المدن العريقة في الشرقية"
+      },
+      {
+        "id": "famous.san_el_hagar",
+        "text": "صان الحجر",
+        "english": "San el-Hagar (Tanis)",
+        "standard": "صان الحجر",
+        "noteAr": "صان الحجر هي تانيس القديمة، مدينة فرعونية عظيمة في الشرقية وكنوزها في المتحف",
+        "note": "San el-Hagar is ancient Tanis, a great pharaonic city in Sharqia whose treasures fill the museum",
+        "example": "كنوز تانيس طلعت من صان الحجر"
       }
     ],
     "dkh": [
@@ -1288,6 +1297,15 @@
         "noteAr": "كوكب الشرق، اتولدت في قرية تماي الزهايرة مركز السنبلاوين بالدقهلية",
         "note": "Umm Kulthum, the Star of the East, was born in the village of Tamay El-Zahayra in Dakahlia",
         "example": "الدقهلية بلد أم كلثوم"
+      },
+      {
+        "id": "famous.mansoura_corniche",
+        "text": "كورنيش المنصورة",
+        "english": "the Mansoura corniche",
+        "standard": "كورنيش المنصورة",
+        "noteAr": "كورنيش المنصورة على فرع دمياط من النيل، نزهة أهل المحافظة كل مساء",
+        "note": "Mansoura's corniche runs on the Damietta branch of the Nile, the governorate's evening promenade",
+        "example": "الكورنيش في المنصورة بيتزحم بالليل"
       }
     ],
     "mnf": [
@@ -1422,6 +1440,15 @@
         "noteAr": "عاصمة المنوفية، مدينة القطن والتعليم في قلب الدلتا",
         "note": "Shebin El-Kom, Monufia's capital, is a cotton and university town in the heart of the Delta",
         "example": "شبين الكوم نص ساعة من كوبري قويسنا"
+      },
+      {
+        "id": "famous.sadat_city",
+        "text": "مدينة السادات",
+        "english": "Sadat City",
+        "standard": "مدينة السادات",
+        "noteAr": "مدينة السادات في المنوفية، مدينة صناعية كبيرة على طريق مصر إسكندرية الصحراوي",
+        "note": "Sadat City in Monufia is a major industrial city on the Cairo-Alexandria desert road",
+        "example": "مصانع كتير في مدينة السادات"
       }
     ],
     "ghr": [
@@ -1557,6 +1584,15 @@
         "noteAr": "مدينة فرعونية قديمة في الغربية، كانت عاصمة مصر في عصر ملوكها",
         "note": "Sammanoud in Gharbia was ancient Sebennytos, capital of Egypt under its 30th-dynasty kings",
         "example": "سمنود مدينة فرعونية عمرها آلاف السنين"
+      },
+      {
+        "id": "famous.ahmad_badawi_mosque",
+        "text": "مسجد السيد البدوي",
+        "english": "the Ahmad al-Badawi Mosque",
+        "standard": "مسجد السيد أحمد البدوي",
+        "noteAr": "مسجد السيد أحمد البدوي في طنطا، من أكبر مزارات مصر ومولده الأشهر في البلد",
+        "note": "The Ahmad al-Badawi Mosque in Tanta is one of Egypt's biggest shrines, home of the country's most famous moulid",
+        "example": "الناس تقصد طنطا لمسجد البدوي"
       }
     ],
     "bhr": [
@@ -3089,6 +3125,15 @@
         "noteAr": "المدينة الرومانية الكاملة شمال الأردن، أعمدتها وساحاتها من أفضل آثار روما برا إيطاليا",
         "note": "Jerash is one of the best-preserved Roman cities in the world, with colonnaded streets and grand theatres",
         "example": "مهرجان جرش بينعمل كل سنة وسط الآثار"
+      },
+      {
+        "id": "famous.wadi_rum",
+        "text": "وادي رم",
+        "english": "Wadi Rum",
+        "standard": "وادي رم",
+        "noteAr": "وادي رم، وادي القمر، صحراء حمراء وسماء مليانة نجوم، وعشا بدوي تحت السما",
+        "note": "Wadi Rum, the Valley of the Moon, is red desert under a sky full of stars, with Bedouin dinners outdoors",
+        "example": "الليلة بنبات في وادي رم"
       }
     ],
     "bag": [
@@ -3373,6 +3418,15 @@
         "noteAr": "مرقد النبي يونس على تل التوبة في الموصل، معلم إسلامي ومسيحي ويهودي مع بعض",
         "note": "The Nabi Yunus shrine on Tell al-Tawba in Mosul was a sacred site for Muslims, Christians and Jews alike",
         "example": "النبي يونس من رموز الموصل عبر التاريخ"
+      },
+      {
+        "id": "famous.bashtabiya",
+        "text": "قلعة باشطابيا",
+        "english": "Bashtabiya Castle",
+        "standard": "قلعة باشطابيا",
+        "noteAr": "قلعة باشطابيا على دجلة في الموصل القديمة، من حصون المدينة التاريخية",
+        "note": "Bashtabiya Castle stands on the Tigris in old Mosul, one of the city's historic forts",
+        "example": "باشطابيا واقفة على النهر من مئات السنين"
       }
     ],
     "bas": [
@@ -4216,6 +4270,15 @@
         "noteAr": "السوق الشعبي القديم في قلب مدينة الكويت، بحرين وبن وحلا وقعدة شاي",
         "note": "Souk Al-Mubarakiya is Kuwait City's historic market, famous for its baharat, dates and traditional teahouses",
         "example": "سوق المباركية ريحته هيل وبخور"
+      },
+      {
+        "id": "famous.failaka",
+        "text": "جزيرة فيلكا",
+        "english": "Failaka Island",
+        "standard": "جزيرة فيلكا",
+        "noteAr": "جزيرة فيلكا قدام الكويت، فيها آثار يونانية وبيوت قديمة، ورحلة البحر لها قصيرة",
+        "note": "Failaka Island off Kuwait holds Greek ruins and old houses, a short ferry ride away",
+        "example": "الويكند نروح فيلكا بالفيري"
       }
     ],
     "emi": [
@@ -4355,6 +4418,15 @@
         "noteAr": "المتحف البيضاوي المكتوب عليه بالخط العربي، من أجدد علامات دبي",
         "note": "The Museum of the Future, its torus covered in Arabic calligraphy, is Dubai's newest landmark",
         "example": "متحف المستقبل على شارع الشيخ زايد"
+      },
+      {
+        "id": "famous.sheikh_zayed_mosque",
+        "text": "جامع الشيخ زايد",
+        "english": "Sheikh Zayed Grand Mosque",
+        "standard": "جامع الشيخ زايد الكبير",
+        "noteAr": "جامع الشيخ زايد الكبير في أبوظبي، من أكبر وأجمل مساجد العالم",
+        "note": "Sheikh Zayed Grand Mosque in Abu Dhabi is among the largest and most beautiful mosques in the world",
+        "example": "جامع الشيخ زايد يبهر الكل"
       }
     ],
     "qat": [
@@ -4493,6 +4565,15 @@
         "noteAr": "المتحف المبني على شكل وردة الصحراء، من أغرب وأجمل مباني الدوحة",
         "note": "The National Museum of Qatar, shaped like a desert rose, is one of Doha's most striking buildings",
         "example": "متحف قطر الوطني شكله يوقف الناس"
+      },
+      {
+        "id": "famous.the_pearl_qatar",
+        "text": "اللؤلؤة",
+        "english": "The Pearl-Qatar",
+        "standard": "اللؤلؤة قطر",
+        "noteAr": "اللؤلؤة جزيرة اصطناعية في الدوحة، مراسي وكافيهات ومطاعم على البحر",
+        "note": "The Pearl is Doha's man-made island with marinas, cafes and restaurants on the water",
+        "example": "العشا اليوم في اللؤلؤة"
       }
     ],
     "bah": [
@@ -4632,6 +4713,15 @@
         "noteAr": "البوابة التاريخية في وسط المنامة، مدخل سوق المنامة القديم من سنة ١٩٤٩",
         "note": "Bab Al Bahrain is the historic gateway to Manama's old souq, standing since 1949",
         "example": "من باب البحرين تبدأ جولة السوق"
+      },
+      {
+        "id": "famous.bahrain_fort",
+        "text": "قلعة البحرين",
+        "english": "Bahrain Fort",
+        "standard": "قلعة البحرين",
+        "noteAr": "قلعة البحرين قرب المنامة، موقع دلمون الأثري، مسجلة في اليونسكو",
+        "note": "Bahrain Fort near Manama is the archaeological site of Dilmun, a UNESCO World Heritage site",
+        "example": "من قلعة البحرين تشوف البحر والتاريخ مع بعض"
       }
     ],
     "oma": [
@@ -4770,6 +4860,15 @@
         "noteAr": "أشهر قلعة في عمان، برجها الدائري الضخم حارس عاصمة عمان القديمة",
         "note": "Nizwa Fort with its massive round tower is Oman's most visited castle, guarding the old capital",
         "example": "نزوى قلعة وسوق وتاريخ"
+      },
+      {
+        "id": "famous.sqb_grand_mosque",
+        "text": "جامع السلطان قابوس الأكبر",
+        "english": "Sultan Qaboos Grand Mosque",
+        "standard": "جامع السلطان قابوس الأكبر",
+        "noteAr": "جامع السلطان قابوس الأكبر في مسقط، سجادته كانت أكبر سجادة يدوية في العالم",
+        "note": "Sultan Qaboos Grand Mosque in Muscat once held the world's largest hand-woven carpet",
+        "example": "الجامع الأكبر في مسقط يستاهل الزيارة"
       }
     ],
     "dho": [
@@ -4906,6 +5005,15 @@
         "noteAr": "شاطئ ظفار الأبيض بنافوراته الطبيعية اللي بتفجر من الصخر وقت المد",
         "note": "Al Mughsail near Salalah is famed for its white sands and natural blowholes that erupt through the rock",
         "example": "نافورات المغسيل بتوصل عالي في الخريف"
+      },
+      {
+        "id": "famous.taqah_castle",
+        "text": "قلعة طاقة",
+        "english": "Taqah Castle",
+        "standard": "قلعة طاقة",
+        "noteAr": "قلعة طاقة شرق صلالة، حصن قديم يطل على الساحل، وفي الخريف تكون وسط الخضرة",
+        "note": "Taqah Castle east of Salalah is an old fort overlooking the coast, surrounded by green in khareef",
+        "example": "في الخريف قلعة طاقة وسط الخضرة"
       }
     ],
     "san": [
