@@ -3608,6 +3608,15 @@
         "noteAr": "كورنيش البصرة على شط العرب، سهرات العوائل البصرية كل ليلة",
         "note": "The Basra corniche runs along Shatt al-Arab, where Basrawi families spend their evenings",
         "example": "بالليل الكورنيش يتعب عالم"
+      },
+      {
+        "id": "famous.zubair",
+        "text": "الزبير",
+        "english": "Zubair",
+        "standard": "الزبير",
+        "noteAr": "الزبير غرب البصرة، مدينة قديمة بأسوار وآثار، من أقدم مدن العراق الإسلامية",
+        "note": "Zubair west of Basra is a walled old town, one of Iraq's earliest Islamic cities",
+        "example": "الزبير أقدم مدن العراق الإسلامية"
       }
     ],
     "naj": [
@@ -4039,6 +4048,15 @@
         "noteAr": "وادي لجب في جازان، شق جبلي بمياه جارية وخضرة دائمة، من عجائب الجنوب",
         "note": "Wadi Lajab in Jizan is a mountain canyon with running water and year-round green, a wonder of the south",
         "example": "الناس تروح وادي لجب تتسبح وتتفسح"
+      },
+      {
+        "id": "famous.jabal_al_qahar",
+        "text": "جبل القهر",
+        "english": "Jabal al-Qahar",
+        "standard": "جبل القهر",
+        "noteAr": "جبل القهر في الريث شرق جازان، من أعلى قمم الجنوب الغربي، وإطلالته على تهامة",
+        "note": "Jabal al-Qahar in al-Raith east of Jizan is among the southwest's highest peaks, overlooking Tihama",
+        "example": "من قمة القهر تشوف تهامة كلها"
       }
     ],
     "shm": [
@@ -4177,6 +4195,15 @@
         "noteAr": "جبّة في حائل، نقوش جبل أم سنمان الصخرية مسجلة في اليونسكو",
         "note": "Jubbah in Ha'il holds the rock carvings of Jabal Umm Sinman, a UNESCO World Heritage site",
         "example": "نقوش جبّة عمرها آلاف السنين"
+      },
+      {
+        "id": "famous.jabal_salma",
+        "text": "جبل سلمى",
+        "english": "Jabal Salma",
+        "standard": "جبل سلمى",
+        "noteAr": "جبل سلمى في حائل، جبل أحمر ونقوش قديمة، ومقصد أهل المنطقة في الكشتات",
+        "note": "Jabal Salma in Ha'il is a red mountain with ancient carvings, a favorite camping spot for locals",
+        "example": "الشتاء في سلمى غير"
       }
     ],
     "kuw": [
@@ -5195,6 +5222,15 @@
         "noteAr": "من أقدم جوامع الإسلام، في قلب صنعاء القديمة المسجلة في اليونسكو",
         "note": "The Great Mosque of Sana'a is among the oldest mosques in Islam, in the heart of the UNESCO-listed old city",
         "example": "الجامع الكبير في قلب صنعاء القديمة"
+      },
+      {
+        "id": "famous.dar_al_hajar",
+        "text": "دار الحجر",
+        "english": "Dar al-Hajar",
+        "standard": "دار الحجر",
+        "noteAr": "دار الحجر في وادي ظهر قرب صنعاء، قصر مبني فوق صخرة، من أشهر معالم اليمن",
+        "note": "Dar al-Hajar in Wadi Dhahr near Sana'a is a palace built on a single rock, an icon of Yemen",
+        "example": "دار الحجر باين من بعيد فوق الصخرة"
       }
     ],
     "ade": [
@@ -5332,6 +5368,15 @@
         "noteAr": "قلعة صيرة على الجبل في مدخل عدن، حامية الميناء من قرون",
         "note": "Sira Fortress sits on the mountain at Aden's entrance and guarded the port for centuries",
         "example": "قلعة صيرة شاهدة على تاريخ عدن كله"
+      },
+      {
+        "id": "famous.khor_maksar",
+        "text": "خور مكسر",
+        "english": "Khor Maksar",
+        "standard": "خور مكسر",
+        "noteAr": "خور مكسر في عدن، الحي اللي فيه المطار وجامعة عدن وكورنيش جميل على الخور",
+        "note": "Khor Maksar is Aden's modern quarter, home of the airport, Aden University and a pretty lagoon corniche",
+        "example": "خور مكسر قلب عدن الحديث"
       }
     ],
     "had": [
@@ -5467,6 +5512,15 @@
         "noteAr": "سيئون عاصمة وادي حضرموت، قصر السلطان الكثيري الطيني من أكبر مباني الطين في العالم",
         "note": "Say'un, capital of Wadi Hadhramaut, has the Kathiri sultans' mud-brick palace, one of the largest mud buildings in the world",
         "example": "قصر سيئون أبيض وشامخ في قلب الوادي"
+      },
+      {
+        "id": "famous.wadi_doan",
+        "text": "وادي دوعن",
+        "english": "Wadi Do'an",
+        "standard": "وادي دوعن",
+        "noteAr": "وادي دوعن في حضرموت، قراه الملونة معلقة على الجبال، ومنه أغلى عسل في العالم",
+        "note": "Wadi Do'an in Hadhramaut has colorful villages clinging to the cliffs and produces the world's priciest honey",
+        "example": "بيوت دوعن معلقة على الجبل"
       }
     ],
     "sud": [
@@ -5606,6 +5660,15 @@
         "noteAr": "الخرطوم عند ملتقى النيلين الأبيض والأزرق، من أشهر مناظر السودان",
         "note": "Khartoum sits where the White and Blue Niles meet, Sudan's most famous view",
         "example": "في المقرن تشوف النيلين بيلتقوا"
+      },
+      {
+        "id": "famous.meroe",
+        "text": "أهرامات مروي",
+        "english": "the pyramids of Meroe",
+        "standard": "أهرامات مروي",
+        "noteAr": "أهرامات مروي في الشمالية، أهرامات مملكة كوش النوبية، أكثر من 200 هرم في الصحراء",
+        "note": "The pyramids of Meroe, built by the Nubian Kingdom of Kush, number over 200 in the desert",
+        "example": "أهرامات مروي أكثر من أهرامات مصر عدداً"
       }
     ],
     "chd": [
@@ -5741,6 +5804,15 @@
         "noteAr": "أبشيه عاصمة الشرق التاريخية، مدينة السلطنات القديمة وأسواق القوافل",
         "note": "Abeche is Chad's historic eastern capital, city of old sultanates and caravan markets",
         "example": "أبشيه بوابة شرق تشاد"
+      },
+      {
+        "id": "famous.ennedi",
+        "text": "إنيدي",
+        "english": "the Ennedi plateau",
+        "standard": "هضبة إنيدي",
+        "noteAr": "هضبة إنيدي في شمال تشاد، كثبان وتكوينات صخرية وأقواس طبيعية، مسجلة في اليونسكو",
+        "note": "The Ennedi plateau in northern Chad is a land of dunes, rock formations and natural arches, a UNESCO site",
+        "example": "إنيدي أجمل صحراء تشاد"
       }
     ],
     "mar": [
@@ -6758,6 +6830,15 @@
         "noteAr": "نواكشوط العاصمة على الأطلسي، أكبر مدن موريتانيا وسوقها الكبير",
         "note": "Nouakchott on the Atlantic is Mauritania's capital and largest city, with its big central market",
         "example": "سوق نواكشوط الكبير اسمه الكبيتال"
+      },
+      {
+        "id": "famous.banc_darguin",
+        "text": "حوض أركين",
+        "english": "Banc d'Arguin",
+        "standard": "حوض أركين",
+        "noteAr": "محمية حوض أركين على الأطلسي، من أكبر محميات الطيور المهاجرة في أفريقيا، مسجلة في اليونسكو",
+        "note": "Banc d'Arguin on the Atlantic is among Africa's biggest migratory-bird sanctuaries, a UNESCO site",
+        "example": "حوض أركين مليان طيور وسمك"
       }
     ],
     "cnl": [
