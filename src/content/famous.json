@@ -729,6 +729,15 @@
         "noteAr": "تحية الوداع الأشهر في الفصحى، ومعناها: اذهب في سلام الله",
         "note": "The most common formal farewell in Arabic, literally: go with safety",
         "example": "مع السلامة، أراك قريباً"
+      },
+      {
+        "id": "famous.masaa_al_khair",
+        "text": "مساء الخير",
+        "english": "good evening",
+        "standard": "مساء الخير",
+        "noteAr": "تحية المساء في الفصحى، والرد عليها: مساء النور",
+        "note": "The formal evening greeting; the reply is masa an-nur",
+        "example": "مساء الخير، كيف كان يومك؟"
       }
     ],
     "cai": [
@@ -876,6 +885,15 @@
         "noteAr": "الأزهر الشريف، أقدم جامعة إسلامية في العالم، في قلب القاهرة التاريخية",
         "note": "Al-Azhar in historic Cairo is the oldest Islamic university in the world",
         "example": "الأزهر مناره على كل مصر"
+      },
+      {
+        "id": "famous.muizz_street",
+        "text": "شارع المعز",
+        "english": "Al-Muizz street",
+        "standard": "شارع المعز لدين الله",
+        "noteAr": "شارع المعز لدين الله، أكبر متحف مفتوح للعمارة الإسلامية في العالم",
+        "note": "Al-Muizz street is the largest open-air museum of Islamic architecture in the world",
+        "example": "الليل في المعز غير"
       }
     ],
     "alx": [
@@ -1018,6 +1036,15 @@
         "noteAr": "ترام الرمل أقدم ترام في مصر وأفريقيا، بيلف الإسكندرية من 1860",
         "note": "The Raml tram is the oldest in Egypt and Africa, crossing Alexandria since 1860",
         "example": "اركب الترام الأزرق وشوف إسكندرية على مهلك"
+      },
+      {
+        "id": "famous.stanley_bridge",
+        "text": "كوبري ستانلي",
+        "english": "Stanley Bridge",
+        "standard": "كوبري ستانلي",
+        "noteAr": "كوبري ستانلي، أشهر كوبري على البحر في إسكندرية، وأيقونة صور المدينة",
+        "note": "Stanley Bridge is Alexandria's most famous seaside bridge and the city's photo icon",
+        "example": "صورة الغروب من ستانلي كلاسيك"
       }
     ],
     "shq": [
@@ -2302,6 +2329,15 @@
         "noteAr": "طابا على خليج العقبة، جنب جزيرة فرعون وقلعتها، ومنها تشوف أربع دول",
         "note": "Taba on the Gulf of Aqaba faces Pharaoh's Island, and four countries are visible from its shore",
         "example": "من طابا تشوف مصر والسعودية والأردن وفلسطين"
+      },
+      {
+        "id": "famous.ras_mohammed",
+        "text": "راس محمد",
+        "english": "Ras Mohammed",
+        "standard": "محمية راس محمد",
+        "noteAr": "محمية راس محمد عند ملتقى خليجي العقبة والسويس، من أجمل مواقع الغطس في العالم",
+        "note": "Ras Mohammed, where the gulfs of Aqaba and Suez meet, is among the world's finest dive sites",
+        "example": "الشعاب في راس محمد ألوانها خيال"
       }
     ],
     "dam": [
@@ -2451,6 +2487,15 @@
         "noteAr": "الياسمين على بلكونات بيوت الشام القديمة، ريحته عنوان دمشق",
         "note": "Jasmine on the balconies of old Damascene houses is the city's signature scent",
         "example": "ريحة الياسمين يعني دمشق"
+      },
+      {
+        "id": "famous.mount_qasioun",
+        "text": "جبل قاسيون",
+        "english": "Mount Qasioun",
+        "standard": "جبل قاسيون",
+        "noteAr": "جبل قاسيون مطل على دمشق، ومن قمته تشوف المدينة كلها بالليل",
+        "note": "Mount Qasioun overlooks Damascus; from its top you see the whole city at night",
+        "example": "من قاسيون دمشق تحتك كلها"
       }
     ],
     "alp": [
@@ -2744,6 +2789,15 @@
         "noteAr": "أرز الرب في بشري من أقدم أشجار الأرز، والأرزة رمز على علم لبنان",
         "note": "The Cedars of God in Bsharri are among the oldest cedar trees, and the cedar is on Lebanon's flag",
         "example": "الأرزة على العلم وفي قلب كل لبناني"
+      },
+      {
+        "id": "famous.byblos",
+        "text": "جبيل",
+        "english": "Byblos (Jbeil)",
+        "standard": "جبيل",
+        "noteAr": "جبيل (بيبلوس)، من أقدم مدن العالم المأهولة، ومنها انتشرت حروف الأبجدية",
+        "note": "Byblos is among the oldest inhabited cities in the world, where the alphabet spread from",
+        "example": "جبيل أقدم من التاريخ نفسه"
       }
     ],
     "psu": [
@@ -2890,6 +2944,15 @@
         "noteAr": "جبل جرزيم في نابلس، جبل البركة عند السامريين، مطل على البلدة القديمة",
         "note": "Mount Gerizim overlooks Nablus's old city and is the Samaritans' mount of blessing",
         "example": "من جرزيم تشوف نابلس كلها"
+      },
+      {
+        "id": "famous.akka",
+        "text": "عكا",
+        "english": "Acre (Akka)",
+        "standard": "عكا",
+        "noteAr": "عكا، مدينة الأسوار على البحر، سورها وقف قدام نابليون",
+        "note": "Acre, the walled city on the sea, whose walls withstood Napoleon",
+        "example": "سور عكا شامخ على البحر"
       }
     ],
     "psr": [
@@ -3034,6 +3097,15 @@
         "noteAr": "البحر الميت أوطا نقطة في العالم، ملحه يخليك تطفو من غير ما تسبح",
         "note": "The Dead Sea is the lowest point on Earth, so salty you float without swimming",
         "example": "في البحر الميت ما تغرقش حتى لو ما تعرفش تسبح"
+      },
+      {
+        "id": "famous.jericho",
+        "text": "أريحا",
+        "english": "Jericho",
+        "standard": "أريحا",
+        "noteAr": "أريحا، أقدم مدينة في التاريخ، تحت مستوى البحر، وموزها مشهور",
+        "note": "Jericho is the oldest city in history, sitting below sea level, famous for its bananas",
+        "example": "موز أريحا أحلى موز"
       }
     ],
     "jor": [
@@ -3327,6 +3399,15 @@
         "noteAr": "لقب بغداد، سموها الزوراء لأن دجلة يزور (ينحني) عندها",
         "note": "Baghdad's nickname al-Zawraa comes from the Tigris bending (yazurru) at the city",
         "example": "بغداد الزوراء، دار السلام"
+      },
+      {
+        "id": "famous.abu_nuwas_street",
+        "text": "شارع أبو نؤاس",
+        "english": "Abu Nuwas street",
+        "standard": "شارع أبو نؤاس",
+        "noteAr": "شارع أبو نؤاس على دجلة، سمك مسقوف وكورنيش ومقاهي على النهر",
+        "note": "Abu Nuwas street runs along the Tigris with masgouf restaurants, a corniche and riverside cafes",
+        "example": "المسقوف على أبو نؤاس غير"
       }
     ],
     "mos": [
@@ -3765,6 +3846,15 @@
         "noteAr": "وادي حنيفة الوادي التاريخي اللي يخترق الرياض، متنفس أهلها في الويكند",
         "note": "Wadi Hanifa is the historic valley running through Riyadh, where families walk on weekends",
         "example": "الجمعة العوائل تمشي في وادي حنيفة"
+      },
+      {
+        "id": "famous.souk_al_zal",
+        "text": "سوق الزل",
+        "english": "Souk al-Zal",
+        "standard": "سوق الزل",
+        "noteAr": "سوق الزل في الرياض القديمة، سوق البشت والعود والتراث من 1901",
+        "note": "Souk al-Zal in old Riyadh has sold bishts, oud and heritage goods since 1901",
+        "example": "البشت من سوق الزل"
       }
     ],
     "hij": [
@@ -3911,6 +4001,15 @@
         "noteAr": "كورنيش جدة على البحر الأحمر، وفيه نافورة الملك فهد أعلى نافورة في العالم",
         "note": "Jeddah's corniche on the Red Sea holds King Fahd's Fountain, the tallest in the world",
         "example": "العصرية على كورنيش جدة ما تتفوت"
+      },
+      {
+        "id": "famous.taif_roses",
+        "text": "ورد الطائف",
+        "english": "Taif roses",
+        "standard": "ورد الطائف",
+        "noteAr": "ورد الطائف أغلى ورد في الجزيرة، منه يتصنع دهن الورد المشهور",
+        "note": "Taif roses are the most prized in the peninsula, distilled into famous rose oil",
+        "example": "موسم الورد في الطائف ريحته توصل لجدة"
       }
     ],
     "jiz": [
@@ -5959,6 +6058,15 @@
         "noteAr": "مراكش الحمراء، مدينة الجامع الفنا والأسواق والحدائق، لونها الطوبي معروف",
         "note": "Marrakech, the Red City, famous for Jemaa el-Fna, its souks and gardens, and its red clay walls",
         "example": "مراكش تفرحك حتى ونت غير تمشي فيها"
+      },
+      {
+        "id": "famous.fes",
+        "text": "فاس",
+        "english": "Fes",
+        "standard": "فاس",
+        "noteAr": "فاس، من أقدم المدن العتيقة في العالم، وفيها جامعة القرويين أقدم جامعة في التاريخ",
+        "note": "Fes holds one of the oldest medinas in the world and al-Qarawiyyin, the oldest university",
+        "example": "فاس العتيقة دوّار بلا نهاية"
       }
     ],
     "jeb": [
