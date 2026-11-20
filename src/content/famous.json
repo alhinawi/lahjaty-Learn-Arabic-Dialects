@@ -720,6 +720,15 @@
         "noteAr": "رد الشكر الأشهر في الفصحى، وبتتقال كمان للاستئذان وجلب الانتباه",
         "note": "The classic reply to 'thank you' in MSA, also used to say excuse me or get someone's attention",
         "example": "— شكراً جزيلاً! — عفواً، هذا واجبنا"
+      },
+      {
+        "id": "famous.ma3a_al_salama",
+        "text": "مع السلامة",
+        "english": "goodbye",
+        "standard": "مع السلامة",
+        "noteAr": "تحية الوداع الأشهر في الفصحى، ومعناها: اذهب في سلام الله",
+        "note": "The most common formal farewell in Arabic, literally: go with safety",
+        "example": "مع السلامة، أراك قريباً"
       }
     ],
     "cai": [
@@ -858,6 +867,15 @@
         "noteAr": "أطول بناء في مصر زمان، على جزيرة الزمالك، من فوقه بتشوف القاهرة كلها",
         "note": "Cairo Tower on Zamalek island was for decades Egypt's tallest structure, with a view over the whole city",
         "example": "من برج القاهرة بتشوف النيل والأهرامات يوم الصفا"
+      },
+      {
+        "id": "famous.al_azhar",
+        "text": "الأزهر الشريف",
+        "english": "Al-Azhar",
+        "standard": "الأزهر الشريف",
+        "noteAr": "الأزهر الشريف، أقدم جامعة إسلامية في العالم، في قلب القاهرة التاريخية",
+        "note": "Al-Azhar in historic Cairo is the oldest Islamic university in the world",
+        "example": "الأزهر مناره على كل مصر"
       }
     ],
     "alx": [
@@ -991,6 +1009,15 @@
         "noteAr": "أشهر سندوتش شارع في إسكندرية، كبدة مقلية بالثوم والشطة في عيش فينو",
         "note": "The Alexandrian liver sandwich, fried liver with garlic and chili in fino bread, is the city's street food icon",
         "example": "كبدة إسكندراني على الكورنيش ولا أحلى"
+      },
+      {
+        "id": "famous.raml_tram",
+        "text": "ترام الرمل",
+        "english": "the Raml tram",
+        "standard": "ترام الرمل",
+        "noteAr": "ترام الرمل أقدم ترام في مصر وأفريقيا، بيلف الإسكندرية من 1860",
+        "note": "The Raml tram is the oldest in Egypt and Africa, crossing Alexandria since 1860",
+        "example": "اركب الترام الأزرق وشوف إسكندرية على مهلك"
       }
     ],
     "shq": [
@@ -2194,6 +2221,15 @@
         "noteAr": "مدينة الغوص العالمية في أقصى جنوب سيناء، شعابها المرجانية من الأجمل في العالم",
         "note": "Sharm el-Sheikh at the tip of South Sinai is a world diving capital with some of the finest coral reefs",
         "example": "شرم الشيخ فيها خليج نعمة ومحمية راس محمد"
+      },
+      {
+        "id": "famous.taba",
+        "text": "طابا",
+        "english": "Taba",
+        "standard": "طابا",
+        "noteAr": "طابا على خليج العقبة، جنب جزيرة فرعون وقلعتها، ومنها تشوف أربع دول",
+        "note": "Taba on the Gulf of Aqaba faces Pharaoh's Island, and four countries are visible from its shore",
+        "example": "من طابا تشوف مصر والسعودية والأردن وفلسطين"
       }
     ],
     "dam": [
@@ -2334,6 +2370,15 @@
         "noteAr": "من أقدم وأعظم جوامع العالم، في قلب دمشق القديمة من ١٣٠٠ سنة",
         "note": "The Umayyad Mosque in the heart of Old Damascus is one of the oldest and grandest mosques in the world",
         "example": "سوق الحميدية بيوصلك لباب الجامع الأموي"
+      },
+      {
+        "id": "famous.damascus_jasmine",
+        "text": "الياسمين الدمشقي",
+        "english": "Damascus jasmine",
+        "standard": "الياسمين الدمشقي",
+        "noteAr": "الياسمين على بلكونات بيوت الشام القديمة، ريحته عنوان دمشق",
+        "note": "Jasmine on the balconies of old Damascene houses is the city's signature scent",
+        "example": "ريحة الياسمين يعني دمشق"
       }
     ],
     "alp": [
@@ -2609,6 +2654,15 @@
         "noteAr": "مدينة الشمس الرومانية في البقاع، فيها أضخم معابد رومانية بالعالم، تراث عالمي",
         "note": "Baalbek in the Beqaa holds the largest Roman temples in the world and hosts Lebanon's oldest festival",
         "example": "معبد باخوس في بعلبك أكبر من البارثينون"
+      },
+      {
+        "id": "famous.lebanon_cedar",
+        "text": "أرز لبنان",
+        "english": "the cedars of Lebanon",
+        "standard": "أرز لبنان",
+        "noteAr": "أرز الرب في بشري من أقدم أشجار الأرز، والأرزة رمز على علم لبنان",
+        "note": "The Cedars of God in Bsharri are among the oldest cedar trees, and the cedar is on Lebanon's flag",
+        "example": "الأرزة على العلم وفي قلب كل لبناني"
       }
     ],
     "psu": [
@@ -2746,6 +2800,15 @@
         "noteAr": "أشهر أبواب القدس القديمة، مدرجاته ساحة الناس في رمضان والأعياد",
         "note": "Damascus Gate is the most famous gate of Jerusalem's Old City, its steps a gathering place in Ramadan and on feast days",
         "example": "في رمضان القدس كلها بتكون عند باب العامود"
+      },
+      {
+        "id": "famous.mount_gerizim",
+        "text": "جبل جرزيم",
+        "english": "Mount Gerizim",
+        "standard": "جبل جرزيم",
+        "noteAr": "جبل جرزيم في نابلس، جبل البركة عند السامريين، مطل على البلدة القديمة",
+        "note": "Mount Gerizim overlooks Nablus's old city and is the Samaritans' mount of blessing",
+        "example": "من جرزيم تشوف نابلس كلها"
       }
     ],
     "psr": [
@@ -2881,6 +2944,15 @@
         "noteAr": "مدينة الحرم الإبراهيمي والزجاج والخزف، من أقدم مدن فلسطين",
         "note": "Hebron, city of the Ibrahimi sanctuary and famous glass and pottery workshops, is one of Palestine's oldest cities",
         "example": "زجاج الخليل مشهور من مئات السنين"
+      },
+      {
+        "id": "famous.dead_sea",
+        "text": "البحر الميت",
+        "english": "the Dead Sea",
+        "standard": "البحر الميت",
+        "noteAr": "البحر الميت أوطا نقطة في العالم، ملحه يخليك تطفو من غير ما تسبح",
+        "note": "The Dead Sea is the lowest point on Earth, so salty you float without swimming",
+        "example": "في البحر الميت ما تغرقش حتى لو ما تعرفش تسبح"
       }
     ],
     "jor": [
@@ -3156,6 +3228,15 @@
         "noteAr": "الحي القديم على الكاظم شمال بغداد، فيه أشهر مرقد في العراق وسوق تراثي",
         "note": "Kadhimiya is Baghdad's historic shrine district on the river, with one of Iraq's most visited sanctuaries and an old bazaar",
         "example": "الكاظمية في الزيارات بتتعمر بالناس"
+      },
+      {
+        "id": "famous.al_zawraa",
+        "text": "الزوراء",
+        "english": "al-Zawraa (Baghdad)",
+        "standard": "الزوراء",
+        "noteAr": "لقب بغداد، سموها الزوراء لأن دجلة يزور (ينحني) عندها",
+        "note": "Baghdad's nickname al-Zawraa comes from the Tigris bending (yazurru) at the city",
+        "example": "بغداد الزوراء، دار السلام"
       }
     ],
     "mos": [
@@ -3567,6 +3648,15 @@
         "noteAr": "أشهر برج في الرياض، شكله فاتورة مفتوحة من فوق، فيه جسر مشاهدة على ارتفاع ٣٠٠ متر",
         "note": "The Kingdom Centre is Riyadh's most famous tower, with its open inverted arch and 300-metre sky bridge",
         "example": "برج المملكة من علامات الرياض الحديثة"
+      },
+      {
+        "id": "famous.wadi_hanifa",
+        "text": "وادي حنيفة",
+        "english": "Wadi Hanifa",
+        "standard": "وادي حنيفة",
+        "noteAr": "وادي حنيفة الوادي التاريخي اللي يخترق الرياض، متنفس أهلها في الويكند",
+        "note": "Wadi Hanifa is the historic valley running through Riyadh, where families walk on weekends",
+        "example": "الجمعة العوائل تمشي في وادي حنيفة"
       }
     ],
     "hij": [
@@ -3704,6 +3794,15 @@
         "noteAr": "أعظم مسجد في العالم وفيه الكعبة، في قلب مكة في الحجاز",
         "note": "The Grand Mosque in Makkah, home of the Kaaba, is the holiest site in Islam and the heart of the Hijaz",
         "example": "المسجد الحرام بيسع ملايين المصلين"
+      },
+      {
+        "id": "famous.jeddah_corniche",
+        "text": "كورنيش جدة",
+        "english": "the Jeddah corniche",
+        "standard": "كورنيش جدة",
+        "noteAr": "كورنيش جدة على البحر الأحمر، وفيه نافورة الملك فهد أعلى نافورة في العالم",
+        "note": "Jeddah's corniche on the Red Sea holds King Fahd's Fountain, the tallest in the world",
+        "example": "العصرية على كورنيش جدة ما تتفوت"
       }
     ],
     "jiz": [
@@ -5626,6 +5725,15 @@
         "noteAr": "جامع كازابلانكا على البحر، مئذنته أعلى مئذنة في العالم",
         "note": "The Hassan II Mosque in Casablanca stands partly over the Atlantic and has the world's tallest minaret",
         "example": "مسجد الحسن الثاني نصو فوق المحيط"
+      },
+      {
+        "id": "famous.marrakech",
+        "text": "مراكش الحمراء",
+        "english": "Marrakech the Red City",
+        "standard": "مراكش",
+        "noteAr": "مراكش الحمراء، مدينة الجامع الفنا والأسواق والحدائق، لونها الطوبي معروف",
+        "note": "Marrakech, the Red City, famous for Jemaa el-Fna, its souks and gardens, and its red clay walls",
+        "example": "مراكش تفرحك حتى ونت غير تمشي فيها"
       }
     ],
     "jeb": [
