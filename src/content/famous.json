@@ -738,6 +738,15 @@
         "noteAr": "تحية المساء في الفصحى، والرد عليها: مساء النور",
         "note": "The formal evening greeting; the reply is masa an-nur",
         "example": "مساء الخير، كيف كان يومك؟"
+      },
+      {
+        "id": "famous.sabah_el_kheir",
+        "text": "صباح الخير",
+        "english": "good morning",
+        "standard": "صباح الخير",
+        "noteAr": "صباح الخير، التحية الصباحية في كل البلاد العربية، وجوابها صباح النور",
+        "note": "Sabah el-kheir is the morning greeting across the Arab world, answered with sabah el-noor",
+        "example": "صباح الخير يا جماعة"
       }
     ],
     "cai": [
@@ -894,6 +903,15 @@
         "noteAr": "شارع المعز لدين الله، أكبر متحف مفتوح للعمارة الإسلامية في العالم",
         "note": "Al-Muizz street is the largest open-air museum of Islamic architecture in the world",
         "example": "الليل في المعز غير"
+      },
+      {
+        "id": "famous.cairo_citadel",
+        "text": "قلعة صلاح الدين",
+        "english": "the Cairo Citadel",
+        "standard": "قلعة صلاح الدين",
+        "noteAr": "قلعة صلاح الدين على جبل المقطم، وفيها مسجد محمد علي بمآذنه العالية",
+        "note": "Saladin's Citadel sits on the Muqattam hill and holds the Muhammad Ali Mosque with its tall minarets",
+        "example": "من القلعة تشوف القاهرة كلها"
       }
     ],
     "alx": [
@@ -1045,6 +1063,15 @@
         "noteAr": "كوبري ستانلي، أشهر كوبري على البحر في إسكندرية، وأيقونة صور المدينة",
         "note": "Stanley Bridge is Alexandria's most famous seaside bridge and the city's photo icon",
         "example": "صورة الغروب من ستانلي كلاسيك"
+      },
+      {
+        "id": "famous.bahary",
+        "text": "بحري",
+        "english": "Bahary and Anfoushi",
+        "standard": "بحري",
+        "noteAr": "بحري والأنفوشي، حي الصيادين القديم في إسكندرية، بلد السمك والمراكب",
+        "note": "Bahary and Anfoushi form Alexandria's old fishermen quarter, home of fish and boats",
+        "example": "السمك في بحري غير أي حتة"
       }
     ],
     "shq": [
@@ -2410,6 +2437,15 @@
         "noteAr": "محمية راس محمد عند ملتقى خليجي العقبة والسويس، من أجمل مواقع الغطس في العالم",
         "note": "Ras Mohammed, where the gulfs of Aqaba and Suez meet, is among the world's finest dive sites",
         "example": "الشعاب في راس محمد ألوانها خيال"
+      },
+      {
+        "id": "famous.nuweiba",
+        "text": "نويبع",
+        "english": "Nuweiba",
+        "standard": "نويبع",
+        "noteAr": "نويبع، خليج هادئ على خليج العقبة بين دهب وطابا",
+        "note": "Nuweiba is a quiet bay on the Gulf of Aqaba between Dahab and Taba",
+        "example": "نويبع هدوء وبحر صافي"
       }
     ],
     "dam": [
@@ -2568,6 +2604,15 @@
         "noteAr": "جبل قاسيون مطل على دمشق، ومن قمته تشوف المدينة كلها بالليل",
         "note": "Mount Qasioun overlooks Damascus; from its top you see the whole city at night",
         "example": "من قاسيون دمشق تحتك كلها"
+      },
+      {
+        "id": "famous.bab_touma",
+        "text": "باب توما",
+        "english": "Bab Touma",
+        "standard": "باب توما",
+        "noteAr": "باب توما، حي دمشق القديمة العريق بأزقته وبيوته الحجرية",
+        "note": "Bab Touma is an old quarter of Damascus with stone houses and narrow alleys",
+        "example": "أزقة باب توما كلها تاريخ"
       }
     ],
     "alp": [
@@ -2879,6 +2924,15 @@
         "noteAr": "جبيل (بيبلوس)، من أقدم مدن العالم المأهولة، ومنها انتشرت حروف الأبجدية",
         "note": "Byblos is among the oldest inhabited cities in the world, where the alphabet spread from",
         "example": "جبيل أقدم من التاريخ نفسه"
+      },
+      {
+        "id": "famous.jeita",
+        "text": "مغارة جعيتا",
+        "english": "Jeita Grotto",
+        "standard": "مغارة جعيتا",
+        "noteAr": "مغارة جعيتا في لبنان، كهوف كلسية ببحيرة جوفية، من أجمل مغاور العالم",
+        "note": "Jeita Grotto in Lebanon is a limestone cave system with an underground lake, among the world's finest",
+        "example": "مغارة جعيتا بالقارب جوا الكهف"
       }
     ],
     "psu": [
@@ -3034,6 +3088,15 @@
         "noteAr": "عكا، مدينة الأسوار على البحر، سورها وقف قدام نابليون",
         "note": "Acre, the walled city on the sea, whose walls withstood Napoleon",
         "example": "سور عكا شامخ على البحر"
+      },
+      {
+        "id": "famous.haifa",
+        "text": "حيفا",
+        "english": "Haifa",
+        "standard": "حيفا",
+        "noteAr": "حيفا، مدينة الجبل والبحر، وفيها حدائق الكرمل المعلقة",
+        "note": "Haifa is the city of mountain and sea, with the hanging Carmel gardens",
+        "example": "حيفا جبلها نازل على البحر"
       }
     ],
     "psr": [
@@ -3187,6 +3250,15 @@
         "noteAr": "أريحا، أقدم مدينة في التاريخ، تحت مستوى البحر، وموزها مشهور",
         "note": "Jericho is the oldest city in history, sitting below sea level, famous for its bananas",
         "example": "موز أريحا أحلى موز"
+      },
+      {
+        "id": "famous.gaza",
+        "text": "غزة",
+        "english": "Gaza",
+        "standard": "غزة",
+        "noteAr": "غزة، مدينة الساحل القديمة، ميناؤها من أقدم موانئ المتوسط",
+        "note": "Gaza is an ancient coastal city whose port is among the oldest on the Mediterranean",
+        "example": "غزة هاشم، مدينة عريقة على البحر"
       }
     ],
     "jor": [
@@ -3498,6 +3570,15 @@
         "noteAr": "شارع أبو نؤاس على دجلة، سمك مسقوف وكورنيش ومقاهي على النهر",
         "note": "Abu Nuwas street runs along the Tigris with masgouf restaurants, a corniche and riverside cafes",
         "example": "المسقوف على أبو نؤاس غير"
+      },
+      {
+        "id": "famous.taq_kisra",
+        "text": "طاق كسرى",
+        "english": "Taq Kisra (Arch of Ctesiphon)",
+        "standard": "طاق كسرى",
+        "noteAr": "طاق كسرى في المدائن جنوب بغداد، أعلى قوس طيني باقٍ من العالم القديم",
+        "note": "Taq Kisra at Ctesiphon south of Baghdad is the tallest surviving mud-brick arch of the ancient world",
+        "example": "طاق كسرى من زمن الساسانيين"
       }
     ],
     "mos": [
@@ -3963,6 +4044,15 @@
         "noteAr": "سوق الزل في الرياض القديمة، سوق البشت والعود والتراث من 1901",
         "note": "Souk al-Zal in old Riyadh has sold bishts, oud and heritage goods since 1901",
         "example": "البشت من سوق الزل"
+      },
+      {
+        "id": "famous.edge_of_world",
+        "text": "حافة العالم",
+        "english": "the Edge of the World (Jebel Fihrayn)",
+        "standard": "حافة العالم",
+        "noteAr": "حافة العالم، مطل صخري قريب من الرياض، يطل على سهول لا نهائية",
+        "note": "The Edge of the World is a cliff near Riyadh overlooking endless plains",
+        "example": "الغروب من حافة العالم منظر ما يتنسى"
       }
     ],
     "hij": [
@@ -4118,6 +4208,15 @@
         "noteAr": "ورد الطائف أغلى ورد في الجزيرة، منه يتصنع دهن الورد المشهور",
         "note": "Taif roses are the most prized in the peninsula, distilled into famous rose oil",
         "example": "موسم الورد في الطائف ريحته توصل لجدة"
+      },
+      {
+        "id": "famous.makkah_clock",
+        "text": "ساعة مكة",
+        "english": "the Makkah Clock Tower",
+        "standard": "ساعة مكة",
+        "noteAr": "ساعة مكة في أبراج البيت قبالة الحرم، من أكبر ساعات العالم",
+        "note": "The Makkah Clock Tower faces the Haram and holds one of the world's largest clock faces",
+        "example": "ساعة مكة تبان من بعيد"
       }
     ],
     "jiz": [
@@ -6292,6 +6391,15 @@
         "noteAr": "فاس، من أقدم المدن العتيقة في العالم، وفيها جامعة القرويين أقدم جامعة في التاريخ",
         "note": "Fes holds one of the oldest medinas in the world and al-Qarawiyyin, the oldest university",
         "example": "فاس العتيقة دوّار بلا نهاية"
+      },
+      {
+        "id": "famous.agadir",
+        "text": "أكادير",
+        "english": "Agadir",
+        "standard": "أكادير",
+        "noteAr": "أكادير، مدينة الشاطئ والشمس على الأطلسي، عاصمة سوس",
+        "note": "Agadir is the beach and sun city on the Atlantic, capital of the Souss",
+        "example": "شاطئ أكادير طويل وعريض"
       }
     ],
     "jeb": [
