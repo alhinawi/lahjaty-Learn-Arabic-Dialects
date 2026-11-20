@@ -3419,6 +3419,15 @@
         "noteAr": "جنات الماء والبردي جنوب العراق قرب البصرة، بيوت القصب والمشحوف، تراث عالمي",
         "note": "The Ahwar marshes south of Basra, with their reed houses and mashoof canoes, are a UNESCO World Heritage site",
         "example": "أهل الأهوار عايشين على الصيد والجاموس"
+      },
+      {
+        "id": "famous.basra_corniche",
+        "text": "كورنيش البصرة",
+        "english": "the Basra corniche",
+        "standard": "كورنيش البصرة",
+        "noteAr": "كورنيش البصرة على شط العرب، سهرات العوائل البصرية كل ليلة",
+        "note": "The Basra corniche runs along Shatt al-Arab, where Basrawi families spend their evenings",
+        "example": "بالليل الكورنيش يتعب عالم"
       }
     ],
     "naj": [
@@ -3823,6 +3832,15 @@
         "noteAr": "القلعة العثمانية على الجبل في وسط جيزان، شايفة المدينة والبحر",
         "note": "Al-Dosariyah Castle is an Ottoman-era fort on a hill overlooking Jizan city and the sea",
         "example": "من قلعة الدوسرية تشوف جيزان كلها"
+      },
+      {
+        "id": "famous.wadi_lajab",
+        "text": "وادي لجب",
+        "english": "Wadi Lajab",
+        "standard": "وادي لجب",
+        "noteAr": "وادي لجب في جازان، شق جبلي بمياه جارية وخضرة دائمة، من عجائب الجنوب",
+        "note": "Wadi Lajab in Jizan is a mountain canyon with running water and year-round green, a wonder of the south",
+        "example": "الناس تروح وادي لجب تتسبح وتتفسح"
       }
     ],
     "shm": [
@@ -3952,6 +3970,15 @@
         "noteAr": "القلعة الطينية على الجبل في وسط حايل، من أقدم معالم الشمال",
         "note": "A'arif Fort is the mudbrick citadel on a hill in the centre of Hail, one of the north's oldest landmarks",
         "example": "قلعة أعيرف من رموز حايل"
+      },
+      {
+        "id": "famous.jubbah",
+        "text": "جبّة",
+        "english": "Jubbah",
+        "standard": "جبّة",
+        "noteAr": "جبّة في حائل، نقوش جبل أم سنمان الصخرية مسجلة في اليونسكو",
+        "note": "Jubbah in Ha'il holds the rock carvings of Jabal Umm Sinman, a UNESCO World Heritage site",
+        "example": "نقوش جبّة عمرها آلاف السنين"
       }
     ],
     "kuw": [
@@ -4907,6 +4934,15 @@
         "noteAr": "السوق القديم جوه باب اليمن، تلقى فيه كل شي من البهارات للجمبية",
         "note": "Souk al-Milh inside Bab al-Yemen is Old Sana'a's great market, from spices to janbiya daggers",
         "example": "سوق الملح أقدم سوق في صنعاء"
+      },
+      {
+        "id": "famous.sanaa_great_mosque",
+        "text": "الجامع الكبير بصنعاء",
+        "english": "the Great Mosque of Sana'a",
+        "standard": "الجامع الكبير بصنعاء",
+        "noteAr": "من أقدم جوامع الإسلام، في قلب صنعاء القديمة المسجلة في اليونسكو",
+        "note": "The Great Mosque of Sana'a is among the oldest mosques in Islam, in the heart of the UNESCO-listed old city",
+        "example": "الجامع الكبير في قلب صنعاء القديمة"
       }
     ],
     "ade": [
@@ -5035,6 +5071,15 @@
         "noteAr": "من أقدم وأهم مواني العالم، كان محطة الفحم لسفن نصف الدنيا",
         "note": "The Port of Aden was once one of the busiest coaling stations in the world, on the route between Europe and Asia",
         "example": "ميناء عدن كان من أكبر مواني العالم زمان"
+      },
+      {
+        "id": "famous.sira_fortress",
+        "text": "قلعة صيرة",
+        "english": "Sira Fortress",
+        "standard": "قلعة صيرة",
+        "noteAr": "قلعة صيرة على الجبل في مدخل عدن، حامية الميناء من قرون",
+        "note": "Sira Fortress sits on the mountain at Aden's entrance and guarded the port for centuries",
+        "example": "قلعة صيرة شاهدة على تاريخ عدن كله"
       }
     ],
     "had": [
@@ -5161,6 +5206,15 @@
         "noteAr": "عاصمة حضرموت على البحر، بيوتها البيضا طالعة من الجبل للشاطي",
         "note": "Mukalla, the coastal capital of Hadhramaut, is known for its white houses climbing from the shore up the cliffs",
         "example": "المكلا بوابة حضرموت على بحر العرب"
+      },
+      {
+        "id": "famous.sayun",
+        "text": "سيئون",
+        "english": "Say'un",
+        "standard": "سيئون",
+        "noteAr": "سيئون عاصمة وادي حضرموت، قصر السلطان الكثيري الطيني من أكبر مباني الطين في العالم",
+        "note": "Say'un, capital of Wadi Hadhramaut, has the Kathiri sultans' mud-brick palace, one of the largest mud buildings in the world",
+        "example": "قصر سيئون أبيض وشامخ في قلب الوادي"
       }
     ],
     "sud": [
@@ -5291,6 +5345,15 @@
         "noteAr": "الجزيرة الخضرا في ملتقى النيلين بالخرطوم، مزارعها بتسقي العاصمة",
         "note": "Tuti Island sits at the meeting point of the two Niles in Khartoum and its farms feed the capital",
         "example": "توتي أخضر مكان في الخرطوم"
+      },
+      {
+        "id": "famous.two_niles",
+        "text": "لقاء النيلين",
+        "english": "the meeting of the two Niles",
+        "standard": "ملتقى النيلين",
+        "noteAr": "الخرطوم عند ملتقى النيلين الأبيض والأزرق، من أشهر مناظر السودان",
+        "note": "Khartoum sits where the White and Blue Niles meet, Sudan's most famous view",
+        "example": "في المقرن تشوف النيلين بيلتقوا"
       }
     ],
     "chd": [
@@ -5417,6 +5480,15 @@
         "noteAr": "أشهر محمية في تشاد، فيها الفيلة والزراف وطيور ما تتلقاش في حتة ثانية",
         "note": "Zakouma National Park is Chad's most famous wildlife reserve, home to elephants and rare birds",
         "example": "زاكوما من أحسن محميات أفريقيا"
+      },
+      {
+        "id": "famous.abeche",
+        "text": "أبشيه",
+        "english": "Abeche",
+        "standard": "أبشيه",
+        "noteAr": "أبشيه عاصمة الشرق التاريخية، مدينة السلطنات القديمة وأسواق القوافل",
+        "note": "Abeche is Chad's historic eastern capital, city of old sultanates and caravan markets",
+        "example": "أبشيه بوابة شرق تشاد"
       }
     ],
     "mar": [
@@ -6371,6 +6443,15 @@
         "noteAr": "مدينة القوافل القديمة في آدرار، أطلالها الحجرية تراث عالمي مثل شنقيط",
         "note": "Ouadane in the Adrar is an ancient caravan town whose stone ruins are UNESCO-listed, like Chinguetti",
         "example": "وادان كانت محطة قوافل الملح والذهب"
+      },
+      {
+        "id": "famous.nouakchott",
+        "text": "نواكشوط",
+        "english": "Nouakchott",
+        "standard": "نواكشوط",
+        "noteAr": "نواكشوط العاصمة على الأطلسي، أكبر مدن موريتانيا وسوقها الكبير",
+        "note": "Nouakchott on the Atlantic is Mauritania's capital and largest city, with its big central market",
+        "example": "سوق نواكشوط الكبير اسمه الكبيتال"
       }
     ],
     "cnl": [
