@@ -1189,6 +1189,15 @@
         "noteAr": "صان الحجر هي تانيس القديمة، مدينة فرعونية عظيمة في الشرقية وكنوزها في المتحف",
         "note": "San el-Hagar is ancient Tanis, a great pharaonic city in Sharqia whose treasures fill the museum",
         "example": "كنوز تانيس طلعت من صان الحجر"
+      },
+      {
+        "id": "famous.minya_el_qamh",
+        "text": "منيا القمح",
+        "english": "Minya el-Qamh",
+        "standard": "منيا القمح",
+        "noteAr": "منيا القمح في الشرقية، مدينة الغزل والنسيج من أيام محمد علي",
+        "note": "Minya el-Qamh in Sharqia has been a weaving and textiles town since Muhammad Ali's time",
+        "example": "نسيج منيا القمح له اسم من زمان"
       }
     ],
     "dkh": [
@@ -1333,6 +1342,15 @@
         "noteAr": "كورنيش المنصورة على فرع دمياط من النيل، نزهة أهل المحافظة كل مساء",
         "note": "Mansoura's corniche runs on the Damietta branch of the Nile, the governorate's evening promenade",
         "example": "الكورنيش في المنصورة بيتزحم بالليل"
+      },
+      {
+        "id": "famous.mit_ghamr",
+        "text": "ميت غمر",
+        "english": "Mit Ghamr",
+        "standard": "ميت غمر",
+        "noteAr": "ميت غمر في الدقهلية، عاصمة صناعة الألوميتال والأواني في مصر",
+        "note": "Mit Ghamr in Dakahlia is Egypt's capital of aluminium cookware making",
+        "example": "حلل ميت غمر في كل بيت"
       }
     ],
     "mnf": [
@@ -1476,6 +1494,15 @@
         "noteAr": "مدينة السادات في المنوفية، مدينة صناعية كبيرة على طريق مصر إسكندرية الصحراوي",
         "note": "Sadat City in Monufia is a major industrial city on the Cairo-Alexandria desert road",
         "example": "مصانع كتير في مدينة السادات"
+      },
+      {
+        "id": "famous.ashmoun_kilim",
+        "text": "كليم أشمون",
+        "english": "Ashmoun kilim",
+        "standard": "كليم أشمون",
+        "noteAr": "أشمون في المنوفية، مشهورة بالكليم والسجاد اليدوي اللي بيتصدّر لبره",
+        "note": "Ashmoun in Monufia is famous for handwoven kilims and rugs exported abroad",
+        "example": "كليم أشمون بيروح لبره"
       }
     ],
     "ghr": [
@@ -1620,6 +1647,15 @@
         "noteAr": "مسجد السيد أحمد البدوي في طنطا، من أكبر مزارات مصر ومولده الأشهر في البلد",
         "note": "The Ahmad al-Badawi Mosque in Tanta is one of Egypt's biggest shrines, home of the country's most famous moulid",
         "example": "الناس تقصد طنطا لمسجد البدوي"
+      },
+      {
+        "id": "famous.kafr_el_zayat",
+        "text": "كفر الزيات",
+        "english": "Kafr El-Zayat",
+        "standard": "كفر الزيات",
+        "noteAr": "كفر الزيات في الغربية، مدينة الزيوت والصابون، على النيل فرع رشيد",
+        "note": "Kafr El-Zayat in Gharbia is a town of oils and soap on the Rosetta branch of the Nile",
+        "example": "صابون كفر الزيات معروف في كل مصر"
       }
     ],
     "bhr": [
@@ -3251,6 +3287,15 @@
         "noteAr": "وادي رم، وادي القمر، صحراء حمراء وسماء مليانة نجوم، وعشا بدوي تحت السما",
         "note": "Wadi Rum, the Valley of the Moon, is red desert under a sky full of stars, with Bedouin dinners outdoors",
         "example": "الليلة بنبات في وادي رم"
+      },
+      {
+        "id": "famous.ajloun_castle",
+        "text": "قلعة عجلون",
+        "english": "Ajloun Castle",
+        "standard": "قلعة عجلون",
+        "noteAr": "قلعة عجلون بناها أحد قادة صلاح الدين، على جبل يطل على جبال الشمال الخضرة",
+        "note": "Ajloun Castle was built by one of Saladin's commanders, overlooking the green northern hills",
+        "example": "من عجلون تشوف كل الجبال الخضرة"
       }
     ],
     "bag": [
@@ -3553,6 +3598,15 @@
         "noteAr": "قلعة باشطابيا على دجلة في الموصل القديمة، من حصون المدينة التاريخية",
         "note": "Bashtabiya Castle stands on the Tigris in old Mosul, one of the city's historic forts",
         "example": "باشطابيا واقفة على النهر من مئات السنين"
+      },
+      {
+        "id": "famous.mar_behnam",
+        "text": "دير مار بهنام",
+        "english": "Mar Behnam monastery",
+        "standard": "دير مار بهنام",
+        "noteAr": "دير مار بهنام قرب الموصل، من أقدم أديرة العراق، من القرن الرابع",
+        "note": "Mar Behnam monastery near Mosul is among Iraq's oldest, dating to the fourth century",
+        "example": "مار بهنام من زمن المسيحية الأولى"
       }
     ],
     "bas": [
@@ -4450,6 +4504,15 @@
         "noteAr": "جزيرة فيلكا قدام الكويت، فيها آثار يونانية وبيوت قديمة، ورحلة البحر لها قصيرة",
         "note": "Failaka Island off Kuwait holds Greek ruins and old houses, a short ferry ride away",
         "example": "الويكند نروح فيلكا بالفيري"
+      },
+      {
+        "id": "famous.kuwait_grand_mosque",
+        "text": "المسجد الكبير",
+        "english": "the Grand Mosque of Kuwait",
+        "standard": "المسجد الكبير",
+        "noteAr": "المسجد الكبير في الكويت، أكبر مسجد في البلد، قبته ونقوشه مميزة",
+        "note": "Kuwait's Grand Mosque is the country's largest, known for its dome and calligraphy",
+        "example": "التراويح في المسجد الكبير عالم"
       }
     ],
     "emi": [
@@ -4598,6 +4661,15 @@
         "noteAr": "جامع الشيخ زايد الكبير في أبوظبي، من أكبر وأجمل مساجد العالم",
         "note": "Sheikh Zayed Grand Mosque in Abu Dhabi is among the largest and most beautiful mosques in the world",
         "example": "جامع الشيخ زايد يبهر الكل"
+      },
+      {
+        "id": "famous.louvre_abudhabi",
+        "text": "اللوفر أبوظبي",
+        "english": "Louvre Abu Dhabi",
+        "standard": "اللوفر أبوظبي",
+        "noteAr": "اللوفر أبوظبي في جزيرة السعديات، متحف عالمي تحت قبة كأنها بتمطر ضوء",
+        "note": "Louvre Abu Dhabi on Saadiyat Island sits under a dome that seems to rain light",
+        "example": "قبة اللوفر أبوظبي تحتها ضوء المطر"
       }
     ],
     "qat": [
@@ -4745,6 +4817,15 @@
         "noteAr": "اللؤلؤة جزيرة اصطناعية في الدوحة، مراسي وكافيهات ومطاعم على البحر",
         "note": "The Pearl is Doha's man-made island with marinas, cafes and restaurants on the water",
         "example": "العشا اليوم في اللؤلؤة"
+      },
+      {
+        "id": "famous.doha_corniche",
+        "text": "كورنيش الدوحة",
+        "english": "the Doha corniche",
+        "standard": "كورنيش الدوحة",
+        "noteAr": "كورنيش الدوحة سبع كيلو على الخليج، ومنه تشوف أبراج الخليج الغربي",
+        "note": "The Doha corniche runs seven kilometres on the Gulf with views of the West Bay towers",
+        "example": "المشي على كورنيش الدوحة وقت المغرب"
       }
     ],
     "bah": [
@@ -4893,6 +4974,15 @@
         "noteAr": "قلعة البحرين قرب المنامة، موقع دلمون الأثري، مسجلة في اليونسكو",
         "note": "Bahrain Fort near Manama is the archaeological site of Dilmun, a UNESCO World Heritage site",
         "example": "من قلعة البحرين تشوف البحر والتاريخ مع بعض"
+      },
+      {
+        "id": "famous.alfateh_mosque",
+        "text": "مسجد الفاتح",
+        "english": "Al-Fateh Grand Mosque",
+        "standard": "مسجد الفاتح",
+        "noteAr": "مسجد الفاتح في المنامة، من أكبر مساجد العالم، وقبته من الألياف الزجاجية",
+        "note": "Al-Fateh Grand Mosque in Manama is among the world's largest, with a fibreglass dome",
+        "example": "مسجد الفاتح يتسع لسبعة آلاف"
       }
     ],
     "oma": [
@@ -5040,6 +5130,15 @@
         "noteAr": "جامع السلطان قابوس الأكبر في مسقط، سجادته كانت أكبر سجادة يدوية في العالم",
         "note": "Sultan Qaboos Grand Mosque in Muscat once held the world's largest hand-woven carpet",
         "example": "الجامع الأكبر في مسقط يستاهل الزيارة"
+      },
+      {
+        "id": "famous.bahla_fort",
+        "text": "قلعة بهلا",
+        "english": "Bahla Fort",
+        "standard": "قلعة بهلا",
+        "noteAr": "قلعة بهلا، أكبر قلعة طينية في عمان، مسجلة في اليونسكو",
+        "note": "Bahla Fort is Oman's largest mud-brick fort and a UNESCO World Heritage site",
+        "example": "بهلا قلعتها من الطين وعريقة"
       }
     ],
     "dho": [
@@ -5185,6 +5284,15 @@
         "noteAr": "قلعة طاقة شرق صلالة، حصن قديم يطل على الساحل، وفي الخريف تكون وسط الخضرة",
         "note": "Taqah Castle east of Salalah is an old fort overlooking the coast, surrounded by green in khareef",
         "example": "في الخريف قلعة طاقة وسط الخضرة"
+      },
+      {
+        "id": "famous.sumhuram",
+        "text": "سمهرم",
+        "english": "Sumhuram (Khor Rori)",
+        "standard": "سمهرم",
+        "noteAr": "سمهرم عند خور روري، ميناء اللبان القديم، من أيام مملكة حضرموت",
+        "note": "Sumhuram at Khor Rori was the ancient frankincense port of the Hadhramaut kingdom",
+        "example": "من سمهرم كان اللبان يروح للعالم"
       }
     ],
     "san": [
