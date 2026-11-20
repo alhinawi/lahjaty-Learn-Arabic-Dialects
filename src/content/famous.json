@@ -1868,6 +1868,15 @@
         "noteAr": "رشيد في البحيرة، مدينة القلاع والمساجد العثمانية على فرع النيل اللي يحمل اسمها",
         "note": "Rosetta in Beheira is a town of Ottoman forts and mosques on the Nile branch named after it",
         "example": "رشيد مدينة عريقة على النيل"
+      },
+      {
+        "id": "famous.kafr_el_dawwar",
+        "text": "كفر الدوار",
+        "english": "Kafr El-Dawwar",
+        "standard": "كفر الدوار",
+        "noteAr": "كفر الدوار في البحيرة، مدينة الغزل والنسيج من أيام مصانع مصر الأولى",
+        "note": "Kafr El-Dawwar in Beheira is a spinning and weaving town from Egypt's first mills",
+        "example": "غزل كفر الدوار له اسم قديم"
       }
     ],
     "dmt": [
@@ -2017,6 +2026,15 @@
         "noteAr": "كفر البطيخ في دمياط، أشهر بطيخ في مصر بيتحصد منها",
         "note": "Kafr El-Bateekh in Damietta grows Egypt's most famous watermelons",
         "example": "بطيخ كفر البطيخ غير أي بطيخ"
+      },
+      {
+        "id": "famous.new_damietta",
+        "text": "دمياط الجديدة",
+        "english": "New Damietta",
+        "standard": "دمياط الجديدة",
+        "noteAr": "دمياط الجديدة، مدينة ساحلية حديثة شرق راس البر على البحر",
+        "note": "New Damietta is a modern coastal city east of Ras El-Bar on the sea",
+        "example": "دمياط الجديدة بحرها قريب ونضيف"
       }
     ],
     "kfs": [
@@ -2165,6 +2183,15 @@
         "noteAr": "تل الفراعين في كفر الشيخ، أطلال مدينة بوتو عاصمة الشمال في مصر القديمة",
         "note": "Tell El-Fara'in in Kafr El-Sheikh holds the ruins of Buto, ancient capital of the north",
         "example": "بوتو كانت عاصمة الدلتا من آلاف السنين"
+      },
+      {
+        "id": "famous.burg_el_burullus",
+        "text": "برج البرلس",
+        "english": "Burg El-Burullus",
+        "standard": "برج البرلس",
+        "noteAr": "برج البرلس، مدينة حديثة على بحيرة البرلس، بلد الصيد والمراكب",
+        "note": "Burg El-Burullus is a new town on Lake Burullus, a place of fishing and boats",
+        "example": "سمك برج البرلس طازة من البحيرة"
       }
     ],
     "sai": [
@@ -2318,6 +2345,15 @@
         "noteAr": "قنا، مدينة الصعيد على النيل، بلد القصب والسكر ومعبد دندرة جنبها",
         "note": "Qena is an Upper Egyptian Nile city, land of sugarcane, with Dendera temple beside it",
         "example": "قصب قنا أحلى قصب"
+      },
+      {
+        "id": "famous.esna",
+        "text": "إسنا",
+        "english": "Esna",
+        "standard": "إسنا",
+        "noteAr": "إسنا، مدينة القناطر ومعبد خنوم، جنوب الأقصر",
+        "note": "Esna, south of Luxor, is the town of the barrage and the Khnum temple",
+        "example": "معبد إسنا ألوانه لسه موجودة"
       }
     ],
     "sin": [
@@ -2804,6 +2840,15 @@
         "noteAr": "البيوت الحلبية القديمة بأحوشتها وقاعاتها وقبابها، تحفة العمارة الشامية",
         "note": "Old Aleppo houses with their courtyards, halls and domes are masterpieces of Levantine architecture",
         "example": "البيوت الحلبية حوشها في نص البيت"
+      },
+      {
+        "id": "famous.bab_al_faraj",
+        "text": "باب الفرج",
+        "english": "Bab al-Faraj",
+        "standard": "باب الفرج",
+        "noteAr": "باب الفرج، من أبواب حلب القديمة على نهر قويق",
+        "note": "Bab al-Faraj is one of old Aleppo's gates on the Quweiq river",
+        "example": "باب الفرج من أبواب حلب التسعة"
       }
     ],
     "leb": [
@@ -6662,6 +6707,15 @@
         "noteAr": "الحسيمة، مدينة الريف على البحر المتوسط، بكالانها وخلجانها",
         "note": "Al Hoceima is the Rif's city on the Mediterranean, known for its coves",
         "example": "الحسيمة بحرها صافي"
+      },
+      {
+        "id": "famous.nador",
+        "text": "الناظور",
+        "english": "Nador",
+        "standard": "الناظور",
+        "noteAr": "الناظور، مدينة الريف الشرقي على بحيرة مارشيكا",
+        "note": "Nador is the eastern Rif's city on the Marchika lagoon",
+        "example": "الناظور على مارشيكا والبحر"
       }
     ],
     "alg": [
@@ -6819,6 +6873,15 @@
         "noteAr": "وهران، عاصمة الغرب الجزائري ومدينة الراي والبحر",
         "note": "Oran is the capital of western Algeria, the city of Raï music and the sea",
         "example": "وهران الباهية"
+      },
+      {
+        "id": "famous.constantine",
+        "text": "قسنطينة",
+        "english": "Constantine",
+        "standard": "قسنطينة",
+        "noteAr": "قسنطينة، مدينة الجسور المعلقة فوق الوادي العميق",
+        "note": "Constantine is the city of hanging bridges over a deep ravine",
+        "example": "جسور قسنطينة بين الصخور"
       }
     ],
     "tun": [
@@ -6976,6 +7039,15 @@
         "noteAr": "القيروان، أول مدينة إسلامية في بلاد المغرب، وفيها جامع عقبة بن نافع",
         "note": "Kairouan was the first Islamic city in the Maghreb, home of the Uqba ibn Nafi mosque",
         "example": "القيروان عاصمة الأغالبة"
+      },
+      {
+        "id": "famous.sousse",
+        "text": "سوسة",
+        "english": "Sousse",
+        "standard": "سوسة",
+        "noteAr": "سوسة، مدينة الساحل، ورباطها القديم مسجل في اليونسكو",
+        "note": "Sousse is a Sahel city whose old ribat is UNESCO-listed",
+        "example": "رباط سوسة على البحر مباشرة"
       }
     ],
     "tri": [
@@ -7132,6 +7204,15 @@
         "noteAr": "غدامس، لؤلؤة الصحراء، مدينة قديمة مسقوفة مسجلة في اليونسكو",
         "note": "Ghadames, the pearl of the desert, is an ancient covered town on the UNESCO list",
         "example": "غدامس بيوتها مسقوفة من الحر"
+      },
+      {
+        "id": "famous.leptis",
+        "text": "لبدة",
+        "english": "Leptis Magna",
+        "standard": "لبدة الكبرى",
+        "noteAr": "لبدة الكبرى قرب الخمس، مدينة رومانية كاملة، من أعظم آثار ليبيا",
+        "note": "Leptis Magna near Khoms is a complete Roman city, among Libya's greatest ruins",
+        "example": "مسرح لبدة لسه واقف من زمن الرومان"
       }
     ],
     "ben": [
@@ -7287,6 +7368,15 @@
         "noteAr": "البيضاء، مدينة الجبل الأخضر الكبيرة، من أعرق مدن برقة",
         "note": "Al Bayda is a major city of the Jabal Akhdar and one of Cyrenaica's oldest",
         "example": "البيضاء جوها بارد في الصيف"
+      },
+      {
+        "id": "famous.tobruk",
+        "text": "طبرق",
+        "english": "Tobruk",
+        "standard": "طبرق",
+        "noteAr": "طبرق، مدينة وميناء شرق برقة على البحر المتوسط",
+        "note": "Tobruk is a city and port in eastern Cyrenaica on the Mediterranean",
+        "example": "طبرق ميناؤها طبيعي وعميق"
       }
     ],
     "has": [
@@ -7558,6 +7648,15 @@
         "noteAr": "بور توفيق، أول حي في السويس اتبنى مع حفر قناة السويس",
         "note": "Port Tawfik was the first Suez district, built while the canal was being dug",
         "example": "بور توفيق من أيام ديليسيبس"
+      },
+      {
+        "id": "famous.fayed",
+        "text": "فايد",
+        "english": "Fayed",
+        "standard": "فايد",
+        "noteAr": "فايد، قرية على البحيرة المرة الكبرى، مشهورة بسمك البوري المشوي",
+        "note": "Fayed is a village on the Great Bitter Lake, famous for grilled mullet",
+        "example": "بوري فايد على الفحم"
       }
     ],
     "bdw": [
@@ -7674,6 +7773,15 @@
         "noteAr": "زيتون سيوة من أجود أنواع الزيتون، وزيتها من أحسن الزيوت",
         "note": "Siwa olives are among the finest, and their oil among the best",
         "example": "زيتون سيوة للمخلل مالوش حل"
+      },
+      {
+        "id": "famous.salloum",
+        "text": "السلوم",
+        "english": "Salloum",
+        "standard": "السلوم",
+        "noteAr": "السلوم، آخر مدن مصر غربًا على الحدود مع ليبيا",
+        "note": "Salloum is Egypt's westernmost town on the Libyan border",
+        "example": "من السلوم تشوف ليبيا"
       }
     ]
   }
