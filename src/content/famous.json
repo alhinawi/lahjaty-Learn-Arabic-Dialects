@@ -1652,6 +1652,15 @@
         "noteAr": "البحيرة القديمة بين البحيرة وإسكندرية، من أقدم مناطق الصيد في مصر",
         "note": "Lake Mariout, between Beheira and Alexandria, is one of Egypt's oldest fishing grounds",
         "example": "بحيرة مريوط مذكورة من أيام الفراعنة"
+      },
+      {
+        "id": "famous.lake_edku",
+        "text": "بحيرة إدكو",
+        "english": "Lake Edku",
+        "standard": "بحيرة إدكو",
+        "noteAr": "بحيرة ساحلية في البحيرة شرق الإسكندرية، مشهورة بالصيد وقريبة من رشيد",
+        "note": "Lake Edku is a coastal lagoon in Beheira east of Alexandria, known for fishing, near Rosetta",
+        "example": "سمك بحيرة إدكو طازة على طول"
       }
     ],
     "dmt": [
@@ -1774,6 +1783,15 @@
         "noteAr": "مدينة الصيادين وبناة المراكب عند مصب النيل في دمياط",
         "note": "Ezbet El-Borg at the Nile mouth is Damietta's fishermen and shipwrights town",
         "example": "مراكب الصيد كلها بتتعمل في عزبة البرج"
+      },
+      {
+        "id": "famous.masjid_al_bahr",
+        "text": "مسجد البحر",
+        "english": "the Sea Mosque",
+        "standard": "مسجد البحر",
+        "noteAr": "معلم دمياط الأشهر على الكورنيش، بيبان من النيل ومن البحر",
+        "note": "Al-Bahr Mosque is Damietta's iconic landmark on the corniche, seen from both the Nile and the sea",
+        "example": "أي دمياطي هيقولك اقصدني عند مسجد البحر"
       }
     ],
     "kfs": [
@@ -1895,6 +1913,15 @@
         "noteAr": "القرية اللي فيها صخرة أثرية عليها أثر قدم، ومزار قبطي شهير",
         "note": "Sakha in Kafr El-Sheikh holds a famous rock said to bear a sacred footprint and a renowned Coptic shrine",
         "example": "سخا مزار بيجيلها ناس من كل حتة"
+      },
+      {
+        "id": "famous.desouk",
+        "text": "دسوق",
+        "english": "Desouk",
+        "standard": "دسوق",
+        "noteAr": "مدينة دسوق على فرع رشيد، مدينة الصوفية وبها مسجد سيدي إبراهيم الدسوقي",
+        "note": "Desouk on the Rosetta branch of the Nile is a city of Sufis, home to the shrine of Sidi Ibrahim al-Dessouki",
+        "example": "في المولد دسوق بتتملى زوار من كل مصر"
       }
     ],
     "sai": [
@@ -2021,6 +2048,15 @@
         "noteAr": "طيبة القديمة، فيها تلت آثار العالم: الكرنك والأقصر ووادي الملوك",
         "note": "Luxor, ancient Thebes, holds a third of the world's antiquities: Karnak, Luxor Temple and the Valley of the Kings",
         "example": "الصعيد كله تاريخ والأقصر عاصمته"
+      },
+      {
+        "id": "famous.aswan",
+        "text": "أسوان",
+        "english": "Aswan",
+        "standard": "أسوان",
+        "noteAr": "أقصى جنوب مصر، بلد النوبة والسد العالي وجزيرة فيلة",
+        "note": "Aswan at Egypt's far south is the land of Nubia, the High Dam and Philae island",
+        "example": "الشتاء في أسوان دفا وجمال"
       }
     ],
     "sin": [
@@ -2426,6 +2462,15 @@
         "noteAr": "حلب عاصمة الكبة في العالم العربي، فيها أكتر من ٢٠ نوع",
         "note": "Aleppo is the kibbeh capital of the Arab world with more than twenty local varieties",
         "example": "الكبة الحلبية على الفطور ولا أحلى"
+      },
+      {
+        "id": "famous.aleppo_great_mosque",
+        "text": "الجامع الأموي بحلب",
+        "english": "the Great Mosque of Aleppo",
+        "standard": "الجامع الأموي بحلب",
+        "noteAr": "من أقدم جوامع الشام، فيه ضريح النبي زكريا حسب التقليد",
+        "note": "Aleppo's Umayyad Mosque is one of the oldest in the Levant, said to hold the tomb of Zechariah",
+        "example": "الجامع الأموي في قلب حلب القديمة"
       }
     ],
     "leb": [
@@ -5636,6 +5681,15 @@
         "noteAr": "مدينة الجداريات على الأطلسي في شمال المغرب، مهرجانها الثقافي عالمي",
         "note": "Asilah on Morocco's Atlantic coast is famed for its murals and international cultural festival",
         "example": "في الصيف أصيلة كلها فن وألوان"
+      },
+      {
+        "id": "famous.tangier",
+        "text": "طنجة",
+        "english": "Tangier",
+        "standard": "طنجة",
+        "noteAr": "عروس الشمال على مضيق جبل طارق، بين البحر المتوسط والأطلسي",
+        "note": "Tangier, the Bride of the North, sits on the Strait of Gibraltar between the Mediterranean and the Atlantic",
+        "example": "من طنجة تشوف إسبانيا بالعين"
       }
     ],
     "alg": [
@@ -5766,6 +5820,15 @@
         "noteAr": "المدينة العتيقة فوق البحر في الجزائر العاصمة، تراث عالمي ورمز الثورة",
         "note": "The Casbah, Algiers' Ottoman-era old city above the sea, is a UNESCO site and a symbol of the revolution",
         "example": "القصبة فيها أزقة ضيقة وبيوت عثمانية"
+      },
+      {
+        "id": "famous.maqam_echahid",
+        "text": "مقام الشهيد",
+        "english": "Maqam Echahid",
+        "standard": "مقام الشهيد",
+        "noteAr": "نصب الشهيد فوق الجزائر العاصمة، رمز استقلال البلاد من 1982",
+        "note": "The Martyrs' Memorial above Algiers is the symbol of the country's independence, built in 1982",
+        "example": "أول ما توصل للعاصمة تشوف مقام الشهيد"
       }
     ],
     "tun": [
@@ -5896,6 +5959,15 @@
         "noteAr": "القرية الزرقا والبيضا على الجبل فوق البحر، أشهر صورة في تونس",
         "note": "Sidi Bou Said, the blue-and-white village above the sea, is the most famous postcard of Tunisia",
         "example": "سيدي بوسعيد أجمل قرية في تونس"
+      },
+      {
+        "id": "famous.zitouna",
+        "text": "جامع الزيتونة",
+        "english": "the Zitouna Mosque",
+        "standard": "جامع الزيتونة",
+        "noteAr": "أقدم جامع في تونس العاصمة، في قلب المدينة العتيقة، وكان جامعة للعلم من قرون",
+        "note": "The Zitouna Mosque in the heart of Tunis's old medina is the capital's oldest mosque and was a seat of learning for centuries",
+        "example": "الزيتونة قلب المدينة العتيقة"
       }
     ],
     "tri": [
@@ -6025,6 +6097,15 @@
         "noteAr": "أزقة وأسواق طرابلس القديمة حوالين السرايا الحمراء، فيها الجامع الكبير والقوس الروماني",
         "note": "Tripoli's Old Town around the Red Castle holds the Great Mosque, the Roman arch and the old souqs",
         "example": "المدينة القديمة فيها أحلى حلى وصناعة تقليدية"
+      },
+      {
+        "id": "famous.sabratha",
+        "text": "صبراتة",
+        "english": "Sabratha",
+        "standard": "صبراتة",
+        "noteAr": "مدينة أثرية رومانية غرب طرابلس، مسرحها من أجمل مسارح العالم القديم",
+        "note": "Sabratha west of Tripoli is a Roman city whose theatre is among the finest of the ancient world",
+        "example": "مسرح صبراتة على البحر مباشرة"
       }
     ],
     "ben": [
@@ -6153,6 +6234,15 @@
         "noteAr": "أول جامعة في ليبيا، اتأسست سنة ١٩٥٥ في قصر المنار",
         "note": "The University of Benghazi, founded in 1955 in Al-Manar Palace, was the first university in Libya",
         "example": "جامعة بنغازي هي أقدم جامعة في ليبيا"
+      },
+      {
+        "id": "famous.jabal_al_akhdar",
+        "text": "الجبل الأخضر",
+        "english": "Jabal al-Akhdar",
+        "standard": "الجبل الأخضر",
+        "noteAr": "جبل برقة الأخضر شرق بنغازي، منطقة البيضاء والمرج، أخضر وممطور شتاءً",
+        "note": "The Green Mountain of Cyrenaica east of Benghazi, around al-Bayda and al-Marj, green and rainy in winter",
+        "example": "في الشتا الجبل الأخضر يبرد ويمطر"
       }
     ],
     "has": [
@@ -6370,6 +6460,15 @@
         "noteAr": "البحيرتان المالحتان اللي قناة السويس بتعدي فيهم بين الإسماعيلية والسويس",
         "note": "The Bitter Lakes are the salt lakes the Suez Canal crosses between Ismailia and Suez",
         "example": "السفن بتستنى في البحيرات المرة"
+      },
+      {
+        "id": "famous.ain_sokhna",
+        "text": "العين السخنة",
+        "english": "Ain Sokhna",
+        "standard": "العين السخنة",
+        "noteAr": "منتجع العين السخنة على خليج السويس، أقرب شط للقاهرة",
+        "note": "Ain Sokhna on the Gulf of Suez is the closest beach resort to Cairo",
+        "example": "الويك إند أهل القاهرة بينزلوا العين السخنة"
       }
     ],
     "bdw": [
@@ -6459,6 +6558,15 @@
         "noteAr": "جبل سيوة المشهور بحمامات الرمل السخنة اللي بتعالج المفاصل",
         "note": "Jebel Dakrur in Siwa is famous for its healing hot-sand baths, a tradition every summer",
         "example": "أهل سيوة بيروحوا جبل الدكرور لحمامات الرمل"
+      },
+      {
+        "id": "famous.shali_fortress",
+        "text": "قلعة شالي",
+        "english": "Shali fortress",
+        "standard": "قلعة شالي",
+        "noteAr": "البلدة القديمة في سيوة مبنية من الكرشيف (طين وملح)، بقاياها لسه شامخة",
+        "note": "Shali is Siwa's old fortress town built of karsheef (mud and salt), its ruins still standing",
+        "example": "السياح بيطلعوا شالي وقت الغروب"
       }
     ]
   }
