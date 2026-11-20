@@ -1117,6 +1117,15 @@
         "noteAr": "أول مدينة صناعية جديدة في مصر، في قلب الشرقية، اتسمت على يوم العبور",
         "note": "10th of Ramadan City in Sharqia was Egypt's first new industrial city, named after the day of the 1973 crossing",
         "example": "العاشر من رمضان فيها أكبر مصانع في مصر"
+      },
+      {
+        "id": "famous.bilbeis",
+        "text": "بلبيس",
+        "english": "Bilbeis",
+        "standard": "بلبيس",
+        "noteAr": "من أقدم مدن الشرقية على طريق الحج القديم، فيها آثار إسلامية عمرها قرون",
+        "note": "Bilbeis is one of Sharqia's oldest cities, a stop on the old Hajj road with centuries-old Islamic monuments",
+        "example": "بلبيس من المدن العريقة في الشرقية"
       }
     ],
     "dkh": [
@@ -1243,6 +1252,15 @@
         "noteAr": "أكبر بحيرات الدلتا، عيشة الصيادين في الدقهلية وبورسعيد ودمياط",
         "note": "Lake Manzala is the largest of the Nile Delta lakes and the livelihood of fishermen across three governorates",
         "example": "سمك بحيرة المنزلة من أحسن ما يتقلي"
+      },
+      {
+        "id": "famous.om_kalthoum",
+        "text": "أم كلثوم",
+        "english": "Umm Kulthum",
+        "standard": "أم كلثوم",
+        "noteAr": "كوكب الشرق، اتولدت في قرية تماي الزهايرة مركز السنبلاوين بالدقهلية",
+        "note": "Umm Kulthum, the Star of the East, was born in the village of Tamay El-Zahayra in Dakahlia",
+        "example": "الدقهلية بلد أم كلثوم"
       }
     ],
     "mnf": [
@@ -1368,6 +1386,15 @@
         "noteAr": "القرية الفرعونية في المنوفية اللي فيها متحف مفتوح للآثار",
         "note": "Sers El-Layan in Monufia is a living Pharaonic-themed village with an open-air antiquities museum",
         "example": "سرس الليان مشهورة بالتماثيل الفرعونية"
+      },
+      {
+        "id": "famous.shebin_el_kom",
+        "text": "شبين الكوم",
+        "english": "Shebin El-Kom",
+        "standard": "شبين الكوم",
+        "noteAr": "عاصمة المنوفية، مدينة القطن والتعليم في قلب الدلتا",
+        "note": "Shebin El-Kom, Monufia's capital, is a cotton and university town in the heart of the Delta",
+        "example": "شبين الكوم نص ساعة من كوبري قويسنا"
       }
     ],
     "ghr": [
@@ -1494,6 +1521,15 @@
         "noteAr": "نادي عمال الغزل العريق، من كبار أندية الدوري المصري زمان",
         "note": "Ghazl El-Mahalla, the textile workers' club, is one of the historic names of Egyptian football",
         "example": "غزل المحلة أخد الدوري سنة ٧٣"
+      },
+      {
+        "id": "famous.sammanoud",
+        "text": "سمنود",
+        "english": "Sammanoud (ancient Sebennytos)",
+        "standard": "سمنود",
+        "noteAr": "مدينة فرعونية قديمة في الغربية، كانت عاصمة مصر في عصر ملوكها",
+        "note": "Sammanoud in Gharbia was ancient Sebennytos, capital of Egypt under its 30th-dynasty kings",
+        "example": "سمنود مدينة فرعونية عمرها آلاف السنين"
       }
     ],
     "bhr": [
@@ -2927,6 +2963,15 @@
         "noteAr": "المدينة الوردية المنحوتة في الصخر، من عجائب الدنيا السبع الجديدة",
         "note": "Petra, the rose-red Nabataean city carved in rock, is one of the New Seven Wonders of the World",
         "example": "أي زائر للأردن لازم يشوف البترا"
+      },
+      {
+        "id": "famous.jerash",
+        "text": "جرش",
+        "english": "Jerash",
+        "standard": "جرش",
+        "noteAr": "المدينة الرومانية الكاملة شمال الأردن، أعمدتها وساحاتها من أفضل آثار روما برا إيطاليا",
+        "note": "Jerash is one of the best-preserved Roman cities in the world, with colonnaded streets and grand theatres",
+        "example": "مهرجان جرش بينعمل كل سنة وسط الآثار"
       }
     ],
     "bag": [
@@ -3193,6 +3238,15 @@
         "noteAr": "عاصمة الإمبراطورية الآشورية، أطلالها على الضفة الشرقية للموصل",
         "note": "The ruins of Nineveh, capital of the Assyrian Empire, lie on Mosul's eastern bank",
         "example": "الموصل مدينة على أرض نينوى"
+      },
+      {
+        "id": "famous.nabi_yunus",
+        "text": "جامع النبي يونس",
+        "english": "the Nabi Yunus shrine",
+        "standard": "جامع النبي يونس",
+        "noteAr": "مرقد النبي يونس على تل التوبة في الموصل، معلم إسلامي ومسيحي ويهودي مع بعض",
+        "note": "The Nabi Yunus shrine on Tell al-Tawba in Mosul was a sacred site for Muslims, Christians and Jews alike",
+        "example": "النبي يونس من رموز الموصل عبر التاريخ"
       }
     ],
     "bas": [
@@ -3982,6 +4036,15 @@
         "noteAr": "الأبراج الثلاثة على البحر، أشهر علم في الكويت من سنة ١٩٧٩",
         "note": "The three Kuwait Towers on the seafront have been the country's most famous landmark since 1979",
         "example": "أبراج الكويت على صدر الدينار القديم"
+      },
+      {
+        "id": "famous.souk_mubarakiya",
+        "text": "سوق المباركية",
+        "english": "Souk Al-Mubarakiya",
+        "standard": "سوق المباركية",
+        "noteAr": "السوق الشعبي القديم في قلب مدينة الكويت، بحرين وبن وحلا وقعدة شاي",
+        "note": "Souk Al-Mubarakiya is Kuwait City's historic market, famous for its baharat, dates and traditional teahouses",
+        "example": "سوق المباركية ريحته هيل وبخور"
       }
     ],
     "emi": [
@@ -4112,6 +4175,15 @@
         "noteAr": "الجزيرة الصناعية على شكل نخلة في دبي، تشوفها من الفضاء",
         "note": "Palm Jumeirah, Dubai's palm-shaped artificial island, is visible from space",
         "example": "نخلة جميرا من أشهر صور دبي في العالم"
+      },
+      {
+        "id": "famous.museum_of_the_future",
+        "text": "متحف المستقبل",
+        "english": "the Museum of the Future",
+        "standard": "متحف المستقبل",
+        "noteAr": "المتحف البيضاوي المكتوب عليه بالخط العربي، من أجدد علامات دبي",
+        "note": "The Museum of the Future, its torus covered in Arabic calligraphy, is Dubai's newest landmark",
+        "example": "متحف المستقبل على شارع الشيخ زايد"
       }
     ],
     "qat": [
@@ -4241,6 +4313,15 @@
         "noteAr": "خبز الرقاق بالمرق واللحم، أكل رمضان الأول في قطر والخليج",
         "note": "Thareed, thin bread soaked in meat broth, is the number one Ramadan dish in Qatar and the Gulf",
         "example": "في رمضان الثريد ما يفوت على الفطور"
+      },
+      {
+        "id": "famous.qatar_national_museum",
+        "text": "متحف قطر الوطني",
+        "english": "the National Museum of Qatar",
+        "standard": "متحف قطر الوطني",
+        "noteAr": "المتحف المبني على شكل وردة الصحراء، من أغرب وأجمل مباني الدوحة",
+        "note": "The National Museum of Qatar, shaped like a desert rose, is one of Doha's most striking buildings",
+        "example": "متحف قطر الوطني شكله يوقف الناس"
       }
     ],
     "bah": [
@@ -4371,6 +4452,15 @@
         "noteAr": "شجرة عمرها أكثر من ٤٠٠ سنة واقفة لحالها في وسط الصحرا البحرينية",
         "note": "Bahrain's Tree of Life has stood alone in the desert for over 400 years with no known water source",
         "example": "شجرة الحياة من غرائب البحرين"
+      },
+      {
+        "id": "famous.bab_al_bahrain",
+        "text": "باب البحرين",
+        "english": "Bab Al Bahrain",
+        "standard": "باب البحرين",
+        "noteAr": "البوابة التاريخية في وسط المنامة، مدخل سوق المنامة القديم من سنة ١٩٤٩",
+        "note": "Bab Al Bahrain is the historic gateway to Manama's old souq, standing since 1949",
+        "example": "من باب البحرين تبدأ جولة السوق"
       }
     ],
     "oma": [
@@ -4500,6 +4590,15 @@
         "noteAr": "أعلى قمة في عمان، وعنده أخدود يسمونه جراند كانيون العرب",
         "note": "Jebel Shams is Oman's highest peak, overlooking the 'Grand Canyon of Arabia'",
         "example": "التخييم على جبل شمس في الشتاء شي ثاني"
+      },
+      {
+        "id": "famous.nizwa_fort",
+        "text": "قلعة نزوى",
+        "english": "Nizwa Fort",
+        "standard": "قلعة نزوى",
+        "noteAr": "أشهر قلعة في عمان، برجها الدائري الضخم حارس عاصمة عمان القديمة",
+        "note": "Nizwa Fort with its massive round tower is Oman's most visited castle, guarding the old capital",
+        "example": "نزوى قلعة وسوق وتاريخ"
       }
     ],
     "dho": [
@@ -4627,6 +4726,15 @@
         "noteAr": "وادي الشلالات والبحيرات قرب صلالة، بياخد العقل في الخريف",
         "note": "Wadi Darbat near Salalah turns into a valley of waterfalls and lakes during the khareef",
         "example": "في الخريف وادي دربات يصير أخضر كله"
+      },
+      {
+        "id": "famous.al_mughsail",
+        "text": "شاطئ المغسيل",
+        "english": "Al Mughsail Beach",
+        "standard": "شاطئ المغسيل",
+        "noteAr": "شاطئ ظفار الأبيض بنافوراته الطبيعية اللي بتفجر من الصخر وقت المد",
+        "note": "Al Mughsail near Salalah is famed for its white sands and natural blowholes that erupt through the rock",
+        "example": "نافورات المغسيل بتوصل عالي في الخريف"
       }
     ],
     "san": [
