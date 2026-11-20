@@ -1225,6 +1225,15 @@
         "noteAr": "منيا القمح في الشرقية، مدينة الغزل والنسيج من أيام محمد علي",
         "note": "Minya el-Qamh in Sharqia has been a weaving and textiles town since Muhammad Ali's time",
         "example": "نسيج منيا القمح له اسم من زمان"
+      },
+      {
+        "id": "famous.zagazig",
+        "text": "الزقازيق",
+        "english": "Zagazig",
+        "standard": "الزقازيق",
+        "noteAr": "الزقازيق، عاصمة الشرقية، وجامعتها من أكبر جامعات مصر",
+        "note": "Zagazig is Sharqia's capital, and its university among Egypt's largest",
+        "example": "الزقازيق على بحر مويس"
       }
     ],
     "dkh": [
@@ -1378,6 +1387,15 @@
         "noteAr": "ميت غمر في الدقهلية، عاصمة صناعة الألوميتال والأواني في مصر",
         "note": "Mit Ghamr in Dakahlia is Egypt's capital of aluminium cookware making",
         "example": "حلل ميت غمر في كل بيت"
+      },
+      {
+        "id": "famous.manazala_city",
+        "text": "المنزلة",
+        "english": "El-Manzala town",
+        "standard": "المنزلة",
+        "noteAr": "المنزلة، مدينة على البحيرة، أهلها صيادين ومراكبهم معروفة",
+        "note": "El-Manzala is a lakeside town of fishermen and well-known boats",
+        "example": "سمك المنزلة من البحيرة على طول"
       }
     ],
     "mnf": [
@@ -1530,6 +1548,15 @@
         "noteAr": "أشمون في المنوفية، مشهورة بالكليم والسجاد اليدوي اللي بيتصدّر لبره",
         "note": "Ashmoun in Monufia is famous for handwoven kilims and rugs exported abroad",
         "example": "كليم أشمون بيروح لبره"
+      },
+      {
+        "id": "famous.menouf",
+        "text": "منوف",
+        "english": "Menouf",
+        "standard": "منوف",
+        "noteAr": "منوف، مدينة عريقة على ترعة المنوفية، كانت عاصمة المحافظة زمان",
+        "note": "Menouf is an old town on the Menoufia canal and was once the governorate's capital",
+        "example": "منوف سيدي شرقاوي ولياليها"
       }
     ],
     "ghr": [
@@ -1683,6 +1710,15 @@
         "noteAr": "كفر الزيات في الغربية، مدينة الزيوت والصابون، على النيل فرع رشيد",
         "note": "Kafr El-Zayat in Gharbia is a town of oils and soap on the Rosetta branch of the Nile",
         "example": "صابون كفر الزيات معروف في كل مصر"
+      },
+      {
+        "id": "famous.zefta",
+        "text": "زفتى",
+        "english": "Zefta",
+        "standard": "زفتى",
+        "noteAr": "زفتى، مدينة على فرع دمياط من النيل، من أقدم مدن الغربية",
+        "note": "Zefta is a town on the Damietta branch of the Nile, among Gharbia's oldest",
+        "example": "زفتى على النيل جنب ميت غمر"
       }
     ],
     "bhr": [
@@ -3413,6 +3449,15 @@
         "noteAr": "قلعة عجلون بناها أحد قادة صلاح الدين، على جبل يطل على جبال الشمال الخضرة",
         "note": "Ajloun Castle was built by one of Saladin's commanders, overlooking the green northern hills",
         "example": "من عجلون تشوف كل الجبال الخضرة"
+      },
+      {
+        "id": "famous.dead_sea_jo",
+        "text": "البحر الميت",
+        "english": "the Dead Sea",
+        "standard": "البحر الميت",
+        "noteAr": "البحر الميت، أخفض نقطة في الأرض، ملحه وطينه معروفين للعلاج",
+        "note": "The Dead Sea is the lowest point on earth, its salt and mud known for treatment",
+        "example": "بالبحر الميت بتطفو بدون ما تسبح"
       }
     ],
     "bag": [
@@ -3733,6 +3778,15 @@
         "noteAr": "دير مار بهنام قرب الموصل، من أقدم أديرة العراق، من القرن الرابع",
         "note": "Mar Behnam monastery near Mosul is among Iraq's oldest, dating to the fourth century",
         "example": "مار بهنام من زمن المسيحية الأولى"
+      },
+      {
+        "id": "famous.telafar",
+        "text": "تلعفر",
+        "english": "Tal Afar",
+        "standard": "تلعفر",
+        "noteAr": "تلعفر، مدينة قديمة غرب الموصل، وقلعتها على تل وسط المدينة",
+        "note": "Tal Afar is an old town west of Mosul, its citadel on a hill in the city center",
+        "example": "قلعة تلعفر تطل على كل المدينة"
       }
     ],
     "bas": [
@@ -4684,6 +4738,15 @@
         "noteAr": "المسجد الكبير في الكويت، أكبر مسجد في البلد، قبته ونقوشه مميزة",
         "note": "Kuwait's Grand Mosque is the country's largest, known for its dome and calligraphy",
         "example": "التراويح في المسجد الكبير عالم"
+      },
+      {
+        "id": "famous.liberation_tower",
+        "text": "برج التحرير",
+        "english": "the Liberation Tower",
+        "standard": "برج التحرير",
+        "noteAr": "برج التحرير في مدينة الكويت، من أطول أبراج البلد، وسمي بعد تحرير الكويت",
+        "note": "Kuwait City's Liberation Tower is among the country's tallest, named after the liberation",
+        "example": "برج التحرير من معالم العاصمة"
       }
     ],
     "emi": [
@@ -4841,6 +4904,15 @@
         "noteAr": "اللوفر أبوظبي في جزيرة السعديات، متحف عالمي تحت قبة كأنها بتمطر ضوء",
         "note": "Louvre Abu Dhabi on Saadiyat Island sits under a dome that seems to rain light",
         "example": "قبة اللوفر أبوظبي تحتها ضوء المطر"
+      },
+      {
+        "id": "famous.dubai_creek",
+        "text": "خور دبي",
+        "english": "Dubai Creek",
+        "standard": "خور دبي",
+        "noteAr": "خور دبي، قلب دبي القديم، والعبرات تشتغل فيه من زمان",
+        "note": "Dubai Creek is the old heart of the city, and its abras have run there for generations",
+        "example": "العبارة على الخور بدرهم"
       }
     ],
     "qat": [
@@ -4997,6 +5069,15 @@
         "noteAr": "كورنيش الدوحة سبع كيلو على الخليج، ومنه تشوف أبراج الخليج الغربي",
         "note": "The Doha corniche runs seven kilometres on the Gulf with views of the West Bay towers",
         "example": "المشي على كورنيش الدوحة وقت المغرب"
+      },
+      {
+        "id": "famous.islamic_art_museum",
+        "text": "متحف الفن الإسلامي",
+        "english": "the Museum of Islamic Art",
+        "standard": "متحف الفن الإسلامي",
+        "noteAr": "متحف الفن الإسلامي في الدوحة، على الكورنيش، من أجمل مباني قطر",
+        "note": "Doha's Museum of Islamic Art stands on the corniche, among Qatar's most beautiful buildings",
+        "example": "متحف الفن الإسلامي مقابل أبراج الخليج الغربي"
       }
     ],
     "bah": [
@@ -5154,6 +5235,15 @@
         "noteAr": "مسجد الفاتح في المنامة، من أكبر مساجد العالم، وقبته من الألياف الزجاجية",
         "note": "Al-Fateh Grand Mosque in Manama is among the world's largest, with a fibreglass dome",
         "example": "مسجد الفاتح يتسع لسبعة آلاف"
+      },
+      {
+        "id": "famous.king_fahd_causeway",
+        "text": "جسر الملك فهد",
+        "english": "the King Fahd Causeway",
+        "standard": "جسر الملك فهد",
+        "noteAr": "جسر الملك فهد يربط البحرين بالسعودية، حوالي 25 كيلو فوق البحر",
+        "note": "The King Fahd Causeway links Bahrain to Saudi Arabia over some 25 kilometres of sea",
+        "example": "ناس وايد يسافرون للخبر على الجسر"
       }
     ],
     "oma": [
@@ -5310,6 +5400,15 @@
         "noteAr": "قلعة بهلا، أكبر قلعة طينية في عمان، مسجلة في اليونسكو",
         "note": "Bahla Fort is Oman's largest mud-brick fort and a UNESCO World Heritage site",
         "example": "بهلا قلعتها من الطين وعريقة"
+      },
+      {
+        "id": "famous.muttrah_corniche",
+        "text": "كورنيش مطرح",
+        "english": "the Muttrah corniche",
+        "standard": "كورنيش مطرح",
+        "noteAr": "كورنيش مطرح وسوق مطرح، من أقدم أسواق عمان على البحر",
+        "note": "The Muttrah corniche and its souq are among Oman's oldest markets on the sea",
+        "example": "سوق مطرح ريحة اللبان في كل مكان"
       }
     ],
     "dho": [
@@ -5464,6 +5563,15 @@
         "noteAr": "سمهرم عند خور روري، ميناء اللبان القديم، من أيام مملكة حضرموت",
         "note": "Sumhuram at Khor Rori was the ancient frankincense port of the Hadhramaut kingdom",
         "example": "من سمهرم كان اللبان يروح للعالم"
+      },
+      {
+        "id": "famous.mirbat",
+        "text": "مرباط",
+        "english": "Mirbat",
+        "standard": "مرباط",
+        "noteAr": "مرباط، بلدة قديمة على بحر ظفار، بقلعتها التاريخية وبيوتها القديمة",
+        "note": "Mirbat is an old town on the Dhofar coast with a historic fort and old houses",
+        "example": "مرباط كانت ميناء خيل شرقي"
       }
     ],
     "san": [
