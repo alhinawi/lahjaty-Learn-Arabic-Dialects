@@ -3986,6 +3986,15 @@
         "noteAr": "أبو الخصيب، قضاء النخيل والتمور على شط العرب جنوب البصرة",
         "note": "Abu Al-Khaseeb is the palm and date district on Shatt Al-Arab south of Basra",
         "example": "نخيل أبو الخصيب على طول الشط"
+      },
+      {
+        "id": "famous.qurna",
+        "text": "القرنة",
+        "english": "Al-Qurna",
+        "standard": "القرنة",
+        "noteAr": "القرنة، ملتقى دجلة والفرات، وفيها شجرة آدم المشهورة",
+        "note": "Al-Qurna is where the Tigris and Euphrates meet, home of the famous Adam's Tree",
+        "example": "عند القرنة يصير شط العرب"
       }
     ],
     "naj": [
@@ -4471,6 +4480,15 @@
         "noteAr": "أبو عريش، من أقدم مدن جازان، وسوقها الشعبي من أشهر أسواق المنطقة",
         "note": "Abu Arish is among Jizan's oldest towns, with one of the region's best-known markets",
         "example": "سوق أبو عريش يوم الثلاثاء"
+      },
+      {
+        "id": "famous.bish_jizan",
+        "text": "وادي بيش",
+        "english": "Wadi Bish",
+        "standard": "وادي بيش",
+        "noteAr": "وادي بيش، من أخصب أودية جازان، وسده من أكبر سدود السعودية",
+        "note": "Wadi Bish is among Jizan's most fertile valleys, and its dam among Saudi Arabia's largest",
+        "example": "سد وادي بيش يسقي مزارع المنطقة"
       }
     ],
     "shm": [
@@ -4627,6 +4645,15 @@
         "noteAr": "فيد، بلدة تاريخية جنوب حايل، كانت محطة على طريق زبيدة للحج",
         "note": "Faid is a historic town south of Ha'il, once a stop on the Zubaydah pilgrimage road",
         "example": "فيد على درب زبيدة"
+      },
+      {
+        "id": "famous.baqaa",
+        "text": "بقعاء",
+        "english": "Baqa'a",
+        "standard": "بقعاء",
+        "noteAr": "بقعاء، ثاني مدن منطقة حايل، مشهورة بسوقها وقلعتها",
+        "note": "Baqa'a is the Ha'il region's second city, known for its market and fort",
+        "example": "سوق بقعاء من أقدم أسواق الشمال"
       }
     ],
     "kuw": [
@@ -5771,6 +5798,15 @@
         "noteAr": "جامع الصالح في صنعاء، أكبر جامع في اليمن، بمآذنه الست",
         "note": "Al-Saleh Mosque in Sana'a is Yemen's largest, with six minarets",
         "example": "جامع الصالح يتسع لعشرات الآلاف"
+      },
+      {
+        "id": "famous.jabal_nuqum",
+        "text": "جبل نقم",
+        "english": "Jabal Nuqum",
+        "standard": "جبل نقم",
+        "noteAr": "جبل نقم يطل على صنعاء من الشرق، وعليه بقايا قلعة قديمة",
+        "note": "Jabal Nuqum overlooks Sana'a from the east and holds the remains of an old fort",
+        "example": "من نقم تشوف صنعاء كلها"
       }
     ],
     "ade": [
@@ -5926,6 +5962,15 @@
         "noteAr": "التواهي، حي عدن العريق عند الميناء، من أيام الإنجليز",
         "note": "Tawahi is Aden's old quarter by the port, dating to the British era",
         "example": "التواهي سمّوها ستيمبوينت زمان"
+      },
+      {
+        "id": "famous.mansoura_aden",
+        "text": "المنصورة",
+        "english": "Al-Mansoura district",
+        "standard": "المنصورة",
+        "noteAr": "المنصورة، حي عدن الشعبي الكبير، وأسواقه من أزحم أسواق المدينة",
+        "note": "Al-Mansoura is Aden's big popular district, its markets among the city's busiest",
+        "example": "سوق المنصورة زحمة على طول"
       }
     ],
     "had": [
@@ -6079,6 +6124,15 @@
         "noteAr": "الشحر، ميناء حضرموت القديم، منه كان يطلع البخور والسمك المجفف",
         "note": "Al-Shihr is Hadhramaut's old port, once shipping frankincense and dried fish",
         "example": "الشحر ميناء حضرموت من زمان"
+      },
+      {
+        "id": "famous.ghayl_bawazir",
+        "text": "غيل باوزير",
+        "english": "Ghayl Ba Wazir",
+        "standard": "غيل باوزير",
+        "noteAr": "غيل باوزير، قرية النخيل والشاطئ قرب المكلا",
+        "note": "Ghayl Ba Wazir is a village of palms and beach near Mukalla",
+        "example": "غيل باوزير نخيلها على البحر"
       }
     ],
     "sud": [
@@ -6236,6 +6290,15 @@
         "noteAr": "أم درمان، أكبر مدن السودان، وسوقها الشعبي من أشهر أسواق البلد",
         "note": "Omdurman is Sudan's largest city, and its open market among the country's most famous",
         "example": "سوق أم درمان فيه كل حاجة"
+      },
+      {
+        "id": "famous.port_sudan",
+        "text": "بورتسودان",
+        "english": "Port Sudan",
+        "standard": "بورتسودان",
+        "noteAr": "بورتسودان، ميناء السودان الأول على البحر الأحمر",
+        "note": "Port Sudan is Sudan's main port on the Red Sea",
+        "example": "من بورتسودان يطلع صادر السودان كله"
       }
     ],
     "chd": [
@@ -6389,6 +6452,15 @@
         "noteAr": "نجامينا، عاصمة تشاد، على نهر شاري قبالة الكاميرون",
         "note": "N'Djamena, Chad's capital, sits on the Chari river facing Cameroon",
         "example": "نجامينا على ضفة شاري"
+      },
+      {
+        "id": "famous.sarh",
+        "text": "سار",
+        "english": "Sarh",
+        "standard": "سار",
+        "noteAr": "سار، ثاني مدن تشاد، على نهر شاري في الجنوب",
+        "note": "Sarh is Chad's second city, on the Chari river in the south",
+        "example": "سار بلد القطن في تشاد"
       }
     ],
     "mar": [
@@ -7532,6 +7604,15 @@
         "noteAr": "ولاتة، مدينة قديمة في الحوض الشرقي، مسجلة في اليونسكو مع شنقيط ووادان",
         "note": "Oualata is an ancient town in the Hodh Ech Chargui, UNESCO-listed with Chinguetti and Ouadane",
         "example": "ولاتة من مدن الباظور القديمة"
+      },
+      {
+        "id": "famous.atar",
+        "text": "أطار",
+        "english": "Atar",
+        "standard": "أطار",
+        "noteAr": "أطار، بوابة آدرار وواحتها الكبيرة في موريتانيا",
+        "note": "Atar is the gateway to the Adrar and its big oasis in Mauritania",
+        "example": "أطار سوقها سوق الباظور القديم"
       }
     ],
     "cnl": [
