@@ -1796,6 +1796,15 @@
         "noteAr": "دمنهور عاصمة محافظة البحيرة على فرع رشيد، واسمها من المصرية القديمة (مدينة حورس)",
         "note": "Damanhur, Beheira's capital on the Rosetta branch, keeps its ancient Egyptian name (city of Horus)",
         "example": "دمنهور نص الطريق بين القاهرة وإسكندرية"
+      },
+      {
+        "id": "famous.rosetta_city",
+        "text": "رشيد",
+        "english": "Rosetta (Rashid)",
+        "standard": "رشيد",
+        "noteAr": "رشيد في البحيرة، مدينة القلاع والمساجد العثمانية على فرع النيل اللي يحمل اسمها",
+        "note": "Rosetta in Beheira is a town of Ottoman forts and mosques on the Nile branch named after it",
+        "example": "رشيد مدينة عريقة على النيل"
       }
     ],
     "dmt": [
@@ -1936,6 +1945,15 @@
         "noteAr": "مدينة دمياط للأثاث، أكبر مجمع لصناعة الموبيليا في مصر، والعفش منها لكل البلاد",
         "note": "Damietta Furniture City is Egypt's biggest furniture-making complex, furnishing homes nationwide",
         "example": "العروسة بتفرش من مدينة الأثاث"
+      },
+      {
+        "id": "famous.kafr_el_bateekh",
+        "text": "كفر البطيخ",
+        "english": "Kafr El-Bateekh",
+        "standard": "كفر البطيخ",
+        "noteAr": "كفر البطيخ في دمياط، أشهر بطيخ في مصر بيتحصد منها",
+        "note": "Kafr El-Bateekh in Damietta grows Egypt's most famous watermelons",
+        "example": "بطيخ كفر البطيخ غير أي بطيخ"
       }
     ],
     "kfs": [
@@ -2075,6 +2093,15 @@
         "noteAr": "مطوبس على البحر المتوسط في كفر الشيخ، بلد صيادين ومزارع سمك",
         "note": "Mutubas on the Mediterranean in Kafr El-Sheikh is a town of fishermen and fish farms",
         "example": "مطوبس ع البحر، سمكها مشهور"
+      },
+      {
+        "id": "famous.tell_el_farain",
+        "text": "تل الفراعين",
+        "english": "Tell El-Fara'in (ancient Buto)",
+        "standard": "تل الفراعين",
+        "noteAr": "تل الفراعين في كفر الشيخ، أطلال مدينة بوتو عاصمة الشمال في مصر القديمة",
+        "note": "Tell El-Fara'in in Kafr El-Sheikh holds the ruins of Buto, ancient capital of the north",
+        "example": "بوتو كانت عاصمة الدلتا من آلاف السنين"
       }
     ],
     "sai": [
@@ -2219,6 +2246,15 @@
         "noteAr": "معبد دندرة في قنا، من أحسن المعابد المصرية حفظاً، وفيه زودياك دندرة الشهير",
         "note": "Dendera temple in Qena is one of Egypt's best-preserved temples, home of the famous Dendera zodiac",
         "example": "سقف دندرة مليان نجوم الفراعنة"
+      },
+      {
+        "id": "famous.qena",
+        "text": "قنا",
+        "english": "Qena",
+        "standard": "قنا",
+        "noteAr": "قنا، مدينة الصعيد على النيل، بلد القصب والسكر ومعبد دندرة جنبها",
+        "note": "Qena is an Upper Egyptian Nile city, land of sugarcane, with Dendera temple beside it",
+        "example": "قصب قنا أحلى قصب"
       }
     ],
     "sin": [
@@ -2678,6 +2714,15 @@
         "noteAr": "سوق المدينة في حلب، من أكبر الأسواق المسقوفة القديمة في العالم",
         "note": "Aleppo's Souk al-Madina is one of the largest covered markets of the old world",
         "example": "سوق حلب المسقوف عمره مئات السنين"
+      },
+      {
+        "id": "famous.aleppo_houses",
+        "text": "البيوت الحلبية",
+        "english": "old Aleppo courtyard houses",
+        "standard": "البيوت الحلبية القديمة",
+        "noteAr": "البيوت الحلبية القديمة بأحوشتها وقاعاتها وقبابها، تحفة العمارة الشامية",
+        "note": "Old Aleppo houses with their courtyards, halls and domes are masterpieces of Levantine architecture",
+        "example": "البيوت الحلبية حوشها في نص البيت"
       }
     ],
     "leb": [
@@ -6320,6 +6365,15 @@
         "noteAr": "جبال الريف في شمال المغرب، خضرة وأجواء هادية بعيدة عن الزحمة",
         "note": "The Rif mountains of northern Morocco offer green, quiet landscapes away from the crowds",
         "example": "الريف في الربيع أخضر بالكامل"
+      },
+      {
+        "id": "famous.alhoceima",
+        "text": "الحسيمة",
+        "english": "Al Hoceima",
+        "standard": "الحسيمة",
+        "noteAr": "الحسيمة، مدينة الريف على البحر المتوسط، بكالانها وخلجانها",
+        "note": "Al Hoceima is the Rif's city on the Mediterranean, known for its coves",
+        "example": "الحسيمة بحرها صافي"
       }
     ],
     "alg": [
@@ -6468,6 +6522,15 @@
         "noteAr": "جامع كتشاوة في مدخل القصبة، من أجمل معالم الجزائر العاصمة من العهد العثماني",
         "note": "Ketchaoua Mosque at the Casbah's entrance is one of Algiers' most beautiful Ottoman landmarks",
         "example": "كتشاوة في قلب القصبة"
+      },
+      {
+        "id": "famous.oran",
+        "text": "وهران",
+        "english": "Oran",
+        "standard": "وهران",
+        "noteAr": "وهران، عاصمة الغرب الجزائري ومدينة الراي والبحر",
+        "note": "Oran is the capital of western Algeria, the city of Raï music and the sea",
+        "example": "وهران الباهية"
       }
     ],
     "tun": [
@@ -6616,6 +6679,15 @@
         "noteAr": "الحمامات، مدينة الياسمين على الساحل، مبنية حول قصبة قديمة على البحر",
         "note": "Hammamet, the jasmine town on the coast, grew around an old seaside kasbah",
         "example": "الصيف في الحمامات بحر وياسمين"
+      },
+      {
+        "id": "famous.kairouan",
+        "text": "القيروان",
+        "english": "Kairouan",
+        "standard": "القيروان",
+        "noteAr": "القيروان، أول مدينة إسلامية في بلاد المغرب، وفيها جامع عقبة بن نافع",
+        "note": "Kairouan was the first Islamic city in the Maghreb, home of the Uqba ibn Nafi mosque",
+        "example": "القيروان عاصمة الأغالبة"
       }
     ],
     "tri": [
@@ -6763,6 +6835,15 @@
         "noteAr": "زوارة غرب طرابلس، مدينة ساحلية أمازيغية بشواطئ بيضاء مشهورة",
         "note": "Zuwara west of Tripoli is a coastal Amazigh town famous for its white beaches",
         "example": "شواطئ زوارة من أحسن شواطئ ليبيا"
+      },
+      {
+        "id": "famous.ghadames",
+        "text": "غدامس",
+        "english": "Ghadames",
+        "standard": "غدامس",
+        "noteAr": "غدامس، لؤلؤة الصحراء، مدينة قديمة مسقوفة مسجلة في اليونسكو",
+        "note": "Ghadames, the pearl of the desert, is an ancient covered town on the UNESCO list",
+        "example": "غدامس بيوتها مسقوفة من الحر"
       }
     ],
     "ben": [
@@ -6909,6 +6990,15 @@
         "noteAr": "شحات هي قورينا اليونانية القديمة في الجبل الأخضر، من أعظم آثار ليبيا",
         "note": "Shahhat is ancient Cyrene in the Green Mountain, among Libya's greatest Greek ruins",
         "example": "آثار شحات ترجع للإغريق"
+      },
+      {
+        "id": "famous.al_bayda",
+        "text": "البيضاء",
+        "english": "Al Bayda",
+        "standard": "البيضاء",
+        "noteAr": "البيضاء، مدينة الجبل الأخضر الكبيرة، من أعرق مدن برقة",
+        "note": "Al Bayda is a major city of the Jabal Akhdar and one of Cyrenaica's oldest",
+        "example": "البيضاء جوها بارد في الصيف"
       }
     ],
     "has": [
@@ -7162,6 +7252,15 @@
         "noteAr": "مدينة الجلالة الجديدة فوق جبل الجلالة على خليج السويس، بتلفريك وجامعة وإطلالة بحر",
         "note": "New Galala City sits on Mount Galala above the Gulf of Suez, with a cable car, a university and sea views",
         "example": "الجلالة بقت منطقة سهر جديدة"
+      },
+      {
+        "id": "famous.port_tawfik",
+        "text": "بور توفيق",
+        "english": "Port Tawfik",
+        "standard": "بور توفيق",
+        "noteAr": "بور توفيق، أول حي في السويس اتبنى مع حفر قناة السويس",
+        "note": "Port Tawfik was the first Suez district, built while the canal was being dug",
+        "example": "بور توفيق من أيام ديليسيبس"
       }
     ],
     "bdw": [
@@ -7269,6 +7368,15 @@
         "noteAr": "جبل الموتى في سيوة، مقابر محفورة في الصخر من زمن الفراعنة، قريب من شالي",
         "note": "Gebel al-Mawta in Siwa is a hill of rock-cut pharaonic tombs, right by Shali",
         "example": "جبل الموتى جنب قلعة شالي"
+      },
+      {
+        "id": "famous.siwa_olives",
+        "text": "زيتون سيوة",
+        "english": "Siwa olives",
+        "standard": "زيتون سيوة",
+        "noteAr": "زيتون سيوة من أجود أنواع الزيتون، وزيتها من أحسن الزيوت",
+        "note": "Siwa olives are among the finest, and their oil among the best",
+        "example": "زيتون سيوة للمخلل مالوش حل"
       }
     ]
   }
