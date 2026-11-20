@@ -1724,6 +1724,15 @@
         "noteAr": "بحيرة ساحلية في البحيرة شرق الإسكندرية، مشهورة بالصيد وقريبة من رشيد",
         "note": "Lake Edku is a coastal lagoon in Beheira east of Alexandria, known for fishing, near Rosetta",
         "example": "سمك بحيرة إدكو طازة على طول"
+      },
+      {
+        "id": "famous.damanhur",
+        "text": "دمنهور",
+        "english": "Damanhur",
+        "standard": "دمنهور",
+        "noteAr": "دمنهور عاصمة محافظة البحيرة على فرع رشيد، واسمها من المصرية القديمة (مدينة حورس)",
+        "note": "Damanhur, Beheira's capital on the Rosetta branch, keeps its ancient Egyptian name (city of Horus)",
+        "example": "دمنهور نص الطريق بين القاهرة وإسكندرية"
       }
     ],
     "dmt": [
@@ -1855,6 +1864,15 @@
         "noteAr": "معلم دمياط الأشهر على الكورنيش، بيبان من النيل ومن البحر",
         "note": "Al-Bahr Mosque is Damietta's iconic landmark on the corniche, seen from both the Nile and the sea",
         "example": "أي دمياطي هيقولك اقصدني عند مسجد البحر"
+      },
+      {
+        "id": "famous.damietta_furniture_city",
+        "text": "مدينة دمياط للأثاث",
+        "english": "Damietta Furniture City",
+        "standard": "مدينة دمياط للأثاث",
+        "noteAr": "مدينة دمياط للأثاث، أكبر مجمع لصناعة الموبيليا في مصر، والعفش منها لكل البلاد",
+        "note": "Damietta Furniture City is Egypt's biggest furniture-making complex, furnishing homes nationwide",
+        "example": "العروسة بتفرش من مدينة الأثاث"
       }
     ],
     "kfs": [
@@ -1985,6 +2003,15 @@
         "noteAr": "مدينة دسوق على فرع رشيد، مدينة الصوفية وبها مسجد سيدي إبراهيم الدسوقي",
         "note": "Desouk on the Rosetta branch of the Nile is a city of Sufis, home to the shrine of Sidi Ibrahim al-Dessouki",
         "example": "في المولد دسوق بتتملى زوار من كل مصر"
+      },
+      {
+        "id": "famous.mutubas",
+        "text": "مطوبس",
+        "english": "Mutubas",
+        "standard": "مطوبس",
+        "noteAr": "مطوبس على البحر المتوسط في كفر الشيخ، بلد صيادين ومزارع سمك",
+        "note": "Mutubas on the Mediterranean in Kafr El-Sheikh is a town of fishermen and fish farms",
+        "example": "مطوبس ع البحر، سمكها مشهور"
       }
     ],
     "sai": [
@@ -2120,6 +2147,15 @@
         "noteAr": "أقصى جنوب مصر، بلد النوبة والسد العالي وجزيرة فيلة",
         "note": "Aswan at Egypt's far south is the land of Nubia, the High Dam and Philae island",
         "example": "الشتاء في أسوان دفا وجمال"
+      },
+      {
+        "id": "famous.dendera",
+        "text": "معبد دندرة",
+        "english": "Dendera temple",
+        "standard": "معبد دندرة",
+        "noteAr": "معبد دندرة في قنا، من أحسن المعابد المصرية حفظاً، وفيه زودياك دندرة الشهير",
+        "note": "Dendera temple in Qena is one of Egypt's best-preserved temples, home of the famous Dendera zodiac",
+        "example": "سقف دندرة مليان نجوم الفراعنة"
       }
     ],
     "sin": [
@@ -2552,6 +2588,15 @@
         "noteAr": "من أقدم جوامع الشام، فيه ضريح النبي زكريا حسب التقليد",
         "note": "Aleppo's Umayyad Mosque is one of the oldest in the Levant, said to hold the tomb of Zechariah",
         "example": "الجامع الأموي في قلب حلب القديمة"
+      },
+      {
+        "id": "famous.souk_al_madina",
+        "text": "سوق المدينة",
+        "english": "Souk al-Madina",
+        "standard": "سوق المدينة",
+        "noteAr": "سوق المدينة في حلب، من أكبر الأسواق المسقوفة القديمة في العالم",
+        "note": "Aleppo's Souk al-Madina is one of the largest covered markets of the old world",
+        "example": "سوق حلب المسقوف عمره مئات السنين"
       }
     ],
     "leb": [
@@ -5978,6 +6023,15 @@
         "noteAr": "عروس الشمال على مضيق جبل طارق، بين البحر المتوسط والأطلسي",
         "note": "Tangier, the Bride of the North, sits on the Strait of Gibraltar between the Mediterranean and the Atlantic",
         "example": "من طنجة تشوف إسبانيا بالعين"
+      },
+      {
+        "id": "famous.rif_mountains",
+        "text": "جبال الريف",
+        "english": "the Rif mountains",
+        "standard": "جبال الريف",
+        "noteAr": "جبال الريف في شمال المغرب، خضرة وأجواء هادية بعيدة عن الزحمة",
+        "note": "The Rif mountains of northern Morocco offer green, quiet landscapes away from the crowds",
+        "example": "الريف في الربيع أخضر بالكامل"
       }
     ],
     "alg": [
@@ -6117,6 +6171,15 @@
         "noteAr": "نصب الشهيد فوق الجزائر العاصمة، رمز استقلال البلاد من 1982",
         "note": "The Martyrs' Memorial above Algiers is the symbol of the country's independence, built in 1982",
         "example": "أول ما توصل للعاصمة تشوف مقام الشهيد"
+      },
+      {
+        "id": "famous.ketchaoua",
+        "text": "جامع كتشاوة",
+        "english": "Ketchaoua Mosque",
+        "standard": "جامع كتشاوة",
+        "noteAr": "جامع كتشاوة في مدخل القصبة، من أجمل معالم الجزائر العاصمة من العهد العثماني",
+        "note": "Ketchaoua Mosque at the Casbah's entrance is one of Algiers' most beautiful Ottoman landmarks",
+        "example": "كتشاوة في قلب القصبة"
       }
     ],
     "tun": [
@@ -6256,6 +6319,15 @@
         "noteAr": "أقدم جامع في تونس العاصمة، في قلب المدينة العتيقة، وكان جامعة للعلم من قرون",
         "note": "The Zitouna Mosque in the heart of Tunis's old medina is the capital's oldest mosque and was a seat of learning for centuries",
         "example": "الزيتونة قلب المدينة العتيقة"
+      },
+      {
+        "id": "famous.hammamet",
+        "text": "الحمامات",
+        "english": "Hammamet",
+        "standard": "الحمامات",
+        "noteAr": "الحمامات، مدينة الياسمين على الساحل، مبنية حول قصبة قديمة على البحر",
+        "note": "Hammamet, the jasmine town on the coast, grew around an old seaside kasbah",
+        "example": "الصيف في الحمامات بحر وياسمين"
       }
     ],
     "tri": [
@@ -6394,6 +6466,15 @@
         "noteAr": "مدينة أثرية رومانية غرب طرابلس، مسرحها من أجمل مسارح العالم القديم",
         "note": "Sabratha west of Tripoli is a Roman city whose theatre is among the finest of the ancient world",
         "example": "مسرح صبراتة على البحر مباشرة"
+      },
+      {
+        "id": "famous.zuwara",
+        "text": "زوارة",
+        "english": "Zuwara",
+        "standard": "زوارة",
+        "noteAr": "زوارة غرب طرابلس، مدينة ساحلية أمازيغية بشواطئ بيضاء مشهورة",
+        "note": "Zuwara west of Tripoli is a coastal Amazigh town famous for its white beaches",
+        "example": "شواطئ زوارة من أحسن شواطئ ليبيا"
       }
     ],
     "ben": [
@@ -6531,6 +6612,15 @@
         "noteAr": "جبل برقة الأخضر شرق بنغازي، منطقة البيضاء والمرج، أخضر وممطور شتاءً",
         "note": "The Green Mountain of Cyrenaica east of Benghazi, around al-Bayda and al-Marj, green and rainy in winter",
         "example": "في الشتا الجبل الأخضر يبرد ويمطر"
+      },
+      {
+        "id": "famous.cyrene",
+        "text": "شحات",
+        "english": "Cyrene (Shahhat)",
+        "standard": "شحات",
+        "noteAr": "شحات هي قورينا اليونانية القديمة في الجبل الأخضر، من أعظم آثار ليبيا",
+        "note": "Shahhat is ancient Cyrene in the Green Mountain, among Libya's greatest Greek ruins",
+        "example": "آثار شحات ترجع للإغريق"
       }
     ],
     "has": [
@@ -6766,6 +6856,15 @@
         "noteAr": "منتجع العين السخنة على خليج السويس، أقرب شط للقاهرة",
         "note": "Ain Sokhna on the Gulf of Suez is the closest beach resort to Cairo",
         "example": "الويك إند أهل القاهرة بينزلوا العين السخنة"
+      },
+      {
+        "id": "famous.galala_city",
+        "text": "مدينة الجلالة",
+        "english": "Galala City",
+        "standard": "مدينة الجلالة",
+        "noteAr": "مدينة الجلالة الجديدة فوق جبل الجلالة على خليج السويس، بتلفريك وجامعة وإطلالة بحر",
+        "note": "New Galala City sits on Mount Galala above the Gulf of Suez, with a cable car, a university and sea views",
+        "example": "الجلالة بقت منطقة سهر جديدة"
       }
     ],
     "bdw": [
@@ -6864,6 +6963,15 @@
         "noteAr": "البلدة القديمة في سيوة مبنية من الكرشيف (طين وملح)، بقاياها لسه شامخة",
         "note": "Shali is Siwa's old fortress town built of karsheef (mud and salt), its ruins still standing",
         "example": "السياح بيطلعوا شالي وقت الغروب"
+      },
+      {
+        "id": "famous.gebel_mawta",
+        "text": "جبل الموتى",
+        "english": "Gebel al-Mawta",
+        "standard": "جبل الموتى",
+        "noteAr": "جبل الموتى في سيوة، مقابر محفورة في الصخر من زمن الفراعنة، قريب من شالي",
+        "note": "Gebel al-Mawta in Siwa is a hill of rock-cut pharaonic tombs, right by Shali",
+        "example": "جبل الموتى جنب قلعة شالي"
       }
     ]
   }
