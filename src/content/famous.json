@@ -756,6 +756,15 @@
         "noteAr": "من فضلك، كلمة الطلب المهذّب في الفصحى، مفهومة في كل البلاد العربية",
         "note": "Min fadlak is the polite request word of Standard Arabic, understood everywhere",
         "example": "أريد كوب ماء من فضلك"
+      },
+      {
+        "id": "famous.la_shukran",
+        "text": "لا شكر على واجب",
+        "english": "you're welcome (no thanks needed for a duty)",
+        "standard": "لا شكر على واجب",
+        "noteAr": "لا شكر على واجب، ردّ الشكر المهذب في الفصحى، معناه أن المساعدة واجب لا تحتاج شكرًا",
+        "note": "La shukran ala wajib is the polite MSA reply to thanks: the help was a duty that needs no thanks",
+        "example": "شكرًا جزيلًا! لا شكر على واجب"
       }
     ],
     "cai": [
@@ -930,6 +939,15 @@
         "noteAr": "أهرامات الجيزة، آخر عجائب الدنيا السبع القديمة الباقية، عمرها أكتر من 4500 سنة",
         "note": "The Giza Pyramids are the last surviving wonder of the ancient world, over 4,500 years old",
         "example": "الأهرامات بانت من الفضاء كمان"
+      },
+      {
+        "id": "famous.hussein_mosque",
+        "text": "مسجد الحسين",
+        "english": "Al-Hussein Mosque",
+        "standard": "مسجد الحسين",
+        "noteAr": "مسجد الحسين في قلب القاهرة القديمة، وساحته ملتقى الناس في المواسم",
+        "note": "Al-Hussein Mosque sits in the heart of old Cairo, its square a meeting place on every occasion",
+        "example": "ليلة القدر عند الحسين شيء تاني"
       }
     ],
     "alx": [
@@ -1099,6 +1117,15 @@
         "noteAr": "المنتزه، قصور وحدائق ملوك مصر السابقين على البحر في إسكندرية",
         "note": "Montaza holds the palaces and gardens of Egypt's former kings on the sea in Alexandria",
         "example": "جسور المنتزه على البحر منظرها حلو"
+      },
+      {
+        "id": "famous.ras_el_tin",
+        "text": "رأس التين",
+        "english": "Ras El-Tin",
+        "standard": "رأس التين",
+        "noteAr": "قصر رأس التين في إسكندرية، قصر ملوك مصر على الميناء الشرقي",
+        "note": "Ras El-Tin Palace in Alexandria was the kings' palace on the Eastern Harbor",
+        "example": "قصر رأس التين على البحر مباشرة"
       }
     ],
     "shq": [
@@ -2626,6 +2653,15 @@
         "noteAr": "طور سيناء، عاصمة محافظة جنوب سيناء على خليج السويس",
         "note": "El-Tor is the capital of South Sinai on the Gulf of Suez",
         "example": "الطور بلد هادية على البحر"
+      },
+      {
+        "id": "famous.ras_sedr",
+        "text": "رأس سدر",
+        "english": "Ras Sedr",
+        "standard": "رأس سدر",
+        "noteAr": "رأس سدر، مصيف هادئ على خليج السويس، أقرب شواطئ سيناء للقاهرة",
+        "note": "Ras Sedr is a quiet resort on the Gulf of Suez, Sinai's nearest beaches to Cairo",
+        "example": "رأس سدر ساعتين من القاهرة"
       }
     ],
     "dam": [
@@ -2802,6 +2838,15 @@
         "noteAr": "التكية السليمانية في دمشق، تحفة عثمانية من تصميم سنان بجانب سوق الحميدية",
         "note": "The Sulaymaniyya Takiyya in Damascus is an Ottoman masterpiece by Sinan next to Souk al-Hamidiyya",
         "example": "التكية السليمانية بقبابها من أجمل مباني دمشق"
+      },
+      {
+        "id": "famous.bab_sharqi",
+        "text": "باب شرقي",
+        "english": "Bab Sharqi",
+        "standard": "باب شرقي",
+        "noteAr": "باب شرقي، من أحياء دمشق القديمة على الطريق المستقيم الروماني",
+        "note": "Bab Sharqi is an old Damascus quarter on the Roman Straight Street",
+        "example": "باب شرقي في نهاية الطريق المستقيم"
       }
     ],
     "alp": [
@@ -3149,6 +3194,15 @@
         "noteAr": "صيدا، مدينة الجنوب القديمة، وقلعتها البحرية على الميناء من زمن الصليبيين",
         "note": "Saida is an old southern city whose sea castle on the harbor dates to the Crusaders",
         "example": "قلعة صيدا البحرية في قلب البحر"
+      },
+      {
+        "id": "famous.tripoli_lb",
+        "text": "طرابلس",
+        "english": "Tripoli (Lebanon)",
+        "standard": "طرابلس",
+        "noteAr": "طرابلس لبنان، مدينة الشمال، بقلعتها وأسواقها المملوكية",
+        "note": "Lebanon's Tripoli is the northern city with a citadel and Mamluk souks",
+        "example": "حلويات طرابلس معروفة بكل لبنان"
       }
     ],
     "psu": [
@@ -3322,6 +3376,15 @@
         "noteAr": "يافا، بلد البرتقال، وميناؤها من أقدم موانئ البحر المتوسط",
         "note": "Jaffa is the city of oranges, and its harbor among the Mediterranean's oldest",
         "example": "يافا القديمة على تل مطل على البحر"
+      },
+      {
+        "id": "famous.nazareth",
+        "text": "الناصرة",
+        "english": "Nazareth",
+        "standard": "الناصرة",
+        "noteAr": "الناصرة، مدينة الجليل، وكنيسة البشارة فيها من أشهر الكنائس",
+        "note": "Nazareth is the city of the Galilee, home of the Basilica of the Annunciation",
+        "example": "سوق الناصرة القديم في البلدة القديمة"
       }
     ],
     "psr": [
@@ -3493,6 +3556,15 @@
         "noteAr": "سبسطية، بلدة أثرية قرب نابلس، بأعمدتها الرومانية وآثارها القديمة",
         "note": "Sebastia is an archaeological village near Nablus with Roman columns and ancient ruins",
         "example": "أعمدة سبسطية من زمن الرومان"
+      },
+      {
+        "id": "famous.jenin",
+        "text": "جنين",
+        "english": "Jenin",
+        "standard": "جنين",
+        "noteAr": "جنين، مدينة الشمال وسهول مرج ابن عامر، مشهورة بزيتونها",
+        "note": "Jenin is the northern city by the Marj Ibn Amer plains, known for its olives",
+        "example": "زيتون جنين من أجود الزيتون"
       }
     ],
     "jor": [
@@ -3840,6 +3912,15 @@
         "noteAr": "ساحة التحرير، قلب بغداد، وفيها نصب الحرية للفنان جواد سليم",
         "note": "Tahrir Square is the heart of Baghdad and holds Jawad Saleem's Freedom Monument",
         "example": "نصب الحرية في ساحة التحرير من رموز بغداد"
+      },
+      {
+        "id": "famous.rashid_street",
+        "text": "شارع الرشيد",
+        "english": "Al-Rashid Street",
+        "standard": "شارع الرشيد",
+        "noteAr": "شارع الرشيد، من أقدم شوارع بغداد التجارية، من أيام العهد العثماني",
+        "note": "Al-Rashid Street is among Baghdad's oldest commercial streets, dating to the Ottoman era",
+        "example": "شارع الرشيد قلب بغداد القديمة"
       }
     ],
     "mos": [
@@ -4359,6 +4440,15 @@
         "noteAr": "الدرعية، عاصمة الدولة السعودية الأولى، وحي الطريف فيها مسجل في اليونسكو",
         "note": "Diriyah was the first Saudi state's capital, and its At-Turaif district is UNESCO-listed",
         "example": "الدرعية على ضفة وادي حنيفة"
+      },
+      {
+        "id": "famous.buraidah",
+        "text": "بريدة",
+        "english": "Buraidah",
+        "standard": "بريدة",
+        "noteAr": "بريدة، عاصمة القصيم، ومهرجان تمورها من أكبر أسواق التمور في العالم",
+        "note": "Buraidah is Qassim's capital, and its dates festival among the world's largest date markets",
+        "example": "موسم تمور بريدة يجمع الناس من كل مكان"
       }
     ],
     "hij": [
@@ -4532,6 +4622,15 @@
         "noteAr": "المدينة المنورة، طيبة الطيبة، وفيها المسجد النبوي الشريف",
         "note": "Madinah is the Prophet's city, home of the Prophet's Mosque",
         "example": "جو المدينة غير في رمضان"
+      },
+      {
+        "id": "famous.al_ula",
+        "text": "العلا",
+        "english": "AlUla",
+        "standard": "العلا",
+        "noteAr": "العلا، وفيها مدائن صالح، أول موقع سعودي مسجل في اليونسكو",
+        "note": "AlUla holds Hegra (Mada'in Salih), Saudi Arabia's first UNESCO World Heritage site",
+        "example": "مدائن صالح في العلا من زمن الأنباط"
       }
     ],
     "jiz": [
@@ -6958,6 +7057,15 @@
         "noteAr": "الصويرة، مدينة الرياح على الأطلسي، وميناؤها الأزرق مسجل في اليونسكو",
         "note": "Essaouira is the city of wind on the Atlantic, and its blue harbor is UNESCO-listed",
         "example": "الصويرة ريحها ما يهداش"
+      },
+      {
+        "id": "famous.rabat",
+        "text": "الرباط",
+        "english": "Rabat",
+        "standard": "الرباط",
+        "noteAr": "الرباط، عاصمة المغرب، وصومعة حسان فيها من أشهر المعالم",
+        "note": "Rabat is Morocco's capital, and the Hassan Tower among its most famous landmarks",
+        "example": "الرباط مدينة هادية على البحر"
       }
     ],
     "jeb": [
