@@ -2531,27 +2531,27 @@
         "text": "بيلا",
         "english": "Bila",
         "standard": "بيلا",
-        "noteAr": "بيلا، مدينة قديمة في جنوب كفر الشيخ، على طريق القاهرة إسكندرية الزراعي",
-        "note": "Bila is an old town in southern Kafr El-Sheikh, on the Cairo-Alexandria agricultural road",
-        "example": "بيلا جنب طنطا على الخط الزراعي"
+        "noteAr": "بيلا، مدينة ومركز بمحافظة كفر الشيخ",
+        "note": "Bila is a city and district in Kafr El-Sheikh Governorate",
+        "example": "بيلا من مراكز كفر الشيخ"
       },
       {
         "id": "famous.qallin",
         "text": "قلين",
         "english": "Qallin",
         "standard": "قلين",
-        "noteAr": "قلين، مدينة قديمة على فرع رشيد في جنوب كفر الشيخ",
-        "note": "Qallin is an old town on the Rosetta branch in southern Kafr El-Sheikh",
-        "example": "قلين على النيل جنب المحلة"
+        "noteAr": "قلين، مدينة ومركز بمحافظة كفر الشيخ",
+        "note": "Qallin is a city and district in Kafr El-Sheikh Governorate",
+        "example": "قلين من مراكز كفر الشيخ"
       },
       {
         "id": "famous.el_riyad_kfs",
         "text": "الرياض",
         "english": "El-Riyad (Kafr El-Sheikh)",
         "standard": "الرياض",
-        "noteAr": "الرياض، مركز في شرق كفر الشيخ على النيل، قبالة شربين",
-        "note": "El-Riyad is a district in eastern Kafr El-Sheikh on the Nile, facing Shirbin",
-        "example": "الرياض جنب دمياط على النيل"
+        "noteAr": "الرياض، مدينة ومركز بمحافظة كفر الشيخ",
+        "note": "El-Riyad is a city and district in Kafr El-Sheikh Governorate",
+        "example": "الرياض من مراكز كفر الشيخ"
       }
     ],
     "sai": [
