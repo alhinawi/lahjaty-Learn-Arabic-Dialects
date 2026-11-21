@@ -4364,6 +4364,15 @@
         "noteAr": "الفاو، آخر مدن العراق على الخليج، عند مصب شط العرب",
         "note": "Al-Faw is Iraq's last town on the Gulf, at the mouth of Shatt Al-Arab",
         "example": "من الفاو يبدأ الخليج"
+      },
+      {
+        "id": "famous.al_hartha",
+        "text": "الهارثة",
+        "english": "Al-Hartha",
+        "standard": "الهارثة",
+        "noteAr": "الهارثة، قضاء شمال البصرة على شط العرب، أرض النخيل",
+        "note": "Al-Hartha is a district north of Basra on the Shatt al-Arab, land of date palms",
+        "example": "الهارثة كلها بساتين نخيل"
       }
     ],
     "naj": [
@@ -4903,6 +4912,15 @@
         "noteAr": "صامطة، من كبرى مدن جازان الجنوبية، وسوقها من أقدم أسواق المنطقة",
         "note": "Samtah is among Jizan's largest southern towns, its market among the region's oldest",
         "example": "سوق صامطة يجمع أهل القرى"
+      },
+      {
+        "id": "famous.sabya",
+        "text": "صبيا",
+        "english": "Sabya",
+        "standard": "صبيا",
+        "noteAr": "صبيا، من أكبر محافظات جازان، وسوقها من أقدم أسواق المنطقة",
+        "note": "Sabya is among Jazan's largest towns, with one of the region's oldest markets",
+        "example": "سوق صبيا من أقدم الأسواق في جازان"
       }
     ],
     "shm": [
@@ -5077,6 +5095,15 @@
         "noteAr": "الشنان، بلدة جنوب حايل، وبرجها الطيني من أعلى الأبراج الطينية في السعودية",
         "note": "Al-Shinan is a town south of Ha'il whose mud-brick tower is among Saudi Arabia's tallest",
         "example": "برج الشنان باقي من مئات السنين"
+      },
+      {
+        "id": "famous.al_hait",
+        "text": "الحائط",
+        "english": "Al-Ha'it",
+        "standard": "الحائط",
+        "noteAr": "الحائط، محافظة جنوب حائل، عندها إرث طويل في الزراعة والتجارة",
+        "note": "Al-Ha'it is a governorate south of Ha'il with a long farming and trading heritage",
+        "example": "الحائط تشتهر بتمورها"
       }
     ],
     "kuw": [
@@ -6347,6 +6374,15 @@
         "noteAr": "المتحف الوطني في صنعاء، فيه كنوز ممالك سبأ وحمير ومعين",
         "note": "The National Museum in Sana'a holds the treasures of the Saba, Himyar and Ma'in kingdoms",
         "example": "تماثيل سبأ في المتحف الوطني"
+      },
+      {
+        "id": "famous.ghumdan",
+        "text": "قصر غمدان",
+        "english": "Ghumedan Palace",
+        "standard": "قصر غمدان",
+        "noteAr": "قصر غمدان، أشهر قصور صنعاء القديمة، يذكره اليمنيون في أدبهم وأمثالهم",
+        "note": "Ghumedan Palace is the most famous of old Sanaa's palaces, alive in Yemeni poetry and proverbs",
+        "example": "غمدان مضرب المثل في عراقة صنعاء"
       }
     ],
     "ade": [
@@ -6520,6 +6556,15 @@
         "noteAr": "الشيخ عثمان، من أقدم أحياء عدن في شمال المدينة، وسوقه معروف",
         "note": "Sheikh Othman is among Aden's oldest northern districts, with a well-known market",
         "example": "سوق الشيخ عثمان زحمة على طول"
+      },
+      {
+        "id": "famous.maalla",
+        "text": "المعلا",
+        "english": "Maalla",
+        "standard": "المعلا",
+        "noteAr": "المعلا، من أحياء عدن القديمة، فيها الميناء وسوق شعبي معروف",
+        "note": "Maalla is one of Aden's old quarters, home to the port and a busy market",
+        "example": "المعلا جنب التواهي على البحر"
       }
     ],
     "had": [
@@ -6691,6 +6736,15 @@
         "noteAr": "القطن، أكبر مدن وادي حضرموت التجارية، وسوقها يخدم الوادي كله",
         "note": "Al-Qatn is Wadi Hadhramaut's largest trading town, its market serving the whole valley",
         "example": "سوق القطن يجمع كل الوادي"
+      },
+      {
+        "id": "famous.sayun_palace",
+        "text": "قصر الكثيري",
+        "english": "Al-Kathiri Palace",
+        "standard": "قصر الكثيري",
+        "noteAr": "قصر الكثيري في سيئون، أكبر مبنى طيني في حضرموت، يطل على المدينة كلها",
+        "note": "Al-Kathiri Palace in Say'un is Hadhramaut's grand mud-brick palace, overlooking the whole city",
+        "example": "قصر الكثيري يبان من كل نواحي سيئون"
       }
     ],
     "sud": [
@@ -6866,6 +6920,15 @@
         "noteAr": "كسلا، مدينة الشرق تحت جبل توتيل، مشهورة بفواكهها وأسواقها",
         "note": "Kassala is the eastern city under the Taka mountains, famous for its fruits and markets",
         "example": "مانجو كسلا من أحسن المانجو"
+      },
+      {
+        "id": "famous.atbara",
+        "text": "عطبرة",
+        "english": "Atbara",
+        "standard": "عطبرة",
+        "noteAr": "عطبرة، مدينة السكة حديد، عند التقاء نهر عطبرة بالنيل",
+        "note": "Atbara is Sudan's railway city, where the Atbara river meets the Nile",
+        "example": "عطبرة عاصمة السكة حديد"
       }
     ],
     "chd": [
@@ -7037,6 +7100,15 @@
         "noteAr": "موندو، ثالث مدن تشاد، على نهر لوغون في الجنوب",
         "note": "Moundou is Chad's third city, on the Logone river in the south",
         "example": "موندو بلد القطن والنيلة"
+      },
+      {
+        "id": "famous.ati",
+        "text": "أتلي",
+        "english": "Ati",
+        "standard": "أتلي",
+        "noteAr": "أتلي، مدينة على نهر باتا في وسط تشاد، عاصمة إقليم باتا",
+        "note": "Ati sits on the Batha river in central Chad, capital of the Batha region",
+        "example": "أتلي على الطريق بين نجامينا وأبشيه"
       }
     ],
     "mar": [
@@ -8306,6 +8378,15 @@
         "noteAr": "تجكجة، عاصمة ولاية تكانت، واحة النخيل في وسط موريتانيا",
         "note": "Tidjikja is the capital of Tagant, a palm oasis in central Mauritania",
         "example": "تمر تجكجة من أحسن التمور"
+      },
+      {
+        "id": "famous.kiffa",
+        "text": "كيفة",
+        "english": "Kiffa",
+        "standard": "كيفة",
+        "noteAr": "كيفة، عاصمة ولاية العصابة، معروفة بخرز كيفة التقليدي",
+        "note": "Kiffa, capital of Assaba, is famous for its traditional Kiffa beads",
+        "example": "خرز كيفة معروف في كل موريتانيا"
       }
     ],
     "cnl": [
