@@ -1333,6 +1333,15 @@
         "noteAr": "كفر صقر، من أكبر مدن الشرقية، وسوق المواشي فيها معروف",
         "note": "Kafr Saqr is among Sharqia's largest towns, known for its livestock market",
         "example": "سوق المواشي في كفر صقر يوم الاثنين"
+      },
+      {
+        "id": "famous.abu_kebir",
+        "text": "أبو كبير",
+        "english": "Abu Kebir",
+        "standard": "أبو كبير",
+        "noteAr": "أبو كبير، مدينة في وسط الشرقية، مشهورة بمانجو العويس",
+        "note": "Abu Kebir in central Sharqia is famous for its Owais mangoes",
+        "example": "مانجو أبو كبير أشهر مانجو في مصر"
       }
     ],
     "dkh": [
@@ -1513,6 +1522,15 @@
         "noteAr": "طلخا، مدينة قديمة على فرع دمياط من النيل، قبالة المنصورة",
         "note": "Talkha is an old town on the Damietta branch of the Nile, facing Mansoura",
         "example": "طلخا قدام المنصورة على النيل"
+      },
+      {
+        "id": "famous.senbellawein",
+        "text": "السنبلاوين",
+        "english": "El-Senbellawein",
+        "standard": "السنبلاوين",
+        "noteAr": "السنبلاوين، مدينة قديمة في جنوب الدقهلية، سوقها من أكبر أسواق المحافظة",
+        "note": "El-Senbellawein in southern Dakahlia has one of the governorate's biggest markets",
+        "example": "سوق السنبلاوين يوم الخميس"
       }
     ],
     "mnf": [
@@ -1692,6 +1710,15 @@
         "noteAr": "الباجور، مركز على ترعة الباجورية في شرق المنوفية",
         "note": "El-Bagour is a district on the Bagouria canal in eastern Monufia",
         "example": "الباجور جنب ميت غمر والشرقية"
+      },
+      {
+        "id": "famous.tala",
+        "text": "تلا",
+        "english": "Tala",
+        "standard": "تلا",
+        "noteAr": "تلا، مركز في جنوب المنوفية، بلد الطبيب والأديب لويس عوض",
+        "note": "Tala is a district in southern Monufia, hometown of the writer Louis Awad",
+        "example": "تلا على ترعة الشبيني"
       }
     ],
     "ghr": [
@@ -1872,6 +1899,15 @@
         "noteAr": "بسيون، مدينة على طريق طنطا دمنهور في وسط الغربية",
         "note": "Basyoun is a town on the Tanta-Damanhur road in central Gharbia",
         "example": "بسيون في نص الطريق بين طنطا ودمنهور"
+      },
+      {
+        "id": "famous.qutur",
+        "text": "قطور",
+        "english": "Qutur",
+        "standard": "قطور",
+        "noteAr": "قطور، مدينة في وسط الغربية بين طنطا والمحلة",
+        "note": "Qutur sits in central Gharbia between Tanta and Mahalla",
+        "example": "قطور نص الطريق بين طنطا والمحلة"
       }
     ],
     "bhr": [
@@ -3899,6 +3935,15 @@
         "noteAr": "أم قيس، مدينة جدارا القديمة، تطل على بحيرة طبريا ومرتفعات الجولان",
         "note": "Umm Qais, ancient Gadara, overlooks the Sea of Galilee and the Golan Heights",
         "example": "من أم قيس تشوف طبريا قدامك"
+      },
+      {
+        "id": "famous.karak_castle",
+        "text": "قلعة الكرك",
+        "english": "Karak Castle",
+        "standard": "قلعة الكرك",
+        "noteAr": "قلعة الكرك، من أشهر القلاع الصليبية في المنطقة، تطل على الأودية حولها",
+        "note": "Karak Castle is one of the region's great Crusader castles, overlooking the surrounding wadis",
+        "example": "قلعة الكرك تبان من بعيد"
       }
     ],
     "bag": [
@@ -4273,6 +4318,15 @@
         "noteAr": "بعشيقة، بلدة قديمة شمال شرق الموصل، مشهورة بمعاصر الزيتون",
         "note": "Bashiqa is an old town northeast of Mosul, known for its olive presses",
         "example": "زيتون بعشيقة من أحسن زيتون المنطقة"
+      },
+      {
+        "id": "famous.sinjar",
+        "text": "سنجار",
+        "english": "Sinjar",
+        "standard": "سنجار",
+        "noteAr": "سنجار، جبل ومدينة غرب الموصل، دار الإيزيديين من قرون",
+        "note": "Sinjar, mountain and town west of Mosul, has been home to the Yazidis for centuries",
+        "example": "جبل سنجار يبان من بعيد في السهل"
       }
     ],
     "bas": [
@@ -5386,6 +5440,15 @@
         "noteAr": "السالمية، منطقة التسوق والبحر في الكويت، ومركزها العلمي معروف",
         "note": "Salmiya is Kuwait's shopping and seafront district, known for its science center",
         "example": "السالمية زحمة الويكند"
+      },
+      {
+        "id": "famous.ahmadi",
+        "text": "الأحمدي",
+        "english": "Ahmadi",
+        "standard": "الأحمدي",
+        "noteAr": "الأحمدي، مدينة النفط في جنوب الكويت، بناها شركة النفط الكويتية",
+        "note": "Ahmadi is Kuwait's oil town in the south, built by the Kuwait Oil Company",
+        "example": "الأحمدي مدينة النفط الأولى في الكويت"
       }
     ],
     "emi": [
@@ -5570,6 +5633,15 @@
         "noteAr": "الشارقة، عاصمة الثقافة في الإمارات، ومتاحفها وأسواقها القديمة معروفة",
         "note": "Sharjah is the UAE's culture capital, known for its museums and old souqs",
         "example": "سوق الشارقة المركزي على الخور"
+      },
+      {
+        "id": "famous.fujairah",
+        "text": "الفجيرة",
+        "english": "Fujairah",
+        "standard": "الفجيرة",
+        "noteAr": "الفجيرة، الإمارة الوحيدة على خليج عمان، جبالها تطل على البحر",
+        "note": "Fujairah is the only emirate on the Gulf of Oman, its mountains meeting the sea",
+        "example": "الفجيرة شتوية حلوة في الشتا"
       }
     ],
     "qat": [
@@ -5753,6 +5825,15 @@
         "noteAr": "الوكرة، مدينة قديمة جنوب الدوحة، وسوقها الجديد على البحر",
         "note": "Al Wakrah is an old town south of Doha, its souq right on the sea",
         "example": "سوق الوكرة على الكورنيش"
+      },
+      {
+        "id": "famous.khor_qatar",
+        "text": "الخور",
+        "english": "Al Khor",
+        "standard": "الخور",
+        "noteAr": "الخور، مدينة قديمة شمال الدوحة، اشتهرت بالغوص على اللؤلؤ",
+        "note": "Al Khor is an old town north of Doha, once a pearl-diving center",
+        "example": "كورنيش الخور هادي وحلو"
       }
     ],
     "bah": [
@@ -5937,6 +6018,15 @@
         "noteAr": "الرفاع، من أكبر مدن البحرين، وقلعة الشيخ سلمان فيها تطل على الوادي",
         "note": "Riffa is among Bahrain's largest towns, its Sheikh Salman fort overlooking the valley",
         "example": "قلعة الرفاع على حافة وادي الحنينية"
+      },
+      {
+        "id": "famous.aali",
+        "text": "عالي",
+        "english": "A'ali",
+        "standard": "عالي",
+        "noteAr": "عالي، قرية الفخار في وسط البحرين، وحولها مدافن دلمون",
+        "note": "A'ali is Bahrain's pottery village, ringed by the Dilmun burial mounds",
+        "example": "فخار عالي يتباع في كل البحرين"
       }
     ],
     "oma": [
@@ -6120,6 +6210,15 @@
         "noteAr": "الجبل الأخضر في عمان، بلد الرمان والورد، ومصايفه على حافة الجبل",
         "note": "Oman's Jabal Akhdar is the land of pomegranates and roses, with terrace farms on the cliffs",
         "example": "ورد الجبل الأخضر يعملون منه ماء الورد"
+      },
+      {
+        "id": "famous.nakhal",
+        "text": "نخل",
+        "english": "Nakhal",
+        "standard": "نخل",
+        "noteAr": "نخل، بلدة قديمة في الباطنة، فيها قلعة على الصخر وعيون ماء حارة",
+        "note": "Nakhal in the Batinah has a fort on the rocks and hot springs",
+        "example": "قلعة نخل مبنية على صخرة كبيرة"
       }
     ],
     "dho": [
@@ -6301,6 +6400,15 @@
         "noteAr": "أرض البليد في صلالة، ميناء اللبان القديم، مسجلة في اليونسكو",
         "note": "Al Baleed in Salalah was the old frankincense port and is UNESCO-listed",
         "example": "في البليد متحف أرض اللبان"
+      },
+      {
+        "id": "famous.jabal_samhan",
+        "text": "جبل سمحان",
+        "english": "Jabal Samhan",
+        "standard": "جبل سمحان",
+        "noteAr": "جبل سمحان، أعلى جبال ظفار، ومن آخر معاقل النمر العربي",
+        "note": "Jabal Samhan is Dhofar's highest mountain and a last refuge of the Arabian leopard",
+        "example": "من جبل سمحان تشوف السحاب تحتك في الخريف"
       }
     ],
     "san": [
