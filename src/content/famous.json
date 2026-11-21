@@ -747,6 +747,15 @@
         "noteAr": "صباح الخير، التحية الصباحية في كل البلاد العربية، وجوابها صباح النور",
         "note": "Sabah el-kheir is the morning greeting across the Arab world, answered with sabah el-noor",
         "example": "صباح الخير يا جماعة"
+      },
+      {
+        "id": "famous.min_fadlak",
+        "text": "من فضلك",
+        "english": "please (formal)",
+        "standard": "من فضلك",
+        "noteAr": "من فضلك، كلمة الطلب المهذّب في الفصحى، مفهومة في كل البلاد العربية",
+        "note": "Min fadlak is the polite request word of Standard Arabic, understood everywhere",
+        "example": "أريد كوب ماء من فضلك"
       }
     ],
     "cai": [
@@ -912,6 +921,15 @@
         "noteAr": "قلعة صلاح الدين على جبل المقطم، وفيها مسجد محمد علي بمآذنه العالية",
         "note": "Saladin's Citadel sits on the Muqattam hill and holds the Muhammad Ali Mosque with its tall minarets",
         "example": "من القلعة تشوف القاهرة كلها"
+      },
+      {
+        "id": "famous.pyramids",
+        "text": "أهرامات الجيزة",
+        "english": "the Giza Pyramids",
+        "standard": "أهرامات الجيزة",
+        "noteAr": "أهرامات الجيزة، آخر عجائب الدنيا السبع القديمة الباقية، عمرها أكتر من 4500 سنة",
+        "note": "The Giza Pyramids are the last surviving wonder of the ancient world, over 4,500 years old",
+        "example": "الأهرامات بانت من الفضاء كمان"
       }
     ],
     "alx": [
@@ -1072,6 +1090,15 @@
         "noteAr": "بحري والأنفوشي، حي الصيادين القديم في إسكندرية، بلد السمك والمراكب",
         "note": "Bahary and Anfoushi form Alexandria's old fishermen quarter, home of fish and boats",
         "example": "السمك في بحري غير أي حتة"
+      },
+      {
+        "id": "famous.montaza",
+        "text": "المنتزه",
+        "english": "Montaza",
+        "standard": "المنتزه",
+        "noteAr": "المنتزه، قصور وحدائق ملوك مصر السابقين على البحر في إسكندرية",
+        "note": "Montaza holds the palaces and gardens of Egypt's former kings on the sea in Alexandria",
+        "example": "جسور المنتزه على البحر منظرها حلو"
       }
     ],
     "shq": [
@@ -2518,6 +2545,15 @@
         "noteAr": "نويبع، خليج هادئ على خليج العقبة بين دهب وطابا",
         "note": "Nuweiba is a quiet bay on the Gulf of Aqaba between Dahab and Taba",
         "example": "نويبع هدوء وبحر صافي"
+      },
+      {
+        "id": "famous.el_tor",
+        "text": "الطور",
+        "english": "El-Tor",
+        "standard": "الطور",
+        "noteAr": "طور سيناء، عاصمة محافظة جنوب سيناء على خليج السويس",
+        "note": "El-Tor is the capital of South Sinai on the Gulf of Suez",
+        "example": "الطور بلد هادية على البحر"
       }
     ],
     "dam": [
@@ -2685,6 +2721,15 @@
         "noteAr": "باب توما، حي دمشق القديمة العريق بأزقته وبيوته الحجرية",
         "note": "Bab Touma is an old quarter of Damascus with stone houses and narrow alleys",
         "example": "أزقة باب توما كلها تاريخ"
+      },
+      {
+        "id": "famous.takiyya",
+        "text": "التكية السليمانية",
+        "english": "the Sulaymaniyya Takiyya",
+        "standard": "التكية السليمانية",
+        "noteAr": "التكية السليمانية في دمشق، تحفة عثمانية من تصميم سنان بجانب سوق الحميدية",
+        "note": "The Sulaymaniyya Takiyya in Damascus is an Ottoman masterpiece by Sinan next to Souk al-Hamidiyya",
+        "example": "التكية السليمانية بقبابها من أجمل مباني دمشق"
       }
     ],
     "alp": [
@@ -3014,6 +3059,15 @@
         "noteAr": "مغارة جعيتا في لبنان، كهوف كلسية ببحيرة جوفية، من أجمل مغاور العالم",
         "note": "Jeita Grotto in Lebanon is a limestone cave system with an underground lake, among the world's finest",
         "example": "مغارة جعيتا بالقارب جوا الكهف"
+      },
+      {
+        "id": "famous.saida",
+        "text": "صيدا",
+        "english": "Saida (Sidon)",
+        "standard": "صيدا",
+        "noteAr": "صيدا، مدينة الجنوب القديمة، وقلعتها البحرية على الميناء من زمن الصليبيين",
+        "note": "Saida is an old southern city whose sea castle on the harbor dates to the Crusaders",
+        "example": "قلعة صيدا البحرية في قلب البحر"
       }
     ],
     "psu": [
@@ -3178,6 +3232,15 @@
         "noteAr": "حيفا، مدينة الجبل والبحر، وفيها حدائق الكرمل المعلقة",
         "note": "Haifa is the city of mountain and sea, with the hanging Carmel gardens",
         "example": "حيفا جبلها نازل على البحر"
+      },
+      {
+        "id": "famous.jaffa_city",
+        "text": "يافا",
+        "english": "Jaffa",
+        "standard": "يافا",
+        "noteAr": "يافا، بلد البرتقال، وميناؤها من أقدم موانئ البحر المتوسط",
+        "note": "Jaffa is the city of oranges, and its harbor among the Mediterranean's oldest",
+        "example": "يافا القديمة على تل مطل على البحر"
       }
     ],
     "psr": [
@@ -3340,6 +3403,15 @@
         "noteAr": "غزة، مدينة الساحل القديمة، ميناؤها من أقدم موانئ المتوسط",
         "note": "Gaza is an ancient coastal city whose port is among the oldest on the Mediterranean",
         "example": "غزة هاشم، مدينة عريقة على البحر"
+      },
+      {
+        "id": "famous.sebastia",
+        "text": "سبسطية",
+        "english": "Sebastia",
+        "standard": "سبسطية",
+        "noteAr": "سبسطية، بلدة أثرية قرب نابلس، بأعمدتها الرومانية وآثارها القديمة",
+        "note": "Sebastia is an archaeological village near Nablus with Roman columns and ancient ruins",
+        "example": "أعمدة سبسطية من زمن الرومان"
       }
     ],
     "jor": [
@@ -3669,6 +3741,15 @@
         "noteAr": "طاق كسرى في المدائن جنوب بغداد، أعلى قوس طيني باقٍ من العالم القديم",
         "note": "Taq Kisra at Ctesiphon south of Baghdad is the tallest surviving mud-brick arch of the ancient world",
         "example": "طاق كسرى من زمن الساسانيين"
+      },
+      {
+        "id": "famous.tahrir_square_iq",
+        "text": "ساحة التحرير",
+        "english": "Tahrir Square",
+        "standard": "ساحة التحرير",
+        "noteAr": "ساحة التحرير، قلب بغداد، وفيها نصب الحرية للفنان جواد سليم",
+        "note": "Tahrir Square is the heart of Baghdad and holds Jawad Saleem's Freedom Monument",
+        "example": "نصب الحرية في ساحة التحرير من رموز بغداد"
       }
     ],
     "mos": [
@@ -4161,6 +4242,15 @@
         "noteAr": "حافة العالم، مطل صخري قريب من الرياض، يطل على سهول لا نهائية",
         "note": "The Edge of the World is a cliff near Riyadh overlooking endless plains",
         "example": "الغروب من حافة العالم منظر ما يتنسى"
+      },
+      {
+        "id": "famous.diriyah",
+        "text": "الدرعية",
+        "english": "Diriyah",
+        "standard": "الدرعية",
+        "noteAr": "الدرعية، عاصمة الدولة السعودية الأولى، وحي الطريف فيها مسجل في اليونسكو",
+        "note": "Diriyah was the first Saudi state's capital, and its At-Turaif district is UNESCO-listed",
+        "example": "الدرعية على ضفة وادي حنيفة"
       }
     ],
     "hij": [
@@ -4325,6 +4415,15 @@
         "noteAr": "ساعة مكة في أبراج البيت قبالة الحرم، من أكبر ساعات العالم",
         "note": "The Makkah Clock Tower faces the Haram and holds one of the world's largest clock faces",
         "example": "ساعة مكة تبان من بعيد"
+      },
+      {
+        "id": "famous.madinah",
+        "text": "المدينة المنورة",
+        "english": "Madinah",
+        "standard": "المدينة المنورة",
+        "noteAr": "المدينة المنورة، طيبة الطيبة، وفيها المسجد النبوي الشريف",
+        "note": "Madinah is the Prophet's city, home of the Prophet's Mosque",
+        "example": "جو المدينة غير في رمضان"
       }
     ],
     "jiz": [
@@ -6625,6 +6724,15 @@
         "noteAr": "أكادير، مدينة الشاطئ والشمس على الأطلسي، عاصمة سوس",
         "note": "Agadir is the beach and sun city on the Atlantic, capital of the Souss",
         "example": "شاطئ أكادير طويل وعريض"
+      },
+      {
+        "id": "famous.essaouira",
+        "text": "الصويرة",
+        "english": "Essaouira",
+        "standard": "الصويرة",
+        "noteAr": "الصويرة، مدينة الرياح على الأطلسي، وميناؤها الأزرق مسجل في اليونسكو",
+        "note": "Essaouira is the city of wind on the Atlantic, and its blue harbor is UNESCO-listed",
+        "example": "الصويرة ريحها ما يهداش"
       }
     ],
     "jeb": [
