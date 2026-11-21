@@ -2084,6 +2084,15 @@
         "noteAr": "إيتاي البارود، مدينة قديمة على فرع رشيد، عرفت أيام زمان بسوق القطن",
         "note": "Itay El Barud is an old town on the Rosetta branch, once known for its cotton market",
         "example": "إيتاي البارود على طريق القاهرة إسكندرية الزراعي"
+      },
+      {
+        "id": "famous.abu_homs",
+        "text": "أبو حمص",
+        "english": "Abu Homs",
+        "standard": "أبو حمص",
+        "noteAr": "أبو حمص، مدينة في وسط البحيرة، على ترعة النوبارية القديمة",
+        "note": "Abu Homs is a town in central Beheira on the old Nubaria canal",
+        "example": "أبو حمص بين دمنهور وكفر الدوار"
       }
     ],
     "dmt": [
@@ -2260,6 +2269,15 @@
         "noteAr": "كفر سعد، بلدة دمياطية مشهورة بمزارع المانجو والجوافة",
         "note": "Kafr Saad is a Damietta town known for its mango and guava orchards",
         "example": "مانجو كفر سعد من أحلى مانجو في مصر"
+      },
+      {
+        "id": "famous.el_zarqa",
+        "text": "الزرقا",
+        "english": "El-Zarqa (Damietta)",
+        "standard": "الزرقا",
+        "noteAr": "الزرقا، مدينة في جنوب دمياط، عرفت بصناعة الغزل والنسيج",
+        "note": "El-Zarqa in southern Damietta is known for spinning and weaving",
+        "example": "الزرقا بلد النسيج في دمياط"
       }
     ],
     "kfs": [
@@ -2435,6 +2453,15 @@
         "noteAr": "بيلا، مدينة قديمة في جنوب كفر الشيخ، على طريق القاهرة إسكندرية الزراعي",
         "note": "Bila is an old town in southern Kafr El-Sheikh, on the Cairo-Alexandria agricultural road",
         "example": "بيلا جنب طنطا على الخط الزراعي"
+      },
+      {
+        "id": "famous.qallin",
+        "text": "قلين",
+        "english": "Qallin",
+        "standard": "قلين",
+        "noteAr": "قلين، مدينة قديمة على فرع رشيد في جنوب كفر الشيخ",
+        "note": "Qallin is an old town on the Rosetta branch in southern Kafr El-Sheikh",
+        "example": "قلين على النيل جنب المحلة"
       }
     ],
     "sai": [
@@ -2615,6 +2642,15 @@
         "noteAr": "نجع حمادي، مدينة على النيل في قنا، مشهورة بمصنع الألومنيوم وبالمخطوطات القديمة",
         "note": "Nag Hammadi in Qena is a Nile town known for its aluminum plant and the ancient library found there",
         "example": "نجع حمادي قريبة من دندرة"
+      },
+      {
+        "id": "famous.edfu",
+        "text": "أدفو",
+        "english": "Edfu",
+        "standard": "أدفو",
+        "noteAr": "أدفو، مدينة بين الأقصر وأسوان، فيها معبد حورس، أحسن معبد باقي في مصر",
+        "note": "Edfu, between Luxor and Aswan, has the Temple of Horus, the best-preserved temple in Egypt",
+        "example": "معبد أدفو كامل من سقفه لأرضه"
       }
     ],
     "sin": [
@@ -3182,6 +3218,15 @@
         "noteAr": "باب الحديد، من أبواب حلب القديمة، جنب نهر قويق",
         "note": "Bab al-Hadid is one of old Aleppo's gates, by the Quweiq river",
         "example": "باب الحديد بناه السلطان الظاهر بيبرس"
+      },
+      {
+        "id": "famous.saadallah_square",
+        "text": "ساحة سعد الله الجابري",
+        "english": "Saadallah al-Jabiri Square",
+        "standard": "ساحة سعد الله الجابري",
+        "noteAr": "ساحة سعد الله الجابري، الساحة الرئيسية في وسط حلب",
+        "note": "Saadallah al-Jabiri Square is the main square in central Aleppo",
+        "example": "الساحة قلب حلب"
       }
     ],
     "leb": [
@@ -7688,6 +7733,15 @@
         "noteAr": "العرايش، مدينة على مصب وادي لوكوس، عرفها الرومان والإسبان",
         "note": "Larache sits at the mouth of the Loukkos river, with Roman and Spanish history",
         "example": "العرايش مدينة هادية على البحر"
+      },
+      {
+        "id": "famous.martil",
+        "text": "مرتيل",
+        "english": "Martil",
+        "standard": "مرتيل",
+        "noteAr": "مرتيل، مصيف على البحر جنب تطوان، يعمر بالناس في الصيف",
+        "note": "Martil is a beach resort next to Tetouan, packed in summer",
+        "example": "مرتيل في الصيف ما كاين فيها حتى بلاصة"
       }
     ],
     "alg": [
@@ -7872,6 +7926,15 @@
         "noteAr": "تيبازة، مدينة أثرية رومانية على البحر غرب العاصمة، مسجلة في اليونسكو",
         "note": "Tipaza is a Roman coastal ruin town west of Algiers, UNESCO-listed",
         "example": "تيبازة بحر وأثار في نفس الوقت"
+      },
+      {
+        "id": "famous.setif",
+        "text": "سطيف",
+        "english": "Setif",
+        "standard": "سطيف",
+        "noteAr": "سطيف، مدينة الهضاب العليا، عاصمة تجارية في شرق الجزائر",
+        "note": "Setif is the trading capital of the High Plains in eastern Algeria",
+        "example": "سطيف برد بزاف في الشتا"
       }
     ],
     "tun": [
@@ -8056,6 +8119,15 @@
         "noteAr": "المنستير، مدينة الساحل التونسي، فيها الرباط القديم وضريح بورقيبة",
         "note": "Monastir on Tunisia's Sahel coast has the old ribat and Bourguiba's mausoleum",
         "example": "رباط المنستير من أقدم الحصون البحرية"
+      },
+      {
+        "id": "famous.sfax",
+        "text": "صفاقس",
+        "english": "Sfax",
+        "standard": "صفاقس",
+        "noteAr": "صفاقس، عاصمة الجنوب التونسي ومدينة الزيتون، ومدينتها القديمة محاطة بسور",
+        "note": "Sfax is the capital of southern Tunisia, city of olives, its medina ringed by walls",
+        "example": "صفاقس مدينة الشغل والزيتون"
       }
     ],
     "tri": [
@@ -8239,6 +8311,15 @@
         "noteAr": "زليتن، مدينة بين طرابلس ومصراتة، معروفة بجامع عبد السلام الأسمر",
         "note": "Zliten, between Tripoli and Misrata, is known for the Abd al-Salam al-Asmar mosque",
         "example": "زليتن تشتهر بالعصيدة"
+      },
+      {
+        "id": "famous.tajoura",
+        "text": "تاجوراء",
+        "english": "Tajoura",
+        "standard": "تاجوراء",
+        "noteAr": "تاجوراء، مدينة قديمة شرق طرابلس على البحر، معروفة ببيوتها القديمة",
+        "note": "Tajoura is an old coastal town east of Tripoli, known for its old houses",
+        "example": "تاجوراء من أقدم ضواحي طرابلس"
       }
     ],
     "ben": [
@@ -8421,6 +8502,15 @@
         "noteAr": "درنة، مدينة الوادي والشلالات في الجبل الأخضر، عندها شاطئ جميل",
         "note": "Derna in the Jabal al-Akhdar is the city of the wadi and waterfalls, with a fine shore",
         "example": "شلال درنة من معالم الجبل الأخضر"
+      },
+      {
+        "id": "famous.qubba",
+        "text": "القبة",
+        "english": "Al-Qubbah",
+        "standard": "القبة",
+        "noteAr": "القبة، مدينة في الجبل الأخضر بين البيضاء ودرنة",
+        "note": "Al-Qubbah is a Jabal al-Akhdar town between Bayda and Derna",
+        "example": "القبة على الطريق بين البيضاء ودرنة"
       }
     ],
     "has": [
@@ -8746,6 +8836,15 @@
         "noteAr": "أبو صوير، مدينة في غرب الإسماعيلية، مشهورة بزراعة الفراولة والمانجو",
         "note": "Abu Suweir is a town in western Ismailia, known for strawberries and mangoes",
         "example": "فراولة أبو صوير بتتصدّر لأوروبا"
+      },
+      {
+        "id": "famous.qassassin",
+        "text": "القصاصين",
+        "english": "El-Qassassin",
+        "standard": "القصاصين",
+        "noteAr": "القصاصين، مدينة على ترعة الإسماعيلية في غرب المحافظة",
+        "note": "El-Qassassin is a town on the Ismailia canal in the west of the governorate",
+        "example": "القصاصين على طريق القاهرة إسماعيلية"
       }
     ],
     "bdw": [
@@ -8889,6 +8988,15 @@
         "noteAr": "جزيرة فطناس في سيوة، أشهر مكان تشوف منه الغروب على البحيرة",
         "note": "Fatnas Island in Siwa is the famous sunset spot over the salt lake",
         "example": "الغروب من فطناس مايتوصفش"
+      },
+      {
+        "id": "famous.ras_el_hekma",
+        "text": "رأس الحكمة",
+        "english": "Ras El-Hekma",
+        "standard": "رأس الحكمة",
+        "noteAr": "رأس الحكمة، خليج على الساحل الشمالي شرق مطروح، مياهه من أصفى مياه المتوسط",
+        "note": "Ras El-Hekma is a bay on the North Coast east of Matrouh with some of the clearest Mediterranean water",
+        "example": "مية رأس الحكمة زي الزجاج"
       }
     ]
   }
