@@ -1330,9 +1330,9 @@
         "text": "منيا القمح",
         "english": "Minya el-Qamh",
         "standard": "منيا القمح",
-        "noteAr": "منيا القمح في الشرقية، مدينة الغزل والنسيج من أيام محمد علي",
-        "note": "Minya el-Qamh in Sharqia has been a weaving and textiles town since Muhammad Ali's time",
-        "example": "نسيج منيا القمح له اسم من زمان"
+        "noteAr": "منيا القمح، مدينة ومركز بمحافظة الشرقية",
+        "note": "Minya El-Qamh is a city and district in Sharqia Governorate",
+        "example": "منيا القمح من مراكز الشرقية"
       },
       {
         "id": "famous.zagazig",
@@ -1348,9 +1348,9 @@
         "text": "فاقوس",
         "english": "Faqus",
         "standard": "فاقوس",
-        "noteAr": "فاقوس، مدينة على بحيرة المنزلة في شمال الشرقية، مشهورة بمزارع السمك",
-        "note": "Faqus is a town on Lake Manzala in northern Sharqia, known for its fish farms",
-        "example": "سمك فاقوس من المزارع على طول"
+        "noteAr": "فاقوس، مدينة ومركز بمحافظة الشرقية",
+        "note": "Faqus is a city and district in Sharqia Governorate",
+        "example": "فاقوس من مراكز الشرقية"
       },
       {
         "id": "famous.kafr_saqr",
@@ -1707,9 +1707,9 @@
         "text": "شبين الكوم",
         "english": "Shebin El-Kom",
         "standard": "شبين الكوم",
-        "noteAr": "عاصمة المنوفية، مدينة القطن والتعليم في قلب الدلتا",
-        "note": "Shebin El-Kom, Monufia's capital, is a cotton and university town in the heart of the Delta",
-        "example": "شبين الكوم نص ساعة من كوبري قويسنا"
+        "noteAr": "شبين الكوم، عاصمة محافظة المنوفية",
+        "note": "Shebin El-Kom is the capital of Monufia Governorate",
+        "example": "شبين الكوم عاصمة المنوفية"
       },
       {
         "id": "famous.sadat_city",
@@ -1734,9 +1734,9 @@
         "text": "منوف",
         "english": "Menouf",
         "standard": "منوف",
-        "noteAr": "منوف، مدينة عريقة على ترعة المنوفية، كانت عاصمة المحافظة زمان",
-        "note": "Menouf is an old town on the Menoufia canal and was once the governorate's capital",
-        "example": "منوف سيدي شرقاوي ولياليها"
+        "noteAr": "منوف، مدينة في المنوفية كانت عاصمة المحافظة قبل شبين الكوم",
+        "note": "Menouf is a city in Monufia that was the governorate capital before Shebin El-Kom",
+        "example": "منوف كانت عاصمة المنوفية زمان"
       },
       {
         "id": "famous.quweisna",
