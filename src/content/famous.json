@@ -2156,6 +2156,15 @@
         "noteAr": "أبو حمص، مدينة في وسط البحيرة، على ترعة النوبارية القديمة",
         "note": "Abu Homs is a town in central Beheira on the old Nubaria canal",
         "example": "أبو حمص بين دمنهور وكفر الدوار"
+      },
+      {
+        "id": "famous.dilingat",
+        "text": "الدلنجات",
+        "english": "El-Dilingat",
+        "standard": "الدلنجات",
+        "noteAr": "الدلنجات، مدينة في شرق البحيرة على ترعة الرياح البحيري",
+        "note": "El-Dilingat is a town in eastern Beheira on the Rayah El-Beheiry canal",
+        "example": "الدلنجات بلد السمك على الرياح"
       }
     ],
     "dmt": [
@@ -2341,6 +2350,15 @@
         "noteAr": "الزرقا، مدينة في جنوب دمياط، عرفت بصناعة الغزل والنسيج",
         "note": "El-Zarqa in southern Damietta is known for spinning and weaving",
         "example": "الزرقا بلد النسيج في دمياط"
+      },
+      {
+        "id": "famous.mit_abu_ghaleb",
+        "text": "ميت أبو غالب",
+        "english": "Mit Abu Ghaleb",
+        "standard": "ميت أبو غالب",
+        "noteAr": "ميت أبو غالب، مركز في غرب دمياط على فرع دمياط من النيل",
+        "note": "Mit Abu Ghaleb is a district in western Damietta on the Nile's Damietta branch",
+        "example": "ميت أبو غالب جنب شربين"
       }
     ],
     "kfs": [
@@ -2525,6 +2543,15 @@
         "noteAr": "قلين، مدينة قديمة على فرع رشيد في جنوب كفر الشيخ",
         "note": "Qallin is an old town on the Rosetta branch in southern Kafr El-Sheikh",
         "example": "قلين على النيل جنب المحلة"
+      },
+      {
+        "id": "famous.el_riyad_kfs",
+        "text": "الرياض",
+        "english": "El-Riyad (Kafr El-Sheikh)",
+        "standard": "الرياض",
+        "noteAr": "الرياض، مركز في شرق كفر الشيخ على النيل، قبالة شربين",
+        "note": "El-Riyad is a district in eastern Kafr El-Sheikh on the Nile, facing Shirbin",
+        "example": "الرياض جنب دمياط على النيل"
       }
     ],
     "sai": [
@@ -2714,6 +2741,15 @@
         "noteAr": "أدفو، مدينة بين الأقصر وأسوان، فيها معبد حورس، أحسن معبد باقي في مصر",
         "note": "Edfu, between Luxor and Aswan, has the Temple of Horus, the best-preserved temple in Egypt",
         "example": "معبد أدفو كامل من سقفه لأرضه"
+      },
+      {
+        "id": "famous.asyut",
+        "text": "أسيوط",
+        "english": "Asyut",
+        "standard": "أسيوط",
+        "noteAr": "أسيوط، عاصمة الصعيد، فيها جامعة مشهورة ودير المحرق",
+        "note": "Asyut, the capital of Upper Egypt, has a famous university and the Muharraq Monastery",
+        "example": "أسيوط أكبر مدينة في الصعيد"
       }
     ],
     "sin": [
@@ -3308,6 +3344,15 @@
         "noteAr": "ساحة سعد الله الجابري، الساحة الرئيسية في وسط حلب",
         "note": "Saadallah al-Jabiri Square is the main square in central Aleppo",
         "example": "الساحة قلب حلب"
+      },
+      {
+        "id": "famous.bab_al_nasr_aleppo",
+        "text": "باب النصر",
+        "english": "Bab al-Nasr (Aleppo)",
+        "standard": "باب النصر",
+        "noteAr": "باب النصر في حلب، من أبواب السور القديم، جنب نهر قويق",
+        "note": "Bab al-Nasr in Aleppo is one of the old wall's gates, by the Quweiq river",
+        "example": "باب النصر يفتح على حي باب النصر الشعبي"
       }
     ],
     "leb": [
@@ -8030,6 +8075,15 @@
         "noteAr": "مرتيل، مصيف على البحر جنب تطوان، يعمر بالناس في الصيف",
         "note": "Martil is a beach resort next to Tetouan, packed in summer",
         "example": "مرتيل في الصيف ما كاين فيها حتى بلاصة"
+      },
+      {
+        "id": "famous.ketama",
+        "text": "كتامة",
+        "english": "Ketama",
+        "standard": "كتامة",
+        "noteAr": "كتامة، بلدة في قلب جبال الريف، معروفة بثلجها في الشتا",
+        "note": "Ketama is a town in the heart of the Rif mountains, known for its winter snow",
+        "example": "كتامة في الشتا كيغطيها الثلج"
       }
     ],
     "alg": [
@@ -8223,6 +8277,15 @@
         "noteAr": "سطيف، مدينة الهضاب العليا، عاصمة تجارية في شرق الجزائر",
         "note": "Setif is the trading capital of the High Plains in eastern Algeria",
         "example": "سطيف برد بزاف في الشتا"
+      },
+      {
+        "id": "famous.bejaia",
+        "text": "بجاية",
+        "english": "Bejaia",
+        "standard": "بجاية",
+        "noteAr": "بجاية، مدينة البحر والجبل في القبائل، وفيها قمة يما قورايا",
+        "note": "Bejaia in Kabylie is a city of sea and mountain, home to Yemma Gouraya peak",
+        "example": "بجاية البحر فيها أزرق بزاف"
       }
     ],
     "tun": [
@@ -8416,6 +8479,15 @@
         "noteAr": "صفاقس، عاصمة الجنوب التونسي ومدينة الزيتون، ومدينتها القديمة محاطة بسور",
         "note": "Sfax is the capital of southern Tunisia, city of olives, its medina ringed by walls",
         "example": "صفاقس مدينة الشغل والزيتون"
+      },
+      {
+        "id": "famous.bizerte",
+        "text": "بنزرت",
+        "english": "Bizerte",
+        "standard": "بنزرت",
+        "noteAr": "بنزرت، أقصى مدينة في شمال أفريقيا، ميناؤها القديم مشهور",
+        "note": "Bizerte is the northernmost city in Africa, known for its old port",
+        "example": "الميناء القديم في بنزرت من أحلى المعالم"
       }
     ],
     "tri": [
@@ -8608,6 +8680,15 @@
         "noteAr": "تاجوراء، مدينة قديمة شرق طرابلس على البحر، معروفة ببيوتها القديمة",
         "note": "Tajoura is an old coastal town east of Tripoli, known for its old houses",
         "example": "تاجوراء من أقدم ضواحي طرابلس"
+      },
+      {
+        "id": "famous.zawiya",
+        "text": "الزاوية",
+        "english": "Az-Zawiya",
+        "standard": "الزاوية",
+        "noteAr": "الزاوية، مدينة ساحلية غرب طرابلس، فيها جامعة قديمة ومصفاة نفط",
+        "note": "Az-Zawiya is a coastal city west of Tripoli with an old university and an oil refinery",
+        "example": "الزاوية على الطريق الساحلي لزوارة"
       }
     ],
     "ben": [
@@ -8799,6 +8880,15 @@
         "noteAr": "القبة، مدينة في الجبل الأخضر بين البيضاء ودرنة",
         "note": "Al-Qubbah is a Jabal al-Akhdar town between Bayda and Derna",
         "example": "القبة على الطريق بين البيضاء ودرنة"
+      },
+      {
+        "id": "famous.ajdabiya",
+        "text": "أجدابيا",
+        "english": "Ajdabiya",
+        "standard": "أجدابيا",
+        "noteAr": "أجدابيا، مدينة في مفترق الطرق بين بنغازي والجنوب",
+        "note": "Ajdabiya sits at the road junction between Benghazi and the south",
+        "example": "أجدابيا بوابة واحة جالو"
       }
     ],
     "has": [
@@ -9142,6 +9232,15 @@
         "noteAr": "القصاصين، مدينة على ترعة الإسماعيلية في غرب المحافظة",
         "note": "El-Qassassin is a town on the Ismailia canal in the west of the governorate",
         "example": "القصاصين على طريق القاهرة إسماعيلية"
+      },
+      {
+        "id": "famous.nefisha",
+        "text": "نفيشة",
+        "english": "Nefisha",
+        "standard": "نفيشة",
+        "noteAr": "نفيشة، قرية تاريخية جنوب الإسماعيلية، مرت عليها حروب القناة",
+        "note": "Nefisha is a historic village south of Ismailia, crossed by the Canal wars",
+        "example": "نفيشة على طريق السويس"
       }
     ],
     "bdw": [
@@ -9294,6 +9393,15 @@
         "noteAr": "رأس الحكمة، خليج على الساحل الشمالي شرق مطروح، مياهه من أصفى مياه المتوسط",
         "note": "Ras El-Hekma is a bay on the North Coast east of Matrouh with some of the clearest Mediterranean water",
         "example": "مية رأس الحكمة زي الزجاج"
+      },
+      {
+        "id": "famous.rommel_beach",
+        "text": "شاطئ رومل",
+        "english": "Rommel Beach",
+        "standard": "شاطئ رومل",
+        "noteAr": "شاطئ رومل في مرسى مطروح، سمي على اسم الجنرال الألماني في الحرب العالمية",
+        "note": "Rommel Beach in Marsa Matrouh is named after the WWII German general",
+        "example": "شاطئ رومل من أجمل شواطئ مطروح"
       }
     ]
   }
