@@ -1369,6 +1369,15 @@
         "noteAr": "أبو كبير، مدينة في وسط الشرقية، مشهورة بمانجو العويس",
         "note": "Abu Kebir in central Sharqia is famous for its Owais mangoes",
         "example": "مانجو أبو كبير أشهر مانجو في مصر"
+      },
+      {
+        "id": "famous.abu_hammad",
+        "text": "أبو حماد",
+        "english": "Abu Hammad",
+        "standard": "أبو حماد",
+        "noteAr": "أبو حماد، مدينة في جنوب الشرقية على ترعة الإسماعيلية",
+        "note": "Abu Hammad is a town in southern Sharqia on the Ismailia canal",
+        "example": "أبو حماد على خط القاهرة إسماعيلية"
       }
     ],
     "dkh": [
@@ -1558,6 +1567,15 @@
         "noteAr": "السنبلاوين، مدينة قديمة في جنوب الدقهلية، سوقها من أكبر أسواق المحافظة",
         "note": "El-Senbellawein in southern Dakahlia has one of the governorate's biggest markets",
         "example": "سوق السنبلاوين يوم الخميس"
+      },
+      {
+        "id": "famous.belqas",
+        "text": "بلقاس",
+        "english": "Belqas",
+        "standard": "بلقاس",
+        "noteAr": "بلقاس، مدينة في غرب الدقهلية، قريبة من بحيرة المنزلة",
+        "note": "Belqas is a town in western Dakahlia near Lake Manzala",
+        "example": "بلقاس تشتهر بالقصب والسكر"
       }
     ],
     "mnf": [
@@ -1746,6 +1764,15 @@
         "noteAr": "تلا، مركز في جنوب المنوفية، بلد الطبيب والأديب لويس عوض",
         "note": "Tala is a district in southern Monufia, hometown of the writer Louis Awad",
         "example": "تلا على ترعة الشبيني"
+      },
+      {
+        "id": "famous.birket_el_sab",
+        "text": "بركة السبع",
+        "english": "Birket El-Sab",
+        "standard": "بركة السبع",
+        "noteAr": "بركة السبع، مركز على فرع رشيد في غرب المنوفية",
+        "note": "Birket El-Sab is a district on the Rosetta branch in western Monufia",
+        "example": "بركة السبع على النيل جنب الخطاطبة"
       }
     ],
     "ghr": [
@@ -1935,6 +1962,15 @@
         "noteAr": "قطور، مدينة في وسط الغربية بين طنطا والمحلة",
         "note": "Qutur sits in central Gharbia between Tanta and Mahalla",
         "example": "قطور نص الطريق بين طنطا والمحلة"
+      },
+      {
+        "id": "famous.el_santa",
+        "text": "السنطة",
+        "english": "El-Santa",
+        "standard": "السنطة",
+        "noteAr": "السنطة، مركز في جنوب الغربية، بلد عالم الآثار سالم حسن",
+        "note": "El-Santa is a district in southern Gharbia",
+        "example": "السنطة بين زفتى وكفر الزيات"
       }
     ],
     "bhr": [
@@ -4061,6 +4097,15 @@
         "noteAr": "قلعة الكرك، من أشهر القلاع الصليبية في المنطقة، تطل على الأودية حولها",
         "note": "Karak Castle is one of the region's great Crusader castles, overlooking the surrounding wadis",
         "example": "قلعة الكرك تبان من بعيد"
+      },
+      {
+        "id": "famous.aqaba",
+        "text": "العقبة",
+        "english": "Aqaba",
+        "standard": "العقبة",
+        "noteAr": "العقبة، ميناء الأردن الوحيد على البحر الأحمر، وشعابها معروفة للغوص",
+        "note": "Aqaba is Jordan's only Red Sea port, its reefs famous for diving",
+        "example": "العقبة أحلى مكان للغوص في الأردن"
       }
     ],
     "bag": [
@@ -4453,6 +4498,15 @@
         "noteAr": "سنجار، جبل ومدينة غرب الموصل، دار الإيزيديين من قرون",
         "note": "Sinjar, mountain and town west of Mosul, has been home to the Yazidis for centuries",
         "example": "جبل سنجار يبان من بعيد في السهل"
+      },
+      {
+        "id": "famous.hammam_al_alil",
+        "text": "حمام العليل",
+        "english": "Hammam al-Alil",
+        "standard": "حمام العليل",
+        "noteAr": "حمام العليل، ناحية جنوب الموصل، مشهورة بعيونها المعدنية الحارة",
+        "note": "Hammam al-Alil, south of Mosul, is known for its hot mineral springs",
+        "example": "ناس الموصل يمشون لحمام العليل للاستشفاء"
       }
     ],
     "bas": [
@@ -5620,6 +5674,15 @@
         "noteAr": "الأحمدي، مدينة النفط في جنوب الكويت، بناها شركة النفط الكويتية",
         "note": "Ahmadi is Kuwait's oil town in the south, built by the Kuwait Oil Company",
         "example": "الأحمدي مدينة النفط الأولى في الكويت"
+      },
+      {
+        "id": "famous.hawally",
+        "text": "حولي",
+        "english": "Hawally",
+        "standard": "حولي",
+        "noteAr": "حولي، من أكثر مناطق الكويت زحمة، فيها محلات الكمبيوتر والموبايلات",
+        "note": "Hawally is one of Kuwait's busiest districts, known for electronics shops",
+        "example": "حولي زحمة كل يوم"
       }
     ],
     "emi": [
@@ -5813,6 +5876,15 @@
         "noteAr": "الفجيرة، الإمارة الوحيدة على خليج عمان، جبالها تطل على البحر",
         "note": "Fujairah is the only emirate on the Gulf of Oman, its mountains meeting the sea",
         "example": "الفجيرة شتوية حلوة في الشتا"
+      },
+      {
+        "id": "famous.rak",
+        "text": "رأس الخيمة",
+        "english": "Ras Al Khaimah",
+        "standard": "رأس الخيمة",
+        "noteAr": "رأس الخيمة، إمارة الجبال، فيها جبل جيس أعلى قمة في الإمارات",
+        "note": "Ras Al Khaimah is the emirate of mountains, home to Jebel Jais, the UAE's highest peak",
+        "example": "جبل جيس في رأس الخيمة فيه أطول زيبلاين في العالم"
       }
     ],
     "qat": [
@@ -6005,6 +6077,15 @@
         "noteAr": "الخور، مدينة قديمة شمال الدوحة، اشتهرت بالغوص على اللؤلؤ",
         "note": "Al Khor is an old town north of Doha, once a pearl-diving center",
         "example": "كورنيش الخور هادي وحلو"
+      },
+      {
+        "id": "famous.al_rayyan",
+        "text": "الريان",
+        "english": "Al Rayyan",
+        "standard": "الريان",
+        "noteAr": "الريان، من أكبر بلديات قطر، فيها المدينة التعليمية واستاد أحمد بن علي",
+        "note": "Al Rayyan is among Qatar's largest municipalities, home to Education City and Ahmad bin Ali Stadium",
+        "example": "نادي الريان من أعرق أندية قطر"
       }
     ],
     "bah": [
@@ -6198,6 +6279,15 @@
         "noteAr": "عالي، قرية الفخار في وسط البحرين، وحولها مدافن دلمون",
         "note": "A'ali is Bahrain's pottery village, ringed by the Dilmun burial mounds",
         "example": "فخار عالي يتباع في كل البحرين"
+      },
+      {
+        "id": "famous.sitra",
+        "text": "سترة",
+        "english": "Sitra",
+        "standard": "سترة",
+        "noteAr": "سترة، جزيرة صناعية جنوب شرق المنامة، فيها المصفاة",
+        "note": "Sitra is an industrial island southeast of Manama with the refinery",
+        "example": "سترة فيها ميناء النفط"
       }
     ],
     "oma": [
@@ -6390,6 +6480,15 @@
         "noteAr": "نخل، بلدة قديمة في الباطنة، فيها قلعة على الصخر وعيون ماء حارة",
         "note": "Nakhal in the Batinah has a fort on the rocks and hot springs",
         "example": "قلعة نخل مبنية على صخرة كبيرة"
+      },
+      {
+        "id": "famous.rustaq",
+        "text": "الرستاق",
+        "english": "Rustaq",
+        "standard": "الرستاق",
+        "noteAr": "الرستاق، من أقدم مدن عمان، كانت عاصمة البلاد، وقلعتها كبيرة",
+        "note": "Rustaq is among Oman's oldest towns, once its capital, with a large fort",
+        "example": "قلعة الرستاق من أكبر قلاع عمان"
       }
     ],
     "dho": [
@@ -6580,6 +6679,15 @@
         "noteAr": "جبل سمحان، أعلى جبال ظفار، ومن آخر معاقل النمر العربي",
         "note": "Jabal Samhan is Dhofar's highest mountain and a last refuge of the Arabian leopard",
         "example": "من جبل سمحان تشوف السحاب تحتك في الخريف"
+      },
+      {
+        "id": "famous.raysut",
+        "text": "ريسوت",
+        "english": "Raysut",
+        "standard": "ريسوت",
+        "noteAr": "ريسوت، غرب صلالة، فيها ميناء صلالة ومصنع الإسمنت",
+        "note": "Raysut, west of Salalah, holds Salalah Port and the cement plant",
+        "example": "ميناء صلالة في ريسوت من أكبر مواني المنطقة"
       }
     ],
     "san": [
