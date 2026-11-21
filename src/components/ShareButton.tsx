@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useT } from '../lib/i18n'
 import { sharePath, SITE_URL } from '../lib/og'
 
-/** Shares the link of one phrase in one dialect; its page carries the phrase's own card image. */
+/** Shares a stable phrase link. The compact share shell uses a generic crawler preview. */
 export default function ShareButton({ dialectId, phraseId, text, label = false }: { dialectId: string; phraseId: string; text: string; label?: boolean }) {
   const t = useT()
   const [copied, setCopied] = useState(false)
