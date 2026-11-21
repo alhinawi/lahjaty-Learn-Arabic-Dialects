@@ -1761,18 +1761,18 @@
         "text": "تلا",
         "english": "Tala",
         "standard": "تلا",
-        "noteAr": "تلا، مركز في جنوب المنوفية، بلد الطبيب والأديب لويس عوض",
-        "note": "Tala is a district in southern Monufia, hometown of the writer Louis Awad",
-        "example": "تلا على ترعة الشبيني"
+        "noteAr": "تلا، مدينة ومركز في شمال محافظة المنوفية، غرب مركز بركة السبع",
+        "note": "Tala is a town and district in northern Monufia, west of Birket El-Sab district.",
+        "example": "تلا في شمال المنوفية"
       },
       {
         "id": "famous.birket_el_sab",
         "text": "بركة السبع",
         "english": "Birket El-Sab",
         "standard": "بركة السبع",
-        "noteAr": "بركة السبع، مركز على فرع رشيد في غرب المنوفية",
-        "note": "Birket El-Sab is a district on the Rosetta branch in western Monufia",
-        "example": "بركة السبع على النيل جنب الخطاطبة"
+        "noteAr": "بركة السبع، مدينة ومركز في شمال شرق محافظة المنوفية، على طريق القاهرة إسكندرية الزراعي",
+        "note": "Birket El-Sab is a town and district in northeastern Monufia, on the Cairo-Alexandria agricultural road.",
+        "example": "بركة السبع في شمال شرق المنوفية"
       }
     ],
     "ghr": [
