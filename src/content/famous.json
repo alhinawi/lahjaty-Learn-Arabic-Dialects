@@ -765,6 +765,15 @@
         "noteAr": "لا شكر على واجب، ردّ الشكر المهذب في الفصحى، معناه أن المساعدة واجب لا تحتاج شكرًا",
         "note": "La shukran ala wajib is the polite MSA reply to thanks: the help was a duty that needs no thanks",
         "example": "شكرًا جزيلًا! لا شكر على واجب"
+      },
+      {
+        "id": "famous.kayfa_asil",
+        "text": "كيف أصل إلى...؟",
+        "english": "How do I get to...?",
+        "standard": "كيف أصل إلى...؟",
+        "noteAr": "سؤال فصيح يسأله الزائر عن الطريق إلى أي مكان",
+        "note": "The standard way to ask for directions to anywhere in Modern Standard Arabic",
+        "example": "كيف أصل إلى المتحف من هنا؟"
       }
     ],
     "cai": [
@@ -948,6 +957,15 @@
         "noteAr": "مسجد الحسين في قلب القاهرة القديمة، وساحته ملتقى الناس في المواسم",
         "note": "Al-Hussein Mosque sits in the heart of old Cairo, its square a meeting place on every occasion",
         "example": "ليلة القدر عند الحسين شيء تاني"
+      },
+      {
+        "id": "famous.sultan_hassan",
+        "text": "مسجد السلطان حسن",
+        "english": "Sultan Hassan Mosque",
+        "standard": "مسجد السلطان حسن",
+        "noteAr": "مسجد السلطان حسن، من أعظم العمارة المملوكية في القاهرة، قبالة مسجد الرفاعي",
+        "note": "The Sultan Hassan Mosque is a masterpiece of Mamluk Cairo, facing the Rifa'i Mosque",
+        "example": "السلطان حسن تحت القلعة على طول"
       }
     ],
     "alx": [
@@ -1126,6 +1144,15 @@
         "noteAr": "قصر رأس التين في إسكندرية، قصر ملوك مصر على الميناء الشرقي",
         "note": "Ras El-Tin Palace in Alexandria was the kings' palace on the Eastern Harbor",
         "example": "قصر رأس التين على البحر مباشرة"
+      },
+      {
+        "id": "famous.agami",
+        "text": "العجمي",
+        "english": "Agami",
+        "standard": "العجمي",
+        "noteAr": "العجمي، منطقة المصايف في غرب إسكندرية، وبياض مشهور",
+        "note": "Agami is Alexandria's western beach district, with the famous Bianky shore",
+        "example": "العجمي مليانة مصيفين في الصيف"
       }
     ],
     "shq": [
@@ -2734,6 +2761,15 @@
         "noteAr": "رأس سدر، مصيف هادئ على خليج السويس، أقرب شواطئ سيناء للقاهرة",
         "note": "Ras Sedr is a quiet resort on the Gulf of Suez, Sinai's nearest beaches to Cairo",
         "example": "رأس سدر ساعتين من القاهرة"
+      },
+      {
+        "id": "famous.wadi_feiran",
+        "text": "وادي فيران",
+        "english": "Wadi Feiran",
+        "standard": "وادي فيران",
+        "noteAr": "وادي فيران، أكبر وديان جنوب سيناء، فيه نخيل وأديرة قديمة",
+        "note": "Wadi Feiran is the largest valley in South Sinai, with palm groves and old monasteries",
+        "example": "وادي فيران على طريق سانت كاترين"
       }
     ],
     "dam": [
@@ -2919,6 +2955,15 @@
         "noteAr": "باب شرقي، من أحياء دمشق القديمة على الطريق المستقيم الروماني",
         "note": "Bab Sharqi is an old Damascus quarter on the Roman Straight Street",
         "example": "باب شرقي في نهاية الطريق المستقيم"
+      },
+      {
+        "id": "famous.souk_bzourieh",
+        "text": "سوق البزورية",
+        "english": "Souk al-Bzourieh",
+        "standard": "سوق البزورية",
+        "noteAr": "سوق البزورية في دمشق القديمة، سوق البهارات والحلويات جنب الجامع الأموي",
+        "note": "Souk al-Bzourieh in old Damascus is the spice and sweets market by the Umayyad Mosque",
+        "example": "ريحة البهارات تملأ سوق البزورية"
       }
     ],
     "alp": [
@@ -3284,6 +3329,15 @@
         "noteAr": "طرابلس لبنان، مدينة الشمال، بقلعتها وأسواقها المملوكية",
         "note": "Lebanon's Tripoli is the northern city with a citadel and Mamluk souks",
         "example": "حلويات طرابلس معروفة بكل لبنان"
+      },
+      {
+        "id": "famous.jounieh",
+        "text": "جونيه",
+        "english": "Jounieh",
+        "standard": "جونيه",
+        "noteAr": "جونيه، مدينة ساحلية شمال بيروت، معروفة بخليجها والتلفريك",
+        "note": "Jounieh is a coastal city north of Beirut, known for its bay and cable car",
+        "example": "تلفريك جونيه يطلعك لحريصا"
       }
     ],
     "psu": [
@@ -3466,6 +3520,15 @@
         "noteAr": "الناصرة، مدينة الجليل، وكنيسة البشارة فيها من أشهر الكنائس",
         "note": "Nazareth is the city of the Galilee, home of the Basilica of the Annunciation",
         "example": "سوق الناصرة القديم في البلدة القديمة"
+      },
+      {
+        "id": "famous.ramallah",
+        "text": "رام الله",
+        "english": "Ramallah",
+        "standard": "رام الله",
+        "noteAr": "رام الله، مدينة في وسط الضفة، مركزها دوار المنارة",
+        "note": "Ramallah in the central West Bank, its center is al-Manara Square",
+        "example": "دوار المنارة وسط رام الله"
       }
     ],
     "psr": [
@@ -3646,6 +3709,15 @@
         "noteAr": "جنين، مدينة الشمال وسهول مرج ابن عامر، مشهورة بزيتونها",
         "note": "Jenin is the northern city by the Marj Ibn Amer plains, known for its olives",
         "example": "زيتون جنين من أجود الزيتون"
+      },
+      {
+        "id": "famous.bethlehem",
+        "text": "بيت لحم",
+        "english": "Bethlehem",
+        "standard": "بيت لحم",
+        "noteAr": "بيت لحم، مدينة المهد، وكنيستها من أقدم كنائس العالم",
+        "note": "Bethlehem, the city of the Nativity, whose church is among the world's oldest",
+        "example": "ساحة المهد في بيت لحم بتعج زوار"
       }
     ],
     "jor": [
@@ -4011,6 +4083,15 @@
         "noteAr": "شارع الرشيد، من أقدم شوارع بغداد التجارية، من أيام العهد العثماني",
         "note": "Al-Rashid Street is among Baghdad's oldest commercial streets, dating to the Ottoman era",
         "example": "شارع الرشيد قلب بغداد القديمة"
+      },
+      {
+        "id": "famous.karrada",
+        "text": "الكرادة",
+        "english": "Karrada",
+        "standard": "الكرادة",
+        "noteAr": "الكرادة، من أشهر مناطق بغداد، فيها الأسواق والمطاعم على نهر دجلة",
+        "note": "Karrada is one of Baghdad's best-known districts, with markets and restaurants on the Tigris",
+        "example": "الكرادة داخل زحمة بالليل"
       }
     ],
     "mos": [
@@ -4557,6 +4638,15 @@
         "noteAr": "بريدة، عاصمة القصيم، ومهرجان تمورها من أكبر أسواق التمور في العالم",
         "note": "Buraidah is Qassim's capital, and its dates festival among the world's largest date markets",
         "example": "موسم تمور بريدة يجمع الناس من كل مكان"
+      },
+      {
+        "id": "famous.kharj",
+        "text": "الخرج",
+        "english": "Al-Kharj",
+        "standard": "الخرج",
+        "noteAr": "الخرج، محافظة جنوب الرياض، مشهورة بمزارعها وعيونها القديمة",
+        "note": "Al-Kharj, south of Riyadh, is known for its farms and old springs",
+        "example": "الخرج تشتهر بمزارع الألبان"
       }
     ],
     "hij": [
@@ -4739,6 +4829,15 @@
         "noteAr": "العلا، وفيها مدائن صالح، أول موقع سعودي مسجل في اليونسكو",
         "note": "AlUla holds Hegra (Mada'in Salih), Saudi Arabia's first UNESCO World Heritage site",
         "example": "مدائن صالح في العلا من زمن الأنباط"
+      },
+      {
+        "id": "famous.yanbu",
+        "text": "ينبع",
+        "english": "Yanbu",
+        "standard": "ينبع",
+        "noteAr": "ينبع، مدينة البحر الأحمر شمال جدة، فيها الصناعية والبحر التاريخي",
+        "note": "Yanbu on the Red Sea, north of Jeddah, has an industrial side and a historic old town",
+        "example": "ينبع البحر أحلى مكان للعائلات"
       }
     ],
     "jiz": [
@@ -7291,6 +7390,15 @@
         "noteAr": "الرباط، عاصمة المغرب، وصومعة حسان فيها من أشهر المعالم",
         "note": "Rabat is Morocco's capital, and the Hassan Tower among its most famous landmarks",
         "example": "الرباط مدينة هادية على البحر"
+      },
+      {
+        "id": "famous.meknes",
+        "text": "مكناس",
+        "english": "Meknes",
+        "standard": "مكناس",
+        "noteAr": "مكناس، المدينة العتيقة، عاصمة مولاي إسماعيل، وفيها باب المنصور",
+        "note": "Meknes, the old imperial city of Moulay Ismail, home to Bab Mansour",
+        "example": "باب المنصور في مكناس من أجمل الأبواب"
       }
     ],
     "jeb": [
