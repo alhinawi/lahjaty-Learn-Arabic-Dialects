@@ -774,6 +774,15 @@
         "noteAr": "سؤال فصيح يسأله الزائر عن الطريق إلى أي مكان",
         "note": "The standard way to ask for directions to anywhere in Modern Standard Arabic",
         "example": "كيف أصل إلى المتحف من هنا؟"
+      },
+      {
+        "id": "famous.ayna_yaqa3",
+        "text": "أين يقع...؟",
+        "english": "Where is... located?",
+        "standard": "أين يقع...؟",
+        "noteAr": "سؤال فصيح عن مكان أي مدينة أو معلم",
+        "note": "The standard way to ask where any city or landmark is located",
+        "example": "أين يقع برج إيفل؟"
       }
     ],
     "cai": [
@@ -966,6 +975,15 @@
         "noteAr": "مسجد السلطان حسن، من أعظم العمارة المملوكية في القاهرة، قبالة مسجد الرفاعي",
         "note": "The Sultan Hassan Mosque is a masterpiece of Mamluk Cairo, facing the Rifa'i Mosque",
         "example": "السلطان حسن تحت القلعة على طول"
+      },
+      {
+        "id": "famous.amr_mosque",
+        "text": "مسجد عمرو بن العاص",
+        "english": "Amr ibn al-As Mosque",
+        "standard": "مسجد عمرو بن العاص",
+        "noteAr": "مسجد عمرو بن العاص في مصر القديمة، أول مسجد اتبنى في مصر وأفريقيا",
+        "note": "The Amr ibn al-As Mosque in Old Cairo was the first mosque built in Egypt and Africa",
+        "example": "مسجد عمرو بن العاص في الفسطاط"
       }
     ],
     "alx": [
@@ -1153,6 +1171,15 @@
         "noteAr": "العجمي، منطقة المصايف في غرب إسكندرية، وبياض مشهور",
         "note": "Agami is Alexandria's western beach district, with the famous Bianky shore",
         "example": "العجمي مليانة مصيفين في الصيف"
+      },
+      {
+        "id": "famous.borg_el_arab",
+        "text": "برج العرب",
+        "english": "Borg El Arab",
+        "standard": "برج العرب",
+        "noteAr": "برج العرب، مدينة جديدة غرب إسكندرية، فيها المطار والاستاد الكبير",
+        "note": "Borg El Arab is a new city west of Alexandria with the airport and the big stadium",
+        "example": "استاد برج العرب من أكبر استادات مصر"
       }
     ],
     "shq": [
@@ -2842,6 +2869,15 @@
         "noteAr": "وادي فيران، أكبر وديان جنوب سيناء، فيه نخيل وأديرة قديمة",
         "note": "Wadi Feiran is the largest valley in South Sinai, with palm groves and old monasteries",
         "example": "وادي فيران على طريق سانت كاترين"
+      },
+      {
+        "id": "famous.hamam_pharaoh",
+        "text": "حمام فرعون",
+        "english": "Pharaoh's Bath (Sinai)",
+        "standard": "حمام فرعون",
+        "noteAr": "حمام فرعون، عين ماء كبريتية سخنة على خليج السويس في جنوب سيناء",
+        "note": "Pharaoh's Bath is a hot sulfur spring on the Gulf of Suez in South Sinai",
+        "example": "حمام فرعون ميته سخنة طول السنة"
       }
     ],
     "dam": [
@@ -3036,6 +3072,15 @@
         "noteAr": "سوق البزورية في دمشق القديمة، سوق البهارات والحلويات جنب الجامع الأموي",
         "note": "Souk al-Bzourieh in old Damascus is the spice and sweets market by the Umayyad Mosque",
         "example": "ريحة البهارات تملأ سوق البزورية"
+      },
+      {
+        "id": "famous.hamra_damascus",
+        "text": "شارع الحمراء",
+        "english": "Al-Hamra Street (Damascus)",
+        "standard": "شارع الحمراء",
+        "noteAr": "شارع الحمراء، من أشهر شوارع دمشق التجارية في وسط المدينة",
+        "note": "Al-Hamra Street is among Damascus's best-known shopping streets downtown",
+        "example": "الحمراء زحمة بالليل"
       }
     ],
     "alp": [
@@ -3419,6 +3464,15 @@
         "noteAr": "جونيه، مدينة ساحلية شمال بيروت، معروفة بخليجها والتلفريك",
         "note": "Jounieh is a coastal city north of Beirut, known for its bay and cable car",
         "example": "تلفريك جونيه يطلعك لحريصا"
+      },
+      {
+        "id": "famous.tyre",
+        "text": "صور",
+        "english": "Tyre",
+        "standard": "صور",
+        "noteAr": "صور، مدينة فينيقية قديمة في الجنوب، آثارها مسجلة في اليونسكو",
+        "note": "Tyre is an ancient Phoenician city in the South, its ruins UNESCO-listed",
+        "example": "ميناء صور من أقدم مواني العالم"
       }
     ],
     "psu": [
@@ -3610,6 +3664,15 @@
         "noteAr": "رام الله، مدينة في وسط الضفة، مركزها دوار المنارة",
         "note": "Ramallah in the central West Bank, its center is al-Manara Square",
         "example": "دوار المنارة وسط رام الله"
+      },
+      {
+        "id": "famous.tiberias",
+        "text": "طبريا",
+        "english": "Tiberias",
+        "standard": "طبريا",
+        "noteAr": "طبريا، مدينة قديمة على بحيرة طبريا، عرفت بمياهها الحارة",
+        "note": "Tiberias is an old city on the Sea of Galilee, known for its hot springs",
+        "example": "بحيرة طبريا أخفض بحيرة عذبة في العالم"
       }
     ],
     "psr": [
@@ -3799,6 +3862,15 @@
         "noteAr": "بيت لحم، مدينة المهد، وكنيستها من أقدم كنائس العالم",
         "note": "Bethlehem, the city of the Nativity, whose church is among the world's oldest",
         "example": "ساحة المهد في بيت لحم بتعج زوار"
+      },
+      {
+        "id": "famous.nablus",
+        "text": "نابلس",
+        "english": "Nablus",
+        "standard": "نابلس",
+        "noteAr": "نابلس، جبل النار، مدينة الكنافة والصابون النابلسي",
+        "note": "Nablus, the Mountain of Fire, is the city of knafeh and Nabulsi soap",
+        "example": "كنافة نابلس ما إلها مثيل"
       }
     ],
     "jor": [
@@ -4182,6 +4254,15 @@
         "noteAr": "الكرادة، من أشهر مناطق بغداد، فيها الأسواق والمطاعم على نهر دجلة",
         "note": "Karrada is one of Baghdad's best-known districts, with markets and restaurants on the Tigris",
         "example": "الكرادة داخل زحمة بالليل"
+      },
+      {
+        "id": "famous.mansour_baghdad",
+        "text": "المنصور",
+        "english": "Mansour (Baghdad)",
+        "standard": "المنصور",
+        "noteAr": "المنصور، منطقة راقية في غرب بغداد، فيها الأسواق والمطاعم",
+        "note": "Mansour is an upscale district in western Baghdad with markets and restaurants",
+        "example": "المنصور فيها شارع الأميرات"
       }
     ],
     "mos": [
@@ -4755,6 +4836,15 @@
         "noteAr": "الخرج، محافظة جنوب الرياض، مشهورة بمزارعها وعيونها القديمة",
         "note": "Al-Kharj, south of Riyadh, is known for its farms and old springs",
         "example": "الخرج تشتهر بمزارع الألبان"
+      },
+      {
+        "id": "famous.unaizah",
+        "text": "عنيزة",
+        "english": "Unaizah",
+        "standard": "عنيزة",
+        "noteAr": "عنيزة، ثاني مدن القصيم، مشهورة بمهرجان التمور",
+        "note": "Unaizah, Qassim's second city, is known for its dates festival",
+        "example": "تمور عنيزة من أفضل التمور"
       }
     ],
     "hij": [
@@ -4946,6 +5036,15 @@
         "noteAr": "ينبع، مدينة البحر الأحمر شمال جدة، فيها الصناعية والبحر التاريخي",
         "note": "Yanbu on the Red Sea, north of Jeddah, has an industrial side and a historic old town",
         "example": "ينبع البحر أحلى مكان للعائلات"
+      },
+      {
+        "id": "famous.rabigh",
+        "text": "رابغ",
+        "english": "Rabigh",
+        "standard": "رابغ",
+        "noteAr": "رابغ، مدينة على البحر الأحمر بين جدة وينبع، وفيها جامعة الملك عبد الله فرع",
+        "note": "Rabigh is a Red Sea town between Jeddah and Yanbu",
+        "example": "رابغ على طريق جدة المدينة الساحلي"
       }
     ],
     "jiz": [
@@ -7624,6 +7723,15 @@
         "noteAr": "مكناس، المدينة العتيقة، عاصمة مولاي إسماعيل، وفيها باب المنصور",
         "note": "Meknes, the old imperial city of Moulay Ismail, home to Bab Mansour",
         "example": "باب المنصور في مكناس من أجمل الأبواب"
+      },
+      {
+        "id": "famous.casablanca",
+        "text": "الدار البيضاء",
+        "english": "Casablanca",
+        "standard": "الدار البيضاء",
+        "noteAr": "الدار البيضاء، كازا، أكبر مدن المغرب وعاصمته الاقتصادية",
+        "note": "Casablanca, Casa, is Morocco's biggest city and economic capital",
+        "example": "كازا فيها أكبر ميناء في المغرب"
       }
     ],
     "jeb": [
