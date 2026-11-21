@@ -1689,18 +1689,18 @@
         "text": "ميت أبو الكوم",
         "english": "Mit Abu El Kom",
         "standard": "ميت أبو الكوم",
-        "noteAr": "قرية في المنوفية اتولد فيها رئيسين: السادات ومبارك",
-        "note": "A Monufia village famous as the birthplace of two Egyptian presidents, Sadat and Mubarak",
-        "example": "ميت أبو الكوم قرية صغيرة بس اسمها كبير"
+        "noteAr": "ميت أبو الكوم، قرية في المنوفية اتولد فيها الرئيس أنور السادات",
+        "note": "Mit Abu El-Kom is a village in Monufia where President Anwar Sadat was born",
+        "example": "أنور السادات اتولد في ميت أبو الكوم"
       },
       {
         "id": "famous.sers_el_layan",
         "text": "سرس الليان",
         "english": "Sers El-Layan",
         "standard": "سرس الليان",
-        "noteAr": "القرية الفرعونية في المنوفية اللي فيها متحف مفتوح للآثار",
-        "note": "Sers El-Layan in Monufia is a living Pharaonic-themed village with an open-air antiquities museum",
-        "example": "سرس الليان مشهورة بالتماثيل الفرعونية"
+        "noteAr": "سرس الليان، مدينة في المنوفية بين مركزي منوف والباجور",
+        "note": "Sers El-Layan is a city in Monufia between the Menouf and El-Bagour districts",
+        "example": "سرس الليان بين منوف والباجور"
       },
       {
         "id": "famous.shebin_el_kom",
@@ -1743,18 +1743,18 @@
         "text": "قويسنا",
         "english": "Quweisna",
         "standard": "قويسنا",
-        "noteAr": "قويسنا، مدينة الزجاج اليدوي في المنوفية، أفرانها شغالة من زمان",
-        "note": "Quweisna is Monufia's handmade-glass town, its furnaces long at work",
-        "example": "زجاج قويسنا بيتشكّل على النار"
+        "noteAr": "قويسنا، مدينة ومركز بمحافظة المنوفية",
+        "note": "Quesna is a city and district in Monufia Governorate",
+        "example": "قويسنا من مراكز المنوفية"
       },
       {
         "id": "famous.bagour",
         "text": "الباجور",
         "english": "El-Bagour",
         "standard": "الباجور",
-        "noteAr": "الباجور، مركز على ترعة الباجورية في شرق المنوفية",
-        "note": "El-Bagour is a district on the Bagouria canal in eastern Monufia",
-        "example": "الباجور جنب ميت غمر والشرقية"
+        "noteAr": "الباجور، مدينة ومركز بمحافظة المنوفية",
+        "note": "El-Bagour is a city and district in Monufia Governorate",
+        "example": "الباجور من مراكز المنوفية"
       },
       {
         "id": "famous.tala",
