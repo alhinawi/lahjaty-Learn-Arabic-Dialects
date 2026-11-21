@@ -4175,6 +4175,15 @@
         "noteAr": "القرنة، ملتقى دجلة والفرات، وفيها شجرة آدم المشهورة",
         "note": "Al-Qurna is where the Tigris and Euphrates meet, home of the famous Adam's Tree",
         "example": "عند القرنة يصير شط العرب"
+      },
+      {
+        "id": "famous.fao",
+        "text": "الفاو",
+        "english": "Al-Faw",
+        "standard": "الفاو",
+        "noteAr": "الفاو، آخر مدن العراق على الخليج، عند مصب شط العرب",
+        "note": "Al-Faw is Iraq's last town on the Gulf, at the mouth of Shatt Al-Arab",
+        "example": "من الفاو يبدأ الخليج"
       }
     ],
     "naj": [
@@ -4687,6 +4696,15 @@
         "noteAr": "وادي بيش، من أخصب أودية جازان، وسده من أكبر سدود السعودية",
         "note": "Wadi Bish is among Jizan's most fertile valleys, and its dam among Saudi Arabia's largest",
         "example": "سد وادي بيش يسقي مزارع المنطقة"
+      },
+      {
+        "id": "famous.samta",
+        "text": "صامطة",
+        "english": "Samtah",
+        "standard": "صامطة",
+        "noteAr": "صامطة، من كبرى مدن جازان الجنوبية، وسوقها من أقدم أسواق المنطقة",
+        "note": "Samtah is among Jizan's largest southern towns, its market among the region's oldest",
+        "example": "سوق صامطة يجمع أهل القرى"
       }
     ],
     "shm": [
@@ -4852,6 +4870,15 @@
         "noteAr": "بقعاء، ثاني مدن منطقة حايل، مشهورة بسوقها وقلعتها",
         "note": "Baqa'a is the Ha'il region's second city, known for its market and fort",
         "example": "سوق بقعاء من أقدم أسواق الشمال"
+      },
+      {
+        "id": "famous.al_shinan",
+        "text": "الشنان",
+        "english": "Al-Shinan",
+        "standard": "الشنان",
+        "noteAr": "الشنان، بلدة جنوب حايل، وبرجها الطيني من أعلى الأبراج الطينية في السعودية",
+        "note": "Al-Shinan is a town south of Ha'il whose mud-brick tower is among Saudi Arabia's tallest",
+        "example": "برج الشنان باقي من مئات السنين"
       }
     ],
     "kuw": [
@@ -6059,6 +6086,15 @@
         "noteAr": "جبل نقم يطل على صنعاء من الشرق، وعليه بقايا قلعة قديمة",
         "note": "Jabal Nuqum overlooks Sana'a from the east and holds the remains of an old fort",
         "example": "من نقم تشوف صنعاء كلها"
+      },
+      {
+        "id": "famous.national_museum_ye",
+        "text": "المتحف الوطني",
+        "english": "the National Museum of Yemen",
+        "standard": "المتحف الوطني",
+        "noteAr": "المتحف الوطني في صنعاء، فيه كنوز ممالك سبأ وحمير ومعين",
+        "note": "The National Museum in Sana'a holds the treasures of the Saba, Himyar and Ma'in kingdoms",
+        "example": "تماثيل سبأ في المتحف الوطني"
       }
     ],
     "ade": [
@@ -6223,6 +6259,15 @@
         "noteAr": "المنصورة، حي عدن الشعبي الكبير، وأسواقه من أزحم أسواق المدينة",
         "note": "Al-Mansoura is Aden's big popular district, its markets among the city's busiest",
         "example": "سوق المنصورة زحمة على طول"
+      },
+      {
+        "id": "famous.sheikh_othman",
+        "text": "الشيخ عثمان",
+        "english": "Sheikh Othman",
+        "standard": "الشيخ عثمان",
+        "noteAr": "الشيخ عثمان، من أقدم أحياء عدن في شمال المدينة، وسوقه معروف",
+        "note": "Sheikh Othman is among Aden's oldest northern districts, with a well-known market",
+        "example": "سوق الشيخ عثمان زحمة على طول"
       }
     ],
     "had": [
@@ -6385,6 +6430,15 @@
         "noteAr": "غيل باوزير، قرية النخيل والشاطئ قرب المكلا",
         "note": "Ghayl Ba Wazir is a village of palms and beach near Mukalla",
         "example": "غيل باوزير نخيلها على البحر"
+      },
+      {
+        "id": "famous.qatn",
+        "text": "القطن",
+        "english": "Al-Qatn",
+        "standard": "القطن",
+        "noteAr": "القطن، أكبر مدن وادي حضرموت التجارية، وسوقها يخدم الوادي كله",
+        "note": "Al-Qatn is Wadi Hadhramaut's largest trading town, its market serving the whole valley",
+        "example": "سوق القطن يجمع كل الوادي"
       }
     ],
     "sud": [
@@ -6551,6 +6605,15 @@
         "noteAr": "بورتسودان، ميناء السودان الأول على البحر الأحمر",
         "note": "Port Sudan is Sudan's main port on the Red Sea",
         "example": "من بورتسودان يطلع صادر السودان كله"
+      },
+      {
+        "id": "famous.kassala",
+        "text": "كسلا",
+        "english": "Kassala",
+        "standard": "كسلا",
+        "noteAr": "كسلا، مدينة الشرق تحت جبل توتيل، مشهورة بفواكهها وأسواقها",
+        "note": "Kassala is the eastern city under the Taka mountains, famous for its fruits and markets",
+        "example": "مانجو كسلا من أحسن المانجو"
       }
     ],
     "chd": [
@@ -6713,6 +6776,15 @@
         "noteAr": "سار، ثاني مدن تشاد، على نهر شاري في الجنوب",
         "note": "Sarh is Chad's second city, on the Chari river in the south",
         "example": "سار بلد القطن في تشاد"
+      },
+      {
+        "id": "famous.moundou",
+        "text": "موندو",
+        "english": "Moundou",
+        "standard": "موندو",
+        "noteAr": "موندو، ثالث مدن تشاد، على نهر لوغون في الجنوب",
+        "note": "Moundou is Chad's third city, on the Logone river in the south",
+        "example": "موندو بلد القطن والنيلة"
       }
     ],
     "mar": [
@@ -7919,6 +7991,15 @@
         "noteAr": "أطار، بوابة آدرار وواحتها الكبيرة في موريتانيا",
         "note": "Atar is the gateway to the Adrar and its big oasis in Mauritania",
         "example": "أطار سوقها سوق الباظور القديم"
+      },
+      {
+        "id": "famous.tidjikja",
+        "text": "تجكجة",
+        "english": "Tidjikja",
+        "standard": "تجكجة",
+        "noteAr": "تجكجة، عاصمة ولاية تكانت، واحة النخيل في وسط موريتانيا",
+        "note": "Tidjikja is the capital of Tagant, a palm oasis in central Mauritania",
+        "example": "تمر تجكجة من أحسن التمور"
       }
     ],
     "cnl": [
