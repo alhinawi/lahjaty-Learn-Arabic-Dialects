@@ -63,7 +63,8 @@ describe('seo catalog route coverage', () => {
     // Guards the walk itself: if src/app moves, this fails instead of passing vacuously.
     expect(patterns.length).toBeGreaterThanOrEqual(20)
     expect(patterns).toContain('/')
-    expect(patterns).toContain('/share/[dialectId]/[phraseId]')
+    expect(patterns).toContain('/share')
+    expect(patterns).not.toContain('/share/[dialectId]/[phraseId]')
   })
 
   it('gives every route type an explicit catalog decision', () => {
@@ -104,7 +105,8 @@ describe('seo catalog route coverage', () => {
       expect(seoByPath.get(path)!.sitemap, path).toBe(false)
     }
     const { dialectId, phrase } = allFamous[0]
-    expect(seoByPath.get(sharePath(dialectId, phrase.id))!.sitemap).toBe(false)
+    expect(seoByPath.get('/share')!.sitemap).toBe(false)
+    expect(seoByPath.has(sharePath(dialectId, phrase.id))).toBe(false)
   })
 
   it('describes every index page as an ItemList of exactly the child pages it links to', () => {
