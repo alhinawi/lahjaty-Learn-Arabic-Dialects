@@ -21,6 +21,12 @@ function redirect(path: string) {
 }
 
 describe('compact share export', () => {
+  it('preserves Next router payloads in the production upload', () => {
+    const pkg = JSON.parse(readFileSync(join(__dirname, '../../package.json'), 'utf8'))
+    expect(pkg.scripts.build).not.toContain('-delete')
+    expect(pkg.scripts.build).toContain('export:check')
+  })
+
   it('retains every existing famous and everyday share target through two redirect rules', () => {
     const targets = allFamous.map(({ dialectId, phrase }) => [dialectId, phrase.id])
     for (const phrase of phrases) for (const d of dialects) {

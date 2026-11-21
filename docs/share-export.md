@@ -17,7 +17,7 @@ The HTML shell has a generic, noindex social preview. JavaScript is needed to sh
 
 ## File budget
 
-`npm run build` generates the static export and OG cards, removes Next navigation text artifacts as before, then runs `npm run export:check`. It fails above 15,000 files, leaving at least 5,000 files of margin below the Pages Free limit. Count the final upload directory, not only HTML pages. No OG-card reduction is needed.
+`npm run build` generates the static export and OG cards, preserves Next router payloads (`index.txt` and `__next*.txt`), then runs `npm run export:check`. It fails above 15,000 files, leaving at least 5,000 files of margin below the Pages Free limit. Count the final upload directory, not only HTML pages. No OG-card reduction is needed.
 
 ## Verification
 
@@ -30,3 +30,7 @@ The HTML shell has a generic, noindex social preview. JavaScript is needed to sh
 Sources checked November 21, 2026:
 https://developers.cloudflare.com/pages/platform/limits/
 https://developers.cloudflare.com/pages/configuration/redirects/
+
+## Router payloads are required
+
+Do not delete exported `.txt` payloads to reduce file counts. Next client navigation and prefetch request these assets. Deleting them produces 404s and can force a hard reload or leave navigation incomplete. The compact share route keeps the complete export comfortably below the budget without removing router files. The budget gate counts those files too.

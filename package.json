@@ -10,7 +10,7 @@
     "predev": "npm run audio:index && npm run tts:manifest",
     "dev": "next dev",
     "prebuild": "npm run audio:index && npm run tts:manifest && npm run content:check",
-    "build": "next build && npm run og && find out -name '__next*.txt' -delete && find out -name 'index.txt' -delete && npm run export:check && rm -rf dist && cp -r out dist",
+    "build": "next build && npm run og && npm run export:check && rm -rf dist && cp -r out dist",
     "og": "tsx scripts/og/build.ts",
     "preview": "python3 -m http.server 4173 --directory out",
     "pretest": "npm run audio:index && npm run tts:manifest",
