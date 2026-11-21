@@ -1,0 +1,3 @@
+# Keep existing phrase links working without one exported file per phrase.
+/share/:dialect/:phrase/ /share/?dialect=:dialect&phrase=:phrase 302
+/share/:dialect/:phrase /share/?dialect=:dialect&phrase=:phrase 302

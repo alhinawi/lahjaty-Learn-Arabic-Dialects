@@ -11,3 +11,4 @@ dist
 next-env.d.ts
 # generated at dev/build/test time from public/audio
 src/generated/
+.wrangler/

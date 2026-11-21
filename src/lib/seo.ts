@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import {
-  allFamous,
   categories,
   concepts,
   dialects,
@@ -9,7 +8,6 @@ import {
   famousFor,
   getDialect,
   groupWords,
-  phrases,
   STANDARD_ID,
   WORD_GROUPS,
 } from './content'
@@ -17,7 +15,7 @@ import { allDictEntries, topicEntries } from './dictionaryAll'
 import { allEgyptNodes } from './egypt'
 import { translate, type MessageKey } from './i18n'
 import type { WordGroup } from './types'
-import { ogImageFor, SITE_NAME, SITE_URL, sharePath } from './og'
+import { ogImageFor, SITE_NAME, SITE_URL } from './og'
 
 /** The social cards are drawn 1200x630 (scripts/og). */
 const OG_W = 1200
@@ -215,29 +213,13 @@ export function seoCatalog(): SeoEntry[] {
         },
       }
     }),
-    ...allFamous.map(({ dialectId, phrase }) => {
-      const d = getDialect(dialectId)!
-      return {
-        path: sharePath(dialectId, phrase.id),
-        title: `«${phrase.text}» بلهجة ${d.name}`,
-        description: `بالفصحى: ${phrase.standard}. ${phrase.english}. ${phrase.noteAr ?? ''}`.trim(),
-        imageAlt: `«${phrase.text}» بلهجة ${d.name}`,
-        // Thin share target: one phrase in one dialect, canonical content lives on the dialect/concept pages.
-        sitemap: false,
-      }
-    }),
-    ...phrases.flatMap((p) =>
-      dialects
-        .filter((d) => d.id !== STANDARD_ID && p.variants[d.id])
-        .map((d) => ({
-          path: sharePath(d.id, p.id),
-          title: `«${p.variants[d.id]!.text}» بلهجة ${d.name}`,
-          description: `بالفصحى: ${p.variants[STANDARD_ID]?.text ?? ''}. ${p.english}.`,
-          imageAlt: `لهجة ${d.name} على الخريطة`,
-          // Thin share target, same call as the famous-phrase shares above.
-          sitemap: false,
-        })),
-    ),
+    {
+      path: '/share',
+      title: 'مشاركة جملة',
+      description: 'جملة ومعناها من موسوعة لهجتي. افتح الرابط لعرض الجملة واللهجة.',
+      imageAlt: 'لهجتي',
+      sitemap: false,
+    },
   ]
 }
 

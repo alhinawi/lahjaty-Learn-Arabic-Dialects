@@ -4,7 +4,7 @@
  * - /audio/: cache first, range requests served from the cache
  * - /og/ and /og-default.jpg: stale while revalidate
  */
-const VERSION = 'v1'
+const VERSION = 'v2-share-shell'
 const PAGES = `pages-${VERSION}`
 const ASSETS = `assets-${VERSION}`
 const AUDIO = `audio-${VERSION}`

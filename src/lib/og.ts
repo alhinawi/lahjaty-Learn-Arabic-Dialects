@@ -43,5 +43,5 @@ export function ogImageFor(pathname: string): string {
   return '/og/home.jpg'
 }
 
-/** The link to share one phrase in one dialect. Its page carries the phrase's own card. */
+/** Stable legacy link, redirected to the single query-driven share page by Pages. */
 export const sharePath = (dialectId: string, phraseId: string) => `/share/${dialectId}/${phraseId}`
