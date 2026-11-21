@@ -1261,6 +1261,15 @@
         "noteAr": "الزقازيق، عاصمة الشرقية، وجامعتها من أكبر جامعات مصر",
         "note": "Zagazig is Sharqia's capital, and its university among Egypt's largest",
         "example": "الزقازيق على بحر مويس"
+      },
+      {
+        "id": "famous.faqus",
+        "text": "فاقوس",
+        "english": "Faqus",
+        "standard": "فاقوس",
+        "noteAr": "فاقوس، مدينة على بحيرة المنزلة في شمال الشرقية، مشهورة بمزارع السمك",
+        "note": "Faqus is a town on Lake Manzala in northern Sharqia, known for its fish farms",
+        "example": "سمك فاقوس من المزارع على طول"
       }
     ],
     "dkh": [
@@ -1423,6 +1432,15 @@
         "noteAr": "المنزلة، مدينة على البحيرة، أهلها صيادين ومراكبهم معروفة",
         "note": "El-Manzala is a lakeside town of fishermen and well-known boats",
         "example": "سمك المنزلة من البحيرة على طول"
+      },
+      {
+        "id": "famous.aga",
+        "text": "أجا",
+        "english": "Aga",
+        "standard": "أجا",
+        "noteAr": "أجا، مدينة دباغة الجلود في الدقهلية، مدابغها معروفة من زمان",
+        "note": "Aga is Dakahlia's leather-tanning town, its tanneries long famous",
+        "example": "جلود أجا بتوصل لكل المحافظات"
       }
     ],
     "mnf": [
@@ -1584,6 +1602,15 @@
         "noteAr": "منوف، مدينة عريقة على ترعة المنوفية، كانت عاصمة المحافظة زمان",
         "note": "Menouf is an old town on the Menoufia canal and was once the governorate's capital",
         "example": "منوف سيدي شرقاوي ولياليها"
+      },
+      {
+        "id": "famous.quweisna",
+        "text": "قويسنا",
+        "english": "Quweisna",
+        "standard": "قويسنا",
+        "noteAr": "قويسنا، مدينة الزجاج اليدوي في المنوفية، أفرانها شغالة من زمان",
+        "note": "Quweisna is Monufia's handmade-glass town, its furnaces long at work",
+        "example": "زجاج قويسنا بيتشكّل على النار"
       }
     ],
     "ghr": [
@@ -1746,6 +1773,15 @@
         "noteAr": "زفتى، مدينة على فرع دمياط من النيل، من أقدم مدن الغربية",
         "note": "Zefta is a town on the Damietta branch of the Nile, among Gharbia's oldest",
         "example": "زفتى على النيل جنب ميت غمر"
+      },
+      {
+        "id": "famous.tanta",
+        "text": "طنطا",
+        "english": "Tanta",
+        "standard": "طنطا",
+        "noteAr": "طنطا، عاصمة الغربية وعروس الدلتا، ومولدها من أكبر موالد مصر",
+        "note": "Tanta is Gharbia's capital, the bride of the Delta, and its moulid among Egypt's biggest",
+        "example": "طنطا في نص الدلتا وكل الطرق تعدي عليها"
       }
     ],
     "bhr": [
@@ -3575,6 +3611,15 @@
         "noteAr": "البحر الميت، أخفض نقطة في الأرض، ملحه وطينه معروفين للعلاج",
         "note": "The Dead Sea is the lowest point on earth, its salt and mud known for treatment",
         "example": "بالبحر الميت بتطفو بدون ما تسبح"
+      },
+      {
+        "id": "famous.amman_citadel",
+        "text": "جبل القلعة",
+        "english": "the Amman Citadel",
+        "standard": "جبل القلعة",
+        "noteAr": "جبل القلعة في قلب عمّان، بآثاره من العمونيين والرومان للأمويين",
+        "note": "The Amman Citadel hill holds remains from the Ammonites and Romans to the Umayyads",
+        "example": "من جبل القلعة تشوف المدرج الروماني تحت"
       }
     ],
     "bag": [
@@ -3913,6 +3958,15 @@
         "noteAr": "تلعفر، مدينة قديمة غرب الموصل، وقلعتها على تل وسط المدينة",
         "note": "Tal Afar is an old town west of Mosul, its citadel on a hill in the city center",
         "example": "قلعة تلعفر تطل على كل المدينة"
+      },
+      {
+        "id": "famous.hatra",
+        "text": "الحضر",
+        "english": "Hatra",
+        "standard": "الحضر",
+        "noteAr": "الحضر، مدينة عربية قديمة محصنة جنوب الموصل، مسجلة في اليونسكو",
+        "note": "Hatra is an ancient fortified Arab city south of Mosul, UNESCO-listed",
+        "example": "الحضر صمدت قدام الرومان مرتين"
       }
     ],
     "bas": [
@@ -4918,6 +4972,15 @@
         "noteAr": "برج التحرير في مدينة الكويت، من أطول أبراج البلد، وسمي بعد تحرير الكويت",
         "note": "Kuwait City's Liberation Tower is among the country's tallest, named after the liberation",
         "example": "برج التحرير من معالم العاصمة"
+      },
+      {
+        "id": "famous.jahra",
+        "text": "الجهرة",
+        "english": "Jahra",
+        "standard": "الجهرة",
+        "noteAr": "الجهرة، بلدة القصر الأحمر، وفيها صارت معركة الجهرة سنة 1920",
+        "note": "Jahra is the town of the Red Palace and the 1920 Battle of Jahra",
+        "example": "القصر الأحمر في الجهرة من الطين"
       }
     ],
     "emi": [
@@ -5084,6 +5147,15 @@
         "noteAr": "خور دبي، قلب دبي القديم، والعبرات تشتغل فيه من زمان",
         "note": "Dubai Creek is the old heart of the city, and its abras have run there for generations",
         "example": "العبارة على الخور بدرهم"
+      },
+      {
+        "id": "famous.al_ain",
+        "text": "العين",
+        "english": "Al Ain",
+        "standard": "العين",
+        "noteAr": "العين، مدينة الواحات، وقلعة الجاهلي فيها من أقدم قلاع الإمارات، وواحاتها مسجلة في اليونسكو",
+        "note": "Al Ain is the city of oases, its Jahili Fort among the UAE's oldest, and its oases UNESCO-listed",
+        "example": "أفلاج العين تسقي النخيل من زمان"
       }
     ],
     "qat": [
@@ -5249,6 +5321,15 @@
         "noteAr": "متحف الفن الإسلامي في الدوحة، على الكورنيش، من أجمل مباني قطر",
         "note": "Doha's Museum of Islamic Art stands on the corniche, among Qatar's most beautiful buildings",
         "example": "متحف الفن الإسلامي مقابل أبراج الخليج الغربي"
+      },
+      {
+        "id": "famous.zubarah",
+        "text": "الزبارة",
+        "english": "Al Zubarah",
+        "standard": "الزبارة",
+        "noteAr": "الزبارة، مدينة الغوص على اللؤلؤ القديمة، وقلعتها مسجلة في اليونسكو",
+        "note": "Al Zubarah is an old pearling town whose fort is UNESCO-listed",
+        "example": "الزبارة كانت أهم موانئ اللؤلؤ في الخليج"
       }
     ],
     "bah": [
@@ -5415,6 +5496,15 @@
         "noteAr": "جسر الملك فهد يربط البحرين بالسعودية، حوالي 25 كيلو فوق البحر",
         "note": "The King Fahd Causeway links Bahrain to Saudi Arabia over some 25 kilometres of sea",
         "example": "ناس وايد يسافرون للخبر على الجسر"
+      },
+      {
+        "id": "famous.muharraq",
+        "text": "المحرق",
+        "english": "Muharraq",
+        "standard": "المحرق",
+        "noteAr": "المحرق، مدينة البحرين القديمة، وطريق اللؤلؤ فيها مسجل في اليونسكو",
+        "note": "Muharraq is Bahrain's old city, and its Pearling Path is UNESCO-listed",
+        "example": "بيوت المحرق القديمة من حجر البحر"
       }
     ],
     "oma": [
@@ -5580,6 +5670,15 @@
         "noteAr": "كورنيش مطرح وسوق مطرح، من أقدم أسواق عمان على البحر",
         "note": "The Muttrah corniche and its souq are among Oman's oldest markets on the sea",
         "example": "سوق مطرح ريحة اللبان في كل مكان"
+      },
+      {
+        "id": "famous.sur_oman",
+        "text": "صور",
+        "english": "Sur",
+        "standard": "صور",
+        "noteAr": "صور، مدينة بناء السفن الشراعية على ساحل عمان الشرقي",
+        "note": "Sur is the dhow-building city on Oman's eastern coast",
+        "example": "أحواض صور لسه تبني السفن"
       }
     ],
     "dho": [
@@ -5743,6 +5842,15 @@
         "noteAr": "مرباط، بلدة قديمة على بحر ظفار، بقلعتها التاريخية وبيوتها القديمة",
         "note": "Mirbat is an old town on the Dhofar coast with a historic fort and old houses",
         "example": "مرباط كانت ميناء خيل شرقي"
+      },
+      {
+        "id": "famous.ubar",
+        "text": "أوبار",
+        "english": "Ubar",
+        "standard": "أوبار",
+        "noteAr": "أوبار، مدينة اللبان المفقودة في رمال الربع الخالي، ذكرت في القرآن بإرم ذات العماد",
+        "note": "Ubar is the lost frankincense city in the Empty Quarter sands, tied to Iram of the Pillars",
+        "example": "أوبار غارت في الرمال"
       }
     ],
     "san": [
