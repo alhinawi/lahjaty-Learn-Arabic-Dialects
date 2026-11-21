@@ -1188,8 +1188,8 @@
         "text": "جوي",
         "english": "Very",
         "standard": "جدًّا",
-        "noteAr": "الشرقاوي بينطق القاف جيم مصرية، ودي أشهر علاماته",
-        "note": "Sharqawis say Q as a hard G, their best-known mark",
+        "noteAr": "نطق القاف بصوت [g] موجود في بعض لهجات ريف الشرقية، لكنه مش نطق كل أهل المحافظة",
+        "note": "Qaf is pronounced [g] in some rural Sharqia varieties, not by every speaker in the governorate",
         "example": "الأكل حلو جوي",
         "concept": "very"
       },
@@ -1227,8 +1227,8 @@
         "text": "الجهوة",
         "english": "Coffee",
         "standard": "القهوة",
-        "noteAr": "نفس القاف اللي بتبقى جيم، والجهوة أول حاجة بتتقدّم للضيف",
-        "note": "The same Q-to-G sound; coffee is the first thing a guest gets",
+        "noteAr": "نطق القاف بصوت [g] موجود في بعض لهجات ريف الشرقية، وبيختلف حسب المنطقة والمتكلم",
+        "note": "Qaf is pronounced [g] in some rural Sharqia varieties, with variation by locality and speaker",
         "example": "اعمل اتنين جهوة مظبوط"
       },
       {
