@@ -85,6 +85,13 @@ export interface Concept {
   words?: Partial<Record<WordGroup, string>>
 }
 
+/** Evidence for the explanatory note only, never whole-entry or audio validation. */
+export interface NoteSource {
+  title: string
+  titleAr: string
+  url: string
+}
+
 export interface FamousPhrase {
   /** Stable id, "famous.<slug>", unique within its dialect. Used in audio paths. Never rename. */
   id: string
@@ -96,6 +103,7 @@ export interface FamousPhrase {
   note?: string
   example?: string
   concept?: string
+  noteSources?: NoteSource[]
 }
 
 export interface FamousContent {

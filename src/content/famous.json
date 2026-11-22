@@ -3861,7 +3861,19 @@
         "standard": "طبق المقلوبة الفلسطيني",
         "noteAr": "طبقات من الأرز والخضار، غالبًا مع الدجاج أو لحم الضأن، تُطهى في قدر ثم تُقلب على طبق التقديم.",
         "note": "Layers of rice and vegetables, often with chicken or lamb, cooked in a pot then turned out onto a serving platter.",
-        "example": "اليوم الجمعة، يعني مقلوبة على الغدا."
+        "example": "اليوم الجمعة، يعني مقلوبة على الغدا.",
+        "noteSources": [
+          {
+            "title": "Reem Kassis, Serious Eats: Maqlubeh",
+            "titleAr": "ريم قسيس، سيريوس إيتس: المقلوبة",
+            "url": "https://www.seriouseats.com/maqlubeh-recipe-5704126"
+          },
+          {
+            "title": "Bethlehem Cultural Festival: cooking maqluba",
+            "titleAr": "مهرجان بيت لحم الثقافي: تحضير المقلوبة",
+            "url": "https://www.bethlehemculturalfestival.com/event-archive/cooking-in-bethlehem-and-gaza/"
+          }
+        ]
       },
       {
         "id": "famous.el_kuffiyeh",
@@ -3879,7 +3891,19 @@
         "standard": "خبز الطابون",
         "noteAr": "خبز فلسطيني يُخبز تقليديًا على حصى ساخنة داخل فرن طيني؛ تترك الحصى تجويفات على سطحه.",
         "note": "Palestinian flatbread traditionally baked on hot pebbles in a clay oven; the stones leave dimples in its surface.",
-        "example": "ريحة خبز الطابون الصبح ما تتعوض"
+        "example": "ريحة خبز الطابون الصبح ما تتعوض",
+        "noteSources": [
+          {
+            "title": "Reem Kassis, Serious Eats: Taboon",
+            "titleAr": "ريم قسيس، سيريوس إيتس: خبز الطابون",
+            "url": "https://www.seriouseats.com/taboon-recipe-5219608"
+          },
+          {
+            "title": "Bethlehem University: traditional tabun oven",
+            "titleAr": "جامعة بيت لحم: فرن الطابون التقليدي",
+            "url": "https://www.bethlehem.edu/2020/02/27/traditional-palestinian-tabun-oven/"
+          }
+        ]
       },
       {
         "id": "famous.al_khalil",
@@ -3888,7 +3912,19 @@
         "standard": "الخليل",
         "noteAr": "تشتهر الخليل بالزجاج والخزف، وتطورت بلدتها القديمة حول الحرم الإبراهيمي بطابع معماري مملوكي وعثماني.",
         "note": "Hebron is known for glass and ceramics; its Old Town developed around the Ibrahimi sanctuary, with Mamluk and Ottoman architecture.",
-        "example": "زجاج الخليل مشهور من مئات السنين"
+        "example": "زجاج الخليل مشهور من مئات السنين",
+        "noteSources": [
+          {
+            "title": "UNESCO: Hebron Old Town",
+            "titleAr": "اليونسكو: بلدة الخليل القديمة",
+            "url": "https://whc.unesco.org/en/list/1565"
+          },
+          {
+            "title": "Hebron Rehabilitation Committee: traditional crafts",
+            "titleAr": "لجنة إعمار الخليل: الحرف التقليدية",
+            "url": "https://hebronrc.ps/en/node/25"
+          }
+        ]
       },
       {
         "id": "famous.dead_sea",
@@ -3941,7 +3977,19 @@
         "standard": "بيت لحم",
         "noteAr": "أُعيد بناء كنيسة المهد في بيت لحم في القرن السادس فوق كنيسة أُنجزت عام 339م، مع بقاء أجزاء من البناء الأقدم.",
         "note": "Bethlehem's Church of the Nativity was rebuilt in the sixth century over a church completed in AD 339, retaining parts of the earlier building.",
-        "example": "ساحة المهد في بيت لحم بتعج زوار"
+        "example": "ساحة المهد في بيت لحم بتعج زوار",
+        "noteSources": [
+          {
+            "title": "UNESCO: Church of the Nativity",
+            "titleAr": "اليونسكو: كنيسة المهد",
+            "url": "https://whc.unesco.org/en/list/1433/"
+          },
+          {
+            "title": "ICOMOS Palestine: Church of the Nativity",
+            "titleAr": "إيكوموس فلسطين: كنيسة المهد",
+            "url": "https://palestine.icomos.org/sites/birthplace-of-jesus-church-of-the-nativity-and-the-pilgrimage-route-bethlehem/"
+          }
+        ]
       },
       {
         "id": "famous.nablus",

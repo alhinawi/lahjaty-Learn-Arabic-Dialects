@@ -7,6 +7,7 @@ import { useName, useT } from '../lib/i18n'
 import { famousInMyDialect } from '../lib/myDialect'
 import { useApp } from '../lib/store'
 import MyDialectLine from './MyDialectLine'
+import NoteSources from './NoteSources'
 import PlayButton from './PlayButton'
 
 /**
@@ -76,6 +77,7 @@ export default function FamousGrid() {
           </p>
         )}
         {note && <p className="mt-1 text-xs text-slate-500">{note}</p>}
+        {note && <NoteSources sources={today.phrase.noteSources} lang={lang} />}
       </div>
 
       <div className="flex items-end justify-between gap-2 pt-1">
