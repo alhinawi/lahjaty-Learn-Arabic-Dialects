@@ -14,13 +14,14 @@ import { content } from './content'
 const phrase = (): FamousPhrase => structuredClone(getFamous('psr', 'famous.maqluba')!)
 
 describe('note source metadata', () => {
-  it('seeds only the four scoped context notes, with two sources each', () => {
+  it('keeps the six scoped context notes at two sources each', () => {
     const sourced = Object.entries(famousContent.dialects).flatMap(([d, list]) => list.filter((p) => p.noteSources).map((p) => [d, p.id]))
     expect(sourced).toEqual([
+      ['psu', 'famous.kunafa_nabulsiyye'], ['psu', 'famous.musakhan'],
       ['psr', 'famous.maqluba'], ['psr', 'famous.khubz_taboon'], ['psr', 'famous.al_khalil'], ['psr', 'famous.bethlehem'],
     ])
-    for (const [, id] of sourced) {
-      const p = getFamous('psr', id)!
+    for (const [dialectId, id] of sourced) {
+      const p = getFamous(dialectId, id)!
       expect(p.noteSources).toHaveLength(2)
       expect(validateNoteSources(p)).toEqual([])
     }
