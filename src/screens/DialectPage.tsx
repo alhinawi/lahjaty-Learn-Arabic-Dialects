@@ -1,10 +1,12 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { BookOpen, ChevronLeft, MapPinned, Sparkles } from 'lucide-react'
 import DialectIntro from '../components/DialectIntro'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import FamousCard from '../components/FamousCard'
+import { famousEntryAnchor } from '../lib/famousLinks'
 import { famousFor, getDialect, groupWords, regions, wordGroup } from '../lib/content'
 import { egyptNodeForDialect } from '../lib/egypt'
 import { useName, useT } from '../lib/i18n'
@@ -13,10 +15,35 @@ import NotFoundPage from './NotFoundPage'
 import { GROUP_KEY } from './RegionsPage'
 
 export default function DialectPage({ dialectId }: { dialectId: string }) {
+  const lang = useApp((s) => s.lang)
+  const [targetId, setTargetId] = useState('')
+  useEffect(() => {
+    let frame = 0
+    const landOnEntry = () => {
+      cancelAnimationFrame(frame)
+      frame = requestAnimationFrame(() => {
+        let id = ''
+        try { id = decodeURIComponent(window.location.hash.slice(1)) } catch { /* malformed fragments are ignored */ }
+        const valid = famousFor(dialectId).some((phrase) => famousEntryAnchor(phrase.id) === id)
+        setTargetId(valid ? id : '')
+        if (!valid) return
+        const card = document.getElementById(id)
+        card?.scrollIntoView({ block: 'start', behavior: 'instant' })
+        card?.focus({ preventScroll: true })
+      })
+    }
+    landOnEntry()
+    window.addEventListener('hashchange', landOnEntry)
+    window.addEventListener('popstate', landOnEntry)
+    return () => {
+      cancelAnimationFrame(frame)
+      window.removeEventListener('hashchange', landOnEntry)
+      window.removeEventListener('popstate', landOnEntry)
+    }
+  }, [dialectId, lang])
   const t = useT()
   const name = useName()
   const router = useRouter()
-  const lang = useApp((s) => s.lang)
   const learning = useApp((s) => s.dialectId)
   const setDialect = useApp((s) => s.setDialect)
   const dialect = getDialect(dialectId)
@@ -77,7 +104,7 @@ export default function DialectPage({ dialectId }: { dialectId: string }) {
           <p className="text-sm text-slate-500">{t('famousBody')}</p>
         </div>
         {famous.map((f) => (
-          <FamousCard key={f.id} phrase={f} dialectId={dialect.id} />
+          <FamousCard key={f.id} phrase={f} dialectId={dialect.id} anchorId={famousEntryAnchor(f.id)} targeted={targetId === famousEntryAnchor(f.id)} />
         ))}
       </section>
 
