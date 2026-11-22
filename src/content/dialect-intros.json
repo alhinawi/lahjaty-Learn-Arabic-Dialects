@@ -40,8 +40,8 @@
     "where": { "ar": "قرى فلسطين وريفها", "en": "Palestinian villages and countryside" },
     "summary": { "ar": "اللهجة الفلاحية الفلسطينية لها نطق مختلف واضح عن لهجة المدن.", "en": "Rural Palestinian sounds clearly different from city speech." },
     "features": [
-      { "ar": "الكاف تنطق «تش» في كلمات كثيرة: «كيف» تصبح «تشيف».", "en": "Kaf often becomes ch: kīf is čīf." },
-      { "ar": "القاف تنطق كافًا: «قلب» تصبح «كلب».", "en": "Qaf becomes k: qalb is kalb." },
+      { "ar": "الكاف قد تُنطق «تش» في بعض اللهجات الريفية، وليس في كل القرى أو الكلمات.", "en": "Kaf can become ch in some rural varieties, but not in every village or word." },
+      { "ar": "القاف تُنطق كافًا في بعض لهجات الريف، وتبقى قافًا أو تُنطق g في لهجات ريفية أخرى؛ النطق يختلف حسب المنطقة والمتكلم.", "en": "Qaf is k in some rural varieties, but q or g in others; pronunciation varies by locality and speaker." },
       { "ar": "«مصاري» للفلوس مثل باقي الشام.", "en": "maṣāri for money, as elsewhere in the Levant." }
     ]
   },
