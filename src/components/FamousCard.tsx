@@ -16,9 +16,11 @@ interface Props {
   phrase: FamousPhrase
   dialectId: string
   showDialect?: boolean
+  anchorId?: string
+  targeted?: boolean
 }
 
-export default function FamousCard({ phrase, dialectId, showDialect = false }: Props) {
+export default function FamousCard({ phrase, dialectId, showDialect = false, anchorId, targeted = false }: Props) {
   const t = useT()
   const name = useName()
   const lang = useApp((s) => s.lang)
@@ -33,7 +35,7 @@ export default function FamousCard({ phrase, dialectId, showDialect = false }: P
   const mine = famousInMyDialect(phrase, dialectId, myDialectId)
 
   return (
-    <article className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+    <article data-entry-target={targeted || undefined} id={anchorId} tabIndex={anchorId ? -1 : undefined} className="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm target:border-brand-700 target:ring-2 target:ring-brand-700/30 data-[entry-target=true]:border-brand-700 data-[entry-target=true]:ring-2 data-[entry-target=true]:ring-brand-700/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">
       {showDialect && (
         <div className="mb-2 text-xs font-semibold text-brand-700">
           {name(dialect)}
