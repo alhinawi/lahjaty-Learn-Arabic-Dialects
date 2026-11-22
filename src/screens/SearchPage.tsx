@@ -14,6 +14,7 @@ import { searchDictionary, useAllEntries } from '../lib/dictionary'
 import type { DictHit } from '../lib/dictionary'
 import { hitTitle, regionalMatchGroups, regionLabel, search } from '../lib/search'
 import type { SearchHit } from '../lib/search'
+import { famousEntryHref } from '../lib/famousLinks'
 import { useApp } from '../lib/store'
 import type { Dialect } from '../lib/types'
 
@@ -35,11 +36,11 @@ function rowsFor(hit: SearchHit): Row[] {
   if (hit.kind === 'concept') {
     return famousByConcept(hit.conceptId).flatMap(({ dialectId, phrase }) => {
       const d = getDialect(dialectId)
-      return d ? [{ dialect: d, text: phrase.text, phraseId: phrase.id, href: `/dialects/${dialectId}` }] : []
+      return d ? [{ dialect: d, text: phrase.text, phraseId: phrase.id, href: famousEntryHref(dialectId, phrase.id) }] : []
     })
   }
   const d = getDialect(hit.dialectId)
-  return d ? [{ dialect: d, text: hit.phrase.text, phraseId: hit.phrase.id, href: `/dialects/${d.id}` }] : []
+  return d ? [{ dialect: d, text: hit.phrase.text, phraseId: hit.phrase.id, href: famousEntryHref(d.id, hit.phrase.id) }] : []
 }
 
 /** One result: the meaning, then the same thing in every dialect, grouped by region, the visitor's dialect first. */
