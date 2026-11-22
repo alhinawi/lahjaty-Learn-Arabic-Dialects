@@ -3868,8 +3868,8 @@
         "text": "الكوفية",
         "english": "the keffiyeh",
         "standard": "الكوفية الفلسطينية",
-        "noteAr": "الحطة الفلسطينية، رمز الهوية، وبتتنسج في الخليل من مئات السنين",
-        "note": "The black-and-white keffiyeh is the iconic symbol of Palestinian identity, traditionally woven in Hebron",
+        "noteAr": "الكوفية من رموز الهوية الفلسطينية؛ ومن منتجيها مصنع الحرباوي في الخليل، الذي تأسس عام 1961.",
+        "note": "The keffiyeh is a symbol of Palestinian identity; Hebron's Hirbawi factory began producing it in 1961.",
         "example": "جدي ما بينزل من البيت من غير الكوفية"
       },
       {
@@ -3912,8 +3912,8 @@
         "text": "غزة",
         "english": "Gaza",
         "standard": "غزة",
-        "noteAr": "غزة، مدينة الساحل القديمة، ميناؤها من أقدم موانئ المتوسط",
-        "note": "Gaza is an ancient coastal city whose port is among the oldest on the Mediterranean",
+        "noteAr": "غزة مدينة فلسطينية على ساحل البحر المتوسط.",
+        "note": "Gaza is a Palestinian city on the Mediterranean coast.",
         "example": "غزة هاشم، مدينة عريقة على البحر"
       },
       {
