@@ -3895,9 +3895,8 @@
         "text": "البحر الميت",
         "english": "the Dead Sea",
         "standard": "البحر الميت",
-        "noteAr": "البحر الميت أوطا نقطة في العالم، ملحه يخليك تطفو من غير ما تسبح",
-        "note": "The Dead Sea is the lowest point on Earth, so salty you float without swimming",
-        "example": "في البحر الميت ما تغرقش حتى لو ما تعرفش تسبح"
+        "noteAr": "الطفو في البحر الميت لا يمنع خطر الغرق. اتبع تعليمات السلامة والمنقذين، ولا تغمر رأسك أو تبتلع الماء.",
+        "note": "Floating in the Dead Sea does not prevent drowning. Follow safety and lifeguard instructions; do not immerse your head or swallow the water."
       },
       {
         "id": "famous.jericho",
@@ -4112,9 +4111,8 @@
         "text": "البحر الميت",
         "english": "the Dead Sea",
         "standard": "البحر الميت",
-        "noteAr": "البحر الميت، أخفض نقطة في الأرض، ملحه وطينه معروفين للعلاج",
-        "note": "The Dead Sea is the lowest point on earth, its salt and mud known for treatment",
-        "example": "بالبحر الميت بتطفو بدون ما تسبح"
+        "noteAr": "الطفو في البحر الميت لا يمنع خطر الغرق. اتبع تعليمات السلامة والمنقذين، ولا تغمر رأسك أو تبتلع الماء.",
+        "note": "Floating in the Dead Sea does not prevent drowning. Follow safety and lifeguard instructions; do not immerse your head or swallow the water."
       },
       {
         "id": "famous.amman_citadel",
