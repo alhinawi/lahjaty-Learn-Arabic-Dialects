@@ -3,6 +3,7 @@
 import { Columns3, Download, MapPin } from 'lucide-react'
 import Link from 'next/link'
 import PlayButton from '../components/PlayButton'
+import NoteSources from '../components/NoteSources'
 import ShareButton from '../components/ShareButton'
 import { getDialect, getFamous, getPhrase, isFamousId, STANDARD_ID } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
@@ -23,6 +24,7 @@ export default function SharePage({ dialectId = '', phraseId = '' }: { dialectId
   const english = famous?.english ?? base?.english
   if (!dialect || !text) return <NotFoundPage />
   const compareTo = famous ? (famous.concept ? `/compare?c=${encodeURIComponent(famous.concept)}` : undefined) : `/compare?p=${encodeURIComponent(phraseId)}`
+  const note = famous ? (lang === 'ar' ? famous.noteAr ?? famous.note : famous.note) : undefined
   const image = ogImageFor(`/share/${dialectId}/${phraseId}`)
 
   return (
@@ -64,6 +66,13 @@ export default function SharePage({ dialectId = '', phraseId = '' }: { dialectId
           )}
         </div>
       </section>
+      {note && (
+        <section aria-labelledby="shared-note-title" className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <h1 id="shared-note-title" className="text-base font-bold text-slate-900">{t('phraseContext')}</h1>
+          <p className="mt-2 text-sm text-slate-600">{note}</p>
+          <NoteSources sources={famous?.noteSources} lang={lang} />
+        </section>
+      )}
       <div className="grid gap-2 sm:grid-cols-2">
         <Link href={`/dialects/${dialectId}`} className="rounded-2xl border border-slate-200 bg-white p-4 font-semibold text-brand-700 shadow-sm hover:border-brand-300">
           {t('moreFromDialect', { name: name(dialect) })}
