@@ -3612,9 +3612,21 @@
         "text": "كنافة نابلسية",
         "english": "Nablus kunafa",
         "standard": "كنافة نابلسية",
-        "noteAr": "أشهر حلوى فلسطينية، بالجبنة النابلسية",
-        "note": "The most famous Palestinian sweet, made with Nabulsi cheese",
-        "example": "بعد الغدا بدنا كنافة نابلسية سخنة"
+        "noteAr": "حلوى ترتبط بمدينة نابلس، تُحضَّر تقليديًا بالجبن النابلسي وتُسقى بالقطر.",
+        "note": "A sweet associated with Nablus, traditionally made with Nabulsi cheese and soaked in sugar syrup.",
+        "example": "بعد الغدا بدنا كنافة نابلسية سخنة",
+        "noteSources": [
+          {
+            "title": "Sami Tamimi and Tara Wigley, The Guardian: knafeh nabulseyeh",
+            "titleAr": "سامي التميمي وتارا ويغلي، الغارديان: الكنافة النابلسية",
+            "url": "https://www.theguardian.com/food/2021/mar/29/20-best-cheese-recipes-sami-tamimi-and-tara-wigley-knafeh-nabulseyeh"
+          },
+          {
+            "title": "Travel Palestine: Palestinian desserts",
+            "titleAr": "ترافل فلسطين: الحلويات الفلسطينية",
+            "url": "https://www.travelpalestine.ps/en/Article/5/Desserts"
+          }
+        ]
       },
       {
         "id": "famous.3ala_rasi",
@@ -3679,9 +3691,21 @@
         "text": "المسخن",
         "english": "musakhan",
         "standard": "المسخن",
-        "noteAr": "طبق الدجاج بالبصل والسماق على خبز الطابون بزيت الزيتون، أشهر أكلة فلسطينية",
-        "note": "Musakhan, chicken with sumac onions on taboon bread drenched in olive oil, is Palestine's signature dish",
-        "example": "في موسم الزيتون بنعمل مسخن على أكله"
+        "noteAr": "طبق فلسطيني من الدجاج والبصل المطهو بزيت الزيتون والسماق على خبز الطابون، يرتبط تقليديًا بموسم قطاف الزيتون.",
+        "note": "A Palestinian dish of chicken and sumac onions on olive-oil-soaked taboon bread, traditionally associated with the olive harvest.",
+        "example": "في موسم الزيتون بنعمل مسخن على أكله",
+        "noteSources": [
+          {
+            "title": "Reem Kassis, Serious Eats: Msakhan",
+            "titleAr": "ريم قسيس، سيريوس إيتس: المسخن",
+            "url": "https://www.seriouseats.com/msakhan-recipe-5219618"
+          },
+          {
+            "title": "Mondoweiss: olive harvest and musakhan in Gaza (2022)",
+            "titleAr": "موندويس: قطاف الزيتون والمسخن في غزة (2022)",
+            "url": "https://mondoweiss.net/2022/10/in-pictures-gazas-olive-harvest-from-farm-to-table/"
+          }
+        ]
       },
       {
         "id": "famous.bab_al_amoud",
