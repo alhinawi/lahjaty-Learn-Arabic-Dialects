@@ -8,6 +8,7 @@ import { famousInMyDialect } from '../lib/myDialect'
 import { favKey, useApp } from '../lib/store'
 import type { FamousPhrase } from '../lib/types'
 import MyDialectLine from './MyDialectLine'
+import NoteSources from './NoteSources'
 import PlayButton from './PlayButton'
 import ShareButton from './ShareButton'
 
@@ -67,6 +68,7 @@ export default function FamousCard({ phrase, dialectId, showDialect = false }: P
       </dl>
 
       {note && <p className="mt-2 text-xs text-slate-500">{note}</p>}
+      {note && <NoteSources sources={phrase.noteSources} lang={lang} />}
 
       {phrase.example && (
         <p className="mt-2 flex items-start gap-1.5 rounded-xl bg-sand-50 px-3 py-2 text-sm text-slate-700">

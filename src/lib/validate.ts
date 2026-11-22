@@ -1,5 +1,7 @@
 import type { AudioIndex, Content, DictEntry, DictIndex, DictTopicFile, FamousContent, VoicesManifest } from './types'
 
+import { validateNoteSources } from './noteSources'
+
 const PHRASE_ID = /^[a-z0-9_]+\.[a-z0-9_]+$/
 const DIALECT_ID = /^[a-z0-9_-]+$/
 const FAMOUS_ID = /^famous\.[a-z0-9_]+$/
@@ -66,6 +68,7 @@ export function validateContent(content: Content, voices?: VoicesManifest, famou
         if (!f.text?.trim()) errors.push(`${where}: text is required`)
         if (!f.english?.trim()) errors.push(`${where}: english meaning is required`)
         if (!f.standard?.trim()) errors.push(`${where}: standard meaning is required`)
+        errors.push(...validateNoteSources(f).map((e) => `${where}: ${e}`))
         if (f.concept && !conceptIds.has(f.concept)) errors.push(`${where}: unknown concept "${f.concept}"`)
       }
       famousIds.set(d, ids)
