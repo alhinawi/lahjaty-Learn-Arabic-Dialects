@@ -1,10 +1,10 @@
 # Rural Palestinian pronunciation scope
 
-Reviewed November 22, 2026. Two bilingual feature notes revised in the existing rural Palestinian introduction. No entries added or removed.
+Reviewed November 22, 2026. Two bilingual feature notes revised in the existing rural Palestinian introduction, plus three bilingual pronunciation notes on existing famous entries. No entries added or removed.
 
 ## Correction
 
-The introduction previously presented qaf-to-k as a rule for Palestinian villages as a whole. Rural varieties are not one uniform sound system. The revised note limits k to some rural varieties and acknowledges q and g elsewhere. The kaf-to-ch note now also makes its regional and lexical limits explicit. Removed illustrative word spellings rather than treating sound correspondences as proof of exact lexical forms.
+The introduction previously presented qaf-to-k as a rule for Palestinian villages as a whole. Rural varieties are not one uniform sound system. The revised note limits k to some rural varieties and acknowledges q and g elsewhere. The kaf-to-ch note now also makes its regional and lexical limits explicit. Removed illustrative word spellings from the introduction rather than treating sound correspondences as proof of exact lexical forms. The three famous-entry notes now describe the sound correspondence only with scope limits; removed unsupported claims of fame and affectionate ridicule. Their headwords and examples are unchanged and not validated.
 
 ## Evidence used
 

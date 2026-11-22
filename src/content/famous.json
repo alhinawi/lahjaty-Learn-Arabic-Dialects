@@ -3762,8 +3762,8 @@
         "text": "تشيفك؟",
         "english": "How are you?",
         "standard": "كيف حالك؟",
-        "noteAr": "الفلاحي بيقلب الكاف «تش»، ودي أشهر علاماته",
-        "note": "Rural Palestinian turns K into 'tsh', its best-known mark",
+        "noteAr": "الكاف قد تُنطق «تش» في بعض اللهجات الريفية؛ النطق يختلف حسب القرية والمتكلم",
+        "note": "Kaf can become ch in some rural varieties; pronunciation varies by village and speaker",
         "example": "تشيفك يا خال؟ تشيف الأهل؟",
         "concept": "how_are_you"
       },
@@ -3792,8 +3792,8 @@
         "text": "هيتش",
         "english": "Like this",
         "standard": "هكذا",
-        "noteAr": "«هيك» بالنطق الفلاحي",
-        "note": "'Heek' with the rural 'tsh' sound",
+        "noteAr": "بعض اللهجات الريفية تنطق الكاف «تش»، وليس كل اللهجات أو الكلمات",
+        "note": "Some rural varieties have ch for kaf, but not in every variety or word",
         "example": "اعملها هيتش، أسهل",
         "concept": "like_this"
       },
@@ -3840,8 +3840,8 @@
         "text": "تشلب",
         "english": "Dog",
         "standard": "كلب",
-        "noteAr": "مثال مشهور على قلب الكاف «تش»، الناس بتضحك عليه بحبّ",
-        "note": "A famous example of the K-to-tsh switch that people smile at",
+        "noteAr": "الكاف قد تُنطق «تش» في بعض اللهجات الريفية، ولا تُعمّم القاعدة على كل القرى",
+        "note": "Kaf can become ch in some rural varieties; this is not a rule for every village",
         "example": "التشلب بيحرس الحاكورة"
       },
       {
