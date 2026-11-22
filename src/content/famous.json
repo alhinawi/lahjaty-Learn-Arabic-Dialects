@@ -1357,18 +1357,18 @@
         "text": "كفر صقر",
         "english": "Kafr Saqr",
         "standard": "كفر صقر",
-        "noteAr": "كفر صقر، من أكبر مدن الشرقية، وسوق المواشي فيها معروف",
-        "note": "Kafr Saqr is among Sharqia's largest towns, known for its livestock market",
-        "example": "سوق المواشي في كفر صقر يوم الاثنين"
+        "noteAr": "كفر صقر، مدينة ومركز بمحافظة الشرقية",
+        "note": "Kafr Saqr is a city and district in Sharqia Governorate",
+        "example": "كفر صقر من مراكز الشرقية"
       },
       {
         "id": "famous.abu_kebir",
         "text": "أبو كبير",
         "english": "Abu Kebir",
         "standard": "أبو كبير",
-        "noteAr": "أبو كبير، مدينة في وسط الشرقية، مشهورة بمانجو العويس",
-        "note": "Abu Kebir in central Sharqia is famous for its Owais mangoes",
-        "example": "مانجو أبو كبير أشهر مانجو في مصر"
+        "noteAr": "أبو كبير، مدينة ومركز بمحافظة الشرقية",
+        "note": "Abu Kebir is a city and district in Sharqia Governorate",
+        "example": "أبو كبير من مراكز الشرقية"
       },
       {
         "id": "famous.abu_hammad",
