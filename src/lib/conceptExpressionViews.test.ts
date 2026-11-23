@@ -3,7 +3,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import SearchPage from '../screens/SearchPage'
 import ComparePage from '../screens/ComparePage'
-import { concepts, famousByConcept } from './content'
+import { concepts, famousByConcept, STANDARD_ID } from './content'
 import { variantsByDialect } from './conceptVariants'
 import * as searchModule from './search'
 import { useApp } from './store'
@@ -39,7 +39,10 @@ describe('all concept expressions in search and comparison', () => {
         const html = renderToStaticMarkup(createElement(SearchPage))
         for (const { dialectId, phrase } of rows) {
           expect(multiplicity(html, `${dialectId}|${phrase.id}`), `${c.id}/${dialectId}/${phrase.id}`).toBe(1)
-          expect(html).toMatch(new RegExp(`/dialects/${dialectId}/?#entry-${phrase.id.replaceAll('.', '\\.')}`))
+          if (dialectId === STANDARD_ID) {
+            expect(html).toMatch(new RegExp(`/share/?.*dialect=fs.*phrase=${phrase.id.replaceAll('.', '\\.')}`))
+            expect(html).not.toContain('/dialects/fs')
+          } else expect(html).toMatch(new RegExp(`/dialects/${dialectId}/?#entry-${phrase.id.replaceAll('.', '\\.')}`))
         }
       }
       vi.restoreAllMocks()
