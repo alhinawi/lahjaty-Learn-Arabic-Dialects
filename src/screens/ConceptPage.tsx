@@ -2,6 +2,7 @@
 
 import { BookA, ChevronLeft, ChevronRight, Lightbulb, Share2 } from 'lucide-react'
 import Link from 'next/link'
+import { conceptDialectCount } from '../lib/conceptVariants'
 import { concepts, famousByConcept, getConcept, getDialect, STANDARD_ID, WORD_GROUPS } from '../lib/content'
 import { entryForConcept } from '../lib/conceptDict'
 import { sharePath } from '../lib/og'
@@ -58,7 +59,7 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
         <h1 dir={lang === 'ar' ? 'rtl' : 'ltr'} className="dialect-text mt-3 text-3xl font-bold">«{name(concept)}»</h1>
         <p dir={lang === 'ar' ? 'ltr' : 'rtl'} lang={lang === 'ar' ? 'en' : 'ar'} className="mt-1 text-end text-sm text-cream-100">{lang === 'ar' ? concept.nameEn : concept.name}</p>
         <p className="mt-2 text-sm text-cream-100">{t('conceptInAllBody')}</p>
-        <p className="mt-1 text-xs font-semibold text-sun-300">{t('conceptDialectCount', { n: variants.length })}</p>
+        <p className="mt-1 text-xs font-semibold text-sun-300">{t('conceptDialectCount', { n: conceptDialectCount(variants) })}</p>
         {dictEntry && (
           <Link href={`/word/${dictEntry.id}/`} className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold text-cream-100 ring-1 ring-white/20 hover:bg-white/15">
             <BookA className="h-3.5 w-3.5 text-sun-300" aria-hidden />
@@ -92,7 +93,7 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
           if (!d) return null
           const note = lang === 'ar' ? phrase.noteAr ?? phrase.note : phrase.note
           return (
-            <li key={dialectId} className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
+            <li key={`${dialectId}|${phrase.id}`} className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
               <div className="flex items-center justify-between gap-2">
                 <Link href={`/dialects/${dialectId}/`} className="text-xs font-bold text-amber-700 hover:text-brand-700">
                   {name(d)}
