@@ -85,7 +85,7 @@ function ResultCard({ hit }: { hit: SearchHit }) {
 
   const line = (r: Row, strong = false) => (
     <li key={`${r.dialect.id}|${r.phraseId}`} className={`flex items-center gap-2 rounded-xl px-2.5 py-1.5 ${strong ? 'bg-brand-50 ring-1 ring-brand-200' : 'odd:bg-sand-50'}`}>
-      <Link href={`/dialects/${r.dialect.id}`} className="w-24 shrink-0 truncate text-xs font-semibold text-slate-500 hover:text-brand-700">
+      <Link href={r.dialect.id === STANDARD_ID ? r.href : `/dialects/${r.dialect.id}`} className="w-24 shrink-0 truncate text-xs font-semibold text-slate-500 hover:text-brand-700">
         {name(r.dialect)}
       </Link>
       <Link href={r.href} dir="rtl" lang="ar" className={`dialect-text min-w-0 flex-1 text-[15px] ${strong ? 'font-bold text-brand-800' : 'font-semibold text-slate-900'}`}>

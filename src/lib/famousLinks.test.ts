@@ -2,7 +2,7 @@ import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import FamousCard from '../components/FamousCard'
-import { allFamous, getFamous } from './content'
+import { allFamous, famousFor, getFamous, STANDARD_ID } from './content'
 import { famousEntryAnchor, famousEntryHref } from './famousLinks'
 
 describe('exact famous-entry navigation', () => {
@@ -18,6 +18,16 @@ describe('exact famous-entry navigation', () => {
       expect(famousEntryAnchor(phrase.id)).not.toMatch(/\s/)
     }
     expect(targets.size).toBe(allFamous.length)
+  })
+
+  it('uses the existing share shell for every Standard Arabic reference', () => {
+    for (const phrase of famousFor(STANDARD_ID)) {
+      const url = new URL(famousEntryHref(STANDARD_ID, phrase.id), 'https://example.org')
+      expect(url.pathname).toBe('/share/')
+      expect(url.searchParams.get('dialect')).toBe(STANDARD_ID)
+      expect(url.searchParams.get('phrase')).toBe(phrase.id)
+      expect(url.hash).toBe('')
+    }
   })
 
   it('uses IDs, not changeable or repeated display labels', () => {
