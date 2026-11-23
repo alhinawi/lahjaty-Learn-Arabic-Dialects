@@ -14,6 +14,7 @@ import { searchDictionary, useAllEntries } from '../lib/dictionary'
 import type { DictHit } from '../lib/dictionary'
 import { hitTitle, regionalMatchGroups, regionLabel, search } from '../lib/search'
 import type { SearchHit } from '../lib/search'
+import { variantsByDialect } from '../lib/conceptVariants'
 import { famousEntryHref } from '../lib/famousLinks'
 import { useApp } from '../lib/store'
 import type { Dialect } from '../lib/types'
@@ -74,16 +75,16 @@ function ResultCard({ hit }: { hit: SearchHit }) {
   const myDialectId = useApp((s) => s.myDialectId)
   const matchedRegions = regionalMatchGroups(hit)
   const rows = rowsFor(hit)
-  const mine = rows.find((r) => r.dialect.id === myDialectId)
-  const rest = rows.filter((r) => r !== mine)
-  const groups = dialectsByRegion(rest.map((r) => r.dialect))
-  const byId = new Map(rest.map((r) => [r.dialect.id, r]))
+  const mine = rows.filter((r) => r.dialect.id === myDialectId)
+  const rest = rows.filter((r) => r.dialect.id !== myDialectId)
+  const byId = variantsByDialect(rest.map((r) => ({ ...r, dialectId: r.dialect.id })))
+  const groups = dialectsByRegion([...byId.values()].map((list) => list[0].dialect))
   const standard = hit.kind === 'phrase' ? hit.phrase.variants[STANDARD_ID]?.text : hit.kind === 'famous' ? hit.phrase.standard : undefined
   const english = hit.kind === 'phrase' ? hit.phrase.english : hit.kind === 'famous' ? hit.phrase.english : hit.kind === 'concept' ? getConcept(hit.conceptId)?.nameEn : undefined
   const compareHref = hit.kind === 'phrase' ? `/compare?p=${encodeURIComponent(hit.phrase.id)}` : hit.kind === 'concept' ? `/compare?c=${hit.conceptId}` : undefined
 
   const line = (r: Row, strong = false) => (
-    <li key={r.dialect.id} className={`flex items-center gap-2 rounded-xl px-2.5 py-1.5 ${strong ? 'bg-brand-50 ring-1 ring-brand-200' : 'odd:bg-sand-50'}`}>
+    <li key={`${r.dialect.id}|${r.phraseId}`} className={`flex items-center gap-2 rounded-xl px-2.5 py-1.5 ${strong ? 'bg-brand-50 ring-1 ring-brand-200' : 'odd:bg-sand-50'}`}>
       <Link href={`/dialects/${r.dialect.id}`} className="w-24 shrink-0 truncate text-xs font-semibold text-slate-500 hover:text-brand-700">
         {name(r.dialect)}
       </Link>
@@ -109,11 +110,11 @@ function ResultCard({ hit }: { hit: SearchHit }) {
           </p>
         )}
       </header>
-      {mine && <ul className="mb-2">{line(mine, true)}</ul>}
+      {mine.length > 0 && <ul className="mb-2">{mine.map((r) => line(r, true))}</ul>}
       {groups.map(({ region, dialects }) => (
         <section key={region.id} className="mt-2">
           <h3 className="mb-1 text-[11px] font-bold tracking-wide text-amber-700">{name(region)}</h3>
-          <ul className="space-y-0.5">{dialects.map((d) => line(byId.get(d.id)!))}</ul>
+          <ul className="space-y-0.5">{dialects.flatMap((d) => byId.get(d.id)!.map((r) => line(r)))}</ul>
         </section>
       ))}
       <div className="mt-3 flex flex-wrap items-center gap-4">
