@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import ComparePicker from '../components/ComparePicker'
 import PlayButton from '../components/PlayButton'
+import { variantsByDialect } from '../lib/conceptVariants'
 import { comparableHits } from '../lib/search'
 import {
   concepts,
@@ -66,7 +67,7 @@ export default function ComparePage() {
     const usedConcepts = concepts.filter((c) => famousByConcept(c.id).length > 0)
     const concept = getConcept(params.get('c') ?? qConcept?.id ?? '') ?? usedConcepts[0]
     const rows = famousByConcept(concept.id)
-    const byDialect = new Map(rows.map((r) => [r.dialectId, r]))
+    const byDialect = variantsByDialect(rows)
     const conceptGroups = dialectsByRegion(searchDialects(query, dialects.filter((d) => byDialect.has(d.id))))
     return (
       <div className="space-y-4">
@@ -103,10 +104,8 @@ export default function ComparePage() {
           <section key={region.id}>
             <h2 className="mb-2 text-sm font-bold text-slate-500">{name(region)}</h2>
             <ul className="divide-y divide-slate-100 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              {list.map((d) => {
-                const f = byDialect.get(d.id)!.phrase
-                return (
-                  <li key={d.id} className={`flex items-center gap-3 px-3 py-2.5 ${d.id === myDialect ? 'bg-sun-400/15' : ''}`}>
+              {list.flatMap((d) => byDialect.get(d.id)!.map(({ phrase: f }) => (
+                  <li key={`${d.id}|${f.id}`} className={`flex items-center gap-3 px-3 py-2.5 ${d.id === myDialect ? 'bg-sun-400/15' : ''}`}>
                     <div className="w-24 shrink-0">
                       <div className="text-sm leading-tight font-semibold text-slate-800">{name(d)}</div>
                       <div className="text-[11px] text-slate-500">{lang === 'ar' ? d.country : d.countryEn}</div>
@@ -121,8 +120,7 @@ export default function ComparePage() {
                     </div>
                     <PlayButton dialectId={d.id} phraseId={f.id} text={f.text} size="sm" />
                   </li>
-                )
-              })}
+              )))}
             </ul>
           </section>
         ))}
