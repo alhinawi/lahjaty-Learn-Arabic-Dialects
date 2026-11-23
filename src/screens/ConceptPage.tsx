@@ -2,25 +2,21 @@
 
 import { BookA, ChevronLeft, ChevronRight, Lightbulb, Share2 } from 'lucide-react'
 import Link from 'next/link'
-import { concepts, famousByConcept, getConcept, getDialect, STANDARD_ID } from '../lib/content'
+import { concepts, famousByConcept, getConcept, getDialect, STANDARD_ID, WORD_GROUPS } from '../lib/content'
 import { entryForConcept } from '../lib/conceptDict'
 import { sharePath } from '../lib/og'
-import { useT } from '../lib/i18n'
+import { useName, useT } from '../lib/i18n'
+import { useApp } from '../lib/store'
+import { regionLabel } from '../lib/search'
+import type { WordGroup } from '../lib/types'
+import NoteSources from '../components/NoteSources'
 import NotFoundPage from './NotFoundPage'
-
-const REGION_LABEL: Record<string, string> = {
-  egypt: 'مصر',
-  sudan: 'السودان',
-  levant: 'الشام',
-  iraq: 'العراق',
-  gulf: 'الخليج',
-  yemen: 'اليمن',
-  maghreb: 'المغرب العربي',
-}
 
 /** One meaning across every dialect: the encyclopedia page for a concept like «دلوقتي». */
 export default function ConceptPage({ conceptId }: { conceptId: string }) {
   const t = useT()
+  const name = useName()
+  const lang = useApp((s) => s.lang)
   const concept = getConcept(conceptId)
   if (!concept) return <NotFoundPage />
 
@@ -43,12 +39,12 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
           {prev && (
             <Link href={`/concepts/${prev.id}/`} className="inline-flex items-center gap-0.5">
               <ChevronRight className="h-4 w-4 ltr:rotate-180" aria-hidden />
-              {prev.name}
+              {name(prev)}
             </Link>
           )}
           {next && (
             <Link href={`/concepts/${next.id}/`} className="inline-flex items-center gap-0.5">
-              {next.name}
+              {name(next)}
               <ChevronLeft className="h-4 w-4 ltr:rotate-180" aria-hidden />
             </Link>
           )}
@@ -59,8 +55,8 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
         <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-sun-400/15 ring-1 ring-sun-400/40">
           <Lightbulb className="h-6 w-6 text-sun-300" aria-hidden />
         </span>
-        <h1 className="dialect-text mt-3 text-3xl font-bold">«{concept.name}»</h1>
-        <p dir="ltr" lang="en" className="mt-1 text-end text-sm text-cream-100">{concept.nameEn}</p>
+        <h1 dir={lang === 'ar' ? 'rtl' : 'ltr'} className="dialect-text mt-3 text-3xl font-bold">«{name(concept)}»</h1>
+        <p dir={lang === 'ar' ? 'ltr' : 'rtl'} lang={lang === 'ar' ? 'en' : 'ar'} className="mt-1 text-end text-sm text-cream-100">{lang === 'ar' ? concept.nameEn : concept.name}</p>
         <p className="mt-2 text-sm text-cream-100">{t('conceptInAllBody')}</p>
         <p className="mt-1 text-xs font-semibold text-sun-300">{t('conceptDialectCount', { n: variants.length })}</p>
         {dictEntry && (
@@ -79,7 +75,7 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
               <div key={group} className="flex items-baseline gap-1.5">
                 <dt className="text-slate-500">
                   <Link href={`/regions/${group}/`} className="underline-offset-2 hover:text-brand-700 hover:underline">
-                    {REGION_LABEL[group] ?? group}
+                    {WORD_GROUPS.includes(group as WordGroup) ? regionLabel(group as WordGroup, lang) : group}
                   </Link>
                   :
                 </dt>
@@ -94,12 +90,13 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
         {variants.map(({ dialectId, phrase }) => {
           const d = getDialect(dialectId)
           if (!d) return null
+          const note = lang === 'ar' ? phrase.noteAr ?? phrase.note : phrase.note
           return (
             <li key={dialectId} className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
               <div className="flex items-center justify-between gap-2">
                 <Link href={`/dialects/${dialectId}/`} className="text-xs font-bold text-amber-700 hover:text-brand-700">
-                  {d.name}
-                  {d.country ? <span className="font-normal text-slate-500"> · {d.country}</span> : null}
+                  {name(d)}
+                  {d.country ? <span className="font-normal text-slate-500"> · {lang === 'ar' ? d.country : d.countryEn}</span> : null}
                 </Link>
                 <Link
                   href={`${sharePath(dialectId, phrase.id)}/`}
@@ -114,7 +111,8 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
                 <span className="font-semibold">{t('conceptStandard')}:</span> {phrase.standard}
               </p>
               <p dir="ltr" lang="en" className="text-start text-sm text-slate-500">{phrase.english}</p>
-              {phrase.noteAr && <p className="mt-1 text-xs text-slate-500">{phrase.noteAr}</p>}
+              {note && <p className="mt-1 text-xs text-slate-500">{note}</p>}
+              {note && <NoteSources sources={phrase.noteSources} lang={lang} />}
               {phrase.example && (
                 <p className="mt-2 rounded-xl bg-sand-100 px-3 py-2 text-sm text-slate-700">
                   <span className="font-semibold">{t('example')}:</span> {phrase.example}
