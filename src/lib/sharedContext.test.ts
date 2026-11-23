@@ -54,6 +54,14 @@ describe('shared famous-phrase context', () => {
     expect(html).toContain('href="/compare?p=greetings.how_are_you"')
   })
 
+  it('does not offer a nonexistent Standard Arabic dialect overview', () => {
+    const html = render('fs', 'famous.al_aan')
+    expect(html).not.toContain('/dialects/fs')
+    expect(html).toContain('href="/compare?c=now"')
+    expect(html).toContain('الآن')
+    expect(render('cai', 'greetings.how_are_you')).toContain('/dialects/cai')
+  })
+
   it('keeps missing shares missing instead of showing unrelated context', () => {
     expect(render('psu', 'famous.not_an_entry')).not.toContain('shared-note-title')
     expect(render('not_a_dialect', 'famous.musakhan')).not.toContain('shared-note-title')

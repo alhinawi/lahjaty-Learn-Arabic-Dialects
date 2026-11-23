@@ -74,9 +74,9 @@ export default function SharePage({ dialectId = '', phraseId = '' }: { dialectId
         </section>
       )}
       <div className="grid gap-2 sm:grid-cols-2">
-        <Link href={`/dialects/${dialectId}`} className="rounded-2xl border border-slate-200 bg-white p-4 font-semibold text-brand-700 shadow-sm hover:border-brand-300">
+        {dialectId !== STANDARD_ID && <Link href={`/dialects/${dialectId}`} className="rounded-2xl border border-slate-200 bg-white p-4 font-semibold text-brand-700 shadow-sm hover:border-brand-300">
           {t('moreFromDialect', { name: name(dialect) })}
-        </Link>
+        </Link>}
         {compareTo && (
           <Link href={compareTo} className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white p-4 font-semibold text-brand-700 shadow-sm hover:border-brand-300">
             <Columns3 className="h-4 w-4" aria-hidden />
