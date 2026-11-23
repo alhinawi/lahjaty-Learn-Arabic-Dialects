@@ -11,6 +11,7 @@ import { useApp } from '../lib/store'
 import { regionLabel } from '../lib/search'
 import type { WordGroup } from '../lib/types'
 import NoteSources from '../components/NoteSources'
+import PlayButton from '../components/PlayButton'
 import NotFoundPage from './NotFoundPage'
 
 /** One meaning across every dialect: the encyclopedia page for a concept like «دلوقتي». */
@@ -107,7 +108,10 @@ export default function ConceptPage({ conceptId }: { conceptId: string }) {
                   <Share2 className="h-3.5 w-3.5" aria-hidden />
                 </Link>
               </div>
-              <p dir="rtl" lang="ar" className="dialect-text mt-2 text-2xl leading-snug font-bold text-brand-900">{phrase.text}</p>
+              <div className="mt-2 flex items-start gap-3">
+                <p dir="rtl" lang="ar" className="dialect-text min-w-0 flex-1 text-2xl leading-snug font-bold text-brand-900">{phrase.text}</p>
+                <PlayButton dialectId={dialectId} phraseId={phrase.id} text={phrase.text} />
+              </div>
               <p className="mt-1.5 text-sm text-slate-600">
                 <span className="font-semibold">{t('conceptStandard')}:</span> {phrase.standard}
               </p>
