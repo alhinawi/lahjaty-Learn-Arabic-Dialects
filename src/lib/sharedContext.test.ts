@@ -47,11 +47,35 @@ describe('shared famous-phrase context', () => {
     spy.mockRestore()
   })
 
-  it('keeps everyday shares without a famous-note disclosure', () => {
+  it('keeps everyday shares without famous-entry citations', () => {
     const html = render('cai', 'greetings.how_are_you')
-    expect(html).not.toContain('shared-note-title')
     expect(html).not.toContain('<details')
     expect(html).toContain('href="/compare?p=greetings.how_are_you"')
+  })
+
+  it('preserves every existing everyday usage note in either language without borrowing sources', () => {
+    for (const lang of ['ar', 'en'] as const) {
+      useApp.setState({ lang })
+      for (const phrase of content.phrases) {
+        const note = lang === 'ar' ? phrase.noteAr ?? phrase.note : phrase.note
+        const html = render('cai', phrase.id)
+        if (!phrase.variants.cai) continue
+        expect(html.includes('shared-note-title'), `${lang}/${phrase.id}`).toBe(!!note)
+        if (note) expect(html).toContain(renderToStaticMarkup(createElement('p', {}, note)).slice(3, -4))
+        expect(html).not.toContain('<details')
+      }
+    }
+  })
+
+  it('uses the existing English fallback for everyday Arabic context and omits an empty section', () => {
+    const phrase = structuredClone(content.getPhrase('greetings.how_are_you')!)
+    phrase.note = 'Existing usage context'
+    delete phrase.noteAr
+    const spy = vi.spyOn(content, 'getPhrase').mockReturnValue(phrase)
+    expect(render('cai', phrase.id)).toContain(phrase.note)
+    delete phrase.note
+    expect(render('cai', phrase.id)).not.toContain('shared-note-title')
+    spy.mockRestore()
   })
 
   it('does not offer a nonexistent Standard Arabic dialect overview', () => {
