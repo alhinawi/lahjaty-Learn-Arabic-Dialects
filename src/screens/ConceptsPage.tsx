@@ -1,23 +1,21 @@
 'use client'
 
-import { ChevronLeft, Lightbulb } from 'lucide-react'
+import { ChevronLeft, Lightbulb, Search, X } from 'lucide-react'
 import Link from 'next/link'
 import { conceptDialectCount } from '../lib/conceptVariants'
 import { useState } from 'react'
-import { concepts, famousByConcept, STANDARD_ID, WORD_GROUPS } from '../lib/content'
+import { WORD_GROUPS } from '../lib/content'
 import type { WordGroup } from '../lib/types'
 import { useT } from '../lib/i18n'
+import { conceptIndexEntries } from '../lib/conceptIndex'
 import { GROUP_KEY } from './RegionsPage'
 
 /** Every concept that at least one dialect has a famous phrase for, as an index of meaning-first pages. */
 export default function ConceptsPage() {
   const t = useT()
   const [group, setGroup] = useState<WordGroup | 'all'>('all')
-  // Standard Arabic is the reference, not a dialect: count real dialect variants only.
-  const used = concepts
-    .map((c) => ({ concept: c, variants: famousByConcept(c.id).filter((v) => v.dialectId !== STANDARD_ID) }))
-    .filter((x) => x.variants.length > 0)
-  const shown = group === 'all' ? used : used.filter(({ concept }) => concept.words?.[group])
+  const [query, setQuery] = useState('')
+  const shown = conceptIndexEntries(query, group)
 
   return (
     <div className="space-y-4">
@@ -28,6 +26,13 @@ export default function ConceptsPage() {
         <h1 className="mt-3 text-2xl font-bold">{t('conceptsTitle')}</h1>
         <p className="mt-1 text-sm text-cream-100">{t('conceptsBody')}</p>
       </header>
+
+      <label className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-3.5 py-3 shadow-sm focus-within:border-brand-500">
+        <Search className="h-5 w-5 shrink-0 text-brand-700" aria-hidden />
+        <span className="sr-only">{t('conceptsSearch')}</span>
+        <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder={t('conceptsSearch')} autoComplete="off" className="min-w-0 flex-1 bg-transparent outline-none [&::-webkit-search-cancel-button]:hidden" />
+        {query && <button type="button" onClick={() => setQuery('')} aria-label={t('searchClear')} className="rounded-full p-1 text-slate-500 hover:bg-slate-100"><X className="h-4 w-4" aria-hidden /></button>}
+      </label>
 
       <div className="flex flex-wrap gap-1.5" role="group" aria-label={t('regionsTitle')}>
         <button
@@ -51,6 +56,7 @@ export default function ConceptsPage() {
         ))}
       </div>
 
+      {shown.length === 0 && <p role="status" className="py-6 text-center text-sm text-slate-500">{t('noResults')}</p>}
       <ul className="stagger grid grid-cols-2 gap-2.5">
         {shown.map(({ concept, variants }) => (
           <li key={concept.id}>
