@@ -1,6 +1,6 @@
 'use client'
 
-import { Columns3, Download, MapPin } from 'lucide-react'
+import { Columns3, Download, MapPin, Type } from 'lucide-react'
 import Link from 'next/link'
 import PlayButton from '../components/PlayButton'
 import NoteSources from '../components/NoteSources'
@@ -16,10 +16,13 @@ export default function SharePage({ dialectId = '', phraseId = '' }: { dialectId
   const t = useT()
   const name = useName()
   const lang = useApp((s) => s.lang)
+  const showTranslit = useApp((s) => s.showTranslit)
+  const toggleTranslit = useApp((s) => s.toggleTranslit)
   const dialect = getDialect(dialectId)
   const famous = isFamousId(phraseId) ? getFamous(dialectId, phraseId) : undefined
   const base = famous ? undefined : getPhrase(phraseId)
   const text = famous?.text ?? base?.variants[dialectId]?.text
+  const translit = famous ? undefined : base?.variants[dialectId]?.translit
   const standard = famous?.standard ?? base?.variants[STANDARD_ID]?.text
   const english = famous?.english ?? base?.english
   if (!dialect || !text) return <NotFoundPage />
@@ -39,6 +42,9 @@ export default function SharePage({ dialectId = '', phraseId = '' }: { dialectId
         <p dir="rtl" lang="ar" className="dialect-text mt-5 text-4xl font-bold leading-snug text-cream-50">
           «{text}»
         </p>
+        {showTranslit && translit && (
+          <p dir="ltr" data-shared-translit className="mt-2 text-sm italic text-cream-100">{translit}</p>
+        )}
         <div className="mt-3 flex justify-center">
           <PlayButton dialectId={dialectId} phraseId={phraseId} text={text} />
         </div>
@@ -58,6 +64,12 @@ export default function SharePage({ dialectId = '', phraseId = '' }: { dialectId
           )}
         </dl>
         <div className="mt-5 flex flex-wrap justify-center gap-2">
+          {translit && (
+            <button type="button" onClick={toggleTranslit} aria-pressed={showTranslit} aria-label={t('translit')} data-shared-translit-toggle className="flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-cream-50 ring-1 ring-white/20 hover:bg-white/15">
+              <Type className="h-4 w-4" aria-hidden />
+              {t('translitShort')}
+            </button>
+          )}
           <ShareButton dialectId={dialectId} phraseId={phraseId} text={text} label />
           {famous && (
             <a href={image} download className="flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-cream-50 ring-1 ring-white/20 hover:bg-white/15">

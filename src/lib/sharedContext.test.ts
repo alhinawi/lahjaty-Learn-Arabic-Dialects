@@ -11,7 +11,7 @@ vi.mock('./store', async (importOriginal) => {
 })
 
 const render = (dialectId: string, phraseId: string) => renderToStaticMarkup(createElement(SharePage, { dialectId, phraseId }))
-afterEach(() => { vi.restoreAllMocks(); useApp.setState({ lang: 'ar' }) })
+afterEach(() => { vi.restoreAllMocks(); useApp.setState({ lang: 'ar', showTranslit: true }) })
 
 describe('shared famous-phrase context', () => {
   it('keeps all six existing sourced notes and scoped citations in both languages', () => {
@@ -115,6 +115,30 @@ describe('shared famous-phrase context', () => {
     expect(render('cai', 'greetings.how_are_you')).not.toContain('shared-example-title')
     delete phrase.example
     expect(render('psu', phrase.id)).not.toContain('shared-example-title')
+  })
+
+  it('preserves stored everyday transliteration only when the learner enables it', () => {
+    for (const lang of ['ar', 'en'] as const) {
+      useApp.setState({ lang, showTranslit: true })
+      for (const phrase of content.phrases) {
+        const variant = phrase.variants.cai
+        if (!variant) continue
+        const html = render('cai', phrase.id)
+        expect(html.includes('data-shared-translit=') , phrase.id).toBe(!!variant.translit)
+        if (variant.translit) expect(html).toContain(renderToStaticMarkup(createElement('p', {}, variant.translit)).slice(3, -4))
+      }
+      useApp.setState({ showTranslit: false })
+      expect(render('cai', 'greetings.how_are_you')).not.toContain('data-shared-translit=')
+    }
+  })
+
+  it('never invents transliteration for famous or untranslated everyday variants', () => {
+    useApp.setState({ showTranslit: true })
+    expect(render('cai', 'famous.ya_3am')).not.toContain('data-shared-translit=')
+    const phrase = structuredClone(content.getPhrase('greetings.how_are_you')!)
+    delete phrase.variants.cai.translit
+    vi.spyOn(content, 'getPhrase').mockReturnValue(phrase)
+    expect(render('cai', phrase.id)).not.toContain('data-shared-translit=')
   })
 
   it('keeps missing shares missing instead of showing unrelated context', () => {
