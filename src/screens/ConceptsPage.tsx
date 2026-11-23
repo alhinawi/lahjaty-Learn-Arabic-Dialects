@@ -2,6 +2,7 @@
 
 import { ChevronLeft, Lightbulb } from 'lucide-react'
 import Link from 'next/link'
+import { conceptDialectCount } from '../lib/conceptVariants'
 import { useState } from 'react'
 import { concepts, famousByConcept, STANDARD_ID, WORD_GROUPS } from '../lib/content'
 import type { WordGroup } from '../lib/types'
@@ -65,7 +66,7 @@ export default function ConceptsPage() {
                 </span>
               )}
               <span className="mt-auto flex items-center justify-between pt-2 text-[11px] font-semibold text-brand-700">
-                {t('conceptDialectCount', { n: variants.length })}
+                {t('conceptDialectCount', { n: conceptDialectCount(variants) })}
                 <ChevronLeft className="h-3.5 w-3.5 ltr:rotate-180" aria-hidden />
               </span>
             </Link>
