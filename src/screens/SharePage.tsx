@@ -24,7 +24,8 @@ export default function SharePage({ dialectId = '', phraseId = '' }: { dialectId
   const english = famous?.english ?? base?.english
   if (!dialect || !text) return <NotFoundPage />
   const compareTo = famous ? (famous.concept ? `/compare?c=${encodeURIComponent(famous.concept)}` : undefined) : `/compare?p=${encodeURIComponent(phraseId)}`
-  const note = famous ? (lang === 'ar' ? famous.noteAr ?? famous.note : famous.note) : undefined
+  const context = famous ?? base
+  const note = lang === 'ar' ? context?.noteAr ?? context?.note : context?.note
   const image = ogImageFor(`/share/${dialectId}/${phraseId}`)
 
   return (
