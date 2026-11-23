@@ -5,6 +5,7 @@ import { useDeferredValue, useId, useMemo, useState } from 'react'
 import { getConcept, getDialect } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { comparableHits } from '../lib/search'
+import { movePickerIndex } from '../lib/pickerNavigation'
 import type { ComparableHit } from '../lib/search'
 import { useApp } from '../lib/store'
 
@@ -27,6 +28,7 @@ export default function ComparePicker({
   const lang = useApp((s) => s.lang)
   const [q, setQ] = useState('')
   const [open, setOpen] = useState(false)
+  const [activeIndex, setActiveIndex] = useState(-1)
   const deferred = useDeferredValue(q)
   const listId = useId()
   const suggestions = useMemo(() => (open && deferred.trim() ? comparableHits(deferred, kind, 8) : []), [deferred, kind, open])
@@ -34,6 +36,7 @@ export default function ComparePicker({
   const pick = (h: ComparableHit) => {
     onPick(h.id)
     setQ('')
+    setActiveIndex(-1)
     setOpen(false)
   }
 
@@ -49,8 +52,9 @@ export default function ComparePicker({
       className="relative"
       onSubmit={(e) => {
         e.preventDefault()
-        const first = comparableHits(q, kind, 1)[0]
-        if (first) pick(first)
+        const active = open && activeIndex >= 0 ? suggestions[activeIndex] : undefined
+        const chosen = active ?? comparableHits(q, kind, 1)[0]
+        if (chosen) pick(chosen)
       }}
     >
       <span className="mb-1 block text-xs font-semibold text-slate-600">{t('compareSearchLabel')}</span>
@@ -62,21 +66,37 @@ export default function ComparePicker({
           value={q}
           onChange={(e) => {
             setQ(e.target.value)
+            setActiveIndex(-1)
             setOpen(true)
           }}
-          onFocus={() => setOpen(true)}
+          onFocus={() => { setActiveIndex(-1); setOpen(true) }}
+          onKeyDown={(e) => {
+            if (e.key === 'Escape') {
+              e.preventDefault()
+              setOpen(false)
+              setActiveIndex(-1)
+            } else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+              e.preventDefault()
+              const hits = comparableHits(q, kind, 8)
+              const next = movePickerIndex(open ? activeIndex : -1, e.key === 'ArrowDown' ? 1 : -1, hits.length)
+              setOpen(true)
+              setActiveIndex(next)
+              if (next >= 0) requestAnimationFrame(() => document.getElementById(`${listId}-option-${hits[next].id}`)?.scrollIntoView({ block: 'nearest' }))
+            }
+          }}
           onBlur={() => window.setTimeout(() => setOpen(false), 150)}
           placeholder={t('compareSearchPlaceholder')}
           enterKeyHint="search"
           autoComplete="off"
           role="combobox"
           aria-autocomplete="list"
+          aria-activedescendant={open && suggestions[activeIndex] ? `${listId}-option-${suggestions[activeIndex].id}` : undefined}
           aria-controls={listId}
           aria-expanded={open && suggestions.length > 0}
           className="min-w-0 flex-1 bg-transparent text-base outline-none placeholder:text-slate-500 [&::-webkit-search-cancel-button]:hidden"
         />
         {q && (
-          <button type="button" onClick={() => setQ('')} aria-label={t('searchClear')} className="rounded-full p-1 text-slate-500 hover:bg-slate-100">
+          <button type="button" onClick={() => { setQ(''); setActiveIndex(-1) }} aria-label={t('searchClear')} className="rounded-full p-1 text-slate-500 hover:bg-slate-100">
             <X className="h-4 w-4" aria-hidden />
           </button>
         )}
@@ -84,15 +104,15 @@ export default function ComparePicker({
       {open && q.trim() !== '' && (
         <ul id={listId} role="listbox" className="animate-rise absolute inset-x-0 top-full z-30 mt-1.5 max-h-80 overflow-auto rounded-2xl border border-slate-200 bg-white shadow-lg">
           {suggestions.length === 0 && <li className="px-3.5 py-3 text-sm text-slate-500">{t('noResults')}</li>}
-          {suggestions.map((h) => {
+          {suggestions.map((h, index) => {
             const d = getDialect(h.dialectId)
             return (
-              <li key={h.id} role="option" aria-selected={h.id === current}>
+              <li key={h.id} id={`${listId}-option-${h.id}`} role="option" aria-selected={activeIndex >= 0 ? index === activeIndex : h.id === current}>
                 <button
                   type="button"
                   onMouseDown={(e) => e.preventDefault()}
                   onClick={() => pick(h)}
-                  className="flex w-full items-center justify-between gap-3 px-3.5 py-2.5 text-start hover:bg-sand-50"
+                  className={`flex w-full items-center justify-between gap-3 px-3.5 py-2.5 text-start hover:bg-sand-50 ${index === activeIndex ? 'bg-sand-100 ring-2 ring-inset ring-brand-600' : ''}`}
                 >
                   <span className="min-w-0">
                     <span className="block truncate font-semibold text-slate-900">{h.matched}</span>
