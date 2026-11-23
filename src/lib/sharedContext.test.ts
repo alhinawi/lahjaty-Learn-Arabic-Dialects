@@ -86,6 +86,37 @@ describe('shared famous-phrase context', () => {
     expect(render('cai', 'greetings.how_are_you')).toContain('/dialects/cai')
   })
 
+  it('preserves every stored famous example in both interface languages', () => {
+    for (const lang of ['ar', 'en'] as const) {
+      useApp.setState({ lang })
+      for (const { dialectId, phrase } of content.allFamous) {
+        const html = render(dialectId, phrase.id)
+        expect(html.includes('shared-example-title'), `${lang}/${dialectId}/${phrase.id}`).toBe(!!phrase.example)
+        if (phrase.example) {
+          expect(html).toContain(renderToStaticMarkup(createElement('p', {}, phrase.example)).slice(3, -4))
+          expect(html).toContain(lang === 'ar' ? '>مثال</h2>' : '>Example</h2>')
+          expect(html).toContain('dir="rtl" lang="ar" class="dialect-text mt-2 text-lg')
+        }
+      }
+    }
+  })
+
+  it('keeps examples independent of notes and does not invent everyday examples', () => {
+    const phrase = structuredClone(content.getFamous('psu', 'famous.musakhan')!)
+    phrase.example = 'Existing stored example'
+    delete phrase.note
+    delete phrase.noteAr
+    delete phrase.noteSources
+    vi.spyOn(content, 'getFamous').mockReturnValue(phrase)
+    const html = render('psu', phrase.id)
+    expect(html).toContain('shared-example-title')
+    expect(html).not.toContain('shared-note-title')
+    expect(html).not.toContain('<details')
+    expect(render('cai', 'greetings.how_are_you')).not.toContain('shared-example-title')
+    delete phrase.example
+    expect(render('psu', phrase.id)).not.toContain('shared-example-title')
+  })
+
   it('keeps missing shares missing instead of showing unrelated context', () => {
     expect(render('psu', 'famous.not_an_entry')).not.toContain('shared-note-title')
     expect(render('not_a_dialect', 'famous.musakhan')).not.toContain('shared-note-title')
