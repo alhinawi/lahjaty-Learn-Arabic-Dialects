@@ -74,6 +74,12 @@ export default function SharePage({ dialectId = '', phraseId = '' }: { dialectId
           <NoteSources sources={famous?.noteSources} lang={lang} />
         </section>
       )}
+      {famous?.example && (
+        <section aria-labelledby="shared-example-title" className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <h2 id="shared-example-title" className="text-base font-bold text-slate-900">{t('example')}</h2>
+          <p dir="rtl" lang="ar" className="dialect-text mt-2 text-lg leading-relaxed text-slate-700">{famous.example}</p>
+        </section>
+      )}
       <div className="grid gap-2 sm:grid-cols-2">
         {dialectId !== STANDARD_ID && <Link href={`/dialects/${dialectId}`} className="rounded-2xl border border-slate-200 bg-white p-4 font-semibold text-brand-700 shadow-sm hover:border-brand-300">
           {t('moreFromDialect', { name: name(dialect) })}
