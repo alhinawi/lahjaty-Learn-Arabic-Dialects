@@ -1,4 +1,4 @@
-import { STANDARD_ID } from './content'
+import { getConcept, STANDARD_ID } from './content'
 import type { FamousPhrase, Dialect, Phrase } from './types'
 
 export type Rng = () => number
@@ -120,8 +120,9 @@ export function seededRng(seed: number): Rng {
 }
 
 /**
- * "Guess the dialect" with famous phrases: the words people of one dialect are known for. Wrong options are
- * dialects that do not have the same words among their famous phrases, so there is one right answer.
+ * Guess from expressions already mapped to a recognized comparison concept, not
+ * place names or other cultural encyclopedia entries. Full-corpus spelling
+ * exclusions reduce ambiguity, but do not establish exclusive dialect ownership.
  */
 export function buildGuessQuiz(
   famous: { dialectId: string; phrase: FamousPhrase }[],
@@ -154,6 +155,7 @@ export function buildGuessQuiz(
     if (questions.length >= count) break
     // one question per dialect in a round, so a round travels across the map
     if (usedDialects.has(dialectId) || !ids.includes(dialectId)) continue
+    if (!phrase.concept || !getConcept(phrase.concept)) continue
     if ((owners.get(quizTextKey(phrase.text))?.size ?? 0) > 1) continue
     const distractors = shuffle(ids, rng)
       .filter((o) => o !== dialectId && !textsOf.get(o)?.has(phrase.text))
