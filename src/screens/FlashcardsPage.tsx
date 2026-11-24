@@ -6,6 +6,8 @@ import Link from 'next/link'
 import DialectChip from '../components/DialectChip'
 import MyDialectLine from '../components/MyDialectLine'
 import PlayButton from '../components/PlayButton'
+import { PageSkeleton } from '../components/Skeleton'
+import { useHydrated } from '../lib/useHydrated'
 import { getDialect, getPhrase, phrases, STANDARD_ID } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { baseInMyDialect } from '../lib/myDialect'
@@ -16,6 +18,14 @@ const keyOf = (dialectId: string, phraseId: string) => `${dialectId}|${phraseId}
 
 /** Flashcards for the chosen dialect: read the phrase, think of its meaning, flip, say if you knew it. */
 export default function FlashcardsPage() {
+  const hydrated = useHydrated()
+  const dialectId = useApp((s) => s.dialectId)
+  // Build the fixed session only after saved review dates are available.
+  if (!hydrated) return <PageSkeleton />
+  return <FlashcardSession key={dialectId} />
+}
+
+function FlashcardSession() {
   const t = useT()
   const name = useName()
   const dialectId = useApp((s) => s.dialectId)
