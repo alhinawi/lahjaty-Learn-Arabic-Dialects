@@ -6,17 +6,19 @@ import Link from 'next/link'
 import { useT } from '../lib/i18n'
 import type { MessageKey } from '../lib/i18n'
 import { useApp } from '../lib/store'
+import { useHydrated } from '../lib/useHydrated'
 import { useProgress } from '../lib/useProgress'
 
 /** Tells the visitor once when they earn a badge. Badges earned before this existed are marked seen quietly. */
 export default function BadgeToast() {
   const t = useT()
   const { badges } = useProgress()
+  const hydrated = useHydrated()
   const seen = useApp((s) => s.seenBadges)
   const markSeen = useApp((s) => s.markBadgesSeen)
   const unlocked = badges.filter((b) => b.unlocked).map((b) => b.id)
   const key = unlocked.join(',')
-  const fresh = seen ? unlocked.filter((id) => !seen.includes(id)) : []
+  const fresh = hydrated && seen ? unlocked.filter((id) => !seen.includes(id)) : []
   const [shown, setShown] = useState<string | null>(null)
   const [lastFresh, setLastFresh] = useState('')
   // A badge earned just now shows at once; the effect below only records it as seen.
@@ -26,11 +28,12 @@ export default function BadgeToast() {
   }
 
   useEffect(() => {
+    if (!hydrated || !useApp.persist.hasHydrated()) return
     // The first check after this existed records what was already earned, without a message.
     if (seen === null) markSeen(key ? key.split(',') : [])
     else if (fresh.length > 0) markSeen(fresh)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [key, seen === null])
+  }, [key, seen === null, hydrated])
 
   useEffect(() => {
     if (!shown) return
