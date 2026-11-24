@@ -3,6 +3,15 @@ import type { FamousPhrase, Dialect, Phrase } from './types'
 
 export type Rng = () => number
 
+/** Conservative comparison for quiz ambiguity, never a claim about dialect ownership. */
+export function quizTextKey(text: string): string {
+  return text.normalize('NFKC')
+    .replace(/[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED\u0640]/g, '')
+    .replace(/[أإآٱ]/g, 'ا')
+    .replace(/[\p{P}\p{S}]/gu, ' ')
+    .replace(/\s+/g, ' ').trim()
+}
+
 export function shuffle<T>(items: readonly T[], rng: Rng = Math.random): T[] {
   const a = [...items]
   for (let i = a.length - 1; i > 0; i--) {
@@ -62,8 +71,8 @@ export interface MatchQuestion {
 }
 
 /**
- * "Which dialect is this sentence?". Wrong options are only dialects that say the
- * phrase differently, so there is always exactly one right answer.
+ * "Which dialect is this sentence?". Wrong options exclude dialects with the same
+ * normalized written phrase, so there is always exactly one right answer.
  */
 export function buildMatchQuiz(
   allPhrases: Phrase[],
@@ -83,7 +92,7 @@ export function buildMatchQuiz(
     for (const other of shuffle(ids, rng)) {
       if (distractors.length >= optionCount - 1) break
       const t = phrase.variants[other]?.text
-      if (other === dialectId || !t || t === text) continue
+      if (other === dialectId || !t || quizTextKey(t) === quizTextKey(text)) continue
       distractors.push(other)
     }
     if (distractors.length < 1) continue
@@ -123,12 +132,12 @@ export function buildGuessQuiz(
   everyday: Phrase[] = [],
 ): MatchQuestion[] {
   const ids = pool.map((d) => d.id).filter((id) => id !== STANDARD_ID)
-  const bare = (x: string) => x.replace(/[\u064B-\u065F\u0670\u0640؟?!.،,«»]/g, '').replace(/[أإآ]/g, 'ا').replace(/\s+/g, ' ').trim()
+
   // Words said the same way in many places («مرحبا») make a guess impossible, so a phrase is asked only
   // when no other dialect has the same words, among its famous phrases or its everyday ones.
   const owners = new Map<string, Set<string>>()
   const own = (text: string, id: string) => {
-    const k = bare(text)
+    const k = quizTextKey(text)
     if (!owners.has(k)) owners.set(k, new Set())
     owners.get(k)!.add(id)
   }
@@ -145,7 +154,7 @@ export function buildGuessQuiz(
     if (questions.length >= count) break
     // one question per dialect in a round, so a round travels across the map
     if (usedDialects.has(dialectId) || !ids.includes(dialectId)) continue
-    if ((owners.get(bare(phrase.text))?.size ?? 0) > 1) continue
+    if ((owners.get(quizTextKey(phrase.text))?.size ?? 0) > 1) continue
     const distractors = shuffle(ids, rng)
       .filter((o) => o !== dialectId && !textsOf.get(o)?.has(phrase.text))
       .slice(0, optionCount - 1)
