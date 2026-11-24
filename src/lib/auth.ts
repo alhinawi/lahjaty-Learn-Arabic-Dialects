@@ -7,7 +7,7 @@
 // ==============================================================================
 
 import { create } from 'zustand'
-import { useApp } from './store'
+import { restoreSavedProgress, useApp } from './store'
 import {
   apiGetMe,
   apiGetProgress,
@@ -110,6 +110,7 @@ async function initialSync(token: string) {
 
 /** Call after a successful login/register/Google callback: fetch the account and start syncing. */
 export async function completeSignIn(token: string): Promise<ApiUser | null> {
+  await restoreSavedProgress()
   const me = await apiGetMe(token)
   if (!me) {
     clearApiToken()

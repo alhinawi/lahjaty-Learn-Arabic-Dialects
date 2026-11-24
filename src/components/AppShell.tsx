@@ -7,7 +7,7 @@ import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import type { ReactNode } from 'react'
 import { useT } from '../lib/i18n'
 import { setupPwa } from '../lib/pwa'
-import { useApp } from '../lib/store'
+import { restoreSavedProgress, useApp } from '../lib/store'
 import BadgeToast from './BadgeToast'
 import AuthButton from './AuthButton'
 import InstallPrompt from './InstallPrompt'
@@ -39,6 +39,10 @@ export default function AppShell({ children }: { children: ReactNode }) {
     setPrevPath(pathname)
     setMenuOpen(false)
   }
+
+  useEffect(() => {
+    void restoreSavedProgress()
+  }, [])
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)')
