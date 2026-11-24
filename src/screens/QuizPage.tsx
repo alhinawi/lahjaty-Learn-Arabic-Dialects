@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import PlayButton from '../components/PlayButton'
 import ProgressBar from '../components/ProgressBar'
+import QuizExpressionContext from '../components/QuizExpressionContext'
 import { allFamous, categories, dialects, getDialect, getPhrase, phrases, STANDARD_ID } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { buildGuessQuiz, buildMatchQuiz, buildMeaningQuiz } from '../lib/quiz'
@@ -184,6 +185,8 @@ function Quiz({ mode, category }: { mode: 'meaning' | 'match' | 'guess'; categor
           </span>
         </p>
       )}
+
+      {mode === 'guess' && <QuizExpressionContext answered={!!picked} dialectId={q.dialectId} phraseId={q.phrase.id} />}
 
       {picked && (
         <div className="flex items-center gap-3">
