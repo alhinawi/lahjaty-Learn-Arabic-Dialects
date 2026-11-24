@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { allFamous, dialects, famousFor, phrases, STANDARD_ID } from './content'
+import { allFamous, dialects, famousFor, getConcept, phrases, STANDARD_ID } from './content'
 import { buildGuessQuiz, buildMatchQuiz, buildMeaningQuiz, seededRng, shuffle, quizTextKey } from './quiz'
 
 describe('shuffle', () => {
@@ -89,6 +89,33 @@ describe('guess quiz normalized ownership', () => {
       const qs = buildGuessQuiz(allFamous, dialects, 10, seededRng(seed), 4, phrases)
       expect(qs).toHaveLength(10)
       for (const q of qs) expect(owners.get(quizTextKey(q.phrase.variants[q.answer].text))).toEqual(new Set([q.answer]))
+    }
+  })
+})
+
+
+describe('guess expression pool', () => {
+  it('asks recognized comparison expressions across100rounds, not culture-only encyclopedia entries', () => {
+    for (let seed = 1; seed <= 100; seed++) {
+      const qs = buildGuessQuiz(allFamous, dialects, 10, seededRng(seed), 4, phrases)
+      expect(qs).toHaveLength(10)
+      expect(new Set(qs.map((q) => q.dialectId)).size).toBe(10)
+      for (const q of qs) {
+        const source = allFamous.find((v) => v.dialectId === q.dialectId && v.phrase.id === q.phrase.id)!
+        expect(source.phrase.concept).toBeTruthy()
+        expect(getConcept(source.phrase.concept!)).toBeDefined()
+      }
+    }
+  })
+  it('keeps non-question encyclopedia entries in ambiguity exclusions', () => {
+    const entry = { id: 'test.expression', text: 'اختبار فريد', standard: 'اختبار', english: 'test', concept: 'now' }
+    const rows = [{ dialectId: dialects[1].id, phrase: entry }, { dialectId: dialects[2].id, phrase: { ...entry, id: 'test.culture', concept: undefined } }]
+    expect(buildGuessQuiz(rows, dialects, 10, seededRng(1))).toEqual([])
+  })
+  it('rejects missing or unknown concepts even for otherwise unique entries', () => {
+    for (const concept of [undefined, 'not_a_real_concept']) {
+      const entry = { id: 'test.culture', text: 'اختبار فريد', standard: 'اختبار', english: 'test', concept }
+      expect(buildGuessQuiz([{ dialectId: dialects[1].id, phrase: entry }], dialects, 10, seededRng(1))).toEqual([])
     }
   })
 })
