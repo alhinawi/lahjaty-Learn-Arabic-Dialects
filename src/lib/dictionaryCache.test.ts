@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 const fixtures = vi.hoisted(() => ({ effects: [] as (() => unknown)[], load: vi.fn(), first: { id: 'test.first', fs: 'أول', en: 'first', pos: 'n', words: {} }, second: { id: 'test.second', fs: 'ثان', en: 'second', pos: 'n', words: {} } }))
-vi.mock('react', async (original) => ({ ...await original<typeof import('react')>(), useEffect: (fn: () => unknown) => fixtures.effects.push(fn), useState: (initial: unknown) => [typeof initial === 'function' ? initial() : initial, vi.fn()] }))
+vi.mock('react', async (original) => ({ ...await original<typeof import('react')>(), useCallback: (fn: unknown) => fn, useEffect: (fn: () => unknown) => fixtures.effects.push(fn), useState: (initial: unknown) => [typeof initial === 'function' ? initial() : initial, vi.fn()] }))
 vi.mock('./dictionaryLoaders', () => ({ topicLoaders: { test: fixtures.load } }))
 beforeEach(() => { vi.resetModules(); fixtures.effects = []; fixtures.load.mockReset(); fixtures.load.mockResolvedValue({ entries: [fixtures.first, fixtures.second] }) })
 describe('complete dictionary topic cache', () => {
@@ -26,4 +26,14 @@ describe('complete dictionary topic cache', () => {
     expect(useEntry('test.second', fixtures.first as never)).toBeNull()
     expect(useEntry(undefined, fixtures.first as never)).toBeUndefined()
   })
+  it('shares an in-flight request and permits another load after rejection', async () => {
+    const { loadTopic } = await import('./dictionary')
+    fixtures.load.mockRejectedValueOnce(new Error('offline'))
+    const first = loadTopic('test')
+    expect(loadTopic('test')).toBe(first)
+    await expect(first).rejects.toThrow('offline')
+    expect(await loadTopic('test')).toEqual([fixtures.first, fixtures.second])
+    expect(fixtures.load).toHaveBeenCalledTimes(2)
+  })
+
 })
