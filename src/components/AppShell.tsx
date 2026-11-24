@@ -7,6 +7,7 @@ import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import type { ReactNode } from 'react'
 import { useT } from '../lib/i18n'
 import { setupPwa } from '../lib/pwa'
+import { usePlaybackRoute } from '../lib/usePlaybackRoute'
 import { restoreSavedProgress, useApp } from '../lib/store'
 import BadgeToast from './BadgeToast'
 import AuthButton from './AuthButton'
@@ -29,6 +30,7 @@ export default function AppShell({ children }: { children: ReactNode }) {
   const toggleLang = useApp((s) => s.toggleLang)
   const setTheme = useApp((s) => s.setTheme)
   const pathname = usePathname() ?? '/'
+  usePlaybackRoute(pathname)
   const systemDark = useSyncExternalStore(subscribeDark, isSystemDark, () => false)
   const dark = theme === 'dark' || (theme === 'system' && systemDark)
   const [menuOpen, setMenuOpen] = useState(false)
