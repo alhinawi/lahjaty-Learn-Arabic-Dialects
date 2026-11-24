@@ -1,5 +1,7 @@
 'use client'
 
+import DictionaryLoadError from '../components/DictionaryLoadError'
+
 import { BookA, ChevronLeft, MapPinned } from 'lucide-react'
 import { KindBadge } from '../components/EgyptBits'
 import { getEgyptNode } from '../lib/egypt'
@@ -206,7 +208,7 @@ export default function SearchPage() {
   const params = useSearchParams() ?? new URLSearchParams()
   const q = params.get('q') ?? ''
   const hits = useMemo(() => search(q, 20), [q])
-  const entries = useAllEntries(!!q.trim())
+  const { entries, failed, retry } = useAllEntries(!!q.trim())
   const dictHits = useMemo(() => (entries && q.trim() ? searchDictionary(entries, q, 8) : []), [entries, q])
 
   return (
@@ -216,9 +218,10 @@ export default function SearchPage() {
         <p className="text-xs text-slate-500">{t('searchBody')}</p>
       </div>
       <SearchBox key={q} initial={q} autoFocus={!q} onSubmit={(v) => router.push(`/search?q=${encodeURIComponent(v)}`)} />
+      {q.trim() && failed && <DictionaryLoadError onRetry={retry} />}
       {q && (
         <p className="text-sm text-slate-600" aria-live="polite">
-          {hits.length + dictHits.length ? t('searchCount', { n: hits.length + dictHits.length, q }) : entries ? t('searchNone', { q }) : t('dictLoading')}
+          {hits.length + dictHits.length ? t('searchCount', { n: hits.length + dictHits.length, q }) : entries ? t('searchNone', { q }) : failed ? t('dictLoadFailed') : t('dictLoading')}
         </p>
       )}
       <div className="space-y-3">

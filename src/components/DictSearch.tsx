@@ -1,5 +1,7 @@
 'use client'
 
+import DictionaryLoadError from './DictionaryLoadError'
+
 import { Search, X } from 'lucide-react'
 import { useId, useMemo, useState } from 'react'
 import Link from 'next/link'
@@ -19,7 +21,7 @@ export default function DictSearch() {
   const [activeIndex, setActiveIndex] = useState(-1)
   const [q, setQ] = useState('')
   const [touched, setTouched] = useState(false)
-  const entries = useAllEntries(touched)
+  const { entries, failed, retry } = useAllEntries(touched)
   const hits = useMemo(() => (entries && q.trim() ? searchDictionary(entries, q, 10) : []), [entries, q])
 
   return (
@@ -76,7 +78,8 @@ export default function DictSearch() {
           </button>
         )}
       </label>
-      {q.trim() && entries === null && <p className="px-1 text-sm text-slate-500">{t('dictLoading')}</p>}
+      {q.trim() && failed && <DictionaryLoadError onRetry={retry} />}
+      {q.trim() && !failed && entries === null && <p className="px-1 text-sm text-slate-500">{t('dictLoading')}</p>}
       {q.trim() && entries && hits.length === 0 && <p className="px-1 text-sm text-slate-500">{t('dictNotFound')}</p>}
       {open && hits.length > 0 && (
         <ul id={listId} role="listbox" className="divide-y divide-slate-100 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import rawIndex from '../content/dictionary/index.json'
 import { dialects, getDialect, STANDARD_ID } from './content'
 import { normalize } from './search'
@@ -29,9 +29,8 @@ export function loadTopic(id: string): Promise<DictEntry[]> {
   if (!load) return Promise.resolve([])
   const p = load().then((f) => {
     cache.set(id, f.entries)
-    inflight.delete(id)
     return f.entries
-  })
+  }).finally(() => inflight.delete(id))
   inflight.set(id, p)
   return p
 }
@@ -50,7 +49,7 @@ export function useTopic(id: string | undefined, initial?: DictEntry[]): DictEnt
     if (!id) return
     if (initial && !cache.has(id)) cache.set(id, initial)
     if (cache.has(id)) return
-    loadTopic(id).then((entries) => alive && setAsyncState({ id, entries }))
+    loadTopic(id).then((entries) => alive && setAsyncState({ id, entries }), () => { /* A detail keeps its prerendered fallback; search offers retry. */ })
     return () => {
       alive = false
     }
@@ -62,18 +61,22 @@ export function useTopic(id: string | undefined, initial?: DictEntry[]): DictEnt
   return initial ?? null
 }
 
-/** Loads every topic once `enabled` is true; null until then. */
-export function useAllEntries(enabled = true): DictEntry[] | null {
+/** Loads all topics on demand. Failures stay distinct from an empty dictionary. */
+export function useAllEntries(enabled = true) {
   const ready = () => (dictTopics.every((t) => cache.has(t.id)) ? dictTopics.flatMap((t) => cache.get(t.id)!) : null)
   const [entries, setEntries] = useState<DictEntry[] | null>(ready)
+  const [failed, setFailed] = useState(false)
+  const [attempt, setAttempt] = useState(0)
+  const retry = useCallback(() => { setFailed(false); setAttempt((n) => n + 1) }, [])
   useEffect(() => {
     let alive = true
-    if (enabled && !entries) loadAllTopics().then((list) => alive && setEntries(list))
-    return () => {
-      alive = false
-    }
-  }, [enabled, entries])
-  return entries
+    if (enabled && !entries) loadAllTopics().then(
+      (list) => { if (alive) { setEntries(list); setFailed(false) } },
+      () => { if (alive) setFailed(true) },
+    )
+    return () => { alive = false }
+  }, [enabled, entries, attempt])
+  return { entries, failed, retry }
 }
 
 export function useEntry(entryId: string | undefined, initial?: DictEntry): DictEntry | null | undefined {
