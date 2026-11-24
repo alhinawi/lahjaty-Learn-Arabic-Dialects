@@ -77,9 +77,10 @@ export function useAllEntries(enabled = true): DictEntry[] | null {
 }
 
 export function useEntry(entryId: string | undefined, initial?: DictEntry): DictEntry | null | undefined {
-  const list = useTopic(entryId ? topicOf(entryId) : undefined, initial ? [initial] : undefined)
+  // A detail page's one entry is not a complete topic and must never seed its cache.
+  const list = useTopic(entryId ? topicOf(entryId) : undefined)
   if (!entryId) return undefined
-  if (list === null) return null
+  if (list === null) return initial?.id === entryId ? initial : null
   return list.find((e) => e.id === entryId)
 }
 
