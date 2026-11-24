@@ -7,6 +7,7 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import { audioCount, dialectsByRegion, searchDialects } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
+import { dialectReturnPath } from '../lib/dialectReturn'
 import DialectMap from '../components/DialectMap'
 import { GROUP_KEY, REGION_HUBS } from '../lib/regionsMeta'
 
@@ -15,7 +16,7 @@ export default function DialectsPage() {
   const name = useName()
   const router = useRouter()
   const params = useSearchParams() ?? new URLSearchParams()
-  const next = params.get('next')
+  const next = dialectReturnPath(params.get('next'))
   const lang = useApp((s) => s.lang)
   const selected = useApp((s) => s.dialectId)
   const setDialect = useApp((s) => s.setDialect)
