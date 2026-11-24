@@ -4329,10 +4329,22 @@
         "text": "چاي",
         "english": "Tea",
         "standard": "شاي",
-        "noteAr": "العراقي بينطق الشين «چ»، والشاي ما بيبطّلش",
-        "note": "Iraqis say 'chai' with a 'ch', and the tea never stops",
+        "noteAr": "يُسمّى الشاي في العراقية «چاي»، بصوت «تش» مثل بداية كلمة chair الإنجليزية. هذا وصف لهذه الكلمة، وليس قاعدة لتحويل كل شين.",
+        "note": "In Iraqi Arabic, tea is called chai, with a ch sound as in English chair. This describes this word, not a rule for every sh sound.",
         "example": "خلّي نشرب استكان چاي بالهيل",
-        "concept": "tea"
+        "concept": "tea",
+        "noteSources": [
+          {
+            "title": "Wiktionary: chai, Iraqi Arabic entry",
+            "titleAr": "ويكاموس: مادة چاي في العربية العراقية",
+            "url": "https://en.wiktionary.org/wiki/%DA%86%D8%A7%D9%8A"
+          },
+          {
+            "title": "Adhid Miri, Chaldean News: Chai Al-Iraqi (2023)",
+            "titleAr": "كلدان نيوز: الشاي العراقي (٢٠٢٣)",
+            "url": "https://www.chaldeannews.com/2023-content/2023/2/1/chai-al-iraqi"
+          }
+        ]
       },
       {
         "id": "famous.istikan",
