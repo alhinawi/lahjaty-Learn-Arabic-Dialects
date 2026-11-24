@@ -172,3 +172,12 @@ export const useApp = create<AppState>()(
   ),
 )
 
+
+let hydration: Promise<void> | undefined
+
+/** Restore once after mount, before badge writes or account progress sync. */
+export function restoreSavedProgress(): Promise<void> {
+  if (useApp.persist.hasHydrated()) return Promise.resolve()
+  hydration ??= Promise.resolve(useApp.persist.rehydrate()).finally(() => { hydration = undefined })
+  return hydration
+}
