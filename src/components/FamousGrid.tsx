@@ -9,6 +9,7 @@ import { useApp } from '../lib/store'
 import MyDialectLine from './MyDialectLine'
 import NoteSources from './NoteSources'
 import PlayButton from './PlayButton'
+import { useHydrated } from '../lib/useHydrated'
 
 /**
  * The encyclopedia's front door: today's famous phrase, then the most famous phrase of every
@@ -44,7 +45,9 @@ export default function FamousGrid() {
       })
       .slice(0, 2),
   )
-  const today = phraseOfTheDay()
+  // Export day and visitor day can differ. Keep the hydration snapshot stable.
+  const hydrated = useHydrated()
+  const today = phraseOfTheDay(hydrated ? undefined : 0)
   const todayDialect = getDialect(today.dialectId)!
   const note = lang === 'ar' ? today.phrase.noteAr ?? today.phrase.note : today.phrase.note
 
