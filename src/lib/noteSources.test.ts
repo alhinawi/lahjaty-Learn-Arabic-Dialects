@@ -14,12 +14,12 @@ import { content } from './content'
 const phrase = (): FamousPhrase => structuredClone(getFamous('psr', 'famous.maqluba')!)
 
 describe('note source metadata', () => {
-  it('keeps the nine scoped context notes at two sources each', () => {
+  it('keeps the ten scoped context notes at two sources each', () => {
     const sourced = Object.entries(famousContent.dialects).flatMap(([d, list]) => list.filter((p) => p.noteSources).map((p) => [d, p.id]))
     expect(sourced).toEqual([
       ['cai', 'famous.awi'],
       ['psu', 'famous.kunafa_nabulsiyye'], ['psu', 'famous.musakhan'],
-      ['psr', 'famous.maqluba'], ['psr', 'famous.khubz_taboon'], ['psr', 'famous.al_khalil'], ['psr', 'famous.bethlehem'], ['bag', 'famous.chai'], ['emi', 'famous.fujairah'],
+      ['psr', 'famous.maqluba'], ['psr', 'famous.khubz_taboon'], ['psr', 'famous.al_khalil'], ['psr', 'famous.bethlehem'], ['bag', 'famous.chai'], ['emi', 'famous.fujairah'], ['cnl', 'famous.fayed'],
     ])
     for (const [dialectId, id] of sourced) {
       const p = getFamous(dialectId, id)!
