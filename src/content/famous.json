@@ -8889,15 +8889,6 @@
         "concept": "what"
       },
       {
-        "id": "famous.feshlum",
-        "text": "فشلوم",
-        "english": "Fishlum (spicy fish dish)",
-        "standard": "طبق سمك",
-        "noteAr": "مدينة على البحر، والسمك جزء من أكلها",
-        "note": "A seaside city where fish is part of every table",
-        "example": "نتغدّوا حوت اليوم"
-      },
-      {
         "id": "famous.mbatten",
         "text": "المبطّن",
         "english": "Stuffed fried potato slices",
