@@ -1,11 +1,12 @@
 'use client'
 
 import { Search, X } from 'lucide-react'
-import { useDeferredValue, useId, useMemo, useState } from 'react'
+import { useDeferredValue, useId, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { getDialect } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { hitTitle, search } from '../lib/search'
+import { isComposingKey } from '../lib/composition'
 import { movePickerIndex } from '../lib/pickerNavigation'
 import { useApp } from '../lib/store'
 
@@ -27,6 +28,7 @@ export default function SearchBox({ initial = '', autoFocus = false, onSubmit }:
       .filter((h) => !seen.has(h.matched) && !!seen.add(h.matched))
       .slice(0, 6)
   }, [deferred, open])
+  const composing = useRef(false)
   const listId = useId()
 
   const go = (value: string) => {
@@ -44,6 +46,7 @@ export default function SearchBox({ initial = '', autoFocus = false, onSubmit }:
       className="relative"
       onSubmit={(e) => {
         e.preventDefault()
+        if (composing.current) return
         go(open && suggestions[activeIndex] ? suggestions[activeIndex].matched : q)
       }}
     >
@@ -60,7 +63,10 @@ export default function SearchBox({ initial = '', autoFocus = false, onSubmit }:
             setOpen(true)
           }}
           onFocus={() => { setActiveIndex(-1); setOpen(true) }}
+          onCompositionStart={() => { composing.current = true }}
+          onCompositionEnd={() => { composing.current = false }}
           onKeyDown={(e) => {
+            if (isComposingKey(e.nativeEvent, composing.current)) return
             if (e.key === 'Escape') {
               e.preventDefault()
               setOpen(false)
@@ -75,7 +81,7 @@ export default function SearchBox({ initial = '', autoFocus = false, onSubmit }:
               if (next >= 0) requestAnimationFrame(() => document.getElementById(`${listId}-option-${hits[next].key}`)?.scrollIntoView({ block: 'nearest' }))
             }
           }}
-          onBlur={() => window.setTimeout(() => setOpen(false), 150)}
+          onBlur={() => { composing.current = false; window.setTimeout(() => setOpen(false), 150) }}
           placeholder={t('searchPlaceholder')}
           enterKeyHint="search"
           autoComplete="off"
