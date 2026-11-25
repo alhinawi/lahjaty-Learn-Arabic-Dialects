@@ -6012,9 +6012,21 @@
         "text": "الفجيرة",
         "english": "Fujairah",
         "standard": "الفجيرة",
-        "noteAr": "الفجيرة، الإمارة الوحيدة على خليج عمان، جبالها تطل على البحر",
-        "note": "Fujairah is the only emirate on the Gulf of Oman, its mountains meeting the sea",
-        "example": "الفجيرة شتوية حلوة في الشتا"
+        "noteAr": "الفجيرة هي الإمارة الوحيدة الواقعة بالكامل على الساحل الشرقي للإمارات على خليج عمان. وليست الوحيدة المطلة على الخليج؛ فالشارقة تطل عليه أيضًا.",
+        "note": "Fujairah is the only emirate located entirely on the eastern coast of the UAE along the Gulf of Oman. It is not the only emirate with a Gulf of Oman coast; Sharjah also has one.",
+        "example": "الفجيرة شتوية حلوة في الشتا",
+        "noteSources": [
+          {
+            "title": "UAE Ministry of Foreign Affairs: Fujairah",
+            "titleAr": "وزارة الخارجية الإماراتية: الفجيرة",
+            "url": "https://www.mofa.gov.ae/en/the-uae"
+          },
+          {
+            "title": "UAE Government: Sharjah location and geography",
+            "titleAr": "حكومة الإمارات: موقع الشارقة وجغرافيتها",
+            "url": "https://u.ae/en/about-the-uae/the-seven-emirates/Sharjah"
+          }
+        ]
       },
       {
         "id": "famous.rak",
