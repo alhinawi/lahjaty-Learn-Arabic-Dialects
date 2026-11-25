@@ -23,9 +23,24 @@ export default function DictTopicPage({ topicId, initialEntries }: { topicId: st
   const entries = useTopic(topic?.id, initialEntries)
   const loaded = entries !== null
   useEffect(() => {
-    const id = fragmentId(window.location.hash)
-    if (loaded && id) document.getElementById(id)?.scrollIntoView({ block: 'start' })
-  }, [loaded])
+    if (!loaded) return
+    let frame = 0
+    const landOnEntry = () => {
+      cancelAnimationFrame(frame)
+      frame = requestAnimationFrame(() => {
+        const id = fragmentId(window.location.hash)
+        if (id) document.getElementById(id)?.scrollIntoView({ block: 'start' })
+      })
+    }
+    landOnEntry()
+    window.addEventListener('hashchange', landOnEntry)
+    window.addEventListener('popstate', landOnEntry)
+    return () => {
+      cancelAnimationFrame(frame)
+      window.removeEventListener('hashchange', landOnEntry)
+      window.removeEventListener('popstate', landOnEntry)
+    }
+  }, [loaded, topicId, dialect?.id])
   if (!topic) return <NotFoundPage />
 
   const i = dictTopics.indexOf(topic)
