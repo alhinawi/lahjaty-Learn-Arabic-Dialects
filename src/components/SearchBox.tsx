@@ -108,13 +108,13 @@ export default function SearchBox({ initial = '', autoFocus = false, onSubmit }:
                   type="button"
                   onMouseDown={(e) => e.preventDefault()}
                   onClick={() => go(h.matched)}
-                  className={`flex w-full items-center justify-between gap-3 px-3.5 py-2.5 text-start hover:bg-sand-50 ${index === activeIndex ? 'bg-sand-100 ring-2 ring-inset ring-brand-600' : ''}`}
+                  className={`flex w-full items-start justify-between gap-3 px-3.5 py-2.5 text-start hover:bg-sand-50 ${index === activeIndex ? 'bg-sand-100 ring-2 ring-inset ring-brand-600' : ''}`}
                 >
-                  <span className="min-w-0">
-                    <span className="block truncate font-semibold text-slate-900">{h.matched}</span>
-                    <span className="block truncate text-xs text-slate-500">{hitTitle(h, lang)}</span>
+                  <span className="min-w-0 flex-1 break-words">
+                    <span className="block font-semibold text-slate-900">{h.matched}</span>
+                    <span className="block text-xs text-slate-500">{hitTitle(h, lang)}</span>
                   </span>
-                  {d && <span className="shrink-0 rounded-full bg-brand-50 px-2 py-0.5 text-[11px] font-semibold text-brand-700">{name(d)}</span>}
+                  {d && <span className="max-w-[42%] shrink-0 break-words rounded-2xl bg-brand-50 px-2 py-0.5 text-[11px] font-semibold text-brand-700">{name(d)}</span>}
                 </button>
               </li>
             )
