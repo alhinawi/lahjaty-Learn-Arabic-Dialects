@@ -3,9 +3,10 @@
 import DictionaryLoadError from './DictionaryLoadError'
 
 import { Search, X } from 'lucide-react'
-import { useId, useMemo, useState } from 'react'
+import { useId, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { isComposingKey } from '../lib/composition'
 import { movePickerIndex } from '../lib/pickerNavigation'
 import { getDialect } from '../lib/content'
 import { searchDictionary, useAllEntries } from '../lib/dictionary'
@@ -16,6 +17,7 @@ export default function DictSearch() {
   const t = useT()
   const name = useName()
   const router = useRouter()
+  const composing = useRef(false)
   const listId = useId()
   const [open, setOpen] = useState(false)
   const [activeIndex, setActiveIndex] = useState(-1)
@@ -33,8 +35,11 @@ export default function DictSearch() {
           type="search"
           value={q}
           onFocus={() => { setTouched(true); setOpen(true); setActiveIndex(-1) }}
-          onBlur={() => window.setTimeout(() => setOpen(false), 150)}
+          onBlur={() => { composing.current = false; window.setTimeout(() => setOpen(false), 150) }}
+          onCompositionStart={() => { composing.current = true }}
+          onCompositionEnd={() => { composing.current = false }}
           onKeyDown={(e) => {
+            if (isComposingKey(e.nativeEvent, composing.current)) return
             if (e.key === 'Escape') {
               e.preventDefault()
               setOpen(false)

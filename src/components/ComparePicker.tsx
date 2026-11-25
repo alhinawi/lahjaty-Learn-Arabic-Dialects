@@ -1,10 +1,11 @@
 'use client'
 
 import { Search, X } from 'lucide-react'
-import { useDeferredValue, useId, useMemo, useState } from 'react'
+import { useDeferredValue, useId, useMemo, useRef, useState } from 'react'
 import { getConcept, getDialect } from '../lib/content'
 import { useName, useT } from '../lib/i18n'
 import { comparableHits } from '../lib/search'
+import { isComposingKey } from '../lib/composition'
 import { movePickerIndex } from '../lib/pickerNavigation'
 import type { ComparableHit } from '../lib/search'
 import { useApp } from '../lib/store'
@@ -30,6 +31,7 @@ export default function ComparePicker({
   const [open, setOpen] = useState(false)
   const [activeIndex, setActiveIndex] = useState(-1)
   const deferred = useDeferredValue(q)
+  const composing = useRef(false)
   const listId = useId()
   const suggestions = useMemo(() => (open && deferred.trim() ? comparableHits(deferred, kind, 8) : []), [deferred, kind, open])
 
@@ -52,6 +54,7 @@ export default function ComparePicker({
       className="relative"
       onSubmit={(e) => {
         e.preventDefault()
+        if (composing.current) return
         const active = open && activeIndex >= 0 ? suggestions[activeIndex] : undefined
         const chosen = active ?? comparableHits(q, kind, 1)[0]
         if (chosen) pick(chosen)
@@ -70,7 +73,10 @@ export default function ComparePicker({
             setOpen(true)
           }}
           onFocus={() => { setActiveIndex(-1); setOpen(true) }}
+          onCompositionStart={() => { composing.current = true }}
+          onCompositionEnd={() => { composing.current = false }}
           onKeyDown={(e) => {
+            if (isComposingKey(e.nativeEvent, composing.current)) return
             if (e.key === 'Escape') {
               e.preventDefault()
               setOpen(false)
@@ -84,7 +90,7 @@ export default function ComparePicker({
               if (next >= 0) requestAnimationFrame(() => document.getElementById(`${listId}-option-${hits[next].id}`)?.scrollIntoView({ block: 'nearest' }))
             }
           }}
-          onBlur={() => window.setTimeout(() => setOpen(false), 150)}
+          onBlur={() => { composing.current = false; window.setTimeout(() => setOpen(false), 150) }}
           placeholder={t('compareSearchPlaceholder')}
           enterKeyHint="search"
           autoComplete="off"
