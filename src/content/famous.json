@@ -6821,9 +6821,20 @@
         "text": "أوبار",
         "english": "Ubar",
         "standard": "أوبار",
-        "noteAr": "أوبار، مدينة اللبان المفقودة في رمال الربع الخالي، ذكرت في القرآن بإرم ذات العماد",
-        "note": "Ubar is the lost frankincense city in the Empty Quarter sands, tied to Iram of the Pillars",
-        "example": "أوبار غارت في الرمال"
+        "noteAr": "تصف اليونسكو شصر/وبار في ظفار بأنها واحة على طريق قوافل اللبان ضمن موقع أرض اللبان. واقتُرح ربط الموقع بأوبار، لكن ذلك لا يثبت أنه مدينة إرم ذات العماد.",
+        "note": "UNESCO describes Shisr/Wubar in Dhofar as a caravan oasis within the Land of Frankincense site. Identification with Ubar has been proposed; this does not establish that the site is Iram of the Pillars.",
+        "noteSources": [
+          {
+            "title": "UNESCO: Land of Frankincense",
+            "titleAr": "اليونسكو: أرض اللبان",
+            "url": "https://whc.unesco.org/en/list/1010/"
+          },
+          {
+            "title": "ICOMOS: Shisr archaeological evaluation (2000)",
+            "titleAr": "إيكوموس: التقييم الأثري لشصر (2000)",
+            "url": "https://whc.unesco.org/document/151528"
+          }
+        ]
       },
       {
         "id": "famous.al_baleed",
