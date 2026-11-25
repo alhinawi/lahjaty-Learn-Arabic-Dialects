@@ -831,10 +831,22 @@
         "text": "أوي",
         "english": "Very / So much",
         "standard": "جدًّا",
-        "noteAr": "القاف بتبقى همزة، وتيجي بعد الصفة علطول",
-        "note": "The Q turns into a glottal stop; it always comes after the adjective",
+        "noteAr": "«أوي» معناها «جدًّا» للتأكيد، وبتستخدم بعد الصفة زي المثال هنا. وممكن كمان تأكّد معنى فعل، مش شرط تيجي بعد صفة بس.",
+        "note": "Awi means very or so much. It can follow an adjective, as in this example, and can also intensify a verb; it is not limited to adjectives.",
         "example": "الفيلم ده حلو أوي",
-        "concept": "very"
+        "concept": "very",
+        "noteSources": [
+          {
+            "title": "Lisaan Masry: adjectives and degree adverbs",
+            "titleAr": "لسان مصري: الصفات وظروف الدرجة",
+            "url": "https://www.lisaanmasry.org/grammar/adjectives.html"
+          },
+          {
+            "title": "Desert Sky: Egyptian Arabic degree adverbs",
+            "titleAr": "ديزرت سكاي: ظروف الدرجة في العربية المصرية",
+            "url": "https://www.arabic.desert-sky.net/g_adv.html"
+          }
+        ]
       },
       {
         "id": "famous.delwa2ti",
