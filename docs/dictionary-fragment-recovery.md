@@ -8,7 +8,7 @@ Opening the live basics topic with a truncated percent-encoded URL fragment rais
 
 ## Change
 
-Decode optional entry fragments with a guarded helper. Malformed escapes or invalid UTF-8 are ignored. Valid fragments still target the exact entry with `getElementById`; they are not used as CSS selectors and are decoded only once. Missing targets stay harmless.
+Decode optional entry fragments with a guarded helper. Malformed escapes or invalid UTF-8 are ignored. Valid fragments still target the exact entry with `getElementById`; they are not used as CSS selectors and are decoded only once. Missing targets stay harmless. Entry scrolling runs after the app shell route reset, and follows hash/history navigation; pending animation frames and listeners are cleaned up on route change. Local visual inspection caught the previous synchronous anchor scroll being reset to the page top.
 
 No dictionary words, examples, audio, voice selection, account storage, or hosting changes.
 
