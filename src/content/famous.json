@@ -9299,9 +9299,21 @@
         "text": "فايد",
         "english": "Fayed",
         "standard": "فايد",
-        "noteAr": "فايد، قرية على البحيرة المرة الكبرى، مشهورة بسمك البوري المشوي",
-        "note": "Fayed is a village on the Great Bitter Lake, famous for grilled mullet",
-        "example": "بوري فايد على الفحم"
+        "noteAr": "فايد مدينة بمحافظة الإسماعيلية، على الشاطئ الغربي للبحيرة المرة الكبرى.",
+        "note": "Fayed is a city in Ismailia Governorate, on the western shore of the Great Bitter Lake.",
+        "example": "بوري فايد على الفحم",
+        "noteSources": [
+          {
+            "title": "Study in Egypt: Fayed and Great Bitter Lake",
+            "titleAr": "ادرس في مصر: فايد والبحيرة المرة الكبرى",
+            "url": "https://study-in-egypt.gov.eg/listing/73/Great%20Bitter%20Lake"
+          },
+          {
+            "title": "NASA Earth Observatory: Great Bitter Lake and Fayed",
+            "titleAr": "مرصد الأرض بناسا: البحيرة المرة الكبرى وفايد",
+            "url": "https://science.nasa.gov/earth/earth-observatory/great-bitter-lake-egypt-40884/"
+          }
+        ]
       },
       {
         "id": "famous.tell_el_kebir",
