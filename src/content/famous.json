@@ -2687,9 +2687,21 @@
         "text": "الأقصر",
         "english": "Luxor",
         "standard": "الأقصر",
-        "noteAr": "طيبة القديمة، فيها تلت آثار العالم: الكرنك والأقصر ووادي الملوك",
-        "note": "Luxor, ancient Thebes, holds a third of the world's antiquities: Karnak, Luxor Temple and the Valley of the Kings",
-        "example": "الصعيد كله تاريخ والأقصر عاصمته"
+        "noteAr": "الأقصر هي طيبة القديمة. من آثارها معبدا الكرنك والأقصر ووادي الملوك، ضمن موقع طيبة القديمة ومقبرتها المدرج على قائمة اليونسكو للتراث العالمي.",
+        "note": "Luxor is ancient Thebes. Its monuments include Karnak, Luxor Temple and the Valley of the Kings, within the UNESCO World Heritage site of Ancient Thebes with its Necropolis.",
+        "example": "الصعيد كله تاريخ والأقصر عاصمته",
+        "noteSources": [
+          {
+            "title": "UNESCO: Ancient Thebes with its Necropolis",
+            "titleAr": "اليونسكو: مدينة طيبة القديمة ومقبرتها",
+            "url": "https://whc.unesco.org/en/list/87/"
+          },
+          {
+            "title": "Ministry of Tourism and Antiquities: Ancient Thebes",
+            "titleAr": "وزارة السياحة والآثار: طيبة القديمة ومقبرتها",
+            "url": "https://egymonuments.gov.eg/en/world-heritage/ancient-thebes-and-its-necropolis"
+          }
+        ]
       },
       {
         "id": "famous.aswan",
