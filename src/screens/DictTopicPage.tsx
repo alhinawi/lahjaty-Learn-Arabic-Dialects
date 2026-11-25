@@ -12,6 +12,7 @@ import { dictTopics, getTopic, useTopic } from '../lib/dictionary'
 import type { DictEntry } from '../lib/types'
 import { useName, useT } from '../lib/i18n'
 import { useApp } from '../lib/store'
+import { fragmentId } from '../lib/fragment'
 import NotFoundPage from './NotFoundPage'
 
 export default function DictTopicPage({ topicId, initialEntries }: { topicId: string; initialEntries?: DictEntry[] }) {
@@ -22,8 +23,8 @@ export default function DictTopicPage({ topicId, initialEntries }: { topicId: st
   const entries = useTopic(topic?.id, initialEntries)
   const loaded = entries !== null
   useEffect(() => {
-    const hash = window.location.hash
-    if (loaded && hash) document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView({ block: 'start' })
+    const id = fragmentId(window.location.hash)
+    if (loaded && id) document.getElementById(id)?.scrollIntoView({ block: 'start' })
   }, [loaded])
   if (!topic) return <NotFoundPage />
 
