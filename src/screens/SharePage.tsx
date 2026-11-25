@@ -10,6 +10,7 @@ import { useName, useT } from '../lib/i18n'
 import { ogImageFor } from '../lib/og'
 import { useApp } from '../lib/store'
 import NotFoundPage from './NotFoundPage'
+import WithdrawnFeshlum from '../components/WithdrawnFeshlum'
 
 /** The page behind a shared phrase link: the phrase big, its meaning, and the way to the rest. */
 export default function SharePage({ dialectId = '', phraseId = '' }: { dialectId?: string; phraseId?: string }) {
@@ -25,6 +26,7 @@ export default function SharePage({ dialectId = '', phraseId = '' }: { dialectId
   const translit = famous ? undefined : base?.variants[dialectId]?.translit
   const standard = famous?.standard ?? base?.variants[STANDARD_ID]?.text
   const english = famous?.english ?? base?.english
+  if (dialectId === 'ben' && phraseId === 'famous.feshlum') return <WithdrawnFeshlum lang={lang} />
   if (!dialect || !text) return <NotFoundPage />
   const compareTo = famous ? (famous.concept ? `/compare?c=${encodeURIComponent(famous.concept)}` : undefined) : `/compare?p=${encodeURIComponent(phraseId)}`
   const context = famous ?? base
